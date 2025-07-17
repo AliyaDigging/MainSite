@@ -1,4 +1,11 @@
-@import '/public/fonts/MisansVF/result.css';
-
 @import 'tailwindcss';
 @import 'tailwindcss-primeui';
+
+@import '/public/fonts/MisansVF/result.css';
+@import './browser_default.css';
+
+* {
+  font-family:
+    'MiSans VF', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    '微软雅黑', Arial, sans-serif;
+}
