@@ -2,10 +2,34 @@
 @import 'tailwindcss-primeui';
 
 @import '/public/fonts/MisansVF/result.css';
-@import './browser_default.css';
+/*@import './browser_default.css';*/
 
 * {
   font-family:
     'MiSans VF', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
     '微软雅黑', Arial, sans-serif;
+}
+
+:root {
+  /* 来自 vuejs.org 官网，请结合 max-width 使用 */
+  --screen-width-mobile: '370px';
+  --screen-width-pad: '794px';
+  --screen-width-desktop: '960px';
+}
+
+body {
+  background-color: #f8fafc;
+}
+
+h1,
+h2 {
+  color: var(--p-);
+}
+
+a {
+  color: var(--p-primary-500);
+}
+
+a:hover {
+  color: var(--p-primary-600);
 }
