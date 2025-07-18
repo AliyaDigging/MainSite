@@ -11,9 +11,8 @@ import SpolierContent from '@/components/SpolierContent.vue'
     </div>
   </div>
   <div class="home-other-panel view-body-padding-20">
-    <h2 class="h2-title m-0 text-black">试图从游戏里挖出点什么东西</h2>
-    <p class="h2-desc m-0 text-color">我们</p>
-    <br />
+    <h2 class="h2-title m-0 text-black mt-3">试图从游戏里挖出点什么东西</h2>
+    <p class="h2-desc text-color m-0 mb-4">我们</p>
     <div class="home-feature-card-div">
       <PvCard>
         <template #title>ℹ️ 全故事流程图</template>
@@ -39,14 +38,12 @@ import SpolierContent from '@/components/SpolierContent.vue'
         >
       </PvCard>
     </div>
-    <br />
-    <p>
+    <p class="mt-4">
       *全部数据及代码开源在GitHub上。请阅读<RouterLink to="/about/technical">技术声明</RouterLink
       >了解更多信息。
     </p>
   </div>
-  <br />
-  <div class="home-other-panel view-body-padding-20">
+  <div class="home-other-panel view-body-padding-20 mt-8">
     <h2 class="h2-title text-black">为什么做这个</h2>
     <h2 class="h2-title" style="margin-top: 0; font-size: 30px">
       <SpolierContent><del>因为无聊而且喜欢 Aliya</del></SpolierContent>
@@ -111,9 +108,6 @@ import SpolierContent from '@/components/SpolierContent.vue'
   font-size: 50px;
   text-align: center;
   font-weight: 600;
-
-  margin: 0;
-  margin-top: 20px;
 }
 
 .h2-desc {
