@@ -1,39 +1,16 @@
 # aliya_digging_site
 
-This template should help get you started developing with Vue 3 in Vite.
+## For Devs
 
-## Recommended IDE Setup
+- MANUALLY UPDATE the flowchart data from the parser.
+  - PLEASE DO NOT use git submodules to do so since it's ugly and somehow makes vite to behave weird.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Get Started
 
-## Type Support for `.vue` Imports in TS
+To start development or to try it yourself, run the commands below:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+```bash
+npm i
 npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+npm run dev_local # exposed on 0.0.0.0
 ```
