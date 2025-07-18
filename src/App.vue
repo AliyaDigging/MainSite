@@ -5,11 +5,11 @@ import FooterComp from './components/FooterComp.vue'
 </script>
 
 <template>
-  <div class="">
-    <div style="position: sticky; top: 0">
+  <div>
+    <div style="position: fixed; top: 0; width: 100%; z-index: 20000">
       <NavMenu />
     </div>
-    <div>
+    <div style="margin-top: 58px">
       <RouterView />
     </div>
     <FooterComp />

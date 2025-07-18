@@ -7,7 +7,7 @@ import { navItems } from '@/constants/navbar'
 <template>
   <PvMenubar :model="navItems">
     <template #start>
-      <span>Aliya DB</span>
+      <span style="font-weight: 600">Aliya DB</span>
     </template>
     <template #item="{ item, props, hasSubmenu }">
       <RouterLink v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
