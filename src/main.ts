@@ -9,6 +9,7 @@ import Aura from '@primevue/themes/aura'
 import PvTooltip from 'primevue/tooltip'
 import PvDialogService from 'primevue/dialogservice'
 import { definePreset } from '@primevue/themes'
+import { Ripple } from 'primevue'
 
 // Pinia
 import { createPinia } from 'pinia'
@@ -66,8 +67,10 @@ app.use(PrimeVue, {
       cssLayer: false,
     },
   },
+  ripple: true,
 })
 app.use(PvDialogService)
 app.directive('tooltip', PvTooltip)
+app.directive('ripple', Ripple)
 
 app.mount('#app')
