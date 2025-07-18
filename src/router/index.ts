@@ -9,6 +9,12 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
+    {
+      path: '/view/flowchart/:flowchartName?',
+      name: 'view_flowchart',
+      component: () => import('../views/ViewFlowchart.vue'),
+      props: true,
+    },
   ],
 })
 

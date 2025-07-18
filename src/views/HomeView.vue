@@ -10,9 +10,9 @@ import SpolierContent from '@/components/SpolierContent.vue'
       <p class="m-0">A fan project dedicated to the game Aliya: Timelink.</p>
     </div>
   </div>
-  <div class="home-other-panel">
-    <h2 class="h2-title m-0">试图从游戏里挖出点什么东西</h2>
-    <p class="h2-desc m-0">我们</p>
+  <div class="home-other-panel view-body-padding-20">
+    <h2 class="h2-title m-0 text-black">试图从游戏里挖出点什么东西</h2>
+    <p class="h2-desc m-0 text-color">我们</p>
     <br />
     <div class="home-feature-card-div">
       <PvCard>
@@ -46,13 +46,13 @@ import SpolierContent from '@/components/SpolierContent.vue'
     </p>
   </div>
   <br />
-  <div class="home-other-panel">
-    <h2 class="h2-title">为什么做这个</h2>
+  <div class="home-other-panel view-body-padding-20">
+    <h2 class="h2-title text-black">为什么做这个</h2>
     <h2 class="h2-title" style="margin-top: 0; font-size: 30px">
       <SpolierContent><del>因为无聊而且喜欢 Aliya</del></SpolierContent>
     </h2>
     <br />
-    <p class="h2-desc h2-desc-long">
+    <p class="h2-desc h2-desc-long text-color">
       我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们<SpolierContent
         >你好世界</SpolierContent
       >
@@ -79,11 +79,7 @@ import SpolierContent from '@/components/SpolierContent.vue'
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  padding: 20px;
-}
-
-.home-other-panel {
+  color: white !important;
   padding: 20px;
 }
 
@@ -101,7 +97,6 @@ import SpolierContent from '@/components/SpolierContent.vue'
 }
 
 /* 针对字体的调优 */
-
 .home-hero-text h1 {
   font-size: 80px;
   font-weight: 900;
@@ -123,13 +118,13 @@ import SpolierContent from '@/components/SpolierContent.vue'
 
 .h2-desc {
   text-align: center;
-  color: var(--p-surface-500); /* from .text-surface-500 */
+  /*color: var(--p-surface-500); /* from .text-surface-500 */
 }
 
 .h2-desc-long {
   text-align: left;
   text-indent: 2em;
-  color: black;
+  /*color: black;*/
 }
 
 @media screen and (max-width: 960px) {

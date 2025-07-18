@@ -17,10 +17,6 @@
   --screen-width-desktop: '960px';
 }
 
-body {
-  background-color: #f8fafc;
-}
-
 h1,
 h2 {
   color: var(--p-);
@@ -32,4 +28,10 @@ a {
 
 a:hover {
   color: var(--p-primary-600);
+}
+
+.surface-ground-custom-light {
+  @media (prefers-color-scheme: light) {
+    background-color: #f8fafc;
+  }
 }
