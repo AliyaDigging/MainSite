@@ -6,13 +6,13 @@ import SpolierContent from '@/components/SpolierContent.vue'
 <template>
   <div class="home-hero-image">
     <div class="home-hero-text">
-      <h1>ALIYA DB</h1>
-      <p>A fan project dedicated to the game Aliya: Timelink.</p>
+      <h1 class="m-0">ALIYA DB</h1>
+      <p class="m-0">A fan project dedicated to the game Aliya: Timelink.</p>
     </div>
   </div>
   <div class="home-other-panel">
-    <h2 class="h2-title">试图从游戏里挖出点什么东西</h2>
-    <p class="h2-desc">我们</p>
+    <h2 class="h2-title m-0">试图从游戏里挖出点什么东西</h2>
+    <p class="h2-desc m-0">我们</p>
     <br />
     <div class="home-feature-card-div">
       <PvCard>
@@ -81,11 +81,6 @@ import SpolierContent from '@/components/SpolierContent.vue'
   transform: translate(-50%, -50%);
   color: white;
   padding: 20px;
-}
-
-.home-hero-text *,
-.home-other-panel * {
-  margin: 0;
 }
 
 .home-other-panel {
