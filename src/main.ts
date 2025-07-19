@@ -23,6 +23,9 @@ import i18n_zh_TW from '@/i18n/zh_TW.json'
 
 import App from './App.vue'
 import router from './router'
+import { useDark } from '@vueuse/core'
+import { symbolUseDark } from './constants/injection'
+import { useSiteSettingStore } from './stores/setting'
 
 const app = createApp(App)
 
@@ -55,6 +58,14 @@ const AuraCustomPreset = definePreset(Aura, {
   },
 })
 
+const dark = useDark({
+  selector: 'html',
+  attribute: 'class',
+  valueDark: 'p-dark',
+  valueLight: '',
+  storageKey: 'theme-preference',
+})
+
 app.use(createPinia().use(piniaPluginPersistedstate))
 app.use(router)
 app.use(i18n)
@@ -72,5 +83,9 @@ app.use(PrimeVue, {
 app.use(PvDialogService)
 app.directive('tooltip', PvTooltip)
 app.directive('ripple', Ripple)
+app.provide(symbolUseDark, dark)
+
+useSiteSettingStore().refreshPersist()
+useSiteSettingStore().changeSiteLang()
 
 app.mount('#app')

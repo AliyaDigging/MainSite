@@ -1,12 +1,16 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import NavMenu from '@/components/NavMenu.vue'
 import FooterComp from './components/FooterComp.vue'
+
+import DynamicDialog from 'primevue/dynamicdialog'
 </script>
 
 <template>
   <div>
-    <div style="position: fixed; top: 0; width: 100%; z-index: 20000">
+    <DynamicDialog />
+
+    <div style="position: fixed; top: 0; width: 100%; z-index: 10">
       <NavMenu />
     </div>
     <div style="margin-top: 58px">

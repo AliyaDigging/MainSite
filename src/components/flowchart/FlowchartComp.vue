@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, ref, watch } from 'vue'
+import { computed, inject, nextTick, ref, watch } from 'vue'
 import {
   type FlowchartDataEdge,
   type FlowchartData,
@@ -61,6 +61,7 @@ import { useWindowSize } from '@vueuse/core'
 
 import { useI18n } from 'vue-i18n'
 import { useDark } from '@vueuse/core'
+import { symbolUseDark } from '@/constants/injection'
 
 const props = defineProps({
   flowchartName: {
@@ -84,13 +85,7 @@ const vueflowData = {
 const isReady = ref(false)
 const isDraggable = ref(false)
 
-const isDark = useDark({
-  selector: 'html',
-  attribute: 'class',
-  valueDark: 'p-dark',
-  valueLight: '',
-  storageKey: 'theme-preference',
-})
+const isDark = inject(symbolUseDark)!
 const nodeBgColor = computed(() => (isDark.value ? '#1E1E1E' : '#FFFFFF'))
 const nodeFontColor = computed(() => (isDark.value ? 'white' : 'black'))
 
