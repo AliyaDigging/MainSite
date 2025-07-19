@@ -5,9 +5,9 @@ const i18n = useI18n()
 </script>
 
 <template>
-  <Spolier :title="i18n.t('comp.spolier.title')">
+  <spolier :title="i18n.t('comp.spolier.title')">
     <slot></slot>
-  </Spolier>
+  </spolier>
 </template>
 
 <style scope>
