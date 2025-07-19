@@ -446,9 +446,7 @@ watch(
 
 <style scoped>
 :deep(.vue-flow__node-toolbar) {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
+  align-items: left;
   background-color: #2d3748;
   padding: 8px;
   border-radius: 8px;
@@ -456,5 +454,7 @@ watch(
   color: white;
 
   max-height: 200px;
+
+  overflow-y: scroll;
 }
 </style>
