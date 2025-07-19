@@ -1,0 +1,4033 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 145,
+      "edge": 157,
+      "otherFlowcharts": 2
+    },
+    "flowchartRefs": [
+      "1-2",
+      "1-1-1"
+    ],
+    "variableNames": {
+      "114378979697183053": {
+        "key": "name",
+        "type": "string"
+      },
+      "114358056880505242": {
+        "key": "KaneDeath",
+        "type": "number"
+      },
+      "114035452268344571": {
+        "key": "IsCOSMOS",
+        "type": "number"
+      },
+      "114190856048802554": {
+        "key": "END_1_IS_GET",
+        "type": "number"
+      }
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1493796199074729",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1493796199074729",
+          "components": [
+            "114378979697183053",
+            "114358056880505242",
+            "114035452268344571",
+            "114190856048802554",
+            "114376632662216069",
+            "114203753341669436",
+            "114390782547414900",
+            "114223635718921763",
+            "114164353664333244",
+            "114965771480112662",
+            "114494176211779087",
+            "114249714103658235",
+            "114419537853939024",
+            "114488563369669886",
+            "114840259425694068",
+            "114815131647674351",
+            "114179193569399859",
+            "114770612659842262",
+            "114181257802514723",
+            "114303192754199554",
+            "114657143292126508",
+            "114014912280273522",
+            "114943682282829912",
+            "114038472602654660",
+            "114892830598124630",
+            "114686900828276190",
+            "114567954156250068",
+            "114281535242669326",
+            "114902450195474899",
+            "114021663345166988",
+            "114225252872494462",
+            "114758221129445711",
+            "114317933490429669",
+            "114387902906811164",
+            "114740893363428392",
+            "114360135055756652",
+            "114362462418296806",
+            "114544884012066789",
+            "114678264464717035",
+            "114865592315596888",
+            "114908273124425893",
+            "114680223541792879",
+            "114284373830245576",
+            "114105755587862690",
+            "114422733282658145",
+            "114775551723083011",
+            "114262177828447488",
+            "114710016385055362",
+            "114641230850090497",
+            "114955033259735610",
+            "114992243611971264",
+            "114255507292681104",
+            "114591125646056817",
+            "114813517492394985",
+            "114370927792983818",
+            "114301769909877456",
+            "114292198664572317",
+            "114122585725817816",
+            "114060803980607615",
+            "114182852304321016",
+            "114327396878348778",
+            "114690131272109943",
+            "114823809800436263",
+            "114483545983592593",
+            "114912346993631860",
+            "114160275363067865",
+            "114051457260093408",
+            "114065363516052820",
+            "114678804647624979",
+            "114307233215887494",
+            "114330452368379515",
+            "114523768494695654",
+            "114193941389758684",
+            "114581962454942281",
+            "114930347222765356",
+            "114719772331424617",
+            "114063120800973525",
+            "114930663635930318",
+            "114784256127584342",
+            "114065068687798999",
+            "114589209557039024",
+            "114907589174162911",
+            "114765612884006187",
+            "114147849490628399",
+            "114517326452976826",
+            "114740820034234878",
+            "114067763629240927",
+            "114013793321508374",
+            "114302323124234184",
+            "114136659227443041",
+            "114489512391185471",
+            "114125559901721190",
+            "114232462726408192",
+            "114558493833476695",
+            "114446101640995243",
+            "114761713525101208",
+            "114633925095385931",
+            "114874472675698411",
+            "114508046344270585",
+            "114715472078472194",
+            "114438488945410520",
+            "114262657846045530",
+            "114032346125875333",
+            "114666148487165239",
+            "114439612431639970",
+            "114004551346342542",
+            "114465981492026620",
+            "114946814523743651",
+            "114274037263658857",
+            "114721904306737348",
+            "114586058026927094",
+            "114170236707124351",
+            "114180151499939975",
+            "114055214015023951",
+            "114597555181809095",
+            "114882854505031334",
+            "114837037948588378",
+            "114370741828312847",
+            "114189685639423283",
+            "114014587293452032",
+            "114763827725039453",
+            "114533638347539726",
+            "114672741184208134"
+          ],
+          "m_Name": "1-1"
+        }
+      },
+      {
+        "id": "114378979697183053",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114378979697183053",
+          "itemId": -1,
+          "key": "name",
+          "value": null
+        }
+      },
+      {
+        "id": "114358056880505242",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114358056880505242",
+          "itemId": -1,
+          "key": "KaneDeath",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114035452268344571",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114035452268344571",
+          "itemId": -1,
+          "key": "IsCOSMOS",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114190856048802554",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114190856048802554",
+          "itemId": -1,
+          "key": "END_1_IS_GET",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114376632662216069",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114376632662216069",
+          "itemId": 0,
+          "blockName": "1-1",
+          "description": "Kane！别再说话了！\n我会想办法救你的！\n一定！！！\n什么？\n别说这种傻话了！\n真正的你就在我眼前，我不会让你死的！\n绝对不会！\n冷静下来\n冷静下来\n现在Kane的情况是撞击受伤导致肋骨断裂\n已经出现了张力性气胸的症状\n需要一个粗针头来放气\n针头...\n找到了！\n应该能用...\n但是应该插进哪个地方...\n培训课上我为什么没认真听！\nCOSMOS，你还没重启好吗？\nCOSMOS！？",
+          "eventHandler": "0",
+          "commandList": [
+            "114067763629240927",
+            "114013793321508374",
+            "114302323124234184",
+            "114136659227443041",
+            "114489512391185471",
+            "114203753341669436",
+            "114390782547414900",
+            "114189685639423283",
+            "114223635718921763",
+            "114164353664333244",
+            "114965771480112662",
+            "114065068687798999"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114067763629240927",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ToggleWarningAni",
+        "data": {
+          "fileId": "114067763629240927",
+          "itemId": 132,
+          "targetValue": true
+        }
+      },
+      {
+        "id": "114013793321508374",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114013793321508374",
+          "itemId": 133,
+          "targetLevel": 6
+        }
+      },
+      {
+        "id": "114302323124234184",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "BanEOGControl",
+        "data": {
+          "fileId": "114302323124234184",
+          "itemId": 134
+        }
+      },
+      {
+        "id": "114136659227443041",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "BanEHControl",
+        "data": {
+          "fileId": "114136659227443041",
+          "itemId": 135
+        }
+      },
+      {
+        "id": "114489512391185471",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "BanRadioControl",
+        "data": {
+          "fileId": "114489512391185471",
+          "itemId": 136
+        }
+      },
+      {
+        "id": "114203753341669436",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114203753341669436",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "Kane！别再说话了！\n我会想办法救你的！\n一定！！！\n什么？\n别说这种傻话了！\n别管手册上面是怎么说的了！\n真正的你就在我眼前，我不会让你死的！\n绝对不会！",
+          "imageId": null,
+          "itemId": 1
+        }
+      },
+      {
+        "id": "114390782547414900",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114390782547414900",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "冷静下来\n冷静下来\n现在Kane的情况是撞击受伤导致肋骨断裂\n已经出现了张力性气胸的症状\n需要一个粗针头来放气\n针头...\n找到了！\n应该能用...\n但是应该插进哪个地方...\n培训课上我为什么没认真听！\nCOSMOS，你还没重启好吗？\nCOSMOS！？",
+          "imageId": null,
+          "itemId": 2
+        }
+      },
+      {
+        "id": "114189685639423283",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "HighlightButton",
+        "data": {
+          "fileId": "114189685639423283",
+          "itemId": 167,
+          "buttonType": 4
+        }
+      },
+      {
+        "id": "114223635718921763",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114223635718921763",
+          "text": "我在",
+          "targetBlock": "114494176211779087",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 3
+        }
+      },
+      {
+        "id": "114164353664333244",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114164353664333244",
+          "text": "什么事？",
+          "targetBlock": "114249714103658235",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 4
+        }
+      },
+      {
+        "id": "114965771480112662",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114965771480112662",
+          "text": "我不是COSMOS",
+          "targetBlock": "114419537853939024",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 5
+        }
+      },
+      {
+        "id": "114065068687798999",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114065068687798999",
+          "itemId": 125,
+          "waitHours": 0,
+          "waitMinutes": 1,
+          "waitSeconds": 0,
+          "targetBlock": "114488563369669886",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114494176211779087",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114494176211779087",
+          "itemId": 7,
+          "blockName": "我在",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114840259425694068"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114840259425694068",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114840259425694068",
+          "itemId": 11,
+          "targetBlock": "114488563369669886"
+        }
+      },
+      {
+        "id": "114249714103658235",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114249714103658235",
+          "itemId": 8,
+          "blockName": "什么事",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114815131647674351"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114815131647674351",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114815131647674351",
+          "itemId": 12,
+          "targetBlock": "114488563369669886"
+        }
+      },
+      {
+        "id": "114419537853939024",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114419537853939024",
+          "itemId": 9,
+          "blockName": "我不是COSMOS",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114775551723083011",
+            "114770612659842262",
+            "114181257802514723"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114775551723083011",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetVariable",
+        "data": {
+          "fileId": "114775551723083011",
+          "itemId": 49,
+          "setOperator": 0,
+          "anyVar": {
+            "variable": "114035452268344571",
+            "data": {
+              "stringData": {
+                "stringRef": "0",
+                "stringVal": null
+              },
+              "integerData": {
+                "integerRef": "0",
+                "integerVal": 1
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "114770612659842262",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114770612659842262",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "COSMOS！\n现在不是陪你玩的时候",
+          "imageId": null,
+          "itemId": 14
+        }
+      },
+      {
+        "id": "114181257802514723",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114181257802514723",
+          "itemId": 15,
+          "targetBlock": "114488563369669886"
+        }
+      },
+      {
+        "id": "114488563369669886",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114488563369669886",
+          "itemId": 10,
+          "blockName": "快告诉我应该把钢针插进第几肋间！",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114179193569399859",
+            "114014587293452032",
+            "114274037263658857",
+            "114303192754199554",
+            "114721904306737348",
+            "114657143292126508",
+            "114014912280273522",
+            "114597555181809095",
+            "114943682282829912",
+            "114882854505031334"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114179193569399859",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114179193569399859",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "快告诉我张力性气胸应该把钢针插进第几肋间！",
+          "imageId": null,
+          "itemId": 13
+        }
+      },
+      {
+        "id": "114014587293452032",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "HighlightButton",
+        "data": {
+          "fileId": "114014587293452032",
+          "itemId": 168,
+          "buttonType": 4
+        }
+      },
+      {
+        "id": "114274037263658857",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114274037263658857",
+          "itemId": 157,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114190856048802554",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114274037263658857_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114274037263658857_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114303192754199554",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114303192754199554",
+          "text": "第四肋间",
+          "targetBlock": "114686900828276190",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 16
+        }
+      },
+      {
+        "id": "114721904306737348",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114721904306737348",
+          "itemId": 158
+        }
+      },
+      {
+        "id": "114657143292126508",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114657143292126508",
+          "text": "第二肋间",
+          "targetBlock": "114387902906811164",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 17
+        }
+      },
+      {
+        "id": "114274037263658857_VirtualElse",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114274037263658857_VirtualElse",
+          "itemId": 123456789
+        }
+      },
+      {
+        "id": "114657143292126508",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114657143292126508",
+          "text": "第二肋间",
+          "targetBlock": "114387902906811164",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 17
+        }
+      },
+      {
+        "id": "114014912280273522",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114014912280273522",
+          "text": "我怎么会知道啊！",
+          "targetBlock": "114225252872494462",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 19
+        }
+      },
+      {
+        "id": "114597555181809095",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114597555181809095",
+          "itemId": 163,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114190856048802554",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114597555181809095_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114597555181809095_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114943682282829912",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114943682282829912",
+          "itemId": 20,
+          "waitHours": 0,
+          "waitMinutes": 0,
+          "waitSeconds": 12,
+          "targetBlock": "114038472602654660",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114882854505031334",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114882854505031334",
+          "itemId": 164
+        }
+      },
+      {
+        "id": "114597555181809095_VirtualElse",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114597555181809095_VirtualElse",
+          "itemId": 123456789
+        }
+      },
+      {
+        "id": "114038472602654660",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114038472602654660",
+          "itemId": 21,
+          "blockName": "快点告诉我！ Kane要不行了！",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114892830598124630",
+            "114763827725039453",
+            "114586058026927094",
+            "114567954156250068",
+            "114170236707124351",
+            "114281535242669326",
+            "114902450195474899",
+            "114544884012066789"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114892830598124630",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114892830598124630",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "快点告诉我！\nKane要不行了！",
+          "imageId": null,
+          "itemId": 22
+        }
+      },
+      {
+        "id": "114763827725039453",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "HighlightButton",
+        "data": {
+          "fileId": "114763827725039453",
+          "itemId": 169,
+          "buttonType": 4
+        }
+      },
+      {
+        "id": "114586058026927094",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114586058026927094",
+          "itemId": 159,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114190856048802554",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114586058026927094_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114586058026927094_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114567954156250068",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114567954156250068",
+          "text": "第四肋间",
+          "targetBlock": "114686900828276190",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 24
+        }
+      },
+      {
+        "id": "114170236707124351",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114170236707124351",
+          "itemId": 160
+        }
+      },
+      {
+        "id": "114281535242669326",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114281535242669326",
+          "text": "第二肋间",
+          "targetBlock": "114387902906811164",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 25
+        }
+      },
+      {
+        "id": "114586058026927094_VirtualElse",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114586058026927094_VirtualElse",
+          "itemId": 123456789
+        }
+      },
+      {
+        "id": "114281535242669326",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114281535242669326",
+          "text": "第二肋间",
+          "targetBlock": "114387902906811164",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 25
+        }
+      },
+      {
+        "id": "114902450195474899",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114902450195474899",
+          "text": "我怎么会知道啊！",
+          "targetBlock": "114225252872494462",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 27
+        }
+      },
+      {
+        "id": "114544884012066789",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114544884012066789",
+          "itemId": 38,
+          "waitHours": 0,
+          "waitMinutes": 2,
+          "waitSeconds": 0,
+          "targetBlock": "114710016385055362",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114686900828276190",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114686900828276190",
+          "itemId": 23,
+          "blockName": "好 我要扎下去了",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114125559901721190",
+            "114021663345166988",
+            "114317933490429669",
+            "114680223541792879"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114125559901721190",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114125559901721190",
+          "itemId": 138,
+          "targetLevel": 7
+        }
+      },
+      {
+        "id": "114021663345166988",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114021663345166988",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "好\n我要扎下去了",
+          "imageId": null,
+          "itemId": 28
+        }
+      },
+      {
+        "id": "114317933490429669",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114317933490429669",
+          "itemId": 32,
+          "waitHours": 0,
+          "waitMinutes": 0,
+          "waitSeconds": 8,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114680223541792879",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114680223541792879",
+          "itemId": 42,
+          "targetBlock": "114678264464717035"
+        }
+      },
+      {
+        "id": "114225252872494462",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114225252872494462",
+          "itemId": 29,
+          "blockName": "你为什么不知道？ 去查啊！ 去你数据库里查啊！",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114758221129445711",
+            "114180151499939975",
+            "114360135055756652",
+            "114055214015023951",
+            "114362462418296806",
+            "114837037948588378",
+            "114908273124425893",
+            "114370741828312847"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114758221129445711",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114758221129445711",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "你为什么不知道？\n去查啊！\n去你数据库里查啊！\n快啊！",
+          "imageId": null,
+          "itemId": 30
+        }
+      },
+      {
+        "id": "114180151499939975",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114180151499939975",
+          "itemId": 161,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114190856048802554",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114180151499939975_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114180151499939975_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114360135055756652",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114360135055756652",
+          "text": "第四肋间",
+          "targetBlock": "114686900828276190",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 35
+        }
+      },
+      {
+        "id": "114055214015023951",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114055214015023951",
+          "itemId": 162
+        }
+      },
+      {
+        "id": "114362462418296806",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114362462418296806",
+          "text": "第二肋间",
+          "targetBlock": "114387902906811164",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 36
+        }
+      },
+      {
+        "id": "114180151499939975_VirtualElse",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114180151499939975_VirtualElse",
+          "itemId": 123456789
+        }
+      },
+      {
+        "id": "114362462418296806",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114362462418296806",
+          "text": "第二肋间",
+          "targetBlock": "114387902906811164",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 36
+        }
+      },
+      {
+        "id": "114837037948588378",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114837037948588378",
+          "itemId": 165,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114190856048802554",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114837037948588378_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114837037948588378_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114908273124425893",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114908273124425893",
+          "itemId": 41,
+          "waitHours": 0,
+          "waitMinutes": 2,
+          "waitSeconds": 0,
+          "targetBlock": "114710016385055362",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114370741828312847",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114370741828312847",
+          "itemId": 166
+        }
+      },
+      {
+        "id": "114837037948588378_VirtualElse",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114837037948588378_VirtualElse",
+          "itemId": 123456789
+        }
+      },
+      {
+        "id": "114387902906811164",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114387902906811164",
+          "itemId": 33,
+          "blockName": "对！应该就是这个！",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114558493833476695",
+            "114232462726408192",
+            "114740893363428392",
+            "114284373830245576",
+            "114105755587862690",
+            "114446101640995243",
+            "114483545983592593"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114558493833476695",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114558493833476695",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "对！应该就是这个！",
+          "imageId": null,
+          "itemId": 140
+        }
+      },
+      {
+        "id": "114232462726408192",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114232462726408192",
+          "itemId": 139,
+          "targetLevel": 7
+        }
+      },
+      {
+        "id": "114740893363428392",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114740893363428392",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "Kane，你忍着点！",
+          "imageId": null,
+          "itemId": 34
+        }
+      },
+      {
+        "id": "114284373830245576",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114284373830245576",
+          "itemId": 43,
+          "waitHours": 0,
+          "waitMinutes": 0,
+          "waitSeconds": 5,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114105755587862690",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114105755587862690",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "呼，搞定了\nKane，我说过我不会让你死的\nCOSMOS\n这次也谢谢你了",
+          "imageId": null,
+          "itemId": 44
+        }
+      },
+      {
+        "id": "114446101640995243",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114446101640995243",
+          "itemId": 141,
+          "targetLevel": 6
+        }
+      },
+      {
+        "id": "114483545983592593",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114483545983592593",
+          "itemId": 79,
+          "targetBlock": "114122585725817816"
+        }
+      },
+      {
+        "id": "114678264464717035",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114678264464717035",
+          "itemId": 39,
+          "blockName": "Kane！ Kane！！！ ...... 对不起 我......",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114761713525101208",
+            "114865592315596888",
+            "114422733282658145",
+            "114262177828447488",
+            "114641230850090497"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114761713525101208",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114761713525101208",
+          "itemId": 142,
+          "targetLevel": 7
+        }
+      },
+      {
+        "id": "114865592315596888",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114865592315596888",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "Kane！\nKane！！！\n......\n对不起\n我......",
+          "imageId": null,
+          "itemId": 40
+        }
+      },
+      {
+        "id": "114422733282658145",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetVariable",
+        "data": {
+          "fileId": "114422733282658145",
+          "itemId": 45,
+          "setOperator": 0,
+          "anyVar": {
+            "variable": "114358056880505242",
+            "data": {
+              "stringData": {
+                "stringRef": "0",
+                "stringVal": null
+              },
+              "integerData": {
+                "integerRef": "0",
+                "integerVal": 1
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "114262177828447488",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114262177828447488",
+          "text": "对不起...我没有给出正确的位置",
+          "targetBlock": "114591125646056817",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 58
+        }
+      },
+      {
+        "id": "114641230850090497",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114641230850090497",
+          "text": "请节哀...",
+          "targetBlock": "114370927792983818",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 61
+        }
+      },
+      {
+        "id": "114710016385055362",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114710016385055362",
+          "itemId": 59,
+          "blockName": "（玩家等待时间过长）",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114955033259735610",
+            "114715472078472194",
+            "114533638347539726",
+            "114255507292681104",
+            "114992243611971264",
+            "114508046344270585"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114955033259735610",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114955033259735610",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "Kane！\nKane！！！\n......\n对不起\n我......",
+          "imageId": null,
+          "itemId": 63
+        }
+      },
+      {
+        "id": "114715472078472194",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetVariable",
+        "data": {
+          "fileId": "114715472078472194",
+          "itemId": 146,
+          "setOperator": 0,
+          "anyVar": {
+            "variable": "114358056880505242",
+            "data": {
+              "stringData": {
+                "stringRef": "0",
+                "stringVal": null
+              },
+              "integerData": {
+                "integerRef": "0",
+                "integerVal": 1
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "114533638347539726",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "HighlightButton",
+        "data": {
+          "fileId": "114533638347539726",
+          "itemId": 170,
+          "buttonType": 4
+        }
+      },
+      {
+        "id": "114255507292681104",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114255507292681104",
+          "text": "对不起，我没有及时回答你",
+          "targetBlock": "114591125646056817",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 65
+        }
+      },
+      {
+        "id": "114992243611971264",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114992243611971264",
+          "text": "请节哀",
+          "targetBlock": "114370927792983818",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 64
+        }
+      },
+      {
+        "id": "114508046344270585",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114508046344270585",
+          "itemId": 145,
+          "waitHours": 0,
+          "waitMinutes": 1,
+          "waitSeconds": 0,
+          "targetBlock": "114591125646056817",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114591125646056817",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114591125646056817",
+          "itemId": 66,
+          "blockName": "COSMOS！ 你怎么能在这种时候出问题呢！ 你知不知道Kane他！ Kane他......",
+          "description": "COSMOS！\n你怎么能在这种时候出错呢！\n你知不知道Kane他！\nKane他......",
+          "eventHandler": "0",
+          "commandList": [
+            "114813517492394985",
+            "114672741184208134",
+            "114160275363067865",
+            "114051457260093408"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114813517492394985",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114813517492394985",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "COSMOS！！！\n你怎么能在这种时候出问题呢！！\n你知不知道Kane他！\nKane他......",
+          "imageId": null,
+          "itemId": 67
+        }
+      },
+      {
+        "id": "114672741184208134",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "HighlightButton",
+        "data": {
+          "fileId": "114672741184208134",
+          "itemId": 171,
+          "buttonType": 4
+        }
+      },
+      {
+        "id": "114160275363067865",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114160275363067865",
+          "text": "对不起...我也是第一次碰到这种情况，我只是一个普通人...",
+          "targetBlock": "114678804647624979",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 82
+        }
+      },
+      {
+        "id": "114051457260093408",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114051457260093408",
+          "text": "这又不是我的错！还有！我不是COSMOS！",
+          "targetBlock": "114065363516052820",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 83
+        }
+      },
+      {
+        "id": "114370927792983818",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114370927792983818",
+          "itemId": 68,
+          "blockName": "请节哀...",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114301769909877456",
+            "114292198664572317"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114301769909877456",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114301769909877456",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "我不需要你的安慰！",
+          "imageId": null,
+          "itemId": 70
+        }
+      },
+      {
+        "id": "114292198664572317",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114292198664572317",
+          "itemId": 71,
+          "targetBlock": "114591125646056817"
+        }
+      },
+      {
+        "id": "114122585725817816",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114122585725817816",
+          "itemId": 72,
+          "blockName": "COSMOS的身份",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114912346993631860",
+            "114060803980607615",
+            "114182852304321016",
+            "114327396878348778",
+            "114690131272109943",
+            "114438488945410520",
+            "114262657846045530",
+            "114032346125875333",
+            "114823809800436263"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114912346993631860",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114912346993631860",
+          "itemId": 80,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114035452268344571",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114912346993631860_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114912346993631860_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114060803980607615",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114060803980607615",
+          "text": "我已经说过了，我不是COSMOS",
+          "targetBlock": "114307233215887494",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 74
+        }
+      },
+      {
+        "id": "114182852304321016",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114182852304321016",
+          "itemId": 75
+        }
+      },
+      {
+        "id": "114327396878348778",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114327396878348778",
+          "text": "我不是COSMOS",
+          "targetBlock": "114307233215887494",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 76
+        }
+      },
+      {
+        "id": "114690131272109943",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114690131272109943",
+          "itemId": 77
+        }
+      },
+      {
+        "id": "114438488945410520",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114438488945410520",
+          "itemId": 149,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114190856048802554",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114438488945410520",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114438488945410520",
+          "itemId": 149,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114190856048802554",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114438488945410520_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114438488945410520_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114262657846045530",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114262657846045530",
+          "text": "Aliya，还记得我吗？",
+          "targetBlock": "114307233215887494",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 150
+        }
+      },
+      {
+        "id": "114032346125875333",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114032346125875333",
+          "itemId": 151
+        }
+      },
+      {
+        "id": "114823809800436263",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114823809800436263",
+          "text": "不用谢，还有现在是什么情况，为什么你一直叫我COSMOS？",
+          "targetBlock": "114307233215887494",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 78
+        }
+      },
+      {
+        "id": "114065363516052820",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114065363516052820",
+          "itemId": 84,
+          "blockName": "这又不是我的错！还有！我不是COSMOS！",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114330452368379515",
+            "114581962454942281"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114330452368379515",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114330452368379515",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "你不是COSMOS？",
+          "imageId": null,
+          "itemId": 98
+        }
+      },
+      {
+        "id": "114581962454942281",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114581962454942281",
+          "itemId": 101,
+          "targetBlock": "114784256127584342"
+        }
+      },
+      {
+        "id": "114678804647624979",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114678804647624979",
+          "itemId": 85,
+          "blockName": "对不起...我也是第一次碰到这种情况，我只是一个普通人...",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114523768494695654",
+            "114193941389758684"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114523768494695654",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114523768494695654",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "只是一个普通人？\nCOSMOS，这不像是你说的话啊",
+          "imageId": null,
+          "itemId": 99
+        }
+      },
+      {
+        "id": "114193941389758684",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114193941389758684",
+          "itemId": 100,
+          "targetBlock": "114784256127584342"
+        }
+      },
+      {
+        "id": "114307233215887494",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114307233215887494",
+          "itemId": 94,
+          "blockName": "我没太搞懂是什么情况 不过不管怎么说 我现在需要花几分钟先把Kane弄到休眠舱里 在这之后我们讨论这个问题",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114930663635930318",
+            "114874472675698411",
+            "114930347222765356",
+            "114719772331424617",
+            "114063120800973525",
+            "114907589174162911"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114930663635930318",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114930663635930318",
+          "itemId": 119,
+          "waitHours": 0,
+          "waitMinutes": 0,
+          "waitSeconds": 3,
+          "SendToast": false
+        }
+      },
+      {
+        "id": "114874472675698411",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114874472675698411",
+          "itemId": 144,
+          "targetLevel": 5
+        }
+      },
+      {
+        "id": "114930347222765356",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114930347222765356",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "为什么你会有这个问题？\n有可能是程序出错了...\n不过不管怎么说\n我现在需要花几分钟先把Kane弄到休眠舱里\n之后我们再讨论这个问题",
+          "imageId": null,
+          "itemId": 106
+        }
+      },
+      {
+        "id": "114719772331424617",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114719772331424617",
+          "itemId": 112,
+          "waitHours": 0,
+          "waitMinutes": 2,
+          "waitSeconds": 0,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114063120800973525",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114063120800973525",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "好了，Kane已经在休眠舱里了\n已经脱离危险了\n我们继续吧",
+          "imageId": null,
+          "itemId": 118
+        }
+      },
+      {
+        "id": "114907589174162911",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114907589174162911",
+          "itemId": 127,
+          "targetBlock": "114784256127584342"
+        }
+      },
+      {
+        "id": "114784256127584342",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114784256127584342",
+          "itemId": 123,
+          "blockName": "你到底是谁？",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114633925095385931",
+            "114589209557039024",
+            "114666148487165239",
+            "114439612431639970",
+            "114004551346342542",
+            "114765612884006187",
+            "114147849490628399"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114633925095385931",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114633925095385931",
+          "itemId": 143,
+          "targetLevel": 5
+        }
+      },
+      {
+        "id": "114589209557039024",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114589209557039024",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "COSMOS是船载AI\n和我从小就认识了\n如果你不是这个COSMOS\n那么你到底是谁？",
+          "imageId": null,
+          "itemId": 126
+        }
+      },
+      {
+        "id": "114666148487165239",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114666148487165239",
+          "itemId": 152,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114190856048802554",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114666148487165239_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114666148487165239_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114439612431639970",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114439612431639970",
+          "text": "我是来自一千年前的人，我们约定过以风信子作为暗号的",
+          "targetBlock": "114465981492026620",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 153
+        }
+      },
+      {
+        "id": "114004551346342542",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114004551346342542",
+          "itemId": 154
+        }
+      },
+      {
+        "id": "114765612884006187",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114765612884006187",
+          "text": "我刚从Steam启动一个游戏，然后就跳出一个窗口，你就在里面说话",
+          "targetBlock": "114517326452976826",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 128
+        }
+      },
+      {
+        "id": "114666148487165239_VirtualElse",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114666148487165239_VirtualElse",
+          "itemId": 123456789
+        }
+      },
+      {
+        "id": "114765612884006187",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114765612884006187",
+          "text": "我刚从Steam启动一个游戏，然后就跳出一个窗口，你就在里面说话",
+          "targetBlock": "114517326452976826",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 128
+        }
+      },
+      {
+        "id": "114147849490628399",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114147849490628399",
+          "text": "我对COSMOS一点都不了解，我只是一个随处可见的普通人",
+          "targetBlock": "114517326452976826",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 129
+        }
+      },
+      {
+        "id": "114517326452976826",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114517326452976826",
+          "itemId": 130,
+          "blockName": "下一篇",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114740820034234878"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114740820034234878",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallFlowchart",
+        "data": {
+          "fileId": "114740820034234878",
+          "flowchartName": "1-2",
+          "itemId": 131
+        }
+      },
+      {
+        "id": "114465981492026620",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114465981492026620",
+          "itemId": 155,
+          "blockName": "到新分支",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114946814523743651"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114946814523743651",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallFlowchart",
+        "data": {
+          "fileId": "114946814523743651",
+          "flowchartName": "1-1-1",
+          "itemId": 156
+        }
+      },
+      {
+        "id": "1-2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartBlock",
+        "data": {
+          "fileId": "1-2",
+          "flowchartName": "1-2"
+        }
+      },
+      {
+        "id": "1-1-1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartBlock",
+        "data": {
+          "fileId": "1-1-1",
+          "flowchartName": "1-1-1"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1493796199074729->114378979697183053",
+        "type": "default",
+        "source": "1493796199074729",
+        "target": "114378979697183053",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114378979697183053->114358056880505242",
+        "type": "default",
+        "source": "114378979697183053",
+        "target": "114358056880505242",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114358056880505242->114035452268344571",
+        "type": "default",
+        "source": "114358056880505242",
+        "target": "114035452268344571",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114035452268344571->114190856048802554",
+        "type": "default",
+        "source": "114035452268344571",
+        "target": "114190856048802554",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114190856048802554->114376632662216069",
+        "type": "default",
+        "source": "114190856048802554",
+        "target": "114376632662216069",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114376632662216069->114067763629240927",
+        "type": "default",
+        "source": "114376632662216069",
+        "target": "114067763629240927",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114067763629240927->114013793321508374",
+        "type": "default",
+        "source": "114067763629240927",
+        "target": "114013793321508374",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114013793321508374->114302323124234184",
+        "type": "default",
+        "source": "114013793321508374",
+        "target": "114302323124234184",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114302323124234184->114136659227443041",
+        "type": "default",
+        "source": "114302323124234184",
+        "target": "114136659227443041",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114136659227443041->114489512391185471",
+        "type": "default",
+        "source": "114136659227443041",
+        "target": "114489512391185471",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114489512391185471->114203753341669436",
+        "type": "default",
+        "source": "114489512391185471",
+        "target": "114203753341669436",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114203753341669436->114390782547414900",
+        "type": "default",
+        "source": "114203753341669436",
+        "target": "114390782547414900",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114390782547414900->114189685639423283",
+        "type": "default",
+        "source": "114390782547414900",
+        "target": "114189685639423283",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114223635718921763->114494176211779087",
+        "type": "default",
+        "source": "114223635718921763",
+        "target": "114494176211779087",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114189685639423283->114223635718921763",
+        "type": "default",
+        "source": "114189685639423283",
+        "target": "114223635718921763",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114164353664333244->114249714103658235",
+        "type": "default",
+        "source": "114164353664333244",
+        "target": "114249714103658235",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114189685639423283->114164353664333244",
+        "type": "default",
+        "source": "114189685639423283",
+        "target": "114164353664333244",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114965771480112662->114419537853939024",
+        "type": "default",
+        "source": "114965771480112662",
+        "target": "114419537853939024",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114189685639423283->114965771480112662",
+        "type": "default",
+        "source": "114189685639423283",
+        "target": "114965771480112662",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114065068687798999->114488563369669886",
+        "type": "default",
+        "source": "114065068687798999",
+        "target": "114488563369669886",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114189685639423283->114065068687798999",
+        "type": "default",
+        "source": "114189685639423283",
+        "target": "114065068687798999",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114840259425694068->114488563369669886",
+        "type": "default",
+        "source": "114840259425694068",
+        "target": "114488563369669886",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114494176211779087->114840259425694068",
+        "type": "default",
+        "source": "114494176211779087",
+        "target": "114840259425694068",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114815131647674351->114488563369669886",
+        "type": "default",
+        "source": "114815131647674351",
+        "target": "114488563369669886",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114249714103658235->114815131647674351",
+        "type": "default",
+        "source": "114249714103658235",
+        "target": "114815131647674351",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114419537853939024->114775551723083011",
+        "type": "default",
+        "source": "114419537853939024",
+        "target": "114775551723083011",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114775551723083011->114770612659842262",
+        "type": "default",
+        "source": "114775551723083011",
+        "target": "114770612659842262",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114181257802514723->114488563369669886",
+        "type": "default",
+        "source": "114181257802514723",
+        "target": "114488563369669886",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114770612659842262->114181257802514723",
+        "type": "default",
+        "source": "114770612659842262",
+        "target": "114181257802514723",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114488563369669886->114179193569399859",
+        "type": "default",
+        "source": "114488563369669886",
+        "target": "114179193569399859",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114179193569399859->114014587293452032",
+        "type": "default",
+        "source": "114179193569399859",
+        "target": "114014587293452032",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114014587293452032->114274037263658857",
+        "type": "default",
+        "source": "114014587293452032",
+        "target": "114274037263658857",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114274037263658857->114274037263658857_Then",
+        "type": "default",
+        "source": "114274037263658857",
+        "target": "114274037263658857_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114303192754199554->114686900828276190",
+        "type": "default",
+        "source": "114303192754199554",
+        "target": "114686900828276190",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114274037263658857_Then->114303192754199554",
+        "type": "default",
+        "source": "114274037263658857_Then",
+        "target": "114303192754199554",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114274037263658857->114274037263658857_VirtualElse",
+        "type": "default",
+        "source": "114274037263658857",
+        "target": "114274037263658857_VirtualElse",
+        "markerEnd": "arrowclosed",
+        "animated": true,
+        "label": "comp.flowchart.flow.edge.false.virtual",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114274037263658857_VirtualElse->114721904306737348",
+        "type": "default",
+        "source": "114274037263658857_VirtualElse",
+        "target": "114721904306737348",
+        "markerEnd": "arrow",
+        "animated": true
+      },
+      {
+        "id": "114657143292126508->114387902906811164",
+        "type": "default",
+        "source": "114657143292126508",
+        "target": "114387902906811164",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114721904306737348->114657143292126508",
+        "type": "default",
+        "source": "114721904306737348",
+        "target": "114657143292126508",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114014912280273522->114225252872494462",
+        "type": "default",
+        "source": "114014912280273522",
+        "target": "114225252872494462",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114721904306737348->114014912280273522",
+        "type": "default",
+        "source": "114721904306737348",
+        "target": "114014912280273522",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114721904306737348->114597555181809095",
+        "type": "default",
+        "source": "114721904306737348",
+        "target": "114597555181809095",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114597555181809095->114597555181809095_Then",
+        "type": "default",
+        "source": "114597555181809095",
+        "target": "114597555181809095_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114943682282829912->114038472602654660",
+        "type": "default",
+        "source": "114943682282829912",
+        "target": "114038472602654660",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114597555181809095_Then->114943682282829912",
+        "type": "default",
+        "source": "114597555181809095_Then",
+        "target": "114943682282829912",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114597555181809095->114597555181809095_VirtualElse",
+        "type": "default",
+        "source": "114597555181809095",
+        "target": "114597555181809095_VirtualElse",
+        "markerEnd": "arrowclosed",
+        "animated": true,
+        "label": "comp.flowchart.flow.edge.false.virtual",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114597555181809095_VirtualElse->114882854505031334",
+        "type": "default",
+        "source": "114597555181809095_VirtualElse",
+        "target": "114882854505031334",
+        "markerEnd": "arrow",
+        "animated": true
+      },
+      {
+        "id": "114038472602654660->114892830598124630",
+        "type": "default",
+        "source": "114038472602654660",
+        "target": "114892830598124630",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114892830598124630->114763827725039453",
+        "type": "default",
+        "source": "114892830598124630",
+        "target": "114763827725039453",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114763827725039453->114586058026927094",
+        "type": "default",
+        "source": "114763827725039453",
+        "target": "114586058026927094",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114586058026927094->114586058026927094_Then",
+        "type": "default",
+        "source": "114586058026927094",
+        "target": "114586058026927094_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114567954156250068->114686900828276190",
+        "type": "default",
+        "source": "114567954156250068",
+        "target": "114686900828276190",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114586058026927094_Then->114567954156250068",
+        "type": "default",
+        "source": "114586058026927094_Then",
+        "target": "114567954156250068",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114586058026927094->114586058026927094_VirtualElse",
+        "type": "default",
+        "source": "114586058026927094",
+        "target": "114586058026927094_VirtualElse",
+        "markerEnd": "arrowclosed",
+        "animated": true,
+        "label": "comp.flowchart.flow.edge.false.virtual",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114586058026927094_VirtualElse->114170236707124351",
+        "type": "default",
+        "source": "114586058026927094_VirtualElse",
+        "target": "114170236707124351",
+        "markerEnd": "arrow",
+        "animated": true
+      },
+      {
+        "id": "114281535242669326->114387902906811164",
+        "type": "default",
+        "source": "114281535242669326",
+        "target": "114387902906811164",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114170236707124351->114281535242669326",
+        "type": "default",
+        "source": "114170236707124351",
+        "target": "114281535242669326",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114902450195474899->114225252872494462",
+        "type": "default",
+        "source": "114902450195474899",
+        "target": "114225252872494462",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114170236707124351->114902450195474899",
+        "type": "default",
+        "source": "114170236707124351",
+        "target": "114902450195474899",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114544884012066789->114710016385055362",
+        "type": "default",
+        "source": "114544884012066789",
+        "target": "114710016385055362",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114170236707124351->114544884012066789",
+        "type": "default",
+        "source": "114170236707124351",
+        "target": "114544884012066789",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114686900828276190->114125559901721190",
+        "type": "default",
+        "source": "114686900828276190",
+        "target": "114125559901721190",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114125559901721190->114021663345166988",
+        "type": "default",
+        "source": "114125559901721190",
+        "target": "114021663345166988",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114021663345166988->114317933490429669",
+        "type": "default",
+        "source": "114021663345166988",
+        "target": "114317933490429669",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114680223541792879->114678264464717035",
+        "type": "default",
+        "source": "114680223541792879",
+        "target": "114678264464717035",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114317933490429669->114680223541792879",
+        "type": "default",
+        "source": "114317933490429669",
+        "target": "114680223541792879",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114225252872494462->114758221129445711",
+        "type": "default",
+        "source": "114225252872494462",
+        "target": "114758221129445711",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114758221129445711->114180151499939975",
+        "type": "default",
+        "source": "114758221129445711",
+        "target": "114180151499939975",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114180151499939975->114180151499939975_Then",
+        "type": "default",
+        "source": "114180151499939975",
+        "target": "114180151499939975_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114360135055756652->114686900828276190",
+        "type": "default",
+        "source": "114360135055756652",
+        "target": "114686900828276190",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114180151499939975_Then->114360135055756652",
+        "type": "default",
+        "source": "114180151499939975_Then",
+        "target": "114360135055756652",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114180151499939975->114180151499939975_VirtualElse",
+        "type": "default",
+        "source": "114180151499939975",
+        "target": "114180151499939975_VirtualElse",
+        "markerEnd": "arrowclosed",
+        "animated": true,
+        "label": "comp.flowchart.flow.edge.false.virtual",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114180151499939975_VirtualElse->114055214015023951",
+        "type": "default",
+        "source": "114180151499939975_VirtualElse",
+        "target": "114055214015023951",
+        "markerEnd": "arrow",
+        "animated": true
+      },
+      {
+        "id": "114362462418296806->114387902906811164",
+        "type": "default",
+        "source": "114362462418296806",
+        "target": "114387902906811164",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114055214015023951->114362462418296806",
+        "type": "default",
+        "source": "114055214015023951",
+        "target": "114362462418296806",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114055214015023951->114837037948588378",
+        "type": "default",
+        "source": "114055214015023951",
+        "target": "114837037948588378",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114837037948588378->114837037948588378_Then",
+        "type": "default",
+        "source": "114837037948588378",
+        "target": "114837037948588378_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114908273124425893->114710016385055362",
+        "type": "default",
+        "source": "114908273124425893",
+        "target": "114710016385055362",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114837037948588378_Then->114908273124425893",
+        "type": "default",
+        "source": "114837037948588378_Then",
+        "target": "114908273124425893",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114837037948588378->114837037948588378_VirtualElse",
+        "type": "default",
+        "source": "114837037948588378",
+        "target": "114837037948588378_VirtualElse",
+        "markerEnd": "arrowclosed",
+        "animated": true,
+        "label": "comp.flowchart.flow.edge.false.virtual",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114837037948588378_VirtualElse->114370741828312847",
+        "type": "default",
+        "source": "114837037948588378_VirtualElse",
+        "target": "114370741828312847",
+        "markerEnd": "arrow",
+        "animated": true
+      },
+      {
+        "id": "114387902906811164->114558493833476695",
+        "type": "default",
+        "source": "114387902906811164",
+        "target": "114558493833476695",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114558493833476695->114232462726408192",
+        "type": "default",
+        "source": "114558493833476695",
+        "target": "114232462726408192",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114232462726408192->114740893363428392",
+        "type": "default",
+        "source": "114232462726408192",
+        "target": "114740893363428392",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114740893363428392->114284373830245576",
+        "type": "default",
+        "source": "114740893363428392",
+        "target": "114284373830245576",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114284373830245576->114105755587862690",
+        "type": "default",
+        "source": "114284373830245576",
+        "target": "114105755587862690",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114105755587862690->114446101640995243",
+        "type": "default",
+        "source": "114105755587862690",
+        "target": "114446101640995243",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114483545983592593->114122585725817816",
+        "type": "default",
+        "source": "114483545983592593",
+        "target": "114122585725817816",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114446101640995243->114483545983592593",
+        "type": "default",
+        "source": "114446101640995243",
+        "target": "114483545983592593",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114678264464717035->114761713525101208",
+        "type": "default",
+        "source": "114678264464717035",
+        "target": "114761713525101208",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114761713525101208->114865592315596888",
+        "type": "default",
+        "source": "114761713525101208",
+        "target": "114865592315596888",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114865592315596888->114422733282658145",
+        "type": "default",
+        "source": "114865592315596888",
+        "target": "114422733282658145",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114262177828447488->114591125646056817",
+        "type": "default",
+        "source": "114262177828447488",
+        "target": "114591125646056817",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114422733282658145->114262177828447488",
+        "type": "default",
+        "source": "114422733282658145",
+        "target": "114262177828447488",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114641230850090497->114370927792983818",
+        "type": "default",
+        "source": "114641230850090497",
+        "target": "114370927792983818",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114422733282658145->114641230850090497",
+        "type": "default",
+        "source": "114422733282658145",
+        "target": "114641230850090497",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114710016385055362->114955033259735610",
+        "type": "default",
+        "source": "114710016385055362",
+        "target": "114955033259735610",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114955033259735610->114715472078472194",
+        "type": "default",
+        "source": "114955033259735610",
+        "target": "114715472078472194",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114715472078472194->114533638347539726",
+        "type": "default",
+        "source": "114715472078472194",
+        "target": "114533638347539726",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114255507292681104->114591125646056817",
+        "type": "default",
+        "source": "114255507292681104",
+        "target": "114591125646056817",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114533638347539726->114255507292681104",
+        "type": "default",
+        "source": "114533638347539726",
+        "target": "114255507292681104",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114992243611971264->114370927792983818",
+        "type": "default",
+        "source": "114992243611971264",
+        "target": "114370927792983818",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114533638347539726->114992243611971264",
+        "type": "default",
+        "source": "114533638347539726",
+        "target": "114992243611971264",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114508046344270585->114591125646056817",
+        "type": "default",
+        "source": "114508046344270585",
+        "target": "114591125646056817",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114533638347539726->114508046344270585",
+        "type": "default",
+        "source": "114533638347539726",
+        "target": "114508046344270585",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114591125646056817->114813517492394985",
+        "type": "default",
+        "source": "114591125646056817",
+        "target": "114813517492394985",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114813517492394985->114672741184208134",
+        "type": "default",
+        "source": "114813517492394985",
+        "target": "114672741184208134",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114160275363067865->114678804647624979",
+        "type": "default",
+        "source": "114160275363067865",
+        "target": "114678804647624979",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114672741184208134->114160275363067865",
+        "type": "default",
+        "source": "114672741184208134",
+        "target": "114160275363067865",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114051457260093408->114065363516052820",
+        "type": "default",
+        "source": "114051457260093408",
+        "target": "114065363516052820",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114672741184208134->114051457260093408",
+        "type": "default",
+        "source": "114672741184208134",
+        "target": "114051457260093408",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114370927792983818->114301769909877456",
+        "type": "default",
+        "source": "114370927792983818",
+        "target": "114301769909877456",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114292198664572317->114591125646056817",
+        "type": "default",
+        "source": "114292198664572317",
+        "target": "114591125646056817",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114301769909877456->114292198664572317",
+        "type": "default",
+        "source": "114301769909877456",
+        "target": "114292198664572317",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114122585725817816->114912346993631860",
+        "type": "default",
+        "source": "114122585725817816",
+        "target": "114912346993631860",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114912346993631860->114912346993631860_Then",
+        "type": "default",
+        "source": "114912346993631860",
+        "target": "114912346993631860_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114060803980607615->114307233215887494",
+        "type": "default",
+        "source": "114060803980607615",
+        "target": "114307233215887494",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114912346993631860_Then->114060803980607615",
+        "type": "default",
+        "source": "114912346993631860_Then",
+        "target": "114060803980607615",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114912346993631860->114182852304321016",
+        "type": "default",
+        "source": "114912346993631860",
+        "target": "114182852304321016",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.false",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114327396878348778->114307233215887494",
+        "type": "default",
+        "source": "114327396878348778",
+        "target": "114307233215887494",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114182852304321016->114327396878348778",
+        "type": "default",
+        "source": "114182852304321016",
+        "target": "114327396878348778",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.false",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114690131272109943->114438488945410520",
+        "type": "default",
+        "source": "114690131272109943",
+        "target": "114438488945410520",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114438488945410520->114438488945410520_Then",
+        "type": "default",
+        "source": "114438488945410520",
+        "target": "114438488945410520_Then",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114262657846045530->114307233215887494",
+        "type": "default",
+        "source": "114262657846045530",
+        "target": "114307233215887494",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114438488945410520_Then->114262657846045530",
+        "type": "default",
+        "source": "114438488945410520_Then",
+        "target": "114262657846045530",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114438488945410520_Then->114032346125875333",
+        "type": "default",
+        "source": "114438488945410520_Then",
+        "target": "114032346125875333",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114823809800436263->114307233215887494",
+        "type": "default",
+        "source": "114823809800436263",
+        "target": "114307233215887494",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114438488945410520_Then->114823809800436263",
+        "type": "default",
+        "source": "114438488945410520_Then",
+        "target": "114823809800436263",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114065363516052820->114330452368379515",
+        "type": "default",
+        "source": "114065363516052820",
+        "target": "114330452368379515",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114581962454942281->114784256127584342",
+        "type": "default",
+        "source": "114581962454942281",
+        "target": "114784256127584342",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114330452368379515->114581962454942281",
+        "type": "default",
+        "source": "114330452368379515",
+        "target": "114581962454942281",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114678804647624979->114523768494695654",
+        "type": "default",
+        "source": "114678804647624979",
+        "target": "114523768494695654",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114193941389758684->114784256127584342",
+        "type": "default",
+        "source": "114193941389758684",
+        "target": "114784256127584342",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114523768494695654->114193941389758684",
+        "type": "default",
+        "source": "114523768494695654",
+        "target": "114193941389758684",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114307233215887494->114930663635930318",
+        "type": "default",
+        "source": "114307233215887494",
+        "target": "114930663635930318",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114930663635930318->114874472675698411",
+        "type": "default",
+        "source": "114930663635930318",
+        "target": "114874472675698411",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114874472675698411->114930347222765356",
+        "type": "default",
+        "source": "114874472675698411",
+        "target": "114930347222765356",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114930347222765356->114719772331424617",
+        "type": "default",
+        "source": "114930347222765356",
+        "target": "114719772331424617",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114719772331424617->114063120800973525",
+        "type": "default",
+        "source": "114719772331424617",
+        "target": "114063120800973525",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114907589174162911->114784256127584342",
+        "type": "default",
+        "source": "114907589174162911",
+        "target": "114784256127584342",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114063120800973525->114907589174162911",
+        "type": "default",
+        "source": "114063120800973525",
+        "target": "114907589174162911",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114784256127584342->114633925095385931",
+        "type": "default",
+        "source": "114784256127584342",
+        "target": "114633925095385931",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114633925095385931->114589209557039024",
+        "type": "default",
+        "source": "114633925095385931",
+        "target": "114589209557039024",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114589209557039024->114666148487165239",
+        "type": "default",
+        "source": "114589209557039024",
+        "target": "114666148487165239",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114666148487165239->114666148487165239_Then",
+        "type": "default",
+        "source": "114666148487165239",
+        "target": "114666148487165239_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114439612431639970->114465981492026620",
+        "type": "default",
+        "source": "114439612431639970",
+        "target": "114465981492026620",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114666148487165239_Then->114439612431639970",
+        "type": "default",
+        "source": "114666148487165239_Then",
+        "target": "114439612431639970",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114666148487165239->114666148487165239_VirtualElse",
+        "type": "default",
+        "source": "114666148487165239",
+        "target": "114666148487165239_VirtualElse",
+        "markerEnd": "arrowclosed",
+        "animated": true,
+        "label": "comp.flowchart.flow.edge.false.virtual",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114666148487165239_VirtualElse->114004551346342542",
+        "type": "default",
+        "source": "114666148487165239_VirtualElse",
+        "target": "114004551346342542",
+        "markerEnd": "arrow",
+        "animated": true
+      },
+      {
+        "id": "114765612884006187->114517326452976826",
+        "type": "default",
+        "source": "114765612884006187",
+        "target": "114517326452976826",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114004551346342542->114765612884006187",
+        "type": "default",
+        "source": "114004551346342542",
+        "target": "114765612884006187",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114147849490628399->114517326452976826",
+        "type": "default",
+        "source": "114147849490628399",
+        "target": "114517326452976826",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114004551346342542->114147849490628399",
+        "type": "default",
+        "source": "114004551346342542",
+        "target": "114147849490628399",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114740820034234878->1-2",
+        "type": "default",
+        "source": "114740820034234878",
+        "target": "1-2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114517326452976826->114740820034234878",
+        "type": "default",
+        "source": "114517326452976826",
+        "target": "114740820034234878",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114946814523743651->1-1-1",
+        "type": "default",
+        "source": "114946814523743651",
+        "target": "1-1-1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114465981492026620->114946814523743651",
+        "type": "default",
+        "source": "114465981492026620",
+        "target": "114946814523743651",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

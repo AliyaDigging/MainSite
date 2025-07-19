@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 9,
+      "edge": 9,
+      "otherFlowcharts": 0
+    },
+    "flowchartRefs": [],
+    "variableNames": {
+      "114724877747288829": {
+        "key": "name",
+        "type": "string"
+      }
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1616360648818699",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1616360648818699",
+          "components": [
+            "114724877747288829",
+            "114598798458161014",
+            "114978362231863984",
+            "114198950427010485",
+            "114954983906692998",
+            "114412405355190791",
+            "114260189477081215",
+            "114382275942048080"
+          ],
+          "m_Name": "end"
+        }
+      },
+      {
+        "id": "114724877747288829",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114724877747288829",
+          "itemId": -1,
+          "key": "name",
+          "value": null
+        }
+      },
+      {
+        "id": "114598798458161014",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114598798458161014",
+          "itemId": 0,
+          "blockName": "end",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114198950427010485",
+            "114978362231863984"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114198950427010485",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114198950427010485",
+          "text": "再见，Aliya",
+          "targetBlock": "114954983906692998",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 153
+        }
+      },
+      {
+        "id": "114978362231863984",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114978362231863984",
+          "text": "[剧终]",
+          "targetBlock": "114954983906692998",
+          "customMsgText": "再见，Aliya",
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 150
+        }
+      },
+      {
+        "id": "114954983906692998",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114954983906692998",
+          "itemId": 154,
+          "blockName": "[连接初始化]",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114412405355190791"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114412405355190791",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114412405355190791",
+          "text": "[初始化连接]",
+          "targetBlock": "114260189477081215",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 155
+        }
+      },
+      {
+        "id": "114260189477081215",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114260189477081215",
+          "itemId": 156,
+          "blockName": "重启游戏",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114382275942048080"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114382275942048080",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "RestartGame",
+        "data": {
+          "fileId": "114382275942048080",
+          "itemId": 157
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1616360648818699->114724877747288829",
+        "type": "default",
+        "source": "1616360648818699",
+        "target": "114724877747288829",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114724877747288829->114598798458161014",
+        "type": "default",
+        "source": "114724877747288829",
+        "target": "114598798458161014",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114198950427010485->114954983906692998",
+        "type": "default",
+        "source": "114198950427010485",
+        "target": "114954983906692998",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114598798458161014->114198950427010485",
+        "type": "default",
+        "source": "114598798458161014",
+        "target": "114198950427010485",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114978362231863984->114954983906692998",
+        "type": "default",
+        "source": "114978362231863984",
+        "target": "114954983906692998",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114598798458161014->114978362231863984",
+        "type": "default",
+        "source": "114598798458161014",
+        "target": "114978362231863984",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114412405355190791->114260189477081215",
+        "type": "default",
+        "source": "114412405355190791",
+        "target": "114260189477081215",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114954983906692998->114412405355190791",
+        "type": "default",
+        "source": "114954983906692998",
+        "target": "114412405355190791",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114260189477081215->114382275942048080",
+        "type": "default",
+        "source": "114260189477081215",
+        "target": "114382275942048080",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

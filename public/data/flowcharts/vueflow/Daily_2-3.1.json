@@ -1,0 +1,2490 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 90,
+      "edge": 94,
+      "otherFlowcharts": 3
+    },
+    "flowchartRefs": [
+      "Daily_2_hospital",
+      "Daily_2_factory",
+      "Daily_2_TV"
+    ],
+    "variableNames": {
+      "114820901061663710": {
+        "key": "name",
+        "type": "string"
+      },
+      "114301772765403935": {
+        "key": "day1",
+        "type": "number"
+      },
+      "114477212052711033": {
+        "key": "factory",
+        "type": "number"
+      },
+      "114935786949857606": {
+        "key": "hospital",
+        "type": "number"
+      },
+      "114726060743655366": {
+        "key": "TV",
+        "type": "number"
+      },
+      "114318365159836973": {
+        "key": "princess",
+        "type": "number"
+      }
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1187147338744623",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1187147338744623",
+          "components": [
+            "114820901061663710",
+            "114301772765403935",
+            "114477212052711033",
+            "114935786949857606",
+            "114726060743655366",
+            "114318365159836973",
+            "114324337006831841",
+            "114169696963915652",
+            "114038198985326489",
+            "114987159858737998",
+            "114193678715785112",
+            "114025289727434847",
+            "114988291229506244",
+            "114764844052846727",
+            "114861211601265947",
+            "114857488517713611",
+            "114873954626469081",
+            "114452648866921489",
+            "114821513814126157",
+            "114144997502436859",
+            "114790340629600153",
+            "114527043766231988",
+            "114249767144882780",
+            "114200206665482632",
+            "114493423877701573",
+            "114418161292603374",
+            "114628853089644355",
+            "114829687093997017",
+            "114148105056364321",
+            "114322054816075284",
+            "114861000004624071",
+            "114375269548901237",
+            "114801510462753108",
+            "114507047640470415",
+            "114448140417904580",
+            "114314695925667917",
+            "114287803032689590",
+            "114385825020001628",
+            "114331103054673845",
+            "114454709724767618",
+            "114366781568712355",
+            "114235329011990524",
+            "114233756815702618",
+            "114797722243415573",
+            "114774813443518906",
+            "114545195881200037",
+            "114724189753990370",
+            "114949991815127733",
+            "114135119560176814",
+            "114728729059665063",
+            "114405172845306611",
+            "114881332975876038",
+            "114106497399218887",
+            "114810898074006160",
+            "114612658472272415",
+            "114873835328303618",
+            "114246317012723066",
+            "114976918374912132",
+            "114415232575882480",
+            "114704744740022608",
+            "114554771324516770",
+            "114657636811815170",
+            "114483610856107079",
+            "114811193357210303",
+            "114730831235042917",
+            "114268061731495145",
+            "114966256160797933",
+            "114798298358513918",
+            "114424601223740417",
+            "114515457226422696",
+            "114282427269290164",
+            "114891665105613376",
+            "114666434624684955"
+          ],
+          "m_Name": "Daily_2-3.1"
+        }
+      },
+      {
+        "id": "114820901061663710",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114820901061663710",
+          "itemId": -1,
+          "key": "name",
+          "value": null
+        }
+      },
+      {
+        "id": "114301772765403935",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114301772765403935",
+          "itemId": -1,
+          "key": "day1",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114477212052711033",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114477212052711033",
+          "itemId": -1,
+          "key": "factory",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114935786949857606",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114935786949857606",
+          "itemId": -1,
+          "key": "hospital",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114726060743655366",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114726060743655366",
+          "itemId": -1,
+          "key": "TV",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114318365159836973",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114318365159836973",
+          "itemId": -1,
+          "key": "princess",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114324337006831841",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114324337006831841",
+          "itemId": 0,
+          "blockName": "Daily_2-3.1",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114169696963915652",
+            "114857488517713611",
+            "114038198985326489",
+            "114987159858737998",
+            "114193678715785112",
+            "114873954626469081",
+            "114452648866921489",
+            "114821513814126157"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114169696963915652",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114169696963915652",
+          "itemId": 1,
+          "waitHours": 8,
+          "waitMinutes": 0,
+          "waitSeconds": 0,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114857488517713611",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetVariable",
+        "data": {
+          "fileId": "114857488517713611",
+          "itemId": 9,
+          "setOperator": 0,
+          "anyVar": {
+            "variable": "114301772765403935",
+            "data": {
+              "stringData": {
+                "stringRef": "0",
+                "stringVal": null
+              },
+              "integerData": {
+                "integerRef": "0",
+                "integerVal": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "114038198985326489",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ChangeBGMusic",
+        "data": {
+          "fileId": "114038198985326489",
+          "itemId": 2,
+          "musicId": "休憩"
+        }
+      },
+      {
+        "id": "114987159858737998",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114987159858737998",
+          "itemId": 3,
+          "targetLevel": 2
+        }
+      },
+      {
+        "id": "114193678715785112",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114193678715785112",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "啊……头好疼\n昨天晚上睡着的时候从床上滚下来了\n有点怀疑是Penny把我挤下来的\n磕到头了好难受啊\n不过还要继续执行任务\n得赶紧整理好状态才行\n{$name}，你还在吗？我们要出发了",
+          "imageId": null,
+          "itemId": 4
+        }
+      },
+      {
+        "id": "114873954626469081",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114873954626469081",
+          "text": "我在",
+          "targetBlock": "114764844052846727",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 10
+        }
+      },
+      {
+        "id": "114452648866921489",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114452648866921489",
+          "text": "要不先休息一下",
+          "targetBlock": "114988291229506244",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 12
+        }
+      },
+      {
+        "id": "114821513814126157",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114821513814126157",
+          "itemId": 13,
+          "waitHours": 0,
+          "waitMinutes": 2,
+          "waitSeconds": 0,
+          "targetBlock": "114025289727434847",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114025289727434847",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114025289727434847",
+          "itemId": 5,
+          "blockName": "A不在吗？",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114527043766231988",
+            "114493423877701573"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114527043766231988",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114527043766231988",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "不在吗？\n没有你帮助的话确实会很难办的\n我先在这里等你一会吧",
+          "imageId": null,
+          "itemId": 16
+        }
+      },
+      {
+        "id": "114493423877701573",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114493423877701573",
+          "itemId": 19,
+          "targetBlock": "114861211601265947"
+        }
+      },
+      {
+        "id": "114988291229506244",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114988291229506244",
+          "itemId": 6,
+          "blockName": "A只是稍微磕到了而已",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114790340629600153",
+            "114200206665482632"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114790340629600153",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114790340629600153",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "只是稍微磕到了而已\n休息一下就好了\n还是赶紧完成今天的探索最为优先",
+          "imageId": null,
+          "itemId": 15
+        }
+      },
+      {
+        "id": "114200206665482632",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114200206665482632",
+          "itemId": 18,
+          "targetBlock": "114861211601265947"
+        }
+      },
+      {
+        "id": "114764844052846727",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114764844052846727",
+          "itemId": 7,
+          "blockName": "A幸好你还在",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114144997502436859",
+            "114249767144882780"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114144997502436859",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114144997502436859",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "幸好你还在\n那么我现在把防护服穿上，准备出发吧",
+          "imageId": null,
+          "itemId": 14
+        }
+      },
+      {
+        "id": "114249767144882780",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114249767144882780",
+          "itemId": 17,
+          "targetBlock": "114861211601265947"
+        }
+      },
+      {
+        "id": "114861211601265947",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114861211601265947",
+          "itemId": 8,
+          "blockName": "A飞鹰号",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114418161292603374",
+            "114628853089644355",
+            "114322054816075284"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114418161292603374",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114418161292603374",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "啊，Penny开着飞鹰号离开了\n她也已经进入今天的工作了\n我的防护服也穿好了\n最后检查一下氧气，准备好就出发",
+          "imageId": null,
+          "itemId": 20
+        }
+      },
+      {
+        "id": "114628853089644355",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114628853089644355",
+          "text": "出发吧",
+          "targetBlock": "114148105056364321",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 21
+        }
+      },
+      {
+        "id": "114322054816075284",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114322054816075284",
+          "itemId": 24,
+          "waitHours": 0,
+          "waitMinutes": 2,
+          "waitSeconds": 0,
+          "targetBlock": "114829687093997017",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114829687093997017",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114829687093997017",
+          "itemId": 22,
+          "blockName": "B大小姐",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114666434624684955",
+            "114861000004624071",
+            "114375269548901237"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114666434624684955",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetVariable",
+        "data": {
+          "fileId": "114666434624684955",
+          "itemId": 194,
+          "setOperator": 0,
+          "anyVar": {
+            "variable": "114318365159836973",
+            "data": {
+              "stringData": {
+                "stringRef": "0",
+                "stringVal": null
+              },
+              "integerData": {
+                "integerRef": "0",
+                "integerVal": 1
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "114861000004624071",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114861000004624071",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "嗯……其实Penny的表现很像是大小姐呢\n不是说有大小姐脾气\n而是一些习惯总是能够暗示出来一些身份\n当然，不过毕竟是她的过去，也不太好问很多",
+          "imageId": null,
+          "itemId": 25
+        }
+      },
+      {
+        "id": "114375269548901237",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114375269548901237",
+          "text": "出发吧",
+          "targetBlock": "114148105056364321",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 26
+        }
+      },
+      {
+        "id": "114148105056364321",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114148105056364321",
+          "itemId": 23,
+          "blockName": "B回到城市里",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114801510462753108",
+            "114507047640470415",
+            "114314695925667917",
+            "114287803032689590"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114801510462753108",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ChangeBGMusic",
+        "data": {
+          "fileId": "114801510462753108",
+          "itemId": 27,
+          "musicId": "背景"
+        }
+      },
+      {
+        "id": "114507047640470415",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114507047640470415",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "好，该再一次回到城市里了\n嗯……昨天晚上落了一些火山灰吗？\n感觉这个城市变得更加灰蒙蒙了\n地上又多了几条履带的痕迹，该死的\n希望今天的探索不要遇到那些东西",
+          "imageId": null,
+          "itemId": 28
+        }
+      },
+      {
+        "id": "114314695925667917",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114314695925667917",
+          "text": "情况看起来变得更糟了",
+          "targetBlock": "114448140417904580",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 30
+        }
+      },
+      {
+        "id": "114287803032689590",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114287803032689590",
+          "text": "希望一切变好吧",
+          "targetBlock": "114448140417904580",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 31
+        }
+      },
+      {
+        "id": "114448140417904580",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114448140417904580",
+          "itemId": 29,
+          "blockName": "B捷足先登",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114891665105613376",
+            "114385825020001628",
+            "114331103054673845",
+            "114454709724767618",
+            "114106497399218887",
+            "114810898074006160",
+            "114976918374912132",
+            "114612658472272415",
+            "114873835328303618",
+            "114415232575882480",
+            "114246317012723066",
+            "114704744740022608"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114891665105613376",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ConfigSpecialEnd",
+        "data": {
+          "fileId": "114891665105613376",
+          "itemId": 193,
+          "o2RunOutFlowchartName": "O2RunOut2",
+          "setCanTrigger": true
+        }
+      },
+      {
+        "id": "114385825020001628",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114385825020001628",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "希望剩下的东西不要被他们捷足先登吧\n嗯，探索的资源点还是之前那几个地方\n啊，我又到达之前的空投补给的位置了\n看起来那些人没有拿走我的空投\n那么，{$name}，我们今天探索哪里呢？\n不用着急，现在时间还多\n你可以等一个闲暇的时间我们再开始探索\n补给点这里氧气充足，什么都不用担心\n等你做好决定了再告诉我",
+          "imageId": null,
+          "itemId": 32
+        }
+      },
+      {
+        "id": "114331103054673845",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114331103054673845",
+          "itemId": 33,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114477212052711033",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114331103054673845_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114331103054673845_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114454709724767618",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114454709724767618",
+          "text": "赶在他们过去之前先把工厂清空吧",
+          "targetBlock": "114774813443518906",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 34
+        }
+      },
+      {
+        "id": "114106497399218887",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114106497399218887",
+          "itemId": 172
+        }
+      },
+      {
+        "id": "114810898074006160",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114810898074006160",
+          "itemId": 173,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114935786949857606",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114331103054673845_VirtualElse",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114331103054673845_VirtualElse",
+          "itemId": 123456789
+        }
+      },
+      {
+        "id": "114810898074006160",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114810898074006160",
+          "itemId": 173,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114935786949857606",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114810898074006160_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114810898074006160_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114976918374912132",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114976918374912132",
+          "text": "选择医院吧，找点医疗用品",
+          "targetBlock": "114366781568712355",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 177
+        }
+      },
+      {
+        "id": "114612658472272415",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114612658472272415",
+          "itemId": 174
+        }
+      },
+      {
+        "id": "114873835328303618",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114873835328303618",
+          "itemId": 175,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114726060743655366",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114873835328303618_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114873835328303618_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114415232575882480",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114415232575882480",
+          "text": "还是去电视台吧，那不容易遇到人",
+          "targetBlock": "114135119560176814",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 178
+        }
+      },
+      {
+        "id": "114246317012723066",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114246317012723066",
+          "itemId": 176
+        }
+      },
+      {
+        "id": "114704744740022608",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114704744740022608",
+          "itemId": 179,
+          "waitHours": 0,
+          "waitMinutes": 2,
+          "waitSeconds": 0,
+          "targetBlock": "114554771324516770",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114873835328303618_VirtualElse",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114873835328303618_VirtualElse",
+          "itemId": 123456789
+        }
+      },
+      {
+        "id": "114704744740022608",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114704744740022608",
+          "itemId": 179,
+          "waitHours": 0,
+          "waitMinutes": 2,
+          "waitSeconds": 0,
+          "targetBlock": "114554771324516770",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114366781568712355",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114366781568712355",
+          "itemId": 163,
+          "blockName": "J医院 (Copy)",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114235329011990524",
+            "114233756815702618",
+            "114797722243415573"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114235329011990524",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "BanEOGControl",
+        "data": {
+          "fileId": "114235329011990524",
+          "itemId": 36
+        }
+      },
+      {
+        "id": "114233756815702618",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetO2ConsumeFactor",
+        "data": {
+          "fileId": "114233756815702618",
+          "itemId": 37,
+          "targetValue": 5
+        }
+      },
+      {
+        "id": "114797722243415573",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallFlowchart",
+        "data": {
+          "fileId": "114797722243415573",
+          "flowchartName": "Daily_2_hospital",
+          "itemId": 38
+        }
+      },
+      {
+        "id": "114774813443518906",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114774813443518906",
+          "itemId": 164,
+          "blockName": "J工厂 (Copy)",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114545195881200037",
+            "114724189753990370",
+            "114949991815127733"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114545195881200037",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "BanEOGControl",
+        "data": {
+          "fileId": "114545195881200037",
+          "itemId": 165
+        }
+      },
+      {
+        "id": "114724189753990370",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetO2ConsumeFactor",
+        "data": {
+          "fileId": "114724189753990370",
+          "itemId": 166,
+          "targetValue": 5
+        }
+      },
+      {
+        "id": "114949991815127733",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallFlowchart",
+        "data": {
+          "fileId": "114949991815127733",
+          "flowchartName": "Daily_2_factory",
+          "itemId": 167
+        }
+      },
+      {
+        "id": "114135119560176814",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114135119560176814",
+          "itemId": 165,
+          "blockName": "J电视台 (Copy)",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114728729059665063",
+            "114405172845306611",
+            "114881332975876038"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114728729059665063",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetO2ConsumeFactor",
+        "data": {
+          "fileId": "114728729059665063",
+          "itemId": 169,
+          "targetValue": 5
+        }
+      },
+      {
+        "id": "114405172845306611",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "BanEOGControl",
+        "data": {
+          "fileId": "114405172845306611",
+          "itemId": 170
+        }
+      },
+      {
+        "id": "114881332975876038",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallFlowchart",
+        "data": {
+          "fileId": "114881332975876038",
+          "flowchartName": "Daily_2_TV",
+          "itemId": 171
+        }
+      },
+      {
+        "id": "114554771324516770",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114554771324516770",
+          "itemId": 29,
+          "blockName": "BSONG",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114282427269290164",
+            "114657636811815170",
+            "114483610856107079",
+            "114811193357210303",
+            "114730831235042917",
+            "114268061731495145",
+            "114966256160797933",
+            "114798298358513918",
+            "114424601223740417",
+            "114515457226422696"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114282427269290164",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114282427269290164",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "哼哼~哼哼~\n噔噔~噔噔~\n这地方是如此温暖~\n但道路在等待~我们踏过的足迹~\n星光般的灰尘~附着在靴上~",
+          "imageId": null,
+          "itemId": 192
+        }
+      },
+      {
+        "id": "114657636811815170",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114657636811815170",
+          "itemId": 182,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114477212052711033",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114657636811815170_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114657636811815170_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114483610856107079",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114483610856107079",
+          "text": "赶在他们过去之前先把工厂清空吧",
+          "targetBlock": "114774813443518906",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 183
+        }
+      },
+      {
+        "id": "114811193357210303",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114811193357210303",
+          "itemId": 184
+        }
+      },
+      {
+        "id": "114730831235042917",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114730831235042917",
+          "itemId": 185,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114935786949857606",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114657636811815170_VirtualElse",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114657636811815170_VirtualElse",
+          "itemId": 123456789
+        }
+      },
+      {
+        "id": "114730831235042917",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114730831235042917",
+          "itemId": 185,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114935786949857606",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114730831235042917_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114730831235042917_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114268061731495145",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114268061731495145",
+          "text": "选择医院吧，找点医疗用品",
+          "targetBlock": "114366781568712355",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 186
+        }
+      },
+      {
+        "id": "114966256160797933",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114966256160797933",
+          "itemId": 187
+        }
+      },
+      {
+        "id": "114798298358513918",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "If",
+        "data": {
+          "fileId": "114798298358513918",
+          "itemId": 188,
+          "anyOrAllConditions": 0,
+          "conditions": [
+            {
+              "compareOperator": 0,
+              "anyVar": {
+                "variable": "114726060743655366",
+                "data": {
+                  "stringData": {
+                    "stringRef": "0",
+                    "stringVal": null
+                  },
+                  "integerData": {
+                    "integerRef": "0",
+                    "integerVal": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "114798298358513918_Then",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Then",
+        "data": {
+          "fileId": "114798298358513918_Then",
+          "itemId": 123456
+        }
+      },
+      {
+        "id": "114424601223740417",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114424601223740417",
+          "text": "还是去电视台吧，那不容易遇到人",
+          "targetBlock": "114135119560176814",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 189
+        }
+      },
+      {
+        "id": "114515457226422696",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "EndIf",
+        "data": {
+          "fileId": "114515457226422696",
+          "itemId": 190
+        }
+      },
+      {
+        "id": "114798298358513918_VirtualElse",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Else",
+        "data": {
+          "fileId": "114798298358513918_VirtualElse",
+          "itemId": 123456789
+        }
+      },
+      {
+        "id": "Daily_2_hospital",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartBlock",
+        "data": {
+          "fileId": "Daily_2_hospital",
+          "flowchartName": "Daily_2_hospital"
+        }
+      },
+      {
+        "id": "Daily_2_factory",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartBlock",
+        "data": {
+          "fileId": "Daily_2_factory",
+          "flowchartName": "Daily_2_factory"
+        }
+      },
+      {
+        "id": "Daily_2_TV",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartBlock",
+        "data": {
+          "fileId": "Daily_2_TV",
+          "flowchartName": "Daily_2_TV"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1187147338744623->114820901061663710",
+        "type": "default",
+        "source": "1187147338744623",
+        "target": "114820901061663710",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114820901061663710->114301772765403935",
+        "type": "default",
+        "source": "114820901061663710",
+        "target": "114301772765403935",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114301772765403935->114477212052711033",
+        "type": "default",
+        "source": "114301772765403935",
+        "target": "114477212052711033",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114477212052711033->114935786949857606",
+        "type": "default",
+        "source": "114477212052711033",
+        "target": "114935786949857606",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114935786949857606->114726060743655366",
+        "type": "default",
+        "source": "114935786949857606",
+        "target": "114726060743655366",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114726060743655366->114318365159836973",
+        "type": "default",
+        "source": "114726060743655366",
+        "target": "114318365159836973",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114318365159836973->114324337006831841",
+        "type": "default",
+        "source": "114318365159836973",
+        "target": "114324337006831841",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114324337006831841->114169696963915652",
+        "type": "default",
+        "source": "114324337006831841",
+        "target": "114169696963915652",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114169696963915652->114857488517713611",
+        "type": "default",
+        "source": "114169696963915652",
+        "target": "114857488517713611",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114857488517713611->114038198985326489",
+        "type": "default",
+        "source": "114857488517713611",
+        "target": "114038198985326489",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114038198985326489->114987159858737998",
+        "type": "default",
+        "source": "114038198985326489",
+        "target": "114987159858737998",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114987159858737998->114193678715785112",
+        "type": "default",
+        "source": "114987159858737998",
+        "target": "114193678715785112",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114873954626469081->114764844052846727",
+        "type": "default",
+        "source": "114873954626469081",
+        "target": "114764844052846727",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114193678715785112->114873954626469081",
+        "type": "default",
+        "source": "114193678715785112",
+        "target": "114873954626469081",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114452648866921489->114988291229506244",
+        "type": "default",
+        "source": "114452648866921489",
+        "target": "114988291229506244",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114193678715785112->114452648866921489",
+        "type": "default",
+        "source": "114193678715785112",
+        "target": "114452648866921489",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114821513814126157->114025289727434847",
+        "type": "default",
+        "source": "114821513814126157",
+        "target": "114025289727434847",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114193678715785112->114821513814126157",
+        "type": "default",
+        "source": "114193678715785112",
+        "target": "114821513814126157",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114025289727434847->114527043766231988",
+        "type": "default",
+        "source": "114025289727434847",
+        "target": "114527043766231988",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114493423877701573->114861211601265947",
+        "type": "default",
+        "source": "114493423877701573",
+        "target": "114861211601265947",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114527043766231988->114493423877701573",
+        "type": "default",
+        "source": "114527043766231988",
+        "target": "114493423877701573",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114988291229506244->114790340629600153",
+        "type": "default",
+        "source": "114988291229506244",
+        "target": "114790340629600153",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114200206665482632->114861211601265947",
+        "type": "default",
+        "source": "114200206665482632",
+        "target": "114861211601265947",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114790340629600153->114200206665482632",
+        "type": "default",
+        "source": "114790340629600153",
+        "target": "114200206665482632",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114764844052846727->114144997502436859",
+        "type": "default",
+        "source": "114764844052846727",
+        "target": "114144997502436859",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114249767144882780->114861211601265947",
+        "type": "default",
+        "source": "114249767144882780",
+        "target": "114861211601265947",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114144997502436859->114249767144882780",
+        "type": "default",
+        "source": "114144997502436859",
+        "target": "114249767144882780",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114861211601265947->114418161292603374",
+        "type": "default",
+        "source": "114861211601265947",
+        "target": "114418161292603374",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114628853089644355->114148105056364321",
+        "type": "default",
+        "source": "114628853089644355",
+        "target": "114148105056364321",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114418161292603374->114628853089644355",
+        "type": "default",
+        "source": "114418161292603374",
+        "target": "114628853089644355",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114322054816075284->114829687093997017",
+        "type": "default",
+        "source": "114322054816075284",
+        "target": "114829687093997017",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114418161292603374->114322054816075284",
+        "type": "default",
+        "source": "114418161292603374",
+        "target": "114322054816075284",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114829687093997017->114666434624684955",
+        "type": "default",
+        "source": "114829687093997017",
+        "target": "114666434624684955",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114666434624684955->114861000004624071",
+        "type": "default",
+        "source": "114666434624684955",
+        "target": "114861000004624071",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114375269548901237->114148105056364321",
+        "type": "default",
+        "source": "114375269548901237",
+        "target": "114148105056364321",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114861000004624071->114375269548901237",
+        "type": "default",
+        "source": "114861000004624071",
+        "target": "114375269548901237",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114148105056364321->114801510462753108",
+        "type": "default",
+        "source": "114148105056364321",
+        "target": "114801510462753108",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114801510462753108->114507047640470415",
+        "type": "default",
+        "source": "114801510462753108",
+        "target": "114507047640470415",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114314695925667917->114448140417904580",
+        "type": "default",
+        "source": "114314695925667917",
+        "target": "114448140417904580",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114507047640470415->114314695925667917",
+        "type": "default",
+        "source": "114507047640470415",
+        "target": "114314695925667917",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114287803032689590->114448140417904580",
+        "type": "default",
+        "source": "114287803032689590",
+        "target": "114448140417904580",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114507047640470415->114287803032689590",
+        "type": "default",
+        "source": "114507047640470415",
+        "target": "114287803032689590",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114448140417904580->114891665105613376",
+        "type": "default",
+        "source": "114448140417904580",
+        "target": "114891665105613376",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114891665105613376->114385825020001628",
+        "type": "default",
+        "source": "114891665105613376",
+        "target": "114385825020001628",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114385825020001628->114331103054673845",
+        "type": "default",
+        "source": "114385825020001628",
+        "target": "114331103054673845",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114331103054673845->114331103054673845_Then",
+        "type": "default",
+        "source": "114331103054673845",
+        "target": "114331103054673845_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114454709724767618->114774813443518906",
+        "type": "default",
+        "source": "114454709724767618",
+        "target": "114774813443518906",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114331103054673845_Then->114454709724767618",
+        "type": "default",
+        "source": "114331103054673845_Then",
+        "target": "114454709724767618",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114331103054673845->114331103054673845_VirtualElse",
+        "type": "default",
+        "source": "114331103054673845",
+        "target": "114331103054673845_VirtualElse",
+        "markerEnd": "arrowclosed",
+        "animated": true,
+        "label": "comp.flowchart.flow.edge.false.virtual",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114331103054673845_VirtualElse->114106497399218887",
+        "type": "default",
+        "source": "114331103054673845_VirtualElse",
+        "target": "114106497399218887",
+        "markerEnd": "arrow",
+        "animated": true
+      },
+      {
+        "id": "114106497399218887->114810898074006160",
+        "type": "default",
+        "source": "114106497399218887",
+        "target": "114810898074006160",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114810898074006160->114810898074006160_Then",
+        "type": "default",
+        "source": "114810898074006160",
+        "target": "114810898074006160_Then",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114976918374912132->114366781568712355",
+        "type": "default",
+        "source": "114976918374912132",
+        "target": "114366781568712355",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114810898074006160_Then->114976918374912132",
+        "type": "default",
+        "source": "114810898074006160_Then",
+        "target": "114976918374912132",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114810898074006160_Then->114612658472272415",
+        "type": "default",
+        "source": "114810898074006160_Then",
+        "target": "114612658472272415",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114810898074006160_Then->114873835328303618",
+        "type": "default",
+        "source": "114810898074006160_Then",
+        "target": "114873835328303618",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114873835328303618->114873835328303618_Then",
+        "type": "default",
+        "source": "114873835328303618",
+        "target": "114873835328303618_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114415232575882480->114135119560176814",
+        "type": "default",
+        "source": "114415232575882480",
+        "target": "114135119560176814",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114873835328303618_Then->114415232575882480",
+        "type": "default",
+        "source": "114873835328303618_Then",
+        "target": "114415232575882480",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114246317012723066->114704744740022608",
+        "type": "default",
+        "source": "114246317012723066",
+        "target": "114704744740022608",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114873835328303618->114873835328303618_VirtualElse",
+        "type": "default",
+        "source": "114873835328303618",
+        "target": "114873835328303618_VirtualElse",
+        "markerEnd": "arrowclosed",
+        "animated": true,
+        "label": "comp.flowchart.flow.edge.false.virtual",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114873835328303618_VirtualElse->114246317012723066",
+        "type": "default",
+        "source": "114873835328303618_VirtualElse",
+        "target": "114246317012723066",
+        "markerEnd": "arrow",
+        "animated": true
+      },
+      {
+        "id": "114704744740022608->114554771324516770",
+        "type": "default",
+        "source": "114704744740022608",
+        "target": "114554771324516770",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114810898074006160_Then->114704744740022608",
+        "type": "default",
+        "source": "114810898074006160_Then",
+        "target": "114704744740022608",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114366781568712355->114235329011990524",
+        "type": "default",
+        "source": "114366781568712355",
+        "target": "114235329011990524",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114235329011990524->114233756815702618",
+        "type": "default",
+        "source": "114235329011990524",
+        "target": "114233756815702618",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114797722243415573->Daily_2_hospital",
+        "type": "default",
+        "source": "114797722243415573",
+        "target": "Daily_2_hospital",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114233756815702618->114797722243415573",
+        "type": "default",
+        "source": "114233756815702618",
+        "target": "114797722243415573",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114774813443518906->114545195881200037",
+        "type": "default",
+        "source": "114774813443518906",
+        "target": "114545195881200037",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114545195881200037->114724189753990370",
+        "type": "default",
+        "source": "114545195881200037",
+        "target": "114724189753990370",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114949991815127733->Daily_2_factory",
+        "type": "default",
+        "source": "114949991815127733",
+        "target": "Daily_2_factory",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114724189753990370->114949991815127733",
+        "type": "default",
+        "source": "114724189753990370",
+        "target": "114949991815127733",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114135119560176814->114728729059665063",
+        "type": "default",
+        "source": "114135119560176814",
+        "target": "114728729059665063",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114728729059665063->114405172845306611",
+        "type": "default",
+        "source": "114728729059665063",
+        "target": "114405172845306611",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114881332975876038->Daily_2_TV",
+        "type": "default",
+        "source": "114881332975876038",
+        "target": "Daily_2_TV",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114405172845306611->114881332975876038",
+        "type": "default",
+        "source": "114405172845306611",
+        "target": "114881332975876038",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114554771324516770->114282427269290164",
+        "type": "default",
+        "source": "114554771324516770",
+        "target": "114282427269290164",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114282427269290164->114657636811815170",
+        "type": "default",
+        "source": "114282427269290164",
+        "target": "114657636811815170",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114657636811815170->114657636811815170_Then",
+        "type": "default",
+        "source": "114657636811815170",
+        "target": "114657636811815170_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114483610856107079->114774813443518906",
+        "type": "default",
+        "source": "114483610856107079",
+        "target": "114774813443518906",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114657636811815170_Then->114483610856107079",
+        "type": "default",
+        "source": "114657636811815170_Then",
+        "target": "114483610856107079",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114657636811815170->114657636811815170_VirtualElse",
+        "type": "default",
+        "source": "114657636811815170",
+        "target": "114657636811815170_VirtualElse",
+        "markerEnd": "arrowclosed",
+        "animated": true,
+        "label": "comp.flowchart.flow.edge.false.virtual",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114657636811815170_VirtualElse->114811193357210303",
+        "type": "default",
+        "source": "114657636811815170_VirtualElse",
+        "target": "114811193357210303",
+        "markerEnd": "arrow",
+        "animated": true
+      },
+      {
+        "id": "114811193357210303->114730831235042917",
+        "type": "default",
+        "source": "114811193357210303",
+        "target": "114730831235042917",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114730831235042917->114730831235042917_Then",
+        "type": "default",
+        "source": "114730831235042917",
+        "target": "114730831235042917_Then",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114268061731495145->114366781568712355",
+        "type": "default",
+        "source": "114268061731495145",
+        "target": "114366781568712355",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114730831235042917_Then->114268061731495145",
+        "type": "default",
+        "source": "114730831235042917_Then",
+        "target": "114268061731495145",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114730831235042917_Then->114966256160797933",
+        "type": "default",
+        "source": "114730831235042917_Then",
+        "target": "114966256160797933",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114730831235042917_Then->114798298358513918",
+        "type": "default",
+        "source": "114730831235042917_Then",
+        "target": "114798298358513918",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114798298358513918->114798298358513918_Then",
+        "type": "default",
+        "source": "114798298358513918",
+        "target": "114798298358513918_Then",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114424601223740417->114135119560176814",
+        "type": "default",
+        "source": "114424601223740417",
+        "target": "114135119560176814",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114798298358513918_Then->114424601223740417",
+        "type": "default",
+        "source": "114798298358513918_Then",
+        "target": "114424601223740417",
+        "markerEnd": "arrowclosed",
+        "animated": false,
+        "label": "comp.flowchart.flow.edge.true",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "114798298358513918->114798298358513918_VirtualElse",
+        "type": "default",
+        "source": "114798298358513918",
+        "target": "114798298358513918_VirtualElse",
+        "markerEnd": "arrowclosed",
+        "animated": true,
+        "label": "comp.flowchart.flow.edge.false.virtual",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "114798298358513918_VirtualElse->114515457226422696",
+        "type": "default",
+        "source": "114798298358513918_VirtualElse",
+        "target": "114515457226422696",
+        "markerEnd": "arrow",
+        "animated": true
+      }
+    ]
+  }
+}

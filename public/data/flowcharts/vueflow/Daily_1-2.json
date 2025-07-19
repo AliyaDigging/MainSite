@@ -1,0 +1,5114 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 187,
+      "edge": 214,
+      "otherFlowcharts": 1
+    },
+    "flowchartRefs": [
+      "Daily_1-3"
+    ],
+    "variableNames": {
+      "114230023247280949": {
+        "key": "name",
+        "type": "string"
+      },
+      "114403057728023822": {
+        "key": "samplesave",
+        "type": "number"
+      },
+      "114013349928654532": {
+        "key": "Love",
+        "type": "number"
+      },
+      "114052712169407238": {
+        "key": "Flag",
+        "type": "number"
+      },
+      "114660167580294852": {
+        "key": "IS_MOBILE_ADAPT",
+        "type": "number"
+      }
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1455831195690047",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1455831195690047",
+          "components": [
+            "114230023247280949",
+            "114403057728023822",
+            "114013349928654532",
+            "114052712169407238",
+            "114660167580294852",
+            "114788873344771176",
+            "114419016114633529",
+            "114005501749735416",
+            "114960589389062893",
+            "114088399843286142",
+            "114153539232995556",
+            "114840329128711119",
+            "114774413007416025",
+            "114257070004390636",
+            "114002018937504599",
+            "114340170462249091",
+            "114172967671953204",
+            "114371767187398162",
+            "114261419083480838",
+            "114965518109152671",
+            "114662221345198244",
+            "114535122847581032",
+            "114782046876890517",
+            "114211418793446923",
+            "114402519544581258",
+            "114553733574015041",
+            "114141019198402327",
+            "114263200023859929",
+            "114501238385286055",
+            "114818068735231100",
+            "114789292941752549",
+            "114174535625468088",
+            "114070061348121098",
+            "114494294978255886",
+            "114609852522016298",
+            "114257122173849944",
+            "114694556013215622",
+            "114867220015086952",
+            "114136307774569644",
+            "114228690686619706",
+            "114633585449326190",
+            "114175565666563322",
+            "114674561170272088",
+            "114701336988016495",
+            "114803340783356920",
+            "114747995767642377",
+            "114079928954030244",
+            "114333426491564057",
+            "114960131766504563",
+            "114580425460236445",
+            "114037291207613546",
+            "114115210498700191",
+            "114044538456106432",
+            "114922475846757045",
+            "114161218259143125",
+            "114221138840705171",
+            "114495681036958413",
+            "114514901372603692",
+            "114700740264451137",
+            "114262141478955789",
+            "114766157227025558",
+            "114609504008112231",
+            "114343106998113250",
+            "114608425096239737",
+            "114727465234361657",
+            "114715069996281094",
+            "114729501136147447",
+            "114190751324872544",
+            "114164098453155413",
+            "114751674351195545",
+            "114405653917448222",
+            "114797192813370127",
+            "114342508563112764",
+            "114002854714685813",
+            "114912171228219844",
+            "114252038469277284",
+            "114927861726097807",
+            "114539500668284021",
+            "114139204439538694",
+            "114220059954380467",
+            "114922246546021980",
+            "114797367060769557",
+            "114111663356175878",
+            "114205537978674732",
+            "114067700210440246",
+            "114797043469874740",
+            "114735870818441994",
+            "114816195533694045",
+            "114199390493801170",
+            "114481709329553287",
+            "114129769537296929",
+            "114940856386594201",
+            "114589441315117384",
+            "114599142515119782",
+            "114670947280730987",
+            "114365796515859226",
+            "114461751212928746",
+            "114754462943081377",
+            "114490379911102744",
+            "114940481076392634",
+            "114095283824277895",
+            "114778282728803094",
+            "114615113859079960",
+            "114956501843361641",
+            "114178126138196662",
+            "114884316832709991",
+            "114200909680548110",
+            "114016655897585962",
+            "114757593533399551",
+            "114392189743240153",
+            "114303637152013739",
+            "114666855789854473",
+            "114032667784301017",
+            "114078792049642077",
+            "114197006723591482",
+            "114755705538313236",
+            "114669808958993258",
+            "114212908276959494",
+            "114060575731700080",
+            "114377029146555074",
+            "114040672074713284",
+            "114885790872031798",
+            "114477993997609931",
+            "114334684166173263",
+            "114836084842785928",
+            "114419040154966989",
+            "114082062948022109",
+            "114070039111438425",
+            "114821048068754640",
+            "114830128701529860",
+            "114332623768309733",
+            "114370561745694071",
+            "114358217871418201",
+            "114416822942134471",
+            "114769729281780101",
+            "114152514545880104",
+            "114481986721087166",
+            "114134122562562656",
+            "114385151949262084",
+            "114566951306679475",
+            "114076941101562195",
+            "114645719020515995",
+            "114715375022300040",
+            "114067926967127225",
+            "114579577914601267",
+            "114497732446781885",
+            "114911731567376070",
+            "114840480180289865",
+            "114293897107186653",
+            "114285952888121373",
+            "114398976297528542",
+            "114079364011021700",
+            "114687584635330904",
+            "114278990662978974",
+            "114983410749273693",
+            "114799579207625636",
+            "114027326155450538",
+            "114981811340855413",
+            "114288528445627161",
+            "114876667288335872",
+            "114399762086627386",
+            "114872521272424475",
+            "114227129056721499",
+            "114426413659401834",
+            "114498495875523217",
+            "114770961368916131",
+            "114934877169926392",
+            "114209535913732325",
+            "114810908947550514",
+            "114286455462783992",
+            "114883580222418102",
+            "114754064468787377",
+            "114754259607083169",
+            "114373785223147199",
+            "114976713409105508",
+            "114289187959370812",
+            "114545167085175114",
+            "114693073978255833",
+            "114078967630012497",
+            "114898118672063006",
+            "114571346424196353",
+            "114513301188946588",
+            "114265705108863875",
+            "114381375536065315",
+            "114355057539467998"
+          ],
+          "m_Name": "Daily_1-2"
+        }
+      },
+      {
+        "id": "114230023247280949",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114230023247280949",
+          "itemId": -1,
+          "key": "name",
+          "value": null
+        }
+      },
+      {
+        "id": "114403057728023822",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114403057728023822",
+          "itemId": -1,
+          "key": "samplesave",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114013349928654532",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114013349928654532",
+          "itemId": -1,
+          "key": "Love",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114052712169407238",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114052712169407238",
+          "itemId": -1,
+          "key": "Flag",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114660167580294852",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114660167580294852",
+          "itemId": -1,
+          "key": "IS_MOBILE_ADAPT",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114788873344771176",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114788873344771176",
+          "itemId": 0,
+          "blockName": "Daily_1-2",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114227129056721499",
+            "114355057539467998",
+            "114419016114633529",
+            "114005501749735416",
+            "114960589389062893",
+            "114088399843286142"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114227129056721499",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitPreciseTime",
+        "data": {
+          "fileId": "114227129056721499",
+          "itemId": 184,
+          "hourNum": 9,
+          "minuteNum": 30,
+          "needNewDay": true,
+          "sendToast": true,
+          "isFirstWaitPreciseTime": false
+        }
+      },
+      {
+        "id": "114355057539467998",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114355057539467998",
+          "itemId": 210,
+          "targetLevel": 2
+        }
+      },
+      {
+        "id": "114419016114633529",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114419016114633529",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "准备妥当\n出发去沙滩！",
+          "imageId": null,
+          "itemId": 21
+        }
+      },
+      {
+        "id": "114005501749735416",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114005501749735416",
+          "text": "起这么早",
+          "targetBlock": "114153539232995556",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 22
+        }
+      },
+      {
+        "id": "114960589389062893",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114960589389062893",
+          "text": "期待沙滩照片",
+          "targetBlock": "114840329128711119",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 24
+        }
+      },
+      {
+        "id": "114088399843286142",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114088399843286142",
+          "itemId": 28,
+          "waitHours": 0,
+          "waitMinutes": 30,
+          "waitSeconds": 0,
+          "targetBlock": "114002018937504599",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114153539232995556",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114153539232995556",
+          "itemId": 29,
+          "blockName": "这还早了？",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114774413007416025",
+            "114371767187398162"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114774413007416025",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114774413007416025",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "这还早了？",
+          "imageId": null,
+          "itemId": 31
+        }
+      },
+      {
+        "id": "114371767187398162",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114371767187398162",
+          "itemId": 36,
+          "targetBlock": "114002018937504599"
+        }
+      },
+      {
+        "id": "114840329128711119",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114840329128711119",
+          "itemId": 30,
+          "blockName": "这么好看的风景不能浪费了",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114257070004390636",
+            "114261419083480838"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114257070004390636",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114257070004390636",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "肯定会拍的\n这么好看的风景不能浪费了",
+          "imageId": null,
+          "itemId": 32
+        }
+      },
+      {
+        "id": "114261419083480838",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114261419083480838",
+          "itemId": 37,
+          "targetBlock": "114002018937504599"
+        }
+      },
+      {
+        "id": "114002018937504599",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114002018937504599",
+          "itemId": 33,
+          "blockName": "今天天气真好啊",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114340170462249091",
+            "114172967671953204",
+            "114535122847581032"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114340170462249091",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114340170462249091",
+          "itemId": 34,
+          "waitHours": 0,
+          "waitMinutes": 0,
+          "waitSeconds": 3,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114172967671953204",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114172967671953204",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "今天天气真好啊\n从这个房间就能看到沙滩\n趁现在还没有人得赶紧去找个好地方插遮阳伞了",
+          "imageId": null,
+          "itemId": 35
+        }
+      },
+      {
+        "id": "114535122847581032",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114535122847581032",
+          "itemId": 40,
+          "targetBlock": "114965518109152671"
+        }
+      },
+      {
+        "id": "114965518109152671",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114965518109152671",
+          "itemId": 38,
+          "blockName": "啊这里禁止挖沙",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114426413659401834",
+            "114662221345198244",
+            "114782046876890517",
+            "114211418793446923"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114426413659401834",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitPreciseTime",
+        "data": {
+          "fileId": "114426413659401834",
+          "itemId": 185,
+          "hourNum": 10,
+          "minuteNum": 48,
+          "needNewDay": false,
+          "sendToast": true,
+          "isFirstWaitPreciseTime": false
+        }
+      },
+      {
+        "id": "114662221345198244",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114662221345198244",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "呼！\n遮阳伞，搞定！\n防晒霜，搞定！\n墨镜！搞定\n铲子和水桶...\n啊这里禁止挖沙",
+          "imageId": null,
+          "itemId": 39
+        }
+      },
+      {
+        "id": "114782046876890517",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114782046876890517",
+          "text": "别用我这里当清单啊！",
+          "targetBlock": "114402519544581258",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 41
+        }
+      },
+      {
+        "id": "114211418793446923",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114211418793446923",
+          "text": "真的跟小孩子一样兴奋啊",
+          "targetBlock": "114553733574015041",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 42
+        }
+      },
+      {
+        "id": "114402519544581258",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114402519544581258",
+          "itemId": 43,
+          "blockName": "就用了",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114141019198402327",
+            "114501238385286055",
+            "114818068735231100"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114141019198402327",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114141019198402327",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "就用了",
+          "imageId": null,
+          "itemId": 45
+        }
+      },
+      {
+        "id": "114501238385286055",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114501238385286055",
+          "text": "那你用吧",
+          "targetBlock": "114070061348121098",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 47
+        }
+      },
+      {
+        "id": "114818068735231100",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114818068735231100",
+          "text": "（敢怒不敢言）",
+          "targetBlock": "114070061348121098",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 48
+        }
+      },
+      {
+        "id": "114553733574015041",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114553733574015041",
+          "itemId": 44,
+          "blockName": "你来你也一样",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114263200023859929",
+            "114789292941752549",
+            "114174535625468088"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114263200023859929",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114263200023859929",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "你来你也一样",
+          "imageId": null,
+          "itemId": 46
+        }
+      },
+      {
+        "id": "114789292941752549",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114789292941752549",
+          "text": "我又不是没看过海",
+          "targetBlock": "114070061348121098",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 49
+        }
+      },
+      {
+        "id": "114174535625468088",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114174535625468088",
+          "text": "那我倒是想看看到底海景到底能好看到什么地步",
+          "targetBlock": "114070061348121098",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 50
+        }
+      },
+      {
+        "id": "114070061348121098",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114070061348121098",
+          "itemId": 51,
+          "blockName": "得找人帮我拍一张",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114609852522016298",
+            "114494294978255886",
+            "114136307774569644"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114609852522016298",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114609852522016298",
+          "itemId": 53,
+          "waitHours": 0,
+          "waitMinutes": 0,
+          "waitSeconds": 3,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114494294978255886",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114494294978255886",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "我突然看到有个角度好适合拍照啊\n得找人帮我拍一张",
+          "imageId": null,
+          "itemId": 52
+        }
+      },
+      {
+        "id": "114136307774569644",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114136307774569644",
+          "itemId": 57,
+          "targetBlock": "114257122173849944"
+        }
+      },
+      {
+        "id": "114257122173849944",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114257122173849944",
+          "itemId": 54,
+          "blockName": "怎么样",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114867220015086952",
+            "114872521272424475",
+            "114694556013215622",
+            "114228690686619706",
+            "114633585449326190",
+            "114175565666563322",
+            "114674561170272088"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114867220015086952",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114867220015086952",
+          "itemId": 56,
+          "waitHours": 0,
+          "waitMinutes": 0,
+          "waitSeconds": 52,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114872521272424475",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114872521272424475",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": null,
+          "imageId": "12",
+          "itemId": 183
+        }
+      },
+      {
+        "id": "114694556013215622",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114694556013215622",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "怎么样",
+          "imageId": null,
+          "itemId": 55
+        }
+      },
+      {
+        "id": "114228690686619706",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114228690686619706",
+          "text": "好看",
+          "targetBlock": "114079928954030244",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 58
+        }
+      },
+      {
+        "id": "114633585449326190",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114633585449326190",
+          "text": "太好看了",
+          "targetBlock": "114079928954030244",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 59
+        }
+      },
+      {
+        "id": "114175565666563322",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114175565666563322",
+          "text": "很震撼",
+          "targetBlock": "114079928954030244",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 60
+        }
+      },
+      {
+        "id": "114674561170272088",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114674561170272088",
+          "text": "你真好看",
+          "targetBlock": "114701336988016495",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 61
+        }
+      },
+      {
+        "id": "114701336988016495",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114701336988016495",
+          "itemId": 62,
+          "blockName": "别光看我啊",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114803340783356920",
+            "114747995767642377"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114803340783356920",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114803340783356920",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "别光看我啊\n这景色\n怎么样",
+          "imageId": null,
+          "itemId": 63
+        }
+      },
+      {
+        "id": "114747995767642377",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114747995767642377",
+          "text": "很震撼",
+          "targetBlock": "114079928954030244",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 64
+        }
+      },
+      {
+        "id": "114079928954030244",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114079928954030244",
+          "itemId": 65,
+          "blockName": "尤其是天边那巨大的气态行星——贝索星",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114333426491564057",
+            "114960131766504563",
+            "114580425460236445"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114333426491564057",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114333426491564057",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "是吧是吧\n尤其是天边那巨大的气态行星——贝索星\n有一种压倒性的震撼感\n其中还有一点恐惧感\n但会转变为兴奋\n可惜这次没机会看到日食了\n不然会更加震撼",
+          "imageId": null,
+          "itemId": 66
+        }
+      },
+      {
+        "id": "114960131766504563",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114960131766504563",
+          "text": "贝索星？感觉和贝索尼亚好像啊",
+          "targetBlock": "114037291207613546",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 67
+        }
+      },
+      {
+        "id": "114580425460236445",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114580425460236445",
+          "text": "贝索尼亚星离这颗气态行星这么近吗",
+          "targetBlock": "114115210498700191",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 68
+        }
+      },
+      {
+        "id": "114037291207613546",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114037291207613546",
+          "itemId": 69,
+          "blockName": "当然，因为贝索尼亚星是它的卫星嘛",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114044538456106432",
+            "114495681036958413"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114044538456106432",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114044538456106432",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "当然，因为贝索尼亚星是它的卫星嘛",
+          "imageId": null,
+          "itemId": 71
+        }
+      },
+      {
+        "id": "114495681036958413",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114495681036958413",
+          "itemId": 75,
+          "targetBlock": "114161218259143125"
+        }
+      },
+      {
+        "id": "114115210498700191",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114115210498700191",
+          "itemId": 70,
+          "blockName": "你看，贝索尼亚的名字都是从贝索星来的",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114922475846757045",
+            "114514901372603692"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114922475846757045",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114922475846757045",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "当然，因为贝索尼亚星是它的卫星嘛\n你看，贝索尼亚的名字都是从贝索星来的",
+          "imageId": null,
+          "itemId": 72
+        }
+      },
+      {
+        "id": "114514901372603692",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114514901372603692",
+          "itemId": 76,
+          "targetBlock": "114161218259143125"
+        }
+      },
+      {
+        "id": "114161218259143125",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114161218259143125",
+          "itemId": 73,
+          "blockName": "贝索尼亚绕贝索星的公转周期差不多是1.2个地球日",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114221138840705171",
+            "114700740264451137",
+            "114262141478955789",
+            "114766157227025558"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114221138840705171",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114221138840705171",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "贝索尼亚绕贝索星的公转周期差不多是1.2个地球日\n所以...\n等会，让我来考考你\n贝索尼亚星昼夜更替周期是比公转周期长还是短？",
+          "imageId": null,
+          "itemId": 74
+        }
+      },
+      {
+        "id": "114700740264451137",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114700740264451137",
+          "text": "长",
+          "targetBlock": "114609504008112231",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 77
+        }
+      },
+      {
+        "id": "114262141478955789",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114262141478955789",
+          "text": "短",
+          "targetBlock": "114608425096239737",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 78
+        }
+      },
+      {
+        "id": "114766157227025558",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114766157227025558",
+          "text": "难道不应该是一样长的吗？",
+          "targetBlock": "114608425096239737",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 79
+        }
+      },
+      {
+        "id": "114609504008112231",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114609504008112231",
+          "itemId": 80,
+          "blockName": "答案正确！",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114343106998113250",
+            "114190751324872544"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114343106998113250",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114343106998113250",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "答案正确！\n你刚刚不会去查资料了吧",
+          "imageId": null,
+          "itemId": 81
+        }
+      },
+      {
+        "id": "114190751324872544",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114190751324872544",
+          "itemId": 86,
+          "targetBlock": "114715069996281094"
+        }
+      },
+      {
+        "id": "114608425096239737",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114608425096239737",
+          "itemId": 82,
+          "blockName": "其实是更长的",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114727465234361657",
+            "114164098453155413"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114727465234361657",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114727465234361657",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "其实是更长的",
+          "imageId": null,
+          "itemId": 83
+        }
+      },
+      {
+        "id": "114164098453155413",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114164098453155413",
+          "itemId": 87,
+          "targetBlock": "114715069996281094"
+        }
+      },
+      {
+        "id": "114715069996281094",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114715069996281094",
+          "itemId": 84,
+          "blockName": "不过题目信息其实没给全哈哈哈",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114729501136147447",
+            "114751674351195545",
+            "114405653917448222",
+            "114797192813370127"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114729501136147447",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114729501136147447",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "不过题目信息其实没给全哈哈哈\n当卫星的公转和行星的公转方向一致的时候会更长\n如果不一致会更短",
+          "imageId": null,
+          "itemId": 85
+        }
+      },
+      {
+        "id": "114751674351195545",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114751674351195545",
+          "text": "哦！我完全明白了",
+          "targetBlock": "114342508563112764",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 88
+        }
+      },
+      {
+        "id": "114405653917448222",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114405653917448222",
+          "text": "我也是这样想的",
+          "targetBlock": "114342508563112764",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 89
+        }
+      },
+      {
+        "id": "114797192813370127",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114797192813370127",
+          "text": "没听太懂，到底是为什么啊？",
+          "targetBlock": "114912171228219844",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 90
+        }
+      },
+      {
+        "id": "114342508563112764",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114342508563112764",
+          "itemId": 91,
+          "blockName": "很有趣对吧！",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114002854714685813",
+            "114139204439538694"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114002854714685813",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114002854714685813",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "很有趣对吧！",
+          "imageId": null,
+          "itemId": 92
+        }
+      },
+      {
+        "id": "114139204439538694",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114139204439538694",
+          "itemId": 97,
+          "targetBlock": "114927861726097807"
+        }
+      },
+      {
+        "id": "114912171228219844",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114912171228219844",
+          "itemId": 93,
+          "blockName": "你可以去查一下为什么朔望月比恒星月长",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114252038469277284",
+            "114220059954380467"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114252038469277284",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114252038469277284",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "你可以去查一下为什么朔望月比恒星月长\n一样的原理",
+          "imageId": null,
+          "itemId": 94
+        }
+      },
+      {
+        "id": "114220059954380467",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114220059954380467",
+          "itemId": 98,
+          "targetBlock": "114927861726097807"
+        }
+      },
+      {
+        "id": "114927861726097807",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114927861726097807",
+          "itemId": 95,
+          "blockName": "所以实际上贝索尼亚上一天的时间要比1.2个地球日稍长",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114539500668284021",
+            "114922246546021980"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114539500668284021",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114539500668284021",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "所以实际上贝索尼亚上一天的时间要比1.2个地球日稍长",
+          "imageId": null,
+          "itemId": 96
+        }
+      },
+      {
+        "id": "114922246546021980",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114922246546021980",
+          "text": "我突然有点好奇你们那个时代是怎么适应不同星球时间的？",
+          "targetBlock": "114797367060769557",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 99
+        }
+      },
+      {
+        "id": "114797367060769557",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114797367060769557",
+          "itemId": 100,
+          "blockName": "啊，这个就有点复杂了",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114111663356175878",
+            "114067700210440246"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114111663356175878",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114111663356175878",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "啊，这个就有点复杂了\n有些地方的人是按照地球作息来的\n也就是不管外面是白天还是夜晚\n统一按地球作息来睡觉、工作就行了\n不过还有一些地方，因为时间差并不大\n所以他们直接选择服用米弗雷公司生产的药物调整睡眠周期",
+          "imageId": null,
+          "itemId": 101
+        }
+      },
+      {
+        "id": "114067700210440246",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114067700210440246",
+          "text": "你呢？",
+          "targetBlock": "114205537978674732",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 103
+        }
+      },
+      {
+        "id": "114205537978674732",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114205537978674732",
+          "itemId": 102,
+          "blockName": "我是地球作息",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114797043469874740",
+            "114770961368916131"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114797043469874740",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114797043469874740",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "我是地球作息\n所以应该和你是一致的\n前提是你的作息规律的话\n啊，我的沙堡就要堆好了\n我要把它命名为女皇Aliya的不落城堡\n要是Kane在这里的话\n他肯定会帮我加固一下这个沙堡的结构\n让它变得更加稳定\n然后再臭屁的说一句\n这是工程师的智慧",
+          "imageId": null,
+          "itemId": 104
+        }
+      },
+      {
+        "id": "114770961368916131",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114770961368916131",
+          "text": "会有那么一天的",
+          "targetBlock": "114498495875523217",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 187
+        }
+      },
+      {
+        "id": "114735870818441994",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114735870818441994",
+          "itemId": 105,
+          "blockName": "（等待1h）",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114816195533694045",
+            "114129769537296929"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114816195533694045",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114816195533694045",
+          "itemId": 106,
+          "waitHours": 1,
+          "waitMinutes": 0,
+          "waitSeconds": 0,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114129769537296929",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114129769537296929",
+          "itemId": 110,
+          "targetBlock": "114199390493801170"
+        }
+      },
+      {
+        "id": "114199390493801170",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114199390493801170",
+          "itemId": 108,
+          "blockName": "回酒店了",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114481709329553287",
+            "114810908947550514",
+            "114940856386594201",
+            "114589441315117384",
+            "114599142515119782"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114481709329553287",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114481709329553287",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "回酒店了",
+          "imageId": null,
+          "itemId": 109
+        }
+      },
+      {
+        "id": "114810908947550514",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114810908947550514",
+          "itemId": 190,
+          "targetLevel": 6
+        }
+      },
+      {
+        "id": "114940856386594201",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114940856386594201",
+          "text": "回来吃饭吗？",
+          "targetBlock": "114670947280730987",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 111
+        }
+      },
+      {
+        "id": "114589441315117384",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114589441315117384",
+          "text": "没有多玩一会儿吗？",
+          "targetBlock": "114461751212928746",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 112
+        }
+      },
+      {
+        "id": "114599142515119782",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114599142515119782",
+          "itemId": 113,
+          "waitHours": 30,
+          "waitMinutes": 0,
+          "waitSeconds": 0,
+          "targetBlock": "114461751212928746",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114670947280730987",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114670947280730987",
+          "itemId": 114,
+          "blockName": "沙滩那边倒是有吃的卖",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114365796515859226",
+            "114490379911102744"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114365796515859226",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114365796515859226",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "不是\n沙滩那边倒是有吃的卖\n虽然价格很贵就是了",
+          "imageId": null,
+          "itemId": 115
+        }
+      },
+      {
+        "id": "114490379911102744",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114490379911102744",
+          "itemId": 118,
+          "targetBlock": "114461751212928746"
+        }
+      },
+      {
+        "id": "114461751212928746",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114461751212928746",
+          "itemId": 116,
+          "blockName": "因为下大雨了",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114754462943081377",
+            "114940481076392634",
+            "114095283824277895",
+            "114778282728803094"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114754462943081377",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114754462943081377",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "因为下大雨了\n所以早点回来了\n明明旅游旺季一般不会下这么多雨的\n真是倒霉\n不过回来到酒店的好像只有我和Leon\n其他人去哪了\n问Leon他也说不知道",
+          "imageId": null,
+          "itemId": 117
+        }
+      },
+      {
+        "id": "114940481076392634",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114940481076392634",
+          "text": "没有淋湿吧",
+          "targetBlock": "114615113859079960",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 119
+        }
+      },
+      {
+        "id": "114095283824277895",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114095283824277895",
+          "text": "小心感冒了",
+          "targetBlock": "114178126138196662",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 120
+        }
+      },
+      {
+        "id": "114778282728803094",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114778282728803094",
+          "itemId": 121,
+          "waitHours": 0,
+          "waitMinutes": 30,
+          "waitSeconds": 0,
+          "targetBlock": "114200909680548110",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114615113859079960",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114615113859079960",
+          "itemId": 122,
+          "blockName": "我的头发还在滴水",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114956501843361641",
+            "114757593533399551"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114956501843361641",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114956501843361641",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "透湿\n海洋星球就是这点不好\n所有的雨都像是世界末日一样\n酒店窗户的钢化玻璃被狂暴的雨点打得很响\n而且我的头发还在滴水",
+          "imageId": null,
+          "itemId": 123
+        }
+      },
+      {
+        "id": "114757593533399551",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114757593533399551",
+          "itemId": 128,
+          "targetBlock": "114200909680548110"
+        }
+      },
+      {
+        "id": "114178126138196662",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114178126138196662",
+          "itemId": 124,
+          "blockName": "没有那么容易感冒的",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114884316832709991",
+            "114392189743240153"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114884316832709991",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114884316832709991",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "没有那么容易感冒的\n我可是来自一千年后的新人类\n你要相信我们新人类的抵抗力和药物\n哈哈，算了，不开玩笑了，不过应该不会有问题",
+          "imageId": null,
+          "itemId": 125
+        }
+      },
+      {
+        "id": "114392189743240153",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114392189743240153",
+          "itemId": 129,
+          "targetBlock": "114200909680548110"
+        }
+      },
+      {
+        "id": "114200909680548110",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114200909680548110",
+          "itemId": 126,
+          "blockName": "但肯定不是感冒",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114016655897585962",
+            "114303637152013739",
+            "114666855789854473",
+            "114032667784301017"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114016655897585962",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114016655897585962",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "啊啊啊啊...\n啊嚏！\n啊嚏！\n是稍微受凉了\n但肯定不是感冒",
+          "imageId": null,
+          "itemId": 127
+        }
+      },
+      {
+        "id": "114303637152013739",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114303637152013739",
+          "text": "快去冲个热水澡吧",
+          "targetBlock": "114078792049642077",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 130
+        }
+      },
+      {
+        "id": "114666855789854473",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114666855789854473",
+          "text": "好好好，肯定不是感冒，注意保暖",
+          "targetBlock": "114078792049642077",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 131
+        }
+      },
+      {
+        "id": "114032667784301017",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114032667784301017",
+          "itemId": 132,
+          "waitHours": 0,
+          "waitMinutes": 30,
+          "waitSeconds": 0,
+          "targetBlock": "114078792049642077",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114078792049642077",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114078792049642077",
+          "itemId": 133,
+          "blockName": "我要狠狠体验一下酒店的大浴缸",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114197006723591482",
+            "114212908276959494"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114197006723591482",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114197006723591482",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "Leon让我先去休息\n他去找其他人\n我要狠狠体验一下酒店的大浴缸\n早就想试试了",
+          "imageId": null,
+          "itemId": 134
+        }
+      },
+      {
+        "id": "114212908276959494",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114212908276959494",
+          "itemId": 137,
+          "targetBlock": "114755705538313236"
+        }
+      },
+      {
+        "id": "114755705538313236",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114755705538313236",
+          "itemId": 135,
+          "blockName": "（等待19m）",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114286455462783992",
+            "114669808958993258",
+            "114060575731700080"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114286455462783992",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114286455462783992",
+          "itemId": 191,
+          "targetLevel": 2
+        }
+      },
+      {
+        "id": "114669808958993258",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114669808958993258",
+          "itemId": 136,
+          "waitHours": 0,
+          "waitMinutes": 19,
+          "waitSeconds": 0,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114060575731700080",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114060575731700080",
+          "itemId": 138,
+          "targetBlock": "114377029146555074"
+        }
+      },
+      {
+        "id": "114377029146555074",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114377029146555074",
+          "itemId": 139,
+          "blockName": "水温有点烫",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114040672074713284",
+            "114885790872031798",
+            "114477993997609931",
+            "114334684166173263"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114040672074713284",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114040672074713284",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "水温有点烫\n不过也很舒服\n不知道这个平板防不防水\n哇，酒店居然专门准备了玩平板的防水袋诶",
+          "imageId": null,
+          "itemId": 140
+        }
+      },
+      {
+        "id": "114885790872031798",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114885790872031798",
+          "text": "所以你现在一边洗澡一边发消息？",
+          "targetBlock": "114836084842785928",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 141
+        }
+      },
+      {
+        "id": "114477993997609931",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114477993997609931",
+          "text": "洗澡就不要玩平板了啦",
+          "targetBlock": "114082062948022109",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 142
+        }
+      },
+      {
+        "id": "114334684166173263",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114334684166173263",
+          "itemId": 143,
+          "waitHours": 0,
+          "waitMinutes": 30,
+          "waitSeconds": 0,
+          "targetBlock": "114358217871418201",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114836084842785928",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114836084842785928",
+          "itemId": 144,
+          "blockName": "怎么了吗？",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114419040154966989",
+            "114821048068754640",
+            "114830128701529860"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114419040154966989",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114419040154966989",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "怎么了吗？",
+          "imageId": null,
+          "itemId": 145
+        }
+      },
+      {
+        "id": "114821048068754640",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114821048068754640",
+          "text": "没什么",
+          "targetBlock": "114332623768309733",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 148
+        }
+      },
+      {
+        "id": "114830128701529860",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114830128701529860",
+          "itemId": 149,
+          "waitHours": 0,
+          "waitMinutes": 30,
+          "waitSeconds": 0,
+          "targetBlock": "114358217871418201",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114082062948022109",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114082062948022109",
+          "itemId": 146,
+          "blockName": "要泡很久诶",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114070039111438425",
+            "114152514545880104"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114070039111438425",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114070039111438425",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "要泡很久诶",
+          "imageId": null,
+          "itemId": 147
+        }
+      },
+      {
+        "id": "114152514545880104",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114152514545880104",
+          "itemId": 155,
+          "targetBlock": "114332623768309733"
+        }
+      },
+      {
+        "id": "114332623768309733",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114332623768309733",
+          "itemId": 150,
+          "blockName": "反正也没什么事情做",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114370561745694071",
+            "114481986721087166"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114370561745694071",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114370561745694071",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "反正也没什么事情做\n我现在还能一边聊天一边看会儿资讯",
+          "imageId": null,
+          "itemId": 151
+        }
+      },
+      {
+        "id": "114481986721087166",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114481986721087166",
+          "itemId": 156,
+          "targetBlock": "114358217871418201"
+        }
+      },
+      {
+        "id": "114358217871418201",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114358217871418201",
+          "itemId": 152,
+          "blockName": "啊？原来是这位来贝索尼亚了",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114416822942134471",
+            "114769729281780101",
+            "114134122562562656",
+            "114385151949262084"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114416822942134471",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114416822942134471",
+          "itemId": 153,
+          "waitHours": 0,
+          "waitMinutes": 0,
+          "waitSeconds": 5,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114769729281780101",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114769729281780101",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "啊？原来是这位来贝索尼亚了",
+          "imageId": null,
+          "itemId": 154
+        }
+      },
+      {
+        "id": "114134122562562656",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114134122562562656",
+          "text": "谁？",
+          "targetBlock": "114566951306679475",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 157
+        }
+      },
+      {
+        "id": "114385151949262084",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114385151949262084",
+          "text": "为什么会这么惊讶？",
+          "targetBlock": "114566951306679475",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 158
+        }
+      },
+      {
+        "id": "114566951306679475",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114566951306679475",
+          "itemId": 159,
+          "blockName": "泰瑞公司的南翼分区主管",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114076941101562195",
+            "114645719020515995",
+            "114715375022300040"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114076941101562195",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114076941101562195",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "泰瑞公司的南翼分区主管\n要知道\n一个翼的主管就相当于旧时代的国王了\n难怪这几天安检那么严格\n这么大的动静反而显得这里有很重要的人物\n这下被挖出来了",
+          "imageId": null,
+          "itemId": 160
+        }
+      },
+      {
+        "id": "114645719020515995",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114645719020515995",
+          "text": "是什么狠角色吗？",
+          "targetBlock": "114067926967127225",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 161
+        }
+      },
+      {
+        "id": "114715375022300040",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114715375022300040",
+          "text": "这么大阵仗？",
+          "targetBlock": "114067926967127225",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 162
+        }
+      },
+      {
+        "id": "114067926967127225",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114067926967127225",
+          "itemId": 163,
+          "blockName": "他是人称泰瑞四天王之一",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114579577914601267",
+            "114497732446781885",
+            "114911731567376070"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114579577914601267",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114579577914601267",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "当然\n他是人称泰瑞四天王之一\n这次猜测是受东翼主管的邀请\n来东翼的地盘贝索尼亚星洽谈\n之前好像两人就泰瑞掌门人的产业划分有点纠纷\n不知道是不是来解决这个问题的\n不过也有人说是鸿门宴来着",
+          "imageId": null,
+          "itemId": 164
+        }
+      },
+      {
+        "id": "114497732446781885",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114497732446781885",
+          "text": "产业之间有纠纷让母公司调停不就好了吗？",
+          "targetBlock": "114840480180289865",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 165
+        }
+      },
+      {
+        "id": "114911731567376070",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114911731567376070",
+          "text": "鸿门宴？同事之间没必要这么做吧",
+          "targetBlock": "114840480180289865",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 166
+        }
+      },
+      {
+        "id": "114840480180289865",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114840480180289865",
+          "itemId": 167,
+          "blockName": "这里的公司和你想象的不太一样",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114293897107186653",
+            "114285952888121373",
+            "114883580222418102"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114293897107186653",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114293897107186653",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "嗯……这里的公司和你想象的不太一样\n说是公司，其实更接近于两千年前的中世纪管理方式\n各个部门仅仅只是名义上来自于母公司\n其实除了收税之外母公司管不到太多\n就像中世纪的皇帝与手下的国王一样\n大部分时候还是由地方的领导人自己解决",
+          "imageId": null,
+          "itemId": 168
+        }
+      },
+      {
+        "id": "114285952888121373",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114285952888121373",
+          "text": "哪怕飞上了太空，人心却还是几千年前的那一套吗",
+          "targetBlock": "114398976297528542",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 169
+        }
+      },
+      {
+        "id": "114883580222418102",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114883580222418102",
+          "text": "果然无论在什么地方，这种事情都会存在啊",
+          "targetBlock": "114398976297528542",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 192
+        }
+      },
+      {
+        "id": "114398976297528542",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114398976297528542",
+          "itemId": 171,
+          "blockName": "有些东西一直都没有变过",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114079364011021700",
+            "114687584635330904",
+            "114278990662978974"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114079364011021700",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114079364011021700",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "是啊\n有些东西一直都没有变过\n南翼和东翼有争端\n我之前呆的本部也有内部争端\n哪怕是大家团结一心对抗公司的反抗军\n有的时候也会因为路线问题吵起来\n啊，我可能不该说这些\n该加些热水了",
+          "imageId": null,
+          "itemId": 172
+        }
+      },
+      {
+        "id": "114687584635330904",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114687584635330904",
+          "text": "所以如果出现了意外，是不是你的度假就泡汤了？",
+          "targetBlock": "114983410749273693",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 173
+        }
+      },
+      {
+        "id": "114278990662978974",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114278990662978974",
+          "text": "总感觉现在这里变成危墙之下呢",
+          "targetBlock": "114983410749273693",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 174
+        }
+      },
+      {
+        "id": "114983410749273693",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114983410749273693",
+          "itemId": 175,
+          "blockName": "如果东翼和南翼打算开战的话",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114799579207625636",
+            "114373785223147199",
+            "114976713409105508"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114799579207625636",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114799579207625636",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "如果东翼和南翼打算开战的话\n在这里刺杀就会直接引发大战的导火索\n啊，好烦啊\n那样的话一切计划就要被取消了\n我的博物馆，还有世界树餐厅\n真是理解不了那些大人物的想法",
+          "imageId": null,
+          "itemId": 176
+        }
+      },
+      {
+        "id": "114373785223147199",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114373785223147199",
+          "text": "你不是加入反抗军了吗？发生内战似乎对你们有利",
+          "targetBlock": "114754064468787377",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 195
+        }
+      },
+      {
+        "id": "114976713409105508",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114976713409105508",
+          "text": "你好像很害怕战争发生",
+          "targetBlock": "114754259607083169",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 196
+        }
+      },
+      {
+        "id": "114027326155450538",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114027326155450538",
+          "itemId": 178,
+          "blockName": "拜拜",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114981811340855413",
+            "114288528445627161"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114981811340855413",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114981811340855413",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "拜拜",
+          "imageId": null,
+          "itemId": 179
+        }
+      },
+      {
+        "id": "114288528445627161",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114288528445627161",
+          "text": "拜拜",
+          "targetBlock": "114876667288335872",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 180
+        }
+      },
+      {
+        "id": "114876667288335872",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114876667288335872",
+          "itemId": 181,
+          "blockName": "NEXT",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114399762086627386"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114399762086627386",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallFlowchart",
+        "data": {
+          "fileId": "114399762086627386",
+          "flowchartName": "Daily_1-3",
+          "itemId": 182
+        }
+      },
+      {
+        "id": "114498495875523217",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114498495875523217",
+          "itemId": 186,
+          "blockName": "是啊",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114934877169926392",
+            "114209535913732325"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114934877169926392",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114934877169926392",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "是啊\n时间还长着呢\n啊，他们叫我了\n先下了",
+          "imageId": null,
+          "itemId": 188
+        }
+      },
+      {
+        "id": "114209535913732325",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114209535913732325",
+          "itemId": 189,
+          "targetBlock": "114735870818441994"
+        }
+      },
+      {
+        "id": "114754064468787377",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114754064468787377",
+          "itemId": 193,
+          "blockName": "如果是Leon的话可能会很兴奋吧",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114289187959370812",
+            "114078967630012497"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114289187959370812",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114289187959370812",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "如果是Leon的话可能会很兴奋吧\n但是对我来说，我希望最好不要打起来\n公司战争固然可以削弱他们的势力\n但是同样也会让他们全部进入战备状态\n现在反抗军还没到和他们打全面战争的地步\n而且……我也不喜欢看人再死去了",
+          "imageId": null,
+          "itemId": 197
+        }
+      },
+      {
+        "id": "114078967630012497",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114078967630012497",
+          "itemId": 200,
+          "targetBlock": "114693073978255833"
+        }
+      },
+      {
+        "id": "114754259607083169",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114754259607083169",
+          "itemId": 194,
+          "blockName": "这是当然！",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114545167085175114",
+            "114898118672063006"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114545167085175114",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114545167085175114",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "这是当然！\n最好是别打起来\n这可不是之前公司之间的为了边缘地区的矿产打来打去\n公司内战打起来会死很多人的\n无论谁赢，我希望赢的人能够对平民好一些吧\n不要让……那些悲剧再重演了。",
+          "imageId": null,
+          "itemId": 198
+        }
+      },
+      {
+        "id": "114898118672063006",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114898118672063006",
+          "itemId": 201,
+          "targetBlock": "114693073978255833"
+        }
+      },
+      {
+        "id": "114693073978255833",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114693073978255833",
+          "itemId": 199,
+          "blockName": "有点困了",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114513301188946588",
+            "114571346424196353",
+            "114381375536065315",
+            "114265705108863875"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114513301188946588",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114513301188946588",
+          "itemId": 203,
+          "targetLevel": 4
+        }
+      },
+      {
+        "id": "114571346424196353",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114571346424196353",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "啊，说得都有点困了\n泡得好久，水都有点凉了\n今天早点休息了",
+          "imageId": null,
+          "itemId": 202
+        }
+      },
+      {
+        "id": "114381375536065315",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetHeartRate",
+        "data": {
+          "fileId": "114381375536065315",
+          "itemId": 209,
+          "targetLevel": 1
+        }
+      },
+      {
+        "id": "114265705108863875",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114265705108863875",
+          "text": "有空再聊吧",
+          "targetBlock": "114027326155450538",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 204
+        }
+      },
+      {
+        "id": "Daily_1-3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartBlock",
+        "data": {
+          "fileId": "Daily_1-3",
+          "flowchartName": "Daily_1-3"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1455831195690047->114230023247280949",
+        "type": "default",
+        "source": "1455831195690047",
+        "target": "114230023247280949",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114230023247280949->114403057728023822",
+        "type": "default",
+        "source": "114230023247280949",
+        "target": "114403057728023822",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114403057728023822->114013349928654532",
+        "type": "default",
+        "source": "114403057728023822",
+        "target": "114013349928654532",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114013349928654532->114052712169407238",
+        "type": "default",
+        "source": "114013349928654532",
+        "target": "114052712169407238",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114052712169407238->114660167580294852",
+        "type": "default",
+        "source": "114052712169407238",
+        "target": "114660167580294852",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114660167580294852->114788873344771176",
+        "type": "default",
+        "source": "114660167580294852",
+        "target": "114788873344771176",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114788873344771176->114227129056721499",
+        "type": "default",
+        "source": "114788873344771176",
+        "target": "114227129056721499",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114227129056721499->114355057539467998",
+        "type": "default",
+        "source": "114227129056721499",
+        "target": "114355057539467998",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114355057539467998->114419016114633529",
+        "type": "default",
+        "source": "114355057539467998",
+        "target": "114419016114633529",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114005501749735416->114153539232995556",
+        "type": "default",
+        "source": "114005501749735416",
+        "target": "114153539232995556",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114419016114633529->114005501749735416",
+        "type": "default",
+        "source": "114419016114633529",
+        "target": "114005501749735416",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114960589389062893->114840329128711119",
+        "type": "default",
+        "source": "114960589389062893",
+        "target": "114840329128711119",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114419016114633529->114960589389062893",
+        "type": "default",
+        "source": "114419016114633529",
+        "target": "114960589389062893",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114088399843286142->114002018937504599",
+        "type": "default",
+        "source": "114088399843286142",
+        "target": "114002018937504599",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114419016114633529->114088399843286142",
+        "type": "default",
+        "source": "114419016114633529",
+        "target": "114088399843286142",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114153539232995556->114774413007416025",
+        "type": "default",
+        "source": "114153539232995556",
+        "target": "114774413007416025",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114371767187398162->114002018937504599",
+        "type": "default",
+        "source": "114371767187398162",
+        "target": "114002018937504599",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114774413007416025->114371767187398162",
+        "type": "default",
+        "source": "114774413007416025",
+        "target": "114371767187398162",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114840329128711119->114257070004390636",
+        "type": "default",
+        "source": "114840329128711119",
+        "target": "114257070004390636",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114261419083480838->114002018937504599",
+        "type": "default",
+        "source": "114261419083480838",
+        "target": "114002018937504599",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114257070004390636->114261419083480838",
+        "type": "default",
+        "source": "114257070004390636",
+        "target": "114261419083480838",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114002018937504599->114340170462249091",
+        "type": "default",
+        "source": "114002018937504599",
+        "target": "114340170462249091",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114340170462249091->114172967671953204",
+        "type": "default",
+        "source": "114340170462249091",
+        "target": "114172967671953204",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114535122847581032->114965518109152671",
+        "type": "default",
+        "source": "114535122847581032",
+        "target": "114965518109152671",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114172967671953204->114535122847581032",
+        "type": "default",
+        "source": "114172967671953204",
+        "target": "114535122847581032",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114965518109152671->114426413659401834",
+        "type": "default",
+        "source": "114965518109152671",
+        "target": "114426413659401834",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114426413659401834->114662221345198244",
+        "type": "default",
+        "source": "114426413659401834",
+        "target": "114662221345198244",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114782046876890517->114402519544581258",
+        "type": "default",
+        "source": "114782046876890517",
+        "target": "114402519544581258",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114662221345198244->114782046876890517",
+        "type": "default",
+        "source": "114662221345198244",
+        "target": "114782046876890517",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114211418793446923->114553733574015041",
+        "type": "default",
+        "source": "114211418793446923",
+        "target": "114553733574015041",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114662221345198244->114211418793446923",
+        "type": "default",
+        "source": "114662221345198244",
+        "target": "114211418793446923",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114402519544581258->114141019198402327",
+        "type": "default",
+        "source": "114402519544581258",
+        "target": "114141019198402327",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114501238385286055->114070061348121098",
+        "type": "default",
+        "source": "114501238385286055",
+        "target": "114070061348121098",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114141019198402327->114501238385286055",
+        "type": "default",
+        "source": "114141019198402327",
+        "target": "114501238385286055",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114818068735231100->114070061348121098",
+        "type": "default",
+        "source": "114818068735231100",
+        "target": "114070061348121098",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114141019198402327->114818068735231100",
+        "type": "default",
+        "source": "114141019198402327",
+        "target": "114818068735231100",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114553733574015041->114263200023859929",
+        "type": "default",
+        "source": "114553733574015041",
+        "target": "114263200023859929",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114789292941752549->114070061348121098",
+        "type": "default",
+        "source": "114789292941752549",
+        "target": "114070061348121098",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114263200023859929->114789292941752549",
+        "type": "default",
+        "source": "114263200023859929",
+        "target": "114789292941752549",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114174535625468088->114070061348121098",
+        "type": "default",
+        "source": "114174535625468088",
+        "target": "114070061348121098",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114263200023859929->114174535625468088",
+        "type": "default",
+        "source": "114263200023859929",
+        "target": "114174535625468088",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114070061348121098->114609852522016298",
+        "type": "default",
+        "source": "114070061348121098",
+        "target": "114609852522016298",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114609852522016298->114494294978255886",
+        "type": "default",
+        "source": "114609852522016298",
+        "target": "114494294978255886",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114136307774569644->114257122173849944",
+        "type": "default",
+        "source": "114136307774569644",
+        "target": "114257122173849944",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114494294978255886->114136307774569644",
+        "type": "default",
+        "source": "114494294978255886",
+        "target": "114136307774569644",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114257122173849944->114867220015086952",
+        "type": "default",
+        "source": "114257122173849944",
+        "target": "114867220015086952",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114867220015086952->114872521272424475",
+        "type": "default",
+        "source": "114867220015086952",
+        "target": "114872521272424475",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114872521272424475->114694556013215622",
+        "type": "default",
+        "source": "114872521272424475",
+        "target": "114694556013215622",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114228690686619706->114079928954030244",
+        "type": "default",
+        "source": "114228690686619706",
+        "target": "114079928954030244",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114694556013215622->114228690686619706",
+        "type": "default",
+        "source": "114694556013215622",
+        "target": "114228690686619706",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114633585449326190->114079928954030244",
+        "type": "default",
+        "source": "114633585449326190",
+        "target": "114079928954030244",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114694556013215622->114633585449326190",
+        "type": "default",
+        "source": "114694556013215622",
+        "target": "114633585449326190",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114175565666563322->114079928954030244",
+        "type": "default",
+        "source": "114175565666563322",
+        "target": "114079928954030244",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114694556013215622->114175565666563322",
+        "type": "default",
+        "source": "114694556013215622",
+        "target": "114175565666563322",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114674561170272088->114701336988016495",
+        "type": "default",
+        "source": "114674561170272088",
+        "target": "114701336988016495",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114694556013215622->114674561170272088",
+        "type": "default",
+        "source": "114694556013215622",
+        "target": "114674561170272088",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114701336988016495->114803340783356920",
+        "type": "default",
+        "source": "114701336988016495",
+        "target": "114803340783356920",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114747995767642377->114079928954030244",
+        "type": "default",
+        "source": "114747995767642377",
+        "target": "114079928954030244",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114803340783356920->114747995767642377",
+        "type": "default",
+        "source": "114803340783356920",
+        "target": "114747995767642377",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114079928954030244->114333426491564057",
+        "type": "default",
+        "source": "114079928954030244",
+        "target": "114333426491564057",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114960131766504563->114037291207613546",
+        "type": "default",
+        "source": "114960131766504563",
+        "target": "114037291207613546",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114333426491564057->114960131766504563",
+        "type": "default",
+        "source": "114333426491564057",
+        "target": "114960131766504563",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114580425460236445->114115210498700191",
+        "type": "default",
+        "source": "114580425460236445",
+        "target": "114115210498700191",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114333426491564057->114580425460236445",
+        "type": "default",
+        "source": "114333426491564057",
+        "target": "114580425460236445",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114037291207613546->114044538456106432",
+        "type": "default",
+        "source": "114037291207613546",
+        "target": "114044538456106432",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114495681036958413->114161218259143125",
+        "type": "default",
+        "source": "114495681036958413",
+        "target": "114161218259143125",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114044538456106432->114495681036958413",
+        "type": "default",
+        "source": "114044538456106432",
+        "target": "114495681036958413",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114115210498700191->114922475846757045",
+        "type": "default",
+        "source": "114115210498700191",
+        "target": "114922475846757045",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114514901372603692->114161218259143125",
+        "type": "default",
+        "source": "114514901372603692",
+        "target": "114161218259143125",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114922475846757045->114514901372603692",
+        "type": "default",
+        "source": "114922475846757045",
+        "target": "114514901372603692",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114161218259143125->114221138840705171",
+        "type": "default",
+        "source": "114161218259143125",
+        "target": "114221138840705171",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114700740264451137->114609504008112231",
+        "type": "default",
+        "source": "114700740264451137",
+        "target": "114609504008112231",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114221138840705171->114700740264451137",
+        "type": "default",
+        "source": "114221138840705171",
+        "target": "114700740264451137",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114262141478955789->114608425096239737",
+        "type": "default",
+        "source": "114262141478955789",
+        "target": "114608425096239737",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114221138840705171->114262141478955789",
+        "type": "default",
+        "source": "114221138840705171",
+        "target": "114262141478955789",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114766157227025558->114608425096239737",
+        "type": "default",
+        "source": "114766157227025558",
+        "target": "114608425096239737",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114221138840705171->114766157227025558",
+        "type": "default",
+        "source": "114221138840705171",
+        "target": "114766157227025558",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114609504008112231->114343106998113250",
+        "type": "default",
+        "source": "114609504008112231",
+        "target": "114343106998113250",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114190751324872544->114715069996281094",
+        "type": "default",
+        "source": "114190751324872544",
+        "target": "114715069996281094",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114343106998113250->114190751324872544",
+        "type": "default",
+        "source": "114343106998113250",
+        "target": "114190751324872544",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114608425096239737->114727465234361657",
+        "type": "default",
+        "source": "114608425096239737",
+        "target": "114727465234361657",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114164098453155413->114715069996281094",
+        "type": "default",
+        "source": "114164098453155413",
+        "target": "114715069996281094",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114727465234361657->114164098453155413",
+        "type": "default",
+        "source": "114727465234361657",
+        "target": "114164098453155413",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114715069996281094->114729501136147447",
+        "type": "default",
+        "source": "114715069996281094",
+        "target": "114729501136147447",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114751674351195545->114342508563112764",
+        "type": "default",
+        "source": "114751674351195545",
+        "target": "114342508563112764",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114729501136147447->114751674351195545",
+        "type": "default",
+        "source": "114729501136147447",
+        "target": "114751674351195545",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114405653917448222->114342508563112764",
+        "type": "default",
+        "source": "114405653917448222",
+        "target": "114342508563112764",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114729501136147447->114405653917448222",
+        "type": "default",
+        "source": "114729501136147447",
+        "target": "114405653917448222",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114797192813370127->114912171228219844",
+        "type": "default",
+        "source": "114797192813370127",
+        "target": "114912171228219844",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114729501136147447->114797192813370127",
+        "type": "default",
+        "source": "114729501136147447",
+        "target": "114797192813370127",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114342508563112764->114002854714685813",
+        "type": "default",
+        "source": "114342508563112764",
+        "target": "114002854714685813",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114139204439538694->114927861726097807",
+        "type": "default",
+        "source": "114139204439538694",
+        "target": "114927861726097807",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114002854714685813->114139204439538694",
+        "type": "default",
+        "source": "114002854714685813",
+        "target": "114139204439538694",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114912171228219844->114252038469277284",
+        "type": "default",
+        "source": "114912171228219844",
+        "target": "114252038469277284",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114220059954380467->114927861726097807",
+        "type": "default",
+        "source": "114220059954380467",
+        "target": "114927861726097807",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114252038469277284->114220059954380467",
+        "type": "default",
+        "source": "114252038469277284",
+        "target": "114220059954380467",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114927861726097807->114539500668284021",
+        "type": "default",
+        "source": "114927861726097807",
+        "target": "114539500668284021",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114922246546021980->114797367060769557",
+        "type": "default",
+        "source": "114922246546021980",
+        "target": "114797367060769557",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114539500668284021->114922246546021980",
+        "type": "default",
+        "source": "114539500668284021",
+        "target": "114922246546021980",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114797367060769557->114111663356175878",
+        "type": "default",
+        "source": "114797367060769557",
+        "target": "114111663356175878",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114067700210440246->114205537978674732",
+        "type": "default",
+        "source": "114067700210440246",
+        "target": "114205537978674732",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114111663356175878->114067700210440246",
+        "type": "default",
+        "source": "114111663356175878",
+        "target": "114067700210440246",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114205537978674732->114797043469874740",
+        "type": "default",
+        "source": "114205537978674732",
+        "target": "114797043469874740",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114770961368916131->114498495875523217",
+        "type": "default",
+        "source": "114770961368916131",
+        "target": "114498495875523217",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114797043469874740->114770961368916131",
+        "type": "default",
+        "source": "114797043469874740",
+        "target": "114770961368916131",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114735870818441994->114816195533694045",
+        "type": "default",
+        "source": "114735870818441994",
+        "target": "114816195533694045",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114129769537296929->114199390493801170",
+        "type": "default",
+        "source": "114129769537296929",
+        "target": "114199390493801170",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114816195533694045->114129769537296929",
+        "type": "default",
+        "source": "114816195533694045",
+        "target": "114129769537296929",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114199390493801170->114481709329553287",
+        "type": "default",
+        "source": "114199390493801170",
+        "target": "114481709329553287",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114481709329553287->114810908947550514",
+        "type": "default",
+        "source": "114481709329553287",
+        "target": "114810908947550514",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114940856386594201->114670947280730987",
+        "type": "default",
+        "source": "114940856386594201",
+        "target": "114670947280730987",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114810908947550514->114940856386594201",
+        "type": "default",
+        "source": "114810908947550514",
+        "target": "114940856386594201",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114589441315117384->114461751212928746",
+        "type": "default",
+        "source": "114589441315117384",
+        "target": "114461751212928746",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114810908947550514->114589441315117384",
+        "type": "default",
+        "source": "114810908947550514",
+        "target": "114589441315117384",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114599142515119782->114461751212928746",
+        "type": "default",
+        "source": "114599142515119782",
+        "target": "114461751212928746",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114810908947550514->114599142515119782",
+        "type": "default",
+        "source": "114810908947550514",
+        "target": "114599142515119782",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114670947280730987->114365796515859226",
+        "type": "default",
+        "source": "114670947280730987",
+        "target": "114365796515859226",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114490379911102744->114461751212928746",
+        "type": "default",
+        "source": "114490379911102744",
+        "target": "114461751212928746",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114365796515859226->114490379911102744",
+        "type": "default",
+        "source": "114365796515859226",
+        "target": "114490379911102744",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114461751212928746->114754462943081377",
+        "type": "default",
+        "source": "114461751212928746",
+        "target": "114754462943081377",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114940481076392634->114615113859079960",
+        "type": "default",
+        "source": "114940481076392634",
+        "target": "114615113859079960",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114754462943081377->114940481076392634",
+        "type": "default",
+        "source": "114754462943081377",
+        "target": "114940481076392634",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114095283824277895->114178126138196662",
+        "type": "default",
+        "source": "114095283824277895",
+        "target": "114178126138196662",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114754462943081377->114095283824277895",
+        "type": "default",
+        "source": "114754462943081377",
+        "target": "114095283824277895",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114778282728803094->114200909680548110",
+        "type": "default",
+        "source": "114778282728803094",
+        "target": "114200909680548110",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114754462943081377->114778282728803094",
+        "type": "default",
+        "source": "114754462943081377",
+        "target": "114778282728803094",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114615113859079960->114956501843361641",
+        "type": "default",
+        "source": "114615113859079960",
+        "target": "114956501843361641",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114757593533399551->114200909680548110",
+        "type": "default",
+        "source": "114757593533399551",
+        "target": "114200909680548110",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114956501843361641->114757593533399551",
+        "type": "default",
+        "source": "114956501843361641",
+        "target": "114757593533399551",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114178126138196662->114884316832709991",
+        "type": "default",
+        "source": "114178126138196662",
+        "target": "114884316832709991",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114392189743240153->114200909680548110",
+        "type": "default",
+        "source": "114392189743240153",
+        "target": "114200909680548110",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114884316832709991->114392189743240153",
+        "type": "default",
+        "source": "114884316832709991",
+        "target": "114392189743240153",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114200909680548110->114016655897585962",
+        "type": "default",
+        "source": "114200909680548110",
+        "target": "114016655897585962",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114303637152013739->114078792049642077",
+        "type": "default",
+        "source": "114303637152013739",
+        "target": "114078792049642077",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114016655897585962->114303637152013739",
+        "type": "default",
+        "source": "114016655897585962",
+        "target": "114303637152013739",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114666855789854473->114078792049642077",
+        "type": "default",
+        "source": "114666855789854473",
+        "target": "114078792049642077",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114016655897585962->114666855789854473",
+        "type": "default",
+        "source": "114016655897585962",
+        "target": "114666855789854473",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114032667784301017->114078792049642077",
+        "type": "default",
+        "source": "114032667784301017",
+        "target": "114078792049642077",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114016655897585962->114032667784301017",
+        "type": "default",
+        "source": "114016655897585962",
+        "target": "114032667784301017",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114078792049642077->114197006723591482",
+        "type": "default",
+        "source": "114078792049642077",
+        "target": "114197006723591482",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114212908276959494->114755705538313236",
+        "type": "default",
+        "source": "114212908276959494",
+        "target": "114755705538313236",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114197006723591482->114212908276959494",
+        "type": "default",
+        "source": "114197006723591482",
+        "target": "114212908276959494",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114755705538313236->114286455462783992",
+        "type": "default",
+        "source": "114755705538313236",
+        "target": "114286455462783992",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114286455462783992->114669808958993258",
+        "type": "default",
+        "source": "114286455462783992",
+        "target": "114669808958993258",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114060575731700080->114377029146555074",
+        "type": "default",
+        "source": "114060575731700080",
+        "target": "114377029146555074",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114669808958993258->114060575731700080",
+        "type": "default",
+        "source": "114669808958993258",
+        "target": "114060575731700080",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114377029146555074->114040672074713284",
+        "type": "default",
+        "source": "114377029146555074",
+        "target": "114040672074713284",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114885790872031798->114836084842785928",
+        "type": "default",
+        "source": "114885790872031798",
+        "target": "114836084842785928",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114040672074713284->114885790872031798",
+        "type": "default",
+        "source": "114040672074713284",
+        "target": "114885790872031798",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114477993997609931->114082062948022109",
+        "type": "default",
+        "source": "114477993997609931",
+        "target": "114082062948022109",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114040672074713284->114477993997609931",
+        "type": "default",
+        "source": "114040672074713284",
+        "target": "114477993997609931",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114334684166173263->114358217871418201",
+        "type": "default",
+        "source": "114334684166173263",
+        "target": "114358217871418201",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114040672074713284->114334684166173263",
+        "type": "default",
+        "source": "114040672074713284",
+        "target": "114334684166173263",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114836084842785928->114419040154966989",
+        "type": "default",
+        "source": "114836084842785928",
+        "target": "114419040154966989",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114821048068754640->114332623768309733",
+        "type": "default",
+        "source": "114821048068754640",
+        "target": "114332623768309733",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114419040154966989->114821048068754640",
+        "type": "default",
+        "source": "114419040154966989",
+        "target": "114821048068754640",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114830128701529860->114358217871418201",
+        "type": "default",
+        "source": "114830128701529860",
+        "target": "114358217871418201",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114419040154966989->114830128701529860",
+        "type": "default",
+        "source": "114419040154966989",
+        "target": "114830128701529860",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114082062948022109->114070039111438425",
+        "type": "default",
+        "source": "114082062948022109",
+        "target": "114070039111438425",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114152514545880104->114332623768309733",
+        "type": "default",
+        "source": "114152514545880104",
+        "target": "114332623768309733",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114070039111438425->114152514545880104",
+        "type": "default",
+        "source": "114070039111438425",
+        "target": "114152514545880104",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114332623768309733->114370561745694071",
+        "type": "default",
+        "source": "114332623768309733",
+        "target": "114370561745694071",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114481986721087166->114358217871418201",
+        "type": "default",
+        "source": "114481986721087166",
+        "target": "114358217871418201",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114370561745694071->114481986721087166",
+        "type": "default",
+        "source": "114370561745694071",
+        "target": "114481986721087166",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114358217871418201->114416822942134471",
+        "type": "default",
+        "source": "114358217871418201",
+        "target": "114416822942134471",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114416822942134471->114769729281780101",
+        "type": "default",
+        "source": "114416822942134471",
+        "target": "114769729281780101",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114134122562562656->114566951306679475",
+        "type": "default",
+        "source": "114134122562562656",
+        "target": "114566951306679475",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114769729281780101->114134122562562656",
+        "type": "default",
+        "source": "114769729281780101",
+        "target": "114134122562562656",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114385151949262084->114566951306679475",
+        "type": "default",
+        "source": "114385151949262084",
+        "target": "114566951306679475",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114769729281780101->114385151949262084",
+        "type": "default",
+        "source": "114769729281780101",
+        "target": "114385151949262084",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114566951306679475->114076941101562195",
+        "type": "default",
+        "source": "114566951306679475",
+        "target": "114076941101562195",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114645719020515995->114067926967127225",
+        "type": "default",
+        "source": "114645719020515995",
+        "target": "114067926967127225",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114076941101562195->114645719020515995",
+        "type": "default",
+        "source": "114076941101562195",
+        "target": "114645719020515995",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114715375022300040->114067926967127225",
+        "type": "default",
+        "source": "114715375022300040",
+        "target": "114067926967127225",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114076941101562195->114715375022300040",
+        "type": "default",
+        "source": "114076941101562195",
+        "target": "114715375022300040",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114067926967127225->114579577914601267",
+        "type": "default",
+        "source": "114067926967127225",
+        "target": "114579577914601267",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114497732446781885->114840480180289865",
+        "type": "default",
+        "source": "114497732446781885",
+        "target": "114840480180289865",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114579577914601267->114497732446781885",
+        "type": "default",
+        "source": "114579577914601267",
+        "target": "114497732446781885",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114911731567376070->114840480180289865",
+        "type": "default",
+        "source": "114911731567376070",
+        "target": "114840480180289865",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114579577914601267->114911731567376070",
+        "type": "default",
+        "source": "114579577914601267",
+        "target": "114911731567376070",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114840480180289865->114293897107186653",
+        "type": "default",
+        "source": "114840480180289865",
+        "target": "114293897107186653",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114285952888121373->114398976297528542",
+        "type": "default",
+        "source": "114285952888121373",
+        "target": "114398976297528542",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114293897107186653->114285952888121373",
+        "type": "default",
+        "source": "114293897107186653",
+        "target": "114285952888121373",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114883580222418102->114398976297528542",
+        "type": "default",
+        "source": "114883580222418102",
+        "target": "114398976297528542",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114293897107186653->114883580222418102",
+        "type": "default",
+        "source": "114293897107186653",
+        "target": "114883580222418102",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114398976297528542->114079364011021700",
+        "type": "default",
+        "source": "114398976297528542",
+        "target": "114079364011021700",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114687584635330904->114983410749273693",
+        "type": "default",
+        "source": "114687584635330904",
+        "target": "114983410749273693",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114079364011021700->114687584635330904",
+        "type": "default",
+        "source": "114079364011021700",
+        "target": "114687584635330904",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114278990662978974->114983410749273693",
+        "type": "default",
+        "source": "114278990662978974",
+        "target": "114983410749273693",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114079364011021700->114278990662978974",
+        "type": "default",
+        "source": "114079364011021700",
+        "target": "114278990662978974",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114983410749273693->114799579207625636",
+        "type": "default",
+        "source": "114983410749273693",
+        "target": "114799579207625636",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114373785223147199->114754064468787377",
+        "type": "default",
+        "source": "114373785223147199",
+        "target": "114754064468787377",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114799579207625636->114373785223147199",
+        "type": "default",
+        "source": "114799579207625636",
+        "target": "114373785223147199",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114976713409105508->114754259607083169",
+        "type": "default",
+        "source": "114976713409105508",
+        "target": "114754259607083169",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114799579207625636->114976713409105508",
+        "type": "default",
+        "source": "114799579207625636",
+        "target": "114976713409105508",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114027326155450538->114981811340855413",
+        "type": "default",
+        "source": "114027326155450538",
+        "target": "114981811340855413",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114288528445627161->114876667288335872",
+        "type": "default",
+        "source": "114288528445627161",
+        "target": "114876667288335872",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114981811340855413->114288528445627161",
+        "type": "default",
+        "source": "114981811340855413",
+        "target": "114288528445627161",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114399762086627386->Daily_1-3",
+        "type": "default",
+        "source": "114399762086627386",
+        "target": "Daily_1-3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114876667288335872->114399762086627386",
+        "type": "default",
+        "source": "114876667288335872",
+        "target": "114399762086627386",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114498495875523217->114934877169926392",
+        "type": "default",
+        "source": "114498495875523217",
+        "target": "114934877169926392",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114209535913732325->114735870818441994",
+        "type": "default",
+        "source": "114209535913732325",
+        "target": "114735870818441994",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114934877169926392->114209535913732325",
+        "type": "default",
+        "source": "114934877169926392",
+        "target": "114209535913732325",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114754064468787377->114289187959370812",
+        "type": "default",
+        "source": "114754064468787377",
+        "target": "114289187959370812",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114078967630012497->114693073978255833",
+        "type": "default",
+        "source": "114078967630012497",
+        "target": "114693073978255833",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114289187959370812->114078967630012497",
+        "type": "default",
+        "source": "114289187959370812",
+        "target": "114078967630012497",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114754259607083169->114545167085175114",
+        "type": "default",
+        "source": "114754259607083169",
+        "target": "114545167085175114",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114898118672063006->114693073978255833",
+        "type": "default",
+        "source": "114898118672063006",
+        "target": "114693073978255833",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114545167085175114->114898118672063006",
+        "type": "default",
+        "source": "114545167085175114",
+        "target": "114898118672063006",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114693073978255833->114513301188946588",
+        "type": "default",
+        "source": "114693073978255833",
+        "target": "114513301188946588",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114513301188946588->114571346424196353",
+        "type": "default",
+        "source": "114513301188946588",
+        "target": "114571346424196353",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114571346424196353->114381375536065315",
+        "type": "default",
+        "source": "114571346424196353",
+        "target": "114381375536065315",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114265705108863875->114027326155450538",
+        "type": "default",
+        "source": "114265705108863875",
+        "target": "114027326155450538",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114381375536065315->114265705108863875",
+        "type": "default",
+        "source": "114381375536065315",
+        "target": "114265705108863875",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

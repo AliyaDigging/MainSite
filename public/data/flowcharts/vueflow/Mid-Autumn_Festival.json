@@ -1,0 +1,863 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 32,
+      "edge": 34,
+      "otherFlowcharts": 0
+    },
+    "flowchartRefs": [],
+    "variableNames": {
+      "114273869091123458": {
+        "key": "name",
+        "type": "string"
+      }
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1850336957552257",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1850336957552257",
+          "components": [
+            "114273869091123458",
+            "114109997369274666",
+            "114911821643776432",
+            "114808057161091386",
+            "114010980340751777",
+            "114268032611499689",
+            "114898038112263219",
+            "114043626484938592",
+            "114642296941529095",
+            "114207033165919562",
+            "114593511564458923",
+            "114265494576904550",
+            "114706951892989190",
+            "114417432015048595",
+            "114928988754413753",
+            "114400845461222969",
+            "114163626476972806",
+            "114327451764640442",
+            "114945646405498041",
+            "114805126992497208",
+            "114813326233485284",
+            "114687748758626647",
+            "114501791666278230",
+            "114206523604565949",
+            "114712320173348641",
+            "114281231461154625",
+            "114933365790561361",
+            "114684166524909861",
+            "114366968715758432",
+            "114021900174031755",
+            "114306984905978856"
+          ],
+          "m_Name": "Mid-Autumn_Festival"
+        }
+      },
+      {
+        "id": "114273869091123458",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114273869091123458",
+          "itemId": -1,
+          "key": "name",
+          "value": null
+        }
+      },
+      {
+        "id": "114109997369274666",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114109997369274666",
+          "itemId": 0,
+          "blockName": "Mid-Autumn_Festival",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114306984905978856",
+            "114911821643776432",
+            "114808057161091386",
+            "114010980340751777",
+            "114268032611499689"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114306984905978856",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114306984905978856",
+          "itemId": 29,
+          "waitHours": 0,
+          "waitMinutes": 30,
+          "waitSeconds": 0,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114911821643776432",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114911821643776432",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "今天是什么日子？",
+          "imageId": null,
+          "itemId": 1
+        }
+      },
+      {
+        "id": "114808057161091386",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114808057161091386",
+          "text": "什么日子？",
+          "targetBlock": "114898038112263219",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 2
+        }
+      },
+      {
+        "id": "114010980340751777",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114010980340751777",
+          "text": "中秋？",
+          "targetBlock": "114642296941529095",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 3
+        }
+      },
+      {
+        "id": "114268032611499689",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "fileId": "114268032611499689",
+          "itemId": 4,
+          "waitHours": 0,
+          "waitMinutes": 30,
+          "waitSeconds": 0,
+          "targetBlock": "114593511564458923",
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114898038112263219",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114898038112263219",
+          "itemId": 5,
+          "blockName": "中秋节啊",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114043626484938592",
+            "114163626476972806"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114043626484938592",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114043626484938592",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "中秋节啊",
+          "imageId": null,
+          "itemId": 6
+        }
+      },
+      {
+        "id": "114163626476972806",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114163626476972806",
+          "itemId": 15,
+          "targetBlock": "114706951892989190"
+        }
+      },
+      {
+        "id": "114642296941529095",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114642296941529095",
+          "itemId": 7,
+          "blockName": "答对了",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114207033165919562",
+            "114327451764640442"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114207033165919562",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114207033165919562",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "答对了",
+          "imageId": null,
+          "itemId": 8
+        }
+      },
+      {
+        "id": "114327451764640442",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114327451764640442",
+          "itemId": 16,
+          "targetBlock": "114706951892989190"
+        }
+      },
+      {
+        "id": "114593511564458923",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114593511564458923",
+          "itemId": 9,
+          "blockName": "是中秋啦！",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114265494576904550",
+            "114945646405498041"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114265494576904550",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114265494576904550",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "是中秋啦！",
+          "imageId": null,
+          "itemId": 10
+        }
+      },
+      {
+        "id": "114945646405498041",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114945646405498041",
+          "itemId": 17,
+          "targetBlock": "114706951892989190"
+        }
+      },
+      {
+        "id": "114706951892989190",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114706951892989190",
+          "itemId": 11,
+          "blockName": "不过我现在这里看不到月亮了",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114417432015048595",
+            "114400845461222969",
+            "114928988754413753"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114417432015048595",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114417432015048595",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "不过我现在这里看不到月亮了\n但是这种感觉还是很奇妙啊\n我记得是不是有首诗来着\n“海上升明月，天涯若比邻”\n这不恰好证明了哪怕隔了千年\n人类的情感还是能跨越时空传递啊",
+          "imageId": null,
+          "itemId": 12
+        }
+      },
+      {
+        "id": "114400845461222969",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114400845461222969",
+          "text": "你背错了，是“海上升明月，天涯共此时”",
+          "targetBlock": "114805126992497208",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 14
+        }
+      },
+      {
+        "id": "114928988754413753",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114928988754413753",
+          "text": "是啊",
+          "targetBlock": "114712320173348641",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 13
+        }
+      },
+      {
+        "id": "114805126992497208",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114805126992497208",
+          "itemId": 18,
+          "blockName": "那“天涯若比邻”前一句是什么",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114813326233485284",
+            "114687748758626647"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114813326233485284",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114813326233485284",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "那“天涯若比邻”前一句是什么",
+          "imageId": null,
+          "itemId": 19
+        }
+      },
+      {
+        "id": "114687748758626647",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114687748758626647",
+          "text": "“海内存知己，天涯若比邻”",
+          "targetBlock": "114501791666278230",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 20
+        }
+      },
+      {
+        "id": "114501791666278230",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114501791666278230",
+          "itemId": 21,
+          "blockName": "这种事情还是你们古人清楚一点啊",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114206523604565949",
+            "114933365790561361"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114206523604565949",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114206523604565949",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "那确实是记混了\n这种事情还是你们古人清楚一点啊",
+          "imageId": null,
+          "itemId": 22
+        }
+      },
+      {
+        "id": "114933365790561361",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114933365790561361",
+          "itemId": 25,
+          "targetBlock": "114712320173348641"
+        }
+      },
+      {
+        "id": "114712320173348641",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114712320173348641",
+          "itemId": 23,
+          "blockName": "中秋快乐",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114281231461154625",
+            "114684166524909861"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114281231461154625",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114281231461154625",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "总之\n中秋快乐",
+          "imageId": null,
+          "itemId": 24
+        }
+      },
+      {
+        "id": "114684166524909861",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114684166524909861",
+          "text": "中秋快乐",
+          "targetBlock": "114366968715758432",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 26
+        }
+      },
+      {
+        "id": "114366968715758432",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114366968715758432",
+          "itemId": 27,
+          "blockName": "NEXT",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [
+            "114021900174031755"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114021900174031755",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ExitDailyInsert",
+        "data": {
+          "fileId": "114021900174031755",
+          "itemId": 28
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1850336957552257->114273869091123458",
+        "type": "default",
+        "source": "1850336957552257",
+        "target": "114273869091123458",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114273869091123458->114109997369274666",
+        "type": "default",
+        "source": "114273869091123458",
+        "target": "114109997369274666",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114109997369274666->114306984905978856",
+        "type": "default",
+        "source": "114109997369274666",
+        "target": "114306984905978856",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114306984905978856->114911821643776432",
+        "type": "default",
+        "source": "114306984905978856",
+        "target": "114911821643776432",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114808057161091386->114898038112263219",
+        "type": "default",
+        "source": "114808057161091386",
+        "target": "114898038112263219",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114911821643776432->114808057161091386",
+        "type": "default",
+        "source": "114911821643776432",
+        "target": "114808057161091386",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114010980340751777->114642296941529095",
+        "type": "default",
+        "source": "114010980340751777",
+        "target": "114642296941529095",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114911821643776432->114010980340751777",
+        "type": "default",
+        "source": "114911821643776432",
+        "target": "114010980340751777",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114268032611499689->114593511564458923",
+        "type": "default",
+        "source": "114268032611499689",
+        "target": "114593511564458923",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114911821643776432->114268032611499689",
+        "type": "default",
+        "source": "114911821643776432",
+        "target": "114268032611499689",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114898038112263219->114043626484938592",
+        "type": "default",
+        "source": "114898038112263219",
+        "target": "114043626484938592",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114163626476972806->114706951892989190",
+        "type": "default",
+        "source": "114163626476972806",
+        "target": "114706951892989190",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114043626484938592->114163626476972806",
+        "type": "default",
+        "source": "114043626484938592",
+        "target": "114163626476972806",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114642296941529095->114207033165919562",
+        "type": "default",
+        "source": "114642296941529095",
+        "target": "114207033165919562",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114327451764640442->114706951892989190",
+        "type": "default",
+        "source": "114327451764640442",
+        "target": "114706951892989190",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114207033165919562->114327451764640442",
+        "type": "default",
+        "source": "114207033165919562",
+        "target": "114327451764640442",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114593511564458923->114265494576904550",
+        "type": "default",
+        "source": "114593511564458923",
+        "target": "114265494576904550",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114945646405498041->114706951892989190",
+        "type": "default",
+        "source": "114945646405498041",
+        "target": "114706951892989190",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114265494576904550->114945646405498041",
+        "type": "default",
+        "source": "114265494576904550",
+        "target": "114945646405498041",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114706951892989190->114417432015048595",
+        "type": "default",
+        "source": "114706951892989190",
+        "target": "114417432015048595",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114400845461222969->114805126992497208",
+        "type": "default",
+        "source": "114400845461222969",
+        "target": "114805126992497208",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114417432015048595->114400845461222969",
+        "type": "default",
+        "source": "114417432015048595",
+        "target": "114400845461222969",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114928988754413753->114712320173348641",
+        "type": "default",
+        "source": "114928988754413753",
+        "target": "114712320173348641",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114417432015048595->114928988754413753",
+        "type": "default",
+        "source": "114417432015048595",
+        "target": "114928988754413753",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114805126992497208->114813326233485284",
+        "type": "default",
+        "source": "114805126992497208",
+        "target": "114813326233485284",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114687748758626647->114501791666278230",
+        "type": "default",
+        "source": "114687748758626647",
+        "target": "114501791666278230",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114813326233485284->114687748758626647",
+        "type": "default",
+        "source": "114813326233485284",
+        "target": "114687748758626647",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114501791666278230->114206523604565949",
+        "type": "default",
+        "source": "114501791666278230",
+        "target": "114206523604565949",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114933365790561361->114712320173348641",
+        "type": "default",
+        "source": "114933365790561361",
+        "target": "114712320173348641",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114206523604565949->114933365790561361",
+        "type": "default",
+        "source": "114206523604565949",
+        "target": "114933365790561361",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114712320173348641->114281231461154625",
+        "type": "default",
+        "source": "114712320173348641",
+        "target": "114281231461154625",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114684166524909861->114366968715758432",
+        "type": "default",
+        "source": "114684166524909861",
+        "target": "114366968715758432",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114281231461154625->114684166524909861",
+        "type": "default",
+        "source": "114281231461154625",
+        "target": "114684166524909861",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114366968715758432->114021900174031755",
+        "type": "default",
+        "source": "114366968715758432",
+        "target": "114021900174031755",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}
