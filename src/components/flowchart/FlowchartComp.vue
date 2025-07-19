@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 import {
   type FlowchartDataEdge,
   type FlowchartData,
@@ -11,7 +11,7 @@ import PvProgressSpinner from 'primevue/progressspinner'
 import { VueFlow, useVueFlow } from '@vue-flow/core'
 import { Background } from '@vue-flow/background'
 import { MiniMap } from '@vue-flow/minimap'
-import { Controls } from '@vue-flow/controls'
+import { Controls, ControlButton } from '@vue-flow/controls'
 import { useLayout } from './useLayout'
 
 import ActivateEH from './nodes/ActivateEH.vue'
@@ -57,6 +57,10 @@ import CallDailyPart from './nodes/CallDailyPart.vue'
 import ExitDailyInsert from './nodes/ExitDailyInsert.vue'
 import MonoBehavior from './nodes/MonoBehavior.vue'
 import FlowchartBlock from './nodes/FlowchartBlock.vue'
+import { useWindowSize } from '@vueuse/core'
+
+import { useI18n } from 'vue-i18n'
+import { useDark } from '@vueuse/core'
 
 const props = defineProps({
   flowchartName: {
@@ -67,12 +71,28 @@ const props = defineProps({
 
 const fileUrl = computed(() => `/data/flowcharts/vueflow/${props.flowchartName}.json`)
 const data = ref<FlowchartData | null>(null)
+const vueflow = useVueFlow()
+const windowsize = useWindowSize()
+const i18n = useI18n()
+
+const isShowMiniMap = ref(windowsize.width.value > 700)
 
 const vueflowData = {
   nodes: ref<FlowchartDataNode[]>([]),
   edges: ref<FlowchartDataEdge[]>([]),
 }
 const isReady = ref(false)
+const isDraggable = ref(false)
+
+const isDark = useDark({
+  selector: 'html',
+  attribute: 'class',
+  valueDark: 'p-dark',
+  valueLight: '',
+  storageKey: 'theme-preference',
+})
+const nodeBgColor = computed(() => (isDark.value ? '#1E1E1E' : '#FFFFFF'))
+const nodeFontColor = computed(() => (isDark.value ? 'white' : 'black'))
 
 watch(
   fileUrl,
@@ -95,17 +115,33 @@ watch(
       )
 
       isReady.value = true
+
+      await initFlowchart()
     }
   },
   { immediate: true },
 )
 
 async function initFlowchart() {
-  const { fitView } = useVueFlow()
+  // vueflow.setInteractive(false)
   nextTick(() => {
-    fitView({ nodes: [vueflowData.nodes.value[0].id] })
+    vueflow.fitView({ nodes: [vueflowData.nodes.value[0].id] })
+    vueflowData.nodes.value = useLayout().layout(
+      vueflowData.nodes.value,
+      vueflowData.edges.value,
+      'TB',
+      true,
+    )
   })
 }
+
+watch(
+  isDraggable,
+  (newValue) => {
+    vueflow.nodesDraggable.value = newValue
+  },
+  { immediate: true },
+)
 </script>
 
 <template>
@@ -115,13 +151,64 @@ async function initFlowchart() {
       <VueFlow
         :nodes="vueflowData.nodes.value"
         :edges="vueflowData.edges.value"
-        :min-zoom="0.1"
+        :min-zoom="0.05"
         :max-zoom="4"
         @nodes-initialized="initFlowchart()"
       >
         <Background pattern-color="#aaa" :gap="16" />
-        <MiniMap />
-        <Controls position="top-left"></Controls>
+        <MiniMap v-if="isShowMiniMap" />
+        <Controls position="top-left">
+          <template #control-interactive>
+            <ControlButton
+              class="vue-flow__controls-interactive"
+              @click="isDraggable = !isDraggable"
+            >
+              <div v-if="isDraggable" name="icon-unlock">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 32">
+                  <path
+                    d="M21.333 10.667H19.81V7.619C19.81 3.429 16.38 0 12.19 0c-4.114 1.828-1.37 2.133.305 2.438 1.676.305 4.42 2.59 4.42 5.181v3.048H3.047A3.056 3.056 0 000 13.714v15.238A3.056 3.056 0 003.048 32h18.285a3.056 3.056 0 003.048-3.048V13.714a3.056 3.056 0 00-3.048-3.047zM12.19 24.533a3.056 3.056 0 01-3.047-3.047 3.056 3.056 0 013.047-3.048 3.056 3.056 0 013.048 3.048 3.056 3.056 0 01-3.048 3.047z"
+                  />
+                </svg>
+              </div>
+              <div v-if="!isDraggable" name="icon-lock">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 32">
+                  <path
+                    d="M21.333 10.667H19.81V7.619C19.81 3.429 16.38 0 12.19 0 8 0 4.571 3.429 4.571 7.619v3.048H3.048A3.056 3.056 0 000 13.714v15.238A3.056 3.056 0 003.048 32h18.285a3.056 3.056 0 003.048-3.048V13.714a3.056 3.056 0 00-3.048-3.047zM12.19 24.533a3.056 3.056 0 01-3.047-3.047 3.056 3.056 0 013.047-3.048 3.056 3.056 0 013.048 3.048 3.056 3.056 0 01-3.048 3.047zm4.724-13.866H7.467V7.619c0-2.59 2.133-4.724 4.723-4.724 2.591 0 4.724 2.133 4.724 4.724v3.048z"
+                  />
+                </svg>
+              </div>
+            </ControlButton>
+          </template>
+          <ControlButton
+            @click="isShowMiniMap = !isShowMiniMap"
+            :title="i18n.t('comp.flowchart.control.minimap')"
+          >
+            <div style="color: black">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 24 24"
+                v-if="isShowMiniMap"
+              >
+                <path
+                  d="M20.5 3l-.16.03L15 5.1L9 3L3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1l5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 24 24"
+                v-else
+              >
+                <path
+                  d="M20.5 3l-.16.03L15 5.1L9 3L3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1l5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM10 5.47l4 1.4v11.66l-4-1.4V5.47zm-5 .99l3-1.01v11.7l-3 1.16V6.46zm14 11.08l-3 1.01V6.86l3-1.16v11.84z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </ControlButton>
+        </Controls>
 
         <template #node-ActivateEH="props">
           <ActivateEH v-bind="props" />
@@ -303,14 +390,14 @@ async function initFlowchart() {
 :deep(.vue-flow__node-Then) {
   padding: 10px;
   border-radius: 3px;
-  width: 150px;
+  width: 200px;
   font-size: 12px;
-  text-align: center;
+  text-align: left;
   border-width: 1px;
   border-style: solid;
-  color: var(--vf-node-text);
-  background-color: var(--vf-node-bg);
   border-color: var(--vf-node-color);
+  background-color: v-bind(nodeBgColor);
+  color: v-bind(nodeFontColor);
 
   &.selected,
   &.selected:hover {
@@ -320,5 +407,54 @@ async function initFlowchart() {
   .vue-flow__handle {
     background: var(--vf-handle);
   }
+}
+
+:deep(.custom-node-icon) {
+  margin-right: 4px;
+}
+
+:deep(.custom-node-icon),
+:deep(.custom-node-title) {
+  /* Base value, PC */
+  font-size: 20px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 794px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 370px) {
+    font-size: 16px;
+  }
+}
+
+:deep(.custom-node-content) {
+  font-size: 14px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 794px) {
+    font-size: 11px;
+  }
+  @media screen and (max-width: 370px) {
+    font-size: 11px;
+  }
+}
+</style>
+
+<style scoped>
+:deep(.vue-flow__node-toolbar) {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: #2d3748;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: white;
+
+  max-height: 200px;
 }
 </style>

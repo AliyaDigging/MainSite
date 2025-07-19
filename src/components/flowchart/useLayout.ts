@@ -5,6 +5,26 @@ import { Position, useVueFlow } from '@vue-flow/core'
 import { ref } from 'vue'
 import type { FlowchartDataEdge, FlowchartDataNode } from './types/script5_vueflow_prod'
 
+const DEFAULT_WIDTH = 200
+const DEFAULT_HEIGHT = 20
+const HEIGHT_OFFSET = 10
+
+function getElementSize(divDataId: string) {
+  const ele = document.querySelector<HTMLDivElement>(`div[data-id="${divDataId}"]`)
+
+  if (ele) {
+    return {
+      width: ele.clientWidth,
+      height: ele.clientHeight + HEIGHT_OFFSET,
+    }
+  } else {
+    return {
+      width: DEFAULT_WIDTH,
+      height: DEFAULT_HEIGHT + HEIGHT_OFFSET,
+    }
+  }
+}
+
 /**
  * Composable to run the layout algorithm on the graph.
  * It uses the `dagre` library to calculate the layout of the nodes and edges.
@@ -16,7 +36,12 @@ export function useLayout() {
 
   const previousDirection = ref('LR')
 
-  function layout(nodes: FlowchartDataNode[], edges: FlowchartDataEdge[], direction: 'LR' | 'TB') {
+  function layout(
+    nodes: FlowchartDataNode[],
+    edges: FlowchartDataEdge[],
+    direction: 'LR' | 'TB',
+    useElementSize: boolean = false,
+  ) {
     // we create a new graph instance, in case some nodes/edges were removed, otherwise dagre would act as if they were still there
     const dagreGraph = new dagre.graphlib.Graph()
 
@@ -32,10 +57,27 @@ export function useLayout() {
     for (const node of nodes) {
       // if you need width+height of nodes for your layout, you can use the dimensions property of the internal node (`GraphNode` type)
       const graphNode = findNode(node.id)
+      let size = {
+        width: DEFAULT_WIDTH,
+        height: DEFAULT_HEIGHT + HEIGHT_OFFSET,
+      }
+
+      // 使用实际的大小来辅助 re-positioning
+      if (useElementSize) {
+        size = getElementSize(node.id)
+        // console.log(size)
+      } else {
+        if (graphNode) {
+          size = {
+            width: graphNode.dimensions.width,
+            height: graphNode.dimensions.height,
+          }
+        }
+      }
 
       dagreGraph.setNode(node.id, {
-        width: graphNode ? graphNode.dimensions.width : 150,
-        height: graphNode ? graphNode.dimensions.height : 50,
+        width: size.width,
+        height: size.height,
       })
     }
 
