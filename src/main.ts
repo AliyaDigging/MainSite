@@ -19,26 +19,15 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import { createI18n } from 'vue-i18n'
 import i18n_zh_CN from '@/i18n/zh_CN.json'
 import i18n_en_US from '@/i18n/en_US.json'
-import i18n_zh_TW from '@/i18n/zh_TW.json'
 
 import App from './App.vue'
 import router from './router'
 import { useDark } from '@vueuse/core'
 import { symbolUseDark } from './constants/injection'
 import { useSiteSettingStore } from './stores/setting'
+import { getBrowserLangcode } from './utils/browser'
 
 const app = createApp(App)
-
-const i18n = createI18n({
-  allowComposition: true,
-  locale: 'zh_CN',
-  fallbackLng: 'en_US',
-  messages: {
-    zh_CN: i18n_zh_CN,
-    zh_TW: i18n_zh_TW,
-    en_US: i18n_en_US,
-  },
-})
 
 const AuraCustomPreset = definePreset(Aura, {
   semantic: {
@@ -66,6 +55,16 @@ const dark = useDark({
   storageKey: 'theme-preference',
 })
 
+const i18n = createI18n({
+  allowComposition: true,
+  locale: 'zh_CN',
+  fallbackLng: 'en_US',
+  messages: {
+    zh_CN: i18n_zh_CN,
+    en_US: i18n_en_US,
+  },
+})
+
 app.use(createPinia().use(piniaPluginPersistedstate))
 app.use(router)
 app.use(i18n)
@@ -87,5 +86,6 @@ app.provide(symbolUseDark, dark)
 
 useSiteSettingStore().refreshPersist()
 useSiteSettingStore().changeSiteLang()
+i18n.global.locale = useSiteSettingStore().sitelang
 
 app.mount('#app')

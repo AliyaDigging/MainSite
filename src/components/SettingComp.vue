@@ -4,9 +4,16 @@ import { SiteLanguage, L10nLanguage } from '@/types/setting'
 import PvSelect from 'primevue/select'
 import PvDivider from 'primevue/divider'
 import { useI18n } from 'vue-i18n'
+import { watch } from 'vue'
 
 const setting = useSiteSettingStore()
 const i18n = useI18n()
+watch(
+  () => setting.sitelang,
+  (newValue) => {
+    i18n.locale.value = newValue
+  },
+)
 </script>
 
 <template>
