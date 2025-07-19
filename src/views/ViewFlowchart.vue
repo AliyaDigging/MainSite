@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import PvSelect from 'primevue/select'
 import PvTag from 'primevue/tag'
+import PvDivider from 'primevue/divider'
 import { flowchartOptions, type FlowchartOption } from '@/constants/flowcharts'
 import { useI18n } from 'vue-i18n'
 import { ref } from 'vue'
+
+import FlowchartComp from '@/components/flowchart/FlowchartComp.vue'
 
 const props = defineProps({
   flowchartName: {
@@ -45,6 +48,11 @@ const flowchartSelection = ref<FlowchartOption>()
         </div>
       </template>
     </PvSelect>
+    <PvDivider />
+    <div class="mt-6">
+      <FlowchartComp :flowchart-name="flowchartSelection ? flowchartSelection.value : ''" />
+    </div>
+    <PvDivider />
   </div>
 </template>
 

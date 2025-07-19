@@ -14,8 +14,15 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@dagrejs/dagre": "^1.1.5",
     "@primevue/themes": "^4.3.6",
+    "@vue-flow/background": "^1.3.2",
+    "@vue-flow/controls": "^1.1.2",
+    "@vue-flow/core": "^1.45.0",
+    "@vue-flow/minimap": "^1.5.3",
+    "@vue-flow/node-toolbar": "^1.1.1",
     "@vueuse/core": "^13.5.0",
+    "axios": "^1.10.0",
     "lodash": "^4.17.21",
     "pinia": "^3.0.3",
     "pinia-plugin-persistedstate": "^4.4.1",
@@ -27,10 +34,17 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@ricons/tabler": "^0.13.0",
     "@tailwindcss/postcss": "^4.1.11",
     "@tsconfig/node22": "^22.0.2",
     "@types/lodash": "^4.17.20",
     "@types/node": "^22.15.32",
+    "@vicons/carbon": "^0.13.0",
+    "@vicons/fa": "^0.13.0",
+    "@vicons/ionicons5": "^0.13.0",
+    "@vicons/material": "^0.13.0",
+    "@vicons/tabler": "^0.13.0",
+    "@vicons/utils": "^0.1.4",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.5.1",
