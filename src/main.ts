@@ -25,7 +25,6 @@ import router from './router'
 import { useDark } from '@vueuse/core'
 import { symbolUseDark } from './constants/injection'
 import { useSiteSettingStore } from './stores/setting'
-import { getBrowserLangcode } from './utils/browser'
 
 const app = createApp(App)
 

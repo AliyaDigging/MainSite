@@ -30,8 +30,6 @@ a:hover {
   color: var(--p-primary-600);
 }
 
-.surface-ground-custom-light {
-  @media (prefers-color-scheme: light) {
-    background-color: #f8fafc;
-  }
+html:not(.p-dark) {
+  background-color: #f8fafc;
 }
