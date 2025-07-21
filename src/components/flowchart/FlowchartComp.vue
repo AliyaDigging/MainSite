@@ -130,9 +130,9 @@ const flowchartHeight = computed(() => {
   return result
 })
 
-function preProcessEdges(edges: FlowchartDataNode[]) {
+function preProcessEdges(edges: FlowchartDataEdge[]) {
   edges.forEach((value) => {
-    if ('label' in value) {
+    if (value.label) {
       value.label = i18n.t(value.label)
     }
   })
