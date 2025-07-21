@@ -19,6 +19,7 @@ export type FlowchartData = {
     }
     variableNames: Record<string, { key: string; type: 'string' | 'number' }> // 变量 fileId -> key (name) string
     flowchartRefs: string[]
+    currName: string
   }
   data: {
     nodes: FlowchartDataNode[]

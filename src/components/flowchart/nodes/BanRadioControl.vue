@@ -3,7 +3,7 @@ import type { NodeProps } from '@vue-flow/core'
 import { Position, Handle } from '@vue-flow/core'
 
 import { Icon } from '@vicons/utils'
-import { Radio, Ban } from '@vicons/tabler'
+import { Radio } from '@vicons/tabler'
 
 import { type FlowchartDataNode_BanRadioControl } from '../types/script5_vueflow_prod'
 
@@ -12,11 +12,17 @@ const props = defineProps<NodeProps<FlowchartDataNode_BanRadioControl['data']>>(
 </script>
 
 <template>
+  <NodeToolbar :position="Position.Top">
+    <p>FileId:&nbsp;{{ props.data.fileId }}</p>
+    <p>ItemId:&nbsp;{{ props.data.itemId }}</p>
+  </NodeToolbar>
+
   <div>
     <Handle type="target" :position="Position.Top" />
     <div>
       <div>
-        <Icon><Radio /><Ban /> BanRadioControl</Icon>
+        <Icon class="custom-node-icon"><Radio /></Icon>
+        <span class="custom-node-title">{{ $t('comp.flowchart.node.BanRadioControl.title') }}</span>
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

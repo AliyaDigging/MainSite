@@ -5,24 +5,29 @@ import { Position, useVueFlow } from '@vue-flow/core'
 import { ref } from 'vue'
 import type { FlowchartDataEdge, FlowchartDataNode } from './types/script5_vueflow_prod'
 
-const DEFAULT_WIDTH = 200
-const DEFAULT_HEIGHT = 20
-const HEIGHT_OFFSET = 10
+const DEFAULT_WIDTH = 220
+const DEFAULT_HEIGHT = 50
+const HEIGHT_OFFSET = 40
 
 function getElementSize(divDataId: string) {
   const ele = document.querySelector<HTMLDivElement>(`div[data-id="${divDataId}"]`)
 
+  let result
   if (ele) {
-    return {
-      width: ele.clientWidth,
-      height: ele.clientHeight + HEIGHT_OFFSET,
+    const rect = ele.getBoundingClientRect()
+    result = {
+      width: rect.width,
+      height: rect.height,
     }
   } else {
-    return {
+    result = {
       width: DEFAULT_WIDTH,
-      height: DEFAULT_HEIGHT + HEIGHT_OFFSET,
+      height: DEFAULT_HEIGHT,
     }
   }
+
+  //console.log(`${divDataId}, ${JSON.stringify(result)}`)
+  return result
 }
 
 /**
@@ -34,14 +39,7 @@ export function useLayout() {
 
   const graph = ref(new dagre.graphlib.Graph())
 
-  const previousDirection = ref('LR')
-
-  function layout(
-    nodes: FlowchartDataNode[],
-    edges: FlowchartDataEdge[],
-    direction: 'LR' | 'TB',
-    useElementSize: boolean = false,
-  ) {
+  function layout(nodes: FlowchartDataNode[], edges: FlowchartDataEdge[], direction: 'LR' | 'TB') {
     // we create a new graph instance, in case some nodes/edges were removed, otherwise dagre would act as if they were still there
     const dagreGraph = new dagre.graphlib.Graph()
 
@@ -52,40 +50,80 @@ export function useLayout() {
     const isHorizontal = direction === 'LR'
     dagreGraph.setGraph({ rankdir: direction })
 
-    previousDirection.value = direction
-
+    // add node and edge
     for (const node of nodes) {
       // if you need width+height of nodes for your layout, you can use the dimensions property of the internal node (`GraphNode` type)
       const graphNode = findNode(node.id)
       let size = {
         width: DEFAULT_WIDTH,
-        height: DEFAULT_HEIGHT + HEIGHT_OFFSET,
+        height: DEFAULT_HEIGHT,
       }
 
-      // 使用实际的大小来辅助 re-positioning
-      if (useElementSize) {
-        size = getElementSize(node.id)
-        // console.log(size)
-      } else {
-        if (graphNode) {
-          size = {
-            width: graphNode.dimensions.width,
-            height: graphNode.dimensions.height,
-          }
+      if (graphNode) {
+        size = {
+          width: graphNode.dimensions.width,
+          height: graphNode.dimensions.height,
         }
       }
+
+      console.log(`${node.id}, ${JSON.stringify(size)}`)
 
       dagreGraph.setNode(node.id, {
         width: size.width,
         height: size.height,
       })
     }
-
     for (const edge of edges) {
       dagreGraph.setEdge(edge.source, edge.target)
     }
 
+    // calculate layout
     dagre.layout(dagreGraph)
+
+    // co-authored w/ Grok 3
+    // 重新 layout
+    // 首先，测量其实际高度
+    const nodeHeights: Record<string, number> = {}
+    nodes.forEach((node) => (nodeHeights[node.id] = getElementSize(node.id).height))
+
+    // 基于 rank (layer) 将 node 组织在一起
+    const layers: Record<number, string[]> = {}
+    dagreGraph.nodes().forEach((nodeId) => {
+      const node = dagreGraph.node(nodeId)
+      const rank = node.rank!
+      if (!layers[rank]) {
+        layers[rank] = []
+      }
+      layers[rank].push(nodeId)
+    })
+    // console.log(layers)
+
+    // 调整 y 坐标
+    let currentY = 0
+    Object.keys(layers)
+      .sort((a, b) => Number(a) - Number(b))
+      .forEach((rank) => {
+        //console.log(rank)
+        const layer = layers[Number(rank)]
+        let maxHeight = 0
+
+        // find the element whose height number is the biggest
+        layer.forEach((nodeId) => {
+          maxHeight = Math.max(maxHeight, nodeHeights[nodeId])
+        })
+        //console.log(maxHeight)
+
+        // update all the elements' y position in this layer
+        layer.forEach((nodeId) => {
+          const node = dagreGraph.node(nodeId)
+          node.y = currentY + nodeHeights[nodeId] / 2
+          //console.log(`${nodeId}, ${node.y}`)
+        })
+
+        // move onto the next layer
+        currentY += maxHeight * 1.5
+        //console.log(currentY)
+      })
 
     // set nodes with updated positions
     return nodes.map((node) => {
@@ -100,5 +138,5 @@ export function useLayout() {
     })
   }
 
-  return { graph, layout, previousDirection }
+  return { graph, layout }
 }

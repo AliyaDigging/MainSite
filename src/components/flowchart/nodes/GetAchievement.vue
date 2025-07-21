@@ -1,22 +1,35 @@
 <script setup lang="ts">
 import type { NodeProps } from '@vue-flow/core'
 import { Position, Handle } from '@vue-flow/core'
+import { NodeToolbar } from '@vue-flow/node-toolbar'
 
 import { Icon } from '@vicons/utils'
 import { Medal } from '@vicons/fa'
 
-import { type FlowchartDataNode_FlowchartStart } from '../types/script5_vueflow_prod'
+import { type FlowchartDataNode_GetAchievement } from '../types/script5_vueflow_prod'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
-const props = defineProps<NodeProps<FlowchartDataNode_FlowchartStart['data']>>()
+const props = defineProps<NodeProps<FlowchartDataNode_GetAchievement['data']>>()
 </script>
 
 <template>
+  <NodeToolbar :position="Position.Top">
+    <p>FileId:&nbsp;{{ props.data.fileId }}</p>
+    <p>ItemId:&nbsp;{{ props.data.itemId }}</p>
+  </NodeToolbar>
+
   <div>
     <Handle type="target" :position="Position.Top" />
     <div>
       <div>
-        <Icon><Medal /> GetAchievement</Icon>
+        <Icon class="custom-node-icon"><Medal /></Icon>
+        <span class="custom-node-title">{{ $t('comp.flowchart.node.GetAchievement.title') }}</span>
+      </div>
+      <div class="custom-node-content">
+        <p>
+          {{ $t('comp.flowchart.node.GetAchievement.p.achievementid') }}:&nbsp;
+          {{ props.data.achievementId }}
+        </p>
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

@@ -16,7 +16,23 @@ const props = defineProps<NodeProps<FlowchartDataNode_ConfigSpecialEnd['data']>>
     <Handle type="target" :position="Position.Top" />
     <div>
       <div>
-        <Icon><AppSettingsAltOutlined /> ConfigSpecialEnd</Icon>
+        <Icon class="custom-node-icon"><AppSettingsAltOutlined /></Icon>
+        <span class="custom-node-title">{{
+          $t('comp.flowchart.node.ConfigSpecialEnd.title')
+        }}</span>
+      </div>
+      <div class="custom-node-content">
+        <p>
+          {{ $t('comp.flowchart.node.ConfigSpecialEnd.p.o2runoutflowchartname') }}:&nbsp;<RouterLink
+            :to="`/view/flowchart/${props.data.o2RunOutFlowchartName}`"
+            >{{ props.data.o2RunOutFlowchartName }}</RouterLink
+          >
+        </p>
+        <p>
+          {{ $t('comp.flowchart.node.ConfigSpecialEnd.p.setcantrigger') }}:&nbsp;{{
+            $t(`constant.boolean.human.${props.data.setCanTrigger}`)
+          }}
+        </p>
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

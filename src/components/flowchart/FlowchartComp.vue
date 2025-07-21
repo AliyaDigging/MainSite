@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, inject, nextTick, ref, watch } from 'vue'
+import { computed, inject, nextTick, provide, ref, watch } from 'vue'
 import {
   type FlowchartDataEdge,
   type FlowchartData,
@@ -60,13 +60,26 @@ import FlowchartBlock from './nodes/FlowchartBlock.vue'
 import { useWindowSize } from '@vueuse/core'
 
 import { useI18n } from 'vue-i18n'
-import { useDark } from '@vueuse/core'
-import { symbolUseDark } from '@/constants/injection'
+import { symbolUseDark, symbolUseVueFlow, symbolFlowchartMetadata } from '@/constants/injection'
 
 const props = defineProps({
   flowchartName: {
     type: String,
     required: true,
+  },
+})
+
+defineExpose({
+  triggerRelayout: async () => {
+    nextTick(() => {
+      {
+        vueflowData.nodes.value = useLayout().layout(
+          vueflowData.nodes.value,
+          vueflowData.edges.value,
+          'TB',
+        )
+      }
+    })
   },
 })
 
@@ -81,13 +94,29 @@ const isShowMiniMap = ref(windowsize.width.value > 700)
 const vueflowData = {
   nodes: ref<FlowchartDataNode[]>([]),
   edges: ref<FlowchartDataEdge[]>([]),
+  metadata: ref<FlowchartData['metadata']>({
+    counts: {
+      node: -1,
+      edge: -1,
+      otherFlowcharts: -1,
+    },
+    variableNames: {},
+    flowchartRefs: [],
+    currName: '',
+  }),
 }
+const vueflowLayout = useLayout()
 const isReady = ref(false)
 const isDraggable = ref(false)
 
 const isDark = inject(symbolUseDark)!
-const nodeBgColor = computed(() => (isDark.value ? '#1E1E1E' : '#FFFFFF'))
-const nodeFontColor = computed(() => (isDark.value ? 'white' : 'black'))
+const cssNodeBgColor = computed(() => (isDark.value ? '#1E1E1E' : '#FFFFFF'))
+const cssNodeTextColor = computed(() => (isDark.value ? 'white' : 'black'))
+const cssCodeBgColor = computed(() => (isDark.value ? '#4a1c1f' : '#fff5f5'))
+const cssCodeTextColor = computed(() => (isDark.value ? '#ff6b6b' : '#dc3545'))
+
+provide(symbolUseVueFlow, vueflow)
+provide(symbolFlowchartMetadata, vueflowData.metadata)
 
 watch(
   fileUrl,
@@ -98,20 +127,29 @@ watch(
       data.value = null
       vueflowData.nodes.value = []
       vueflowData.edges.value = []
+      vueflowData.metadata.value = {
+        counts: {
+          node: -1,
+          edge: -1,
+          otherFlowcharts: -1,
+        },
+        variableNames: {},
+        flowchartRefs: [],
+        currName: '',
+      }
     } else {
       data.value = (await getJson<FlowchartData>(fileUrl.value, 5)) as FlowchartData
 
       vueflowData.nodes.value = data.value.data.nodes
       vueflowData.edges.value = data.value.data.edges
-      vueflowData.nodes.value = useLayout().layout(
+      vueflowData.metadata.value = data.value.metadata
+      vueflowData.nodes.value = vueflowLayout.layout(
         vueflowData.nodes.value,
         vueflowData.edges.value,
         'TB',
       )
 
       isReady.value = true
-
-      await initFlowchart()
     }
   },
   { immediate: true },
@@ -119,14 +157,13 @@ watch(
 
 async function initFlowchart() {
   // vueflow.setInteractive(false)
-  nextTick(() => {
-    vueflow.fitView({ nodes: [vueflowData.nodes.value[0].id] })
-    vueflowData.nodes.value = useLayout().layout(
+  nextTick(async () => {
+    vueflowData.nodes.value = vueflowLayout.layout(
       vueflowData.nodes.value,
       vueflowData.edges.value,
       'TB',
-      true,
     )
+    await vueflow.fitView({ nodes: [vueflowData.nodes.value[0].id] })
   })
 }
 
@@ -142,7 +179,7 @@ watch(
 <template>
   <div style="width: 100%">
     <PvProgressSpinner v-if="!isReady" />
-    <div v-else style="height: 600px; width: calc(100%)">
+    <div v-else style="height: 800px; width: calc(100%)">
       <VueFlow
         :nodes="vueflowData.nodes.value"
         :edges="vueflowData.edges.value"
@@ -385,14 +422,14 @@ watch(
 :deep(.vue-flow__node-Then) {
   padding: 10px;
   border-radius: 3px;
-  width: 200px;
+  width: 220px;
   font-size: 12px;
   text-align: left;
   border-width: 1px;
   border-style: solid;
   border-color: var(--vf-node-color);
-  background-color: v-bind(nodeBgColor);
-  color: v-bind(nodeFontColor);
+  background-color: v-bind(cssNodeBgColor);
+  color: v-bind(cssNodeTextColor);
 
   &.selected,
   &.selected:hover {
@@ -437,6 +474,51 @@ watch(
     font-size: 11px;
   }
 }
+
+:deep(.custom-node-long-content) {
+  font-size: 13px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 11px;
+  }
+  @media screen and (max-width: 794px) {
+    font-size: 11px;
+  }
+  @media screen and (max-width: 370px) {
+    font-size: 11px;
+  }
+}
+
+:deep(ul.custom-node-normal-ul) {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+:deep(ul.custom-node-long-content) {
+  list-style-type: disc;
+  list-style-position: inside;
+
+  /*max-height: 120px;*/
+  overflow-y: auto;
+}
+
+:deep(.custom-node-a-clickable:hover) {
+  cursor: pointer;
+}
+
+:deep(.custom-node-tooltip) {
+  text-decoration: underline;
+}
+
+:deep(code) {
+  font-family: 'Noto Sans Mono', monospace !important;
+  background-color: v-bind(cssCodeBgColor);
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: v-bind(cssCodeTextColor);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 </style>
 
 <style scoped>
@@ -450,6 +532,6 @@ watch(
 
   max-height: 200px;
 
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 </style>

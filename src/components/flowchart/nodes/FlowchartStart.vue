@@ -14,7 +14,7 @@ const props = defineProps<NodeProps<FlowchartDataNode_FlowchartStart['data']>>()
 
 <template>
   <NodeToolbar :position="Position.Top">
-    <p>FileId: {{ props.data.fileId }}</p>
+    <p>FileId:&nbsp;{{ props.data.fileId }}</p>
     <br />
     <p>{{ $t('comp.flowchart.node.FlowchartStart.toolbar.complist') }}</p>
     <ul>
@@ -30,9 +30,11 @@ const props = defineProps<NodeProps<FlowchartDataNode_FlowchartStart['data']>>()
         <span class="custom-node-title">{{ $t('comp.flowchart.node.FlowchartStart.title') }}</span>
       </div>
       <div class="custom-node-content">
-        <p>{{ $t('comp.flowchart.node.FlowchartStart.p.name') }}: {{ props.data.m_Name }}</p>
+        <p>{{ $t('comp.flowchart.node.FlowchartStart.p.name') }}:&nbsp;“{{ props.data.m_Name }}”</p>
         <p>
-          {{ $t('comp.flowchart.node.FlowchartStart.p.count') }}: {{ props.data.components.length }}
+          {{ $t('comp.flowchart.node.FlowchartStart.p.count') }}:&nbsp;{{
+            props.data.components.length
+          }}
         </p>
       </div>
     </div>

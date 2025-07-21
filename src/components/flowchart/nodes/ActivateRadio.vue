@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { NodeProps } from '@vue-flow/core'
 import { Position, Handle } from '@vue-flow/core'
+import { NodeToolbar } from '@vue-flow/node-toolbar'
 
 import { Icon } from '@vicons/utils'
 import { Radio } from '@vicons/tabler'
-import { PowerSharp } from '@vicons/material'
 
 import { type FlowchartDataNode_ActivateRadio } from '../types/script5_vueflow_prod'
 
@@ -13,11 +13,17 @@ const props = defineProps<NodeProps<FlowchartDataNode_ActivateRadio['data']>>()
 </script>
 
 <template>
+  <NodeToolbar :position="Position.Top">
+    <p>FileId:&nbsp;{{ props.data.fileId }}</p>
+    <p>ItemId:&nbsp;{{ props.data.itemId }}</p>
+  </NodeToolbar>
+
   <div>
     <Handle type="target" :position="Position.Top" />
     <div>
       <div>
-        <Icon><Radio /><PowerSharp /> ActivateRadio</Icon>
+        <Icon class="custom-node-icon"><Radio /></Icon>
+        <span class="custom-node-title">{{ $t('comp.flowchart.node.ActivateRadio.title') }}</span>
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />
