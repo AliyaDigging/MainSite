@@ -3,6 +3,7 @@ import PvSelect from 'primevue/select'
 import PvTag from 'primevue/tag'
 import PvDivider from 'primevue/divider'
 import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
 import { ref, watch, provide, useTemplateRef, onMounted } from 'vue'
 import ProgressSpinner from 'primevue/progressspinner'
 
@@ -11,7 +12,7 @@ import { type L10nCsvSingleLang } from '@/types/data_script7'
 import { useSiteSettingStore } from '@/stores/setting'
 import { symbolL10nDataSingleLang } from '@/constants/injection'
 import { getJson } from '@/utils/fetch'
-import type { VueFlowCatalog, VueFlowCatalogEntry } from '@/types/data_script6'
+import type { VueFlowCatalog } from '@/types/data_script6'
 
 const props = defineProps({
   flowchartName: {
@@ -21,12 +22,15 @@ const props = defineProps({
 })
 
 const i18n = useI18n()
-const flowchartSelection = ref<VueFlowCatalogEntry>()
+const flowchartSelection = ref<string>(props.flowchartName)
 
 const setting = useSiteSettingStore()
+const route = useRoute()
+const router = useRouter()
 
 const dataL10n = ref<L10nCsvSingleLang>({})
-const dataCatalog = ref<VueFlowCatalog>([])
+const dataCatalog = ref<VueFlowCatalog>({})
+const dataCatalogList = ref<string[]>([])
 const isReady = ref(false)
 
 const flowchartRef = useTemplateRef('flowchartComp')
@@ -39,7 +43,24 @@ async function loadL10nData(langcode: string) {
 
 async function loadCatalogData() {
   dataCatalog.value = await getJson<VueFlowCatalog>(`/data/flowcharts/vueflow/catalog.json`, 5)
+  dataCatalogList.value = await getJson<string[]>(`/data/flowcharts/vueflow/catalog_list.json`, 5)
 }
+
+// select 更改时，触发路径更改
+watch(flowchartSelection, (newValue) => {
+  if (newValue !== route.params.flowchartName) {
+    router.push(`/view/flowchart/${newValue}`)
+  }
+})
+// 路径更改时，触发 select 更改
+watch(
+  () => route.params.flowchartName,
+  (newValue) => {
+    if (newValue !== flowchartSelection.value) {
+      flowchartSelection.value = String(newValue)
+    }
+  },
+)
 
 watch(
   () => setting.l10nlang,
@@ -79,12 +100,12 @@ onMounted(async () => {
     </div>
     <div v-else>
       <p class="view-page-h1-desc text-color mb-2">{{ $t('comp.flowchart.p.view2') }}</p>
-      <PvSelect v-model="flowchartSelection" :options="dataCatalog">
+      <PvSelect v-model="flowchartSelection" :options="dataCatalogList">
         <template #option="slotProps">
           <div>
-            <span class="mr-2">{{ slotProps.option.filename }}&nbsp;</span>
+            <span class="mr-2">{{ slotProps.option }}&nbsp;</span>
             <PvTag severity="info" size="small">{{
-              slotProps.option.filename.toLowerCase().includes('daily')
+              slotProps.option.toLowerCase().includes('daily')
                 ? i18n.t(`select.flowchart.type.daily`)
                 : i18n.t(`select.flowchart.type.main`)
             }}</PvTag>
@@ -92,9 +113,9 @@ onMounted(async () => {
         </template>
         <template #value="slotProps">
           <div v-if="slotProps.value">
-            <span class="mr-2">{{ slotProps.value.filename }}&nbsp;</span>
+            <span class="mr-2">{{ slotProps.value }}&nbsp;</span>
             <PvTag severity="info" size="small">{{
-              slotProps.value.filename.toLowerCase().includes('daily')
+              slotProps.value.toLowerCase().includes('daily')
                 ? i18n.t(`select.flowchart.type.daily`)
                 : i18n.t(`select.flowchart.type.main`)
             }}</PvTag>
@@ -107,7 +128,7 @@ onMounted(async () => {
       <PvDivider />
       <div class="mt-6">
         <FlowchartComp
-          :flowchart-name="flowchartSelection ? flowchartSelection.filename : ''"
+          :flowchart-name="flowchartSelection ? flowchartSelection : ''"
           ref="flowchartComp"
         />
       </div>

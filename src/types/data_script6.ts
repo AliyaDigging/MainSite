@@ -11,4 +11,4 @@ export type VueFlowCatalogEntry = {
     currName: string
   }
 }
-export type VueFlowCatalog = VueFlowCatalogEntry[]
+export type VueFlowCatalog = Record<string, VueFlowCatalogEntry>
