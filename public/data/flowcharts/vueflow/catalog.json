@@ -1,5 +1,38 @@
-[
-  {
+{
+  "1-1": {
+    "filename": "1-1",
+    "metadata": {
+      "counts": {
+        "node": 145,
+        "edge": 157,
+        "otherFlowcharts": 2
+      },
+      "flowchartRefs": [
+        "1-2",
+        "1-1-1"
+      ],
+      "variableNames": {
+        "114378979697183053": {
+          "key": "name",
+          "type": "string"
+        },
+        "114358056880505242": {
+          "key": "KaneDeath",
+          "type": "number"
+        },
+        "114035452268344571": {
+          "key": "IsCOSMOS",
+          "type": "number"
+        },
+        "114190856048802554": {
+          "key": "END_1_IS_GET",
+          "type": "number"
+        }
+      },
+      "currName": "1-1"
+    }
+  },
+  "1-1-1": {
     "filename": "1-1-1",
     "metadata": {
       "counts": {
@@ -33,7 +66,7 @@
       "currName": "1-1-1"
     }
   },
-  {
+  "1-1-2": {
     "filename": "1-1-2",
     "metadata": {
       "counts": {
@@ -66,7 +99,7 @@
       "currName": "1-1-2"
     }
   },
-  {
+  "1-1-3": {
     "filename": "1-1-3",
     "metadata": {
       "counts": {
@@ -84,122 +117,7 @@
       "currName": "1-1-3"
     }
   },
-  {
-    "filename": "1-1",
-    "metadata": {
-      "counts": {
-        "node": 145,
-        "edge": 157,
-        "otherFlowcharts": 2
-      },
-      "flowchartRefs": [
-        "1-2",
-        "1-1-1"
-      ],
-      "variableNames": {
-        "114378979697183053": {
-          "key": "name",
-          "type": "string"
-        },
-        "114358056880505242": {
-          "key": "KaneDeath",
-          "type": "number"
-        },
-        "114035452268344571": {
-          "key": "IsCOSMOS",
-          "type": "number"
-        },
-        "114190856048802554": {
-          "key": "END_1_IS_GET",
-          "type": "number"
-        }
-      },
-      "currName": "1-1"
-    }
-  },
-  {
-    "filename": "1-10",
-    "metadata": {
-      "counts": {
-        "node": 135,
-        "edge": 149,
-        "otherFlowcharts": 3
-      },
-      "flowchartRefs": [
-        "RE",
-        "1-11",
-        "1-12"
-      ],
-      "variableNames": {
-        "114485360727538960": {
-          "key": "name",
-          "type": "string"
-        }
-      },
-      "currName": "1-10"
-    }
-  },
-  {
-    "filename": "1-11",
-    "metadata": {
-      "counts": {
-        "node": 56,
-        "edge": 64,
-        "otherFlowcharts": 1
-      },
-      "flowchartRefs": [
-        "1-12"
-      ],
-      "variableNames": {
-        "114751377878854063": {
-          "key": "name",
-          "type": "string"
-        }
-      },
-      "currName": "1-11"
-    }
-  },
-  {
-    "filename": "1-12",
-    "metadata": {
-      "counts": {
-        "node": 204,
-        "edge": 245,
-        "otherFlowcharts": 1
-      },
-      "flowchartRefs": [
-        "2-1"
-      ],
-      "variableNames": {
-        "114832219103779492": {
-          "key": "name",
-          "type": "string"
-        },
-        "114434184220420931": {
-          "key": "sleeptime",
-          "type": "number"
-        },
-        "114653010067559492": {
-          "key": "countstar",
-          "type": "number"
-        },
-        "114666520170146995": {
-          "key": "farcallbreak",
-          "type": "number"
-        },
-        "114150993905102522": {
-          "key": "reason",
-          "type": "number"
-        },
-        "114657070530938121": {
-          "key": "pressurebreak",
-          "type": "number"
-        }
-      },
-      "currName": "1-12"
-    }
-  },
-  {
+  "1-2": {
     "filename": "1-2",
     "metadata": {
       "counts": {
@@ -223,7 +141,7 @@
       "currName": "1-2"
     }
   },
-  {
+  "1-3": {
     "filename": "1-3",
     "metadata": {
       "counts": {
@@ -263,7 +181,7 @@
       "currName": "1-3"
     }
   },
-  {
+  "1-4": {
     "filename": "1-4",
     "metadata": {
       "counts": {
@@ -351,52 +269,7 @@
       "currName": "1-4"
     }
   },
-  {
-    "filename": "1-5-1",
-    "metadata": {
-      "counts": {
-        "node": 92,
-        "edge": 102,
-        "otherFlowcharts": 1
-      },
-      "flowchartRefs": [
-        "1-5-2"
-      ],
-      "variableNames": {
-        "114650104085755391": {
-          "key": "name",
-          "type": "string"
-        },
-        "114913104116636305": {
-          "key": "KaneDeath",
-          "type": "number"
-        }
-      },
-      "currName": "1-5-1"
-    }
-  },
-  {
-    "filename": "1-5-2",
-    "metadata": {
-      "counts": {
-        "node": 126,
-        "edge": 139,
-        "otherFlowcharts": 2
-      },
-      "flowchartRefs": [
-        "end",
-        "end"
-      ],
-      "variableNames": {
-        "114436389290347326": {
-          "key": "name",
-          "type": "string"
-        }
-      },
-      "currName": "1-5-2"
-    }
-  },
-  {
+  "1-5": {
     "filename": "1-5",
     "metadata": {
       "counts": {
@@ -454,7 +327,52 @@
       "currName": "1-5"
     }
   },
-  {
+  "1-5-1": {
+    "filename": "1-5-1",
+    "metadata": {
+      "counts": {
+        "node": 92,
+        "edge": 102,
+        "otherFlowcharts": 1
+      },
+      "flowchartRefs": [
+        "1-5-2"
+      ],
+      "variableNames": {
+        "114650104085755391": {
+          "key": "name",
+          "type": "string"
+        },
+        "114913104116636305": {
+          "key": "KaneDeath",
+          "type": "number"
+        }
+      },
+      "currName": "1-5-1"
+    }
+  },
+  "1-5-2": {
+    "filename": "1-5-2",
+    "metadata": {
+      "counts": {
+        "node": 126,
+        "edge": 139,
+        "otherFlowcharts": 2
+      },
+      "flowchartRefs": [
+        "end",
+        "end"
+      ],
+      "variableNames": {
+        "114436389290347326": {
+          "key": "name",
+          "type": "string"
+        }
+      },
+      "currName": "1-5-2"
+    }
+  },
+  "1-6": {
     "filename": "1-6",
     "metadata": {
       "counts": {
@@ -474,7 +392,7 @@
       "currName": "1-6"
     }
   },
-  {
+  "1-7": {
     "filename": "1-7",
     "metadata": {
       "counts": {
@@ -502,7 +420,7 @@
       "currName": "1-7"
     }
   },
-  {
+  "1-8": {
     "filename": "1-8",
     "metadata": {
       "counts": {
@@ -530,7 +448,7 @@
       "currName": "1-8"
     }
   },
-  {
+  "1-9": {
     "filename": "1-9",
     "metadata": {
       "counts": {
@@ -562,7 +480,89 @@
       "currName": "1-9"
     }
   },
-  {
+  "1-10": {
+    "filename": "1-10",
+    "metadata": {
+      "counts": {
+        "node": 135,
+        "edge": 149,
+        "otherFlowcharts": 3
+      },
+      "flowchartRefs": [
+        "RE",
+        "1-11",
+        "1-12"
+      ],
+      "variableNames": {
+        "114485360727538960": {
+          "key": "name",
+          "type": "string"
+        }
+      },
+      "currName": "1-10"
+    }
+  },
+  "1-11": {
+    "filename": "1-11",
+    "metadata": {
+      "counts": {
+        "node": 56,
+        "edge": 64,
+        "otherFlowcharts": 1
+      },
+      "flowchartRefs": [
+        "1-12"
+      ],
+      "variableNames": {
+        "114751377878854063": {
+          "key": "name",
+          "type": "string"
+        }
+      },
+      "currName": "1-11"
+    }
+  },
+  "1-12": {
+    "filename": "1-12",
+    "metadata": {
+      "counts": {
+        "node": 204,
+        "edge": 245,
+        "otherFlowcharts": 1
+      },
+      "flowchartRefs": [
+        "2-1"
+      ],
+      "variableNames": {
+        "114832219103779492": {
+          "key": "name",
+          "type": "string"
+        },
+        "114434184220420931": {
+          "key": "sleeptime",
+          "type": "number"
+        },
+        "114653010067559492": {
+          "key": "countstar",
+          "type": "number"
+        },
+        "114666520170146995": {
+          "key": "farcallbreak",
+          "type": "number"
+        },
+        "114150993905102522": {
+          "key": "reason",
+          "type": "number"
+        },
+        "114657070530938121": {
+          "key": "pressurebreak",
+          "type": "number"
+        }
+      },
+      "currName": "1-12"
+    }
+  },
+  "2-1": {
     "filename": "2-1",
     "metadata": {
       "counts": {
@@ -598,7 +598,7 @@
       "currName": "2-1"
     }
   },
-  {
+  "2-2": {
     "filename": "2-2",
     "metadata": {
       "counts": {
@@ -642,7 +642,7 @@
       "currName": "2-2"
     }
   },
-  {
+  "3-1": {
     "filename": "3-1",
     "metadata": {
       "counts": {
@@ -670,7 +670,7 @@
       "currName": "3-1"
     }
   },
-  {
+  "3-2": {
     "filename": "3-2",
     "metadata": {
       "counts": {
@@ -690,7 +690,7 @@
       "currName": "3-2"
     }
   },
-  {
+  "3-3": {
     "filename": "3-3",
     "metadata": {
       "counts": {
@@ -718,7 +718,7 @@
       "currName": "3-3"
     }
   },
-  {
+  "3-4": {
     "filename": "3-4",
     "metadata": {
       "counts": {
@@ -758,7 +758,7 @@
       "currName": "3-4"
     }
   },
-  {
+  "4-1": {
     "filename": "4-1",
     "metadata": {
       "counts": {
@@ -780,7 +780,7 @@
       "currName": "4-1"
     }
   },
-  {
+  "4-2": {
     "filename": "4-2",
     "metadata": {
       "counts": {
@@ -800,7 +800,7 @@
       "currName": "4-2"
     }
   },
-  {
+  "4-3": {
     "filename": "4-3",
     "metadata": {
       "counts": {
@@ -824,7 +824,7 @@
       "currName": "4-3"
     }
   },
-  {
+  "4-4": {
     "filename": "4-4",
     "metadata": {
       "counts": {
@@ -856,10 +856,7 @@
       "currName": "4-4"
     }
   },
-  {
-    "filename": "catalog"
-  },
-  {
+  "Daily_1-1": {
     "filename": "Daily_1-1",
     "metadata": {
       "counts": {
@@ -891,7 +888,7 @@
       "currName": "Daily_1-1"
     }
   },
-  {
+  "Daily_1-2": {
     "filename": "Daily_1-2",
     "metadata": {
       "counts": {
@@ -927,7 +924,7 @@
       "currName": "Daily_1-2"
     }
   },
-  {
+  "Daily_1-3": {
     "filename": "Daily_1-3",
     "metadata": {
       "counts": {
@@ -947,7 +944,7 @@
       "currName": "Daily_1-3"
     }
   },
-  {
+  "Daily_1-4": {
     "filename": "Daily_1-4",
     "metadata": {
       "counts": {
@@ -967,7 +964,7 @@
       "currName": "Daily_1-4"
     }
   },
-  {
+  "Daily_1-5": {
     "filename": "Daily_1-5",
     "metadata": {
       "counts": {
@@ -991,7 +988,7 @@
       "currName": "Daily_1-5"
     }
   },
-  {
+  "Daily_1-6": {
     "filename": "Daily_1-6",
     "metadata": {
       "counts": {
@@ -1015,7 +1012,7 @@
       "currName": "Daily_1-6"
     }
   },
-  {
+  "Daily_1-7.1": {
     "filename": "Daily_1-7.1",
     "metadata": {
       "counts": {
@@ -1039,7 +1036,7 @@
       "currName": "Daily_1-7.1"
     }
   },
-  {
+  "Daily_1-7.2": {
     "filename": "Daily_1-7.2",
     "metadata": {
       "counts": {
@@ -1063,7 +1060,7 @@
       "currName": "Daily_1-7.2"
     }
   },
-  {
+  "Daily_2-1.1": {
     "filename": "Daily_2-1.1",
     "metadata": {
       "counts": {
@@ -1127,7 +1124,7 @@
       "currName": "Daily_2-1.1"
     }
   },
-  {
+  "Daily_2-1.2": {
     "filename": "Daily_2-1.2",
     "metadata": {
       "counts": {
@@ -1147,7 +1144,7 @@
       "currName": "Daily_2-1.2"
     }
   },
-  {
+  "Daily_2-2.1": {
     "filename": "Daily_2-2.1",
     "metadata": {
       "counts": {
@@ -1181,7 +1178,7 @@
       "currName": "Daily_2-2.1"
     }
   },
-  {
+  "Daily_2-2.2": {
     "filename": "Daily_2-2.2",
     "metadata": {
       "counts": {
@@ -1209,7 +1206,7 @@
       "currName": "Daily_2-2.2"
     }
   },
-  {
+  "Daily_2-3.1": {
     "filename": "Daily_2-3.1",
     "metadata": {
       "counts": {
@@ -1251,7 +1248,7 @@
       "currName": "Daily_2-3.1"
     }
   },
-  {
+  "Daily_2-3.2": {
     "filename": "Daily_2-3.2",
     "metadata": {
       "counts": {
@@ -1279,7 +1276,7 @@
       "currName": "Daily_2-3.2"
     }
   },
-  {
+  "Daily_2-4": {
     "filename": "Daily_2-4",
     "metadata": {
       "counts": {
@@ -1308,7 +1305,7 @@
       "currName": "Daily_2-4"
     }
   },
-  {
+  "Daily_2_factory": {
     "filename": "Daily_2_factory",
     "metadata": {
       "counts": {
@@ -1342,7 +1339,7 @@
       "currName": "Daily_2_factory"
     }
   },
-  {
+  "Daily_2_hospital": {
     "filename": "Daily_2_hospital",
     "metadata": {
       "counts": {
@@ -1372,7 +1369,7 @@
       "currName": "Daily_2_hospital"
     }
   },
-  {
+  "Daily_2_TV": {
     "filename": "Daily_2_TV",
     "metadata": {
       "counts": {
@@ -1402,7 +1399,7 @@
       "currName": "Daily_2_TV"
     }
   },
-  {
+  "end": {
     "filename": "end",
     "metadata": {
       "counts": {
@@ -1420,7 +1417,7 @@
       "currName": "end"
     }
   },
-  {
+  "First Dead": {
     "filename": "First Dead",
     "metadata": {
       "counts": {
@@ -1448,7 +1445,7 @@
       "currName": "First Dead"
     }
   },
-  {
+  "First Wake": {
     "filename": "First Wake",
     "metadata": {
       "counts": {
@@ -1473,7 +1470,7 @@
       "currName": "First Wake"
     }
   },
-  {
+  "Mid-Autumn_Festival": {
     "filename": "Mid-Autumn_Festival",
     "metadata": {
       "counts": {
@@ -1491,7 +1488,7 @@
       "currName": "Mid-Autumn_Festival"
     }
   },
-  {
+  "O2RunOut": {
     "filename": "O2RunOut",
     "metadata": {
       "counts": {
@@ -1511,7 +1508,7 @@
       "currName": "O2RunOut"
     }
   },
-  {
+  "O2RunOut2": {
     "filename": "O2RunOut2",
     "metadata": {
       "counts": {
@@ -1535,7 +1532,7 @@
       "currName": "O2RunOut2"
     }
   },
-  {
+  "RE-FA": {
     "filename": "RE-FA",
     "metadata": {
       "counts": {
@@ -1561,7 +1558,7 @@
       "currName": "RE-FA"
     }
   },
-  {
+  "RE-ICE": {
     "filename": "RE-ICE",
     "metadata": {
       "counts": {
@@ -1587,7 +1584,7 @@
       "currName": "RE-ICE"
     }
   },
-  {
+  "RE": {
     "filename": "RE",
     "metadata": {
       "counts": {
@@ -1609,4 +1606,4 @@
       "currName": "RE"
     }
   }
-]
+}
