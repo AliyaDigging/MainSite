@@ -2,7 +2,6 @@
 import PvSelect from 'primevue/select'
 import PvTag from 'primevue/tag'
 import PvDivider from 'primevue/divider'
-import { flowchartOptions, type FlowchartOption } from '@/constants/flowcharts'
 import { useI18n } from 'vue-i18n'
 import { ref, watch, provide, useTemplateRef, onMounted } from 'vue'
 import ProgressSpinner from 'primevue/progressspinner'
@@ -63,7 +62,7 @@ onMounted(async () => {
 
 <template>
   <div class="view-body-padding-20">
-    <h1 class="view-page-h1 text-black mb-0">查看流程图</h1>
+    <h1 class="view-page-h1 text-black mb-0">{{ $t('comp.flowchart.p.view1') }}</h1>
     <div v-if="!isReady" class="mt-6">
       <div class="card justify-center">
         <ProgressSpinner
@@ -79,7 +78,7 @@ onMounted(async () => {
       </div>
     </div>
     <div v-else>
-      <p class="view-page-h1-desc text-color mb-2">选择一个流程图开始查看内容</p>
+      <p class="view-page-h1-desc text-color mb-2">{{ $t('comp.flowchart.p.view2') }}</p>
       <PvSelect v-model="flowchartSelection" :options="dataCatalog">
         <template #option="slotProps">
           <div>
