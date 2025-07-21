@@ -66,7 +66,7 @@ export function useLayout() {
         }
       }
 
-      console.log(`${node.id}, ${JSON.stringify(size)}`)
+      //console.log(`${node.id}, ${JSON.stringify(size)}`)
 
       dagreGraph.setNode(node.id, {
         width: size.width,

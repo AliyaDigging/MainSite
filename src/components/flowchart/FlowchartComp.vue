@@ -6,7 +6,6 @@ import {
   type FlowchartDataNode,
 } from './types/script5_vueflow_prod'
 import { getJson } from '@/utils/fetch'
-import PvProgressSpinner from 'primevue/progressspinner'
 
 import { VueFlow, useVueFlow } from '@vue-flow/core'
 import { Background } from '@vue-flow/background'
@@ -62,6 +61,10 @@ import { useWindowSize } from '@vueuse/core'
 import { useI18n } from 'vue-i18n'
 import { symbolUseDark, symbolUseVueFlow, symbolFlowchartMetadata } from '@/constants/injection'
 
+import { SelectWindow } from '@vicons/carbon'
+import { Icon } from '@vicons/utils'
+import { detectIsMobile } from '@/utils/browser'
+
 const props = defineProps({
   flowchartName: {
     type: String,
@@ -115,6 +118,27 @@ const cssNodeTextColor = computed(() => (isDark.value ? 'white' : 'black'))
 const cssCodeBgColor = computed(() => (isDark.value ? '#4a1c1f' : '#fff5f5'))
 const cssCodeTextColor = computed(() => (isDark.value ? '#ff6b6b' : '#dc3545'))
 
+const flowchartHeight = computed(() => {
+  let height = 0
+  if (detectIsMobile()) {
+    height = Number((windowsize.height.value - 200) * 0.8)
+  } else {
+    height = Number((windowsize.height.value - 100) * 0.9)
+  }
+
+  const result = `${height}px`
+  return result
+})
+
+function preProcessEdges(edges: FlowchartDataNode[]) {
+  edges.forEach((value) => {
+    if ('label' in value) {
+      value.label = i18n.t(value.label)
+    }
+  })
+  return edges
+}
+
 provide(symbolUseVueFlow, vueflow)
 provide(symbolFlowchartMetadata, vueflowData.metadata)
 
@@ -138,10 +162,13 @@ watch(
         currName: '',
       }
     } else {
+      isReady.value = false
+      await nextTick()
+
       data.value = (await getJson<FlowchartData>(fileUrl.value, 5)) as FlowchartData
 
       vueflowData.nodes.value = data.value.data.nodes
-      vueflowData.edges.value = data.value.data.edges
+      vueflowData.edges.value = preProcessEdges(data.value.data.edges)
       vueflowData.metadata.value = data.value.metadata
       vueflowData.nodes.value = vueflowLayout.layout(
         vueflowData.nodes.value,
@@ -178,8 +205,13 @@ watch(
 
 <template>
   <div style="width: 100%">
-    <PvProgressSpinner v-if="!isReady" />
-    <div v-else style="height: 800px; width: calc(100%)">
+    <div v-if="!isReady">
+      <div style="text-align: center">
+        <Icon style="font-size: 80px"><SelectWindow /></Icon>
+        <p style="font-size: 30px; font-weight: 550">{{ $t('comp.flowchart.p.selection1') }}</p>
+      </div>
+    </div>
+    <div v-else class="flowchart-comp">
       <VueFlow
         :nodes="vueflowData.nodes.value"
         :edges="vueflowData.edges.value"
@@ -377,6 +409,13 @@ watch(
 </template>
 
 <style scoped>
+.flowchart-comp {
+  height: v-bind(flowchartHeight);
+  width: calc(100%);
+}
+</style>
+
+<style scoped>
 :deep(.vue-flow__node-ActivateEH),
 :deep(.vue-flow__node-ActivateEOG),
 :deep(.vue-flow__node-ActivateRadio),
@@ -533,5 +572,10 @@ watch(
   max-height: 200px;
 
   overflow-y: auto;
+}
+
+:deep(audio) {
+  width: 200px;
+  display: block;
 }
 </style>
