@@ -43,6 +43,14 @@ import PvDivider from 'primevue/divider'
       作为 UI 显示库，以及 <a href="https://vueflow.dev/">Vue Flow</a> 作为流程图可视化库。
     </p>
     <p class="mt-2">
+      前端部分还使用了
+      <a href="https://hyperos.mi.com/font/zh/details/sc/">MiSans VF (可变字体)</a>
+      作为字体来源，并使用
+      <a href="https://chinese-font.netlify.app/zh-cn/">中文网字计划</a> 对字体进行预切割处理。根据
+      <a href="https://hyperos.mi.com/font-download/MiSans字体知识产权许可协议.pdf">MiSans</a>
+      的协议，本站可免费使用该字体。
+    </p>
+    <p class="mt-2">
       欲了解更多内容，请参阅 GitHub 上的<a
         href="https://github.com/AliyaDigging/.github/blob/main/TECHNICAL_EXPLANATION.md"
         target="_blank"
