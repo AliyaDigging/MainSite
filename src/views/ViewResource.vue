@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import DeferredContent from 'primevue/deferredcontent'
 import PvDivider from 'primevue/divider'
 import PvDataTable from 'primevue/datatable'
 import PvColumn from 'primevue/column'
@@ -31,7 +32,9 @@ const i18n = useI18n()
       <PvColumn field="filename" :header="i18n.t('view.res.col.name')"></PvColumn>
       <PvColumn field="url" :header="i18n.t('view.res.col.url')">
         <template #body="slotProps">
-          <img :src="slotProps.data.url" width="100%" />
+          <DeferredContent>
+            <img :src="slotProps.data.url" width="100%" />
+          </DeferredContent>
         </template>
       </PvColumn>
     </PvDataTable>
