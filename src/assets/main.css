@@ -32,6 +32,11 @@ ul.custom-node-normal-ul {
   list-style-position: inside;
 }
 
+.p-dark {
+  --p-surface-0: rgb(232, 232, 232) !important;
+  --p-text-color: rgb(232, 232, 232 !important);
+}
+
 @media screen and (max-width: 960px) {
 }
 
