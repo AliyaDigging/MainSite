@@ -1,8 +1,8 @@
 export function retryUntilItsOk(
-  callback: (...args: any[]) => any,
+  callback: (...args: unknown[]) => unknown,
   retryTimes: number = Number.POSITIVE_INFINITY,
-  ...args: any[]
-): any {
+  ...args: unknown[]
+): unknown {
   if (retryTimes === Number.POSITIVE_INFINITY) {
     while (1) {
       try {
