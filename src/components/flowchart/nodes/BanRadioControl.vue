@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NodeProps } from '@vue-flow/core'
 import { Position, Handle } from '@vue-flow/core'
+import { NodeToolbar } from '@vue-flow/node-toolbar'
 
 import { Icon } from '@vicons/utils'
 import { Radio } from '@vicons/tabler'
