@@ -11,19 +11,19 @@ import PvDivider from 'primevue/divider'
     <PvDivider />
     <h2>免责声明</h2>
     <p class="text-color mt-2">
-      本站与游戏《彼方的她-Aliya》（Aliya: Timelink）、开发者【瞳电游工作室】（<a
+      本站（ALIYA DB）与游戏《彼方的她-Aliya》（Aliya: Timelink）、开发者【瞳电游工作室】（<a
         href="https://space.bilibili.com/1104337773"
         target="_blank"
         >B站官号</a
       >、<a href="https://store.steampowered.com/developer/tdgame" target="_blank">Steam</a
       >）与发行商【AnotherIndie】（<a href="http://anotherindie.com.cn/" target="_blank">官网</a
       >、<a href="https://store.steampowered.com/publisher/AnotherIndie/" target="_blank">Steam</a
-      >）无任何关系。
+      >）<b>均无任何关系</b>。
     </p>
     <p class="text-color mt-2">
       本站中引用的所有游戏内素材均属于其各自版权所有者，本站仅做相关数据展示。
     </p>
-    <p class="text-color mt-2">本站为非盈利性质的粉丝向网站。</p>
+    <p class="text-color mt-2">本站为非盈利性质的粉丝向项目/网站。</p>
     <h2 class="mt-4">使用的技术</h2>
     <p class="mt-2">
       游戏数据获取使用
@@ -31,7 +31,7 @@ import PvDivider from 'primevue/divider'
       人工处理。
     </p>
     <p class="mt-2">
-      数据处理部分使用
+      数据处理部分由
       <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> 驱动（因为我馋 TS
       的类型检查）。
     </p>
@@ -45,10 +45,19 @@ import PvDivider from 'primevue/divider'
     <p class="mt-2">
       前端部分还使用了
       <a href="https://hyperos.mi.com/font/zh/details/sc/">MiSans VF (可变字体)</a>
-      作为字体来源，并使用
-      <a href="https://chinese-font.netlify.app/zh-cn/">中文网字计划</a> 对字体进行预切割处理。根据
-      <a href="https://hyperos.mi.com/font-download/MiSans字体知识产权许可协议.pdf">MiSans</a>
-      的协议，本站可免费使用该字体。
+      作为主要字体，并使用
+      <a href="https://chinese-font.netlify.app/zh-cn/">中文网字计划</a>
+      的切割工具对字体进行预切割处理。根据
+      <a href="https://hyperos.mi.com/font-download/MiSans字体知识产权许可协议.pdf"
+        >MiSans 的协议</a
+      >
+      ，本站可免费使用该字体。
+    </p>
+    <p class="mt-2">
+      本站使用
+      <a href="https://pages.cloudflare.com/">CloudFlare Pages</a>
+      实现网站的生成与部署，使用
+      <a href="https://aws.amazon.com/cloudfront/">AWS CloudFront</a> 进行全球内容分发与加速服务。
     </p>
     <p class="mt-2">
       欲了解更多内容，请参阅 GitHub 上的<a
