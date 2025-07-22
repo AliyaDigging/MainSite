@@ -3,10 +3,14 @@ import { useSiteSettingStore } from '@/stores/setting'
 import { SiteLanguage, L10nLanguage } from '@/types/setting'
 import PvSelect from 'primevue/select'
 import PvDivider from 'primevue/divider'
+import PvInputText from 'primevue/inputtext'
+import PvToggleButton from 'primevue/togglebutton'
 import { useI18n } from 'vue-i18n'
 import { watch } from 'vue'
+import { useAliyaStore } from '@/stores/aliya'
 
 const setting = useSiteSettingStore()
+const aliyaSetting = useAliyaStore()
 const i18n = useI18n()
 watch(
   () => setting.sitelang,
@@ -32,6 +36,16 @@ watch(
     class="mt-2"
   ></PvSelect>
   <PvDivider />
+  <h2>{{ $t('comp.setting.h2.playername') }}</h2>
+  <PvInputText type="text" v-model="aliyaSetting.playerName" class="mt-2" />
+  <h2 class="mt-4">{{ $t('comp.setting.h2.showformatted') }}</h2>
+  <p>{{ $t('comp.setting.showformatted.p1') }}</p>
+  <PvToggleButton
+    v-model="aliyaSetting.showFormattedString"
+    :onLabel="i18n.t('constant.boolean.toggler.true')"
+    :offLabel="i18n.t('constant.boolean.toggler.false')"
+    class="mt-2"
+  />
 </template>
 
 <style scoped>

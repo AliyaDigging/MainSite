@@ -16,12 +16,13 @@ import {
   symbolUseVueFlow,
 } from '@/constants/injection'
 import { useI18n } from 'vue-i18n'
-import { useSiteSettingStore } from '@/stores/setting'
+import { useAliyaStore } from '@/stores/aliya'
+import { batchReplaceString } from '@/utils/aliya'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_PlayerChoice['data']>>()
 const i18n = useI18n()
-const setting = useSiteSettingStore()
+const aliyaSetting = useAliyaStore()
 
 const vueflow = inject(symbolUseVueFlow)!
 const l10n = inject(symbolL10nDataSingleLang)!
@@ -30,6 +31,10 @@ const playerText = computed(() => {
   const text = l10n.value[`PlayerChoice.${metadata.value.currName}.${props.data.itemId}.`]
   let textList = text.split('|###|')
   textList = textList.map((value) => value.trim())
+
+  if (aliyaSetting.showFormattedString) {
+    textList = textList.map((value) => batchReplaceString(value, aliyaSetting.getTableForReplace()))
+  }
 
   if (textList.length === 1) {
     return { choice: textList[0], sent: textList[0] }

@@ -25,6 +25,7 @@ import router from './router'
 import { useDark } from '@vueuse/core'
 import { symbolUseDark } from './constants/injection'
 import { useSiteSettingStore } from './stores/setting'
+import { useAliyaStore } from './stores/aliya'
 
 const app = createApp(App)
 
@@ -86,5 +87,7 @@ app.provide(symbolUseDark, dark)
 useSiteSettingStore().refreshPersist()
 useSiteSettingStore().changeSiteLang()
 i18n.global.locale = useSiteSettingStore().sitelang
+useAliyaStore().makePersist()
+useAliyaStore().updateFormattedTable()
 
 app.mount('#app')

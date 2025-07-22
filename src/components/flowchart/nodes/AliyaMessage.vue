@@ -12,12 +12,14 @@ import { computed, inject } from 'vue'
 import { symbolFlowchartMetadata, symbolL10nDataSingleLang } from '@/constants/injection'
 import { useI18n } from 'vue-i18n'
 import { useSiteSettingStore } from '@/stores/setting'
-import { caluateMessageTypingTime } from '@/utils/aliya'
+import { batchReplaceString, caluateMessageTypingTime } from '@/utils/aliya'
+import { useAliyaStore } from '@/stores/aliya'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_AliyaMessage['data']>>()
 const i18n = useI18n()
 const setting = useSiteSettingStore()
+const aliyaSetting = useAliyaStore()
 
 const l10n = inject(symbolL10nDataSingleLang)!
 const metadata = inject(symbolFlowchartMetadata)!
@@ -28,9 +30,14 @@ const messageTextList = computed(() => {
 
   const result = new Array<{ text: string; time: number; calcString: string }>()
   textList.forEach((value) => {
+    let text = value
+    if (aliyaSetting.showFormattedString) {
+      text = batchReplaceString(text, aliyaSetting.getTableForReplace())
+    }
+
     result.push({
-      text: value,
-      ...caluateMessageTypingTime(value, setting.l10nlang),
+      text: text,
+      ...caluateMessageTypingTime(text, setting.l10nlang),
     })
   })
 

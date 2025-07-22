@@ -31,3 +31,13 @@ export function GetReadWait(
       return { time: 0.6 + text.length * 0.033, calcString: `0.6s + ${text.length} * 0.033s` }
   }
 }
+
+export function batchReplaceString(targetString: string, replaceTable: Record<string, string>) {
+  let text = targetString
+  Object.entries(replaceTable).forEach(([name, value]) => {
+    const regex = new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'gi')
+    text = text.replace(regex, value)
+  })
+
+  return text
+}
