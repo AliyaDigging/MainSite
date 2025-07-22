@@ -20,6 +20,11 @@ const router = createRouter({
       name: 'view_localization',
       component: () => import('../views/ViewL10n.vue'),
     },
+    {
+      path: '/view/resource',
+      name: 'view_resource',
+      component: () => import('../views/ViewResource.vue'),
+    },
   ],
 })
 

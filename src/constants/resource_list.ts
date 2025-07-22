@@ -1,0 +1,31 @@
+export const resourceImages = [
+  { filename: '1.png', url: '/aliya/images/1.png' },
+  { filename: '2.png', url: '/aliya/images/2.png' },
+  { filename: '3.png', url: '/aliya/images/3.png' },
+  { filename: '4.png', url: '/aliya/images/4.png' },
+  { filename: '5.png', url: '/aliya/images/5.png' },
+  { filename: '6.png', url: '/aliya/images/6.png' },
+  { filename: '7.png', url: '/aliya/images/7.png' },
+  { filename: '8.png', url: '/aliya/images/8.png' },
+  { filename: '9.png', url: '/aliya/images/9.png' },
+  { filename: '10.png', url: '/aliya/images/10.png' },
+  { filename: '11.png', url: '/aliya/images/11.png' },
+  { filename: '12.png', url: '/aliya/images/12.png' },
+  { filename: '13.png', url: '/aliya/images/13.png' },
+  { filename: '14.png', url: '/aliya/images/14.png' },
+  { filename: '15.png', url: '/aliya/images/15.png' },
+  { filename: '16.png', url: '/aliya/images/16.png' },
+]
+
+export const resourceMusic = [
+  { filename: '背景.ogg', url: '/aliya/music/背景.ogg' },
+  { filename: '八音盒.ogg', url: '/aliya/music/八音盒.ogg' },
+  { filename: '神秘电台.ogg', url: '/aliya/music/神秘电台.ogg' },
+  { filename: '结局.ogg', url: '/aliya/music/结局.ogg' },
+  { filename: '沙滩.ogg', url: '/aliya/music/沙滩.ogg' },
+  { filename: '休憩.ogg', url: '/aliya/music/休憩.ogg' },
+  { filename: '金唱片.ogg', url: '/aliya/music/金唱片.ogg' },
+  { filename: '追逐.ogg', url: '/aliya/music/追逐.ogg' },
+  { filename: 'NASA.ogg', url: '/aliya/music/NASA.ogg' },
+  { filename: 'RadioNoise.ogg', url: '/aliya/music/RadioNoise.ogg' },
+]
