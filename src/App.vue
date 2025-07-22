@@ -4,6 +4,15 @@ import NavMenu from '@/components/NavMenu.vue'
 import FooterComp from './components/FooterComp.vue'
 
 import DynamicDialog from 'primevue/dynamicdialog'
+import { useSiteSettingStore } from './stores/setting'
+import { watch } from 'vue'
+
+const setting = useSiteSettingStore()
+
+watch(
+  () => setting.sitelang,
+  () => setting.changeSiteLang(),
+)
 </script>
 
 <template>
