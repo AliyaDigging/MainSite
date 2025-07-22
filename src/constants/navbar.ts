@@ -25,4 +25,9 @@ export const navItems = [
       },
     ],
   },
+  {
+    label: 'menu.about',
+    route: '/about',
+    icon: 'pi pi-info-circle',
+  },
 ]

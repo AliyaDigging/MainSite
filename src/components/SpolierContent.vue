@@ -10,14 +10,4 @@ const i18n = useI18n()
   </spolier>
 </template>
 
-<style scope>
-spolier {
-  background-color: black;
-  color: black;
-  transition: color 0.1s ease-in-out;
-}
-
-spolier:hover {
-  color: white;
-}
-</style>
+<style scope></style>

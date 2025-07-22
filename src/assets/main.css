@@ -17,6 +17,21 @@
   padding: 20px;
 }
 
+spolier {
+  background-color: black;
+  color: black;
+  transition: color 0.1s ease-in-out;
+}
+
+spolier:hover {
+  color: white;
+}
+
+ul.custom-node-normal-ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 @media screen and (max-width: 960px) {
 }
 

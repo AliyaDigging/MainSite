@@ -528,11 +528,6 @@ watch(
   }
 }
 
-:deep(ul.custom-node-normal-ul) {
-  list-style-type: disc;
-  list-style-position: inside;
-}
-
 :deep(ul.custom-node-long-content) {
   list-style-type: disc;
   list-style-position: inside;

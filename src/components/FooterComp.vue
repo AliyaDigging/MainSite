@@ -7,16 +7,17 @@ const currYear = new Date().getFullYear()
     <div style="text-align: right">
       <p class="mt-8 lg:mt-0 mb-1">
         Copyright&nbsp;&copy;&nbsp;<span class="font-bold">ALIYA&nbsp;DB</span>&nbsp;2025-{{
-          currYear
+          currYear + 1000
         }}
       </p>
       <p class="mb-1"><span>All rights reserved.</span></p>
     </div>
     <br />
     <div style="text-align: center">
+      <p class="mb-1">{{ $t('comp.footer.p.1') }}</p>
       <p class="mb-1">
-        ALIYA DB doesn't own any in-game content; all of the said content belongs to their
-        respective copyright owners.
+        ALIYA DB doesn't own any in-game content; all of them belongs to their respective copyright
+        owners.
       </p>
       <p class="mb-1">
         ALIYA DB is a <i><b>NON-PROFIT</b> FAN PROJECT</i> dedicated to the game

@@ -1,63 +1,78 @@
 <script setup lang="ts">
 import PvCard from 'primevue/card'
 import SpolierContent from '@/components/SpolierContent.vue'
+import { useI18n } from 'vue-i18n'
+import { useWindowSize } from '@vueuse/core'
+import { computed } from 'vue'
+
+const i18n = useI18n()
+const windowsize = useWindowSize()
+
+const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
 </script>
 
 <template>
   <div class="home-hero-image">
     <div class="home-hero-text">
-      <h1 class="m-0">ALIYA DB</h1>
-      <p class="m-0">A fan project dedicated to the game Aliya: Timelink.</p>
+      <h1 class="m-0">{{ $t('view.home.hero.h1') }}</h1>
+      <p class="m-0">{{ $t('view.home.hero.p') }}</p>
     </div>
   </div>
+
   <div class="home-other-panel view-body-padding-20">
-    <h2 class="h2-title m-0 text-black mt-3">试图从游戏里挖出点什么东西</h2>
-    <p class="h2-desc text-color m-0 mb-4">我们</p>
+    <h2 class="h2-title m-0 text-black mt-3">{{ $t('view.home.h2.1') }}</h2>
+    <p class="h2-desc text-color m-0 mb-4" v-html="$t('view.home.1.1')"></p>
     <div class="home-feature-card-div">
       <PvCard>
-        <template #title>ℹ️ 全故事流程图</template>
-        <template #subtitle>一目不了然</template>
-        <template #content
-          >基于对 Fungus Block 和 自定义命令 的反向研究， Aliya DB
-          实现了在游戏外完整解析游戏内故事流程图，并将其可视化显示在网站上。</template
-        >
+        <template #title>{{ $t('view.home.1.card.1.title') }}</template>
+        <template #subtitle>{{ $t('view.home.1.card.1.subtitle') }}</template>
+        <template #content>{{ $t('view.home.1.card.1.content') }}</template>
       </PvCard>
       <PvCard>
-        <template #title>🌐 本地化文本查询</template>
-        <template #subtitle>对话、选项、结局</template>
-        <template #content
-          >基于 CSV 或 JSON 的本地化文本查询，同时支持 Google
-          翻译将文本实时翻译到其它语言。</template
-        >
+        <template #title>{{ $t('view.home.1.card.2.title') }}</template>
+        <template #subtitle>{{ $t('view.home.1.card.2.subtitle') }}</template>
+        <template #content>{{ $t('view.home.1.card.2.content') }}</template>
       </PvCard>
       <PvCard>
-        <template #title>❓ 还有更多等待开发……</template>
-        <template #subtitle>大概吧，在不被送律师函的情况下</template>
-        <template #content
-          >我实在不知道第三点应该写什么，因为最一开始只是想写一个对流程图的解析而已。<br />但是我又觉得排版时不排上三个卡片似乎又不好，所以这一个纯粹是凑数的——说实话，我也不知道还有什么是值得去二次开发的，除了我感兴趣的流程图外。</template
-        >
+        <template #title>{{ $t('view.home.1.card.3.title') }}</template>
+        <template #subtitle>{{ $t('view.home.1.card.3.subtitle') }}</template>
+        <template #content><div v-html="i18n.t('view.home.1.card.3.content')"></div></template>
       </PvCard>
     </div>
-    <p class="mt-4">
-      *全部数据及代码开源在GitHub上。请阅读<RouterLink to="/about/technical">技术声明</RouterLink
-      >了解更多信息。
-    </p>
+    <p class="mt-4" v-html="i18n.t('view.home.1.2')"></p>
+    <p class="mt-0" v-html="i18n.t('view.home.1.3')"></p>
   </div>
-  <div class="home-other-panel view-body-padding-20 mt-8">
-    <h2 class="h2-title text-black">为什么做这个</h2>
+  <div class="home-other-panel mt-8 p-6">
+    <h2 class="h2-title text-black">{{ $t('view.home.h2.2') }}</h2>
     <h2 class="h2-title" style="margin-top: 0; font-size: 30px">
-      <SpolierContent><del>因为无聊而且喜欢 Aliya</del></SpolierContent>
+      <SpolierContent
+        ><del>{{ $t('view.home.2.2') }}</del></SpolierContent
+      >
     </h2>
     <br />
-    <p class="h2-desc h2-desc-long text-color">
-      我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们我们<SpolierContent
-        >你好世界</SpolierContent
-      >
-    </p>
-    <br />
+    <p class="h2-desc-long text-color" v-html="$t('view.home.2.3')"></p>
+    <p class="h2-desc-long text-color mt-1" v-html="$t('view.home.2.4')"></p>
+    <p class="h2-desc-long text-color mt-1" v-html="$t('view.home.2.5')"></p>
+    <p class="h2-desc-long text-color mt-1" v-html="$t('view.home.2.6')"></p>
+    <p class="h2-desc-long text-color mt-1" v-html="$t('view.home.2.7')"></p>
   </div>
-  <br />
+  <div class="home-other-panel mt-8 p-6">
+    <h2 class="h2-title text-black">{{ $t('view.home.h2.3') }}</h2>
+    <p class="h2-desc text-color m-0 mb-4">
+      {{ $t('view.home.3.1') }}
+    </p>
+    <p style="font-size: 30px; text-align: center" v-html="i18n.t('view.home.3.2')"></p>
+    <br />
+    <iframe src="https://store.steampowered.com/widget/2704110/" id="steam-iframe"></iframe>
+  </div>
 </template>
+
+<style scoped>
+#steam-iframe {
+  width: v-bind(cssWidthIframe);
+  height: 200px;
+}
+</style>
 
 <style scoped>
 .home-hero-image {
@@ -113,6 +128,7 @@ import SpolierContent from '@/components/SpolierContent.vue'
 .h2-desc {
   text-align: center;
   /*color: var(--p-surface-500); /* from .text-surface-500 */
+  font-size: 20px;
 }
 
 .h2-desc-long {
