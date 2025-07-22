@@ -16,3 +16,16 @@ export function detectIsMobile() {
   const result = regexUAMobile.test(navigator.userAgent)
   return result
 }
+
+/** by Grok 3 */
+export function triggerDownloadEvent(url: string, filename: string) {
+  const fileUrl = url
+  const fileName = filename
+
+  const link = document.createElement('a')
+  link.href = fileUrl
+  link.download = fileName
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}

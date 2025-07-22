@@ -1,5 +1,6 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
+import type { L10nLanguage } from '@/types/setting'
 
 export const useAliyaStore = defineStore(
   'AliyaStore',
@@ -12,6 +13,8 @@ export const useAliyaStore = defineStore(
     const stringAliyaYear = ref(new Date().getFullYear() + 1000)
     // 感谢大佬 https://steamcommunity.com/sharedfiles/filedetails/?id=3288314856 做的参考图
     const stringFatherYear = ref(new Date().getFullYear() + 974)
+
+    const l10nLangViewingList: Array<L10nLanguage> = ['zh-cn', 'en-us']
 
     const persistToggler = ref(false)
 
@@ -40,6 +43,7 @@ export const useAliyaStore = defineStore(
       updateFormattedTable,
       getTableForReplace,
       makePersist,
+      l10nLangViewingList,
     }
   },
   { persist: true },

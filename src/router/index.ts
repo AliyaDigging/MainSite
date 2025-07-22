@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/ViewFlowchart.vue'),
       props: true,
     },
+    {
+      path: '/view/localization',
+      name: 'view_localization',
+      component: () => import('../views/ViewL10n.vue'),
+    },
   ],
 })
 

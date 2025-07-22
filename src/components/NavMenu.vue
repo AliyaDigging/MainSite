@@ -40,12 +40,12 @@ function openSetting() {
       <RouterLink v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
         <a v-ripple :href="href" v-bind="props.action" @click="navigate">
           <span :class="item.icon" />
-          <span>{{ item.label }}</span>
+          <span>{{ $t(String(item.label)) }}</span>
         </a>
       </RouterLink>
       <a v-else v-ripple :href="item.url" :target="item.target" v-bind="props.action">
         <span :class="item.icon" />
-        <span>{{ item.label }}</span>
+        <span>{{ $t(String(item.label)) }}</span>
         <span v-if="hasSubmenu" class="pi pi-fw pi-angle-down" />
       </a>
     </template>

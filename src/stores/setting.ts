@@ -9,6 +9,8 @@ export const useSiteSettingStore = defineStore(
     const sitelang = ref<SiteLanguage>(getBrowserLangcode())
     const l10nlang = ref<L10nLanguage>('zh-cn')
 
+    const l10nLangRows = ref<number>(5)
+
     const persist = ref(true)
     function refreshPersist() {
       persist.value = !persist.value
@@ -21,7 +23,7 @@ export const useSiteSettingStore = defineStore(
       document.documentElement.lang = sitelang.value
     }
 
-    return { sitelang, l10nlang, refreshPersist, changeSiteLang }
+    return { sitelang, l10nlang, l10nLangRows, refreshPersist, changeSiteLang }
   },
   { persist: true },
 )

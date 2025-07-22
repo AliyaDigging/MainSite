@@ -9,4 +9,9 @@ export const navItems = [
     route: '/view/flowchart/',
     icon: 'pi pi-chart-scatter',
   },
+  {
+    label: 'menu.view.localization',
+    route: '/view/localization/',
+    icon: 'pi pi-globe',
+  },
 ]
