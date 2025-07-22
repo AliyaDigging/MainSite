@@ -76,6 +76,12 @@ const playerText = computed(() => {
             props.data.customImgMsg
           }}
         </p>
+        <img
+          v-if="props.data.customImgMsg"
+          :src="`/aliya/images/${props.data.customImgMsg}.png`"
+          width="100%"
+          class="mt-1"
+        />
         <p>
           {{ $t('comp.flowchart.node.PlayerChoice.p.targetblock') }}:&nbsp;<br /><a
             class="custom-node-a-clickable"

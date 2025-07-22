@@ -96,6 +96,7 @@ const messageTextList = computed(() => {
             v-if="props.data.imageId && props.data.imageId !== ''"
             :src="`/aliya/images/${props.data.imageId}.png`"
             width="100%"
+            class="mt-1"
           />
         </div>
       </div>
