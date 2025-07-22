@@ -72,18 +72,15 @@ const props = defineProps({
   },
 })
 
+async function triggerRelayout() {
+  isReady.value = false
+  await nextTick()
+  isReady.value = true
+  await nextTick()
+}
+
 defineExpose({
-  triggerRelayout: async () => {
-    nextTick(() => {
-      {
-        vueflowData.nodes.value = useLayout().layout(
-          vueflowData.nodes.value,
-          vueflowData.edges.value,
-          'TB',
-        )
-      }
-    })
-  },
+  triggerRelayout: triggerRelayout,
 })
 
 const fileUrl = computed(() => `/data/flowcharts/vueflow/${props.flowchartName}.json`)
@@ -246,6 +243,7 @@ watch(
           <ControlButton
             @click="isShowMiniMap = !isShowMiniMap"
             :title="i18n.t('comp.flowchart.control.minimap')"
+            v-tooltip.right="i18n.t('comp.flowchart.control.minimap')"
           >
             <div style="color: black">
               <svg
@@ -271,6 +269,29 @@ watch(
                 ></path>
               </svg>
             </div>
+          </ControlButton>
+          <ControlButton
+            @click="triggerRelayout()"
+            :title="i18n.t('comp.flowchart.control.relayout')"
+            v-tooltip.right="i18n.t('comp.flowchart.control.relayout')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="4" y="4" width="6" height="5" rx="2"></rect>
+                <rect x="4" y="13" width="6" height="7" rx="2"></rect>
+                <rect x="14" y="4" width="6" height="16" rx="2"></rect>
+              </g>
+            </svg>
           </ControlButton>
         </Controls>
 
