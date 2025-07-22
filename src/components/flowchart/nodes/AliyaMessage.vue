@@ -66,7 +66,7 @@ const messageTextList = computed(() => {
             >{{ $t('comp.flowchart.node.AliyaMessage.p.autowaittime') }}</span
           >:&nbsp;{{ $t(`constant.boolean.human.${props.data.autoWaitTime}`) }}
         </p>
-        <p>
+        <p v-if="!props.data.autoWaitTime">
           <span
             class="custom-node-tooltip"
             v-tooltip.top="i18n.t('comp.flowchart.node.AliyaMessage.p.waitsecond.desc')"
