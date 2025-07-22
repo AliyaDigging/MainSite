@@ -49,6 +49,15 @@ import PvDivider from 'primevue/divider'
         >技术说明文档</a
       >。
     </p>
+    <h2 class="mt-4">使用的服务</h2>
+    <p class="mt-2">本站不收集任何数据，但本站的确使用第三方服务收集匿名数据以供分析。</p>
+    <p class="mt-2">
+      本站使用 <a href="https://developers.google.com/analytics">Google Analytics</a> 分析网站流量。
+    </p>
+    <p class="mt-2">
+      本站使用
+      <a href="https://clarity.microsoft.com/">Microsoft Clarity</a> 分析用户行为及定位潜在问题。
+    </p>
     <h2 class="mt-4">联系方式</h2>
     <ul class="custom-node-normal-ul mt-2">
       <li>GitHub - <a href="https://github.com/sctop">@sctop</a></li>
