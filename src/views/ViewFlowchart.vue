@@ -128,6 +128,7 @@ onMounted(async () => {
       </PvSelect>
       <PvMessage severity="info" class="mt-4">{{ $t('comp.flowchart.p.view3') }}</PvMessage>
       <PvMessage severity="error" class="mt-2">{{ $t('comp.flowchart.p.view4') }}</PvMessage>
+      <PvMessage severity="success" class="mt-2">{{ $t('comp.flowchart.p.view5') }}</PvMessage>
       <PvDivider />
       <div class="mt-6">
         <FlowchartComp
