@@ -6,6 +6,7 @@ import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from 'vue-router'
 import { ref, watch, provide, useTemplateRef, onMounted } from 'vue'
 import ProgressSpinner from 'primevue/progressspinner'
+import PvMessage from 'primevue/message'
 
 import FlowchartComp from '@/components/flowchart/FlowchartComp.vue'
 import { type L10nCsvSingleLang } from '@/types/data_script7'
@@ -125,6 +126,8 @@ onMounted(async () => {
           </div>
         </template>
       </PvSelect>
+      <PvMessage severity="info" class="mt-4">{{ $t('comp.flowchart.p.view3') }}</PvMessage>
+      <PvMessage severity="error" class="mt-2">{{ $t('comp.flowchart.p.view4') }}</PvMessage>
       <PvDivider />
       <div class="mt-6">
         <FlowchartComp
