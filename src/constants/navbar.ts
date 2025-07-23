@@ -31,7 +31,7 @@ export const navItems = [
     icon: 'pi pi-info-circle',
   },
   {
-    label: 'menu.about',
+    label: 'menu.faq',
     route: '/faq',
     icon: 'pi pi-question-circle',
   },
