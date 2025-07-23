@@ -79,6 +79,10 @@ import PvDivider from 'primevue/divider'
     <ul class="custom-node-normal-ul mt-2">
       <li>GitHub - <a href="https://github.com/sctop">@sctop</a></li>
       <li>GitHub Organization - <a href="https://github.com/AliyaDigging">AliyaDigging</a></li>
+      <li>
+        本站repo（欢迎PR！） -
+        <a href="https://github.com/AliyaDigging/MainSite">AliyaDigging/MainSite</a>
+      </li>
       <li>B站 - <a href="https://space.bilibili.com/93650528">童年是个风筝</a></li>
     </ul>
   </div>
