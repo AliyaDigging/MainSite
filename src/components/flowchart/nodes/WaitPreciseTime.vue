@@ -23,7 +23,11 @@ const props = defineProps<NodeProps<FlowchartDataNode_WaitPreciseTime['data']>>(
     <div>
       <div>
         <Icon class="custom-node-icon"><AccessTimeRound /></Icon>
-        <span class="custom-node-title">{{ $t('comp.flowchart.node.WaitPreciseTime.title') }}</span>
+        <span
+          class="custom-node-title custom-node-tooltip"
+          v-tooltip.top="$t('comp.flowchart.node.WaitPreciseTime.title.desc')"
+          >{{ $t('comp.flowchart.node.WaitPreciseTime.title') }}</span
+        >
       </div>
       <div class="custom-node-content">
         <p>

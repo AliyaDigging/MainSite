@@ -37,7 +37,11 @@ const vueflow = inject(symbolUseVueFlow)!
     <div>
       <div>
         <Icon class="custom-node-icon"><QuickreplyRound /></Icon>
-        <span class="custom-node-title">{{ $t('comp.flowchart.node.DefaultChoice.title') }}</span>
+        <span
+          class="custom-node-title custom-node-tooltip"
+          v-tooltip.top="$t('comp.flowchart.node.DefaultChoice.title.desc')"
+          >{{ $t('comp.flowchart.node.DefaultChoice.title') }}</span
+        >
       </div>
       <div class="custom-node-content">
         <p>
