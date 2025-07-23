@@ -39,25 +39,29 @@ import PvDivider from 'primevue/divider'
     </p>
     <p class="mt-2">
       ALIYA DB use <a href="https://vuejs.org/" target="_blank">Vue 3</a> as the framework,
-      <a href="https://primevue.org/">PrimeVue</a> as the UI library and
-      <a href="https://vueflow.dev/">Vue Flow</a> for flowchart visualization in the front-end part.
+      <a href="https://primevue.org/" target="_blank">PrimeVue</a> as the UI library and
+      <a href="https://vueflow.dev/" target="_blank">Vue Flow</a> for flowchart visualization in the
+      front-end part.
     </p>
     <p class="mt-2">
       ALIYA DB also uses
-      <a href="https://hyperos.mi.com/font/zh/details/sc/">MiSans VF (Variable Font)</a> as the main
-      font, and utilizes
-      <a href="https://chinese-font.netlify.app/zh-cn/">Chinese Web Font Project (中文网字计划)</a
+      <a href="https://hyperos.mi.com/font/zh/details/sc/" target="_blank"
+        >MiSans VF (Variable Font)</a
+      >
+      as the main font, and utilizes
+      <a href="https://chinese-font.netlify.app/zh-cn/" target="_blank"
+        >Chinese Web Font Project (中文网字计划)</a
       >'s splitter to pre-split the fonts. According to
-      <a href="https://hyperos.mi.com/font-download/MiSans字体知识产权许可协议.pdf"
+      <a href="https://hyperos.mi.com/font-download/MiSans字体知识产权许可协议.pdf" target="_blank"
         >MiSans' license</a
       >, ALIYA DB is eligible to use this font for free.
     </p>
     <p class="mt-2">
       ALIYA DB uses
-      <a href="https://pages.cloudflare.com/">CloudFlare Pages</a>
+      <a href="https://pages.cloudflare.com/" target="_blank">CloudFlare Pages</a>
       to generate and deploy the website, and uses
-      <a href="https://aws.amazon.com/cloudfront/">AWS CloudFront</a> for global CDN and access
-      acceleration.
+      <a href="https://aws.amazon.com/cloudfront/" target="_blank">AWS CloudFront</a> for global CDN
+      and access acceleration.
     </p>
     <p class="mt-2">
       To learn more, refer to the
@@ -74,20 +78,24 @@ import PvDivider from 'primevue/divider'
       data for analysis.
     </p>
     <p class="mt-2">
-      ALIYA DB use <a href="https://developers.google.com/analytics">Google Analytics</a> to analyze
-      website traffic.
+      ALIYA DB use
+      <a href="https://developers.google.com/analytics" target="_blank">Google Analytics</a> to
+      analyze website traffic.
     </p>
     <p class="mt-2">
-      ALIYA DB use <a href="https://clarity.microsoft.com/">Microsoft Clarity</a> to analyze user
-      behavior and locate potential bugs.
+      ALIYA DB use <a href="https://clarity.microsoft.com/" target="_blank">Microsoft Clarity</a> to
+      analyze user behavior and locate potential bugs.
     </p>
     <h2 class="mt-4">Contact</h2>
     <ul class="custom-node-normal-ul mt-2">
-      <li>GitHub - <a href="https://github.com/sctop">@sctop</a></li>
-      <li>GitHub Organization - <a href="https://github.com/AliyaDigging">AliyaDigging</a></li>
+      <li>GitHub - <a href="https://github.com/sctop" target="_blank">@sctop</a></li>
+      <li>
+        GitHub Organization -
+        <a href="https://github.com/AliyaDigging" target="_blank">AliyaDigging</a>
+      </li>
       <li>
         Site repo (PR welcome!) -
-        <a href="https://github.com/AliyaDigging/MainSite">AliyaDigging/MainSite</a>
+        <a href="https://github.com/AliyaDigging/MainSite" target="_blank">AliyaDigging/MainSite</a>
       </li>
     </ul>
   </div>
