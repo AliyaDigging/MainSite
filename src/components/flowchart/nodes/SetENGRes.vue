@@ -27,9 +27,7 @@ const props = defineProps<NodeProps<FlowchartDataNode_SetENGRes['data']>>()
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.node.SetENGRes.p.minusvalue') }}:&nbsp;{{
-            $t(`constant.boolean.toggler.${props.data.minusValue}`)
-          }}
+          {{ $t('comp.flowchart.node.SetENGRes.p.minusvalue') }}:&nbsp;{{ props.data.minusValue }}
         </p>
         <p>{{ $t('comp.flowchart.node.SetENGRes.p.duration') }}:&nbsp;{{ props.data.duration }}s</p>
       </div>
