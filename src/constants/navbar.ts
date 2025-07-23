@@ -30,4 +30,9 @@ export const navItems = [
     route: '/about',
     icon: 'pi pi-info-circle',
   },
+  {
+    label: 'menu.about',
+    route: '/faq',
+    icon: 'pi pi-question-circle',
+  },
 ]
