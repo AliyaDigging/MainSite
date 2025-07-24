@@ -28,8 +28,8 @@ export const useAliyaStore = defineStore(
       return {
         '{$name}': stringPlayerName.value,
         '${year}': String(stringYear.value),
-        '${aliyaYear}': String(stringAliyaYear.value),
-        '${fatherYear}': String(stringFatherYear.value),
+        '{$aliyaYear}': String(stringAliyaYear.value),
+        '{$fatherYear}': String(stringFatherYear.value),
       }
     }
 
