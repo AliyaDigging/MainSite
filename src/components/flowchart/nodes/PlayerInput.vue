@@ -32,7 +32,7 @@ const metadata = inject(symbolFlowchartMetadata)!
       <div class="custom-node-content">
         <p>
           {{ $t('comp.flowchart.node.PlayerInput.p.varname') }}:&nbsp;“{{
-            metadata.variableNames[props.data.variable.fileId]
+            metadata.variableNames[props.data.variable.fileId].key
           }}”
         </p>
         <p>
