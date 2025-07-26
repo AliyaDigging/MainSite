@@ -27,3 +27,10 @@ export function retryUntilItsOk(
     throw RangeError('Should try more than 0 times!')
   }
 }
+
+export function getHHMMSSBySeconds(seconds: number) {
+  const hour = Math.floor(seconds / 3600)
+  const minute = Math.floor((seconds - hour * 3600) / 60)
+  const second = seconds - hour * 3600 - minute * 60
+  return `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}:${String(second).padStart(2, '0')}`
+}
