@@ -30,7 +30,7 @@ const route = useRoute()
 const router = useRouter()
 
 const dataL10n = ref<L10nCsvSingleLang>({})
-const dataCatalog = ref<VueFlowCatalog>({})
+const dataCatalog = ref<VueFlowCatalog>({ catalog: {}, flowchartBeingRefed: {} })
 const dataCatalogList = ref<string[]>([])
 const isReady = ref(false)
 
@@ -106,9 +106,11 @@ onMounted(async () => {
           <div>
             <span class="mr-2">{{ slotProps.option }}&nbsp;</span>
             <PvTag severity="info" size="small">{{
-              slotProps.option.toLowerCase().includes('daily')
-                ? i18n.t(`select.flowchart.type.daily`)
-                : i18n.t(`select.flowchart.type.main`)
+              slotProps.option.toLowerCase().includes('catalog')
+                ? i18n.t('select.flowchart.type.fof')
+                : slotProps.option.toLowerCase().includes('daily')
+                  ? i18n.t(`select.flowchart.type.daily`)
+                  : i18n.t(`select.flowchart.type.main`)
             }}</PvTag>
           </div>
         </template>

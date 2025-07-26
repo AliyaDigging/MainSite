@@ -7,8 +7,11 @@ export type VueFlowCatalogEntry = {
       otherFlowcharts: number
     }
     variableNames: Record<string, { key: string; type: 'string' | 'number' }> // 变量 fileId -> key (name) string
-    flowchartRefs: string[]
+    flowchartRefs: string[] // 从这里跳到（引用）了谁【self->others】
     currName: string
   }
 }
-export type VueFlowCatalog = Record<string, VueFlowCatalogEntry>
+export type VueFlowCatalog = {
+  catalog: Record<string, VueFlowCatalogEntry>
+  flowchartBeingRefed: Record<string, string[]>
+}

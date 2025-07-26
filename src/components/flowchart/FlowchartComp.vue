@@ -56,6 +56,8 @@ import CallDailyPart from './nodes/CallDailyPart.vue'
 import ExitDailyInsert from './nodes/ExitDailyInsert.vue'
 import MonoBehavior from './nodes/MonoBehavior.vue'
 import FlowchartBlock from './nodes/FlowchartBlock.vue'
+import FOF_Node from './nodes/FOF_Node.vue'
+import FOF_Node_Achievement from './nodes/FOF_Node_Achievement.vue'
 import { useWindowSize } from '@vueuse/core'
 
 import { useI18n } from 'vue-i18n'
@@ -426,6 +428,12 @@ watch(
         <template #node-FlowchartBlock="props">
           <FlowchartBlock v-bind="props" />
         </template>
+        <template #node-FOF_Node="props">
+          <FOF_Node v-bind="props" />
+        </template>
+        <template #node-FOF_Node_Achievement="props">
+          <FOF_Node_Achievement v-bind="props" />
+        </template>
       </VueFlow>
     </div>
   </div>
@@ -481,7 +489,9 @@ watch(
 :deep(.vue-flow__node-ExitDailyInsert),
 :deep(.vue-flow__node-MonoBehavior),
 :deep(.vue-flow__node-FlowchartBlock),
-:deep(.vue-flow__node-Then) {
+:deep(.vue-flow__node-Then),
+:deep(.vue-flow__node-FOF_Node),
+:deep(.vue-flow__node-FOF_Node_Achievement) {
   padding: 10px;
   border-radius: 3px;
   width: 220px;
