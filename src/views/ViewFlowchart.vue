@@ -9,9 +9,10 @@ import ProgressSpinner from 'primevue/progressspinner'
 import PvMessage from 'primevue/message'
 
 import FlowchartComp from '@/components/flowchart/FlowchartComp.vue'
+import FlowchartMetadata from '@/components/flowchart/FlowchartMetadata.vue'
 import { type L10nCsvSingleLang } from '@/types/data_script7'
 import { useSiteSettingStore } from '@/stores/setting'
-import { symbolL10nDataSingleLang } from '@/constants/injection'
+import { symbolFlowchartCatalog, symbolL10nDataSingleLang } from '@/constants/injection'
 import { getJson } from '@/utils/fetch'
 import type { VueFlowCatalog } from '@/types/data_script6'
 
@@ -37,6 +38,7 @@ const isReady = ref(false)
 const flowchartRef = useTemplateRef('flowchartComp')
 
 provide(symbolL10nDataSingleLang, dataL10n)
+provide(symbolFlowchartCatalog, dataCatalog)
 
 async function loadL10nData(langcode: string) {
   dataL10n.value = await getJson<L10nCsvSingleLang>(`/data/localization/${langcode}.json`, 5)
@@ -138,6 +140,7 @@ onMounted(async () => {
           :flowchart-name="flowchartSelection ? flowchartSelection : ''"
           ref="flowchartComp"
         />
+        <FlowchartMetadata :flowchart-name="flowchartName" />
       </div>
       <PvDivider />
     </div>

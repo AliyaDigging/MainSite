@@ -114,8 +114,6 @@ const isDraggable = ref(false)
 const isDark = inject(symbolUseDark)!
 const cssNodeBgColor = computed(() => (isDark.value ? '#1E1E1E' : '#FFFFFF'))
 const cssNodeTextColor = computed(() => (isDark.value ? 'white' : 'black'))
-const cssCodeBgColor = computed(() => (isDark.value ? '#4a1c1f' : '#fff5f5'))
-const cssCodeTextColor = computed(() => (isDark.value ? '#ff6b6b' : '#dc3545'))
 
 const flowchartHeight = computed(() => {
   let height = 0
@@ -575,16 +573,6 @@ watch(
 
 :deep(.custom-node-tooltip) {
   text-decoration: underline;
-}
-
-:deep(code) {
-  font-family: 'Noto Sans Mono', monospace !important;
-  background-color: v-bind(cssCodeBgColor);
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: v-bind(cssCodeTextColor);
-  white-space: pre-wrap;
-  word-wrap: break-word;
 }
 </style>
 
