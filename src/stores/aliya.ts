@@ -27,7 +27,7 @@ export const useAliyaStore = defineStore(
     function getTableForReplace() {
       return {
         '{$name}': stringPlayerName.value,
-        '${year}': String(stringYear.value),
+        '{$year}': String(stringYear.value),
         '{$aliyaYear}': String(stringAliyaYear.value),
         '{$fatherYear}': String(stringFatherYear.value),
       }
