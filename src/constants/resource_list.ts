@@ -15,6 +15,10 @@ export const resourceImages = [
   { filename: '14.png', url: '/aliya/images/14.png' },
   { filename: '15.png', url: '/aliya/images/15.png' },
   { filename: '16.png', url: '/aliya/images/16.png' },
+  { filename: '1.1.png', url: '/aliya/images/1.1.png' },
+  { filename: '3.1.png', url: '/aliya/images/3.1.png' },
+  { filename: '4.1.png', url: '/aliya/images/4.1.png' },
+  { filename: '13.1.png', url: '/aliya/images/13.1.png' },
 ]
 
 export const resourceMusic = [
