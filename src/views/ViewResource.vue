@@ -28,6 +28,7 @@ const i18n = useI18n()
     </PvDataTable>
     <PvDivider />
     <h2 class="text-black">{{ $t('view.res.h2.2') }}</h2>
+    <p class="mt-2 mb-4">{{ $t('view.res.images.desc.1') }}</p>
     <PvDataTable :value="resourceImages">
       <PvColumn field="filename" :header="i18n.t('view.res.col.name')"></PvColumn>
       <PvColumn field="url" :header="i18n.t('view.res.col.url')">
