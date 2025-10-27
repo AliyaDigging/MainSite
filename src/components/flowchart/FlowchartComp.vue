@@ -217,7 +217,7 @@ watch(
         @nodes-initialized="initFlowchart()"
       >
         <Background pattern-color="#aaa" :gap="16" />
-        <MiniMap v-if="isShowMiniMap" />
+        <MiniMap v-if="isShowMiniMap" mask-color="rgba(20, 46, 89, 0.5)" pannable />
         <Controls position="top-left">
           <template #control-interactive>
             <ControlButton
