@@ -3,6 +3,7 @@ import DeferredContent from 'primevue/deferredcontent'
 import PvDivider from 'primevue/divider'
 import PvDataTable from 'primevue/datatable'
 import PvColumn from 'primevue/column'
+import PvTag from 'primevue/tag'
 
 import { resourceImages, resourceMusic } from '@/constants/resource_list'
 import { useI18n } from 'vue-i18n'
@@ -30,7 +31,15 @@ const i18n = useI18n()
     <h2 class="text-black">{{ $t('view.res.h2.2') }}</h2>
     <p class="mt-2 mb-4">{{ $t('view.res.images.desc.1') }}</p>
     <PvDataTable :value="resourceImages">
-      <PvColumn field="filename" :header="i18n.t('view.res.col.name')"></PvColumn>
+      <PvColumn field="filename" :header="i18n.t('view.res.col.name')">
+        <template #body="slotProps">
+          <span>{{ slotProps.data.filename }}</span>
+          <template v-if="slotProps.data.filename.includes('.1')">
+            <br />
+            <PvTag severity="info" class="mt-1">{{ $t('view.res.col.name.tag.1') }}</PvTag>
+          </template>
+        </template>
+      </PvColumn>
       <PvColumn field="url" :header="i18n.t('view.res.col.url')">
         <template #body="slotProps">
           <DeferredContent>

@@ -120,9 +120,11 @@ onMounted(async () => {
           <div v-if="slotProps.value">
             <span class="mr-2">{{ slotProps.value }}&nbsp;</span>
             <PvTag severity="info" size="small">{{
-              slotProps.value.toLowerCase().includes('daily')
-                ? i18n.t(`select.flowchart.type.daily`)
-                : i18n.t(`select.flowchart.type.main`)
+              slotProps.value.toLowerCase().includes('catalog')
+                ? i18n.t('select.flowchart.type.fof')
+                : slotProps.value.toLowerCase().includes('daily')
+                  ? i18n.t(`select.flowchart.type.daily`)
+                  : i18n.t(`select.flowchart.type.main`)
             }}</PvTag>
           </div>
           <div v-else>
