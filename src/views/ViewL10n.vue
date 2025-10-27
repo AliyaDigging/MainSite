@@ -70,7 +70,7 @@ onMounted(async () => {
         @update:rows="(value) => (setting.l10nLangRows = value)"
         paginator
         v-model:filters="filters"
-        :globalFilterFields="['key', 'zh-cn', 'en', 'zh-cn-c']"
+        :globalFilterFields="['key', 'zh-cn', 'en-us', 'zh-cn-c']"
       >
         <template #header>
           <div class="flex justify-end">
