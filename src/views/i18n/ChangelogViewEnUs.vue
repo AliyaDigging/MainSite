@@ -10,6 +10,18 @@ import PvDivider from 'primevue/divider'
     </p>
     <PvDivider />
     <h2>
+      2025-11-30: Game & Version Data Switching (<a
+        href="https://github.com/AliyaDigging/MainSite/tree/3c748badc2face4b9f6f586ea32fb2e1a70f9f96"
+        target="_blank"
+        >3c748ba</a
+      >)
+    </h2>
+    <p class="mt-2">
+      Congrats Aliya 1 (Mobile) and Aliya 2 (Steam page) released! In order to accommodate the later
+      data, we adhere add the new feature to allow everyone to switch between game/version data!
+      Hoping to give you a better experience in the future!
+    </p>
+    <h2 class="mt-2">
       2025-10-09: Fixed that the year string didn't get formatted correctly (<a
         href="https://github.com/AliyaDigging/MainSite/tree/63551213924d532bd7ec5f9c0388f281cc8782e4"
         target="_blank"

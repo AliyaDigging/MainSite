@@ -10,6 +10,17 @@ import PvDivider from 'primevue/divider'
     </p>
     <PvDivider />
     <h2>
+      2025-11-30: 新增游戏及数据版本切换功能 (<a
+        href="https://github.com/AliyaDigging/MainSite/tree/3c748badc2face4b9f6f586ea32fb2e1a70f9f96"
+        target="_blank"
+        >3c748ba</a
+      >)
+    </h2>
+    <p class="mt-2">
+      庆祝Aliya 1代移动端及Aliya
+      2代Steam页面上线！为更好的服务于未来数据的需要，我们特此先行适配了相关的数据切换功能，以期更好地为大家服务！
+    </p>
+    <h2 class="mt-2">
       2025-10-09: 修复年份无法被正确格式化问题 (<a
         href="https://github.com/AliyaDigging/MainSite/tree/63551213924d532bd7ec5f9c0388f281cc8782e4"
         target="_blank"
