@@ -10,20 +10,22 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/view/flowchart/:flowchartName?',
+      path: '/view/flowchart/:gameId?/:versionId?/:flowchartName?',
       name: 'view_flowchart',
       component: () => import('../views/ViewFlowchart.vue'),
       props: true,
     },
     {
-      path: '/view/localization',
+      path: '/view/localization/:gameId?/:versionId?',
       name: 'view_localization',
       component: () => import('../views/ViewL10n.vue'),
+      props: true,
     },
     {
-      path: '/view/resource',
+      path: '/view/resource/:gameId?/:versionId?',
       name: 'view_resource',
       component: () => import('../views/ViewResource.vue'),
+      props: true,
     },
     {
       path: '/about',

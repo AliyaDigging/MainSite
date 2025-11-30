@@ -35,8 +35,8 @@
   "view.home.3.1": "买了再看！不然剧透警告！",
   "view.home.3.2": "Steam链接 - <a href=\"https://store.steampowered.com/app/2704110/Aliya/\" target=\"_blank\">彼方的她-Aliya [2704110]</a><br /><span>只要九块，还有什么好说的呢？</span>",
 
-  "view.flowchart.p.loading": "加载本地化数据中……",
-  "view.flowchart.p.loading2": "如果页面加载时间过长（超过15秒），可能表明数据加载已静默失败，请检查网络连接，然后刷新本页面。",
+  "view.[any].p.loading": "加载数据中……",
+  "view.[any].p.loading2": "如果页面加载时间过长（超过15秒），可能表明数据加载已静默失败，请检查网络连接，然后刷新本页面。",
   "comp.flowchart.p.selection1": "未选定有效的流程图",
   "comp.flowchart.p.view1": "查看流程图",
   "comp.flowchart.p.view2": "选择一个流程图开始查看内容",
@@ -58,8 +58,10 @@
 
   "view.l10n.h1": "查看本地化数据",
   "view.l10n.p.1": "先选择语言，然后查看对应数据",
+  "view.l10n.p.7": "本地化语言",
   "view.l10n.p.2": "选择一个或多个本地化语言",
-  "view.l10n.p.3": "请稍等，数据正在加载……",
+  "view.l10n.p.6": "选择一个或多个搜索过滤列",
+  "view.l10n.p.3": "请选定游戏数据及数据版本后再查看",
   "view.l10n.p.4": "下载原始JSON数据(全部语言)",
   "view.l10n.p.5": "或下载各语言原始JSON数据",
   "view.l10n.col.key": "键名",
@@ -85,6 +87,11 @@
   "comp.setting.h2.showformatted": "是否显示格式化后的字符串",
   "comp.setting.showformatted.p1": "即是否将对话中的玩家称呼、年份等内容替换为上方的“玩家称呼”和实际年份",
 
+  "comp.flowchart.select.title1": "游戏名称：",
+  "comp.flowchart.select.title2": "数据版本：",
+  "comp.flowchart.select.title3": "流程图名称：",
+  "select.gameid.placeholder": "选择一个游戏",
+  "select.versionid.placeholder": "选择数据版本",
   "select.flowchart.placeholder": "选择一个流程图",
   "select.flowchart.type.main": "主线",
   "select.flowchart.type.daily": "日常",
@@ -250,5 +257,18 @@
   "comp.flowchart.node.ActivateRadio.title": "激活收音机交互",
   "comp.flowchart.node.BanEHControl.title": "禁用引擎交互",
   "comp.flowchart.node.BanEOGControl.title": "禁用制氧机交互",
-  "comp.flowchart.node.BanRadioControl.title": "禁用收音机交互"
+  "comp.flowchart.node.BanRadioControl.title": "禁用收音机交互",
+
+  "comp.gameandversionselector.extrainfo.id": "版本标识ID",
+  "comp.gameandversionselector.extrainfo.update_time": "更新时间",
+  "comp.gameandversionselector.extrainfo.extra_info": "备注",
+
+  "constant.game.platform.type.pc": "PC",
+  "constant.game.platform.type.android": "安卓",
+  "constant.game.platform.type.ios": "iOS",
+  "constant.game.platform.seller.steam": "Steam",
+  "constant.game.platform.seller.taptap": "Taptap",
+  "constant.game.platform.seller.bilibili": "B站",
+
+  "l10n.game.name.aliya1": "彼方的她-Aliya"
 }

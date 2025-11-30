@@ -15,6 +15,7 @@ export const useAliyaStore = defineStore(
     const stringFatherYear = ref(new Date().getFullYear() + 974)
 
     const l10nLangViewingList: Array<L10nLanguage> = ['zh-cn', 'en-us']
+    const l10nFliterFields: Array<string> = ['zh-cn', 'en-us']
 
     const persistToggler = ref(false)
 
@@ -44,6 +45,7 @@ export const useAliyaStore = defineStore(
       getTableForReplace,
       makePersist,
       l10nLangViewingList,
+      l10nFliterFields,
     }
   },
   { persist: true },

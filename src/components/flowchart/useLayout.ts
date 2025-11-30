@@ -3,7 +3,13 @@
 import dagre from '@dagrejs/dagre'
 import { Position, useVueFlow } from '@vue-flow/core'
 import { ref } from 'vue'
-import type { FlowchartDataEdge, FlowchartDataNode } from './types/script5_vueflow_prod'
+import type {
+  FlowchartDataEdge as Aliya1_FlowchartDataEdge,
+  FlowchartDataNode as Aliya1_FlowchartDataNode,
+} from './aliya1/types/script5_vueflow_prod'
+
+type FlowchartDataNode = Aliya1_FlowchartDataNode
+type FlowchartDataEdge = Aliya1_FlowchartDataEdge
 
 const DEFAULT_WIDTH = 220
 const DEFAULT_HEIGHT = 50

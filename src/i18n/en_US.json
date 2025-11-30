@@ -35,8 +35,8 @@
   "view.home.3.1": "Play it already! OR SPOLIER ALERT!",
   "view.home.3.2": "Steam Store - <a href=\"https://store.steampowered.com/app/2704110/Aliya/\" target=\"_blank\">Aliya: Timelink [2704110]</a><br /><span>Only 3 bucks, why not try?</span>",
 
-  "view.flowchart.p.loading": "Loading L10N Data......",
-  "view.flowchart.p.loading2": "If the page is loading too long (over 15s), it's possible that the data loading has failed silently. Please check your Internet connection, then refresh this page.",
+  "view.[any].p.loading": "Loading Data......",
+  "view.[any].p.loading2": "If the page is loading too long (over 15s), it's possible that the data loading has failed silently. Please check your Internet connection, then refresh this page.",
   "comp.flowchart.p.selection1": "No flowchart selected",
   "comp.flowchart.p.view1": "View flowchart",
   "comp.flowchart.p.view2": "Select a flowchart to view its content",
@@ -58,8 +58,10 @@
 
   "view.l10n.h1": "View L10N data",
   "view.l10n.p.1": "First select languages, then check out the data",
-  "view.l10n.p.2": "Select one and more L10N lang",
-  "view.l10n.p.3": "Please wait, data loading...",
+  "view.l10n.p.7": "L10N Lang",
+  "view.l10n.p.2": "Select one or more L10N lang",
+  "view.l10n.p.6": "Select one or more fields to filter",
+  "view.l10n.p.3": "Please select game and data version to view",
   "view.l10n.p.4": "Download raw JSON data (all languages)",
   "view.l10n.p.5": "Or download raw JSON data for each language",
   "view.l10n.col.key": "Key",
@@ -85,6 +87,11 @@
   "comp.setting.h2.showformatted": "Show Formatted String",
   "comp.setting.showformatted.p1": "I.e. whether to replace the player's name, years, etc. that appeared in the dialogue with actual content.",
 
+  "comp.flowchart.select.title1": "Game Name: ",
+  "comp.flowchart.select.title2": "Data Version: ",
+  "comp.flowchart.select.title3": "Flowchart Name: ",
+  "select.gameid.placeholder": "Select a Game",
+  "select.versionid.placeholder": "Select Data Version",
   "select.flowchart.placeholder": "Select a flowchart",
   "select.flowchart.type.main": "Main",
   "select.flowchart.type.daily": "Daily",
@@ -249,5 +256,18 @@
   "comp.flowchart.node.ActivateRadio.title": "Activate Radio Control",
   "comp.flowchart.node.BanEHControl.title": "Ban EH Control",
   "comp.flowchart.node.BanEOGControl.title": "Ban EOG Control",
-  "comp.flowchart.node.BanRadioControl.title": "Ban Radio Control"
+  "comp.flowchart.node.BanRadioControl.title": "Ban Radio Control",
+
+  "comp.gameandversionselector.extrainfo.id": "Version ID",
+  "comp.gameandversionselector.extrainfo.update_time": "Update Time",
+  "comp.gameandversionselector.extrainfo.extra_info": "Comments",
+
+  "constant.game.platform.type.pc": "PC",
+  "constant.game.platform.type.android": "Android",
+  "constant.game.platform.type.ios": "iOS",
+  "constant.game.platform.seller.steam": "Steam",
+  "constant.game.platform.seller.taptap": "Taptap",
+  "constant.game.platform.seller.bilibili": "B站",
+
+  "l10n.game.name.aliya1": "Aliya: Timelink"
 }

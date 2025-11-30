@@ -11,7 +11,7 @@ import { VueFlow, useVueFlow } from '@vue-flow/core'
 import { Background } from '@vue-flow/background'
 import { MiniMap } from '@vue-flow/minimap'
 import { Controls, ControlButton } from '@vue-flow/controls'
-import { useLayout } from './useLayout'
+import { useLayout } from '../useLayout'
 
 import ActivateEH from './nodes/ActivateEH.vue'
 import ActivateEOG from './nodes/ActivateEOG.vue'
@@ -68,6 +68,14 @@ import { Icon } from '@vicons/utils'
 import { detectIsMobile } from '@/utils/browser'
 
 const props = defineProps({
+  gameId: {
+    type: String,
+    required: true,
+  },
+  versionId: {
+    type: String,
+    required: true,
+  },
   flowchartName: {
     type: String,
     required: true,
@@ -85,7 +93,9 @@ defineExpose({
   triggerRelayout: triggerRelayout,
 })
 
-const fileUrl = computed(() => `/data/flowcharts/vueflow/${props.flowchartName}.json`)
+const fileUrl = computed(
+  () => `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/${props.flowchartName}.json`,
+)
 const data = ref<FlowchartData | null>(null)
 const vueflow = useVueFlow()
 const windowsize = useWindowSize()
@@ -142,7 +152,7 @@ provide(symbolFlowchartMetadata, vueflowData.metadata)
 watch(
   fileUrl,
   async (newValue) => {
-    if (newValue === '/data/flowcharts/vueflow/.json') {
+    if (newValue.endsWith('/.json')) {
       isReady.value = false
 
       data.value = null

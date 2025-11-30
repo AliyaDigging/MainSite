@@ -35,7 +35,16 @@ watch(
   </div>
 </template>
 
-<style scoped>
+<style>
+code {
+  font-family: 'Noto Sans Mono', monospace !important;
+  background-color: v-bind(cssCodeBgColor);
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: v-bind(cssCodeTextColor);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 :deep(code) {
   font-family: 'Noto Sans Mono', monospace !important;
   background-color: v-bind(cssCodeBgColor);
