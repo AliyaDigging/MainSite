@@ -215,18 +215,26 @@ watch(
           </PvDataTable>
           <div class="mt-4">
             <p>
-              {{ $t('view.l10n.p.4') }}:&#8201;<a href="/data/localization/all.json" target="_blank"
-                >/data/localization/all.json</a
+              {{ $t('view.l10n.p.4') }}:&#8201;<a
+                :href="`/data/${gameId}/${versionId}/localization/all.json`"
+                target="_blank"
+                >/data/{{ gameId }}/{{ versionId }}/localization/all.json</a
               >
             </p>
             <p>
               {{ $t('view.l10n.p.5') }}:&#8201;<a
-                href="/data/localization/zh-cn.json"
+                :href="`/data/${gameId}/${versionId}/localization/zh-cn.json`"
                 target="_blank"
                 >zh-cn.json</a
-              >&#8201;/&#8201;<a href="/data/localization/zh-cn-c.json" target="_blank"
+              >&#8201;/&#8201;<a
+                :href="`/data/${gameId}/${versionId}/localization/zh-cn-c.json`"
+                target="_blank"
                 >zh-cn-c.json</a
-              >&#8201;/&#8201;<a href="/data/localization/en-us.json" target="_blank">en-us.json</a>
+              >&#8201;/&#8201;<a
+                :href="`/data/${gameId}/${versionId}/localization/en-us.json`"
+                target="_blank"
+                >en-us.json</a
+              >
             </p>
           </div>
         </template>
