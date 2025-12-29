@@ -140,7 +140,7 @@ watch(
         <p v-if="!isReady2">{{ $t('view.l10n.p.3') }}</p>
         <template v-else>
           <p class="text-color">
-            {{ $t('选择一个或多个过滤列') }}:&nbsp;&nbsp;
+            {{ $t('view.l10n.p.8') }}:&nbsp;&nbsp;
             <PvMultiSelect
               v-model="aliyaSetting.l10nFliterFields"
               :options="['key', 'zh-cn', 'en-us', 'zh-cn-c']"
