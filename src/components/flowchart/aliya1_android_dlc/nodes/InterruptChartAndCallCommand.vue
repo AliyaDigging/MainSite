@@ -1,0 +1,55 @@
+<script setup lang="ts">
+import type { NodeProps } from '@vue-flow/core'
+import { Position, Handle } from '@vue-flow/core'
+import { NodeToolbar } from '@vue-flow/node-toolbar'
+
+import { Icon } from '@vicons/utils'
+import { ExternalLink } from '@vicons/tabler'
+
+import { type FlowchartDataNode_InterruptChartAndCallCommand } from '../types/script5_vueflow_prod'
+
+// props were passed from the slot using `v-bind="customNodeProps"`
+const props = defineProps<NodeProps<FlowchartDataNode_InterruptChartAndCallCommand['data']>>()
+</script>
+
+<template>
+  <NodeToolbar :position="Position.Top">
+    <p>FileId:&nbsp;{{ props.data.fileId }}</p>
+    <p>ItemId:&nbsp;{{ props.data.itemId }}</p>
+  </NodeToolbar>
+
+  <div>
+    <Handle type="target" :position="Position.Top" />
+    <div>
+      <div>
+        <Icon class="custom-node-icon"><ExternalLink /></Icon>
+        <span class="custom-node-title">{{
+          $t('comp.flowchart.aliya1_dlc.node.InterruptChartAndCallCommand.title')
+        }}</span>
+      </div>
+      <div class="custom-node-content">
+        <p>
+          {{
+            $t('comp.flowchart.aliya1_dlc.node.InterruptChartAndCallCommand.p.windowkey')
+          }}:&nbsp;“{{ props.data.windowKeyOfStopping }}”
+        </p>
+        <p>
+          {{
+            $t('comp.flowchart.aliya1_dlc.node.InterruptChartAndCallCommand.p.flowchartname')
+          }}:&nbsp;“{{ props.data.flowchartName }}”
+        </p>
+        <p>
+          {{
+            $t('comp.flowchart.aliya1_dlc.node.InterruptChartAndCallCommand.p.commandindex')
+          }}:&nbsp;“{{ props.data.commandIndex }}”
+        </p>
+        <p>
+          {{ $t('comp.flowchart.aliya1_dlc.node.StartAnCharacterChart.p.blockname') }}:&nbsp;“{{
+            props.data.blockName
+          }}”
+        </p>
+      </div>
+    </div>
+    <Handle type="source" :position="Position.Bottom" />
+  </div>
+</template>

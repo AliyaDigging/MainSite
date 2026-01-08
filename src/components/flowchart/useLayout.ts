@@ -3,13 +3,6 @@
 import dagre from '@dagrejs/dagre'
 import { Position, useVueFlow } from '@vue-flow/core'
 import { ref } from 'vue'
-import type {
-  FlowchartDataEdge as Aliya1_FlowchartDataEdge,
-  FlowchartDataNode as Aliya1_FlowchartDataNode,
-} from './aliya1/types/script5_vueflow_prod'
-
-type FlowchartDataNode = Aliya1_FlowchartDataNode
-type FlowchartDataEdge = Aliya1_FlowchartDataEdge
 
 const DEFAULT_WIDTH = 220
 const DEFAULT_HEIGHT = 50
@@ -45,7 +38,11 @@ export function useLayout() {
 
   const graph = ref(new dagre.graphlib.Graph())
 
-  function layout(nodes: FlowchartDataNode[], edges: FlowchartDataEdge[], direction: 'LR' | 'TB') {
+  function layout<T extends { id: string }, U extends { source: string; target: string }>(
+    nodes: T[],
+    edges: U[],
+    direction: 'LR' | 'TB',
+  ) {
     // we create a new graph instance, in case some nodes/edges were removed, otherwise dagre would act as if they were still there
     const dagreGraph = new dagre.graphlib.Graph()
 

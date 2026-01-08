@@ -1,11 +1,12 @@
 import type { FlowchartData as Aliya1_FlowchartData } from '@/components/flowchart/aliya1/types/script5_vueflow_prod'
+import type { FlowchartData as Aliya1_Android_DLC_FlowchartData } from '@/components/flowchart/aliya1_android_dlc/types/script5_vueflow_prod'
 import type { useVueFlow } from '@vue-flow/core'
 import type { useDark } from '@vueuse/core'
 import type { InjectionKey, Ref } from 'vue'
 import { type L10nCsvSingleLang } from '@/types/aliya1/data_script7'
 import type { VueFlowCatalog } from '@/types/aliya1/data_script6'
 
-type FlowchartData = Aliya1_FlowchartData
+type FlowchartData = Aliya1_FlowchartData | Aliya1_Android_DLC_FlowchartData
 
 export const symbolUseDark = Symbol('useDark_global') as InjectionKey<ReturnType<typeof useDark>>
 export const symbolUseVueFlow = Symbol('useVueFlow_flowchart') as InjectionKey<

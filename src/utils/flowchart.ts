@@ -5,3 +5,9 @@ export function fitInViewTargetBlock(vueflow: ReturnType<typeof useVueFlow>, tar
     vueflow.fitView({ nodes: [targetBlock] })
   }
 }
+
+export function getCorrectFlowchartUrl(currPath: string, flowchartName: string) {
+  const temp = currPath.split('/').slice(0, -1)
+  temp.push(flowchartName)
+  return temp.join('/')
+}

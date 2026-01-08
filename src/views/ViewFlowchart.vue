@@ -11,6 +11,11 @@ import Aliya1_FlowchartComp from '@/components/flowchart/aliya1/FlowchartComp.vu
 import Aliya1_FlowchartMetadata from '@/components/flowchart/aliya1/FlowchartMetadata.vue'
 import type { VueFlowCatalog as Aliya1_VueFlowCatalog } from '@/types/aliya1/data_script6'
 import { type L10nCsvSingleLang as Aliya1_L10nCsvSingleLang } from '@/types/aliya1/data_script7'
+import Aliya1_Android_DLC_FlowchartComp from '@/components/flowchart/aliya1_android_dlc/FlowchartComp.vue'
+import Aliya1_Android_DLC_FlowchartMetadata from '@/components/flowchart/aliya1_android_dlc/FlowchartMetadata.vue'
+import type { VueFlowCatalog as Aliya1_Android_DLC_VueFlowCatalog } from '@/types/aliya1_android_dlc/data_script6'
+import { type L10nCsvSingleLang as Aliya1_Android_DLC_L10nCsvSingleLang } from '@/types/aliya1_android_dlc/data_script7'
+
 import { useSiteSettingStore } from '@/stores/setting'
 import { symbolFlowchartCatalog, symbolL10nDataSingleLang } from '@/constants/injection'
 import { getJson } from '@/utils/fetch'
@@ -19,8 +24,8 @@ import GameAndVersionSelector from '@/components/GameAndVersionSelector.vue'
 import LoadingSpinner from '@/components/LoadingSpinner.vue'
 
 /* utility type, to accommodate all types from all games */
-type VueFlowCatalog = Aliya1_VueFlowCatalog
-type L10nCsvSingleLang = Aliya1_L10nCsvSingleLang
+type VueFlowCatalog = Aliya1_VueFlowCatalog | Aliya1_Android_DLC_VueFlowCatalog
+type L10nCsvSingleLang = Aliya1_L10nCsvSingleLang | Aliya1_Android_DLC_L10nCsvSingleLang
 
 /* path params */
 const props = defineProps({
@@ -213,7 +218,16 @@ watch(
         <PvDivider />
 
         <div class="mt-6">
-          <div v-if="gameId.includes('aliya1')">
+          <div v-if="gameId.includes('aliya1_android_dlc')">
+            <Aliya1_Android_DLC_FlowchartComp
+              :game-id="gameId ? gameId : ''"
+              :version-id="versionId ? versionId : ''"
+              :flowchart-name="flowchartSelection ? flowchartSelection : ''"
+              ref="flowchartComp"
+            />
+            <Aliya1_Android_DLC_FlowchartMetadata :flowchart-name="flowchartName" />
+          </div>
+          <div v-else-if="gameId.includes('aliya1')">
             <Aliya1_FlowchartComp
               :game-id="gameId ? gameId : ''"
               :version-id="versionId ? versionId : ''"
