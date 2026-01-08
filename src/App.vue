@@ -8,6 +8,7 @@ import { useSiteSettingStore } from './stores/setting'
 import { watch, inject, computed } from 'vue'
 
 import { symbolUseDark } from '@/constants/injection'
+import PreviewWarningMessage from './components/PreviewWarningMessage.vue'
 
 const setting = useSiteSettingStore()
 
@@ -29,6 +30,7 @@ watch(
       <NavMenu />
     </div>
     <div style="margin-top: 58px">
+      <PreviewWarningMessage />
       <RouterView />
     </div>
     <FooterComp />

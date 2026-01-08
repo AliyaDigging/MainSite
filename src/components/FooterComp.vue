@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import PreviewWarningMessage from './PreviewWarningMessage.vue'
+
 const currYear = new Date().getFullYear()
 </script>
 
@@ -29,6 +31,9 @@ const currYear = new Date().getFullYear()
         For more information about this project, refer to
         <router-link to="/about">About Page</router-link>.
       </p>
+
+      <br />
+      <preview-warning-message />
     </div>
   </footer>
 </template>
