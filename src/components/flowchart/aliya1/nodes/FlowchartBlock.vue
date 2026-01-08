@@ -6,6 +6,7 @@ import { Icon } from '@vicons/utils'
 import { InsertChartOutlined } from '@vicons/material'
 
 import { type FlowchartDataNode_FlowchartBlock } from '../types/script5_vueflow_prod'
+import { getCorrectFlowchartUrl } from '@/utils/flowchart'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_FlowchartBlock['data']>>()
@@ -22,7 +23,7 @@ const props = defineProps<NodeProps<FlowchartDataNode_FlowchartBlock['data']>>()
       <div class="custom-node-content">
         <p>
           {{ $t('comp.flowchart.node.FlowchartBlock.p.name') }}:&nbsp;
-          <RouterLink :to="`/view/flowchart/${props.data.flowchartName}`">{{
+          <RouterLink :to="getCorrectFlowchartUrl($route.path, props.data.flowchartName)">{{
             props.data.flowchartName
           }}</RouterLink>
         </p>
