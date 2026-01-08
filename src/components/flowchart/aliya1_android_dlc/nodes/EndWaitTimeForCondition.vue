@@ -4,7 +4,7 @@ import { Position, Handle } from '@vue-flow/core'
 import { NodeToolbar } from '@vue-flow/node-toolbar'
 
 import { Icon } from '@vicons/utils'
-import { TimerOffRound } from '@vicons/material'
+import { TimerOffSharp } from '@vicons/material'
 
 import { type FlowchartDataNode_EndWaitTimeForCondition } from '../types/script5_vueflow_prod'
 
@@ -22,7 +22,7 @@ const props = defineProps<NodeProps<FlowchartDataNode_EndWaitTimeForCondition['d
     <Handle type="target" :position="Position.Top" />
     <div>
       <div>
-        <Icon class="custom-node-icon"><TimerOffRound /></Icon>
+        <Icon class="custom-node-icon"><TimerOffSharp /></Icon>
         <span class="custom-node-title">{{
           $t('comp.flowchart.aliya1_dlc.node.node.EndWaitTimeForCondition.title')
         }}</span>

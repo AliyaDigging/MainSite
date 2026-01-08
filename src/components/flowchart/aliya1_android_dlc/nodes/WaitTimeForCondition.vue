@@ -9,7 +9,7 @@ import { type FlowchartDataNode_WaitTimeForCondition } from '../types/script5_vu
 import { useI18n } from 'vue-i18n'
 import { computed, inject } from 'vue'
 import { symbolFlowchartMetadata } from '@/constants/injection'
-import { TimeSharp } from '@vicons/ionicons5'
+import { TimerSharp } from '@vicons/material'
 import PvDivider from 'primevue/divider'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
@@ -68,7 +68,7 @@ const waitTimeString = computed(
     <Handle type="target" :position="Position.Top" />
     <div>
       <div>
-        <Icon class="custom-node-icon"><TimeSharp /></Icon>
+        <Icon class="custom-node-icon"><TimerSharp /></Icon>
         <span class="custom-node-title">{{
           $t('comp.flowchart.aliya1_dlc.node.WaitTimeForCondition.title')
         }}</span>
