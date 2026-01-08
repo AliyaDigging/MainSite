@@ -3,7 +3,7 @@ import type { AllDataCatalog, AllDataCatalogEntry } from '@/types/allDataCatalog
 import PvSelect from 'primevue/select'
 import PvTag from 'primevue/tag'
 import PvButton from 'primevue/button'
-import { defineAsyncComponent, ref, watch, type PropType } from 'vue'
+import { defineAsyncComponent, onMounted, ref, watch, type PropType } from 'vue'
 import { useDialog } from 'primevue/usedialog'
 
 const compExtraInfo = defineAsyncComponent(
@@ -85,6 +85,22 @@ watch(
   { immediate: true },
 )
 
+watch(
+  [gameSelection, versionSelection],
+  ([newGameSelection, newVersionSelection]) => {
+    if (newVersionSelection === '') {
+      local_versionSelection.value = {} as AllDataCatalogEntry['versions'][number]
+    } else if (newGameSelection !== '' && newVersionSelection !== '') {
+      const gameData = props.dataAllCatalog.find((v) => v.metadata.id === newGameSelection)
+      if (gameData) {
+        const versionData = gameData.versions.find((v) => v.id === newVersionSelection)
+        if (versionData) {
+          local_versionSelection.value = versionData
+        }
+      }
+    }
+  },
+)
 const dialog = useDialog()
 function openVersionInfoDialog(data: AllDataCatalogEntry['versions'][number]) {
   dialog.open(compExtraInfo, {

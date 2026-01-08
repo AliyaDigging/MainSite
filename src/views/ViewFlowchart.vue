@@ -87,7 +87,13 @@ async function loadCatalogData(gameId: string, versionId: string) {
 }
 
 // select 更改时，触发路径更改
-watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3]) => {
+watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1, o2, o3]) => {
+  // 当 gameSelection 改变时，清除 versionSelection 和 flowchartSelection
+  if (n1 !== o1) {
+    versionSelection.value = ''
+    flowchartSelection.value = ''
+  }
+
   // 新URL格式
   if (n3 !== '') {
     // game, version, flowchart都已经齐了
