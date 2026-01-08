@@ -3,6 +3,7 @@ import type { NodeProps } from '@vue-flow/core'
 import { Position, Handle } from '@vue-flow/core'
 import { useI18n } from 'vue-i18n'
 import PvTag from 'primevue/tag'
+import { getCorrectFlowchartUrl } from '@/utils/flowchart'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<{ label: string }>>()
@@ -14,7 +15,9 @@ const i18n = useI18n()
   <div>
     <Handle type="target" :position="Position.Top" />
     <div style="text-align: center" class="custom-node-title">
-      <RouterLink :to="`/view/flowchart/${props.data.label}`">{{ props.data.label }}</RouterLink>
+      <RouterLink :to="getCorrectFlowchartUrl($route.path, props.data.label)">{{
+        props.data.label
+      }}</RouterLink>
       <br />
       <PvTag severity="info" size="small">{{
         props.data.label.toLowerCase().includes('catalog')
