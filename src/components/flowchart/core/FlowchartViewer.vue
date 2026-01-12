@@ -1,0 +1,326 @@
+<script setup lang="ts">
+/**
+ * 统一的流程图查看器组件
+ * 支持多游戏版本，通过注册表动态加载节点组件
+ */
+import { computed, nextTick, provide, ref, watch } from 'vue'
+import { VueFlow, useVueFlow } from '@vue-flow/core'
+import { Background } from '@vue-flow/background'
+import { MiniMap } from '@vue-flow/minimap'
+import { useWindowSize } from '@vueuse/core'
+import { useI18n } from 'vue-i18n'
+
+import { useFlowchartLayout } from '@/composables/flowchart/useFlowchartLayout'
+import { useFlowchartTheme } from '@/composables/flowchart/useFlowchartTheme'
+import { getGameConfig, getAllNodeTypes } from '../registry/nodeRegistry'
+// 确保游戏配置已注册
+import '../registry/gameConfigs'
+
+import { getJson } from '@/utils/fetch'
+import { detectIsMobile } from '@/utils/browser'
+import { symbolUseVueFlow, symbolFlowchartMetadata } from '@/constants/injection'
+
+import FlowchartControls from './FlowchartControls.vue'
+import FlowchartEmptyState from './FlowchartEmptyState.vue'
+
+// 内联类型定义 - 不依赖外部共享类型
+type FlowchartDataEdge = {
+  id: string
+  type: 'default'
+  source: string
+  target: string
+  markerEnd: 'arrow' | 'arrowclosed'
+  animated: boolean
+  label?: string
+  style?: { stroke: 'green' | 'red' }
+  labelBgStyle?: { fill: 'green' | 'red' }
+}
+
+type FlowchartMetadata = {
+  counts: { node: number; edge: number; otherFlowcharts: number }
+  variableNames: Record<string, { key: string; type: 'string' | 'number' }>
+  flowchartRefs: string[]
+  currName: string
+}
+
+// 通用节点类型 - 使用宽松类型以支持不同游戏的节点
+type FlowchartDataNode = {
+  id: string
+  position: { x: number; y: number }
+  type: string
+  data: Record<string, unknown>
+}
+
+interface FlowchartData {
+  metadata: FlowchartMetadata
+  data: {
+    nodes: FlowchartDataNode[]
+    edges: FlowchartDataEdge[]
+  }
+}
+
+const props = defineProps<{
+  gameId: string
+  versionId: string
+  flowchartName: string
+}>()
+
+// 获取游戏配置
+const gameConfig = computed(() => getGameConfig(props.gameId))
+const nodeComponents = computed(() => gameConfig.value?.nodeComponents ?? {})
+const nodeTypes = computed(() => getAllNodeTypes(props.gameId))
+
+// 组合式函数
+const vueflow = useVueFlow()
+const windowsize = useWindowSize()
+const i18n = useI18n()
+const vueflowLayout = useFlowchartLayout()
+const { cssNodeBgColor, cssNodeTextColor } = useFlowchartTheme()
+
+// 状态
+const isReady = ref(false)
+const isDraggable = ref(false)
+const isShowMiniMap = ref(windowsize.width.value > 700)
+const data = ref<FlowchartData | null>(null)
+
+const vueflowData = {
+  nodes: ref<FlowchartDataNode[]>([]),
+  edges: ref<FlowchartDataEdge[]>([]),
+  metadata: ref<FlowchartMetadata>({
+    counts: { node: -1, edge: -1, otherFlowcharts: -1 },
+    variableNames: {},
+    flowchartRefs: [],
+    currName: '',
+  }),
+}
+
+// Provide
+provide(symbolUseVueFlow, vueflow)
+provide(symbolFlowchartMetadata, vueflowData.metadata)
+
+// 计算属性
+const fileUrl = computed(
+  () => `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/${props.flowchartName}.json`,
+)
+
+const flowchartHeight = computed(() => {
+  const height = detectIsMobile()
+    ? (windowsize.height.value - 200) * 0.8
+    : (windowsize.height.value - 100) * 0.9
+  return `${height}px`
+})
+
+// 方法
+async function triggerRelayout() {
+  isReady.value = false
+  await nextTick()
+  isReady.value = true
+  await nextTick()
+}
+
+function preProcessEdges(edges: FlowchartDataEdge[]) {
+  return edges.map((edge) => ({
+    ...edge,
+    label: edge.label ? i18n.t(edge.label) : undefined,
+  }))
+}
+
+async function initFlowchart() {
+  nextTick(async () => {
+    vueflowData.nodes.value = vueflowLayout.layout(
+      vueflowData.nodes.value,
+      vueflowData.edges.value,
+      'TB',
+    )
+    if (vueflowData.nodes.value.length > 0) {
+      await vueflow.fitView({ nodes: [vueflowData.nodes.value[0].id] })
+    }
+  })
+}
+
+// 暴露方法
+defineExpose({ triggerRelayout })
+
+// 监听器
+watch(
+  fileUrl,
+  async (newValue) => {
+    if (newValue.endsWith('/.json') || !props.flowchartName) {
+      isReady.value = false
+      data.value = null
+      vueflowData.nodes.value = []
+      vueflowData.edges.value = []
+      vueflowData.metadata.value = {
+        counts: { node: -1, edge: -1, otherFlowcharts: -1 },
+        variableNames: {},
+        flowchartRefs: [],
+        currName: '',
+      }
+    } else {
+      isReady.value = false
+      await nextTick()
+      const fetchedData = await getJson<FlowchartData>(fileUrl.value, 5)
+      data.value = fetchedData
+      vueflowData.nodes.value = fetchedData.data.nodes as FlowchartDataNode[]
+      vueflowData.edges.value = preProcessEdges(fetchedData.data.edges)
+      vueflowData.metadata.value = fetchedData.metadata
+      vueflowData.nodes.value = vueflowLayout.layout(
+        vueflowData.nodes.value,
+        vueflowData.edges.value,
+        'TB',
+      )
+      isReady.value = true
+    }
+  },
+  { immediate: true },
+)
+
+watch(
+  isDraggable,
+  (newValue) => {
+    vueflow.nodesDraggable.value = newValue
+  },
+  { immediate: true },
+)
+</script>
+
+<template>
+  <div style="width: 100%">
+    <FlowchartEmptyState v-if="!isReady" />
+    <div v-else class="flowchart-comp">
+      <VueFlow
+        :nodes="vueflowData.nodes.value"
+        :edges="vueflowData.edges.value"
+        :min-zoom="0.05"
+        :max-zoom="4"
+        @nodes-initialized="initFlowchart()"
+      >
+        <Background pattern-color="#aaa" :gap="16" />
+        <MiniMap v-if="isShowMiniMap" mask-color="rgba(20, 46, 89, 0.5)" pannable />
+        <FlowchartControls
+          v-model:is-draggable="isDraggable"
+          v-model:is-show-mini-map="isShowMiniMap"
+          @relayout="triggerRelayout"
+        />
+
+        <!-- 动态节点槽位 -->
+        <template v-for="nodeType in nodeTypes" :key="nodeType" #[`node-${nodeType}`]="nodeProps">
+          <component :is="nodeComponents[nodeType]" v-bind="nodeProps" />
+        </template>
+      </VueFlow>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.flowchart-comp {
+  height: v-bind(flowchartHeight);
+  width: calc(100%);
+}
+</style>
+
+<!-- 节点通用样式 -->
+<style scoped>
+/* 使用属性选择器匹配所有节点类型 */
+:deep([class*='vue-flow__node-']) {
+  padding: 10px;
+  border-radius: 3px;
+  width: 220px;
+  font-size: 12px;
+  text-align: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--vf-node-color);
+  background-color: v-bind(cssNodeBgColor);
+  color: v-bind(cssNodeTextColor);
+
+  &.selected,
+  &.selected:hover {
+    box-shadow: 0 0 0 0.5px var(--vf-box-shadow);
+  }
+
+  .vue-flow__handle {
+    background: var(--vf-handle);
+  }
+}
+
+:deep(.custom-node-icon) {
+  margin-right: 4px;
+}
+
+:deep(.custom-node-icon),
+:deep(.custom-node-title) {
+  /* Base value, PC */
+  font-size: 20px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 794px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 370px) {
+    font-size: 16px;
+  }
+}
+
+:deep(.custom-node-content) {
+  font-size: 14px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 794px) {
+    font-size: 11px;
+  }
+  @media screen and (max-width: 370px) {
+    font-size: 11px;
+  }
+}
+
+:deep(.custom-node-long-content) {
+  font-size: 13px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 11px;
+  }
+  @media screen and (max-width: 794px) {
+    font-size: 11px;
+  }
+  @media screen and (max-width: 370px) {
+    font-size: 11px;
+  }
+}
+
+:deep(ul.custom-node-long-content) {
+  list-style-type: disc;
+  list-style-position: inside;
+  overflow-y: auto;
+}
+
+:deep(.custom-node-a-clickable:hover) {
+  cursor: pointer;
+}
+
+:deep(.custom-node-tooltip) {
+  text-decoration: underline;
+}
+</style>
+
+<style scoped>
+:deep(.vue-flow__node-toolbar) {
+  align-items: left;
+  background-color: #2d3748;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+:deep(audio) {
+  width: 200px;
+  display: block;
+}
+</style>

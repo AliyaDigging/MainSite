@@ -1,4 +1,8 @@
 <script setup lang="ts">
+/**
+ * 流程图查看页面
+ * 重构版本：使用统一的 FlowchartViewer 组件
+ */
 import PvSelect from 'primevue/select'
 import PvTag from 'primevue/tag'
 import PvDivider from 'primevue/divider'
@@ -7,25 +11,17 @@ import { useRoute, useRouter } from 'vue-router'
 import { ref, watch, provide, useTemplateRef, onMounted } from 'vue'
 import PvMessage from 'primevue/message'
 
-import Aliya1_FlowchartComp from '@/components/flowchart/aliya1/FlowchartComp.vue'
-import Aliya1_FlowchartMetadata from '@/components/flowchart/aliya1/FlowchartMetadata.vue'
-import type { VueFlowCatalog as Aliya1_VueFlowCatalog } from '@/types/aliya1/data_script6'
-import { type L10nCsvSingleLang as Aliya1_L10nCsvSingleLang } from '@/types/aliya1/data_script7'
-import Aliya1_Android_DLC_FlowchartComp from '@/components/flowchart/aliya1_android_dlc/FlowchartComp.vue'
-import Aliya1_Android_DLC_FlowchartMetadata from '@/components/flowchart/aliya1_android_dlc/FlowchartMetadata.vue'
-import type { VueFlowCatalog as Aliya1_Android_DLC_VueFlowCatalog } from '@/types/aliya1_android_dlc/data_script6'
-import { type L10nCsvSingleLang as Aliya1_Android_DLC_L10nCsvSingleLang } from '@/types/aliya1_android_dlc/data_script7'
+// 使用新的统一组件
+import FlowchartViewer from '@/components/flowchart/core/FlowchartViewer.vue'
+import FlowchartMetadata from '@/components/flowchart/core/FlowchartMetadata.vue'
 
+import { useFlowchartData } from '@/composables/flowchart/useFlowchartData'
 import { useSiteSettingStore } from '@/stores/setting'
 import { symbolFlowchartCatalog, symbolL10nDataSingleLang } from '@/constants/injection'
 import { getJson } from '@/utils/fetch'
 import type { AllDataCatalog } from '@/types/allDataCatalog'
 import GameAndVersionSelector from '@/components/GameAndVersionSelector.vue'
 import LoadingSpinner from '@/components/LoadingSpinner.vue'
-
-/* utility type, to accommodate all types from all games */
-type VueFlowCatalog = Aliya1_VueFlowCatalog | Aliya1_Android_DLC_VueFlowCatalog
-type L10nCsvSingleLang = Aliya1_L10nCsvSingleLang | Aliya1_Android_DLC_L10nCsvSingleLang
 
 /* path params */
 const props = defineProps({
@@ -56,35 +52,20 @@ const flowchartSelection = ref<string>(props.flowchartName)
 
 const dataAllCatalog = ref<AllDataCatalog>([])
 
-const dataL10n = ref<L10nCsvSingleLang>({})
-const dataCatalog = ref<VueFlowCatalog>({ catalog: {}, flowchartBeingRefed: {} })
-const dataCatalogList = ref<string[]>([])
+// 使用新的 composable 管理数据
+const { l10nData, catalogData, catalogList, loadL10nData, loadCatalogData } = useFlowchartData({
+  gameId: gameSelection,
+  versionId: versionSelection,
+})
 
-const isReady = ref(false)
-const isReady2 = ref(false)
+// 更清晰的状态命名
+const isGlobalDataLoaded = ref(false) // 替代原来的 isReady
+const isFlowchartDataLoaded = ref(false) // 替代原来的 isReady2
 
 const flowchartRef = useTemplateRef('flowchartComp')
 
-provide(symbolL10nDataSingleLang, dataL10n)
-provide(symbolFlowchartCatalog, dataCatalog)
-
-async function loadL10nData(langcode: string) {
-  dataL10n.value = await getJson<L10nCsvSingleLang>(
-    `/data/${gameSelection.value}/${versionSelection.value}/localization/${langcode}.json`,
-    5,
-  )
-}
-
-async function loadCatalogData(gameId: string, versionId: string) {
-  dataCatalog.value = await getJson<VueFlowCatalog>(
-    `/data/${gameId}/${versionId}/flowcharts/vueflow/catalog.json`,
-    5,
-  )
-  dataCatalogList.value = await getJson<string[]>(
-    `/data/${gameId}/${versionId}/flowcharts/vueflow/catalog_list.json`,
-    5,
-  )
-}
+provide(symbolL10nDataSingleLang, l10nData)
+provide(symbolFlowchartCatalog, catalogData)
 
 // select 更改时，触发路径更改
 watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1, o2, o3]) => {
@@ -106,6 +87,7 @@ watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1,
     router.push(`/view/flowchart/`)
   }
 })
+
 // 路径更改时，触发 select 更改
 watch(
   () => [route.params.gameId, route.params.versionId, route.params.flowchartName],
@@ -127,7 +109,6 @@ watch(
   () => setting.l10nlang,
   async (newValue, oldValue) => {
     await loadL10nData(newValue)
-    isReady.value = true
 
     if (oldValue && flowchartRef.value) {
       flowchartRef.value.triggerRelayout()
@@ -150,16 +131,16 @@ onMounted(async () => {
       dataAllCatalog.value = await getJson<AllDataCatalog>(`/data/data_catalog.json`, 5)
     })(),
   ])
-  isReady.value = true
+  isGlobalDataLoaded.value = true
 })
 
 watch(
   [gameSelection, versionSelection],
   async ([n1, n2]) => {
     if (n1 !== '' && n2 !== '') {
-      isReady2.value = false
+      isFlowchartDataLoaded.value = false
       await Promise.allSettled([loadL10nData(setting.l10nlang), loadCatalogData(n1, n2)])
-      isReady2.value = true
+      isFlowchartDataLoaded.value = true
     }
   },
   { immediate: true },
@@ -169,7 +150,7 @@ watch(
 <template>
   <div class="view-body-padding-20">
     <h1 class="view-page-h1 text-black mb-0">{{ $t('comp.flowchart.p.view1') }}</h1>
-    <div v-if="!isReady" class="mt-6">
+    <div v-if="!isGlobalDataLoaded" class="mt-6">
       <div class="card justify-center">
         <LoadingSpinner />
       </div>
@@ -184,10 +165,10 @@ watch(
         v-model:version-selection="versionSelection"
       />
 
-      <template v-if="isReady2"
-        ><p class="select-title text-color mb-2">
+      <template v-if="isFlowchartDataLoaded">
+        <p class="select-title text-color mb-2">
           {{ $t('comp.flowchart.select.title3')
-          }}<PvSelect v-model="flowchartSelection" :options="dataCatalogList">
+          }}<PvSelect v-model="flowchartSelection" :options="catalogList">
             <template #option="slotProps">
               <div>
                 <span class="mr-2">{{ slotProps.option }}&nbsp;</span>
@@ -223,28 +204,22 @@ watch(
         <PvMessage severity="success" class="mt-2">{{ $t('comp.flowchart.p.view6') }}</PvMessage>
         <PvDivider />
 
+        <!-- 统一的流程图查看器 - 不再需要条件判断游戏类型 -->
         <div class="mt-6">
-          <div v-if="gameId.includes('aliya1_android_dlc')">
-            <Aliya1_Android_DLC_FlowchartComp
-              :game-id="gameId ? gameId : ''"
-              :version-id="versionId ? versionId : ''"
-              :flowchart-name="flowchartSelection ? flowchartSelection : ''"
-              ref="flowchartComp"
-            />
-            <Aliya1_Android_DLC_FlowchartMetadata :flowchart-name="flowchartName" />
-          </div>
-          <div v-else-if="gameId.includes('aliya1')">
-            <Aliya1_FlowchartComp
-              :game-id="gameId ? gameId : ''"
-              :version-id="versionId ? versionId : ''"
-              :flowchart-name="flowchartSelection ? flowchartSelection : ''"
-              ref="flowchartComp"
-            />
-            <Aliya1_FlowchartMetadata :flowchart-name="flowchartName" />
-          </div>
+          <FlowchartViewer
+            :game-id="gameSelection"
+            :version-id="versionSelection"
+            :flowchart-name="flowchartSelection"
+            ref="flowchartComp"
+          />
+          <FlowchartMetadata
+            :flowchart-name="flowchartSelection"
+            :game-id="gameSelection"
+            :version-id="versionSelection"
+          />
         </div>
-        <PvDivider
-      /></template>
+        <PvDivider />
+      </template>
     </div>
   </div>
 </template>

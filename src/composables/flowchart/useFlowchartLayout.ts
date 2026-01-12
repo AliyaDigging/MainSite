@@ -1,4 +1,9 @@
-/** FROM https://vueflow.dev/examples/layout/simple.html */
+/**
+ * 流程图布局 Composable
+ * 使用 dagre 库计算节点和边的布局
+ *
+ * FROM https://vueflow.dev/examples/layout/simple.html
+ */
 
 import dagre from '@dagrejs/dagre'
 import { Position, useVueFlow } from '@vue-flow/core'
@@ -6,34 +11,29 @@ import { ref } from 'vue'
 
 const DEFAULT_WIDTH = 220
 const DEFAULT_HEIGHT = 50
-const HEIGHT_OFFSET = 40
 
 function getElementSize(divDataId: string) {
   const ele = document.querySelector<HTMLDivElement>(`div[data-id="${divDataId}"]`)
 
-  let result
   if (ele) {
     const rect = ele.getBoundingClientRect()
-    result = {
+    return {
       width: rect.width,
       height: rect.height,
     }
-  } else {
-    result = {
-      width: DEFAULT_WIDTH,
-      height: DEFAULT_HEIGHT,
-    }
   }
 
-  //console.log(`${divDataId}, ${JSON.stringify(result)}`)
-  return result
+  return {
+    width: DEFAULT_WIDTH,
+    height: DEFAULT_HEIGHT,
+  }
 }
 
 /**
  * Composable to run the layout algorithm on the graph.
  * It uses the `dagre` library to calculate the layout of the nodes and edges.
  */
-export function useLayout() {
+export function useFlowchartLayout() {
   const { findNode } = useVueFlow()
 
   const graph = ref(new dagre.graphlib.Graph())
@@ -69,8 +69,6 @@ export function useLayout() {
         }
       }
 
-      //console.log(`${node.id}, ${JSON.stringify(size)}`)
-
       dagreGraph.setNode(node.id, {
         width: size.width,
         height: size.height,
@@ -99,14 +97,12 @@ export function useLayout() {
       }
       layers[rank].push(nodeId)
     })
-    // console.log(layers)
 
     // 调整 y 坐标
     let currentY = 0
     Object.keys(layers)
       .sort((a, b) => Number(a) - Number(b))
       .forEach((rank) => {
-        //console.log(rank)
         const layer = layers[Number(rank)]
         let maxHeight = 0
 
@@ -114,18 +110,15 @@ export function useLayout() {
         layer.forEach((nodeId) => {
           maxHeight = Math.max(maxHeight, nodeHeights[nodeId])
         })
-        //console.log(maxHeight)
 
         // update all the elements' y position in this layer
         layer.forEach((nodeId) => {
           const node = dagreGraph.node(nodeId)
           node.y = currentY + nodeHeights[nodeId] / 2
-          //console.log(`${nodeId}, ${node.y}`)
         })
 
         // move onto the next layer
         currentY += maxHeight * 1.5
-        //console.log(currentY)
       })
 
     // set nodes with updated positions
@@ -143,3 +136,6 @@ export function useLayout() {
 
   return { graph, layout }
 }
+
+// 向后兼容别名
+export const useLayout = useFlowchartLayout

@@ -1,13 +1,16 @@
 <script setup lang="ts">
+/**
+ * 流程图元数据组件
+ * 显示流程图的统计信息和引用关系
+ */
 import { symbolFlowchartCatalog } from '@/constants/injection'
 import { computed, inject } from 'vue'
 
-const props = defineProps({
-  flowchartName: {
-    type: String,
-    required: true,
-  },
-})
+const props = defineProps<{
+  flowchartName: string
+  gameId: string
+  versionId: string
+}>()
 
 const catalogData = inject(symbolFlowchartCatalog)!
 const catalogMetadata = computed(() => catalogData.value.catalog[props.flowchartName]?.metadata)
@@ -19,11 +22,16 @@ const shouldDisplay = computed(() => {
   }
   return true
 })
+
+// 生成流程图链接
+function getFlowchartLink(flowchartName: string) {
+  return `/view/flowchart/${props.gameId}/${props.versionId}/${flowchartName}`
+}
 </script>
 
 <template>
   <div class="mt-6" style="font-size: 16px">
-    <div v-if="shouldDisplay">
+    <div v-if="shouldDisplay && catalogMetadata">
       <h2 style="font-weight: 600; font-size: 18px">{{ $t('comp.flowchartmetadata.h2') }}</h2>
       <ul class="custom-node-normal-ul mt-2">
         <li class="mb-1 ul-li">
@@ -46,7 +54,7 @@ const shouldDisplay = computed(() => {
           <span
             ><b>{{ $t('comp.flowchartmetadata.otherflowcharts') }}</b
             >:&nbsp;<span v-for="(i, id) of catalogMetadata.flowchartRefs" :key="id"
-              ><RouterLink :to="`/view/flowchart/${i}`">{{ i }}</RouterLink
+              ><RouterLink :to="getFlowchartLink(i)">{{ i }}</RouterLink
               >,
             </span></span
           >
@@ -57,7 +65,7 @@ const shouldDisplay = computed(() => {
             >:&nbsp;<span
               v-for="(i, id) of catalogData.flowchartBeingRefed[flowchartName]"
               :key="id"
-              ><RouterLink :to="`/view/flowchart/${i}`">{{ i }}</RouterLink
+              ><RouterLink :to="getFlowchartLink(i)">{{ i }}</RouterLink
               >,
             </span></span
           >
