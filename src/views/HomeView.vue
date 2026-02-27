@@ -14,19 +14,44 @@ const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
 <template>
   <div class="home-hero-image">
     <div class="home-hero-text">
-      <h1 class="m-0">{{ $t('view.home.hero.h1') }}</h1>
+      <h1 class="m-0">{{ $t('view.home.hero.h1') }}<span class="rainbow-animated">+</span></h1>
       <p class="m-0">{{ $t('view.home.hero.p') }}</p>
     </div>
   </div>
 
   <div class="home-other-panel view-body-padding-20">
+    <h2 class="h2-title m-0 text-black mt-3">{{ $t('view.home.h2.4') }}</h2>
+    <p class="h2-desc text-color m-0 mb-4" v-html="$t('view.home.4.1')"></p>
+    <div class="home-feature-card-div">
+      <PvCard>
+        <template #header><img src="/aliya/game_header/aliya1.jpg" /></template>
+        <template #title>{{ $t('view.home.4.card.1.title') }}</template>
+        <template #subtitle>{{ $t('view.home.4.card.1.subtitle') }}</template>
+        <template #content><div v-html="i18n.t('view.home.4.card.1.content')"></div></template>
+      </PvCard>
+      <PvCard>
+        <template #header><img src="/aliya/game_header/ycytx_5.jpg" /></template>
+        <template #title>{{ $t('view.home.4.card.2.title') }}</template>
+        <template #subtitle>{{ $t('view.home.4.card.2.subtitle') }}</template>
+        <template #content><div v-html="i18n.t('view.home.4.card.2.content')" /></template>
+      </PvCard>
+      <PvCard>
+        <template #header><img src="/aliya/game_header/lifeline.jpg" /></template>
+        <template #title>{{ $t('view.home.4.card.3.title') }}</template>
+        <template #subtitle>{{ $t('view.home.4.card.3.subtitle') }}</template>
+        <template #content><div v-html="i18n.t('view.home.4.card.3.content')" /></template>
+      </PvCard>
+    </div>
+  </div>
+
+  <div class="home-other-panel view-body-padding-20 mt-8">
     <h2 class="h2-title m-0 text-black mt-3">{{ $t('view.home.h2.1') }}</h2>
     <p class="h2-desc text-color m-0 mb-4" v-html="$t('view.home.1.1')"></p>
     <div class="home-feature-card-div">
       <PvCard>
         <template #title>{{ $t('view.home.1.card.1.title') }}</template>
         <template #subtitle>{{ $t('view.home.1.card.1.subtitle') }}</template>
-        <template #content>{{ $t('view.home.1.card.1.content') }}</template>
+        <template #content><div v-html="i18n.t('view.home.1.card.1.content')"></div></template>
       </PvCard>
       <PvCard>
         <template #title>{{ $t('view.home.1.card.2.title') }}</template>
@@ -42,6 +67,7 @@ const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
     <p class="mt-4" v-html="i18n.t('view.home.1.2')"></p>
     <p class="mt-0" v-html="i18n.t('view.home.1.3')"></p>
   </div>
+
   <div class="home-other-panel mt-8 p-6">
     <h2 class="h2-title text-black">{{ $t('view.home.h2.2') }}</h2>
     <h2 class="h2-title" style="margin-top: 0; font-size: 30px">
@@ -56,6 +82,7 @@ const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
     <p class="h2-desc-long text-color mt-1" v-html="$t('view.home.2.6')"></p>
     <p class="h2-desc-long text-color mt-1" v-html="$t('view.home.2.7')"></p>
   </div>
+
   <div class="home-other-panel mt-8 p-6">
     <h2 class="h2-title text-black">{{ $t('view.home.h2.3') }}</h2>
     <p class="h2-desc text-color m-0 mb-4">
@@ -149,7 +176,7 @@ const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
 
 @media screen and (max-width: 794px) {
   .home-hero-text h1 {
-    font-size: 60px;
+    font-size: 55px;
   }
 
   .h2-title {
@@ -163,7 +190,61 @@ const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
 
 @media screen and (max-width: 370px) {
   .home-hero-text h1 {
-    font-size: 45px;
+    font-size: 40px;
+  }
+}
+
+.rainbow-animated {
+  background: linear-gradient(
+    90deg,
+    #f00,
+    #ff2b00,
+    #f50,
+    #ff8000,
+    #fa0,
+    #ffd500,
+    #ff0,
+    #d4ff00,
+    #af0,
+    #80ff00,
+    #5f0,
+    #2bff00,
+    #0f0,
+    #00ff2b,
+    #0f5,
+    #00ff80,
+    #0fa,
+    #00ffd5,
+    #0ff,
+    #00d4ff,
+    #0af,
+    #007fff,
+    #05f,
+    #002bff,
+    #00f,
+    #2a00ff,
+    #50f,
+    #7f00ff,
+    #a0f,
+    #d400ff,
+    #f0f,
+    #ff00d4,
+    #f0a,
+    #ff0080,
+    #f05,
+    #ff002b,
+    #f00
+  );
+  background-size: 300% auto; /* ← key for smooth sliding */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  animation: rainbow-slide 10s linear infinite;
+}
+@keyframes rainbow-slide {
+  to {
+    background-position: 300% center;
   }
 }
 </style>

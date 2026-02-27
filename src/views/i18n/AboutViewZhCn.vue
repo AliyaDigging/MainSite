@@ -11,15 +11,20 @@ import PvDivider from 'primevue/divider'
     <PvDivider />
     <h2>免责声明</h2>
     <p class="text-color mt-2">
-      本站（ALIYA DB）与游戏《彼方的她-Aliya》（Aliya: Timelink）、开发者【瞳电游工作室】（<a
-        href="https://space.bilibili.com/1104337773"
-        target="_blank"
-        >B站官号</a
-      >、<a href="https://store.steampowered.com/developer/tdgame" target="_blank">Steam</a
-      >）与发行商【AnotherIndie】（<a href="http://anotherindie.com.cn/" target="_blank">官网</a
-      >、<a href="https://store.steampowered.com/publisher/AnotherIndie/" target="_blank">Steam</a
-      >）<b>均无任何关系</b>。
+      本站（ALIYADB+）与以下列出的所有游戏、开发者、发行商、个人、团体、公司<b>均无任何关系、联系</b>：
     </p>
+    <ul class="custom-node-normal-ul mt-2">
+      <li>
+        游戏《彼方的她-Aliya》（Aliya: Timelink）、开发者【瞳电游工作室】（<a
+          href="https://space.bilibili.com/1104337773"
+          target="_blank"
+          >B站官号</a
+        >、<a href="https://store.steampowered.com/developer/tdgame" target="_blank">Steam</a
+        >）与发行商【AnotherIndie】（<a href="http://anotherindie.com.cn/" target="_blank">官网</a
+        >、<a href="https://store.steampowered.com/publisher/AnotherIndie/" target="_blank">Steam</a
+        >）
+      </li>
+    </ul>
     <p class="text-color mt-2">
       本站中引用的所有游戏内素材均属于其各自版权所有者，本站仅做相关数据展示。
     </p>
