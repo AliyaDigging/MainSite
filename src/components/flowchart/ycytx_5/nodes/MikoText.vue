@@ -71,7 +71,8 @@ const requirementPrice = computed(() => {
           {{ $t('comp.flowchart.ycytx_5.node.MikoText.p.text') }}: <Component :is="storyTextComp" />
         </p>
         <p v-if="props.data.logText">
-          {{ $t('comp.flowchart.ycytx_5.node.MikoText.p.logText') }}: {{ props.data.logText }}
+          {{ $t('comp.flowchart.ycytx_5.node.MikoText.p.logText') }}:
+          {{ l10n.story[props.data.logText] }}
         </p>
         <p>
           {{ $t('comp.flowchart.ycytx_5.node.MikoText.p.delayTime') }}: {{ props.data.delayTime }}ms
