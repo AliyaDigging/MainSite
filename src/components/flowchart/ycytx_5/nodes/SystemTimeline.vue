@@ -17,7 +17,7 @@ const props = defineProps<NodeProps<VFOutNode_SystemTimeline['data']>>()
 
 const realPhotoPath = computed(() => {
   const temp = props.data.photoId.replace(/-/, '_')
-  return `/aliya/ycytx_5/images/${temp.toLowerCase()}_h.jpg`
+  return `/aliya/ycytx_5/images/miko/${temp.toLowerCase()}_h.jpg`
 })
 </script>
 
