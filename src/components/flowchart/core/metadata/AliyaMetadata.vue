@@ -3,7 +3,7 @@
  * 流程图元数据组件
  * 显示流程图的统计信息和引用关系
  */
-import { symbolFlowchartCatalog } from '@/constants/injection'
+import { symbolFlowchartCatalog_Aliya1 } from '@/constants/injection'
 import { computed, inject } from 'vue'
 
 const props = defineProps<{
@@ -12,7 +12,7 @@ const props = defineProps<{
   versionId: string
 }>()
 
-const catalogData = inject(symbolFlowchartCatalog)!
+const catalogData = inject(symbolFlowchartCatalog_Aliya1)!
 const catalogMetadata = computed(() => catalogData.value.catalog[props.flowchartName]?.metadata)
 
 const shouldDisplay = computed(() => {

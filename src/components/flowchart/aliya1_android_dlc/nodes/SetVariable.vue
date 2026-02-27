@@ -8,12 +8,12 @@ import { BracesVariable20Filled } from '@vicons/fluent'
 
 import { type FlowchartDataNode_SetVariable } from '../types/script5_vueflow_prod'
 import { computed, inject } from 'vue'
-import { symbolFlowchartMetadata } from '@/constants/injection'
+import { symbolFlowchartMetadata_Aliya1 } from '@/constants/injection'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_SetVariable['data']>>()
 
-const metadata = inject(symbolFlowchartMetadata)!
+const metadata = inject(symbolFlowchartMetadata_Aliya1)!
 const targetVarData = computed(() => {
   const varInfo = metadata.value.variableNames[props.data.anyVar.variable]
   const assignedData: number | string | null =

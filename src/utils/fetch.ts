@@ -1,6 +1,6 @@
 import { Axios } from 'axios'
 
-export async function getJson<Response>(url: string, retryTimes: number = 5) {
+export async function getJson<Response>(url: string, retryTimes: number = 5): Promise<Response> {
   const client = new Axios()
 
   let i = 0
@@ -14,4 +14,6 @@ export async function getJson<Response>(url: string, retryTimes: number = 5) {
 
     i = i + 1
   }
+
+  throw Error('unable to get required JSON')
 }

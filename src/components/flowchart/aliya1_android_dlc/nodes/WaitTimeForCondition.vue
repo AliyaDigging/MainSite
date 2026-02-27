@@ -8,7 +8,7 @@ import { Icon } from '@vicons/utils'
 import { type FlowchartDataNode_WaitTimeForCondition } from '../types/script5_vueflow_prod'
 import { useI18n } from 'vue-i18n'
 import { computed, inject } from 'vue'
-import { symbolFlowchartMetadata } from '@/constants/injection'
+import { symbolFlowchartMetadata_Aliya1 } from '@/constants/injection'
 import { TimerSharp } from '@vicons/material'
 import PvDivider from 'primevue/divider'
 
@@ -16,7 +16,7 @@ import PvDivider from 'primevue/divider'
 const props = defineProps<NodeProps<FlowchartDataNode_WaitTimeForCondition['data']>>()
 
 const i18n = useI18n()
-const metadata = inject(symbolFlowchartMetadata)!
+const metadata = inject(symbolFlowchartMetadata_Aliya1)!
 
 const conditions = computed(() => {
   const conditions = props.data.conditions

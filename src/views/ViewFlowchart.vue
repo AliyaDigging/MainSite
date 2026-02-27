@@ -8,16 +8,14 @@ import PvTag from 'primevue/tag'
 import PvDivider from 'primevue/divider'
 import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from 'vue-router'
-import { ref, watch, provide, useTemplateRef, onMounted } from 'vue'
+import { ref, watch, provide, onMounted, computed } from 'vue'
 import PvMessage from 'primevue/message'
 
 // 使用新的统一组件
-import FlowchartViewer from '@/components/flowchart/core/FlowchartViewer.vue'
-import FlowchartMetadata from '@/components/flowchart/core/FlowchartMetadata.vue'
+import Flowchart_Aliya1 from '@/components/view_flowchart/Aliya1.vue'
+import Flowchart_Ycytx5 from '@/components/view_flowchart/Ycytx5.vue'
 
-import { useFlowchartData } from '@/composables/flowchart/useFlowchartData'
-import { useSiteSettingStore } from '@/stores/setting'
-import { symbolFlowchartCatalog, symbolL10nDataSingleLang } from '@/constants/injection'
+import { symbolGameSelectionDict } from '@/constants/injection'
 import { getJson } from '@/utils/fetch'
 import type { AllDataCatalog } from '@/types/allDataCatalog'
 import GameAndVersionSelector from '@/components/GameAndVersionSelector.vue'
@@ -41,7 +39,6 @@ const props = defineProps({
 
 /* some useXXX() */
 const i18n = useI18n()
-const setting = useSiteSettingStore()
 const route = useRoute()
 const router = useRouter()
 
@@ -49,26 +46,27 @@ const router = useRouter()
 const gameSelection = ref<string>(props.gameId)
 const versionSelection = ref<string>(props.versionId)
 const flowchartSelection = ref<string>(props.flowchartName)
+const injectionSelectData = computed(
+  () =>
+    [gameSelection.value, versionSelection.value, flowchartSelection.value] as [
+      string,
+      string,
+      string,
+    ],
+)
 
 const dataAllCatalog = ref<AllDataCatalog>([])
 
-// 使用新的 composable 管理数据
-const { l10nData, catalogData, catalogList, loadL10nData, loadCatalogData } = useFlowchartData({
-  gameId: gameSelection,
-  versionId: versionSelection,
-})
+const catalogList = ref<string[]>([])
 
 // 更清晰的状态命名
 const isGlobalDataLoaded = ref(false) // 替代原来的 isReady
 const isFlowchartDataLoaded = ref(false) // 替代原来的 isReady2
 
-const flowchartRef = useTemplateRef('flowchartComp')
-
-provide(symbolL10nDataSingleLang, l10nData)
-provide(symbolFlowchartCatalog, catalogData)
+provide(symbolGameSelectionDict, injectionSelectData)
 
 // select 更改时，触发路径更改
-watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1, o2, o3]) => {
+watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1]) => {
   // 当 gameSelection 改变时，清除 versionSelection 和 flowchartSelection
   if (n1 !== o1) {
     versionSelection.value = ''
@@ -105,16 +103,17 @@ watch(
   { immediate: true },
 )
 
-watch(
-  () => setting.l10nlang,
-  async (newValue, oldValue) => {
-    await loadL10nData(newValue)
-
-    if (oldValue && flowchartRef.value) {
-      flowchartRef.value.triggerRelayout()
-    }
-  },
-)
+watch([gameSelection, versionSelection], async ([n1, n2]) => {
+  if (n1 !== '' && n2 !== '') {
+    isFlowchartDataLoaded.value = false
+    await (async () =>
+      (catalogList.value = await getJson<string[]>(
+        `/data/${n1}/${n2}/flowcharts/vueflow/catalog_list.json`,
+        5,
+      )))()
+    isFlowchartDataLoaded.value = true
+  }
+})
 
 onMounted(async () => {
   if (props.gameId.includes('-')) {
@@ -130,21 +129,19 @@ onMounted(async () => {
     (async () => {
       dataAllCatalog.value = await getJson<AllDataCatalog>(`/data/data_catalog.json`, 5)
     })(),
+    (async () => {
+      const [n1, n2] = [gameSelection.value, versionSelection.value]
+      if (n1 !== '' && n2 !== '') {
+        catalogList.value = await getJson<string[]>(
+          `/data/${n1}/${n2}/flowcharts/vueflow/catalog_list.json`,
+          5,
+        )
+        isFlowchartDataLoaded.value = true
+      }
+    })(),
   ])
   isGlobalDataLoaded.value = true
 })
-
-watch(
-  [gameSelection, versionSelection],
-  async ([n1, n2]) => {
-    if (n1 !== '' && n2 !== '') {
-      isFlowchartDataLoaded.value = false
-      await Promise.allSettled([loadL10nData(setting.l10nlang), loadCatalogData(n1, n2)])
-      isFlowchartDataLoaded.value = true
-    }
-  },
-  { immediate: true },
-)
 </script>
 
 <template>
@@ -206,17 +203,20 @@ watch(
 
         <!-- 统一的流程图查看器 - 不再需要条件判断游戏类型 -->
         <div class="mt-6">
-          <FlowchartViewer
-            :game-id="gameSelection"
-            :version-id="versionSelection"
-            :flowchart-name="flowchartSelection"
-            ref="flowchartComp"
-          />
-          <FlowchartMetadata
-            :flowchart-name="flowchartSelection"
-            :game-id="gameSelection"
-            :version-id="versionSelection"
-          />
+          <template v-if="gameSelection.toLowerCase().includes('aliya')">
+            <Flowchart_Aliya1 />
+          </template>
+          <template v-else-if="gameSelection.toLowerCase() === 'ycytx_5'">
+            <Flowchart_Ycytx5 />
+          </template>
+          <template v-else>
+            <p>
+              Unsupported game. This error may occur due to a misconfiguration in the data JSON.
+            </p>
+            <p>Contact the developer to fix this.</p>
+            <p>该游戏数据尚未支持，出现此错误可能是由于在数据JSON中错误配置。</p>
+            <p>请联系开发者修复。</p>
+          </template>
         </div>
         <PvDivider />
       </template>
@@ -230,5 +230,8 @@ p {
 }
 :deep(p.select-title) {
   font-size: 1.1em;
+}
+:deep(.vue-flow__node-toolbar) {
+  font-size: 0.9rem;
 }
 </style>

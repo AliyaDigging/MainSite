@@ -6,12 +6,11 @@
 import { registerGameConfig } from './nodeRegistry'
 import { ALIYA1_NODE_TYPES } from '../nodes/aliya1'
 import { DLC_NODE_TYPES } from '../nodes/aliya1_android_dlc'
+import { YCYTX_5_NODE_TYPES } from '../nodes/ycytx_5'
 
-// Aliya1 节点组件
 import * as Aliya1Nodes from '../nodes/aliya1'
-
-// DLC 节点组件
 import * as DLCNodes from '../nodes/aliya1_android_dlc'
+import * as Ycytx5Nodes from '../nodes/ycytx_5'
 
 /**
  * 注册 Aliya1 游戏配置
@@ -102,4 +101,23 @@ registerGameConfig({
   },
   nodeTypes: [...DLC_NODE_TYPES],
   imageBasePath: '/aliya/aliya1_android_dlc/images/',
+})
+
+registerGameConfig({
+  gameId: 'ycytx_5',
+  nodeComponents: {
+    ChoiceText: Ycytx5Nodes.ChoiceText,
+    GameBe: Ycytx5Nodes.GameBe,
+    GameEnd: Ycytx5Nodes.GameEnd,
+    GameHe: Ycytx5Nodes.GameHe,
+    MikoPhoto: Ycytx5Nodes.MikoPhoto,
+    MikoText: Ycytx5Nodes.MikoText,
+    SystemStatusTips: Ycytx5Nodes.SystemStatusTips,
+    SystemTimeline: Ycytx5Nodes.SystemTimeline,
+    VF_JumpBe: Ycytx5Nodes.VFJumpBe,
+    VF_JumpPrev: Ycytx5Nodes.VFJumpPrev,
+    VF_JumpNext: Ycytx5Nodes.VFJumpNext,
+  },
+  nodeTypes: [...YCYTX_5_NODE_TYPES],
+  imageBasePath: '/aliya/ycytz_5/images/',
 })

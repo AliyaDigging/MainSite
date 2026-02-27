@@ -7,9 +7,9 @@ import LoadingSpinner from '@/components/LoadingSpinner.vue'
 import { getJson } from '@/utils/fetch'
 
 import Aliya1 from '@/components/view_resource/Aliya1.vue'
+import Ycytx5 from '@/components/view_resource/Ycytx5.vue'
 import GameAndVersionSelector from '@/components/GameAndVersionSelector.vue'
 import { useRoute, useRouter } from 'vue-router'
-import type { Aliya1_ResourceList } from '@/types/aliya1/resource_list'
 
 const props = defineProps({
   gameId: {
@@ -24,9 +24,6 @@ const props = defineProps({
   },
 })
 
-type ResourceListData = Aliya1_ResourceList
-const dataResourceList = ref<ResourceListData>({} as ResourceListData)
-
 const dataAllCatalog = ref<AllDataCatalog>([])
 const gameId = ref<string>(props.gameId)
 const versionId = ref<string>(props.versionId)
@@ -37,38 +34,36 @@ const isReady2 = ref(false)
 const route = useRoute()
 const router = useRouter()
 
-async function loadResourceCatalog(gameId: string, versionId: string) {
-  isReady2.value = false
-  dataResourceList.value = await getJson<ResourceListData>(
-    `/data/${gameId}/${versionId}/resource.json`,
-  )
-  isReady2.value = true
-}
-
-watch(
-  [gameId, versionId],
-  ([n1, n2]) => {
-    if (n1 !== '' && n2 !== '') {
-      loadResourceCatalog(n1, n2)
-    }
-  },
-  { immediate: true },
-)
-
 onMounted(async () => {
   dataAllCatalog.value = await getJson<AllDataCatalog>(`/data/data_catalog.json`, 5)
   isReady.value = true
+
+  if (gameId.value !== '' && versionId.value !== '') {
+    isReady2.value = true
+  }
 })
 
 // select 更改时，触发路径更改
-watch([gameId, versionId], ([n1, n2]) => {
+watch([gameId, versionId], ([n1, n2], [o1]) => {
   // 新URL格式
   if (n2 !== '') {
     router.push(`/view/resource/${n1}/${n2}`)
   } else if (n1 !== '') {
     router.push(`/view/resource/${n1}`)
+    isReady2.value = false
   } else {
     router.push(`/view/resource/`)
+    isReady2.value = false
+  }
+
+  if (n1 !== o1) {
+    versionId.value = ''
+    isReady2.value = false
+    return
+  }
+
+  if (n1 !== '' && n2 !== '') {
+    isReady2.value = true
   }
 })
 // 路径更改时，触发 select 更改
@@ -77,6 +72,7 @@ watch(
   ([n1, n2]) => {
     if (n1 !== gameId.value) {
       gameId.value = String(n1)
+      versionId.value = ''
     }
     if (n2 !== versionId.value) {
       versionId.value = String(n2)
@@ -104,10 +100,11 @@ watch(
         v-model:version-selection="versionId"
       />
       <template v-if="isReady2">
-        <Aliya1
-          v-if="gameId.includes('aliya1')"
-          :resource-music="(dataResourceList as Aliya1_ResourceList).music"
-          :resource-images="(dataResourceList as Aliya1_ResourceList).images"
+        <Aliya1 v-if="gameId.includes('aliya1')" :game-id="gameId" :version-id="versionId" />
+        <Ycytx5
+          v-else-if="gameId.toLowerCase() === 'ycytx_5'"
+          :game-id="gameId"
+          :version-id="versionId"
         />
       </template>
     </div>

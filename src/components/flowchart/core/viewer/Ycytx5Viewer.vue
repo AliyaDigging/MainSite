@@ -1,9 +1,5 @@
 <script setup lang="ts">
-/**
- * 统一的流程图查看器组件
- * 支持多游戏版本，通过注册表动态加载节点组件
- */
-import { computed, nextTick, provide, ref, watch } from 'vue'
+import { computed, inject, nextTick, provide, ref, watch } from 'vue'
 import { VueFlow, useVueFlow } from '@vue-flow/core'
 import { Background } from '@vue-flow/background'
 import { MiniMap } from '@vue-flow/minimap'
@@ -12,16 +8,22 @@ import { useI18n } from 'vue-i18n'
 
 import { useFlowchartLayout } from '@/composables/flowchart/useFlowchartLayout'
 import { useFlowchartTheme } from '@/composables/flowchart/useFlowchartTheme'
-import { getGameConfig, getAllNodeTypes } from '../registry/nodeRegistry'
+import { getGameConfig, getAllNodeTypes } from '../../registry/nodeRegistry'
 // 确保游戏配置已注册
-import '../registry/gameConfigs'
+import '../../registry/gameConfigs'
 
 import { getJson } from '@/utils/fetch'
 import { detectIsMobile } from '@/utils/browser'
-import { symbolUseVueFlow, symbolFlowchartMetadata } from '@/constants/injection'
+import {
+  symbolUseVueFlow,
+  symbolFlowchartMetadata_Ycytx5,
+  symbolL10nDataSingleLang_Ycytx5,
+  symbolL10nDataSingleLangDict_Ycytx5,
+} from '@/constants/injection'
 
-import FlowchartControls from './FlowchartControls.vue'
-import FlowchartEmptyState from './FlowchartEmptyState.vue'
+import FlowchartControls from '../FlowchartControls.vue'
+import FlowchartEmptyState from '../FlowchartEmptyState.vue'
+import type { VFOut_Catalog_Entry } from '@/types/ycytx_5'
 
 // 内联类型定义 - 不依赖外部共享类型
 type FlowchartDataEdge = {
@@ -36,12 +38,7 @@ type FlowchartDataEdge = {
   labelBgStyle?: { fill: 'green' | 'red' }
 }
 
-type FlowchartMetadata = {
-  counts: { node: number; edge: number; otherFlowcharts: number }
-  variableNames: Record<string, { key: string; type: 'string' | 'number' }>
-  flowchartRefs: string[]
-  currName: string
-}
+type FlowchartMetadata = VFOut_Catalog_Entry['metadata']
 
 // 通用节点类型 - 使用宽松类型以支持不同游戏的节点
 type FlowchartDataNode = {
@@ -87,16 +84,20 @@ const vueflowData = {
   nodes: ref<FlowchartDataNode[]>([]),
   edges: ref<FlowchartDataEdge[]>([]),
   metadata: ref<FlowchartMetadata>({
-    counts: { node: -1, edge: -1, otherFlowcharts: -1 },
-    variableNames: {},
-    flowchartRefs: [],
+    counts: { node: -1, edge: -1, dictKeyword: -1 },
+    dictKeywordId: [],
     currName: '',
+    version: -1,
+    specialNodes: {
+      start: [],
+      end: [],
+    },
   }),
 }
 
 // Provide
 provide(symbolUseVueFlow, vueflow)
-provide(symbolFlowchartMetadata, vueflowData.metadata)
+provide(symbolFlowchartMetadata_Ycytx5, vueflowData.metadata)
 
 // 计算属性
 const fileUrl = computed(
@@ -133,7 +134,7 @@ async function initFlowchart() {
       'TB',
     )
     if (vueflowData.nodes.value.length > 0) {
-      await vueflow.fitView({ nodes: [vueflowData.nodes.value[0].id] })
+      await vueflow.fitView({ nodes: vueflowData.metadata.value.specialNodes.start })
     }
   })
 }
@@ -151,11 +152,16 @@ watch(
       vueflowData.nodes.value = []
       vueflowData.edges.value = []
       vueflowData.metadata.value = {
-        counts: { node: -1, edge: -1, otherFlowcharts: -1 },
-        variableNames: {},
-        flowchartRefs: [],
+        counts: { node: -1, edge: -1, dictKeyword: -1 },
+        dictKeywordId: [],
         currName: '',
+        version: -1,
+        specialNodes: {
+          start: [],
+          end: [],
+        },
       }
+      dictData.value = {}
     } else {
       isReady.value = false
       await nextTick()
@@ -169,6 +175,7 @@ watch(
         vueflowData.edges.value,
         'TB',
       )
+
       isReady.value = true
     }
   },
@@ -182,6 +189,11 @@ watch(
   },
   { immediate: true },
 )
+
+document.addEventListener('ycytx5-fit-in-view', (event) => {
+  // @ts-expect-error custom event listener (triggered in `Ycytx5Metadata.vue`)
+  vueflow.fitView({ nodes: [event.detail.nodeId] })
+})
 </script>
 
 <template>
@@ -242,6 +254,22 @@ watch(
   .vue-flow__handle {
     background: var(--vf-handle);
   }
+}
+
+:deep([class*='vue-flow__node-VF_JumpBe']),
+:deep([class*='vue-flow__node-GameBe']) {
+  border-color: red !important;
+  border-width: 8px;
+}
+:deep([class*='vue-flow__node-VF_JumpNext']),
+:deep([class*='vue-flow__node-VF_JumpPrev']) {
+  border-color: rgb(34, 165, 241) !important;
+  border-width: 8px;
+}
+:deep([class*='vue-flow__node-GameHe']),
+:deep([class*='vue-flow__node-GameEnd']) {
+  border-color: green !important;
+  border-width: 8px;
 }
 
 :deep(.custom-node-icon) {

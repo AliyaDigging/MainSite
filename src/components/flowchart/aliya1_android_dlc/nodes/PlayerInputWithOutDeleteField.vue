@@ -8,11 +8,11 @@ import { Keyboard } from '@vicons/tabler'
 
 import { type FlowchartDataNode_PlayerInputWithOutDeleteField } from '../types/script5_vueflow_prod'
 import { inject } from 'vue'
-import { symbolFlowchartMetadata } from '@/constants/injection'
+import { symbolFlowchartMetadata_Aliya1 } from '@/constants/injection'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_PlayerInputWithOutDeleteField['data']>>()
-const metadata = inject(symbolFlowchartMetadata)!
+const metadata = inject(symbolFlowchartMetadata_Aliya1)!
 </script>
 
 <template>

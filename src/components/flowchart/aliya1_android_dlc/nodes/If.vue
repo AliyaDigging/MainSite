@@ -9,13 +9,13 @@ import { GitBranchOutline } from '@vicons/ionicons5'
 import { type FlowchartDataNode_If } from '../types/script5_vueflow_prod'
 import { useI18n } from 'vue-i18n'
 import { computed, inject } from 'vue'
-import { symbolFlowchartMetadata } from '@/constants/injection'
+import { symbolFlowchartMetadata_Aliya1 } from '@/constants/injection'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_If['data']>>()
 
 const i18n = useI18n()
-const metadata = inject(symbolFlowchartMetadata)!
+const metadata = inject(symbolFlowchartMetadata_Aliya1)!
 
 const conditions = computed(() => {
   const conditions = props.data.conditions

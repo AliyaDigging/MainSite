@@ -3,7 +3,7 @@ export type AllDataCatalogEntry = {
     id: string
     platform: {
       type: 'pc' | 'android' | 'ios'
-      seller: 'steam' | 'taptap' | 'bilibili'
+      seller: 'steam' | 'taptap' | 'bilibili' | 'unknown'
       url: string
     }
   }

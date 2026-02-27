@@ -9,7 +9,10 @@ import PvBadge from 'primevue/badge'
 
 import { type FlowchartDataNode_AliyaMessage } from '../types/script5_vueflow_prod'
 import { computed, inject } from 'vue'
-import { symbolFlowchartMetadata, symbolL10nDataSingleLang } from '@/constants/injection'
+import {
+  symbolFlowchartMetadata_Aliya1,
+  symbolL10nDataSingleLang_Aliya1,
+} from '@/constants/injection'
 import { useI18n } from 'vue-i18n'
 import { useSiteSettingStore } from '@/stores/setting'
 import { batchReplaceString, caluateMessageTypingTime } from '@/utils/aliya'
@@ -21,8 +24,8 @@ const i18n = useI18n()
 const setting = useSiteSettingStore()
 const aliyaSetting = useAliyaStore()
 
-const l10n = inject(symbolL10nDataSingleLang)!
-const metadata = inject(symbolFlowchartMetadata)!
+const l10n = inject(symbolL10nDataSingleLang_Aliya1)!
+const metadata = inject(symbolFlowchartMetadata_Aliya1)!
 
 const messageTextList = computed(() => {
   const text = l10n.value[`AliyaMessage.${metadata.value.currName}.${props.data.itemId}.`]

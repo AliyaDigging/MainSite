@@ -11,8 +11,8 @@ import { fitInViewTargetBlock } from '@/utils/flowchart'
 import { type FlowchartDataNode_PlayerChoice } from '../types/script5_vueflow_prod'
 import { computed, inject } from 'vue'
 import {
-  symbolFlowchartMetadata,
-  symbolL10nDataSingleLang,
+  symbolFlowchartMetadata_Aliya1,
+  symbolL10nDataSingleLang_Aliya1,
   symbolUseVueFlow,
 } from '@/constants/injection'
 import { useI18n } from 'vue-i18n'
@@ -25,8 +25,8 @@ const i18n = useI18n()
 const aliyaSetting = useAliyaStore()
 
 const vueflow = inject(symbolUseVueFlow)!
-const l10n = inject(symbolL10nDataSingleLang)!
-const metadata = inject(symbolFlowchartMetadata)!
+const l10n = inject(symbolL10nDataSingleLang_Aliya1)!
+const metadata = inject(symbolFlowchartMetadata_Aliya1)!
 const playerText = computed(() => {
   const text = l10n.value[`PlayerChoice.${metadata.value.currName}.${props.data.itemId}.`]
   let textList = text.split('|###|')
