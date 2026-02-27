@@ -72,16 +72,16 @@ function triggerVueFlowFitInView(nodeId: string) {
         <li class="mb-1">
           <span
             ><b
-              >{{ $t('comp.flowchartmetadata.ycytx_5.count.dictKeyword') }} ({{
+              >{{ $t('comp.flowchartmetadata.ycytx_5.count.dictKeyword') }} [{{
                 catalogMetadata.counts.dictKeyword
-              }})</b
+              }}]</b
             >:
             <span v-for="(i, id) of catalogMetadata.dictKeywordId" :key="id"
               ><TooltipAndPopup :content="dictData[`DICT_${i}`][1]">{{
                 dictData[`DICT_${i}`][0]
               }}</TooltipAndPopup
-              >,
-            </span></span
+              >、</span
+            ></span
           >
         </li>
         <li class="mb-1">
@@ -94,16 +94,16 @@ function triggerVueFlowFitInView(nodeId: string) {
               <span v-for="(i, id) of catalogMetadata.specialNodes.start" :key="id"
                 ><a style="cursor: pointer" @click="triggerVueFlowFitInView(i)"
                   ><code>{{ i }}</code></a
-                ></span
-              >,
+                >、</span
+              >
             </li>
             <li>
               {{ $t('comp.flowchartmetadata.ycytx_5.count.specialNodes.end') }}:
               <span v-for="(i, id) of catalogMetadata.specialNodes.end" :key="id"
                 ><a style="cursor: pointer" @click="triggerVueFlowFitInView(i)"
                   ><code>{{ i }}</code></a
-                ></span
-              >,
+                >、</span
+              >
             </li>
           </ul>
         </li>
