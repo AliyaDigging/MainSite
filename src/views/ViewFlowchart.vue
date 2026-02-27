@@ -71,6 +71,7 @@ watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1]
   if (n1 !== o1) {
     versionSelection.value = ''
     flowchartSelection.value = ''
+    isFlowchartDataLoaded.value = false
   }
 
   // 新URL格式

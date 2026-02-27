@@ -34,10 +34,12 @@ const dictData: symbolL10nDataSingleLangDict_Ycytx5 = ref({})
 function updateDictData(flowchartName: string) {
   dictData.value = {}
 
-  catalogData.value.catalog[flowchartName].metadata.dictKeywordId.forEach((v) => {
-    // for some reason it returns a ref-ed object
-    dictData.value[`DICT_${v}`] = unref(l10nData.value.dict[`DICT_${v}`])
-  })
+  if (flowchartName !== '') {
+    catalogData.value.catalog[flowchartName].metadata.dictKeywordId.forEach((v) => {
+      // for some reason it returns a ref-ed object
+      dictData.value[`DICT_${v}`] = unref(l10nData.value.dict[`DICT_${v}`])
+    })
+  }
 }
 provide(symbolL10nDataSingleLangDict_Ycytx5, dictData)
 
