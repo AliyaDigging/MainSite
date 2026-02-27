@@ -52,7 +52,7 @@ const storyTextComp = computed(() => {
             <Component :is="storyTextComp" />
           </p>
           <p>
-            {{ $t('comp.flowchart.ycytx_5.node.ChoiceText.p.dealayTime') }}:
+            {{ $t('comp.flowchart.ycytx_5.node.ChoiceText.p.delayTime') }}:
             {{ props.data.delayTime }}ms
           </p>
           <p>
