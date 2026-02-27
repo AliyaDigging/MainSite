@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, inject, nextTick, provide, ref, watch } from 'vue'
+import { computed, nextTick, provide, ref, watch } from 'vue'
 import { VueFlow, useVueFlow } from '@vue-flow/core'
 import { Background } from '@vue-flow/background'
 import { MiniMap } from '@vue-flow/minimap'
@@ -14,12 +14,7 @@ import '../../registry/gameConfigs'
 
 import { getJson } from '@/utils/fetch'
 import { detectIsMobile } from '@/utils/browser'
-import {
-  symbolUseVueFlow,
-  symbolFlowchartMetadata_Ycytx5,
-  symbolL10nDataSingleLang_Ycytx5,
-  symbolL10nDataSingleLangDict_Ycytx5,
-} from '@/constants/injection'
+import { symbolUseVueFlow, symbolFlowchartMetadata_Ycytx5 } from '@/constants/injection'
 
 import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
@@ -161,7 +156,6 @@ watch(
           end: [],
         },
       }
-      dictData.value = {}
     } else {
       isReady.value = false
       await nextTick()
