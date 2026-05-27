@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { InsertDriveFileOutlined } from '@vicons/material'
+import { Icon } from '@vicons/utils'
+
 /**
  * Flowchart file tree component — left panel.
  * Currently accepts Array<string>; tree structure support planned.
@@ -23,7 +26,9 @@ const emit = defineEmits<{
         :class="{ active: item === activeItem }"
         @click="emit('select', item)"
       >
-        <span class="file-tree-item-icon">&#97048;</span>
+        <span class="file-tree-item-icon"
+          ><Icon><InsertDriveFileOutlined /></Icon
+        ></span>
         <span class="file-tree-item-name">{{ item }}</span>
       </div>
       <div v-if="items.length === 0" class="file-tree-empty">
@@ -54,7 +59,7 @@ const emit = defineEmits<{
   gap: 6px;
   padding: 6px 12px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 16px;
   color: var(--p-text-color, #1e293b);
   transition: background 0.15s;
   border-left: 3px solid transparent;

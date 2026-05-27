@@ -61,7 +61,7 @@ const isGlobalDataLoaded = ref(false)
 const isFlowchartDataLoaded = ref(false)
 
 const flowchartPageHeight = computed(
-  () => `${(windowsize.height.value - 120) * (detectIsMobile() ? 0.9 : 1)}px`,
+  () => `${(windowsize.height.value - 140) * (detectIsMobile() ? 0.9 : 1)}px`,
 )
 
 // select 更改时，触发路径更改
