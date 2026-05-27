@@ -16,6 +16,7 @@ import PvInputText from 'primevue/inputtext'
 import PvSelectButton from 'primevue/selectbutton'
 import PvButton from 'primevue/button'
 import { useI18n } from 'vue-i18n'
+import { useFlowchartStore } from '@/stores/flowchart'
 
 type FlowchartDataNode = {
   id: string
@@ -43,6 +44,25 @@ const emit = defineEmits<{
 
 const vueflow = useVueFlow()
 const i18n = useI18n()
+const flowchartStore = useFlowchartStore()
+
+// Sync visibility to store
+watch(
+  () => props.visible,
+  (v) => {
+    flowchartStore.isSearchPanelVisible = v
+  },
+)
+
+// Close search panel when store signals (e.g. tab switch)
+watch(
+  () => flowchartStore.isSearchPanelVisible,
+  (v) => {
+    if (!v && props.visible) {
+      emit('update:visible', false)
+    }
+  },
+)
 
 const DIALOGUE_FIELDS = ['messageText', 'text', 'content', 'customMsgText', 'logText', 'speaker']
 

@@ -3,7 +3,7 @@
  * 统一的流程图查看器组件
  * 支持多游戏版本，通过注册表动态加载节点组件
  */
-import { computed, nextTick, provide, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, provide, ref, watch } from 'vue'
 import { VueFlow, useVueFlow } from '@vue-flow/core'
 import { Background } from '@vue-flow/background'
 import { MiniMap } from '@vue-flow/minimap'
@@ -23,6 +23,7 @@ import { symbolUseVueFlow, symbolFlowchartMetadata_Aliya1 } from '@/constants/in
 import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
 import FlowchartSearchPanel from '../FlowchartSearchPanel.vue'
+import { useFlowchartStore } from '@/stores/flowchart'
 
 // 内联类型定义 - 不依赖外部共享类型
 type FlowchartDataEdge = {
@@ -100,16 +101,18 @@ const vueflowData = {
 provide(symbolUseVueFlow, vueflow)
 provide(symbolFlowchartMetadata_Aliya1, vueflowData.metadata)
 
+const store = useFlowchartStore()
+const flowKey = computed(() => store.makeKey(props.gameId, props.versionId, props.flowchartName))
+const isRestoredFromCache = ref(false)
+
 // 计算属性
 const fileUrl = computed(
   () => `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/${props.flowchartName}.json`,
 )
 
 const flowchartHeight = computed(() => {
-  const height = detectIsMobile()
-    ? (windowsize.height.value - 200) * 0.8
-    : (windowsize.height.value - 100) * 0.9
-  return `${height}px`
+  if (detectIsMobile()) return `${(windowsize.height.value - 200) * 0.8}px`
+  return '100%'
 })
 
 // 方法
@@ -128,6 +131,17 @@ function preProcessEdges(edges: FlowchartDataEdge[]) {
 }
 
 async function initFlowchart() {
+  if (isRestoredFromCache.value) {
+    isRestoredFromCache.value = false
+    nextTick(async () => {
+      const cached = store.getCachedState(flowKey.value)
+      if (cached?.viewport) {
+        vueflow.setViewport(cached.viewport)
+      }
+    })
+    return
+  }
+
   nextTick(async () => {
     vueflowData.nodes.value = vueflowLayout.layout(
       vueflowData.nodes.value,
@@ -159,6 +173,16 @@ watch(
         currName: '',
       }
     } else {
+      const cached = store.getCachedState(flowKey.value)
+      if (cached) {
+        vueflowData.nodes.value = cached.nodes
+        vueflowData.edges.value = cached.edges
+        vueflowData.metadata.value = cached.metadata
+        isRestoredFromCache.value = true
+        isReady.value = true
+        return
+      }
+
       isReady.value = false
       await nextTick()
       const fetchedData = await getJson<FlowchartData>(fileUrl.value, 5)
@@ -184,10 +208,21 @@ watch(
   },
   { immediate: true },
 )
+
+onBeforeUnmount(() => {
+  if (isReady.value && props.flowchartName) {
+    store.cacheState(flowKey.value, {
+      nodes: vueflowData.nodes.value,
+      edges: vueflowData.edges.value,
+      metadata: vueflowData.metadata.value,
+      viewport: { ...vueflow.viewport.value },
+    })
+  }
+})
 </script>
 
 <template>
-  <div style="width: 100%">
+  <div style="width: 100%; height: 100%">
     <FlowchartEmptyState v-if="!isReady" />
     <div v-else class="flowchart-comp">
       <VueFlow

@@ -2,11 +2,17 @@
 import FlowchartViewer_2361Playtest from '@/components/flowchart/core/viewer/2361PlaytestViewer.vue'
 import FlowchartMetadata_2361Playtest from '@/components/flowchart/core/metadata/2361PlaytestMetadata.vue'
 
-import { symbolFlowchartCatalog_2361Playtest, symbolGameSelectionDict } from '@/constants/injection'
-import { computed, inject, onMounted, provide, ref, useTemplateRef, watch } from 'vue'
+import { symbolFlowchartCatalog_2361Playtest } from '@/constants/injection'
+import { computed, onMounted, provide, ref, useTemplateRef, watch } from 'vue'
 import { useSiteSettingStore } from '@/stores/setting'
 import { getJson } from '@/utils/fetch'
 import type { FlowchartData } from '@/components/flowchart/2361_playtest/types/script3'
+
+const props = defineProps<{
+  gameId: string
+  versionId: string
+  flowchartName: string
+}>()
 
 type VueFlowCatalog = {
   catalog: Record<string, { metadata: FlowchartData['metadata'] }>
@@ -15,9 +21,8 @@ type VueFlowCatalog = {
 
 const setting = useSiteSettingStore()
 
-const injectionSelectData = inject(symbolGameSelectionDict)!
-const gameId = computed(() => injectionSelectData.value[0])
-const versionId = computed(() => injectionSelectData.value[1])
+const gameId = computed(() => props.gameId)
+const versionId = computed(() => props.versionId)
 
 const isLoading = ref(true)
 
@@ -39,7 +44,7 @@ watch(
 onMounted(async () => {
   /*
   catalogData.value = await getJson<VueFlowCatalog>(
-    `/data/${injectionSelectData.value[0]}/${injectionSelectData.value[1]}/flowcharts/vueflow/catalog.json`,
+    `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/catalog.json`,
     5,
   )*/
   isLoading.value = false
@@ -49,16 +54,16 @@ onMounted(async () => {
 <template>
   <template v-if="!isLoading">
     <FlowchartViewer_2361Playtest
-      :game-id="injectionSelectData[0]"
-      :version-id="injectionSelectData[1]"
-      :flowchart-name="injectionSelectData[2]"
+      :game-id="props.gameId"
+      :version-id="props.versionId"
+      :flowchart-name="props.flowchartName"
       ref="flowchartComp"
     />
     <!---
     <FlowchartMetadata_2361Playtest
-      :flowchart-name="injectionSelectData[2]"
-      :game-id="injectionSelectData[0]"
-      :version-id="injectionSelectData[1]"
+      :flowchart-name="props.flowchartName"
+      :game-id="props.gameId"
+      :version-id="props.versionId"
     />-->
   </template>
   <template v-else>

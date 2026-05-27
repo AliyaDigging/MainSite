@@ -4,8 +4,6 @@
  * 提供锁定/解锁、小地图切换、重新布局等控制功能
  */
 import { Controls, ControlButton } from '@vue-flow/controls'
-import { Icon } from '@vicons/utils'
-import { ManageSearchOutlined } from '@vicons/material'
 import { useI18n } from 'vue-i18n'
 
 defineProps<{

@@ -4,10 +4,9 @@ import FlowchartMetadata_Aliya from '@/components/flowchart/core/metadata/AliyaM
 
 import {
   symbolFlowchartCatalog_Aliya1,
-  symbolGameSelectionDict,
   symbolL10nDataSingleLang_Aliya1,
 } from '@/constants/injection'
-import { computed, inject, onMounted, provide, ref, useTemplateRef, watch } from 'vue'
+import { computed, onMounted, provide, ref, useTemplateRef, watch } from 'vue'
 import { useSiteSettingStore } from '@/stores/setting'
 import type { L10nCsvSingleLang as L10nCsvSingleLang_Aliya1 } from '@/types/aliya1/data_script7'
 import type {
@@ -16,11 +15,16 @@ import type {
 } from '@/types/aliya1/data_script6'
 import { getJson } from '@/utils/fetch'
 
+const props = defineProps<{
+  gameId: string
+  versionId: string
+  flowchartName: string
+}>()
+
 const setting = useSiteSettingStore()
 
-const injectionSelectData = inject(symbolGameSelectionDict)!
-const gameId = computed(() => injectionSelectData.value[0])
-const versionId = computed(() => injectionSelectData.value[1])
+const gameId = computed(() => props.gameId)
+const versionId = computed(() => props.versionId)
 
 const isLoading = ref(true)
 
@@ -54,7 +58,7 @@ watch(
 
 onMounted(async () => {
   catalogData.value = await getJson<VueFlowCatalog>(
-    `/data/${injectionSelectData.value[0]}/${injectionSelectData.value[1]}/flowcharts/vueflow/catalog.json`,
+    `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/catalog.json`,
     5,
   )
   isLoading.value = false
@@ -64,15 +68,15 @@ onMounted(async () => {
 <template>
   <template v-if="!isLoading">
     <FlowchartViewer_Aliya
-      :game-id="injectionSelectData[0]"
-      :version-id="injectionSelectData[1]"
-      :flowchart-name="injectionSelectData[2]"
+      :game-id="props.gameId"
+      :version-id="props.versionId"
+      :flowchart-name="props.flowchartName"
       ref="flowchartComp"
     />
     <FlowchartMetadata_Aliya
-      :flowchart-name="injectionSelectData[2]"
-      :game-id="injectionSelectData[0]"
-      :version-id="injectionSelectData[1]"
+      :flowchart-name="props.flowchartName"
+      :game-id="props.gameId"
+      :version-id="props.versionId"
     />
   </template>
   <template v-else>
