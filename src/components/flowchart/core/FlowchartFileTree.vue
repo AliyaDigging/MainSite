@@ -32,7 +32,7 @@ const emit = defineEmits<{
     @change="emit('select', $event.value as string)"
   >
     <template #option="{ option }">
-      <span class="file-tree-item-icon"
+      <span class="file-tree-item-icon" style="margin-right: 4px"
         ><Icon><InsertDriveFileOutlined /></Icon
       ></span>
       <span class="file-tree-item-name">{{ option }}</span>
