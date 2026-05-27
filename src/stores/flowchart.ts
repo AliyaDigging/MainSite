@@ -86,6 +86,13 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     }
   }
 
+  function resetAll() {
+    tabs.value = []
+    activeKey.value = null
+    isSearchPanelVisible.value = false
+    stateCache.value = {}
+  }
+
   return {
     tabs,
     activeKey,
@@ -100,5 +107,6 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     cacheState,
     getCachedState,
     clearCache,
+    resetAll,
   }
 })

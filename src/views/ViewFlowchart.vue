@@ -6,7 +6,7 @@
 import PvDivider from 'primevue/divider'
 import PvMessage from 'primevue/message'
 import { useRoute, useRouter } from 'vue-router'
-import { ref, watch, onMounted, computed } from 'vue'
+import { ref, watch, onMounted, onBeforeUnmount, computed } from 'vue'
 import type { Component } from 'vue'
 import { useWindowSize } from '@vueuse/core'
 
@@ -65,11 +65,14 @@ const flowchartPageHeight = computed(
 )
 
 // select 更改时，触发路径更改
-watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1]) => {
+watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1, o2]) => {
   if (n1 !== o1) {
     versionSelection.value = ''
     flowchartSelection.value = ''
     isFlowchartDataLoaded.value = false
+  }
+  if (n1 !== o1 || n2 !== o2) {
+    store.resetAll()
   }
 
   if (n3 !== '') {
@@ -173,6 +176,10 @@ onMounted(async () => {
     })(),
   ])
   isGlobalDataLoaded.value = true
+})
+
+onBeforeUnmount(() => {
+  store.resetAll()
 })
 </script>
 
