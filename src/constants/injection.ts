@@ -6,6 +6,7 @@ import type { InjectionKey, Ref } from 'vue'
 import { type L10nCsvSingleLang as L10nCsvSingleLang_Aliya1 } from '@/types/aliya1/data_script7'
 import type { VueFlowCatalog as VueFlowCatalog_Aliya1 } from '@/types/aliya1/data_script6'
 import type { L10nSingleLang_Ycytx5, VFOut_Catalog_Ycytx5 } from '@/types/ycytx_5'
+import type { FlowchartData as FlowchartData_2361Playtest } from '@/components/flowchart/2361_playtest/types/script3'
 
 type FlowchartDataSet_Aliya1 = Aliya1_FlowchartData | Aliya1_Android_DLC_FlowchartData
 
@@ -38,6 +39,13 @@ export const symbolL10nDataSingleLangDict_Ycytx5 = Symbol(
   'dict_l10n_data',
 ) as InjectionKey<symbolL10nDataSingleLangDict_Ycytx5>
 export type symbolL10nDataSingleLangDict_Ycytx5 = Ref<L10nSingleLang_Ycytx5['dict']>
+
+export const symbolFlowchartCatalog_2361Playtest = Symbol('flowchart_catalog_2361playtest') as InjectionKey<
+  Ref<{ catalog: Record<string, { metadata: FlowchartData_2361Playtest['metadata'] }> }>
+>
+export const symbolFlowchartMetadata_2361Playtest = Symbol('flowchart_metadata_2361playtest') as InjectionKey<
+  Ref<FlowchartData_2361Playtest['metadata']>
+>
 
 export const symbolGameSelectionDict = Symbol('game_select_dict') as InjectionKey<
   Ref<[string, string, string]>

@@ -7,10 +7,12 @@ import { registerGameConfig } from './nodeRegistry'
 import { ALIYA1_NODE_TYPES } from '../nodes/aliya1'
 import { DLC_NODE_TYPES } from '../nodes/aliya1_android_dlc'
 import { YCYTX_5_NODE_TYPES } from '../nodes/ycytx_5'
+import { PLAYTEST_NODE_TYPES } from '../nodes/2361_playtest'
 
 import * as Aliya1Nodes from '../nodes/aliya1'
 import * as DLCNodes from '../nodes/aliya1_android_dlc'
 import * as Ycytx5Nodes from '../nodes/ycytx_5'
+import * as Playtest_2361_Nodes from '../nodes/2361_playtest'
 
 /**
  * 注册 Aliya1 游戏配置
@@ -120,4 +122,53 @@ registerGameConfig({
   },
   nodeTypes: [...YCYTX_5_NODE_TYPES],
   imageBasePath: '/aliya/ycytz_5/images/',
+})
+
+registerGameConfig({
+  gameId: '2361_playtest',
+  nodeComponents: {
+    if: Playtest_2361_Nodes.If,
+    elseif: Playtest_2361_Nodes.Elseif,
+    else: Playtest_2361_Nodes.Else,
+    endif: Playtest_2361_Nodes.Endif,
+    wait: Playtest_2361_Nodes.Wait,
+    nowait: Playtest_2361_Nodes.Nowait,
+    set: Playtest_2361_Nodes.Set,
+    jump: Playtest_2361_Nodes.Jump,
+    selection: Playtest_2361_Nodes.Selection,
+    defaultselection: Playtest_2361_Nodes.Defaultselection,
+    se: Playtest_2361_Nodes.Se,
+    sys: Playtest_2361_Nodes.Sys,
+    bgm: Playtest_2361_Nodes.Bgm,
+    shin: Playtest_2361_Nodes.Shin,
+    externalcall: Playtest_2361_Nodes.Externalcall,
+    add: Playtest_2361_Nodes.Add,
+    insertresume: Playtest_2361_Nodes.Insertresume,
+    toggle: Playtest_2361_Nodes.Toggle,
+    installapp: Playtest_2361_Nodes.Installapp,
+    waitany: Playtest_2361_Nodes.Waitany,
+    waitcase: Playtest_2361_Nodes.Waitcase,
+    waitend: Playtest_2361_Nodes.Waitend,
+    bg: Playtest_2361_Nodes.Bg,
+    waituntil: Playtest_2361_Nodes.Waituntil,
+    shot: Playtest_2361_Nodes.Shot,
+    watchstart: Playtest_2361_Nodes.Watchstart,
+    watchstop: Playtest_2361_Nodes.Watchstop,
+    watchpendingstart: Playtest_2361_Nodes.Watchpendingstart,
+    watchpendingend: Playtest_2361_Nodes.Watchpendingend,
+    recall: Playtest_2361_Nodes.Recall,
+    end: Playtest_2361_Nodes.End,
+    checkpoint: Playtest_2361_Nodes.Checkpoint,
+    img: Playtest_2361_Nodes.Img,
+    musicapp: Playtest_2361_Nodes.Musicapp,
+    showdialogue: Playtest_2361_Nodes.Showdialogue,
+    hidedialogue: Playtest_2361_Nodes.Hidedialogue,
+    monitor: Playtest_2361_Nodes.Monitor,
+    album: Playtest_2361_Nodes.Album,
+    radarpuzzle: Playtest_2361_Nodes.Radarpuzzle,
+    otherblock: Playtest_2361_Nodes.OtherBlock,
+    chat: Playtest_2361_Nodes.Chat,
+  },
+  nodeTypes: [...PLAYTEST_NODE_TYPES],
+  imageBasePath: '/aliya/2361_playtest/images/',
 })

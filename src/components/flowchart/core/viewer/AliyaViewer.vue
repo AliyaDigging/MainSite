@@ -22,6 +22,7 @@ import { symbolUseVueFlow, symbolFlowchartMetadata_Aliya1 } from '@/constants/in
 
 import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
+import FlowchartSearchPanel from '../FlowchartSearchPanel.vue'
 
 // 内联类型定义 - 不依赖外部共享类型
 type FlowchartDataEdge = {
@@ -81,6 +82,7 @@ const { cssNodeBgColor, cssNodeTextColor } = useFlowchartTheme()
 const isReady = ref(false)
 const isDraggable = ref(false)
 const isShowMiniMap = ref(windowsize.width.value > 700)
+const isSearchVisible = ref(false)
 const data = ref<FlowchartData | null>(null)
 
 const vueflowData = {
@@ -201,6 +203,13 @@ watch(
           v-model:is-draggable="isDraggable"
           v-model:is-show-mini-map="isShowMiniMap"
           @relayout="triggerRelayout"
+          @toggle-search="isSearchVisible = !isSearchVisible"
+        />
+
+        <FlowchartSearchPanel
+          v-model:visible="isSearchVisible"
+          :nodes="vueflowData.nodes.value"
+          :edges="vueflowData.edges.value"
         />
 
         <!-- 动态节点槽位 -->

@@ -9,19 +9,16 @@ import { useI18n } from 'vue-i18n'
 import { useFlowchartLayout } from '@/composables/flowchart/useFlowchartLayout'
 import { useFlowchartTheme } from '@/composables/flowchart/useFlowchartTheme'
 import { getGameConfig, getAllNodeTypes } from '../../registry/nodeRegistry'
-// 确保游戏配置已注册
 import '../../registry/gameConfigs'
 
 import { getJson } from '@/utils/fetch'
 import { detectIsMobile } from '@/utils/browser'
-import { symbolUseVueFlow, symbolFlowchartMetadata_Ycytx5 } from '@/constants/injection'
+import { symbolUseVueFlow, symbolFlowchartMetadata_2361Playtest } from '@/constants/injection'
 
 import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
 import FlowchartSearchPanel from '../FlowchartSearchPanel.vue'
-import type { VFOut_Catalog_Entry } from '@/types/ycytx_5'
 
-// 内联类型定义 - 不依赖外部共享类型
 type FlowchartDataEdge = {
   id: string
   type: 'default'
@@ -34,9 +31,11 @@ type FlowchartDataEdge = {
   labelBgStyle?: { fill: 'green' | 'red' }
 }
 
-type FlowchartMetadata = VFOut_Catalog_Entry['metadata']
+type FlowchartMetadata = {
+  counts: { node: number; edge: number }
+  currName: string
+}
 
-// 通用节点类型 - 使用宽松类型以支持不同游戏的节点
 type FlowchartDataNode = {
   id: string
   position: { x: number; y: number }
@@ -58,45 +57,33 @@ const props = defineProps<{
   flowchartName: string
 }>()
 
-// 获取游戏配置
 const gameConfig = computed(() => getGameConfig(props.gameId))
 const nodeComponents = computed(() => gameConfig.value?.nodeComponents ?? {})
 const nodeTypes = computed(() => getAllNodeTypes(props.gameId))
 
-// 组合式函数
 const vueflow = useVueFlow()
 const windowsize = useWindowSize()
 const i18n = useI18n()
 const vueflowLayout = useFlowchartLayout()
 const { cssNodeBgColor, cssNodeTextColor } = useFlowchartTheme()
 
-// 状态
 const isReady = ref(false)
 const isDraggable = ref(false)
 const isShowMiniMap = ref(windowsize.width.value > 700)
 const isSearchVisible = ref(false)
-const data = ref<FlowchartData | null>(null)
 
 const vueflowData = {
   nodes: ref<FlowchartDataNode[]>([]),
   edges: ref<FlowchartDataEdge[]>([]),
   metadata: ref<FlowchartMetadata>({
-    counts: { node: -1, edge: -1, dictKeyword: -1 },
-    dictKeywordId: [],
+    counts: { node: -1, edge: -1 },
     currName: '',
-    version: -1,
-    specialNodes: {
-      start: [],
-      end: [],
-    },
   }),
 }
 
-// Provide
 provide(symbolUseVueFlow, vueflow)
-provide(symbolFlowchartMetadata_Ycytx5, vueflowData.metadata)
+provide(symbolFlowchartMetadata_2361Playtest, vueflowData.metadata)
 
-// 计算属性
 const fileUrl = computed(
   () => `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/${props.flowchartName}.json`,
 )
@@ -108,7 +95,6 @@ const flowchartHeight = computed(() => {
   return `${height}px`
 })
 
-// 方法
 async function triggerRelayout() {
   isReady.value = false
   await nextTick()
@@ -119,7 +105,13 @@ async function triggerRelayout() {
 function preProcessEdges(edges: FlowchartDataEdge[]) {
   return edges.map((edge) => ({
     ...edge,
-    label: edge.label ? i18n.t(edge.label) : undefined,
+    label: (() => {
+      if (edge.label && edge.label != undefined && edge.label.length > 0) {
+        const temp = edge.label.split(',').map((v) => i18n.t(v))
+        return temp.join('/')
+      }
+      return ''
+    })(),
   }))
 }
 
@@ -131,38 +123,25 @@ async function initFlowchart() {
       'TB',
     )
     if (vueflowData.nodes.value.length > 0) {
-      await vueflow.fitView({ nodes: vueflowData.metadata.value.specialNodes.start })
+      await vueflow.fitView({ nodes: [vueflowData.nodes.value[0].id] })
     }
   })
 }
 
-// 暴露方法
 defineExpose({ triggerRelayout })
 
-// 监听器
 watch(
   fileUrl,
   async (newValue) => {
     if (newValue.endsWith('/.json') || !props.flowchartName) {
       isReady.value = false
-      data.value = null
       vueflowData.nodes.value = []
       vueflowData.edges.value = []
-      vueflowData.metadata.value = {
-        counts: { node: -1, edge: -1, dictKeyword: -1 },
-        dictKeywordId: [],
-        currName: '',
-        version: -1,
-        specialNodes: {
-          start: [],
-          end: [],
-        },
-      }
+      vueflowData.metadata.value = { counts: { node: -1, edge: -1 }, currName: '' }
     } else {
       isReady.value = false
       await nextTick()
       const fetchedData = await getJson<FlowchartData>(fileUrl.value, 5)
-      data.value = fetchedData
       vueflowData.nodes.value = fetchedData.data.nodes as FlowchartDataNode[]
       vueflowData.edges.value = preProcessEdges(fetchedData.data.edges)
       vueflowData.metadata.value = fetchedData.metadata
@@ -171,7 +150,6 @@ watch(
         vueflowData.edges.value,
         'TB',
       )
-
       isReady.value = true
     }
   },
@@ -185,11 +163,6 @@ watch(
   },
   { immediate: true },
 )
-
-document.addEventListener('ycytx5-fit-in-view', (event) => {
-  // @ts-expect-error custom event listener (triggered in `Ycytx5Metadata.vue`)
-  vueflow.fitView({ nodes: [event.detail.nodeId] })
-})
 </script>
 
 <template>
@@ -218,7 +191,6 @@ document.addEventListener('ycytx5-fit-in-view', (event) => {
           :edges="vueflowData.edges.value"
         />
 
-        <!-- 动态节点槽位 -->
         <template v-for="nodeType in nodeTypes" :key="nodeType" #[`node-${nodeType}`]="nodeProps">
           <component :is="nodeComponents[nodeType]" v-bind="nodeProps" />
         </template>
@@ -234,9 +206,7 @@ document.addEventListener('ycytx5-fit-in-view', (event) => {
 }
 </style>
 
-<!-- 节点通用样式 -->
 <style scoped>
-/* 使用属性选择器匹配所有节点类型 */
 :deep([class*='vue-flow__node-']) {
   padding: 10px;
   border-radius: 3px;
@@ -259,29 +229,12 @@ document.addEventListener('ycytx5-fit-in-view', (event) => {
   }
 }
 
-:deep([class*='vue-flow__node-VF_JumpBe']),
-:deep([class*='vue-flow__node-GameBe']) {
-  border-color: red !important;
-  border-width: 8px;
-}
-:deep([class*='vue-flow__node-VF_JumpNext']),
-:deep([class*='vue-flow__node-VF_JumpPrev']) {
-  border-color: rgb(34, 165, 241) !important;
-  border-width: 8px;
-}
-:deep([class*='vue-flow__node-GameHe']),
-:deep([class*='vue-flow__node-GameEnd']) {
-  border-color: green !important;
-  border-width: 8px;
-}
-
 :deep(.custom-node-icon) {
   margin-right: 4px;
 }
 
 :deep(.custom-node-icon),
 :deep(.custom-node-title) {
-  /* Base value, PC */
   font-size: 20px;
 
   @media screen and (max-width: 960px) {
@@ -353,5 +306,13 @@ document.addEventListener('ycytx5-fit-in-view', (event) => {
 :deep(audio) {
   width: 200px;
   display: block;
+}
+
+:deep(p.small-text) {
+  font-size: 12px;
+  margin-bottom: 0.4rem;
+}
+:deep(p.small-text + hr) {
+  margin-bottom: 0.4rem;
 }
 </style>

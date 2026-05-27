@@ -4,6 +4,8 @@
  * 提供锁定/解锁、小地图切换、重新布局等控制功能
  */
 import { Controls, ControlButton } from '@vue-flow/controls'
+import { Icon } from '@vicons/utils'
+import { ManageSearchOutlined } from '@vicons/material'
 import { useI18n } from 'vue-i18n'
 
 defineProps<{
@@ -15,6 +17,7 @@ const emit = defineEmits<{
   'update:isDraggable': [value: boolean]
   'update:isShowMiniMap': [value: boolean]
   relayout: []
+  toggleSearch: []
 }>()
 
 const i18n = useI18n()
@@ -43,6 +46,15 @@ const i18n = useI18n()
         </div>
       </ControlButton>
     </template>
+    <ControlButton
+      @click="emit('toggleSearch')"
+      :title="i18n.t('comp.flowchart.control.search')"
+      v-tooltip.right="i18n.t('comp.flowchart.control.search')"
+    >
+      <div style="color: black">
+        <Icon size="18"><ManageSearchOutlined /></Icon>
+      </div>
+    </ControlButton>
     <ControlButton
       @click="emit('update:isShowMiniMap', !isShowMiniMap)"
       :title="i18n.t('comp.flowchart.control.minimap')"

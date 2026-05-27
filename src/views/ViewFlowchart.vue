@@ -14,6 +14,7 @@ import PvMessage from 'primevue/message'
 // 使用新的统一组件
 import Flowchart_Aliya1 from '@/components/view_flowchart/Aliya1.vue'
 import Flowchart_Ycytx5 from '@/components/view_flowchart/Ycytx5.vue'
+import Flowchart_2361Playtest from '@/components/view_flowchart/2361Playtest.vue'
 
 import { symbolGameSelectionDict } from '@/constants/injection'
 import { getJson } from '@/utils/fetch'
@@ -209,6 +210,9 @@ onMounted(async () => {
           </template>
           <template v-else-if="gameSelection.toLowerCase() === 'ycytx_5'">
             <Flowchart_Ycytx5 />
+          </template>
+          <template v-else-if="gameSelection.toLowerCase() === '2361_playtest'">
+            <Flowchart_2361Playtest />
           </template>
           <template v-else>
             <p>
