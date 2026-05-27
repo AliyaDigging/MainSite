@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { InsertDriveFileOutlined } from '@vicons/material'
 import { Icon } from '@vicons/utils'
+import Listbox from 'primevue/listbox'
 
 /**
  * Flowchart file tree component — left panel.
  * Currently accepts Array<string>; tree structure support planned.
  */
-const props = defineProps<{
+defineProps<{
   items: string[]
   activeItem?: string
 }>()
@@ -17,25 +18,27 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <div class="file-tree">
-    <div class="file-tree-list">
-      <div
-        v-for="item in items"
-        :key="item"
-        class="file-tree-item"
-        :class="{ active: item === activeItem }"
-        @click="emit('select', item)"
-      >
-        <span class="file-tree-item-icon"
-          ><Icon><InsertDriveFileOutlined /></Icon
-        ></span>
-        <span class="file-tree-item-name">{{ item }}</span>
-      </div>
-      <div v-if="items.length === 0" class="file-tree-empty">
-        {{ $t('comp.flowchart.p.selection1') }}
-      </div>
-    </div>
-  </div>
+  <Listbox
+    :options="items"
+    :model-value="activeItem"
+    :pt="{
+      root: 'file-tree',
+      listContainer: { style: { maxHeight: 'none' } },
+      list: 'file-tree-list',
+      option: ({ context }) => ({
+        class: ['file-tree-item', { active: context.selected }],
+      }),
+    }"
+    @change="emit('select', $event.value as string)"
+  >
+    <template #option="{ option }">
+      <span class="file-tree-item-icon"
+        ><Icon><InsertDriveFileOutlined /></Icon
+      ></span>
+      <span class="file-tree-item-name">{{ option }}</span>
+    </template>
+    <template #empty>{{ $t('comp.flowchart.p.selection1') }}</template>
+  </Listbox>
 </template>
 
 <style scoped>
@@ -43,8 +46,6 @@ const emit = defineEmits<{
   height: 100%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--p-surface-border, #e0e0e0);
-  background: var(--p-surface-ground, #f8f9fa);
 }
 
 .file-tree-list {
@@ -85,12 +86,5 @@ const emit = defineEmits<{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.file-tree-empty {
-  padding: 20px 12px;
-  text-align: center;
-  color: var(--p-text-muted-color, #64748b);
-  font-size: 13px;
 }
 </style>
