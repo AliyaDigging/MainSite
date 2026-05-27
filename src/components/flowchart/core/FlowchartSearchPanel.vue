@@ -126,7 +126,9 @@ const HIGHLIGHT_CLASS = 'flowchart-search-highlight'
 const ACTIVE_CLASS = 'flowchart-search-active'
 
 function clearHighlights() {
-  document.querySelectorAll(`.${HIGHLIGHT_CLASS}`).forEach((el) => el.classList.remove(HIGHLIGHT_CLASS))
+  document
+    .querySelectorAll(`.${HIGHLIGHT_CLASS}`)
+    .forEach((el) => el.classList.remove(HIGHLIGHT_CLASS))
   document.querySelectorAll(`.${ACTIVE_CLASS}`).forEach((el) => el.classList.remove(ACTIVE_CLASS))
 }
 
