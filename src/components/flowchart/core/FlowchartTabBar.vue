@@ -2,11 +2,22 @@
 /**
  * Tab bar for opened flowcharts — shown at the top of the right panel.
  */
+import { computed, inject } from 'vue'
 import { useFlowchartStore } from '@/stores/flowchart'
 import { Icon } from '@vicons/utils'
 import { CloseOutlined } from '@vicons/material'
+import { symbolUseDark } from '@/constants/injection'
 
 const store = useFlowchartStore()
+const isDark = inject(symbolUseDark)!
+
+const cssTabBarBg = computed(() => (isDark.value ? '#121212' : '#f8f9fa'))
+const cssTabBarBorder = computed(() => (isDark.value ? '#2a2a2a' : '#e0e0e0'))
+const cssTabTextColor = computed(() => (isDark.value ? '#8b8b8b' : '#64748b'))
+const cssTabTextActive = computed(() => (isDark.value ? '#e0e0e0' : '#1e293b'))
+const cssTabBgHover = computed(() => (isDark.value ? '#1e1e1e' : '#e9ecef'))
+const cssTabBgActive = computed(() => (isDark.value ? '#1a1a1a' : '#ffffff'))
+const cssTabCloseHoverBg = computed(() => (isDark.value ? '#333333' : '#e0e0e0'))
 
 function onTabClick(key: string) {
   store.switchTab(key)
@@ -41,8 +52,8 @@ function onTabClose(key: string, event: MouseEvent) {
   align-items: center;
   gap: 2px;
   padding: 4px 6px 0;
-  border-bottom: 1px solid var(--p-surface-border, #e0e0e0);
-  background: var(--p-surface-ground, #f8f9fa);
+  border-bottom: 1px solid v-bind(cssTabBarBorder);
+  background: v-bind(cssTabBarBg);
   overflow-x: auto;
   flex-shrink: 0;
 }
@@ -57,7 +68,7 @@ function onTabClose(key: string, event: MouseEvent) {
   border-radius: 4px 4px 0 0;
   border: 1px solid transparent;
   border-bottom: none;
-  color: var(--p-text-muted-color, #64748b);
+  color: v-bind(cssTabTextColor);
   background: transparent;
   white-space: nowrap;
   transition:
@@ -67,14 +78,14 @@ function onTabClose(key: string, event: MouseEvent) {
 }
 
 .tab-item:hover {
-  background: var(--p-surface-hover, #e9ecef);
-  color: var(--p-text-color, #1e293b);
+  background: v-bind(cssTabBgHover);
+  color: v-bind(cssTabTextActive);
 }
 
 .tab-item.active {
-  background: var(--p-surface-card, #ffffff);
-  color: var(--p-text-color, #1e293b);
-  border-color: var(--p-surface-border, #e0e0e0);
+  background: v-bind(cssTabBgActive);
+  color: v-bind(cssTabTextActive);
+  border-color: v-bind(cssTabBarBorder);
   font-weight: 500;
 }
 
@@ -105,6 +116,6 @@ function onTabClose(key: string, event: MouseEvent) {
 
 .tab-close:hover {
   opacity: 1 !important;
-  background: var(--p-surface-border, #e0e0e0);
+  background: v-bind(cssTabCloseHoverBg);
 }
 </style>
