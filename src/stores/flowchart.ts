@@ -22,9 +22,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
 
   const stateCache = ref<Record<string, CachedFlowchartState>>({})
 
-  const activeTab = computed(() =>
-    tabs.value.find(t => t.key === activeKey.value) ?? null,
-  )
+  const activeTab = computed(() => tabs.value.find((t) => t.key === activeKey.value) ?? null)
 
   function makeKey(gameId: string, versionId: string, flowchartName: string) {
     return `${gameId}/${versionId}/${flowchartName}`
@@ -34,29 +32,42 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     const key = makeKey(gameId, versionId, flowchartName)
     isSearchPanelVisible.value = false
 
-    if (!tabs.value.find(t => t.key === key)) {
+    if (!tabs.value.find((t) => t.key === key)) {
       tabs.value.push({ key, gameId, versionId, flowchartName })
     }
     activeKey.value = key
   }
 
   function closeTab(key: string) {
-    const idx = tabs.value.findIndex(t => t.key === key)
+    const idx = tabs.value.findIndex((t) => t.key === key)
     if (idx === -1) return
 
     isSearchPanelVisible.value = false
     tabs.value.splice(idx, 1)
 
     if (activeKey.value === key) {
-      activeKey.value = tabs.value.length > 0
-        ? tabs.value[Math.min(idx, tabs.value.length - 1)].key
-        : null
+      activeKey.value =
+        tabs.value.length > 0 ? tabs.value[Math.min(idx, tabs.value.length - 1)].key : null
     }
   }
 
   function switchTab(key: string) {
     isSearchPanelVisible.value = false
     activeKey.value = key
+  }
+
+  function reorderTabs(fromIndex: number, toIndex: number) {
+    if (
+      fromIndex < 0 ||
+      fromIndex >= tabs.value.length ||
+      toIndex < 0 ||
+      toIndex >= tabs.value.length ||
+      fromIndex === toIndex
+    )
+      return
+
+    const [moved] = tabs.value.splice(fromIndex, 1)
+    tabs.value.splice(toIndex, 0, moved)
   }
 
   function cacheState(key: string, state: CachedFlowchartState) {
@@ -85,6 +96,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     openTab,
     closeTab,
     switchTab,
+    reorderTabs,
     cacheState,
     getCachedState,
     clearCache,
