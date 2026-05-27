@@ -188,14 +188,14 @@ onMounted(async () => {
       <p class="view-page-h1-desc text-color mb-2">{{ $t('comp.flowchart.p.view2') }}</p>
       <PvDivider />
 
-      <template v-if="isFlowchartDataLoaded">
-        <!-- 游戏/版本选择（页面上部） -->
-        <GameAndVersionSelector
-          :data-all-catalog="dataAllCatalog"
-          v-model:game-selection="gameSelection"
-          v-model:version-selection="versionSelection"
-        />
+      <!-- 游戏/版本选择（页面上部） -->
+      <GameAndVersionSelector
+        :data-all-catalog="dataAllCatalog"
+        v-model:game-selection="gameSelection"
+        v-model:version-selection="versionSelection"
+      />
 
+      <template v-if="isFlowchartDataLoaded">
         <PvMessage severity="info" class="mt-4">{{ $t('comp.flowchart.p.view3') }}</PvMessage>
         <PvMessage severity="error" class="mt-2">{{ $t('comp.flowchart.p.view4') }}</PvMessage>
         <PvMessage severity="success" class="mt-2">{{ $t('comp.flowchart.p.view5') }}</PvMessage>
