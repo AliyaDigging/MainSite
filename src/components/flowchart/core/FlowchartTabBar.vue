@@ -52,7 +52,7 @@ function onTabClose(key: string, event: MouseEvent) {
   align-items: center;
   gap: 6px;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   border-radius: 4px 4px 0 0;
   border: 1px solid transparent;
@@ -60,7 +60,9 @@ function onTabClose(key: string, event: MouseEvent) {
   color: var(--p-text-muted-color, #64748b);
   background: transparent;
   white-space: nowrap;
-  transition: background 0.15s, color 0.15s;
+  transition:
+    background 0.15s,
+    color 0.15s;
   user-select: none;
 }
 
@@ -91,7 +93,9 @@ function onTabClose(key: string, event: MouseEvent) {
   border-radius: 3px;
   flex-shrink: 0;
   opacity: 0;
-  transition: opacity 0.15s, background 0.15s;
+  transition:
+    opacity 0.15s,
+    background 0.15s;
 }
 
 .tab-item:hover .tab-close,
