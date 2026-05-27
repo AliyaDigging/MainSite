@@ -13,7 +13,6 @@ import { getGameConfig, getAllNodeTypes } from '../../registry/nodeRegistry'
 import '../../registry/gameConfigs'
 
 import { getJson } from '@/utils/fetch'
-import { detectIsMobile } from '@/utils/browser'
 import { symbolUseVueFlow, symbolFlowchartMetadata_Ycytx5 } from '@/constants/injection'
 
 import FlowchartControls from '../FlowchartControls.vue'
@@ -105,11 +104,6 @@ const isRestoredFromCache = ref(false)
 const fileUrl = computed(
   () => `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/${props.flowchartName}.json`,
 )
-
-const flowchartHeight = computed(() => {
-  if (detectIsMobile()) return `${(windowsize.height.value - 200) * 0.8}px`
-  return '100%'
-})
 
 // 方法
 async function triggerRelayout() {
@@ -264,7 +258,7 @@ document.addEventListener('ycytx5-fit-in-view', (event) => {
 
 <style scoped>
 .flowchart-comp {
-  height: v-bind(flowchartHeight);
+  height: 100%;
   width: calc(100%);
 }
 </style>

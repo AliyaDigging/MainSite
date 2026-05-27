@@ -22,6 +22,7 @@ import LoadingSpinner from '@/components/LoadingSpinner.vue'
 import FlowchartFileTree from '@/components/flowchart/core/FlowchartFileTree.vue'
 import FlowchartTabBar from '@/components/flowchart/core/FlowchartTabBar.vue'
 import FlowchartEmptyState from '@/components/flowchart/core/FlowchartEmptyState.vue'
+import { detectIsMobile } from '@/utils/browser'
 
 const props = defineProps({
   gameId: { type: String, default: '' },
@@ -59,7 +60,9 @@ const windowsize = useWindowSize()
 const isGlobalDataLoaded = ref(false)
 const isFlowchartDataLoaded = ref(false)
 
-const flowchartPageHeight = computed(() => `${windowsize.height.value - 120}px`)
+const flowchartPageHeight = computed(
+  () => `${(windowsize.height.value - 120) * (detectIsMobile() ? 0.9 : 1)}px`,
+)
 
 // select 更改时，触发路径更改
 watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1]) => {
