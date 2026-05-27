@@ -3,7 +3,7 @@
  * 流程图全局查找面板
  * 支持按对话内容或全部内容搜索节点，高亮匹配项并支持上下导航
  */
-import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
+import { computed, inject, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useVueFlow } from '@vue-flow/core'
 import { Icon } from '@vicons/utils'
 import {
@@ -12,11 +12,13 @@ import {
   KeyboardArrowRightOutlined,
   CloseOutlined,
 } from '@vicons/material'
+import PvCard from 'primevue/card'
 import PvInputText from 'primevue/inputtext'
 import PvSelectButton from 'primevue/selectbutton'
 import PvButton from 'primevue/button'
 import { useI18n } from 'vue-i18n'
 import { useFlowchartStore } from '@/stores/flowchart'
+import { symbolUseDark } from '@/constants/injection'
 
 type FlowchartDataNode = {
   id: string
@@ -45,6 +47,16 @@ const emit = defineEmits<{
 const vueflow = useVueFlow()
 const i18n = useI18n()
 const flowchartStore = useFlowchartStore()
+const isDark = inject(symbolUseDark)!
+
+// 深色模式下 box-shadow 使用浅色半透明以保持可见层次
+const cssSearchPanelBoxShadow = computed(() =>
+  isDark.value ? '0 4px 12px rgba(255, 255, 255, 0.06)' : '0 4px 12px rgba(0, 0, 0, 0.12)',
+)
+
+const cardPt = computed(() => ({
+  root: { style: `box-shadow: ${cssSearchPanelBoxShadow.value}` },
+}))
 
 // Sync visibility to store
 watch(
@@ -280,65 +292,69 @@ function handleGlobalKeydown(e: KeyboardEvent) {
 </script>
 
 <template>
-  <div v-if="visible" class="flowchart-search-panel">
-    <div class="search-panel-header">
-      <Icon class="search-panel-icon"><ManageSearchOutlined /></Icon>
-      <span class="search-panel-title">{{ i18n.t('comp.flowchart.search.title') }}</span>
-      <PvButton
-        severity="secondary"
-        text
-        rounded
-        size="small"
-        @click="close"
-        v-tooltip.bottom="i18n.t('comp.flowchart.search.close')"
-      >
-        <Icon><CloseOutlined /></Icon>
-      </PvButton>
-    </div>
-    <div class="search-panel-body">
-      <PvInputText
-        ref="inputRef"
-        v-model="searchText"
-        :placeholder="i18n.t('comp.flowchart.search.placeholder')"
-        class="search-input"
-        @keydown="handleKeydown"
-        autocomplete="off"
-      />
-      <PvSelectButton
-        v-model="searchMode"
-        :options="searchModeOptions"
-        option-value="value"
-        option-label="label"
-        size="small"
-        class="search-mode-toggle"
-      />
-      <div class="search-nav">
-        <span class="search-counter">{{ currentMatchDisplay }}</span>
+  <PvCard v-if="visible" class="flowchart-search-panel" :pt="cardPt">
+    <template #header>
+      <div class="search-panel-header">
+        <Icon class="search-panel-icon"><ManageSearchOutlined /></Icon>
+        <span class="search-panel-title">{{ i18n.t('comp.flowchart.search.title') }}</span>
         <PvButton
           severity="secondary"
           text
           rounded
           size="small"
-          :disabled="matchCount === 0"
-          @click="goToPrev"
-          v-tooltip.bottom="i18n.t('comp.flowchart.search.prev')"
+          @click="close"
+          v-tooltip.bottom="i18n.t('comp.flowchart.search.close')"
         >
-          <Icon><KeyboardArrowLeftOutlined /></Icon>
-        </PvButton>
-        <PvButton
-          severity="secondary"
-          text
-          rounded
-          size="small"
-          :disabled="matchCount === 0"
-          @click="goToNext"
-          v-tooltip.bottom="i18n.t('comp.flowchart.search.next')"
-        >
-          <Icon><KeyboardArrowRightOutlined /></Icon>
+          <Icon><CloseOutlined /></Icon>
         </PvButton>
       </div>
-    </div>
-  </div>
+    </template>
+    <template #content>
+      <div class="search-panel-body">
+        <PvInputText
+          ref="inputRef"
+          v-model="searchText"
+          :placeholder="i18n.t('comp.flowchart.search.placeholder')"
+          class="search-input"
+          @keydown="handleKeydown"
+          autocomplete="off"
+        />
+        <PvSelectButton
+          v-model="searchMode"
+          :options="searchModeOptions"
+          option-value="value"
+          option-label="label"
+          size="small"
+          class="search-mode-toggle"
+        />
+        <div class="search-nav">
+          <span class="search-counter">{{ currentMatchDisplay }}</span>
+          <PvButton
+            severity="secondary"
+            text
+            rounded
+            size="small"
+            :disabled="matchCount === 0"
+            @click="goToPrev"
+            v-tooltip.bottom="i18n.t('comp.flowchart.search.prev')"
+          >
+            <Icon><KeyboardArrowLeftOutlined /></Icon>
+          </PvButton>
+          <PvButton
+            severity="secondary"
+            text
+            rounded
+            size="small"
+            :disabled="matchCount === 0"
+            @click="goToNext"
+            v-tooltip.bottom="i18n.t('comp.flowchart.search.next')"
+          >
+            <Icon><KeyboardArrowRightOutlined /></Icon>
+          </PvButton>
+        </div>
+      </div>
+    </template>
+  </PvCard>
 </template>
 
 <style scoped>
@@ -347,10 +363,6 @@ function handleGlobalKeydown(e: KeyboardEvent) {
   top: 10px;
   right: 10px;
   z-index: 10;
-  background: var(--p-surface-card, #ffffff);
-  border: 1px solid var(--p-surface-border, #e0e0e0);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   min-width: 360px;
   max-width: 420px;
 }
@@ -359,8 +371,7 @@ function handleGlobalKeydown(e: KeyboardEvent) {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 12px;
-  border-bottom: 1px solid var(--p-surface-border, #e0e0e0);
+  padding: 4px 4px;
 }
 
 .search-panel-icon {
@@ -376,7 +387,6 @@ function handleGlobalKeydown(e: KeyboardEvent) {
 }
 
 .search-panel-body {
-  padding: 10px 12px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -415,13 +425,26 @@ function handleGlobalKeydown(e: KeyboardEvent) {
 
 <style>
 /* Global highlight styles - cannot be scoped since they're applied to VueFlow DOM elements */
-.vue-flow__node.flowchart-search-highlight {
+
+/* Light mode */
+html:not(.p-dark) .vue-flow__node.flowchart-search-highlight {
   background-color: #fff9c4 !important;
   outline: 2px solid #fdd835 !important;
 }
 
-.vue-flow__node.flowchart-search-active {
+html:not(.p-dark) .vue-flow__node.flowchart-search-active {
   background-color: #ffe0b2 !important;
   outline: 3px solid #ff9800 !important;
+}
+
+/* Dark mode */
+html.p-dark .vue-flow__node.flowchart-search-highlight {
+  background-color: rgba(253, 216, 53, 0.2) !important;
+  outline: 2px solid rgba(253, 216, 53, 0.55) !important;
+}
+
+html.p-dark .vue-flow__node.flowchart-search-active {
+  background-color: rgba(255, 152, 0, 0.22) !important;
+  outline: 3px solid rgba(255, 152, 0, 0.65) !important;
 }
 </style>
