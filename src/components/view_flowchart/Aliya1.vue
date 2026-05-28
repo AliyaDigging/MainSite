@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import FlowchartViewer_Aliya from '@/components/flowchart/core/viewer/AliyaViewer.vue'
 import FlowchartMetadata_Aliya from '@/components/flowchart/core/metadata/AliyaMetadata.vue'
-import FlowchartMetadataPanel from '@/components/flowchart/core/FlowchartMetadataPanel.vue'
+import FlowchartExtraControls from '@/components/flowchart/core/FlowchartExtraControls.vue'
 
 import {
   symbolFlowchartCatalog_Aliya1,
@@ -76,13 +76,13 @@ onMounted(async () => {
         ref="flowchartComp"
       />
 
-      <FlowchartMetadataPanel :title="$t('comp.flowchartmetadata.h2')">
+      <FlowchartExtraControls :title="$t('comp.flowchartmetadata.h2')">
         <FlowchartMetadata_Aliya
           :flowchart-name="props.flowchartName"
           :game-id="props.gameId"
           :version-id="props.versionId"
         />
-      </FlowchartMetadataPanel>
+      </FlowchartExtraControls>
     </div>
   </template>
   <template v-else>

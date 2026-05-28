@@ -26,7 +26,7 @@ function toggleFileTree() {
       class="button-group__btn"
       rounded
       @click="toggleFileTree"
-      v-tooltip.left="
+      v-tooltip.right="
         fileTreeCollapsed
           ? $t('comp.flowchart.p.expandFileTree')
           : $t('comp.flowchart.p.collapseFileTree')
@@ -44,7 +44,7 @@ function toggleFileTree() {
       rounded
       :severity="model ? 'primary' : undefined"
       @click="model = !model"
-      v-tooltip.left="title"
+      v-tooltip.right="title"
     >
       <Icon size="24">
         <InfoOutlined />
