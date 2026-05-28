@@ -33,7 +33,7 @@ const show = defineModel<boolean>({ required: true })
 .metadata-card {
   position: absolute;
   bottom: 12px;
-  left: 54px;
+  left: 62px;
   pointer-events: auto;
   z-index: 11;
   max-height: 400px;
@@ -41,7 +41,7 @@ const show = defineModel<boolean>({ required: true })
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 .metadata-card__header {
