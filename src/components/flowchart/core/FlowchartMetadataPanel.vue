@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { computed, inject, ref } from 'vue'
-import { symbolFlowchartPageHeight } from '@/constants/injection'
+import { ref } from 'vue'
 import FlowchartButtonGroup from '@/components/flowchart/core/FlowchartButtonGroup.vue'
 import FlowchartMetadataCard from '@/components/flowchart/core/FlowchartMetadataCard.vue'
 
@@ -9,9 +8,6 @@ defineProps<{
 }>()
 
 const show = ref(false)
-
-const pageHeight = inject(symbolFlowchartPageHeight, ref('600px'))
-const overlayTop = computed(() => `calc(${pageHeight.value} - 180px)`)
 </script>
 
 <template>

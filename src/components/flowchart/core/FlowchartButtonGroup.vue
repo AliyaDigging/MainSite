@@ -60,7 +60,7 @@ function toggleFileTree() {
   left: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   pointer-events: auto;
   z-index: 11;
 }
