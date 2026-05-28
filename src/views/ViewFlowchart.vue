@@ -23,7 +23,7 @@ import FlowchartFileTree from '@/components/flowchart/core/FlowchartFileTree.vue
 import FlowchartTabBar from '@/components/flowchart/core/FlowchartTabBar.vue'
 import FlowchartEmptyState from '@/components/flowchart/core/FlowchartEmptyState.vue'
 import { detectIsMobile } from '@/utils/browser'
-import { symbolFlowchartPageHeight } from '@/constants/injection'
+import { symbolFlowchartPageHeight, symbolFlowchartFileTreeCollapsed } from '@/constants/injection'
 
 const props = defineProps({
   gameId: { type: String, default: '' },
@@ -65,7 +65,10 @@ const flowchartPageHeight = computed(
   () => `${(windowsize.height.value - 140) * (detectIsMobile() ? 0.9 : 1)}px`,
 )
 
+const fileTreeCollapsed = ref(false)
+
 provide(symbolFlowchartPageHeight, flowchartPageHeight)
+provide(symbolFlowchartFileTreeCollapsed, fileTreeCollapsed)
 
 // select 更改时，触发路径更改
 watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1, o2]) => {
@@ -215,13 +218,15 @@ onBeforeUnmount(() => {
         <!-- 双panel布局 -->
         <div class="flowchart-panel-layout">
           <!-- 左panel：文件列表 -->
-          <div class="left-panel">
-            <FlowchartFileTree
-              :items="catalogList"
-              :active-item="flowchartSelection"
-              @select="onFileSelect"
-            />
-          </div>
+          <Transition name="file-tree-slide">
+            <div v-if="!fileTreeCollapsed" class="left-panel">
+              <FlowchartFileTree
+                :items="catalogList"
+                :active-item="flowchartSelection"
+                @select="onFileSelect"
+              />
+            </div>
+          </Transition>
 
           <!-- 右panel：标签栏 + 流程图内容 -->
           <div class="right-panel">
@@ -296,5 +301,22 @@ p {
 
 :deep(.vue-flow__node-toolbar) {
   font-size: 0.9rem;
+}
+
+/* File tree slide transition */
+.file-tree-slide-enter-active,
+.file-tree-slide-leave-active {
+  transition:
+    width 0.3s ease,
+    min-width 0.3s ease,
+    opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.file-tree-slide-enter-from,
+.file-tree-slide-leave-to {
+  width: 0 !important;
+  min-width: 0 !important;
+  opacity: 0;
 }
 </style>

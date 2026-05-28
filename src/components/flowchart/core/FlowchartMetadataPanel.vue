@@ -2,9 +2,10 @@
 import { computed, inject, ref } from 'vue'
 import { Icon } from '@vicons/utils'
 import { InfoOutlined, CloseOutlined } from '@vicons/material'
+import { LayoutSidebarLeftCollapse, LayoutSidebarRightCollapse } from '@vicons/tabler'
 import PvButton from 'primevue/button'
 import PvCard from 'primevue/card'
-import { symbolFlowchartPageHeight } from '@/constants/injection'
+import { symbolFlowchartPageHeight, symbolFlowchartFileTreeCollapsed } from '@/constants/injection'
 
 defineProps<{
   title: string
@@ -14,10 +15,33 @@ const show = ref(false)
 
 const pageHeight = inject(symbolFlowchartPageHeight, ref('600px'))
 const overlayTop = computed(() => `calc(${pageHeight.value} - 120px)`)
+
+const fileTreeCollapsed = inject(symbolFlowchartFileTreeCollapsed, ref(false))
+
+function toggleFileTree() {
+  fileTreeCollapsed.value = !fileTreeCollapsed.value
+}
 </script>
 
 <template>
   <div class="metadata-overlay">
+    <!-- Floating file tree collapse button -->
+    <PvButton
+      class="file-tree-toggle-btn"
+      rounded
+      @click="toggleFileTree"
+      v-tooltip.left="
+        fileTreeCollapsed
+          ? $t('comp.flowchart.p.expandFileTree')
+          : $t('comp.flowchart.p.collapseFileTree')
+      "
+    >
+      <Icon size="20">
+        <LayoutSidebarLeftCollapse v-if="fileTreeCollapsed" />
+        <LayoutSidebarRightCollapse v-else />
+      </Icon>
+    </PvButton>
+
     <!-- Floating info button -->
     <PvButton
       v-if="!show"
@@ -61,10 +85,16 @@ const overlayTop = computed(() => `calc(${pageHeight.value} - 120px)`)
   z-index: 10;
 }
 
+.file-tree-toggle-btn {
+  position: absolute;
+  bottom: 52px;
+  pointer-events: auto;
+  z-index: 11;
+}
+
 .metadata-toggle-btn {
   position: absolute;
   bottom: 12px;
-  left: 12px;
   pointer-events: auto;
   z-index: 11;
 }
@@ -72,7 +102,6 @@ const overlayTop = computed(() => `calc(${pageHeight.value} - 120px)`)
 .metadata-card {
   position: absolute;
   bottom: 12px;
-  left: 60px;
   pointer-events: auto;
   z-index: 11;
   max-height: 400px;

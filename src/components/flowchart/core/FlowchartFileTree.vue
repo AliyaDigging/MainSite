@@ -1,7 +1,12 @@
 <script setup lang="ts">
+import { inject } from 'vue'
 import { InsertDriveFileOutlined } from '@vicons/material'
+import { LayoutSidebarRightCollapse, LayoutSidebarLeftCollapse } from '@vicons/tabler'
 import { Icon } from '@vicons/utils'
+import Button from 'primevue/button'
 import Listbox from 'primevue/listbox'
+import Menubar from 'primevue/menubar'
+import { symbolFlowchartFileTreeCollapsed } from '@/constants/injection'
 
 /**
  * Flowchart file tree component — left panel.
@@ -15,9 +20,38 @@ defineProps<{
 const emit = defineEmits<{
   select: [item: string]
 }>()
+
+const fileTreeCollapsed = inject(symbolFlowchartFileTreeCollapsed, null)
+
+function toggleFileTree() {
+  if (fileTreeCollapsed) {
+    fileTreeCollapsed.value = !fileTreeCollapsed.value
+  }
+}
 </script>
 
 <template>
+  <Menubar v-if="fileTreeCollapsed !== null" class="file-tree-menubar">
+    <template #start>
+      <Button
+        text
+        severity="secondary"
+        size="small"
+        class="file-tree-collapse-btn"
+        @click="toggleFileTree"
+      >
+        <Icon size="16">
+          <LayoutSidebarLeftCollapse v-if="fileTreeCollapsed" />
+          <LayoutSidebarRightCollapse v-else />
+        </Icon>
+        <span>{{
+          fileTreeCollapsed
+            ? $t('comp.flowchart.p.expandFileTree')
+            : $t('comp.flowchart.p.collapseFileTree')
+        }}</span>
+      </Button>
+    </template>
+  </Menubar>
   <Listbox
     :options="items"
     :model-value="activeItem"
@@ -39,11 +73,55 @@ const emit = defineEmits<{
     </template>
     <template #empty>{{ $t('comp.flowchart.p.selection1') }}</template>
   </Listbox>
+  <Menubar v-if="fileTreeCollapsed !== null" class="file-tree-menubar">
+    <template #start>
+      <Button
+        text
+        severity="secondary"
+        size="small"
+        class="file-tree-collapse-btn"
+        @click="toggleFileTree"
+      >
+        <Icon size="16">
+          <LayoutSidebarLeftCollapse v-if="fileTreeCollapsed" />
+          <LayoutSidebarRightCollapse v-else />
+        </Icon>
+        <span>{{
+          fileTreeCollapsed
+            ? $t('comp.flowchart.p.expandFileTree')
+            : $t('comp.flowchart.p.collapseFileTree')
+        }}</span>
+      </Button>
+    </template>
+  </Menubar>
 </template>
 
 <style scoped>
+:deep(.p-listbox) {
+  border-radius: 0 !important;
+}
+</style>
+
+<style scoped>
+.file-tree-menubar {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 0;
+  min-height: unset;
+  padding: 2px 4px;
+}
+
+.file-tree-menubar :deep(.p-menubar-root-list) {
+  display: none;
+}
+
+.file-tree-menubar :deep(.p-menubar-start) {
+  margin-left: auto;
+}
+
 .file-tree {
-  height: 100%;
+  flex: 1 1 0;
+  min-height: 0;
   display: flex;
   flex-direction: column;
 }

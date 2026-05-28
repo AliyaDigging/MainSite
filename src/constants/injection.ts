@@ -56,3 +56,7 @@ export const symbolGameSelectionDict = Symbol('game_select_dict') as InjectionKe
 export const symbolFlowchartPageHeight = Symbol('flowchart_page_height') as InjectionKey<
   Ref<string>
 >
+
+export const symbolFlowchartFileTreeCollapsed = Symbol(
+  'flowchart_file_tree_collapsed',
+) as InjectionKey<Ref<boolean>>
