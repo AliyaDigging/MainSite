@@ -48,17 +48,18 @@ const show = defineModel<boolean>({ required: true })
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 12px;
+  padding: 4px 8px;
   border-bottom: 1px solid var(--p-surface-border, #e0e0e0);
 }
 
 .metadata-card__title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .metadata-card__body {
-  padding: 8px 12px;
+  padding: 0px 4px;
+  padding-bottom: 20px;
   overflow-y: auto;
   max-height: 340px;
 }

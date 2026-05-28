@@ -56,7 +56,7 @@ function toggleFileTree() {
     :options="items"
     :model-value="activeItem"
     :pt="{
-      root: 'file-tree',
+      root: { class: 'file-tree', style: { borderRadius: 0 } },
       listContainer: { style: { maxHeight: 'none' } },
       list: 'file-tree-list',
       option: ({ context }) => ({
