@@ -327,11 +327,19 @@ p {
   width: 24px;
   height: 24px;
 }
+:deep(button[class='vue-flow__controls-button'] > div > svg) {
+  max-width: 18px;
+  max-height: 18px;
+}
 
 @media screen and (max-width: 768px) {
   :deep(.vue-flow__controls-button) {
     width: 18px;
     height: 18px;
+  }
+  :deep(button[class='vue-flow__controls-button'] > div > svg) {
+    max-width: 16px;
+    max-height: 16px;
   }
 }
 </style>
