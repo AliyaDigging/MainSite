@@ -6,7 +6,7 @@
 import PvDivider from 'primevue/divider'
 import PvMessage from 'primevue/message'
 import { useRoute, useRouter } from 'vue-router'
-import { ref, watch, onMounted, onBeforeUnmount, computed } from 'vue'
+import { ref, watch, onMounted, onBeforeUnmount, computed, provide } from 'vue'
 import type { Component } from 'vue'
 import { useWindowSize } from '@vueuse/core'
 
@@ -23,6 +23,7 @@ import FlowchartFileTree from '@/components/flowchart/core/FlowchartFileTree.vue
 import FlowchartTabBar from '@/components/flowchart/core/FlowchartTabBar.vue'
 import FlowchartEmptyState from '@/components/flowchart/core/FlowchartEmptyState.vue'
 import { detectIsMobile } from '@/utils/browser'
+import { symbolFlowchartPageHeight } from '@/constants/injection'
 
 const props = defineProps({
   gameId: { type: String, default: '' },
@@ -63,6 +64,8 @@ const isFlowchartDataLoaded = ref(false)
 const flowchartPageHeight = computed(
   () => `${(windowsize.height.value - 140) * (detectIsMobile() ? 0.9 : 1)}px`,
 )
+
+provide(symbolFlowchartPageHeight, flowchartPageHeight)
 
 // select 更改时，触发路径更改
 watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1, o2]) => {

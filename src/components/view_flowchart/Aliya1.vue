@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import FlowchartViewer_Aliya from '@/components/flowchart/core/viewer/AliyaViewer.vue'
 import FlowchartMetadata_Aliya from '@/components/flowchart/core/metadata/AliyaMetadata.vue'
+import FlowchartMetadataPanel from '@/components/flowchart/core/FlowchartMetadataPanel.vue'
 
 import {
   symbolFlowchartCatalog_Aliya1,
@@ -67,19 +68,32 @@ onMounted(async () => {
 
 <template>
   <template v-if="!isLoading">
-    <FlowchartViewer_Aliya
-      :game-id="props.gameId"
-      :version-id="props.versionId"
-      :flowchart-name="props.flowchartName"
-      ref="flowchartComp"
-    />
-    <FlowchartMetadata_Aliya
-      :flowchart-name="props.flowchartName"
-      :game-id="props.gameId"
-      :version-id="props.versionId"
-    />
+    <div class="flowchart-wrapper">
+      <FlowchartViewer_Aliya
+        :game-id="props.gameId"
+        :version-id="props.versionId"
+        :flowchart-name="props.flowchartName"
+        ref="flowchartComp"
+      />
+
+      <FlowchartMetadataPanel :title="$t('comp.flowchartmetadata.h2')">
+        <FlowchartMetadata_Aliya
+          :flowchart-name="props.flowchartName"
+          :game-id="props.gameId"
+          :version-id="props.versionId"
+        />
+      </FlowchartMetadataPanel>
+    </div>
   </template>
   <template v-else>
     <p><b>Loading...</b></p>
   </template>
 </template>
+
+<style scoped>
+.flowchart-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+</style>

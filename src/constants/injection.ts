@@ -40,13 +40,19 @@ export const symbolL10nDataSingleLangDict_Ycytx5 = Symbol(
 ) as InjectionKey<symbolL10nDataSingleLangDict_Ycytx5>
 export type symbolL10nDataSingleLangDict_Ycytx5 = Ref<L10nSingleLang_Ycytx5['dict']>
 
-export const symbolFlowchartCatalog_2361Playtest = Symbol('flowchart_catalog_2361playtest') as InjectionKey<
+export const symbolFlowchartCatalog_2361Playtest = Symbol(
+  'flowchart_catalog_2361playtest',
+) as InjectionKey<
   Ref<{ catalog: Record<string, { metadata: FlowchartData_2361Playtest['metadata'] }> }>
 >
-export const symbolFlowchartMetadata_2361Playtest = Symbol('flowchart_metadata_2361playtest') as InjectionKey<
-  Ref<FlowchartData_2361Playtest['metadata']>
->
+export const symbolFlowchartMetadata_2361Playtest = Symbol(
+  'flowchart_metadata_2361playtest',
+) as InjectionKey<Ref<FlowchartData_2361Playtest['metadata']>>
 
 export const symbolGameSelectionDict = Symbol('game_select_dict') as InjectionKey<
   Ref<[string, string, string]>
+>
+
+export const symbolFlowchartPageHeight = Symbol('flowchart_page_height') as InjectionKey<
+  Ref<string>
 >

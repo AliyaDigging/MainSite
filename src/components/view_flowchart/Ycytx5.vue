@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import FlowchartViewer_Ycytx5 from '@/components/flowchart/core/viewer/Ycytx5Viewer.vue'
 import FlowchartMetadata_Ycytx5 from '@/components/flowchart/core/metadata/Ycytx5Metadata.vue'
+import FlowchartMetadataPanel from '@/components/flowchart/core/FlowchartMetadataPanel.vue'
 
 import {
   symbolFlowchartCatalog_Ycytx5,
@@ -73,16 +74,29 @@ watch(
 
 <template>
   <template v-if="!isLoading">
-    <FlowchartViewer_Ycytx5
-      :game-id="props.gameId"
-      :version-id="props.versionId"
-      :flowchart-name="props.flowchartName"
-      ref="flowchartComp"
-    />
-    <FlowchartMetadata_Ycytx5
-      :game-id="props.gameId"
-      :version-id="props.versionId"
-      :flowchart-name="props.flowchartName"
-    />
+    <div class="flowchart-wrapper">
+      <FlowchartViewer_Ycytx5
+        :game-id="props.gameId"
+        :version-id="props.versionId"
+        :flowchart-name="props.flowchartName"
+        ref="flowchartComp"
+      />
+
+      <FlowchartMetadataPanel :title="$t('comp.flowchartmetadata.h2')">
+        <FlowchartMetadata_Ycytx5
+          :game-id="props.gameId"
+          :version-id="props.versionId"
+          :flowchart-name="props.flowchartName"
+        />
+      </FlowchartMetadataPanel>
+    </div>
   </template>
 </template>
+
+<style scoped>
+.flowchart-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+</style>
