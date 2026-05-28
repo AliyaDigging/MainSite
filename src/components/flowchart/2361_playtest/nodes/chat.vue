@@ -37,13 +37,19 @@ const props = defineProps<NodeProps<FlowchartDataNode_chat['data']>>()
         <span class="custom-node-title">{{ $t('comp.flowchart.node.chat.title') }}</span>
       </div>
       <div class="custom-node-content">
-        <p v-if="props.data.label !== ''">
-          <small
-            ><b
-              ><code>{{ props.data.label }}</code></b
-            ></small
-          >
-        </p>
+        <template v-if="props.data.label !== ''">
+          <p class="small-text">
+            <i>
+              LABEL:
+              <small
+                ><b
+                  ><code>{{ props.data.label }}</code></b
+                ></small
+              ></i
+            >
+          </p>
+          <hr />
+        </template>
         <p>{{ $t('comp.flowchart.node.chat.p.speaker') }}: {{ props.data.speaker }}</p>
         <p>{{ $t('comp.flowchart.node.chat.p.content') }}: {{ props.data.content }}</p>
         <p>
