@@ -79,6 +79,7 @@ watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1,
   }
   if (n1 !== o1 || n2 !== o2) {
     store.resetAll()
+    fileTreeCollapsed.value = false
   }
 
   if (n3 !== '') {
