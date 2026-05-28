@@ -1,16 +1,20 @@
 <script setup lang="ts">
-import { inject, ref } from 'vue'
+import { computed, inject, ref } from 'vue'
 import { Icon } from '@vicons/utils'
 import { InfoOutlined } from '@vicons/material'
 import { LayoutSidebarLeftCollapse, LayoutSidebarRightCollapse } from '@vicons/tabler'
 import PvButton from 'primevue/button'
 import { symbolFlowchartFileTreeCollapsed } from '@/constants/injection'
+import { useWindowSize } from '@vueuse/core'
 
 defineProps<{
   title: string
 }>()
 
 const model = defineModel<boolean>({ default: false })
+const windowsize = useWindowSize()
+
+const iconSize = computed(() => (windowsize.width.value <= 768 ? 18 : 24))
 
 const fileTreeCollapsed = inject(symbolFlowchartFileTreeCollapsed, ref(false))
 
@@ -25,6 +29,7 @@ function toggleFileTree() {
     <PvButton
       class="button-group__btn"
       rounded
+      severity="help"
       @click="toggleFileTree"
       v-tooltip.right="
         fileTreeCollapsed
@@ -32,7 +37,7 @@ function toggleFileTree() {
           : $t('comp.flowchart.p.collapseFileTree')
       "
     >
-      <Icon size="24">
+      <Icon :size="iconSize">
         <LayoutSidebarLeftCollapse v-if="fileTreeCollapsed" />
         <LayoutSidebarRightCollapse v-else />
       </Icon>
@@ -42,11 +47,11 @@ function toggleFileTree() {
     <PvButton
       class="button-group__btn"
       rounded
-      :severity="model ? 'primary' : undefined"
+      severity="info"
       @click="model = !model"
       v-tooltip.right="title"
     >
-      <Icon size="24">
+      <Icon :size="iconSize">
         <InfoOutlined />
       </Icon>
     </PvButton>

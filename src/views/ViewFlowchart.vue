@@ -320,3 +320,17 @@ p {
   opacity: 0;
 }
 </style>
+
+<style scoped>
+:deep(.vue-flow__controls-button) {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  :deep(.vue-flow__controls-button) {
+    width: 18px;
+    height: 18px;
+  }
+}
+</style>
