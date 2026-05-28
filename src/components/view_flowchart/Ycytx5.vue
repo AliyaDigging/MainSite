@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import FlowchartViewer_Ycytx5 from '@/components/flowchart/core/viewer/Ycytx5Viewer.vue'
 import FlowchartMetadata_Ycytx5 from '@/components/flowchart/core/metadata/Ycytx5Metadata.vue'
-import FlowchartMetadataPanel from '@/components/flowchart/core/FlowchartMetadataPanel.vue'
+import FlowchartExtraControls from '@/components/flowchart/core/FlowchartExtraControls.vue'
 
 import {
   symbolFlowchartCatalog_Ycytx5,
@@ -82,13 +82,13 @@ watch(
         ref="flowchartComp"
       />
 
-      <FlowchartMetadataPanel :title="$t('comp.flowchartmetadata.h2')">
+      <FlowchartExtraControls :title="$t('comp.flowchartmetadata.h2')">
         <FlowchartMetadata_Ycytx5
           :game-id="props.gameId"
           :version-id="props.versionId"
           :flowchart-name="props.flowchartName"
         />
-      </FlowchartMetadataPanel>
+      </FlowchartExtraControls>
     </div>
   </template>
 </template>
