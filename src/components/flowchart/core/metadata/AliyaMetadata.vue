@@ -32,7 +32,6 @@ function getFlowchartLink(flowchartName: string) {
 <template>
   <div class="mt-6" style="font-size: 16px">
     <div v-if="shouldDisplay && catalogMetadata">
-      <h2 style="font-weight: 600; font-size: 18px">{{ $t('comp.flowchartmetadata.h2') }}</h2>
       <ul class="custom-node-normal-ul mt-2">
         <li class="mb-1 ul-li">
           <span
