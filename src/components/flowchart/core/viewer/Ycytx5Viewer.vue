@@ -19,6 +19,7 @@ import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
 import FlowchartSearchPanel from '../FlowchartSearchPanel.vue'
 import { useFlowchartStore } from '@/stores/flowchart'
+import { flowchartBus } from '@/utils/flowchartEvents'
 import type { VFOut_Catalog_Entry } from '@/types/ycytx_5'
 
 // 内联类型定义 - 不依赖外部共享类型
@@ -128,6 +129,7 @@ async function initFlowchart() {
       if (cached?.viewport) {
         vueflow.setViewport(cached.viewport)
       }
+      store.setReady(flowKey.value)
     })
     return
   }
@@ -141,6 +143,7 @@ async function initFlowchart() {
     if (vueflowData.nodes.value.length > 0) {
       await vueflow.fitView({ nodes: vueflowData.metadata.value.specialNodes.start })
     }
+    store.setReady(flowKey.value)
   })
 }
 
@@ -215,9 +218,9 @@ onBeforeUnmount(() => {
   }
 })
 
-document.addEventListener('ycytx5-fit-in-view', (event) => {
-  // @ts-expect-error custom event listener (triggered in `Ycytx5Metadata.vue`)
-  vueflow.fitView({ nodes: [event.detail.nodeId] })
+
+flowchartBus.on('fit-in-view', ({ nodeId }) => {
+  vueflow.fitView({ nodes: [nodeId] })
 })
 </script>
 

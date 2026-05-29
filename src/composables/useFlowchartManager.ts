@@ -1,3 +1,4 @@
+import { watch, type WatchStopHandle } from 'vue'
 import { useFlowchartStore } from '@/stores/flowchart'
 import type { CachedFlowchartState } from '@/stores/flowchart'
 
@@ -40,6 +41,15 @@ export function useFlowchartManager() {
     store.isSearchPanelVisible = false
   }
 
+  function onFlowchartReady(callback: (key: string) => void): WatchStopHandle {
+    return watch(
+      () => store.lastReadyKey,
+      (key) => {
+        if (key) callback(key)
+      },
+    )
+  }
+
   return {
     openFlowchart,
     closeFlowchart,
@@ -49,6 +59,7 @@ export function useFlowchartManager() {
     cacheFlowchartState,
     getCachedFlowchartState,
     closeSearchPanel,
+    onFlowchartReady,
     isSearchPanelVisible: store.isSearchPanelVisible,
     store,
   }

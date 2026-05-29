@@ -132,6 +132,7 @@ async function initFlowchart() {
       if (cached?.viewport) {
         vueflow.setViewport(cached.viewport)
       }
+      store.setReady(flowKey.value)
     })
     return
   }
@@ -145,6 +146,7 @@ async function initFlowchart() {
     if (vueflowData.nodes.value.length > 0) {
       await vueflow.fitView({ nodes: [vueflowData.nodes.value[0].id] })
     }
+    store.setReady(flowKey.value)
   })
 }
 

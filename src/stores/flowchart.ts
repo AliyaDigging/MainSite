@@ -18,6 +18,7 @@ export interface CachedFlowchartState {
 export const useFlowchartStore = defineStore('flowchart', () => {
   const tabs = ref<FlowchartTab[]>([])
   const activeKey = ref<string | null>(null)
+  const lastReadyKey = ref<string | null>(null)
   const isSearchPanelVisible = ref(false)
 
   const stateCache = ref<Record<string, CachedFlowchartState>>({})
@@ -54,6 +55,10 @@ export const useFlowchartStore = defineStore('flowchart', () => {
   function switchTab(key: string) {
     isSearchPanelVisible.value = false
     activeKey.value = key
+  }
+
+  function setReady(key: string) {
+    lastReadyKey.value = key
   }
 
   function reorderTabs(fromIndex: number, toIndex: number) {
@@ -96,6 +101,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
   return {
     tabs,
     activeKey,
+    lastReadyKey,
     activeTab,
     isSearchPanelVisible,
     stateCache,
@@ -103,6 +109,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     openTab,
     closeTab,
     switchTab,
+    setReady,
     reorderTabs,
     cacheState,
     getCachedState,

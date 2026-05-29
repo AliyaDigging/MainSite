@@ -9,6 +9,7 @@ import {
   symbolL10nDataSingleLangDict_Ycytx5,
 } from '@/constants/injection'
 import { computed, inject } from 'vue'
+import { flowchartBus } from '@/utils/flowchartEvents'
 
 const props = defineProps<{
   flowchartName: string
@@ -29,17 +30,8 @@ const shouldDisplay = computed(() => {
   return true
 })
 
-// trigger VueFlow fitInView
 function triggerVueFlowFitInView(nodeId: string) {
-  document.dispatchEvent(
-    new CustomEvent('ycytx5-fit-in-view', {
-      detail: {
-        nodeId: nodeId,
-      },
-      bubbles: true,
-      cancelable: true,
-    }),
-  )
+  flowchartBus.emit('fit-in-view', { nodeId })
 }
 </script>
 
