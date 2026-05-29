@@ -22,8 +22,10 @@ import LoadingSpinner from '@/components/LoadingSpinner.vue'
 import FlowchartFileTree from '@/components/flowchart/core/FlowchartFileTree.vue'
 import FlowchartTabBar from '@/components/flowchart/core/FlowchartTabBar.vue'
 import FlowchartEmptyState from '@/components/flowchart/core/FlowchartEmptyState.vue'
+import FlowchartNodeCard from '@/components/flowchart/core/FlowchartNodeCard.vue'
 import { detectIsMobile } from '@/utils/browser'
 import { symbolFlowchartPageHeight, symbolFlowchartFileTreeCollapsed } from '@/constants/injection'
+import { useNodeCardOrchestrator } from '@/composables/useNodeCardOrchestrator'
 
 const props = defineProps({
   gameId: { type: String, default: '' },
@@ -69,6 +71,8 @@ const fileTreeCollapsed = ref(false)
 
 provide(symbolFlowchartPageHeight, flowchartPageHeight)
 provide(symbolFlowchartFileTreeCollapsed, fileTreeCollapsed)
+
+useNodeCardOrchestrator()
 
 // select 更改时，触发路径更改
 watch([gameSelection, versionSelection, flowchartSelection], ([n1, n2, n3], [o1, o2]) => {
@@ -244,6 +248,7 @@ onBeforeUnmount(() => {
                 </div>
               </template>
               <FlowchartEmptyState v-if="store.tabs.length === 0" />
+              <FlowchartNodeCard />
             </div>
           </div>
         </div>

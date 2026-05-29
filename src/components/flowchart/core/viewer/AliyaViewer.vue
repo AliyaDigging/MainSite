@@ -18,6 +18,7 @@ import '../../registry/gameConfigs'
 
 import { getJson } from '@/utils/fetch'
 import { symbolUseVueFlow, symbolFlowchartMetadata_Aliya1 } from '@/constants/injection'
+import { flowchartBus } from '@/utils/flowchartEvents'
 
 import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
@@ -214,6 +215,10 @@ onBeforeUnmount(() => {
       viewport: { ...vueflow.viewport.value },
     })
   }
+})
+
+flowchartBus.on('fit-in-view', ({ nodeId }) => {
+  vueflow.fitView({ nodes: [nodeId] })
 })
 </script>
 

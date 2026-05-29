@@ -15,11 +15,26 @@ export interface CachedFlowchartState {
   viewport: { x: number; y: number; zoom: number }
 }
 
+export interface PendingNodeCard {
+  nodeId: string
+  cardTitle: string
+  cardBodyHtml: string
+  targetKey: string
+}
+
+export interface NodeCardData {
+  title: string
+  bodyHtml: string
+}
+
 export const useFlowchartStore = defineStore('flowchart', () => {
   const tabs = ref<FlowchartTab[]>([])
   const activeKey = ref<string | null>(null)
   const lastReadyKey = ref<string | null>(null)
   const isSearchPanelVisible = ref(false)
+
+  const pendingNodeCard = ref<PendingNodeCard | null>(null)
+  const nodeCard = ref<NodeCardData | null>(null)
 
   const stateCache = ref<Record<string, CachedFlowchartState>>({})
 
@@ -32,6 +47,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
   function openTab(gameId: string, versionId: string, flowchartName: string) {
     const key = makeKey(gameId, versionId, flowchartName)
     isSearchPanelVisible.value = false
+    clearNodeCard()
 
     if (!tabs.value.find((t) => t.key === key)) {
       tabs.value.push({ key, gameId, versionId, flowchartName })
@@ -44,6 +60,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     if (idx === -1) return
 
     isSearchPanelVisible.value = false
+    clearNodeCard()
     tabs.value.splice(idx, 1)
 
     if (activeKey.value === key) {
@@ -54,6 +71,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
 
   function switchTab(key: string) {
     isSearchPanelVisible.value = false
+    clearNodeCard()
     activeKey.value = key
   }
 
@@ -91,10 +109,30 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     }
   }
 
+  function clearNodeCard() {
+    nodeCard.value = null
+    pendingNodeCard.value = null
+  }
+
+  function setPendingNodeCard(data: PendingNodeCard) {
+    pendingNodeCard.value = data
+  }
+
+  function flushNodeCard() {
+    if (pendingNodeCard.value) {
+      nodeCard.value = {
+        title: pendingNodeCard.value.cardTitle,
+        bodyHtml: pendingNodeCard.value.cardBodyHtml,
+      }
+      pendingNodeCard.value = null
+    }
+  }
+
   function resetAll() {
     tabs.value = []
     activeKey.value = null
     isSearchPanelVisible.value = false
+    clearNodeCard()
     stateCache.value = {}
   }
 
@@ -104,6 +142,8 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     lastReadyKey,
     activeTab,
     isSearchPanelVisible,
+    pendingNodeCard,
+    nodeCard,
     stateCache,
     makeKey,
     openTab,
@@ -114,6 +154,9 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     cacheState,
     getCachedState,
     clearCache,
+    clearNodeCard,
+    setPendingNodeCard,
+    flushNodeCard,
     resetAll,
   }
 })
