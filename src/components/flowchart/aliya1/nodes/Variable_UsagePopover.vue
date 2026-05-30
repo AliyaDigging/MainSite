@@ -141,7 +141,12 @@ onBeforeUnmount(() => {
                       )
                     }}&nbsp;<code>{{ slotProps.data.ifCondition.valueAgainst }}</code>
                   </div>
-                  <div v-else-if="slotProps.data.valueAssigned">
+                  <div
+                    v-else-if="
+                      !isNull(slotProps.data.valueAssigned) &&
+                      slotProps.data.valueAssigned !== undefined
+                    "
+                  >
                     <span>{{ currUsageData.name }}</span
                     >&nbsp;=&nbsp;<code>{{ slotProps.data.valueAssigned }}</code>
                   </div>
