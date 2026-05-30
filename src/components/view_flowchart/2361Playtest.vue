@@ -2,7 +2,8 @@
 import FlowchartViewer_2361Playtest from '@/components/flowchart/core/viewer/2361PlaytestViewer.vue'
 import FlowchartMetadata_2361Playtest from '@/components/flowchart/core/metadata/2361PlaytestMetadata.vue'
 
-import { symbolFlowchartCatalog_2361Playtest } from '@/constants/injection'
+import { symbolFlowchartCatalog_2361Playtest, symbolL10NSearchData } from '@/constants/injection'
+import '@/components/flowchart/registry/l10nSearchConfigs'
 import { computed, onMounted, provide, ref, useTemplateRef, watch } from 'vue'
 import { useSiteSettingStore } from '@/stores/setting'
 import { getJson } from '@/utils/fetch'
@@ -29,6 +30,10 @@ const isLoading = ref(true)
 const flowchartRef = useTemplateRef('flowchartComp')
 
 const catalogData = ref<VueFlowCatalog>({ catalog: {}, flowchartBeingRefed: {} })
+
+// 搜索面板 L10N 数据（playtest 无 L10N，提供空对象）
+const l10nSearchData = ref<Record<string, string>>({})
+provide(symbolL10NSearchData, l10nSearchData)
 
 provide(symbolFlowchartCatalog_2361Playtest, catalogData)
 

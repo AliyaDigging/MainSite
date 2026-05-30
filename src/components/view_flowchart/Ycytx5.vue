@@ -7,7 +7,9 @@ import {
   symbolFlowchartCatalog_Ycytx5,
   symbolL10nDataSingleLang_Ycytx5,
   symbolL10nDataSingleLangDict_Ycytx5,
+  symbolL10NSearchData,
 } from '@/constants/injection'
+import '@/components/flowchart/registry/l10nSearchConfigs'
 import { computed, onMounted, provide, ref, useTemplateRef, watch, unref } from 'vue'
 import { getJson } from '@/utils/fetch'
 import type { L10nSingleLang_Ycytx5, VFOut_Catalog_Ycytx5 } from '@/types/ycytx_5'
@@ -47,6 +49,10 @@ function updateDictData(flowchartName: string) {
   }
 }
 provide(symbolL10nDataSingleLangDict_Ycytx5, dictData)
+
+// 为搜索面板提供规范化的 L10N 数据（仅 story 部分）
+const l10nSearchData = computed(() => l10nData.value.story ?? {})
+provide(symbolL10NSearchData, l10nSearchData)
 
 provide(symbolL10nDataSingleLang_Ycytx5, l10nData)
 provide(symbolFlowchartCatalog_Ycytx5, catalogData)

@@ -53,6 +53,11 @@ export const symbolFlowchartMetadata_2361Playtest = Symbol(
   'flowchart_metadata_2361playtest',
 ) as InjectionKey<Ref<FlowchartData_2361Playtest['metadata']>>
 
+/** 通用 L10N 数据注入键 — 供搜索面板使用，各父页面负责规范化为扁平 Record<string, string> */
+export const symbolL10NSearchData = Symbol('l10n_search_data') as InjectionKey<
+  Ref<Record<string, string>>
+>
+
 export const symbolGameSelectionDict = Symbol('game_select_dict') as InjectionKey<
   Ref<[string, string, string]>
 >

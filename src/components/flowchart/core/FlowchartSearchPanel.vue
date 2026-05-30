@@ -18,8 +18,11 @@ import PvSelectButton from 'primevue/selectbutton'
 import PvButton from 'primevue/button'
 import { useI18n } from 'vue-i18n'
 import { useFlowchartStore } from '@/stores/flowchart'
-import { symbolUseDark } from '@/constants/injection'
+import { symbolUseDark, symbolL10NSearchData } from '@/constants/injection'
 import { useFlowchartHighlight, SEARCH_HIGHLIGHT } from '@/composables/useFlowchartHighlight'
+import { getL10NSearchConfig } from '@/components/flowchart/registry/l10nSearchRegistry'
+import '@/components/flowchart/registry/l10nSearchConfigs'
+import { useNodeTitleCache } from '@/composables/useNodeTitleCache'
 
 type FlowchartDataNode = {
   id: string
@@ -50,6 +53,13 @@ const i18n = useI18n()
 const flowchartStore = useFlowchartStore()
 const isDark = inject(symbolUseDark)!
 
+// L10N search data & registry
+const l10nSearchData = inject(symbolL10NSearchData)!
+const { getNodeTitle } = useNodeTitleCache()
+const l10nSearchConfig = computed(() =>
+  getL10NSearchConfig(flowchartStore.activeTab?.gameId ?? ''),
+)
+
 const { clearHighlights, highlightNodes, setActiveNode } = useFlowchartHighlight(SEARCH_HIGHLIGHT)
 
 // 深色模式下 box-shadow 使用浅色半透明以保持可见层次
@@ -79,10 +89,8 @@ watch(
   },
 )
 
-const DIALOGUE_FIELDS = ['messageText', 'text', 'content', 'customMsgText', 'logText', 'speaker']
-
 const searchText = ref('')
-const searchMode = ref<'dialogue' | 'all'>('dialogue')
+const searchMode = ref<'l10n_data' | 'field_value'>('l10n_data')
 const currentMatchIndex = ref(0)
 const inputRef = ref<InstanceType<typeof PvInputText> | null>(null)
 
@@ -97,8 +105,8 @@ let lastScrollTimestamp = 0
 const ANIMATION_DURATION = 300
 
 const searchModeOptions = computed(() => [
-  { label: i18n.t('comp.flowchart.search.mode.dialogue'), value: 'dialogue' },
-  { label: i18n.t('comp.flowchart.search.mode.all'), value: 'all' },
+  { label: i18n.t('comp.flowchart.search.mode.l10n_data'), value: 'l10n_data' },
+  { label: i18n.t('comp.flowchart.search.mode.field_value'), value: 'field_value' },
 ])
 
 const matchCount = computed(() => matches.value.length)
@@ -117,12 +125,32 @@ function collectAllStrings(obj: unknown): string[] {
   return []
 }
 
-function getNodeSearchText(node: FlowchartDataNode, mode: 'dialogue' | 'all'): string {
+function getNodeSearchText(node: FlowchartDataNode, mode: 'l10n_data' | 'field_value'): string {
   const data = node.data
-  if (mode === 'dialogue') {
-    return DIALOGUE_FIELDS.map((f) => (data[f] != null ? String(data[f]) : '')).join(' ')
+  const config = l10nSearchConfig.value
+  const parts: string[] = []
+
+  // 始终附加 node type 的 i18n 标题
+  if (config) {
+    const title = getNodeTitle(node.type, config.nodeTitleI18nPattern)
+    if (title) parts.push(title)
   }
-  return collectAllStrings(data).join(' ')
+
+  if (mode === 'l10n_data' && config && config.l10nKeyFields.length > 0) {
+    // 仅使用 L10N 解析后的文本 — 不搜索字段原始值
+    const l10n = l10nSearchData.value
+    for (const field of config.l10nKeyFields) {
+      const key = data[field]
+      if (key == null) continue
+      const resolved = l10n[String(key)]
+      if (resolved) parts.push(resolved)
+    }
+  } else {
+    // field_value 模式（或 l10n_data 模式但无配置）：收集所有字段原始值
+    parts.push(...collectAllStrings(data))
+  }
+
+  return parts.join(' ')
 }
 
 function performSearch() {
@@ -145,8 +173,8 @@ function performSearch() {
     }
   }
 
-  // Also search edge labels in "all" mode
-  if (mode === 'all') {
+  // Also search edge labels in "field_value" mode
+  if (mode === 'field_value') {
     for (const edge of props.edges) {
       if (edge.label && edge.label.toLowerCase().includes(text)) {
         matches.value.push({ nodeId: edge.source, edgeId: edge.id })

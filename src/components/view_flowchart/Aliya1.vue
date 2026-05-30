@@ -8,7 +8,9 @@ import {
   symbolFlowchartCatalog_Aliya1,
   symbolFlowchartVarUsage_Aliya1,
   symbolL10nDataSingleLang_Aliya1,
+  symbolL10NSearchData,
 } from '@/constants/injection'
+import '@/components/flowchart/registry/l10nSearchConfigs'
 import { computed, onMounted, provide, ref, useTemplateRef, watch } from 'vue'
 import { useSiteSettingStore } from '@/stores/setting'
 import type { L10nCsvSingleLang as L10nCsvSingleLang_Aliya1 } from '@/types/aliya1/data_script7'
@@ -46,6 +48,7 @@ async function loadL10nData(langcode: string) {
 }
 
 provide(symbolL10nDataSingleLang_Aliya1, l10nData)
+provide(symbolL10NSearchData, l10nData)
 provide(symbolFlowchartCatalog_Aliya1, catalogData)
 provide(symbolFlowchartVarUsage_Aliya1, varUsageData)
 
