@@ -9,6 +9,7 @@ import { BracesVariable20Filled } from '@vicons/fluent'
 import { type FlowchartDataNode_DefineVariable } from '../types/script5_vueflow_prod'
 import { computed, inject } from 'vue'
 import { symbolFlowchartMetadata_Aliya1 } from '@/constants/injection'
+import { flowchartBus } from '@/utils/flowchartEvents'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_DefineVariable['data']>>()
@@ -22,6 +23,16 @@ const variableType = computed(() => {
     return 'unknown'
   }
 })
+
+function triggerPopover(event: Event, varName: string) {
+  event.stopPropagation()
+  event.preventDefault()
+  flowchartBus.emit('node-popover:toggle', {
+    varName: varName,
+    originTriggerNodeId: props.data.fileId,
+    browserEvent: event,
+  })
+}
 </script>
 
 <template>
@@ -37,7 +48,12 @@ const variableType = computed(() => {
         <span class="custom-node-title">{{ $t('comp.flowchart.node.DefineVariable.title') }}</span>
       </div>
       <div class="custom-node-content">
-        <p>{{ $t('comp.flowchart.node.DefineVariable.p.key') }}:&nbsp;“{{ props.data.key }}”</p>
+        <p>
+          {{ $t('comp.flowchart.node.DefineVariable.p.key') }}:&nbsp;“<u
+            @click="(e) => triggerPopover(e, props.data.key)"
+            >{{ props.data.key }}</u
+          >”
+        </p>
         <p>
           {{ $t('comp.flowchart.node.DefineVariable.p.type') }}:&nbsp;{{
             $t(`comp.flowchart.variable.type.${variableType}`)

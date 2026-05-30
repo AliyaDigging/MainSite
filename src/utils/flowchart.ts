@@ -17,9 +17,24 @@ export function emitNodeCard(params: {
   gameId: string
   versionId: string
   flowchartName: string
-  nodeId: string
-  cardTitle: string
-  cardBodyHtml: string
+  originFlowchart: string
+  originNodeId: string
+  targetNodeId: string
+  browserEvent: Event
 }) {
-  flowchartBus.emit('node-card:show', params)
+  flowchartBus.emit('node-card:show', {
+    gameInfo: {
+      gameId: params.gameId,
+      versionId: params.versionId,
+      flowchartName: params.flowchartName,
+    },
+    origin: {
+      node: params.originNodeId,
+      flowchart: params.originFlowchart,
+    },
+    target: {
+      node: params.targetNodeId,
+      flowchart: params.flowchartName,
+    },
+  })
 }

@@ -2,9 +2,11 @@
 import FlowchartViewer_Aliya from '@/components/flowchart/core/viewer/AliyaViewer.vue'
 import FlowchartMetadata_Aliya from '@/components/flowchart/core/metadata/AliyaMetadata.vue'
 import FlowchartExtraControls from '@/components/flowchart/core/FlowchartExtraControls.vue'
+import type { VariableUsage_Aliya1 } from '@/components/flowchart/aliya1/types/script9'
 
 import {
   symbolFlowchartCatalog_Aliya1,
+  symbolFlowchartVarUsage_Aliya1,
   symbolL10nDataSingleLang_Aliya1,
 } from '@/constants/injection'
 import { computed, onMounted, provide, ref, useTemplateRef, watch } from 'vue'
@@ -33,6 +35,7 @@ const flowchartRef = useTemplateRef('flowchartComp')
 
 const l10nData = ref<L10nCsvSingleLang_Aliya1>({})
 const catalogData = ref<VueFlowCatalog_Aliya1>({ catalog: {}, flowchartBeingRefed: {} })
+const varUsageData = ref<VariableUsage_Aliya1>({})
 async function loadL10nData(langcode: string) {
   if (!gameId.value || !versionId.value) return
 
@@ -44,6 +47,7 @@ async function loadL10nData(langcode: string) {
 
 provide(symbolL10nDataSingleLang_Aliya1, l10nData)
 provide(symbolFlowchartCatalog_Aliya1, catalogData)
+provide(symbolFlowchartVarUsage_Aliya1, varUsageData)
 
 watch(
   () => setting.l10nlang,
@@ -58,10 +62,21 @@ watch(
 )
 
 onMounted(async () => {
-  catalogData.value = await getJson<VueFlowCatalog>(
-    `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/catalog.json`,
-    5,
-  )
+  await Promise.allSettled([
+    (async () => {
+      catalogData.value = await getJson<VueFlowCatalog>(
+        `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/catalog.json`,
+        5,
+      )
+    })(),
+    (async () => {
+      varUsageData.value = await getJson<VariableUsage_Aliya1>(
+        `/data/${props.gameId}/${props.versionId}/flowcharts/variable_usage.json`,
+        5,
+      )
+    })(),
+  ])
+
   isLoading.value = false
 })
 </script>

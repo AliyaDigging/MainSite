@@ -194,6 +194,8 @@ onBeforeUnmount(() => {
       viewport: { ...vueflow.viewport.value },
     })
   }
+
+  flowchartBus.off('fit-in-view')
 })
 
 flowchartBus.on('fit-in-view', ({ nodeId }) => {

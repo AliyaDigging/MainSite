@@ -9,19 +9,28 @@ export function useNodeCardOrchestrator() {
 
   onMounted(() => {
     flowchartBus.on('node-card:show', (payload) => {
-      const targetKey = store.makeKey(payload.gameId, payload.versionId, payload.flowchartName)
+      const targetKey = store.makeKey(
+        payload.gameInfo.gameId,
+        payload.gameInfo.versionId,
+        payload.gameInfo.flowchartName,
+      )
 
-      store.openTab(payload.gameId, payload.versionId, payload.flowchartName)
+      store.openTab(
+        payload.gameInfo.gameId,
+        payload.gameInfo.versionId,
+        payload.gameInfo.flowchartName,
+      )
 
       store.setPendingNodeCard({
-        nodeId: payload.nodeId,
-        cardTitle: payload.cardTitle,
-        cardBodyHtml: payload.cardBodyHtml,
+        originNode: payload.origin.node,
+        originFlowchart: payload.origin.flowchart,
+        targetNode: payload.target.node,
+        targetFlowchart: payload.target.flowchart,
         targetKey,
       })
 
       if (store.lastReadyKey === targetKey) {
-        flowchartBus.emit('fit-in-view', { nodeId: payload.nodeId })
+        flowchartBus.emit('fit-in-view', { nodeId: payload.target.node })
         store.flushNodeCard()
       }
     })
@@ -30,7 +39,7 @@ export function useNodeCardOrchestrator() {
   onFlowchartReady((key) => {
     const pending = store.pendingNodeCard
     if (pending && pending.targetKey === key) {
-      flowchartBus.emit('fit-in-view', { nodeId: pending.nodeId })
+      flowchartBus.emit('fit-in-view', { nodeId: pending.targetNode })
       store.flushNodeCard()
     }
   })

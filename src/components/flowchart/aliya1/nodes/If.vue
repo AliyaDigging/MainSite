@@ -10,6 +10,7 @@ import { type FlowchartDataNode_If } from '../types/script5_vueflow_prod'
 import { useI18n } from 'vue-i18n'
 import { computed, inject } from 'vue'
 import { symbolFlowchartMetadata_Aliya1 } from '@/constants/injection'
+import { flowchartBus } from '@/utils/flowchartEvents'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_If['data']>>()
@@ -48,6 +49,16 @@ const conditions = computed(() => {
 
   return result
 })
+
+function triggerPopover(event: Event, varName: string) {
+  event.stopPropagation()
+  event.preventDefault()
+  flowchartBus.emit('node-popover:toggle', {
+    varName: varName,
+    originTriggerNodeId: props.data.fileId,
+    browserEvent: event,
+  })
+}
 </script>
 
 <template>
@@ -76,9 +87,11 @@ const conditions = computed(() => {
         <p>{{ $t('comp.flowchart.node.If.p.conditions') }}:</p>
         <ul class="custom-node-normal-ul">
           <li v-for="(item, n) of conditions" :key="n">
-            <span class="custom-node-tooltip" v-tooltip.top="`${item.varId}`">{{
-              item.varName
-            }}</span
+            <span
+              class="custom-node-tooltip"
+              v-tooltip.top="`${item.varId}`"
+              @click="(e) => triggerPopover(e, item.varName)"
+              >{{ item.varName }}</span
             >&nbsp;({{ $t(`comp.flowchart.variable.type.${item.dataType}`) }})&nbsp;{{
               $t(`comp.flowchart.node.If.p.compareoperator.type.${item.operator}`)
             }}&nbsp;<code>{{ item.dataValue }}</code>

@@ -8,7 +8,7 @@ import PvMessage from 'primevue/message'
 import { useRoute, useRouter } from 'vue-router'
 import { ref, watch, onMounted, onBeforeUnmount, computed, provide } from 'vue'
 import type { Component } from 'vue'
-import { useWindowSize } from '@vueuse/core'
+import { useWindowSize, useElementSize } from '@vueuse/core'
 
 import Flowchart_Aliya1 from '@/components/view_flowchart/Aliya1.vue'
 import Flowchart_Ycytx5 from '@/components/view_flowchart/Ycytx5.vue'
@@ -59,6 +59,9 @@ const dataAllCatalog = ref<AllDataCatalog>([])
 const catalogList = ref<string[]>([])
 
 const windowsize = useWindowSize()
+
+const rightPanelRef = ref<HTMLElement>()
+const { width: rightPanelWidth } = useElementSize(rightPanelRef)
 
 const isGlobalDataLoaded = ref(false)
 const isFlowchartDataLoaded = ref(false)
@@ -234,7 +237,7 @@ onBeforeUnmount(() => {
           </Transition>
 
           <!-- 右panel：标签栏 + 流程图内容 -->
-          <div class="right-panel">
+          <div ref="rightPanelRef" class="right-panel">
             <FlowchartTabBar />
             <div class="flowchart-content">
               <template v-for="tab in store.tabs" :key="tab.key">
@@ -248,7 +251,7 @@ onBeforeUnmount(() => {
                 </div>
               </template>
               <FlowchartEmptyState v-if="store.tabs.length === 0" />
-              <FlowchartNodeCard />
+              <FlowchartNodeCard :right-panel-width="rightPanelWidth" />
             </div>
           </div>
         </div>

@@ -44,6 +44,9 @@ code {
   color: v-bind(cssCodeTextColor);
   white-space: pre-wrap;
   word-wrap: break-word;
+
+  margin-top: 2px;
+  display: inline-block;
 }
 :deep(code) {
   font-family: 'Noto Sans Mono', monospace !important;

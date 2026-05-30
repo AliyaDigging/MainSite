@@ -3,7 +3,7 @@
  * 统一的流程图查看器组件
  * 支持多游戏版本，通过注册表动态加载节点组件
  */
-import { computed, nextTick, onBeforeUnmount, provide, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, provide, ref, watch } from 'vue'
 import { VueFlow, useVueFlow } from '@vue-flow/core'
 import { Background } from '@vue-flow/background'
 import { MiniMap } from '@vue-flow/minimap'
@@ -24,6 +24,7 @@ import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
 import FlowchartSearchPanel from '../FlowchartSearchPanel.vue'
 import { useFlowchartStore } from '@/stores/flowchart'
+import Variable_UsagePopover from '../../aliya1/nodes/Variable_UsagePopover.vue'
 
 // 内联类型定义 - 不依赖外部共享类型
 type FlowchartDataEdge = {
@@ -215,6 +216,8 @@ onBeforeUnmount(() => {
       viewport: { ...vueflow.viewport.value },
     })
   }
+
+  flowchartBus.off('fit-in-view')
 })
 
 flowchartBus.on('fit-in-view', ({ nodeId }) => {
@@ -226,6 +229,8 @@ flowchartBus.on('fit-in-view', ({ nodeId }) => {
   <div style="width: 100%; height: 100%">
     <FlowchartEmptyState v-if="!isReady" />
     <div v-else class="flowchart-comp">
+      <Variable_UsagePopover />
+
       <VueFlow
         :nodes="vueflowData.nodes.value"
         :edges="vueflowData.edges.value"

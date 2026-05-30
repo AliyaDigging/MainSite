@@ -1,45 +1,136 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { ref, computed, nextTick } from 'vue'
+import { useWindowSize, useElementSize } from '@vueuse/core'
 import { Icon } from '@vicons/utils'
 import { CloseOutlined } from '@vicons/material'
 import PvButton from 'primevue/button'
 import PvCard from 'primevue/card'
 import { useFlowchartStore } from '@/stores/flowchart'
+import { useFlowchartManager } from '@/composables/useFlowchartManager'
+import { flowchartBus } from '@/utils/flowchartEvents'
+
+const props = defineProps<{
+  rightPanelWidth: number
+}>()
 
 const store = useFlowchartStore()
 
+const { width: windowWidth } = useWindowSize()
+
+const cardRef = ref<HTMLElement>()
+const { width: actualCardWidth } = useElementSize(cardRef)
+
 const visible = computed(() => store.nodeCard !== null)
-const cardTitle = computed(() => store.nodeCard?.title ?? '')
-const cardContent = computed(() => store.nodeCard?.bodyHtml ?? '')
+
+const isMobile = computed(() => windowWidth.value <= 768)
+
+const flowchartManager = useFlowchartManager()
+
+const computedCardWidth = computed(() => {
+  if (isMobile.value) return 'auto'
+  return `${Math.max(400, props.rightPanelWidth * 0.4)}px`
+})
+
+const computedRight = computed(() => {
+  if (isMobile.value) return '16px'
+  const panelW = props.rightPanelWidth
+  // Use measured card width if available, otherwise fall back to computed value
+  const cardW = actualCardWidth.value || Math.min(panelW * 0.3, 420)
+  return `${(panelW - cardW) / 2}px`
+})
+
+const computedLeft = computed(() => {
+  if (isMobile.value) return '86px'
+  return 'auto'
+})
 
 function close() {
   store.clearNodeCard()
 }
+
+async function jumpBack(
+  originFlowchartName: string,
+  originNodeId: string,
+  targetFlowchartName: string,
+  targetNodeId: string,
+) {
+  close()
+  await nextTick()
+
+  const activeFlowchart = flowchartManager.getActiveFlowchart()!
+  flowchartBus.emit('node-card:show', {
+    gameInfo: {
+      gameId: activeFlowchart.gameId,
+      versionId: activeFlowchart.versionId,
+      flowchartName: targetFlowchartName,
+    },
+    origin: {
+      node: originNodeId,
+      flowchart: originFlowchartName,
+    },
+    target: {
+      node: targetNodeId,
+      flowchart: targetFlowchartName,
+    },
+  })
+}
 </script>
 
 <template>
-  <PvCard v-if="visible" class="node-card" :pt="{ body: { class: 'p-0' } }">
-    <template #content>
-      <div class="node-card__header">
-        <span class="node-card__title">{{ cardTitle }}</span>
-        <PvButton severity="secondary" text rounded size="small" @click="close">
-          <Icon size="18">
-            <CloseOutlined />
-          </Icon>
-        </PvButton>
-      </div>
-      <div class="node-card__body" v-html="cardContent" />
-    </template>
-  </PvCard>
+  <div v-if="visible" ref="cardRef" class="node-card">
+    <PvCard :pt="{ body: { class: 'p-0' } }">
+      <template #content>
+        <div class="node-card__header">
+          <span class="node-card__title">{{ $t('comp.flowchart.jump_card.title') }}</span>
+          <PvButton severity="secondary" text rounded size="small" @click="close">
+            <Icon size="18">
+              <CloseOutlined />
+            </Icon>
+          </PvButton>
+        </div>
+        <div class="node-card__body">
+          <ul class="custom-node-normal-ul">
+            <li>
+              跳转前: <code>{{ store.nodeCard?.originNode }}</code> @
+              <code>{{ store.nodeCard?.originFlowchart }}</code>
+            </li>
+            <li>
+              当前（跳转后）: <code>{{ store.nodeCard?.targetNode }}</code> @
+              <code>{{ store.nodeCard?.targetFlowchart }}</code>
+            </li>
+          </ul>
+          <div class="node-card__actions">
+            <PvButton
+              severity="secondary"
+              size="small"
+              outlined
+              @click="
+                (e) =>
+                  jumpBack(
+                    store.nodeCard!.targetFlowchart,
+                    store.nodeCard!.targetNode,
+                    store.nodeCard!.originFlowchart,
+                    store.nodeCard!.originNode,
+                  )
+              "
+              >回到跳转前</PvButton
+            >
+            <PvButton severity="primary" size="small" @click="close">留在当前</PvButton>
+          </div>
+        </div>
+      </template>
+    </PvCard>
+  </div>
 </template>
 
 <style scoped>
 .node-card {
   position: absolute;
-  right: 16px;
-  bottom: 100px;
+  right: v-bind(computedRight);
+  left: v-bind(computedLeft);
+  bottom: 16px;
   z-index: 12;
-  max-width: 420px;
+  width: v-bind(computedCardWidth);
   max-height: 360px;
   overflow: hidden;
   display: flex;
@@ -63,5 +154,12 @@ function close() {
   padding: 8px;
   overflow-y: auto;
   max-height: 300px;
+}
+
+.node-card__actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 12px;
 }
 </style>

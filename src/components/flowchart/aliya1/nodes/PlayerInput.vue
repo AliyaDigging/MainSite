@@ -9,10 +9,21 @@ import { Keyboard } from '@vicons/tabler'
 import { type FlowchartDataNode_PlayerInput } from '../types/script5_vueflow_prod'
 import { inject } from 'vue'
 import { symbolFlowchartMetadata_Aliya1 } from '@/constants/injection'
+import { flowchartBus } from '@/utils/flowchartEvents'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_PlayerInput['data']>>()
 const metadata = inject(symbolFlowchartMetadata_Aliya1)!
+
+function triggerPopover(event: Event, varName: string) {
+  event.stopPropagation()
+  event.preventDefault()
+  flowchartBus.emit('node-popover:toggle', {
+    varName: varName,
+    originTriggerNodeId: props.data.fileId,
+    browserEvent: event,
+  })
+}
 </script>
 
 <template>
@@ -31,9 +42,12 @@ const metadata = inject(symbolFlowchartMetadata_Aliya1)!
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.node.PlayerInput.p.varname') }}:&nbsp;“{{
-            metadata.variableNames[props.data.variable.fileId].key
-          }}”
+          {{ $t('comp.flowchart.node.PlayerInput.p.varname') }}:&nbsp;“<u
+            @click="
+              (e) => triggerPopover(e, metadata.variableNames[props.data.variable.fileId].key)
+            "
+            >{{ metadata.variableNames[props.data.variable.fileId].key }}</u
+          >”
         </p>
         <p>
           {{ $t('comp.flowchart.node.PlayerInput.p.sendmessage') }}:&nbsp;{{

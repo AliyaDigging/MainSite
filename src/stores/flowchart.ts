@@ -16,15 +16,18 @@ export interface CachedFlowchartState {
 }
 
 export interface PendingNodeCard {
-  nodeId: string
-  cardTitle: string
-  cardBodyHtml: string
+  originNode: string
+  originFlowchart: string
+  targetNode: string
+  targetFlowchart: string
   targetKey: string
 }
 
 export interface NodeCardData {
-  title: string
-  bodyHtml: string
+  originNode: string
+  originFlowchart: string
+  targetNode: string
+  targetFlowchart: string
 }
 
 export const useFlowchartStore = defineStore('flowchart', () => {
@@ -121,8 +124,10 @@ export const useFlowchartStore = defineStore('flowchart', () => {
   function flushNodeCard() {
     if (pendingNodeCard.value) {
       nodeCard.value = {
-        title: pendingNodeCard.value.cardTitle,
-        bodyHtml: pendingNodeCard.value.cardBodyHtml,
+        originNode: pendingNodeCard.value.originNode,
+        originFlowchart: pendingNodeCard.value.originFlowchart,
+        targetNode: pendingNodeCard.value.targetNode,
+        targetFlowchart: pendingNodeCard.value.targetFlowchart,
       }
       pendingNodeCard.value = null
     }
