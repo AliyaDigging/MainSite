@@ -1,0 +1,46 @@
+/**
+ * 流程图节点全局高亮样式
+ * 不能使用 scoped，因为高亮目标是 VueFlow 内部渲染的 DOM 元素
+ */
+
+/* ========== 搜索面板高亮（黄色/橙色系） ========== */
+
+/* Light mode - 匹配节点 */
+html:not(.p-dark) .vue-flow__node.flowchart-search-highlight {
+  background-color: #fff9c4 !important;
+  outline: 2px solid #fdd835 !important;
+}
+
+/* Light mode - 当前选中 */
+html:not(.p-dark) .vue-flow__node.flowchart-search-active {
+  background-color: #ffe0b2 !important;
+  outline: 3px solid #ff9800 !important;
+}
+
+/* Dark mode - 匹配节点 */
+html.p-dark .vue-flow__node.flowchart-search-highlight {
+  background-color: rgba(253, 216, 53, 0.2) !important;
+  outline: 2px solid rgba(253, 216, 53, 0.55) !important;
+}
+
+/* Dark mode - 当前选中 */
+html.p-dark .vue-flow__node.flowchart-search-active {
+  background-color: rgba(255, 152, 0, 0.22) !important;
+  outline: 3px solid rgba(255, 152, 0, 0.65) !important;
+}
+
+/* ========== 跳转卡片高亮（蓝色系） ========== */
+
+/* Light mode */
+html:not(.p-dark) .vue-flow__node.flowchart-jump-highlight {
+  background-color: #e3f2fd !important;
+  outline: 3px solid #2196f3 !important;
+  box-shadow: 0 0 12px rgba(33, 150, 243, 0.4) !important;
+}
+
+/* Dark mode */
+html.p-dark .vue-flow__node.flowchart-jump-highlight {
+  background-color: rgba(33, 150, 243, 0.18) !important;
+  outline: 3px solid rgba(33, 150, 243, 0.6) !important;
+  box-shadow: 0 0 14px rgba(33, 150, 243, 0.35) !important;
+}

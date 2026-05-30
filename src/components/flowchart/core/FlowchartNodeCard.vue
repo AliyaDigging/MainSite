@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, nextTick } from 'vue'
+import { ref, computed, nextTick, watch, onUnmounted } from 'vue'
 import { useWindowSize, useElementSize } from '@vueuse/core'
 import { Icon } from '@vicons/utils'
 import { CloseOutlined } from '@vicons/material'
@@ -8,6 +8,7 @@ import PvCard from 'primevue/card'
 import { useFlowchartStore } from '@/stores/flowchart'
 import { useFlowchartManager } from '@/composables/useFlowchartManager'
 import { flowchartBus } from '@/utils/flowchartEvents'
+import { useFlowchartHighlight, JUMP_HIGHLIGHT } from '@/composables/useFlowchartHighlight'
 
 const props = defineProps<{
   rightPanelWidth: number
@@ -25,6 +26,7 @@ const visible = computed(() => store.nodeCard !== null)
 const isMobile = computed(() => windowWidth.value <= 768)
 
 const flowchartManager = useFlowchartManager()
+const { highlightNode, clearHighlights } = useFlowchartHighlight(JUMP_HIGHLIGHT)
 
 const computedCardWidth = computed(() => {
   if (isMobile.value) return 'auto'
@@ -45,6 +47,7 @@ const computedLeft = computed(() => {
 })
 
 function close() {
+  clearHighlights()
   store.clearNodeCard()
 }
 
@@ -54,6 +57,7 @@ async function jumpBack(
   targetFlowchartName: string,
   targetNodeId: string,
 ) {
+  clearHighlights()
   close()
   await nextTick()
 
@@ -74,6 +78,24 @@ async function jumpBack(
     },
   })
 }
+
+// 当卡片可见时高亮目标节点，卡片关闭时清除高亮
+watch(
+  () => store.nodeCard?.targetNode,
+  (targetNode) => {
+    clearHighlights()
+    if (targetNode) {
+      nextTick(() => {
+        highlightNode(targetNode)
+      })
+    }
+  },
+  { immediate: true },
+)
+
+onUnmounted(() => {
+  clearHighlights()
+})
 </script>
 
 <template>

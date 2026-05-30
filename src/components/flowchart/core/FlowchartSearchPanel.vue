@@ -19,6 +19,7 @@ import PvButton from 'primevue/button'
 import { useI18n } from 'vue-i18n'
 import { useFlowchartStore } from '@/stores/flowchart'
 import { symbolUseDark } from '@/constants/injection'
+import { useFlowchartHighlight, SEARCH_HIGHLIGHT } from '@/composables/useFlowchartHighlight'
 
 type FlowchartDataNode = {
   id: string
@@ -48,6 +49,8 @@ const vueflow = useVueFlow()
 const i18n = useI18n()
 const flowchartStore = useFlowchartStore()
 const isDark = inject(symbolUseDark)!
+
+const { clearHighlights, highlightNodes, setActiveNode } = useFlowchartHighlight(SEARCH_HIGHLIGHT)
 
 // 深色模式下 box-shadow 使用浅色半透明以保持可见层次
 const cssSearchPanelBoxShadow = computed(() =>
@@ -151,35 +154,15 @@ function performSearch() {
     }
   }
 
-  updateHighlights()
+  refreshHighlights()
 }
 
-const HIGHLIGHT_CLASS = 'flowchart-search-highlight'
-const ACTIVE_CLASS = 'flowchart-search-active'
-
-function clearHighlights() {
-  document
-    .querySelectorAll(`.${HIGHLIGHT_CLASS}`)
-    .forEach((el) => el.classList.remove(HIGHLIGHT_CLASS))
-  document.querySelectorAll(`.${ACTIVE_CLASS}`).forEach((el) => el.classList.remove(ACTIVE_CLASS))
-}
-
-function updateHighlights() {
+function refreshHighlights() {
   clearHighlights()
-
-  for (const match of matches.value) {
-    const el = document.querySelector(`[data-id="${match.nodeId}"]`)
-    if (el) {
-      el.classList.add(HIGHLIGHT_CLASS)
-    }
-  }
-
-  if (matches.value.length > 0 && currentMatchIndex.value < matches.value.length) {
-    const currentMatch = matches.value[currentMatchIndex.value]
-    const el = document.querySelector(`[data-id="${currentMatch.nodeId}"]`)
-    if (el) {
-      el.classList.remove(HIGHLIGHT_CLASS)
-      el.classList.add(ACTIVE_CLASS)
+  if (matches.value.length > 0) {
+    highlightNodes(matches.value.map((m) => m.nodeId))
+    if (currentMatchIndex.value < matches.value.length) {
+      setActiveNode(matches.value[currentMatchIndex.value].nodeId)
     }
   }
 }
@@ -202,7 +185,7 @@ function scrollToCurrentMatch() {
       duration: 300,
     })
   }
-  updateHighlights()
+  refreshHighlights()
 }
 
 function goToPrev() {
@@ -420,31 +403,5 @@ function handleGlobalKeydown(e: KeyboardEvent) {
 :deep(.search-mode-toggle .p-togglebutton) {
   padding: 4px 10px;
   font-size: 12px;
-}
-</style>
-
-<style>
-/* Global highlight styles - cannot be scoped since they're applied to VueFlow DOM elements */
-
-/* Light mode */
-html:not(.p-dark) .vue-flow__node.flowchart-search-highlight {
-  background-color: #fff9c4 !important;
-  outline: 2px solid #fdd835 !important;
-}
-
-html:not(.p-dark) .vue-flow__node.flowchart-search-active {
-  background-color: #ffe0b2 !important;
-  outline: 3px solid #ff9800 !important;
-}
-
-/* Dark mode */
-html.p-dark .vue-flow__node.flowchart-search-highlight {
-  background-color: rgba(253, 216, 53, 0.2) !important;
-  outline: 2px solid rgba(253, 216, 53, 0.55) !important;
-}
-
-html.p-dark .vue-flow__node.flowchart-search-active {
-  background-color: rgba(255, 152, 0, 0.22) !important;
-  outline: 3px solid rgba(255, 152, 0, 0.65) !important;
 }
 </style>
