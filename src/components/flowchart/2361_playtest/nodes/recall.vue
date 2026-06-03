@@ -36,6 +36,12 @@ const props = defineProps<NodeProps<FlowchartDataNode_recall['data']>>()
         <span class="custom-node-title">{{ $t('comp.flowchart.node.recall.title') }}</span>
       </div>
       <div class="custom-node-content">
+        <p v-if="props.data.arg.text">
+          撤回提示:
+          {{
+            props.data.arg.text[0] === '"' ? props.data.arg.text.slice(1, -1) : props.data.arg.text
+          }}
+        </p>
         <p>
           延迟时间:
           {{
