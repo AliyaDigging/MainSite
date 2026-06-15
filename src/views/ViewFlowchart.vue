@@ -24,6 +24,7 @@ import FlowchartFileTree from '@/components/flowchart/core/FlowchartFileTree.vue
 import FlowchartTabBar from '@/components/flowchart/core/FlowchartTabBar.vue'
 import FlowchartEmptyState from '@/components/flowchart/core/FlowchartEmptyState.vue'
 import FlowchartNodeCard from '@/components/flowchart/core/FlowchartNodeCard.vue'
+import FlowchartFileTreeToggle from '@/components/flowchart/core/FlowchartFileTreeToggle.vue'
 import { detectIsMobile } from '@/utils/browser'
 import { symbolFlowchartPageHeight, symbolFlowchartFileTreeCollapsed } from '@/constants/injection'
 import { useNodeCardOrchestrator } from '@/composables/useNodeCardOrchestrator'
@@ -254,6 +255,9 @@ onBeforeUnmount(() => {
               </template>
               <FlowchartEmptyState v-if="store.tabs.length === 0" />
               <FlowchartNodeCard :right-panel-width="rightPanelWidth" />
+              <div class="file-tree-toggle-wrapper">
+                <FlowchartFileTreeToggle />
+              </div>
             </div>
           </div>
         </div>
@@ -303,6 +307,14 @@ p {
   overflow: hidden;
   position: relative;
   min-height: 0;
+}
+
+.file-tree-toggle-wrapper {
+  position: absolute;
+  bottom: 28px;
+  left: 24px;
+  z-index: 11;
+  pointer-events: auto;
 }
 
 .tab-content {
