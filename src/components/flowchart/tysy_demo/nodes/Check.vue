@@ -9,6 +9,8 @@ import { GitBranchSharp } from '@vicons/ionicons5'
 import { type FlowchartDataNode_Check } from '../types/script3'
 import { flowchartBus } from '@/utils/flowchartEvents'
 
+import General_ExtraAction from './General_ExtraAction.vue'
+
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_Check['data']>>()
 
@@ -55,13 +57,19 @@ function triggerPopover(event: Event, varName: string) {
         </p>
         <p>
           {{ $t('comp.flowchart.tysy_demo.node.Check.variableName.p') }}:
-          <code class="clickable-var" @click="(e) => triggerPopover(e, props.data.variableName)">{{ props.data.variableName }}</code>
+          <code class="clickable-var" @click="(e) => triggerPopover(e, props.data.variableName)">{{
+            props.data.variableName
+          }}</code>
         </p>
         <p>
           {{ $t('comp.flowchart.tysy_demo.node.Check.valueGreater.p') }}:
           <code>{{ props.data.valueGreater }}</code>
         </p>
-        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
+        <General_ExtraAction
+          :data="props.data.extraAction"
+          :node-id="props.id"
+          v-if="props.data.extraAction"
+        />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

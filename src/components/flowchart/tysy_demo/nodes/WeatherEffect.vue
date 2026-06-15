@@ -8,6 +8,8 @@ import { RadarWeather } from '@vicons/carbon'
 
 import { type FlowchartDataNode_WeatherEffect } from '../types/script3'
 
+import General_ExtraAction from './General_ExtraAction.vue'
+
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_WeatherEffect['data']>>()
 </script>
@@ -46,7 +48,11 @@ const props = defineProps<NodeProps<FlowchartDataNode_WeatherEffect['data']>>()
             $t(`comp.flowchart.tysy_demo.node.WeatherEffect.weatherType.${props.data.weatherType}`)
           }}
         </p>
-        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
+        <General_ExtraAction
+          :data="props.data.extraAction"
+          :node-id="props.id"
+          v-if="props.data.extraAction"
+        />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

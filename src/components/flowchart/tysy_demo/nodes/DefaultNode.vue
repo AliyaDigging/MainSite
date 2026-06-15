@@ -8,6 +8,8 @@ import { EllipsisHorizontalCircle } from '@vicons/ionicons5'
 
 import { type FlowchartDataNode_DefaultNode } from '../types/script3'
 
+import General_ExtraAction from './General_ExtraAction.vue'
+
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_DefaultNode['data']>>()
 </script>
@@ -36,7 +38,11 @@ const props = defineProps<NodeProps<FlowchartDataNode_DefaultNode['data']>>()
             <i>nextIndex: {{ props.data.nextIndex }}</i>
           </p>
         </div>
-        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
+        <General_ExtraAction
+          :data="props.data.extraAction"
+          :node-id="props.id"
+          v-if="props.data.extraAction"
+        />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

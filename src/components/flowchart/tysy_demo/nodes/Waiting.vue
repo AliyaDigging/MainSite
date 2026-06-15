@@ -8,6 +8,8 @@ import { TimerSharp } from '@vicons/material'
 
 import { type FlowchartDataNode_Waiting } from '../types/script3'
 
+import General_ExtraAction from './General_ExtraAction.vue'
+
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_Waiting['data']>>()
 </script>
@@ -39,7 +41,11 @@ const props = defineProps<NodeProps<FlowchartDataNode_Waiting['data']>>()
         <p>
           {{ $t('comp.flowchart.tysy_demo.node.Waiting.waitTime') }}: {{ props.data.waitTime }}s
         </p>
-        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
+        <General_ExtraAction
+          :data="props.data.extraAction"
+          :node-id="props.id"
+          v-if="props.data.extraAction"
+        />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

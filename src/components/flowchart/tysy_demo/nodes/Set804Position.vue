@@ -8,6 +8,8 @@ import { Location } from '@vicons/tabler'
 
 import { type FlowchartDataNode_Set804Position } from '../types/script3'
 
+import General_ExtraAction from './General_ExtraAction.vue'
+
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_Set804Position['data']>>()
 </script>
@@ -44,7 +46,11 @@ const props = defineProps<NodeProps<FlowchartDataNode_Set804Position['data']>>()
           {{ $t('comp.flowchart.tysy_demo.node.Set804Position.runtime') }}:
           {{ props.data.runtime }}s
         </p>
-        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
+        <General_ExtraAction
+          :data="props.data.extraAction"
+          :node-id="props.id"
+          v-if="props.data.extraAction"
+        />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

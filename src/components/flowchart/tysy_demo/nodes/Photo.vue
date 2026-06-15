@@ -8,6 +8,8 @@ import { ImageFilled } from '@vicons/material'
 
 import { type FlowchartDataNode_Photo } from '../types/script3'
 
+import General_ExtraAction from './General_ExtraAction.vue'
+
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_Photo['data']>>()
 </script>
@@ -74,7 +76,11 @@ const props = defineProps<NodeProps<FlowchartDataNode_Photo['data']>>()
             <img :src="`/aliya/tysy_demo/images/${value[0]}.png`" style="width: 100%" />
           </li>
         </ul>
-        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
+        <General_ExtraAction
+          :data="props.data.extraAction"
+          :node-id="props.id"
+          v-if="props.data.extraAction"
+        />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

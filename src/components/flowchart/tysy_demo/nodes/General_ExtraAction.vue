@@ -36,6 +36,7 @@ function triggerPopover(event: Event, varName: string) {
       </li>
       <li>
         {{ $t('comp.flowchart.tysy_demo.node.General_ExtraAction.VarAdd.varName.p') }}:
+        <!--@vue-expect-error type is incorrectly inferred as Achievement one-->
         <code class="clickable-var" @click="(e) => triggerPopover(e, props.data.varName)">{{
           props.data.varName
         }}</code>
@@ -53,6 +54,7 @@ function triggerPopover(event: Event, varName: string) {
       </li>
       <li>
         {{ $t('comp.flowchart.tysy_demo.node.General_ExtraAction.VarAdd.varName.p') }}:
+        <!--@vue-expect-error type is incorrectly inferred as Achievement one-->
         <code class="clickable-var" @click="(e) => triggerPopover(e, props.data.varName)">{{
           props.data.varName
         }}</code>
