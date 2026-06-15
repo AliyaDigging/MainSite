@@ -70,7 +70,7 @@ watch(
     <PvColumn field="filename" :header="i18n.t('view.res.col.name')">
       <template #body="slotProps">
         <span>{{ slotProps.data.filename }}</span>
-        <template v-if="slotProps.data.filename.includes('.1')">
+        <template v-if="slotProps.data.filename.includes('.1') && !gameId.includes('dlc')">
           <br />
           <PvTag severity="info" class="mt-1">{{ $t('view.res.col.name.tag.1') }}</PvTag>
         </template>
