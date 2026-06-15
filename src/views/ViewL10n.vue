@@ -14,6 +14,7 @@ import LoadingSpinner from '@/components/LoadingSpinner.vue'
 
 import Aliya1 from '@/components/view_l10n/Aliya1.vue'
 import Ycytx5 from '@/components/view_l10n/Ycytx5.vue'
+import TysyDemo from '@/components/view_l10n/TysyDemo.vue'
 
 const props = defineProps({
   gameId: {
@@ -106,7 +107,7 @@ watch(
       <p class="text-color select-title">
         {{ $t('view.l10n.p.7') }}:&nbsp;&nbsp;<PvMultiSelect
           v-model="aliyaSetting.l10nLangViewingList"
-          :options="['zh-cn', 'en-us', 'zh-cn-c']"
+          :options="['zh-cn', 'en-us', 'zh-cn-c', 'ja-jp']"
           :optionLabel="(item) => i18n.t(`constant.l10nlang.${item}`)"
           :placeholder="i18n.t('view.l10n.p.2')"
           :maxSelectedLabels="3"
@@ -119,6 +120,11 @@ watch(
         <Aliya1 v-if="gameId.includes('aliya1')" :gameId="gameId" :versionId="versionId" />
         <Ycytx5
           v-else-if="gameId.toLowerCase() === 'ycytx_5'"
+          :gameId="gameId"
+          :versionId="versionId"
+        />
+        <TysyDemo
+          v-else-if="gameId.toLowerCase() === 'tysy_demo'"
           :gameId="gameId"
           :versionId="versionId"
         />
