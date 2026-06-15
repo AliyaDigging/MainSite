@@ -8,11 +8,13 @@ import { ALIYA1_NODE_TYPES } from '../nodes/aliya1'
 import { DLC_NODE_TYPES } from '../nodes/aliya1_android_dlc'
 import { YCYTX_5_NODE_TYPES } from '../nodes/ycytx_5'
 import { PLAYTEST_NODE_TYPES } from '../nodes/2361_playtest'
+import { TYSY_DEMO_NODE_TYPES } from '../nodes/tysy_demo'
 
 import * as Aliya1Nodes from '../nodes/aliya1'
 import * as DLCNodes from '../nodes/aliya1_android_dlc'
 import * as Ycytx5Nodes from '../nodes/ycytx_5'
 import * as Playtest_2361_Nodes from '../nodes/2361_playtest'
+import * as TysyDemoNodes from '../nodes/tysy_demo'
 
 /**
  * 注册 Aliya1 游戏配置
@@ -171,4 +173,25 @@ registerGameConfig({
   },
   nodeTypes: [...PLAYTEST_NODE_TYPES],
   imageBasePath: '/aliya/2361_playtest/images/',
+})
+
+registerGameConfig({
+  gameId: 'tysy_demo',
+  nodeComponents: {
+    Message: TysyDemoNodes.Message,
+    OpenOption: TysyDemoNodes.OpenOption,
+    OpenOption_Default: TysyDemoNodes.OpenOption_Default,
+    Waiting: TysyDemoNodes.Waiting,
+    System: TysyDemoNodes.System,
+    Check: TysyDemoNodes.Check,
+    SwitchFile: TysyDemoNodes.SwitchFile,
+    ShowPoint: TysyDemoNodes.ShowPoint,
+    Set804Position: TysyDemoNodes.Set804Position,
+    Photo: TysyDemoNodes.Photo,
+    Empty: TysyDemoNodes.Empty,
+    DefaultNode: TysyDemoNodes.DefaultNode,
+    WeatherEffect: TysyDemoNodes.WeatherEffect,
+  },
+  nodeTypes: [...TYSY_DEMO_NODE_TYPES],
+  imageBasePath: '/aliya/tysy_demo/images/',
 })

@@ -18,7 +18,9 @@ import { flowchartBus } from '@/utils/flowchartEvents'
 import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
 import FlowchartSearchPanel from '../FlowchartSearchPanel.vue'
+import FlowchartEdgeCard from '../FlowchartEdgeCard.vue'
 import { useFlowchartStore } from '@/stores/flowchart'
+import { useEdgeClickCard } from '@/composables/useEdgeClickCard'
 
 type FlowchartDataEdge = {
   id: string
@@ -201,6 +203,9 @@ onBeforeUnmount(() => {
 flowchartBus.on('fit-in-view', ({ nodeId }) => {
   vueflow.fitView({ nodes: [nodeId] })
 })
+
+const { edge, position, visible: isEdgeCardVisible, handleEdgeClick, close: closeEdgeCard } =
+  useEdgeClickCard()
 </script>
 
 <template>
@@ -213,6 +218,7 @@ flowchartBus.on('fit-in-view', ({ nodeId }) => {
         :min-zoom="0.05"
         :max-zoom="4"
         @nodes-initialized="initFlowchart()"
+        @edge-click="(event) => handleEdgeClick(event)"
       >
         <Background pattern-color="#aaa" :gap="16" />
         <MiniMap v-if="isShowMiniMap" mask-color="rgba(20, 46, 89, 0.5)" pannable />
@@ -227,6 +233,14 @@ flowchartBus.on('fit-in-view', ({ nodeId }) => {
           v-model:visible="isSearchVisible"
           :nodes="vueflowData.nodes.value"
           :edges="vueflowData.edges.value"
+        />
+
+        <FlowchartEdgeCard
+          v-if="isEdgeCardVisible"
+          :source="edge!.source"
+          :target="edge!.target"
+          :position="position"
+          @close="closeEdgeCard"
         />
 
         <template v-for="nodeType in nodeTypes" :key="nodeType" #[`node-${nodeType}`]="nodeProps">

@@ -13,6 +13,7 @@ import { useWindowSize, useElementSize } from '@vueuse/core'
 import Flowchart_Aliya1 from '@/components/view_flowchart/Aliya1.vue'
 import Flowchart_Ycytx5 from '@/components/view_flowchart/Ycytx5.vue'
 import Flowchart_2361Playtest from '@/components/view_flowchart/2361Playtest.vue'
+import Flowchart_TysyDemo from '@/components/view_flowchart/TysyDemo.vue'
 
 import { useFlowchartStore } from '@/stores/flowchart'
 import { getJson } from '@/utils/fetch'
@@ -37,6 +38,7 @@ const gameComponentMap: Record<string, Component> = {
   aliya1: Flowchart_Aliya1,
   ycytx_5: Flowchart_Ycytx5,
   '2361_playtest': Flowchart_2361Playtest,
+  tysy_demo: Flowchart_TysyDemo,
 }
 
 function getGameComponent(gameId: string): Component | null {

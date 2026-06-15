@@ -7,6 +7,27 @@ export function fitInViewTargetBlock(vueflow: ReturnType<typeof useVueFlow>, tar
   }
 }
 
+/** 将视口滚动到指定节点位置 */
+export function scrollToNode(
+  vueflow: ReturnType<typeof useVueFlow>,
+  nodeId: string,
+  options?: {
+    zoom?: number
+    duration?: number
+    offsetX?: number
+    offsetY?: number
+  },
+): boolean {
+  const node = vueflow.findNode(nodeId)
+  if (!node) return false
+  const { zoom, duration = 300, offsetX = 110, offsetY = 30 } = options ?? {}
+  vueflow.setCenter(node.position.x + offsetX, node.position.y + offsetY, {
+    zoom: zoom ?? vueflow.viewport.value.zoom,
+    duration,
+  })
+  return true
+}
+
 export function getCorrectFlowchartUrl(currPath: string, flowchartName: string) {
   const temp = currPath.split('/').slice(0, -1)
   temp.push(flowchartName)

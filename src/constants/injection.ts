@@ -7,6 +7,7 @@ import { type L10nCsvSingleLang as L10nCsvSingleLang_Aliya1 } from '@/types/aliy
 import type { VueFlowCatalog as VueFlowCatalog_Aliya1 } from '@/types/aliya1/data_script6'
 import type { L10nSingleLang_Ycytx5, VFOut_Catalog_Ycytx5 } from '@/types/ycytx_5'
 import type { FlowchartData as FlowchartData_2361Playtest } from '@/components/flowchart/2361_playtest/types/script3'
+import type { FlowchartData as FlowchartData_TysyDemo } from '@/components/flowchart/tysy_demo/types/script3'
 import type { VariableUsage_Aliya1 } from '@/components/flowchart/aliya1/types/script9'
 
 type FlowchartDataSet_Aliya1 = Aliya1_FlowchartData | Aliya1_Android_DLC_FlowchartData
@@ -52,6 +53,19 @@ export const symbolFlowchartCatalog_2361Playtest = Symbol(
 export const symbolFlowchartMetadata_2361Playtest = Symbol(
   'flowchart_metadata_2361playtest',
 ) as InjectionKey<Ref<FlowchartData_2361Playtest['metadata']>>
+
+export const symbolL10nDataSingleLang_TysyDemo = Symbol('l10n_data_tysy_demo') as InjectionKey<
+  Ref<Record<string, string>>
+>
+
+export const symbolFlowchartCatalog_TysyDemo = Symbol(
+  'flowchart_catalog_tysy_demo',
+) as InjectionKey<
+  Ref<{ catalog: Record<string, { metadata: FlowchartData_TysyDemo['metadata'] }> }>
+>
+export const symbolFlowchartMetadata_TysyDemo = Symbol(
+  'flowchart_metadata_tysy_demo',
+) as InjectionKey<Ref<FlowchartData_TysyDemo['metadata']>>
 
 /** 通用 L10N 数据注入键 — 供搜索面板使用，各父页面负责规范化为扁平 Record<string, string> */
 export const symbolL10NSearchData = Symbol('l10n_search_data') as InjectionKey<
