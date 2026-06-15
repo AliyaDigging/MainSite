@@ -1,0 +1,2210 @@
+{
+  "OneGameOver": {
+    "name": "OneGameOver",
+    "type": "number",
+    "usages": {
+      "1StoryEnter": [
+        {
+          "type": "read",
+          "blockId": "2",
+          "blockType": "Check",
+          "scope": "gv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "好感度": {
+    "name": "好感度",
+    "type": "number",
+    "usages": {
+      "1StoryEnter": [
+        {
+          "type": "set",
+          "blockId": "12",
+          "blockType": "Empty",
+          "scope": "pv",
+          "value": "0"
+        },
+        {
+          "type": "set",
+          "blockId": "13",
+          "blockType": "Empty",
+          "scope": "gv",
+          "value": "0"
+        }
+      ],
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "106",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 4
+        },
+        {
+          "type": "add",
+          "blockId": "128",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "167",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "152",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "153",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "334",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "335",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "607",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "608",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "880",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "884",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "888",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "892",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S3": [
+        {
+          "type": "add",
+          "blockId": "101",
+          "blockType": "Set804Position",
+          "scope": "pv",
+          "value": 4
+        },
+        {
+          "type": "add",
+          "blockId": "102",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 4
+        },
+        {
+          "type": "add",
+          "blockId": "139",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "140",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "205",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "403",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "450",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "451",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "601",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "602",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "603",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "607",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "608",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "609",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S4": [
+        {
+          "type": "add",
+          "blockId": "101",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "881",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 2
+        }
+      ]
+    }
+  },
+  "焦虑": {
+    "name": "焦虑",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "108",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "116",
+          "blockType": "System",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "127",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "142",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "152",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "164",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "186",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "193",
+          "blockType": "Waiting",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "208",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "232",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "234",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "247",
+          "blockType": "System",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "264",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "add",
+          "blockId": "274",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "read",
+          "blockId": "320",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 12
+        },
+        {
+          "type": "read",
+          "blockId": "321",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 11
+        },
+        {
+          "type": "read",
+          "blockId": "322",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 10
+        },
+        {
+          "type": "read",
+          "blockId": "323",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 9
+        },
+        {
+          "type": "read",
+          "blockId": "324",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 8
+        },
+        {
+          "type": "read",
+          "blockId": "325",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 7
+        },
+        {
+          "type": "read",
+          "blockId": "326",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 6
+        },
+        {
+          "type": "read",
+          "blockId": "327",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 5
+        },
+        {
+          "type": "read",
+          "blockId": "328",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 4
+        },
+        {
+          "type": "read",
+          "blockId": "329",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 3
+        },
+        {
+          "type": "read",
+          "blockId": "330",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        },
+        {
+          "type": "read",
+          "blockId": "331",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "332",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 0
+        },
+        {
+          "type": "read",
+          "blockId": "401",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 12
+        },
+        {
+          "type": "read",
+          "blockId": "402",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 11
+        },
+        {
+          "type": "read",
+          "blockId": "403",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 10
+        },
+        {
+          "type": "read",
+          "blockId": "404",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 9
+        },
+        {
+          "type": "read",
+          "blockId": "405",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 8
+        },
+        {
+          "type": "read",
+          "blockId": "406",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 7
+        },
+        {
+          "type": "read",
+          "blockId": "407",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 5
+        },
+        {
+          "type": "read",
+          "blockId": "408",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 3
+        },
+        {
+          "type": "read",
+          "blockId": "409",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "410",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 0
+        },
+        {
+          "type": "read",
+          "blockId": "1000",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        },
+        {
+          "type": "read",
+          "blockId": "1001",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "1002",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 0
+        }
+      ]
+    }
+  },
+  "我怎么会这么笨": {
+    "name": "我怎么会这么笨",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "118",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S4-3": [
+        {
+          "type": "read",
+          "blockId": "1160",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "不相信迷信": {
+    "name": "不相信迷信",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "219",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "GameOverSecond": {
+    "name": "GameOverSecond",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "294",
+          "blockType": "System",
+          "scope": "gv",
+          "value": "1"
+        }
+      ]
+    }
+  },
+  "回应后搁置": {
+    "name": "回应后搁置",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "310",
+          "blockType": "Empty",
+          "scope": "pv",
+          "value": "1"
+        },
+        {
+          "type": "read",
+          "blockId": "311",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 3
+        },
+        {
+          "type": "read",
+          "blockId": "312",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 0
+        }
+      ]
+    }
+  },
+  "友善": {
+    "name": "友善",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "706",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "712",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "100",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "264",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "395",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S3": [
+        {
+          "type": "add",
+          "blockId": "750",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "751",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "890",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "891",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "992",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        },
+        {
+          "type": "add",
+          "blockId": "1196",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "搞怪": {
+    "name": "搞怪",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "707",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "1031",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "103",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "202",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "365",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "390",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "397",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "536",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        },
+        {
+          "type": "read",
+          "blockId": "601",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        },
+        {
+          "type": "add",
+          "blockId": "1612",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "1646",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        }
+      ],
+      "C1S3": [
+        {
+          "type": "read",
+          "blockId": "440",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        },
+        {
+          "type": "add",
+          "blockId": "604",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "610",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "661",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 3
+        },
+        {
+          "type": "add",
+          "blockId": "752",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S4": [
+        {
+          "type": "add",
+          "blockId": "319",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "404",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 3
+        },
+        {
+          "type": "read",
+          "blockId": "843",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 3
+        }
+      ],
+      "C1S4-3": [
+        {
+          "type": "read",
+          "blockId": "300",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 3
+        },
+        {
+          "type": "add",
+          "blockId": "733",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "892",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "985",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        }
+      ],
+      "C2S1-1": [
+        {
+          "type": "add",
+          "blockId": "194",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "冰冷": {
+    "name": "冰冷",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "711",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "101",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "暴露A804": {
+    "name": "暴露A804",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "797",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "807",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "英雄登场": {
+    "name": "英雄登场",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "1032",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S3": [
+        {
+          "type": "read",
+          "blockId": "677",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C2S1-1": [
+        {
+          "type": "read",
+          "blockId": "260",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "265",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 0
+        }
+      ]
+    }
+  },
+  "PlayerIsHero": {
+    "name": "PlayerIsHero",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "1060",
+          "blockType": "Message",
+          "scope": "gv",
+          "value": "100"
+        }
+      ]
+    }
+  },
+  "PlayerIsMachine": {
+    "name": "PlayerIsMachine",
+    "type": "number",
+    "usages": {
+      "C1S1": [
+        {
+          "type": "add",
+          "blockId": "1090",
+          "blockType": "Message",
+          "scope": "gv",
+          "value": "100"
+        }
+      ]
+    }
+  },
+  "发怒": {
+    "name": "发怒",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "129",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "155",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "500",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "等待超时": {
+    "name": "等待超时",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "154",
+          "blockType": "Waiting",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "203",
+          "blockType": "Waiting",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "398",
+          "blockType": "Waiting",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "935",
+          "blockType": "Waiting",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S4": [
+        {
+          "type": "add",
+          "blockId": "102",
+          "blockType": "Waiting",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "我买了游戏": {
+    "name": "我买了游戏",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "201",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "570超时": {
+    "name": "570超时",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "204",
+          "blockType": "Empty",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "507超时": {
+    "name": "507超时",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "read",
+          "blockId": "205",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        },
+        {
+          "type": "read",
+          "blockId": "206",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 0
+        }
+      ]
+    }
+  },
+  "猜测黑客": {
+    "name": "猜测黑客",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "242",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "262",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "回答七完成": {
+    "name": "回答七完成",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "510",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S4": [
+        {
+          "type": "read",
+          "blockId": "769",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "观测超时": {
+    "name": "观测超时",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "714",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "717",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        },
+        {
+          "type": "read",
+          "blockId": "718",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "回应超时": {
+    "name": "回应超时",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "743",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "746",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 2
+        },
+        {
+          "type": "read",
+          "blockId": "747",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "去应急补给仓": {
+    "name": "去应急补给仓",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "760",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "867",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "1458",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S3": [
+        {
+          "type": "read",
+          "blockId": "1002",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "去正式补给仓": {
+    "name": "去正式补给仓",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "761",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "1441",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "责备": {
+    "name": "责备",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "787",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "多看看周围": {
+    "name": "多看看周围",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "841",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "询问状态糟糕": {
+    "name": "询问状态糟糕",
+    "type": "number",
+    "usages": {
+      "C1S2": [
+        {
+          "type": "add",
+          "blockId": "930",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "你不会半路饿死吧": {
+    "name": "你不会半路饿死吧",
+    "type": "number",
+    "usages": {
+      "C1S3": [
+        {
+          "type": "read",
+          "blockId": "111",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "机器人大人": {
+    "name": "机器人大人",
+    "type": "number",
+    "usages": {
+      "C1S3": [
+        {
+          "type": "read",
+          "blockId": "678",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "奥特曼": {
+    "name": "奥特曼",
+    "type": "number",
+    "usages": {
+      "C1S3": [
+        {
+          "type": "add",
+          "blockId": "720",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "善良": {
+    "name": "善良",
+    "type": "number",
+    "usages": {
+      "C1S4": [
+        {
+          "type": "add",
+          "blockId": "112",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "回答一完成": {
+    "name": "回答一完成",
+    "type": "number",
+    "usages": {
+      "C1S4": [
+        {
+          "type": "read",
+          "blockId": "751",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "753",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "回答二完成": {
+    "name": "回答二完成",
+    "type": "number",
+    "usages": {
+      "C1S4": [
+        {
+          "type": "read",
+          "blockId": "754",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "756",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "回答三完成": {
+    "name": "回答三完成",
+    "type": "number",
+    "usages": {
+      "C1S4": [
+        {
+          "type": "read",
+          "blockId": "757",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "759",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "回答四完成": {
+    "name": "回答四完成",
+    "type": "number",
+    "usages": {
+      "C1S4": [
+        {
+          "type": "read",
+          "blockId": "760",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "762",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "回答五完成": {
+    "name": "回答五完成",
+    "type": "number",
+    "usages": {
+      "C1S4": [
+        {
+          "type": "read",
+          "blockId": "763",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "765",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "回答六完成": {
+    "name": "回答六完成",
+    "type": "number",
+    "usages": {
+      "C1S4": [
+        {
+          "type": "read",
+          "blockId": "766",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "768",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "不在一个世界": {
+    "name": "不在一个世界",
+    "type": "number",
+    "usages": {
+      "C1S4": [
+        {
+          "type": "add",
+          "blockId": "941",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "943",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "960",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "971",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "992",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S4-3": [
+        {
+          "type": "read",
+          "blockId": "521",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "芝麻开门": {
+    "name": "芝麻开门",
+    "type": "number",
+    "usages": {
+      "C1S4-2": [
+        {
+          "type": "read",
+          "blockId": "354",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "等到超时": {
+    "name": "等到超时",
+    "type": "number",
+    "usages": {
+      "C1S4-2": [
+        {
+          "type": "add",
+          "blockId": "567",
+          "blockType": "Waiting",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "SunAndMoon": {
+    "name": "SunAndMoon",
+    "type": "number",
+    "usages": {
+      "C1S4-2": [
+        {
+          "type": "read",
+          "blockId": "1035",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "1043",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "1053",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "1063",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "1071",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "高热量": {
+    "name": "高热量",
+    "type": "number",
+    "usages": {
+      "C1S4-2": [
+        {
+          "type": "add",
+          "blockId": "1250",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "1253",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "1270",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C1S4-3": [
+        {
+          "type": "read",
+          "blockId": "1011",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "低热量": {
+    "name": "低热量",
+    "type": "number",
+    "usages": {
+      "C1S4-2": [
+        {
+          "type": "add",
+          "blockId": "1251",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "1271",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "喜欢奇特场景": {
+    "name": "喜欢奇特场景",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "230",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "早晨": {
+    "name": "早晨",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "604",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "630",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C2S1": [
+        {
+          "type": "read",
+          "blockId": "1020",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "中午": {
+    "name": "中午",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "605",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "611",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "631",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C2S1": [
+        {
+          "type": "read",
+          "blockId": "1021",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "下午": {
+    "name": "下午",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "606",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "632",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C2S1": [
+        {
+          "type": "read",
+          "blockId": "1022",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "傍晚": {
+    "name": "傍晚",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "607",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "633",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C2S1": [
+        {
+          "type": "read",
+          "blockId": "1023",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "晚上": {
+    "name": "晚上",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "608",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "634",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C2S1": [
+        {
+          "type": "read",
+          "blockId": "1024",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "凌晨": {
+    "name": "凌晨",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "609",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "635",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ],
+      "C2S1": [
+        {
+          "type": "read",
+          "blockId": "1025",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "看了照片": {
+    "name": "看了照片",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "730",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "731",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "add",
+          "blockId": "732",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "修补防护服": {
+    "name": "修补防护服",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "841",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "FixClothes": {
+    "name": "FixClothes",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "855",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "消耗点数": {
+    "name": "消耗点数",
+    "type": "number",
+    "usages": {
+      "C1S4-3": [
+        {
+          "type": "add",
+          "blockId": "1012",
+          "blockType": "System",
+          "scope": "pv",
+          "value": 10
+        }
+      ]
+    }
+  },
+  "C2S1Answer1": {
+    "name": "C2S1Answer1",
+    "type": "number",
+    "usages": {
+      "C2S1": [
+        {
+          "type": "add",
+          "blockId": "300",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "330",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "C2S1Answer2": {
+    "name": "C2S1Answer2",
+    "type": "number",
+    "usages": {
+      "C2S1": [
+        {
+          "type": "add",
+          "blockId": "301",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "331",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "C2S1Answer3": {
+    "name": "C2S1Answer3",
+    "type": "number",
+    "usages": {
+      "C2S1": [
+        {
+          "type": "add",
+          "blockId": "302",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "332",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "C2S1Answer4": {
+    "name": "C2S1Answer4",
+    "type": "number",
+    "usages": {
+      "C2S1": [
+        {
+          "type": "add",
+          "blockId": "303",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "333",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "SaveChile": {
+    "name": "SaveChile",
+    "type": "number",
+    "usages": {
+      "C2S1-1": [
+        {
+          "type": "add",
+          "blockId": "720",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": "0"
+        },
+        {
+          "type": "add",
+          "blockId": "721",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": "5"
+        },
+        {
+          "type": "add",
+          "blockId": "725",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": "5"
+        }
+      ],
+      "C2S1-3": [
+        {
+          "type": "read",
+          "blockId": "162",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "350",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "提提我": {
+    "name": "提提我",
+    "type": "number",
+    "usages": {
+      "C2S1-1": [
+        {
+          "type": "add",
+          "blockId": "852",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "玩家吃醋": {
+    "name": "玩家吃醋",
+    "type": "number",
+    "usages": {
+      "C2S1-1": [
+        {
+          "type": "add",
+          "blockId": "1020",
+          "blockType": "OpenOption",
+          "scope": "pv",
+          "value": 1
+        },
+        {
+          "type": "read",
+          "blockId": "1235",
+          "blockType": "Check",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "拍拍玩家": {
+    "name": "拍拍玩家",
+    "type": "number",
+    "usages": {
+      "C2S1-1": [
+        {
+          "type": "add",
+          "blockId": "1060",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "完美避开危险": {
+    "name": "完美避开危险",
+    "type": "number",
+    "usages": {
+      "C2S2": [
+        {
+          "type": "add",
+          "blockId": "453",
+          "blockType": "Message",
+          "scope": "pv",
+          "value": 1
+        }
+      ]
+    }
+  }
+}

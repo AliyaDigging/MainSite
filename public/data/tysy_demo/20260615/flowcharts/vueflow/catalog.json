@@ -1,0 +1,691 @@
+{
+  "catalog": {
+    "1StoryEnter": {
+      "counts": {
+        "node": 9,
+        "edge": 8,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "OneGameOver": {
+          "key": "OneGameOver",
+          "type": "number",
+          "scope": "gv"
+        },
+        "好感度": {
+          "key": "好感度",
+          "type": "number",
+          "scope": "gv"
+        }
+      },
+      "flowchartRefs": [
+        "C1S1V2",
+        "C1S1"
+      ],
+      "currName": "1StoryEnter"
+    },
+    "C1S1": {
+      "counts": {
+        "node": 636,
+        "edge": 752,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "好感度": {
+          "key": "好感度",
+          "type": "number",
+          "scope": "pv"
+        },
+        "焦虑": {
+          "key": "焦虑",
+          "type": "number",
+          "scope": "pv"
+        },
+        "我怎么会这么笨": {
+          "key": "我怎么会这么笨",
+          "type": "number",
+          "scope": "pv"
+        },
+        "不相信迷信": {
+          "key": "不相信迷信",
+          "type": "number",
+          "scope": "pv"
+        },
+        "GameOverSecond": {
+          "key": "GameOverSecond",
+          "type": "number",
+          "scope": "gv"
+        },
+        "回应后搁置": {
+          "key": "回应后搁置",
+          "type": "number",
+          "scope": "pv"
+        },
+        "友善": {
+          "key": "友善",
+          "type": "number",
+          "scope": "pv"
+        },
+        "搞怪": {
+          "key": "搞怪",
+          "type": "number",
+          "scope": "pv"
+        },
+        "冰冷": {
+          "key": "冰冷",
+          "type": "number",
+          "scope": "pv"
+        },
+        "暴露A804": {
+          "key": "暴露A804",
+          "type": "number",
+          "scope": "pv"
+        },
+        "英雄登场": {
+          "key": "英雄登场",
+          "type": "number",
+          "scope": "pv"
+        },
+        "PlayerIsHero": {
+          "key": "PlayerIsHero",
+          "type": "number",
+          "scope": "gv"
+        },
+        "PlayerIsMachine": {
+          "key": "PlayerIsMachine",
+          "type": "number",
+          "scope": "gv"
+        }
+      },
+      "flowchartRefs": [
+        "GameOver",
+        "C1S2"
+      ],
+      "currName": "C1S1"
+    },
+    "C1S2": {
+      "counts": {
+        "node": 813,
+        "edge": 1073,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "友善": {
+          "key": "友善",
+          "type": "number",
+          "scope": "pv"
+        },
+        "冰冷": {
+          "key": "冰冷",
+          "type": "number",
+          "scope": "pv"
+        },
+        "搞怪": {
+          "key": "搞怪",
+          "type": "number",
+          "scope": "pv"
+        },
+        "发怒": {
+          "key": "发怒",
+          "type": "number",
+          "scope": "pv"
+        },
+        "好感度": {
+          "key": "好感度",
+          "type": "number",
+          "scope": "pv"
+        },
+        "等待超时": {
+          "key": "等待超时",
+          "type": "number",
+          "scope": "pv"
+        },
+        "我买了游戏": {
+          "key": "我买了游戏",
+          "type": "number",
+          "scope": "pv"
+        },
+        "570超时": {
+          "key": "570超时",
+          "type": "number",
+          "scope": "pv"
+        },
+        "507超时": {
+          "key": "507超时",
+          "type": "number",
+          "scope": "pv"
+        },
+        "猜测黑客": {
+          "key": "猜测黑客",
+          "type": "number",
+          "scope": "pv"
+        },
+        "回答七完成": {
+          "key": "回答七完成",
+          "type": "number",
+          "scope": "pv"
+        },
+        "观测超时": {
+          "key": "观测超时",
+          "type": "number",
+          "scope": "pv"
+        },
+        "回应超时": {
+          "key": "回应超时",
+          "type": "number",
+          "scope": "pv"
+        },
+        "去应急补给仓": {
+          "key": "去应急补给仓",
+          "type": "number",
+          "scope": "pv"
+        },
+        "去正式补给仓": {
+          "key": "去正式补给仓",
+          "type": "number",
+          "scope": "pv"
+        },
+        "责备": {
+          "key": "责备",
+          "type": "number",
+          "scope": "pv"
+        },
+        "多看看周围": {
+          "key": "多看看周围",
+          "type": "number",
+          "scope": "pv"
+        },
+        "询问状态糟糕": {
+          "key": "询问状态糟糕",
+          "type": "number",
+          "scope": "pv"
+        }
+      },
+      "flowchartRefs": [
+        "GameOver",
+        "C1S3"
+      ],
+      "currName": "C1S2"
+    },
+    "C1S3": {
+      "counts": {
+        "node": 285,
+        "edge": 364,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "好感度": {
+          "key": "好感度",
+          "type": "number",
+          "scope": "pv"
+        },
+        "你不会半路饿死吧": {
+          "key": "你不会半路饿死吧",
+          "type": "number",
+          "scope": "pv"
+        },
+        "搞怪": {
+          "key": "搞怪",
+          "type": "number",
+          "scope": "pv"
+        },
+        "英雄登场": {
+          "key": "英雄登场",
+          "type": "number",
+          "scope": "pv"
+        },
+        "机器人大人": {
+          "key": "机器人大人",
+          "type": "number",
+          "scope": "pv"
+        },
+        "奥特曼": {
+          "key": "奥特曼",
+          "type": "number",
+          "scope": "pv"
+        },
+        "友善": {
+          "key": "友善",
+          "type": "number",
+          "scope": "pv"
+        },
+        "去应急补给仓": {
+          "key": "去应急补给仓",
+          "type": "number",
+          "scope": "pv"
+        }
+      },
+      "flowchartRefs": [
+        "GameOver",
+        "C1S4"
+      ],
+      "currName": "C1S3"
+    },
+    "C1S4": {
+      "counts": {
+        "node": 472,
+        "edge": 604,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "好感度": {
+          "key": "好感度",
+          "type": "number",
+          "scope": "pv"
+        },
+        "等待超时": {
+          "key": "等待超时",
+          "type": "number",
+          "scope": "pv"
+        },
+        "善良": {
+          "key": "善良",
+          "type": "number",
+          "scope": "pv"
+        },
+        "搞怪": {
+          "key": "搞怪",
+          "type": "number",
+          "scope": "pv"
+        },
+        "回答一完成": {
+          "key": "回答一完成",
+          "type": "number",
+          "scope": "pv"
+        },
+        "回答二完成": {
+          "key": "回答二完成",
+          "type": "number",
+          "scope": "pv"
+        },
+        "回答三完成": {
+          "key": "回答三完成",
+          "type": "number",
+          "scope": "pv"
+        },
+        "回答四完成": {
+          "key": "回答四完成",
+          "type": "number",
+          "scope": "pv"
+        },
+        "回答五完成": {
+          "key": "回答五完成",
+          "type": "number",
+          "scope": "pv"
+        },
+        "回答六完成": {
+          "key": "回答六完成",
+          "type": "number",
+          "scope": "pv"
+        },
+        "回答七完成": {
+          "key": "回答七完成",
+          "type": "number",
+          "scope": "pv"
+        },
+        "不在一个世界": {
+          "key": "不在一个世界",
+          "type": "number",
+          "scope": "pv"
+        }
+      },
+      "flowchartRefs": [
+        "GameOver",
+        "C1S4-2"
+      ],
+      "currName": "C1S4"
+    },
+    "C1S4-2": {
+      "counts": {
+        "node": 506,
+        "edge": 637,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "芝麻开门": {
+          "key": "芝麻开门",
+          "type": "number",
+          "scope": "pv"
+        },
+        "等到超时": {
+          "key": "等到超时",
+          "type": "number",
+          "scope": "pv"
+        },
+        "SunAndMoon": {
+          "key": "SunAndMoon",
+          "type": "number",
+          "scope": "pv"
+        },
+        "高热量": {
+          "key": "高热量",
+          "type": "number",
+          "scope": "pv"
+        },
+        "低热量": {
+          "key": "低热量",
+          "type": "number",
+          "scope": "pv"
+        }
+      },
+      "flowchartRefs": [
+        "GameOver",
+        "C1S4-3"
+      ],
+      "currName": "C1S4-2"
+    },
+    "C1S4-3": {
+      "counts": {
+        "node": 615,
+        "edge": 819,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "喜欢奇特场景": {
+          "key": "喜欢奇特场景",
+          "type": "number",
+          "scope": "pv"
+        },
+        "搞怪": {
+          "key": "搞怪",
+          "type": "number",
+          "scope": "pv"
+        },
+        "不在一个世界": {
+          "key": "不在一个世界",
+          "type": "number",
+          "scope": "pv"
+        },
+        "早晨": {
+          "key": "早晨",
+          "type": "number",
+          "scope": "pv"
+        },
+        "中午": {
+          "key": "中午",
+          "type": "number",
+          "scope": "pv"
+        },
+        "下午": {
+          "key": "下午",
+          "type": "number",
+          "scope": "pv"
+        },
+        "傍晚": {
+          "key": "傍晚",
+          "type": "number",
+          "scope": "pv"
+        },
+        "晚上": {
+          "key": "晚上",
+          "type": "number",
+          "scope": "pv"
+        },
+        "凌晨": {
+          "key": "凌晨",
+          "type": "number",
+          "scope": "pv"
+        },
+        "看了照片": {
+          "key": "看了照片",
+          "type": "number",
+          "scope": "pv"
+        },
+        "修补防护服": {
+          "key": "修补防护服",
+          "type": "number",
+          "scope": "pv"
+        },
+        "FixClothes": {
+          "key": "FixClothes",
+          "type": "number",
+          "scope": "pv"
+        },
+        "好感度": {
+          "key": "好感度",
+          "type": "number",
+          "scope": "pv"
+        },
+        "友善": {
+          "key": "友善",
+          "type": "number",
+          "scope": "pv"
+        },
+        "高热量": {
+          "key": "高热量",
+          "type": "number",
+          "scope": "pv"
+        },
+        "消耗点数": {
+          "key": "消耗点数",
+          "type": "number",
+          "scope": "pv"
+        },
+        "我怎么会这么笨": {
+          "key": "我怎么会这么笨",
+          "type": "number",
+          "scope": "pv"
+        }
+      },
+      "flowchartRefs": [
+        "GameOver",
+        "C2S1"
+      ],
+      "currName": "C1S4-3"
+    },
+    "C2S1": {
+      "counts": {
+        "node": 327,
+        "edge": 435,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "C2S1Answer1": {
+          "key": "C2S1Answer1",
+          "type": "number",
+          "scope": "pv"
+        },
+        "C2S1Answer2": {
+          "key": "C2S1Answer2",
+          "type": "number",
+          "scope": "pv"
+        },
+        "C2S1Answer3": {
+          "key": "C2S1Answer3",
+          "type": "number",
+          "scope": "pv"
+        },
+        "C2S1Answer4": {
+          "key": "C2S1Answer4",
+          "type": "number",
+          "scope": "pv"
+        },
+        "早晨": {
+          "key": "早晨",
+          "type": "number",
+          "scope": "pv"
+        },
+        "中午": {
+          "key": "中午",
+          "type": "number",
+          "scope": "pv"
+        },
+        "下午": {
+          "key": "下午",
+          "type": "number",
+          "scope": "pv"
+        },
+        "傍晚": {
+          "key": "傍晚",
+          "type": "number",
+          "scope": "pv"
+        },
+        "晚上": {
+          "key": "晚上",
+          "type": "number",
+          "scope": "pv"
+        },
+        "凌晨": {
+          "key": "凌晨",
+          "type": "number",
+          "scope": "pv"
+        }
+      },
+      "flowchartRefs": [
+        "GameOver",
+        "C2S1-1"
+      ],
+      "currName": "C2S1"
+    },
+    "C2S1-1": {
+      "counts": {
+        "node": 552,
+        "edge": 702,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "搞怪": {
+          "key": "搞怪",
+          "type": "number",
+          "scope": "pv"
+        },
+        "英雄登场": {
+          "key": "英雄登场",
+          "type": "number",
+          "scope": "pv"
+        },
+        "SaveChile": {
+          "key": "SaveChile",
+          "type": "number",
+          "scope": "pv"
+        },
+        "提提我": {
+          "key": "提提我",
+          "type": "number",
+          "scope": "pv"
+        },
+        "玩家吃醋": {
+          "key": "玩家吃醋",
+          "type": "number",
+          "scope": "pv"
+        },
+        "拍拍玩家": {
+          "key": "拍拍玩家",
+          "type": "number",
+          "scope": "pv"
+        }
+      },
+      "flowchartRefs": [
+        "GameOver",
+        "C2S1-3"
+      ],
+      "currName": "C2S1-1"
+    },
+    "C2S1-3": {
+      "counts": {
+        "node": 439,
+        "edge": 579,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "SaveChile": {
+          "key": "SaveChile",
+          "type": "number",
+          "scope": "pv"
+        }
+      },
+      "flowchartRefs": [
+        "GameOver",
+        "C2S2"
+      ],
+      "currName": "C2S1-3"
+    },
+    "C2S2": {
+      "counts": {
+        "node": 498,
+        "edge": 628,
+        "otherFlowcharts": 2
+      },
+      "variableNames": {
+        "完美避开危险": {
+          "key": "完美避开危险",
+          "type": "number",
+          "scope": "pv"
+        }
+      },
+      "flowchartRefs": [
+        "GameOver",
+        "DomeOver"
+      ],
+      "currName": "C2S2"
+    },
+    "DomeOver": {
+      "counts": {
+        "node": 4,
+        "edge": 4,
+        "otherFlowcharts": 0
+      },
+      "variableNames": {},
+      "flowchartRefs": [],
+      "currName": "DomeOver"
+    },
+    "GameOver": {
+      "counts": {
+        "node": 7,
+        "edge": 8,
+        "otherFlowcharts": 0
+      },
+      "variableNames": {},
+      "flowchartRefs": [],
+      "currName": "GameOver"
+    }
+  },
+  "flowchartBeingRefed": {
+    "1StoryEnter": [],
+    "C1S1": [
+      "1StoryEnter"
+    ],
+    "C1S2": [
+      "C1S1"
+    ],
+    "C1S3": [
+      "C1S2"
+    ],
+    "C1S4": [
+      "C1S3"
+    ],
+    "C1S4-2": [
+      "C1S4"
+    ],
+    "C1S4-3": [
+      "C1S4-2"
+    ],
+    "C2S1": [
+      "C1S4-3"
+    ],
+    "C2S1-1": [
+      "C2S1"
+    ],
+    "C2S1-3": [
+      "C2S1-1"
+    ],
+    "C2S2": [
+      "C2S1-3"
+    ],
+    "DomeOver": [
+      "C2S2"
+    ],
+    "GameOver": [
+      "C1S1",
+      "C1S2",
+      "C1S3",
+      "C1S4",
+      "C1S4-2",
+      "C1S4-3",
+      "C2S1",
+      "C2S1-1",
+      "C2S1-3",
+      "C2S2"
+    ]
+  }
+}

@@ -1,0 +1,7927 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 285,
+      "edge": 364,
+      "otherFlowcharts": 2
+    },
+    "variableNames": {
+      "好感度": {
+        "key": "好感度",
+        "type": "number",
+        "scope": "pv"
+      },
+      "你不会半路饿死吧": {
+        "key": "你不会半路饿死吧",
+        "type": "number",
+        "scope": "pv"
+      },
+      "搞怪": {
+        "key": "搞怪",
+        "type": "number",
+        "scope": "pv"
+      },
+      "英雄登场": {
+        "key": "英雄登场",
+        "type": "number",
+        "scope": "pv"
+      },
+      "机器人大人": {
+        "key": "机器人大人",
+        "type": "number",
+        "scope": "pv"
+      },
+      "奥特曼": {
+        "key": "奥特曼",
+        "type": "number",
+        "scope": "pv"
+      },
+      "友善": {
+        "key": "友善",
+        "type": "number",
+        "scope": "pv"
+      },
+      "去应急补给仓": {
+        "key": "去应急补给仓",
+        "type": "number",
+        "scope": "pv"
+      }
+    },
+    "flowchartRefs": [
+      "GameOver",
+      "C1S4"
+    ],
+    "currName": "C1S3"
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "2",
+        "position": {
+          "x": 500,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "currIndex": 2,
+          "nextIndex": 100,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "5",
+        "position": {
+          "x": 1250,
+          "y": 0
+        },
+        "type": "SwitchFile",
+        "data": {
+          "currIndex": 5,
+          "nextIndex": 6,
+          "targetFile": "GameOver"
+        }
+      },
+      {
+        "id": "100",
+        "position": {
+          "x": 25000,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 100,
+          "nextIndex": 101,
+          "waitTime": 600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "101",
+        "position": {
+          "x": 25250,
+          "y": 0
+        },
+        "type": "Set804Position",
+        "data": {
+          "currIndex": 101,
+          "nextIndex": 102,
+          "targetPointId": "201",
+          "runtime": 3600,
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 4
+          }
+        }
+      },
+      {
+        "id": "102",
+        "position": {
+          "x": 25500,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 102,
+          "nextIndex": 110,
+          "waitTime": 1200,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 4
+          }
+        }
+      },
+      {
+        "id": "102_Default",
+        "position": {
+          "x": 25500,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 102,
+          "nextIndex": 103,
+          "timeout": 1200
+        }
+      },
+      {
+        "id": "103",
+        "position": {
+          "x": 25750,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 103,
+          "nextIndex": 400,
+          "waitTime": 1200,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "103_Default",
+        "position": {
+          "x": 25750,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 103,
+          "nextIndex": 104,
+          "timeout": 1200
+        }
+      },
+      {
+        "id": "104",
+        "position": {
+          "x": 26000,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 104,
+          "nextIndex": 1002,
+          "waitTime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "110",
+        "position": {
+          "x": 27500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 110,
+          "nextIndex": 111,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "Achievement",
+            "achId": "WAHT_ARE_YOU_SPEEK_REACENTLY"
+          }
+        }
+      },
+      {
+        "id": "111",
+        "position": {
+          "x": 27750,
+          "y": 0
+        },
+        "type": "Check",
+        "data": {
+          "currIndex": 111,
+          "variableScope": "pv",
+          "variableName": "你不会半路饿死吧",
+          "valueGreater": 1,
+          "successIndex": 300,
+          "failureIndex": 112,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "112",
+        "position": {
+          "x": 28000,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 112,
+          "nextIndex": 113,
+          "waitTime": 3,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "113",
+        "position": {
+          "x": 28250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 113,
+          "nextIndex": 114,
+          "waitTime": 2.484806508,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "120",
+        "position": {
+          "x": 30000,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 120,
+          "nextIndex": 130,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "120_Default",
+        "position": {
+          "x": 30000,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 120,
+          "nextIndex": 121,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "121",
+        "position": {
+          "x": 30250,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 121,
+          "nextIndex": 131,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "121_Default",
+        "position": {
+          "x": 30250,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 121,
+          "nextIndex": 122,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "122",
+        "position": {
+          "x": 30500,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 122,
+          "nextIndex": 123,
+          "waitTime": 300,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "123",
+        "position": {
+          "x": 30750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 123,
+          "nextIndex": 124,
+          "waitTime": 2.080064779,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "124",
+        "position": {
+          "x": 31000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 124,
+          "nextIndex": 125,
+          "waitTime": 2.415265411,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "125",
+        "position": {
+          "x": 31250,
+          "y": 0
+        },
+        "type": "System",
+        "data": {
+          "currIndex": 125,
+          "nextIndex": 126,
+          "waitTime": 2,
+          "senderId": "System",
+          "chatScene": "C804",
+          "highlightTimeout": 9,
+          "extraAction": {
+            "type": "sfx",
+            "sfxGroupName": "breath"
+          }
+        }
+      },
+      {
+        "id": "126",
+        "position": {
+          "x": 31500,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 126,
+          "nextIndex": 1000,
+          "waitTime": 10,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "130",
+        "position": {
+          "x": 32500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 130,
+          "nextIndex": 135,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "131",
+        "position": {
+          "x": 32750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 131,
+          "nextIndex": 200,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "135",
+        "position": {
+          "x": 33750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 135,
+          "nextIndex": 136,
+          "waitTime": 2.828895175,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "136",
+        "position": {
+          "x": 34000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 136,
+          "nextIndex": 137,
+          "waitTime": 2.91884381,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "137",
+        "position": {
+          "x": 34250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 137,
+          "nextIndex": 138,
+          "waitTime": 2.460448134,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "138",
+        "position": {
+          "x": 34500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 138,
+          "nextIndex": 139,
+          "waitTime": 2.564508637,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "139",
+        "position": {
+          "x": 34750,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 139,
+          "nextIndex": 150,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "139_Default",
+        "position": {
+          "x": 34750,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 139,
+          "nextIndex": 140,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "140",
+        "position": {
+          "x": 35000,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 140,
+          "nextIndex": 151,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "140_Default",
+        "position": {
+          "x": 35000,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 140,
+          "nextIndex": 141,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "141",
+        "position": {
+          "x": 35250,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 141,
+          "nextIndex": 142,
+          "waitTime": 300,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "142",
+        "position": {
+          "x": 35500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 142,
+          "nextIndex": 143,
+          "waitTime": 2.961755921,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "143",
+        "position": {
+          "x": 35750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 143,
+          "nextIndex": 144,
+          "waitTime": 2.696744295,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "144",
+        "position": {
+          "x": 36000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 144,
+          "nextIndex": 145,
+          "waitTime": 2.423021502,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "145",
+        "position": {
+          "x": 36250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 145,
+          "nextIndex": 1000,
+          "waitTime": 2.098292833,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "150",
+        "position": {
+          "x": 37500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 150,
+          "nextIndex": 160,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "151",
+        "position": {
+          "x": 37750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 151,
+          "nextIndex": 170,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "160",
+        "position": {
+          "x": 40000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 160,
+          "nextIndex": 161,
+          "waitTime": 2.320498534,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "161",
+        "position": {
+          "x": 40250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 161,
+          "nextIndex": 162,
+          "waitTime": 2.82038482,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "162",
+        "position": {
+          "x": 40500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 162,
+          "nextIndex": 163,
+          "waitTime": 2.983983361,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "163",
+        "position": {
+          "x": 40750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 163,
+          "nextIndex": 164,
+          "waitTime": 2.616630278,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "164",
+        "position": {
+          "x": 41000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 164,
+          "nextIndex": 600,
+          "waitTime": 2.714882618,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "170",
+        "position": {
+          "x": 42500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 170,
+          "nextIndex": 171,
+          "waitTime": 2.451581488,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "171",
+        "position": {
+          "x": 42750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 171,
+          "nextIndex": 172,
+          "waitTime": 2.668623091,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "172",
+        "position": {
+          "x": 43000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 172,
+          "nextIndex": 173,
+          "waitTime": 2.049041654,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "173",
+        "position": {
+          "x": 43250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 173,
+          "nextIndex": 174,
+          "waitTime": 2.073403099,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "174",
+        "position": {
+          "x": 43500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 174,
+          "nextIndex": 600,
+          "waitTime": 2.431098249,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "200",
+        "position": {
+          "x": 50000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 200,
+          "nextIndex": 201,
+          "waitTime": 2.579320839,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "201",
+        "position": {
+          "x": 50250,
+          "y": 0
+        },
+        "type": "System",
+        "data": {
+          "currIndex": 201,
+          "nextIndex": 202,
+          "waitTime": 0,
+          "senderId": "System",
+          "chatScene": "C804",
+          "highlightTimeout": 10,
+          "extraAction": {
+            "type": "sfx",
+            "sfxGroupName": "breath"
+          }
+        }
+      },
+      {
+        "id": "202",
+        "position": {
+          "x": 50500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 202,
+          "nextIndex": 203,
+          "waitTime": 8,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "203",
+        "position": {
+          "x": 50750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 203,
+          "nextIndex": 204,
+          "waitTime": 2.420505726,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "204",
+        "position": {
+          "x": 51000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 204,
+          "nextIndex": 205,
+          "waitTime": 2.584110731,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "205",
+        "position": {
+          "x": 51250,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 205,
+          "nextIndex": 220,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "205_Default",
+        "position": {
+          "x": 51250,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 205,
+          "nextIndex": 206,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "206",
+        "position": {
+          "x": 51500,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 206,
+          "nextIndex": 221,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "206_Default",
+        "position": {
+          "x": 51500,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 206,
+          "nextIndex": 207,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "207",
+        "position": {
+          "x": 51750,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 207,
+          "nextIndex": 222,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "207_Default",
+        "position": {
+          "x": 51750,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 207,
+          "nextIndex": 208,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "208",
+        "position": {
+          "x": 52000,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 208,
+          "nextIndex": 209,
+          "waitTime": 300,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "209",
+        "position": {
+          "x": 52250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 209,
+          "nextIndex": 210,
+          "waitTime": 2.346799159,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "210",
+        "position": {
+          "x": 52500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 210,
+          "nextIndex": 211,
+          "waitTime": 2.040339998,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "211",
+        "position": {
+          "x": 52750,
+          "y": 0
+        },
+        "type": "System",
+        "data": {
+          "currIndex": 211,
+          "nextIndex": 212,
+          "waitTime": 1,
+          "senderId": "System",
+          "chatScene": "C804",
+          "highlightTimeout": 6,
+          "extraAction": {
+            "type": "sfx",
+            "sfxGroupName": "breath"
+          }
+        }
+      },
+      {
+        "id": "212",
+        "position": {
+          "x": 53000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 212,
+          "nextIndex": 1000,
+          "waitTime": 2.288824534,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "220",
+        "position": {
+          "x": 55000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 220,
+          "nextIndex": 230,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "221",
+        "position": {
+          "x": 55250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 221,
+          "nextIndex": 240,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "222",
+        "position": {
+          "x": 55500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 222,
+          "nextIndex": 250,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "230",
+        "position": {
+          "x": 57500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 230,
+          "nextIndex": 231,
+          "waitTime": 2.752131302,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "231",
+        "position": {
+          "x": 57750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 231,
+          "nextIndex": 232,
+          "waitTime": 2.956816942,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "232",
+        "position": {
+          "x": 58000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 232,
+          "nextIndex": 600,
+          "waitTime": 2.115990152,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "240",
+        "position": {
+          "x": 60000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 240,
+          "nextIndex": 241,
+          "waitTime": 2.869427877,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "241",
+        "position": {
+          "x": 60250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 241,
+          "nextIndex": 242,
+          "waitTime": 2.5812268,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "242",
+        "position": {
+          "x": 60500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 242,
+          "nextIndex": 243,
+          "waitTime": 2.310611611,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "243",
+        "position": {
+          "x": 60750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 243,
+          "nextIndex": 600,
+          "waitTime": 2.567251396,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "250",
+        "position": {
+          "x": 62500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 250,
+          "nextIndex": 251,
+          "waitTime": 2.378199649,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "251",
+        "position": {
+          "x": 62750,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 251,
+          "nextIndex": 260,
+          "waitTime": 20,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "251_Default",
+        "position": {
+          "x": 62750,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 251,
+          "nextIndex": 252,
+          "timeout": 20
+        }
+      },
+      {
+        "id": "252",
+        "position": {
+          "x": 63000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 252,
+          "nextIndex": 253,
+          "waitTime": 2.725379356,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "253",
+        "position": {
+          "x": 63250,
+          "y": 0
+        },
+        "type": "System",
+        "data": {
+          "currIndex": 253,
+          "nextIndex": 254,
+          "waitTime": 1,
+          "senderId": "System",
+          "chatScene": "C804",
+          "highlightTimeout": 20,
+          "extraAction": {
+            "type": "sfx",
+            "sfxGroupName": "breath"
+          }
+        }
+      },
+      {
+        "id": "254",
+        "position": {
+          "x": 63500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 254,
+          "nextIndex": 255,
+          "waitTime": 20,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "255",
+        "position": {
+          "x": 63750,
+          "y": 0
+        },
+        "type": "System",
+        "data": {
+          "currIndex": 255,
+          "nextIndex": 1000,
+          "waitTime": 1,
+          "senderId": "System",
+          "chatScene": "C804",
+          "highlightTimeout": 2,
+          "extraAction": {
+            "type": "sfx",
+            "sfxGroupName": "breath"
+          }
+        }
+      },
+      {
+        "id": "260",
+        "position": {
+          "x": 65000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 260,
+          "nextIndex": 261,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "261",
+        "position": {
+          "x": 65250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 261,
+          "nextIndex": 262,
+          "waitTime": 2.596647971,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "262",
+        "position": {
+          "x": 65500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 262,
+          "nextIndex": 263,
+          "waitTime": 2.290146972,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "263",
+        "position": {
+          "x": 65750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 263,
+          "nextIndex": 264,
+          "waitTime": 2.348856907,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "264",
+        "position": {
+          "x": 66000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 264,
+          "nextIndex": 265,
+          "waitTime": 2.304789207,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "265",
+        "position": {
+          "x": 66250,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 265,
+          "nextIndex": 270,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "265_Default",
+        "position": {
+          "x": 66250,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 265,
+          "nextIndex": 266,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "266",
+        "position": {
+          "x": 66500,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 266,
+          "nextIndex": 267,
+          "waitTime": 300,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "267",
+        "position": {
+          "x": 66750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 267,
+          "nextIndex": 268,
+          "waitTime": 2.558924701,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "268",
+        "position": {
+          "x": 67000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 268,
+          "nextIndex": 1000,
+          "waitTime": 2.124057948,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "270",
+        "position": {
+          "x": 67500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 270,
+          "nextIndex": 271,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "271",
+        "position": {
+          "x": 67750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 271,
+          "nextIndex": 272,
+          "waitTime": 2.180475987,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "272",
+        "position": {
+          "x": 68000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 272,
+          "nextIndex": 600,
+          "waitTime": 2.012254575,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "300",
+        "position": {
+          "x": 75000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 300,
+          "nextIndex": 301,
+          "waitTime": 2.556649585,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "301",
+        "position": {
+          "x": 75250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 301,
+          "nextIndex": 302,
+          "waitTime": 2.42728978,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "302",
+        "position": {
+          "x": 75500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 302,
+          "nextIndex": 303,
+          "waitTime": 2.980015486,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "303",
+        "position": {
+          "x": 75750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 303,
+          "nextIndex": 304,
+          "waitTime": 2.190109612,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "304",
+        "position": {
+          "x": 76000,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 304,
+          "nextIndex": 320,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "304_Default",
+        "position": {
+          "x": 76000,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 304,
+          "nextIndex": 305,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "305",
+        "position": {
+          "x": 76250,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 305,
+          "nextIndex": 321,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "305_Default",
+        "position": {
+          "x": 76250,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 305,
+          "nextIndex": 306,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "306",
+        "position": {
+          "x": 76500,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 306,
+          "nextIndex": 307,
+          "waitTime": 300,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "307",
+        "position": {
+          "x": 76750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 307,
+          "nextIndex": 308,
+          "waitTime": 2.219218181,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "308",
+        "position": {
+          "x": 77000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 308,
+          "nextIndex": 309,
+          "waitTime": 2.233314325,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "309",
+        "position": {
+          "x": 77250,
+          "y": 0
+        },
+        "type": "System",
+        "data": {
+          "currIndex": 309,
+          "nextIndex": 310,
+          "waitTime": 2,
+          "senderId": "System",
+          "chatScene": "C804",
+          "highlightTimeout": 30,
+          "extraAction": {
+            "type": "sfx",
+            "sfxGroupName": "breath"
+          }
+        }
+      },
+      {
+        "id": "310",
+        "position": {
+          "x": 77500,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 310,
+          "nextIndex": 1000,
+          "waitTime": 10,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "320",
+        "position": {
+          "x": 80000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 320,
+          "nextIndex": 330,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "321",
+        "position": {
+          "x": 80250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 321,
+          "nextIndex": 340,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "330",
+        "position": {
+          "x": 82500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 330,
+          "nextIndex": 331,
+          "waitTime": 2.122760935,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "331",
+        "position": {
+          "x": 82750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 331,
+          "nextIndex": 332,
+          "waitTime": 2.57313362,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "332",
+        "position": {
+          "x": 83000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 332,
+          "nextIndex": 333,
+          "waitTime": 2.373347215,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "333",
+        "position": {
+          "x": 83250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 333,
+          "nextIndex": 138,
+          "waitTime": 2.440990928,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "340",
+        "position": {
+          "x": 85000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 340,
+          "nextIndex": 341,
+          "waitTime": 2.681759094,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "341",
+        "position": {
+          "x": 85250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 341,
+          "nextIndex": 342,
+          "waitTime": 2.007466993,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "342",
+        "position": {
+          "x": 85500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 342,
+          "nextIndex": 138,
+          "waitTime": 2.982657182,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "400",
+        "position": {
+          "x": 100000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 400,
+          "nextIndex": 401,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "401",
+        "position": {
+          "x": 100250,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 401,
+          "nextIndex": 402,
+          "waitTime": 3,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "402",
+        "position": {
+          "x": 100500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 402,
+          "nextIndex": 403,
+          "waitTime": 2.324121922,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "Achievement",
+            "achId": "YES_IM_HERE_ZML"
+          }
+        }
+      },
+      {
+        "id": "403",
+        "position": {
+          "x": 100750,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 403,
+          "nextIndex": 420,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "403_Default",
+        "position": {
+          "x": 100750,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 403,
+          "nextIndex": 404,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "404",
+        "position": {
+          "x": 101000,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 404,
+          "nextIndex": 421,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "404_Default",
+        "position": {
+          "x": 101000,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 404,
+          "nextIndex": 405,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "405",
+        "position": {
+          "x": 101250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 405,
+          "nextIndex": 406,
+          "waitTime": 2.118853067,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "406",
+        "position": {
+          "x": 101500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 406,
+          "nextIndex": 407,
+          "waitTime": 2.003557236,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "407",
+        "position": {
+          "x": 101750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 407,
+          "nextIndex": 408,
+          "waitTime": 2.516715398,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "408",
+        "position": {
+          "x": 102000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 408,
+          "nextIndex": 409,
+          "waitTime": 2.428029338,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "409",
+        "position": {
+          "x": 102250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 409,
+          "nextIndex": 1000,
+          "waitTime": 2.122006445,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "420",
+        "position": {
+          "x": 105000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 420,
+          "nextIndex": 430,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "421",
+        "position": {
+          "x": 105250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 421,
+          "nextIndex": 440,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "430",
+        "position": {
+          "x": 107500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 430,
+          "nextIndex": 431,
+          "waitTime": 2.092638335,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "431",
+        "position": {
+          "x": 107750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 431,
+          "nextIndex": 432,
+          "waitTime": 2.474321494,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "432",
+        "position": {
+          "x": 108000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 432,
+          "nextIndex": 433,
+          "waitTime": 2.36517811,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "433",
+        "position": {
+          "x": 108250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 433,
+          "nextIndex": 450,
+          "waitTime": 3,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "440",
+        "position": {
+          "x": 110000,
+          "y": 0
+        },
+        "type": "Check",
+        "data": {
+          "currIndex": 440,
+          "variableScope": "pv",
+          "variableName": "搞怪",
+          "valueGreater": 2,
+          "successIndex": 301,
+          "failureIndex": 200,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "450",
+        "position": {
+          "x": 112500,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 450,
+          "nextIndex": 460,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "450_Default",
+        "position": {
+          "x": 112500,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 450,
+          "nextIndex": 451,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "451",
+        "position": {
+          "x": 112750,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 451,
+          "nextIndex": 461,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "451_Default",
+        "position": {
+          "x": 112750,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 451,
+          "nextIndex": 452,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "452",
+        "position": {
+          "x": 113000,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 452,
+          "nextIndex": 453,
+          "waitTime": 300,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "460",
+        "position": {
+          "x": 115000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 460,
+          "nextIndex": 470,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "461",
+        "position": {
+          "x": 115250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 461,
+          "nextIndex": 480,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "470",
+        "position": {
+          "x": 117500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 470,
+          "nextIndex": 471,
+          "waitTime": 2.411930261,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "471",
+        "position": {
+          "x": 117750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 471,
+          "nextIndex": 472,
+          "waitTime": 2.238730537,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "472",
+        "position": {
+          "x": 118000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 472,
+          "nextIndex": 473,
+          "waitTime": 2.212220791,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "473",
+        "position": {
+          "x": 118250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 473,
+          "nextIndex": 600,
+          "waitTime": 2.85265334,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "480",
+        "position": {
+          "x": 120000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 480,
+          "nextIndex": 481,
+          "waitTime": 2.948747192,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "481",
+        "position": {
+          "x": 120250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 481,
+          "nextIndex": 482,
+          "waitTime": 2.547388157,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "482",
+        "position": {
+          "x": 120500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 482,
+          "nextIndex": 483,
+          "waitTime": 2.385572872,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "483",
+        "position": {
+          "x": 120750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 483,
+          "nextIndex": 484,
+          "waitTime": 2.558357275,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "484",
+        "position": {
+          "x": 121000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 484,
+          "nextIndex": 600,
+          "waitTime": 2.391156992,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "600",
+        "position": {
+          "x": 150000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 600,
+          "nextIndex": 601,
+          "waitTime": 2.525192035,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "601",
+        "position": {
+          "x": 150250,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 601,
+          "nextIndex": 620,
+          "waitTime": 900,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "601_Default",
+        "position": {
+          "x": 150250,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 601,
+          "nextIndex": 602,
+          "timeout": 900
+        }
+      },
+      {
+        "id": "602",
+        "position": {
+          "x": 150500,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 602,
+          "nextIndex": 621,
+          "waitTime": 900,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "602_Default",
+        "position": {
+          "x": 150500,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 602,
+          "nextIndex": 603,
+          "timeout": 900
+        }
+      },
+      {
+        "id": "603",
+        "position": {
+          "x": 150750,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 603,
+          "nextIndex": 622,
+          "waitTime": 900,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "603_Default",
+        "position": {
+          "x": 150750,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 603,
+          "nextIndex": 604,
+          "timeout": 900
+        }
+      },
+      {
+        "id": "604",
+        "position": {
+          "x": 151000,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 604,
+          "nextIndex": 623,
+          "waitTime": 900,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "搞怪",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "604_Default",
+        "position": {
+          "x": 151000,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 604,
+          "nextIndex": 605,
+          "timeout": 900
+        }
+      },
+      {
+        "id": "605",
+        "position": {
+          "x": 151250,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 605,
+          "nextIndex": 606,
+          "waitTime": 900,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "606",
+        "position": {
+          "x": 151500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 606,
+          "nextIndex": 607,
+          "waitTime": 2.941469023,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "607",
+        "position": {
+          "x": 151750,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 607,
+          "nextIndex": 620,
+          "waitTime": 120,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "607_Default",
+        "position": {
+          "x": 151750,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 607,
+          "nextIndex": 608,
+          "timeout": 120
+        }
+      },
+      {
+        "id": "608",
+        "position": {
+          "x": 152000,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 608,
+          "nextIndex": 621,
+          "waitTime": 120,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "608_Default",
+        "position": {
+          "x": 152000,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 608,
+          "nextIndex": 609,
+          "timeout": 120
+        }
+      },
+      {
+        "id": "609",
+        "position": {
+          "x": 152250,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 609,
+          "nextIndex": 622,
+          "waitTime": 120,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "好感度",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "609_Default",
+        "position": {
+          "x": 152250,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 609,
+          "nextIndex": 610,
+          "timeout": 120
+        }
+      },
+      {
+        "id": "610",
+        "position": {
+          "x": 152500,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 610,
+          "nextIndex": 623,
+          "waitTime": 120,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "搞怪",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "610_Default",
+        "position": {
+          "x": 152500,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 610,
+          "nextIndex": 611,
+          "timeout": 120
+        }
+      },
+      {
+        "id": "611",
+        "position": {
+          "x": 152750,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 611,
+          "nextIndex": 612,
+          "waitTime": 120,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "612",
+        "position": {
+          "x": 153000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 612,
+          "nextIndex": 613,
+          "waitTime": 2.49487871,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "613",
+        "position": {
+          "x": 153250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 613,
+          "nextIndex": 1000,
+          "waitTime": 2.689221468,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "620",
+        "position": {
+          "x": 155000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 620,
+          "nextIndex": 630,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "621",
+        "position": {
+          "x": 155250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 621,
+          "nextIndex": 640,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "622",
+        "position": {
+          "x": 155500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 622,
+          "nextIndex": 650,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "623",
+        "position": {
+          "x": 155750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 623,
+          "nextIndex": 660,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "630",
+        "position": {
+          "x": 157500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 630,
+          "nextIndex": 631,
+          "waitTime": 2.45647385,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "631",
+        "position": {
+          "x": 157750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 631,
+          "nextIndex": 608,
+          "waitTime": 2.83162197,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "640",
+        "position": {
+          "x": 160000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 640,
+          "nextIndex": 641,
+          "waitTime": 2.627096559,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "641",
+        "position": {
+          "x": 160250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 641,
+          "nextIndex": 642,
+          "waitTime": 2.079244621,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "642",
+        "position": {
+          "x": 160500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 642,
+          "nextIndex": 643,
+          "waitTime": 2.986727112,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "643",
+        "position": {
+          "x": 160750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 643,
+          "nextIndex": 740,
+          "waitTime": 2.45527694,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "650",
+        "position": {
+          "x": 162500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 650,
+          "nextIndex": 651,
+          "waitTime": 2.150923336,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "651",
+        "position": {
+          "x": 162750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 651,
+          "nextIndex": 652,
+          "waitTime": 2.617789922,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "652",
+        "position": {
+          "x": 163000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 652,
+          "nextIndex": 653,
+          "waitTime": 2.309324596,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "653",
+        "position": {
+          "x": 163250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 653,
+          "nextIndex": 740,
+          "waitTime": 2.025192188,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "660",
+        "position": {
+          "x": 165000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 660,
+          "nextIndex": 661,
+          "waitTime": 2.548263104,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "661",
+        "position": {
+          "x": 165250,
+          "y": 0
+        },
+        "type": "Check",
+        "data": {
+          "currIndex": 661,
+          "variableScope": "pv",
+          "variableName": "搞怪",
+          "valueGreater": 3,
+          "successIndex": 670,
+          "failureIndex": 720,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "670",
+        "position": {
+          "x": 167500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 670,
+          "nextIndex": 671,
+          "waitTime": 2.644309865,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "671",
+        "position": {
+          "x": 167750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 671,
+          "nextIndex": 672,
+          "waitTime": 2.475813312,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "672",
+        "position": {
+          "x": 168000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 672,
+          "nextIndex": 673,
+          "waitTime": 2.577022553,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "673",
+        "position": {
+          "x": 168250,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 673,
+          "nextIndex": 700,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "673_Default",
+        "position": {
+          "x": 168250,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 673,
+          "nextIndex": 674,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "674",
+        "position": {
+          "x": 168500,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 674,
+          "nextIndex": 701,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "674_Default",
+        "position": {
+          "x": 168500,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 674,
+          "nextIndex": 675,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "675",
+        "position": {
+          "x": 168750,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 675,
+          "nextIndex": 676,
+          "waitTime": 300,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "676",
+        "position": {
+          "x": 169000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 676,
+          "nextIndex": 677,
+          "waitTime": 2.640230937,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "677",
+        "position": {
+          "x": 169250,
+          "y": 0
+        },
+        "type": "Check",
+        "data": {
+          "currIndex": 677,
+          "variableScope": "pv",
+          "variableName": "英雄登场",
+          "valueGreater": 1,
+          "successIndex": 680,
+          "failureIndex": 678,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "678",
+        "position": {
+          "x": 169500,
+          "y": 0
+        },
+        "type": "Check",
+        "data": {
+          "currIndex": 678,
+          "variableScope": "pv",
+          "variableName": "机器人大人",
+          "valueGreater": 1,
+          "successIndex": 685,
+          "failureIndex": 690,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "680",
+        "position": {
+          "x": 170000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 680,
+          "nextIndex": 1000,
+          "waitTime": 2.567090033,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "685",
+        "position": {
+          "x": 171250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 685,
+          "nextIndex": 1000,
+          "waitTime": 2.454715182,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "690",
+        "position": {
+          "x": 172500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 690,
+          "nextIndex": 1000,
+          "waitTime": 2.151164983,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "700",
+        "position": {
+          "x": 175000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 700,
+          "nextIndex": 710,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "701",
+        "position": {
+          "x": 175250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 701,
+          "nextIndex": 720,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "710",
+        "position": {
+          "x": 177500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 710,
+          "nextIndex": 711,
+          "waitTime": 2.010147486,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "711",
+        "position": {
+          "x": 177750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 711,
+          "nextIndex": 712,
+          "waitTime": 2.795296712,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "712",
+        "position": {
+          "x": 178000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 712,
+          "nextIndex": 713,
+          "waitTime": 2.714661794,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "713",
+        "position": {
+          "x": 178250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 713,
+          "nextIndex": 740,
+          "waitTime": 2.115461354,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "720",
+        "position": {
+          "x": 180000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 720,
+          "nextIndex": 721,
+          "waitTime": 2.145718638,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "奥特曼",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "721",
+        "position": {
+          "x": 180250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 721,
+          "nextIndex": 722,
+          "waitTime": 2.931990313,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "722",
+        "position": {
+          "x": 180500,
+          "y": 0
+        },
+        "type": "System",
+        "data": {
+          "currIndex": 722,
+          "nextIndex": 723,
+          "waitTime": 0,
+          "senderId": "System",
+          "chatScene": "C804",
+          "highlightTimeout": 2,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "723",
+        "position": {
+          "x": 180750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 723,
+          "nextIndex": 724,
+          "waitTime": 6,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "724",
+        "position": {
+          "x": 181000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 724,
+          "nextIndex": 740,
+          "waitTime": 2.616464411,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "740",
+        "position": {
+          "x": 185000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 740,
+          "nextIndex": 741,
+          "waitTime": 2.566632049,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "750",
+        "position": {
+          "x": 187500,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 750,
+          "nextIndex": 760,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "友善",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "750_Default",
+        "position": {
+          "x": 187500,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 750,
+          "nextIndex": 751,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "751",
+        "position": {
+          "x": 187750,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 751,
+          "nextIndex": 761,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "友善",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "751_Default",
+        "position": {
+          "x": 187750,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 751,
+          "nextIndex": 752,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "752",
+        "position": {
+          "x": 188000,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 752,
+          "nextIndex": 762,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": {
+            "type": "VarAdd",
+            "scope": "pv",
+            "varName": "搞怪",
+            "value": 1
+          }
+        }
+      },
+      {
+        "id": "752_Default",
+        "position": {
+          "x": 188000,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 752,
+          "nextIndex": 753,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "753",
+        "position": {
+          "x": 188250,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 753,
+          "nextIndex": 754,
+          "waitTime": 300,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "754",
+        "position": {
+          "x": 188500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 754,
+          "nextIndex": 755,
+          "waitTime": 2.888733259,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "755",
+        "position": {
+          "x": 188750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 755,
+          "nextIndex": 756,
+          "waitTime": 2.310586929,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "756",
+        "position": {
+          "x": 189000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 756,
+          "nextIndex": 1000,
+          "waitTime": 2.416070031,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "760",
+        "position": {
+          "x": 190000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 760,
+          "nextIndex": 770,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "761",
+        "position": {
+          "x": 190250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 761,
+          "nextIndex": 780,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "762",
+        "position": {
+          "x": 190500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 762,
+          "nextIndex": 790,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "770",
+        "position": {
+          "x": 192500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 770,
+          "nextIndex": 771,
+          "waitTime": 2.415733311,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "771",
+        "position": {
+          "x": 192750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 771,
+          "nextIndex": 772,
+          "waitTime": 2.18066554,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "772",
+        "position": {
+          "x": 193000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 772,
+          "nextIndex": 773,
+          "waitTime": 2.927857571,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "773",
+        "position": {
+          "x": 193250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 773,
+          "nextIndex": 774,
+          "waitTime": 2.774940637,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "774",
+        "position": {
+          "x": 193500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 774,
+          "nextIndex": 775,
+          "waitTime": 2.590326323,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "775",
+        "position": {
+          "x": 193750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 775,
+          "nextIndex": 776,
+          "waitTime": 2.309171134,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "776",
+        "position": {
+          "x": 194000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 776,
+          "nextIndex": 800,
+          "waitTime": 2.970476599,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "780",
+        "position": {
+          "x": 195000,
+          "y": 0
+        },
+        "type": "System",
+        "data": {
+          "currIndex": 780,
+          "nextIndex": 781,
+          "waitTime": 1,
+          "senderId": "System",
+          "chatScene": "C804",
+          "highlightTimeout": 5,
+          "extraAction": {
+            "type": "sfx",
+            "sfxGroupName": "breath"
+          }
+        }
+      },
+      {
+        "id": "781",
+        "position": {
+          "x": 195250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 781,
+          "nextIndex": 782,
+          "waitTime": 2.798687299,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "782",
+        "position": {
+          "x": 195500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 782,
+          "nextIndex": 783,
+          "waitTime": 2.339281856,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "783",
+        "position": {
+          "x": 195750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 783,
+          "nextIndex": 784,
+          "waitTime": 2.052930035,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "784",
+        "position": {
+          "x": 196000,
+          "y": 0
+        },
+        "type": "System",
+        "data": {
+          "currIndex": 784,
+          "nextIndex": 785,
+          "waitTime": 1,
+          "senderId": "System",
+          "chatScene": "C804",
+          "highlightTimeout": 10,
+          "extraAction": {
+            "type": "sfx",
+            "sfxGroupName": "breath"
+          }
+        }
+      },
+      {
+        "id": "785",
+        "position": {
+          "x": 196250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 785,
+          "nextIndex": 800,
+          "waitTime": 12,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "790",
+        "position": {
+          "x": 197500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 790,
+          "nextIndex": 791,
+          "waitTime": 2.108906839,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "791",
+        "position": {
+          "x": 197750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 791,
+          "nextIndex": 792,
+          "waitTime": 2.839447123,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "792",
+        "position": {
+          "x": 198000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 792,
+          "nextIndex": 793,
+          "waitTime": 2.973113097,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "793",
+        "position": {
+          "x": 198250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 793,
+          "nextIndex": 794,
+          "waitTime": 2.989802668,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "794",
+        "position": {
+          "x": 198500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 794,
+          "nextIndex": 795,
+          "waitTime": 2.163822135,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "795",
+        "position": {
+          "x": 198750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 795,
+          "nextIndex": 800,
+          "waitTime": 2.162256044,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "800",
+        "position": {
+          "x": 200000,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 800,
+          "nextIndex": 810,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "800_Default",
+        "position": {
+          "x": 200000,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 800,
+          "nextIndex": 801,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "801",
+        "position": {
+          "x": 200250,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 801,
+          "nextIndex": 811,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "801_Default",
+        "position": {
+          "x": 200250,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 801,
+          "nextIndex": 802,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "802",
+        "position": {
+          "x": 200500,
+          "y": 0
+        },
+        "type": "OpenOption",
+        "data": {
+          "currIndex": 802,
+          "nextIndex": 812,
+          "waitTime": 300,
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "802_Default",
+        "position": {
+          "x": 200500,
+          "y": 100
+        },
+        "type": "OpenOption_Default",
+        "data": {
+          "currIndex": 802,
+          "nextIndex": 803,
+          "timeout": 300
+        }
+      },
+      {
+        "id": "803",
+        "position": {
+          "x": 200750,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 803,
+          "nextIndex": 1000,
+          "waitTime": 300,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "810",
+        "position": {
+          "x": 202500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 810,
+          "nextIndex": 820,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "811",
+        "position": {
+          "x": 202750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 811,
+          "nextIndex": 830,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "812",
+        "position": {
+          "x": 203000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 812,
+          "nextIndex": 840,
+          "waitTime": 0,
+          "senderId": "我",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "820",
+        "position": {
+          "x": 205000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 820,
+          "nextIndex": 821,
+          "waitTime": 2.642819186,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "821",
+        "position": {
+          "x": 205250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 821,
+          "nextIndex": 822,
+          "waitTime": 2.710113105,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "822",
+        "position": {
+          "x": 205500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 822,
+          "nextIndex": 823,
+          "waitTime": 2.155143416,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "823",
+        "position": {
+          "x": 205750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 823,
+          "nextIndex": 1000,
+          "waitTime": 2.90700053,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "830",
+        "position": {
+          "x": 207500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 830,
+          "nextIndex": 831,
+          "waitTime": 2.294847076,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "831",
+        "position": {
+          "x": 207750,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 831,
+          "nextIndex": 832,
+          "waitTime": 2.250529297,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "832",
+        "position": {
+          "x": 208000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 832,
+          "nextIndex": 1000,
+          "waitTime": 2.472031503,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "840",
+        "position": {
+          "x": 210000,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 840,
+          "nextIndex": 841,
+          "waitTime": 2.230009335,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "841",
+        "position": {
+          "x": 210250,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 841,
+          "nextIndex": 842,
+          "waitTime": 2.574965391,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "842",
+        "position": {
+          "x": 210500,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "currIndex": 842,
+          "nextIndex": 1000,
+          "waitTime": 2.934264931,
+          "senderId": "C804",
+          "chatScene": "C804",
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1000",
+        "position": {
+          "x": 250000,
+          "y": 0
+        },
+        "type": "Set804Position",
+        "data": {
+          "currIndex": 1000,
+          "nextIndex": 1001,
+          "targetPointId": "201",
+          "runtime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1001",
+        "position": {
+          "x": 250250,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 1001,
+          "nextIndex": 1002,
+          "waitTime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1002",
+        "position": {
+          "x": 250500,
+          "y": 0
+        },
+        "type": "Check",
+        "data": {
+          "currIndex": 1002,
+          "variableScope": "pv",
+          "variableName": "去应急补给仓",
+          "valueGreater": 1,
+          "successIndex": 1010,
+          "failureIndex": 1020,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1010",
+        "position": {
+          "x": 252500,
+          "y": 0
+        },
+        "type": "Set804Position",
+        "data": {
+          "currIndex": 1010,
+          "nextIndex": 1011,
+          "targetPointId": "202",
+          "runtime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1011",
+        "position": {
+          "x": 252750,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 1011,
+          "nextIndex": 1012,
+          "waitTime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1012",
+        "position": {
+          "x": 253000,
+          "y": 0
+        },
+        "type": "Set804Position",
+        "data": {
+          "currIndex": 1012,
+          "nextIndex": 1013,
+          "targetPointId": "203",
+          "runtime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1013",
+        "position": {
+          "x": 253250,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 1013,
+          "nextIndex": 1014,
+          "waitTime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1014",
+        "position": {
+          "x": 253500,
+          "y": 0
+        },
+        "type": "Set804Position",
+        "data": {
+          "currIndex": 1014,
+          "nextIndex": 1015,
+          "targetPointId": "204",
+          "runtime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1015",
+        "position": {
+          "x": 253750,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 1015,
+          "nextIndex": 1016,
+          "waitTime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1016",
+        "position": {
+          "x": 254000,
+          "y": 0
+        },
+        "type": "SwitchFile",
+        "data": {
+          "currIndex": 1016,
+          "nextIndex": 1017,
+          "targetFile": "C1S4"
+        }
+      },
+      {
+        "id": "1020",
+        "position": {
+          "x": 255000,
+          "y": 0
+        },
+        "type": "Set804Position",
+        "data": {
+          "currIndex": 1020,
+          "nextIndex": 1021,
+          "targetPointId": "212",
+          "runtime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1021",
+        "position": {
+          "x": 255250,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 1021,
+          "nextIndex": 1022,
+          "waitTime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1022",
+        "position": {
+          "x": 255500,
+          "y": 0
+        },
+        "type": "Set804Position",
+        "data": {
+          "currIndex": 1022,
+          "nextIndex": 1023,
+          "targetPointId": "213",
+          "runtime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1023",
+        "position": {
+          "x": 255750,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 1023,
+          "nextIndex": 1024,
+          "waitTime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1024",
+        "position": {
+          "x": 256000,
+          "y": 0
+        },
+        "type": "Set804Position",
+        "data": {
+          "currIndex": 1024,
+          "nextIndex": 1025,
+          "targetPointId": "214",
+          "runtime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1025",
+        "position": {
+          "x": 256250,
+          "y": 0
+        },
+        "type": "Waiting",
+        "data": {
+          "currIndex": 1025,
+          "nextIndex": 1026,
+          "waitTime": 3600,
+          "extraAction": null
+        }
+      },
+      {
+        "id": "1026",
+        "position": {
+          "x": 256500,
+          "y": 0
+        },
+        "type": "SwitchFile",
+        "data": {
+          "currIndex": 1026,
+          "nextIndex": 1027,
+          "targetFile": "C1S4"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "2->100",
+        "type": "default",
+        "source": "2",
+        "target": "100",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "100->101",
+        "type": "default",
+        "source": "100",
+        "target": "101",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "101->102",
+        "type": "default",
+        "source": "101",
+        "target": "102",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "101->102_Default",
+        "type": "default",
+        "source": "101",
+        "target": "102_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "101->103",
+        "type": "default",
+        "source": "101",
+        "target": "103",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "101->103_Default",
+        "type": "default",
+        "source": "101",
+        "target": "103_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "102->110",
+        "type": "default",
+        "source": "102",
+        "target": "110",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "102_Default->103",
+        "type": "default",
+        "source": "102_Default",
+        "target": "103",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "102_Default->103_Default",
+        "type": "default",
+        "source": "102_Default",
+        "target": "103_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "103->400",
+        "type": "default",
+        "source": "103",
+        "target": "400",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "103_Default->104",
+        "type": "default",
+        "source": "103_Default",
+        "target": "104",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "104->1002",
+        "type": "default",
+        "source": "104",
+        "target": "1002",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "110->111",
+        "type": "default",
+        "source": "110",
+        "target": "111",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "111->300",
+        "type": "default",
+        "source": "111",
+        "target": "300",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_success",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "111->112",
+        "type": "default",
+        "source": "111",
+        "target": "112",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "112->113",
+        "type": "default",
+        "source": "112",
+        "target": "113",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "113->120",
+        "type": "default",
+        "source": "113",
+        "target": "120",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "113->120_Default",
+        "type": "default",
+        "source": "113",
+        "target": "120_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "113->121",
+        "type": "default",
+        "source": "113",
+        "target": "121",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "113->121_Default",
+        "type": "default",
+        "source": "113",
+        "target": "121_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "120->130",
+        "type": "default",
+        "source": "120",
+        "target": "130",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "120_Default->121",
+        "type": "default",
+        "source": "120_Default",
+        "target": "121",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "120_Default->121_Default",
+        "type": "default",
+        "source": "120_Default",
+        "target": "121_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "121->131",
+        "type": "default",
+        "source": "121",
+        "target": "131",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "121_Default->122",
+        "type": "default",
+        "source": "121_Default",
+        "target": "122",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "122->123",
+        "type": "default",
+        "source": "122",
+        "target": "123",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "123->124",
+        "type": "default",
+        "source": "123",
+        "target": "124",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "124->125",
+        "type": "default",
+        "source": "124",
+        "target": "125",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "125->126",
+        "type": "default",
+        "source": "125",
+        "target": "126",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "126->1000",
+        "type": "default",
+        "source": "126",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "130->135",
+        "type": "default",
+        "source": "130",
+        "target": "135",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "131->200",
+        "type": "default",
+        "source": "131",
+        "target": "200",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "135->136",
+        "type": "default",
+        "source": "135",
+        "target": "136",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "136->137",
+        "type": "default",
+        "source": "136",
+        "target": "137",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "137->138",
+        "type": "default",
+        "source": "137",
+        "target": "138",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "138->139",
+        "type": "default",
+        "source": "138",
+        "target": "139",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "138->139_Default",
+        "type": "default",
+        "source": "138",
+        "target": "139_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "138->140",
+        "type": "default",
+        "source": "138",
+        "target": "140",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "138->140_Default",
+        "type": "default",
+        "source": "138",
+        "target": "140_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "139->150",
+        "type": "default",
+        "source": "139",
+        "target": "150",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "139_Default->140",
+        "type": "default",
+        "source": "139_Default",
+        "target": "140",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "139_Default->140_Default",
+        "type": "default",
+        "source": "139_Default",
+        "target": "140_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "140->151",
+        "type": "default",
+        "source": "140",
+        "target": "151",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "140_Default->141",
+        "type": "default",
+        "source": "140_Default",
+        "target": "141",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "141->142",
+        "type": "default",
+        "source": "141",
+        "target": "142",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "142->143",
+        "type": "default",
+        "source": "142",
+        "target": "143",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "143->144",
+        "type": "default",
+        "source": "143",
+        "target": "144",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "144->145",
+        "type": "default",
+        "source": "144",
+        "target": "145",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "145->1000",
+        "type": "default",
+        "source": "145",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "150->160",
+        "type": "default",
+        "source": "150",
+        "target": "160",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "151->170",
+        "type": "default",
+        "source": "151",
+        "target": "170",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "160->161",
+        "type": "default",
+        "source": "160",
+        "target": "161",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "161->162",
+        "type": "default",
+        "source": "161",
+        "target": "162",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "162->163",
+        "type": "default",
+        "source": "162",
+        "target": "163",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "163->164",
+        "type": "default",
+        "source": "163",
+        "target": "164",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "164->600",
+        "type": "default",
+        "source": "164",
+        "target": "600",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "170->171",
+        "type": "default",
+        "source": "170",
+        "target": "171",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "171->172",
+        "type": "default",
+        "source": "171",
+        "target": "172",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "172->173",
+        "type": "default",
+        "source": "172",
+        "target": "173",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "173->174",
+        "type": "default",
+        "source": "173",
+        "target": "174",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "174->600",
+        "type": "default",
+        "source": "174",
+        "target": "600",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "200->201",
+        "type": "default",
+        "source": "200",
+        "target": "201",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "201->202",
+        "type": "default",
+        "source": "201",
+        "target": "202",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "202->203",
+        "type": "default",
+        "source": "202",
+        "target": "203",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "203->204",
+        "type": "default",
+        "source": "203",
+        "target": "204",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "204->205",
+        "type": "default",
+        "source": "204",
+        "target": "205",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "204->205_Default",
+        "type": "default",
+        "source": "204",
+        "target": "205_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "204->206",
+        "type": "default",
+        "source": "204",
+        "target": "206",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "204->206_Default",
+        "type": "default",
+        "source": "204",
+        "target": "206_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "204->207",
+        "type": "default",
+        "source": "204",
+        "target": "207",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "204->207_Default",
+        "type": "default",
+        "source": "204",
+        "target": "207_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "205->220",
+        "type": "default",
+        "source": "205",
+        "target": "220",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "205_Default->206",
+        "type": "default",
+        "source": "205_Default",
+        "target": "206",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "205_Default->206_Default",
+        "type": "default",
+        "source": "205_Default",
+        "target": "206_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "206->221",
+        "type": "default",
+        "source": "206",
+        "target": "221",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "206_Default->207",
+        "type": "default",
+        "source": "206_Default",
+        "target": "207",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "206_Default->207_Default",
+        "type": "default",
+        "source": "206_Default",
+        "target": "207_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "207->222",
+        "type": "default",
+        "source": "207",
+        "target": "222",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "207_Default->208",
+        "type": "default",
+        "source": "207_Default",
+        "target": "208",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "208->209",
+        "type": "default",
+        "source": "208",
+        "target": "209",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "209->210",
+        "type": "default",
+        "source": "209",
+        "target": "210",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "210->211",
+        "type": "default",
+        "source": "210",
+        "target": "211",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "211->212",
+        "type": "default",
+        "source": "211",
+        "target": "212",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "212->1000",
+        "type": "default",
+        "source": "212",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "220->230",
+        "type": "default",
+        "source": "220",
+        "target": "230",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "221->240",
+        "type": "default",
+        "source": "221",
+        "target": "240",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "222->250",
+        "type": "default",
+        "source": "222",
+        "target": "250",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "230->231",
+        "type": "default",
+        "source": "230",
+        "target": "231",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "231->232",
+        "type": "default",
+        "source": "231",
+        "target": "232",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "232->600",
+        "type": "default",
+        "source": "232",
+        "target": "600",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "240->241",
+        "type": "default",
+        "source": "240",
+        "target": "241",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "241->242",
+        "type": "default",
+        "source": "241",
+        "target": "242",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "242->243",
+        "type": "default",
+        "source": "242",
+        "target": "243",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "243->600",
+        "type": "default",
+        "source": "243",
+        "target": "600",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "250->251",
+        "type": "default",
+        "source": "250",
+        "target": "251",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "250->251_Default",
+        "type": "default",
+        "source": "250",
+        "target": "251_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "251->260",
+        "type": "default",
+        "source": "251",
+        "target": "260",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "251_Default->252",
+        "type": "default",
+        "source": "251_Default",
+        "target": "252",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "252->253",
+        "type": "default",
+        "source": "252",
+        "target": "253",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "253->254",
+        "type": "default",
+        "source": "253",
+        "target": "254",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "254->255",
+        "type": "default",
+        "source": "254",
+        "target": "255",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "255->1000",
+        "type": "default",
+        "source": "255",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "260->261",
+        "type": "default",
+        "source": "260",
+        "target": "261",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "261->262",
+        "type": "default",
+        "source": "261",
+        "target": "262",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "262->263",
+        "type": "default",
+        "source": "262",
+        "target": "263",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "263->264",
+        "type": "default",
+        "source": "263",
+        "target": "264",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "264->265",
+        "type": "default",
+        "source": "264",
+        "target": "265",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "264->265_Default",
+        "type": "default",
+        "source": "264",
+        "target": "265_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "265->270",
+        "type": "default",
+        "source": "265",
+        "target": "270",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "265_Default->266",
+        "type": "default",
+        "source": "265_Default",
+        "target": "266",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "266->267",
+        "type": "default",
+        "source": "266",
+        "target": "267",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "267->268",
+        "type": "default",
+        "source": "267",
+        "target": "268",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "268->1000",
+        "type": "default",
+        "source": "268",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "270->271",
+        "type": "default",
+        "source": "270",
+        "target": "271",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "271->272",
+        "type": "default",
+        "source": "271",
+        "target": "272",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "272->600",
+        "type": "default",
+        "source": "272",
+        "target": "600",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "300->301",
+        "type": "default",
+        "source": "300",
+        "target": "301",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "301->302",
+        "type": "default",
+        "source": "301",
+        "target": "302",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "302->303",
+        "type": "default",
+        "source": "302",
+        "target": "303",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "303->304",
+        "type": "default",
+        "source": "303",
+        "target": "304",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "303->304_Default",
+        "type": "default",
+        "source": "303",
+        "target": "304_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "303->305",
+        "type": "default",
+        "source": "303",
+        "target": "305",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "303->305_Default",
+        "type": "default",
+        "source": "303",
+        "target": "305_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "304->320",
+        "type": "default",
+        "source": "304",
+        "target": "320",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "304_Default->305",
+        "type": "default",
+        "source": "304_Default",
+        "target": "305",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "304_Default->305_Default",
+        "type": "default",
+        "source": "304_Default",
+        "target": "305_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "305->321",
+        "type": "default",
+        "source": "305",
+        "target": "321",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "305_Default->306",
+        "type": "default",
+        "source": "305_Default",
+        "target": "306",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "306->307",
+        "type": "default",
+        "source": "306",
+        "target": "307",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "307->308",
+        "type": "default",
+        "source": "307",
+        "target": "308",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "308->309",
+        "type": "default",
+        "source": "308",
+        "target": "309",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "309->310",
+        "type": "default",
+        "source": "309",
+        "target": "310",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "310->1000",
+        "type": "default",
+        "source": "310",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "320->330",
+        "type": "default",
+        "source": "320",
+        "target": "330",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "321->340",
+        "type": "default",
+        "source": "321",
+        "target": "340",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "330->331",
+        "type": "default",
+        "source": "330",
+        "target": "331",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "331->332",
+        "type": "default",
+        "source": "331",
+        "target": "332",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "332->333",
+        "type": "default",
+        "source": "332",
+        "target": "333",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "333->138",
+        "type": "default",
+        "source": "333",
+        "target": "138",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "340->341",
+        "type": "default",
+        "source": "340",
+        "target": "341",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "341->342",
+        "type": "default",
+        "source": "341",
+        "target": "342",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "342->138",
+        "type": "default",
+        "source": "342",
+        "target": "138",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "400->401",
+        "type": "default",
+        "source": "400",
+        "target": "401",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "401->402",
+        "type": "default",
+        "source": "401",
+        "target": "402",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "402->403",
+        "type": "default",
+        "source": "402",
+        "target": "403",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "402->403_Default",
+        "type": "default",
+        "source": "402",
+        "target": "403_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "402->404",
+        "type": "default",
+        "source": "402",
+        "target": "404",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "402->404_Default",
+        "type": "default",
+        "source": "402",
+        "target": "404_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "403->420",
+        "type": "default",
+        "source": "403",
+        "target": "420",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "403_Default->404",
+        "type": "default",
+        "source": "403_Default",
+        "target": "404",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "403_Default->404_Default",
+        "type": "default",
+        "source": "403_Default",
+        "target": "404_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "404->421",
+        "type": "default",
+        "source": "404",
+        "target": "421",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "404_Default->405",
+        "type": "default",
+        "source": "404_Default",
+        "target": "405",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "405->406",
+        "type": "default",
+        "source": "405",
+        "target": "406",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "406->407",
+        "type": "default",
+        "source": "406",
+        "target": "407",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "407->408",
+        "type": "default",
+        "source": "407",
+        "target": "408",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "408->409",
+        "type": "default",
+        "source": "408",
+        "target": "409",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "409->1000",
+        "type": "default",
+        "source": "409",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "420->430",
+        "type": "default",
+        "source": "420",
+        "target": "430",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "421->440",
+        "type": "default",
+        "source": "421",
+        "target": "440",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "430->431",
+        "type": "default",
+        "source": "430",
+        "target": "431",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "431->432",
+        "type": "default",
+        "source": "431",
+        "target": "432",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "432->433",
+        "type": "default",
+        "source": "432",
+        "target": "433",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "433->450",
+        "type": "default",
+        "source": "433",
+        "target": "450",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "433->450_Default",
+        "type": "default",
+        "source": "433",
+        "target": "450_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "440->301",
+        "type": "default",
+        "source": "440",
+        "target": "301",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_success",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "440->200",
+        "type": "default",
+        "source": "440",
+        "target": "200",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "440->450",
+        "type": "default",
+        "source": "440",
+        "target": "450",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "440->450_Default",
+        "type": "default",
+        "source": "440",
+        "target": "450_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "440->451",
+        "type": "default",
+        "source": "440",
+        "target": "451",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "440->451_Default",
+        "type": "default",
+        "source": "440",
+        "target": "451_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "450->460",
+        "type": "default",
+        "source": "450",
+        "target": "460",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "450_Default->451",
+        "type": "default",
+        "source": "450_Default",
+        "target": "451",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "450_Default->451_Default",
+        "type": "default",
+        "source": "450_Default",
+        "target": "451_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "451->461",
+        "type": "default",
+        "source": "451",
+        "target": "461",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "451_Default->452",
+        "type": "default",
+        "source": "451_Default",
+        "target": "452",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "452->460",
+        "type": "default",
+        "source": "452",
+        "target": "460",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "460->470",
+        "type": "default",
+        "source": "460",
+        "target": "470",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "461->480",
+        "type": "default",
+        "source": "461",
+        "target": "480",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "470->471",
+        "type": "default",
+        "source": "470",
+        "target": "471",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "471->472",
+        "type": "default",
+        "source": "471",
+        "target": "472",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "472->473",
+        "type": "default",
+        "source": "472",
+        "target": "473",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "473->600",
+        "type": "default",
+        "source": "473",
+        "target": "600",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "480->481",
+        "type": "default",
+        "source": "480",
+        "target": "481",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "481->482",
+        "type": "default",
+        "source": "481",
+        "target": "482",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "482->483",
+        "type": "default",
+        "source": "482",
+        "target": "483",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "483->484",
+        "type": "default",
+        "source": "483",
+        "target": "484",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "484->600",
+        "type": "default",
+        "source": "484",
+        "target": "600",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "600->601",
+        "type": "default",
+        "source": "600",
+        "target": "601",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "600->601_Default",
+        "type": "default",
+        "source": "600",
+        "target": "601_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "600->602",
+        "type": "default",
+        "source": "600",
+        "target": "602",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "600->602_Default",
+        "type": "default",
+        "source": "600",
+        "target": "602_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "600->603",
+        "type": "default",
+        "source": "600",
+        "target": "603",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "600->603_Default",
+        "type": "default",
+        "source": "600",
+        "target": "603_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "600->604",
+        "type": "default",
+        "source": "600",
+        "target": "604",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "600->604_Default",
+        "type": "default",
+        "source": "600",
+        "target": "604_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "601->620",
+        "type": "default",
+        "source": "601",
+        "target": "620",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "601_Default->602",
+        "type": "default",
+        "source": "601_Default",
+        "target": "602",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "601_Default->602_Default",
+        "type": "default",
+        "source": "601_Default",
+        "target": "602_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "602->621",
+        "type": "default",
+        "source": "602",
+        "target": "621",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "602_Default->603",
+        "type": "default",
+        "source": "602_Default",
+        "target": "603",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "602_Default->603_Default",
+        "type": "default",
+        "source": "602_Default",
+        "target": "603_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "603->622",
+        "type": "default",
+        "source": "603",
+        "target": "622",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "603_Default->604",
+        "type": "default",
+        "source": "603_Default",
+        "target": "604",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "603_Default->604_Default",
+        "type": "default",
+        "source": "603_Default",
+        "target": "604_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "604->623",
+        "type": "default",
+        "source": "604",
+        "target": "623",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "604_Default->605",
+        "type": "default",
+        "source": "604_Default",
+        "target": "605",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "605->606",
+        "type": "default",
+        "source": "605",
+        "target": "606",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "606->607",
+        "type": "default",
+        "source": "606",
+        "target": "607",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "606->607_Default",
+        "type": "default",
+        "source": "606",
+        "target": "607_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "606->608",
+        "type": "default",
+        "source": "606",
+        "target": "608",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "606->608_Default",
+        "type": "default",
+        "source": "606",
+        "target": "608_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "606->609",
+        "type": "default",
+        "source": "606",
+        "target": "609",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "606->609_Default",
+        "type": "default",
+        "source": "606",
+        "target": "609_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "606->610",
+        "type": "default",
+        "source": "606",
+        "target": "610",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "606->610_Default",
+        "type": "default",
+        "source": "606",
+        "target": "610_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "607->620",
+        "type": "default",
+        "source": "607",
+        "target": "620",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "607_Default->608",
+        "type": "default",
+        "source": "607_Default",
+        "target": "608",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "607_Default->608_Default",
+        "type": "default",
+        "source": "607_Default",
+        "target": "608_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "608->621",
+        "type": "default",
+        "source": "608",
+        "target": "621",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "608_Default->609",
+        "type": "default",
+        "source": "608_Default",
+        "target": "609",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "608_Default->609_Default",
+        "type": "default",
+        "source": "608_Default",
+        "target": "609_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "609->622",
+        "type": "default",
+        "source": "609",
+        "target": "622",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "609_Default->610",
+        "type": "default",
+        "source": "609_Default",
+        "target": "610",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "609_Default->610_Default",
+        "type": "default",
+        "source": "609_Default",
+        "target": "610_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "610->623",
+        "type": "default",
+        "source": "610",
+        "target": "623",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "610_Default->611",
+        "type": "default",
+        "source": "610_Default",
+        "target": "611",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "611->612",
+        "type": "default",
+        "source": "611",
+        "target": "612",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "612->613",
+        "type": "default",
+        "source": "612",
+        "target": "613",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "613->1000",
+        "type": "default",
+        "source": "613",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "620->630",
+        "type": "default",
+        "source": "620",
+        "target": "630",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "621->640",
+        "type": "default",
+        "source": "621",
+        "target": "640",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "622->650",
+        "type": "default",
+        "source": "622",
+        "target": "650",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "623->660",
+        "type": "default",
+        "source": "623",
+        "target": "660",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "630->631",
+        "type": "default",
+        "source": "630",
+        "target": "631",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "631->608",
+        "type": "default",
+        "source": "631",
+        "target": "608",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "631->608_Default",
+        "type": "default",
+        "source": "631",
+        "target": "608_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "640->641",
+        "type": "default",
+        "source": "640",
+        "target": "641",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "641->642",
+        "type": "default",
+        "source": "641",
+        "target": "642",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "642->643",
+        "type": "default",
+        "source": "642",
+        "target": "643",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "643->740",
+        "type": "default",
+        "source": "643",
+        "target": "740",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "650->651",
+        "type": "default",
+        "source": "650",
+        "target": "651",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "651->652",
+        "type": "default",
+        "source": "651",
+        "target": "652",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "652->653",
+        "type": "default",
+        "source": "652",
+        "target": "653",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "653->740",
+        "type": "default",
+        "source": "653",
+        "target": "740",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "660->661",
+        "type": "default",
+        "source": "660",
+        "target": "661",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "661->670",
+        "type": "default",
+        "source": "661",
+        "target": "670",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_success",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "661->720",
+        "type": "default",
+        "source": "661",
+        "target": "720",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "670->671",
+        "type": "default",
+        "source": "670",
+        "target": "671",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "671->672",
+        "type": "default",
+        "source": "671",
+        "target": "672",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "672->673",
+        "type": "default",
+        "source": "672",
+        "target": "673",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "672->673_Default",
+        "type": "default",
+        "source": "672",
+        "target": "673_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "672->674",
+        "type": "default",
+        "source": "672",
+        "target": "674",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "672->674_Default",
+        "type": "default",
+        "source": "672",
+        "target": "674_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "673->700",
+        "type": "default",
+        "source": "673",
+        "target": "700",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "673_Default->674",
+        "type": "default",
+        "source": "673_Default",
+        "target": "674",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "673_Default->674_Default",
+        "type": "default",
+        "source": "673_Default",
+        "target": "674_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "674->701",
+        "type": "default",
+        "source": "674",
+        "target": "701",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "674_Default->675",
+        "type": "default",
+        "source": "674_Default",
+        "target": "675",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "675->676",
+        "type": "default",
+        "source": "675",
+        "target": "676",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "676->677",
+        "type": "default",
+        "source": "676",
+        "target": "677",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "677->680",
+        "type": "default",
+        "source": "677",
+        "target": "680",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_success",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "677->678",
+        "type": "default",
+        "source": "677",
+        "target": "678",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "678->685",
+        "type": "default",
+        "source": "678",
+        "target": "685",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_success",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "678->690",
+        "type": "default",
+        "source": "678",
+        "target": "690",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "680->1000",
+        "type": "default",
+        "source": "680",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "685->1000",
+        "type": "default",
+        "source": "685",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "690->1000",
+        "type": "default",
+        "source": "690",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "700->710",
+        "type": "default",
+        "source": "700",
+        "target": "710",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "701->720",
+        "type": "default",
+        "source": "701",
+        "target": "720",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "710->711",
+        "type": "default",
+        "source": "710",
+        "target": "711",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "711->712",
+        "type": "default",
+        "source": "711",
+        "target": "712",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "712->713",
+        "type": "default",
+        "source": "712",
+        "target": "713",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "713->740",
+        "type": "default",
+        "source": "713",
+        "target": "740",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "720->721",
+        "type": "default",
+        "source": "720",
+        "target": "721",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "721->722",
+        "type": "default",
+        "source": "721",
+        "target": "722",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "722->723",
+        "type": "default",
+        "source": "722",
+        "target": "723",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "723->724",
+        "type": "default",
+        "source": "723",
+        "target": "724",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "724->740",
+        "type": "default",
+        "source": "724",
+        "target": "740",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "740->750",
+        "type": "default",
+        "source": "740",
+        "target": "750",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "740->750_Default",
+        "type": "default",
+        "source": "740",
+        "target": "750_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "740->751",
+        "type": "default",
+        "source": "740",
+        "target": "751",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "740->751_Default",
+        "type": "default",
+        "source": "740",
+        "target": "751_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "740->752",
+        "type": "default",
+        "source": "740",
+        "target": "752",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "740->752_Default",
+        "type": "default",
+        "source": "740",
+        "target": "752_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "750->760",
+        "type": "default",
+        "source": "750",
+        "target": "760",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "750_Default->751",
+        "type": "default",
+        "source": "750_Default",
+        "target": "751",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "750_Default->751_Default",
+        "type": "default",
+        "source": "750_Default",
+        "target": "751_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "751->761",
+        "type": "default",
+        "source": "751",
+        "target": "761",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "751_Default->752",
+        "type": "default",
+        "source": "751_Default",
+        "target": "752",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "751_Default->752_Default",
+        "type": "default",
+        "source": "751_Default",
+        "target": "752_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "752->762",
+        "type": "default",
+        "source": "752",
+        "target": "762",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "752_Default->753",
+        "type": "default",
+        "source": "752_Default",
+        "target": "753",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "753->754",
+        "type": "default",
+        "source": "753",
+        "target": "754",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "754->755",
+        "type": "default",
+        "source": "754",
+        "target": "755",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "755->756",
+        "type": "default",
+        "source": "755",
+        "target": "756",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "756->1000",
+        "type": "default",
+        "source": "756",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "760->770",
+        "type": "default",
+        "source": "760",
+        "target": "770",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "761->780",
+        "type": "default",
+        "source": "761",
+        "target": "780",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "762->790",
+        "type": "default",
+        "source": "762",
+        "target": "790",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "770->771",
+        "type": "default",
+        "source": "770",
+        "target": "771",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "771->772",
+        "type": "default",
+        "source": "771",
+        "target": "772",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "772->773",
+        "type": "default",
+        "source": "772",
+        "target": "773",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "773->774",
+        "type": "default",
+        "source": "773",
+        "target": "774",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "774->775",
+        "type": "default",
+        "source": "774",
+        "target": "775",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "775->776",
+        "type": "default",
+        "source": "775",
+        "target": "776",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "776->800",
+        "type": "default",
+        "source": "776",
+        "target": "800",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "776->800_Default",
+        "type": "default",
+        "source": "776",
+        "target": "800_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "780->781",
+        "type": "default",
+        "source": "780",
+        "target": "781",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "781->782",
+        "type": "default",
+        "source": "781",
+        "target": "782",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "782->783",
+        "type": "default",
+        "source": "782",
+        "target": "783",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "783->784",
+        "type": "default",
+        "source": "783",
+        "target": "784",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "784->785",
+        "type": "default",
+        "source": "784",
+        "target": "785",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "785->800",
+        "type": "default",
+        "source": "785",
+        "target": "800",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "785->800_Default",
+        "type": "default",
+        "source": "785",
+        "target": "800_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "790->791",
+        "type": "default",
+        "source": "790",
+        "target": "791",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "791->792",
+        "type": "default",
+        "source": "791",
+        "target": "792",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "792->793",
+        "type": "default",
+        "source": "792",
+        "target": "793",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "793->794",
+        "type": "default",
+        "source": "793",
+        "target": "794",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "794->795",
+        "type": "default",
+        "source": "794",
+        "target": "795",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "795->800",
+        "type": "default",
+        "source": "795",
+        "target": "800",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "795->800_Default",
+        "type": "default",
+        "source": "795",
+        "target": "800_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "795->801",
+        "type": "default",
+        "source": "795",
+        "target": "801",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "795->801_Default",
+        "type": "default",
+        "source": "795",
+        "target": "801_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "795->802",
+        "type": "default",
+        "source": "795",
+        "target": "802",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "795->802_Default",
+        "type": "default",
+        "source": "795",
+        "target": "802_Default",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "800->810",
+        "type": "default",
+        "source": "800",
+        "target": "810",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "800_Default->801",
+        "type": "default",
+        "source": "800_Default",
+        "target": "801",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "800_Default->801_Default",
+        "type": "default",
+        "source": "800_Default",
+        "target": "801_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "801->811",
+        "type": "default",
+        "source": "801",
+        "target": "811",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "801_Default->802",
+        "type": "default",
+        "source": "801_Default",
+        "target": "802",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "801_Default->802_Default",
+        "type": "default",
+        "source": "801_Default",
+        "target": "802_Default",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "802->812",
+        "type": "default",
+        "source": "802",
+        "target": "812",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "802_Default->803",
+        "type": "default",
+        "source": "802_Default",
+        "target": "803",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "803->1000",
+        "type": "default",
+        "source": "803",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "810->820",
+        "type": "default",
+        "source": "810",
+        "target": "820",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "811->830",
+        "type": "default",
+        "source": "811",
+        "target": "830",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "812->840",
+        "type": "default",
+        "source": "812",
+        "target": "840",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "820->821",
+        "type": "default",
+        "source": "820",
+        "target": "821",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "821->822",
+        "type": "default",
+        "source": "821",
+        "target": "822",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "822->823",
+        "type": "default",
+        "source": "822",
+        "target": "823",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "823->1000",
+        "type": "default",
+        "source": "823",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "830->831",
+        "type": "default",
+        "source": "830",
+        "target": "831",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "831->832",
+        "type": "default",
+        "source": "831",
+        "target": "832",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "832->1000",
+        "type": "default",
+        "source": "832",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "840->841",
+        "type": "default",
+        "source": "840",
+        "target": "841",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "841->842",
+        "type": "default",
+        "source": "841",
+        "target": "842",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "842->1000",
+        "type": "default",
+        "source": "842",
+        "target": "1000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1000->1001",
+        "type": "default",
+        "source": "1000",
+        "target": "1001",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1001->1002",
+        "type": "default",
+        "source": "1001",
+        "target": "1002",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1002->1010",
+        "type": "default",
+        "source": "1002",
+        "target": "1010",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_success",
+        "style": {
+          "stroke": "green"
+        },
+        "labelBgStyle": {
+          "fill": "green"
+        }
+      },
+      {
+        "id": "1002->1020",
+        "type": "default",
+        "source": "1002",
+        "target": "1020",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
+        "id": "1010->1011",
+        "type": "default",
+        "source": "1010",
+        "target": "1011",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1011->1012",
+        "type": "default",
+        "source": "1011",
+        "target": "1012",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1012->1013",
+        "type": "default",
+        "source": "1012",
+        "target": "1013",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1013->1014",
+        "type": "default",
+        "source": "1013",
+        "target": "1014",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1014->1015",
+        "type": "default",
+        "source": "1014",
+        "target": "1015",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1015->1016",
+        "type": "default",
+        "source": "1015",
+        "target": "1016",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1020->1021",
+        "type": "default",
+        "source": "1020",
+        "target": "1021",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1021->1022",
+        "type": "default",
+        "source": "1021",
+        "target": "1022",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1022->1023",
+        "type": "default",
+        "source": "1022",
+        "target": "1023",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1023->1024",
+        "type": "default",
+        "source": "1023",
+        "target": "1024",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1024->1025",
+        "type": "default",
+        "source": "1024",
+        "target": "1025",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "1025->1026",
+        "type": "default",
+        "source": "1025",
+        "target": "1026",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}
