@@ -4,6 +4,7 @@ import SpolierContent from '@/components/SpolierContent.vue'
 import { useI18n } from 'vue-i18n'
 import { useWindowSize } from '@vueuse/core'
 import { computed } from 'vue'
+import SupportBadge from '@/components/view_home/SupportBadge.vue'
 
 const i18n = useI18n()
 const windowsize = useWindowSize()
@@ -24,20 +25,32 @@ const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
     <p class="h2-desc text-color m-0 mb-4" v-html="$t('view.home.4.1')"></p>
     <div class="home-feature-card-div">
       <PvCard>
-        <template #header><img src="/aliya/game_header/aliya1.jpg" /></template>
-        <template #title>{{ $t('view.home.4.card.1.title') }}</template>
+        <template #header>
+          <img src="/aliya/game_header/aliya1.jpg" />
+        </template>
+        <template #title
+          >{{ $t('view.home.4.card.1.title') }}&ensp;<SupportBadge level="gold"
+        /></template>
         <template #subtitle>{{ $t('view.home.4.card.1.subtitle') }}</template>
         <template #content><div v-html="i18n.t('view.home.4.card.1.content')"></div></template>
       </PvCard>
       <PvCard>
-        <template #header><img src="/aliya/game_header/ycytx_5.jpg" /></template>
-        <template #title>{{ $t('view.home.4.card.2.title') }}</template>
+        <template #header>
+          <img src="/aliya/game_header/ycytx_5.jpg" />
+        </template>
+        <template #title
+          >{{ $t('view.home.4.card.2.title') }}&ensp;<SupportBadge level="bronze"
+        /></template>
         <template #subtitle>{{ $t('view.home.4.card.2.subtitle') }}</template>
         <template #content><div v-html="i18n.t('view.home.4.card.2.content')" /></template>
       </PvCard>
       <PvCard>
-        <template #header><img src="/aliya/game_header/lifeline.jpg" /></template>
-        <template #title>{{ $t('view.home.4.card.3.title') }}</template>
+        <template #header>
+          <img src="/aliya/game_header/tysy.jpg" />
+        </template>
+        <template #title
+          >{{ $t('view.home.4.card.3.title') }}&ensp;<SupportBadge level="plat"
+        /></template>
         <template #subtitle>{{ $t('view.home.4.card.3.subtitle') }}</template>
         <template #content><div v-html="i18n.t('view.home.4.card.3.content')" /></template>
       </PvCard>
