@@ -7,6 +7,7 @@ import { Icon } from '@vicons/utils'
 import { ExternalLink } from '@vicons/tabler'
 
 import { type FlowchartDataNode_SwitchFile } from '../types/script3'
+import { getCorrectFlowchartUrl } from '@/utils/flowchart'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_SwitchFile['data']>>()
@@ -38,7 +39,9 @@ const props = defineProps<NodeProps<FlowchartDataNode_SwitchFile['data']>>()
         </div>
         <p>
           {{ $t('comp.flowchart.tysy_demo.node.SwitchFile.targetFile') }}:
-          <code>{{ props.data.targetFile }}</code>
+          <RouterLink :to="getCorrectFlowchartUrl($route.path, props.data.targetFile)">{{
+            props.data.targetFile
+          }}</RouterLink>
         </p>
       </div>
     </div>
