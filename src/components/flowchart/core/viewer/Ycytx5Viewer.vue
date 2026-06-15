@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, onBeforeUnmount, provide, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, provide, ref, watch, type Ref } from 'vue'
 import { VueFlow, useVueFlow } from '@vue-flow/core'
 import { Background } from '@vue-flow/background'
 import { MiniMap } from '@vue-flow/minimap'
@@ -13,7 +13,7 @@ import { getGameConfig, getAllNodeTypes } from '../../registry/nodeRegistry'
 import '../../registry/gameConfigs'
 
 import { getJson } from '@/utils/fetch'
-import { symbolUseVueFlow, symbolFlowchartMetadata_Ycytx5 } from '@/constants/injection'
+import { symbolUseVueFlow, symbolFlowchartMetadata_Ycytx5, symbolFlowchartSearchMetadata } from '@/constants/injection'
 
 import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
@@ -98,6 +98,7 @@ const vueflowData = {
 // Provide
 provide(symbolUseVueFlow, vueflow)
 provide(symbolFlowchartMetadata_Ycytx5, vueflowData.metadata)
+provide(symbolFlowchartSearchMetadata, vueflowData.metadata as Ref<Record<string, unknown>>)
 
 const store = useFlowchartStore()
 const flowKey = computed(() => store.makeKey(props.gameId, props.versionId, props.flowchartName))

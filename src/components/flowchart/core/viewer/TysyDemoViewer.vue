@@ -12,7 +12,7 @@ import { getGameConfig, getAllNodeTypes } from '../../registry/nodeRegistry'
 import '../../registry/gameConfigs'
 
 import { getJson } from '@/utils/fetch'
-import { symbolUseVueFlow, symbolFlowchartMetadata_TysyDemo } from '@/constants/injection'
+import { symbolUseVueFlow, symbolFlowchartMetadata_TysyDemo, symbolFlowchartSearchMetadata } from '@/constants/injection'
 import { flowchartBus } from '@/utils/flowchartEvents'
 
 import FlowchartControls from '../FlowchartControls.vue'
@@ -86,6 +86,7 @@ const vueflowData = {
 
 provide(symbolUseVueFlow, vueflow)
 provide(symbolFlowchartMetadata_TysyDemo, vueflowData.metadata)
+provide(symbolFlowchartSearchMetadata, vueflowData.metadata as Ref<Record<string, unknown>>)
 
 const store = useFlowchartStore()
 const flowKey = computed(() => store.makeKey(props.gameId, props.versionId, props.flowchartName))

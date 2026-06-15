@@ -18,7 +18,7 @@ import PvSelectButton from 'primevue/selectbutton'
 import PvButton from 'primevue/button'
 import { useI18n } from 'vue-i18n'
 import { useFlowchartStore } from '@/stores/flowchart'
-import { symbolUseDark, symbolL10NSearchData } from '@/constants/injection'
+import { symbolUseDark, symbolL10NSearchData, symbolFlowchartSearchMetadata } from '@/constants/injection'
 import { useFlowchartHighlight, SEARCH_HIGHLIGHT } from '@/composables/useFlowchartHighlight'
 import { getL10NSearchConfig } from '@/components/flowchart/registry/l10nSearchRegistry'
 import '@/components/flowchart/registry/l10nSearchConfigs'
@@ -56,6 +56,7 @@ const isDark = inject(symbolUseDark)!
 
 // L10N search data & registry
 const l10nSearchData = inject(symbolL10NSearchData)!
+const searchMetadata = inject(symbolFlowchartSearchMetadata, ref({}))
 const { getNodeTitle } = useNodeTitleCache()
 const l10nSearchConfig = computed(() =>
   getL10NSearchConfig(flowchartStore.activeTab?.gameId ?? ''),
@@ -137,17 +138,26 @@ function getNodeSearchText(node: FlowchartDataNode, mode: 'l10n_data' | 'field_v
     if (title) parts.push(title)
   }
 
-  if (mode === 'l10n_data' && config && config.l10nKeyFields.length > 0) {
-    // 仅使用 L10N 解析后的文本 — 不搜索字段原始值
+  if (mode === 'l10n_data' && config) {
+    // 优先使用 buildL10NKey（从 metadata + node data 动态构建 key），
+    // 未配置则回退到 l10nKeyFields（node data 字段值直接作为 key）
     const l10n = l10nSearchData.value
-    for (const field of config.l10nKeyFields) {
-      const key = data[field]
-      if (key == null) continue
-      const resolved = l10n[String(key)]
-      if (resolved) parts.push(resolved)
+    if (config.buildL10NKey) {
+      const keys = config.buildL10NKey(data, searchMetadata.value, node.type)
+      for (const key of keys) {
+        const resolved = l10n[String(key)]
+        if (resolved) parts.push(resolved)
+      }
+    } else {
+      for (const field of config.l10nKeyFields) {
+        const key = data[field]
+        if (key == null) continue
+        const resolved = l10n[String(key)]
+        if (resolved) parts.push(resolved)
+      }
     }
   } else {
-    // field_value 模式（或 l10n_data 模式但无配置）：收集所有字段原始值
+    // field_value 模式，或 l10n_data 模式但无配置：收集所有字段原始值
     parts.push(...collectAllStrings(data))
   }
 

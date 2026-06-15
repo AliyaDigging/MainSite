@@ -13,6 +13,19 @@ export interface GameL10NSearchConfig {
   l10nKeyFields: string[]
   /** node type 的 vue-i18n 标题模式，含 [NODE_TYPE] 占位符 */
   nodeTitleI18nPattern: string
+  /**
+   * 可选：从 node.data + search metadata + node type 动态构建 L10N key 列表
+   * 若配置此函数，则 l10n_data 模式下优先调用它，忽略 l10nKeyFields
+   * @param nodeData - 节点的 data 属性
+   * @param metadata - 流程图搜索元数据（由 symbolFlowchartSearchMetadata 提供）
+   * @param nodeType - 节点类型名（如 "AliyaMessage"、"Message"）
+   * @returns L10N key 数组（可能为空）
+   */
+  buildL10NKey?: (
+    nodeData: Record<string, unknown>,
+    metadata: Record<string, unknown>,
+    nodeType: string,
+  ) => string[]
 }
 
 // 搜索配置注册表

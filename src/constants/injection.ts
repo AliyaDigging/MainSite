@@ -72,6 +72,11 @@ export const symbolL10NSearchData = Symbol('l10n_search_data') as InjectionKey<
   Ref<Record<string, string>>
 >
 
+/** 流程图搜索元数据 — 供搜索面板 buildL10NKey 使用（如 tysy_demo 的 currName） */
+export const symbolFlowchartSearchMetadata = Symbol(
+  'flowchart_search_metadata',
+) as InjectionKey<Ref<Record<string, unknown>>>
+
 export const symbolGameSelectionDict = Symbol('game_select_dict') as InjectionKey<
   Ref<[string, string, string]>
 >

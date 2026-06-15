@@ -3,7 +3,7 @@
  * 统一的流程图查看器组件
  * 支持多游戏版本，通过注册表动态加载节点组件
  */
-import { computed, nextTick, onBeforeUnmount, onMounted, provide, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, provide, ref, watch, type Ref } from 'vue'
 import { VueFlow, useVueFlow } from '@vue-flow/core'
 import { Background } from '@vue-flow/background'
 import { MiniMap } from '@vue-flow/minimap'
@@ -17,7 +17,7 @@ import { getGameConfig, getAllNodeTypes } from '../../registry/nodeRegistry'
 import '../../registry/gameConfigs'
 
 import { getJson } from '@/utils/fetch'
-import { symbolUseVueFlow, symbolFlowchartMetadata_Aliya1 } from '@/constants/injection'
+import { symbolUseVueFlow, symbolFlowchartMetadata_Aliya1, symbolFlowchartSearchMetadata } from '@/constants/injection'
 import { flowchartBus } from '@/utils/flowchartEvents'
 
 import FlowchartControls from '../FlowchartControls.vue'
@@ -103,6 +103,7 @@ const vueflowData = {
 // Provide
 provide(symbolUseVueFlow, vueflow)
 provide(symbolFlowchartMetadata_Aliya1, vueflowData.metadata)
+provide(symbolFlowchartSearchMetadata, vueflowData.metadata as Ref<Record<string, unknown>>)
 
 const store = useFlowchartStore()
 const flowKey = computed(() => store.makeKey(props.gameId, props.versionId, props.flowchartName))
