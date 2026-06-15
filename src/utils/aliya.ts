@@ -14,6 +14,7 @@ export function caluateMessageTypingTime(
     case 'en-us':
       return { time: 0.6 + text.length * 0.066, calcString: `0.6s + ${text.length} * 0.066s` }
   }
+  return { time: -1, calcString: `ERROR` }
 }
 
 /**
@@ -30,6 +31,7 @@ export function GetReadWait(
     case 'en-us':
       return { time: 0.6 + text.length * 0.033, calcString: `0.6s + ${text.length} * 0.033s` }
   }
+  return { time: -1, calcString: `ERROR` }
 }
 
 export function batchReplaceString(targetString: string, replaceTable: Record<string, string>) {
