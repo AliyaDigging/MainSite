@@ -1,7 +1,7 @@
 import mitt from 'mitt'
 
 type FlowchartEvents = {
-  'fit-in-view': { nodeId: string }
+  'fit-in-view': { nodeId: string; highlighted?: boolean; highlightDuration?: number }
   'node-card:show': {
     gameInfo: {
       gameId: string

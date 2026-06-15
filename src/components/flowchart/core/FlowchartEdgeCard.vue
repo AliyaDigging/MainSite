@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
-import { useVueFlow } from '@vue-flow/core'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useElementSize, useWindowSize } from '@vueuse/core'
 import { Icon } from '@vicons/utils'
 import { CloseOutlined } from '@vicons/material'
 import PvButton from 'primevue/button'
 import PvCard from 'primevue/card'
-import { useFlowchartHighlight, JUMP_HIGHLIGHT } from '@/composables/useFlowchartHighlight'
-import { scrollToNode } from '@/utils/flowchart'
+import { flowchartBus } from '@/utils/flowchartEvents'
 
 const props = defineProps<{
   source: string
@@ -39,19 +37,8 @@ const adjustedTop = computed(() => {
   return Math.max(EDGE_PAD, Math.min(raw, windowHeight.value - h - EDGE_PAD))
 })
 
-const vueflow = useVueFlow()
-const { highlightNode, clearHighlights } = useFlowchartHighlight(JUMP_HIGHLIGHT)
-
-let clearTimer: ReturnType<typeof setTimeout> | null = null
-
 function navigateToNode(nodeId: string) {
-  clearHighlights()
-  const found = scrollToNode(vueflow, nodeId)
-  if (found) {
-    nextTick(() => highlightNode(nodeId))
-    if (clearTimer) clearTimeout(clearTimer)
-    clearTimer = setTimeout(() => clearHighlights(), 2000)
-  }
+  flowchartBus.emit('fit-in-view', { nodeId, highlighted: true })
   emit('close')
 }
 
@@ -71,8 +58,6 @@ onMounted(() => {
 
 onUnmounted(() => {
   document.removeEventListener('click', handleOutsideClick)
-  if (clearTimer) clearTimeout(clearTimer)
-  clearHighlights()
 })
 </script>
 

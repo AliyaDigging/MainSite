@@ -21,6 +21,7 @@ import FlowchartSearchPanel from '../FlowchartSearchPanel.vue'
 import FlowchartEdgeCard from '../FlowchartEdgeCard.vue'
 import { useFlowchartStore } from '@/stores/flowchart'
 import { useEdgeClickCard } from '@/composables/useEdgeClickCard'
+import { useFlowchartHighlight, JUMP_HIGHLIGHT } from '@/composables/useFlowchartHighlight'
 
 type FlowchartDataEdge = {
   id: string
@@ -204,8 +205,16 @@ onBeforeUnmount(() => {
   flowchartBus.off('fit-in-view')
 })
 
-flowchartBus.on('fit-in-view', ({ nodeId }) => {
+const { highlightNode: jumpHighlightNode, clearHighlights: clearJumpHighlights } =
+  useFlowchartHighlight(JUMP_HIGHLIGHT)
+
+flowchartBus.on('fit-in-view', ({ nodeId, highlighted, highlightDuration }) => {
   vueflow.fitView({ nodes: [nodeId] })
+  if (highlighted) {
+    clearJumpHighlights()
+    jumpHighlightNode(nodeId)
+    setTimeout(() => clearJumpHighlights(), highlightDuration ?? 3000)
+  }
 })
 
 const { edge, position, visible: isEdgeCardVisible, handleEdgeClick, close: closeEdgeCard } =

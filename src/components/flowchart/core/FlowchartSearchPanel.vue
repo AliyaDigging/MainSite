@@ -23,7 +23,6 @@ import { useFlowchartHighlight, SEARCH_HIGHLIGHT } from '@/composables/useFlowch
 import { getL10NSearchConfig } from '@/components/flowchart/registry/l10nSearchRegistry'
 import '@/components/flowchart/registry/l10nSearchConfigs'
 import { useNodeTitleCache } from '@/composables/useNodeTitleCache'
-import { scrollToNode } from '@/utils/flowchart'
 
 type FlowchartDataNode = {
   id: string
@@ -217,12 +216,13 @@ function scrollToCurrentMatch() {
   }
   lastScrollTimestamp = now
 
-  scrollToNode(vueflow, match.nodeId, {
-    zoom: navigationZoom.value,
-    duration: 300,
-    offsetX: 110,
-    offsetY: 30,
-  })
+  const node = vueflow.findNode(match.nodeId)
+  if (node) {
+    vueflow.setCenter(node.position.x + 110, node.position.y + 30, {
+      zoom: navigationZoom.value,
+      duration: 300,
+    })
+  }
   refreshHighlights()
 }
 
