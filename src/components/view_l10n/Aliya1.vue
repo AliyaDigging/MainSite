@@ -118,7 +118,7 @@ watch(
             type="button"
             icon="pi pi-download"
             text
-            @click="triggerDownloadEvent('/data/localization/all.json', 'all.json')"
+            @click="triggerDownloadEvent(`/data/${gameId}/${versionId}/localization/all.json`, 'all.json')"
           />
         </template>
 
