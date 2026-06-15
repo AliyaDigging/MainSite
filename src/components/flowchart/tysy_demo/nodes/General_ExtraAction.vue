@@ -64,6 +64,22 @@ function triggerPopover(event: Event, varName: string) {
         <code>{{ props.data.value }}</code>
       </li>
     </template>
+
+    <template v-else-if="props.data.type === 'sfx'">
+      <li>
+        {{ $t('comp.flowchart.tysy_demo.node.General_ExtraAction.sfx.sfxGroupName.p') }}:
+        {{ props.data.sfxGroupName }}
+      </li>
+    </template>
+
+    <template v-else-if="props.data.type === 'Change804HeadImage'">
+      <li>
+        {{ $t('comp.flowchart.tysy_demo.node.General_ExtraAction.Change804HeadImage.version.p') }}:
+        {{ props.data.version }}<br /><img
+          :src="`/aliya/tysy_demo/images/chat_avatar/C804${props.data.version}.png`"
+        />
+      </li>
+    </template>
   </ul>
 </template>
 

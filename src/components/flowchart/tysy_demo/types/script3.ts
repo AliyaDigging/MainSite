@@ -37,13 +37,28 @@ export type BlockData_ExtraAction_Achievement = {
 }
 /**
  * This kind of extraAction value follows the format:
- * `['ACH'|'ach']@[achId]`
- * To auto detect, check if it starts with `ACH` or `ach`; for safer fallback,
- * first convert the first part (split by `@`) to lower-case then check if it
- * matches "ach".
+ * `GameReStart`
  */
 export type BlockData_ExtraAction_GameReStart = {
   type: 'GameReStart'
+}
+/**
+ * This kind of extraAction value follows the format:
+ * `[anything]@sfx@[name]`
+ * To auto-detect, check if the 2nd "@" split is "sfx".
+ */
+export type BlockData_ExtraAction_Sfx = {
+  type: 'sfx'
+  sfxGroupName: string // [name]
+}
+/**
+ * This kind of extraAction value follows the format:
+ * `[anything]@Change804HeadImage@[version]`
+ * To auto-detect, check if the 2nd "@" split is "Change804HeadImage".
+ */
+export type BlockData_ExtraAction_Change804HeadImage = {
+  type: 'Change804HeadImage'
+  version: string
 }
 
 export type BlockData_ExtraAction =
@@ -51,6 +66,8 @@ export type BlockData_ExtraAction =
   | BlockData_ExtraAction_VarGeneral
   | BlockData_ExtraAction_Achievement
   | BlockData_ExtraAction_GameReStart
+  | BlockData_ExtraAction_Sfx
+  | BlockData_ExtraAction_Change804HeadImage
 
 /**
  * FLOWCHART NOTE
