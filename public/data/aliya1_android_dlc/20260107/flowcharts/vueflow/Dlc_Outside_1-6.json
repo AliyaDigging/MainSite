@@ -1,0 +1,375 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 14,
+      "edge": 13,
+      "otherFlowcharts": 0
+    },
+    "flowchartRefs": [],
+    "variableNames": {},
+    "currName": "Dlc_Outside_1-6"
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1678620852570771",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1678620852570771",
+          "components": [
+            "114180777321380797",
+            "114722683425795773",
+            "114335095241302869",
+            "114716267449192885",
+            "114760013577440772",
+            "114686445092524993",
+            "114762082497791430",
+            "114494546306051076",
+            "114169931412149892",
+            "114452519586861763",
+            "114024463374077422",
+            "114569949775533353",
+            "114373140364695183"
+          ],
+          "m_Name": "Dlc_Outside_1-6"
+        }
+      },
+      {
+        "id": "114180777321380797",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114180777321380797",
+          "itemId": 0,
+          "blockName": "Dlc_Outside_1-6",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Aliya：所以该先去哪里呢</color>\n<color=white>【跳转到Block】跳转到: 中枢</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114716267449192885",
+            "114335095241302869"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114716267449192885",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114716267449192885",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "所以该先去哪里呢",
+          "imageId": null,
+          "itemId": 3
+        }
+      },
+      {
+        "id": "114335095241302869",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114335095241302869",
+          "itemId": 2,
+          "targetBlock": "114722683425795773"
+        }
+      },
+      {
+        "id": "114722683425795773",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114722683425795773",
+          "itemId": 1,
+          "blockName": "中枢",
+          "description": "<color=white>【<color=#00FFF7>选项</color>】去实验室  --->  New Block</color>\n<color=white>【<color=#00FFF7>选项</color>】去仓库  --->  New Block1</color>\n<color=white>【<color=#00FFF7>选项</color>】去管理处吧  --->  New Block2</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114760013577440772",
+            "114686445092524993",
+            "114762082497791430"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114760013577440772",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114760013577440772",
+          "text": "去实验室",
+          "targetBlock": "114494546306051076",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 4
+        }
+      },
+      {
+        "id": "114686445092524993",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114686445092524993",
+          "text": "去仓库",
+          "targetBlock": "114452519586861763",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 5
+        }
+      },
+      {
+        "id": "114762082497791430",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114762082497791430",
+          "text": "去管理处吧",
+          "targetBlock": "114024463374077422",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 6
+        }
+      },
+      {
+        "id": "114494546306051076",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114494546306051076",
+          "itemId": 7,
+          "blockName": "New Block",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Aliya：不过我提交的进实验室的申请还没过啊</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114169931412149892"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114169931412149892",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114169931412149892",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "不过我提交的进实验室的申请还没过啊",
+          "imageId": null,
+          "itemId": 8
+        }
+      },
+      {
+        "id": "114452519586861763",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114452519586861763",
+          "itemId": 9,
+          "blockName": "New Block1",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Aliya：</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114569949775533353"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114569949775533353",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114569949775533353",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": null,
+          "imageId": null,
+          "itemId": 11
+        }
+      },
+      {
+        "id": "114024463374077422",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114024463374077422",
+          "itemId": 10,
+          "blockName": "New Block2",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Aliya：那么该想想应该装什么病了</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114373140364695183"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114373140364695183",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114373140364695183",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "那么该想想应该装什么病了",
+          "imageId": null,
+          "itemId": 12
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1678620852570771->114180777321380797",
+        "type": "default",
+        "source": "1678620852570771",
+        "target": "114180777321380797",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114335095241302869->114722683425795773",
+        "type": "default",
+        "source": "114335095241302869",
+        "target": "114722683425795773",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114716267449192885->114335095241302869",
+        "type": "default",
+        "source": "114716267449192885",
+        "target": "114335095241302869",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114760013577440772->114494546306051076",
+        "type": "default",
+        "source": "114760013577440772",
+        "target": "114494546306051076",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114722683425795773->114760013577440772",
+        "type": "default",
+        "source": "114722683425795773",
+        "target": "114760013577440772",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114686445092524993->114452519586861763",
+        "type": "default",
+        "source": "114686445092524993",
+        "target": "114452519586861763",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114722683425795773->114686445092524993",
+        "type": "default",
+        "source": "114722683425795773",
+        "target": "114686445092524993",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114762082497791430->114024463374077422",
+        "type": "default",
+        "source": "114762082497791430",
+        "target": "114024463374077422",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114722683425795773->114762082497791430",
+        "type": "default",
+        "source": "114722683425795773",
+        "target": "114762082497791430",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114494546306051076->114169931412149892",
+        "type": "default",
+        "source": "114494546306051076",
+        "target": "114169931412149892",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114452519586861763->114569949775533353",
+        "type": "default",
+        "source": "114452519586861763",
+        "target": "114569949775533353",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114024463374077422->114373140364695183",
+        "type": "default",
+        "source": "114024463374077422",
+        "target": "114373140364695183",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114180777321380797->114716267449192885",
+        "type": "default",
+        "source": "114180777321380797",
+        "target": "114716267449192885",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

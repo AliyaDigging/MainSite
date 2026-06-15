@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 5,
+      "edge": 4,
+      "otherFlowcharts": 0
+    },
+    "flowchartRefs": [],
+    "variableNames": {
+      "114528413387637873": {
+        "key": "TestInput2",
+        "type": "string"
+      },
+      "114375254913388061": {
+        "key": "Time",
+        "type": "number"
+      }
+    },
+    "currName": "Dlc_TextFile1_TextFile"
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1747531944939367",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1747531944939367",
+          "components": [
+            "114528413387637873",
+            "114375254913388061",
+            "114296861659485492",
+            "114873599929069169"
+          ],
+          "m_Name": "Dlc_TextFile1_TextFile"
+        }
+      },
+      {
+        "id": "114528413387637873",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114528413387637873",
+          "itemId": -1,
+          "key": "TestInput2",
+          "value": null
+        }
+      },
+      {
+        "id": "114375254913388061",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114375254913388061",
+          "itemId": -1,
+          "key": "Time",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114296861659485492",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114296861659485492",
+          "itemId": 0,
+          "blockName": "Dlc_TextFile1_TextFile",
+          "description": "<color=white>【文本文件显示】显示文本文件Test1</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114873599929069169"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114873599929069169",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "TextFileCommand",
+        "data": {
+          "fileId": "114873599929069169",
+          "itemId": 1,
+          "textFileKey": "Test1"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1747531944939367->114528413387637873",
+        "type": "default",
+        "source": "1747531944939367",
+        "target": "114528413387637873",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114528413387637873->114375254913388061",
+        "type": "default",
+        "source": "114528413387637873",
+        "target": "114375254913388061",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114296861659485492->114873599929069169",
+        "type": "default",
+        "source": "114296861659485492",
+        "target": "114873599929069169",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114375254913388061->114296861659485492",
+        "type": "default",
+        "source": "114375254913388061",
+        "target": "114296861659485492",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

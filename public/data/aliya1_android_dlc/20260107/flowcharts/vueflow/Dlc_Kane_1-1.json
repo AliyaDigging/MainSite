@@ -1,0 +1,342 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 12,
+      "edge": 13,
+      "otherFlowcharts": 0
+    },
+    "flowchartRefs": [],
+    "variableNames": {},
+    "currName": "Dlc_Kane_1-1"
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1399147371337937",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1399147371337937",
+          "components": [
+            "114130584391244435",
+            "114462832675022303",
+            "114435095653650066",
+            "114654869428876269",
+            "114845001169393391",
+            "114549681057994274",
+            "114372967678290353",
+            "114487959955913388",
+            "114078378199082602",
+            "114335772187415951",
+            "114018767180572565"
+          ],
+          "m_Name": "Dlc_Kane_1-1"
+        }
+      },
+      {
+        "id": "114130584391244435",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114130584391244435",
+          "itemId": 0,
+          "blockName": "Dlc_Kane_1-1",
+          "description": "<color=white>【<color=#00FFF7>选项</color>】你好  --->  New Block</color>\n<color=white>【<color=#00FFF7>选项</color>】哈喽啊  --->  New Block</color>\n<color=white>【<color=#00FFF7>选项</color>】你的头像为什么是这样的？  --->  New Block</color>\n<color=white>【<color=#00FFF7>选项</color>】你在干啥？  --->  New Block</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114462832675022303",
+            "114654869428876269",
+            "114435095653650066",
+            "114549681057994274"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114462832675022303",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114462832675022303",
+          "text": "你好",
+          "targetBlock": "114845001169393391",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 8
+        }
+      },
+      {
+        "id": "114654869428876269",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114654869428876269",
+          "text": "哈喽啊",
+          "targetBlock": "114845001169393391",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 10
+        }
+      },
+      {
+        "id": "114435095653650066",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114435095653650066",
+          "text": "你的头像为什么是这样的？",
+          "targetBlock": "114845001169393391",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 9
+        }
+      },
+      {
+        "id": "114549681057994274",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114549681057994274",
+          "text": "你在干啥？",
+          "targetBlock": "114845001169393391",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 14
+        }
+      },
+      {
+        "id": "114845001169393391",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114845001169393391",
+          "itemId": 11,
+          "blockName": "New Block",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Kane：显示ID为0.11的图片</color>\n<color=white>【<color=#0BFF00>消息</color>】Kane：找我啥事啊？</color>\n<color=red>【<color=#00FFF7>选项</color>】Error:没啥事，只是聊天 未绑定目标Block！</color>\n<color=red>【<color=#00FFF7>选项</color>】Error:你能告诉我 未绑定目标Block！</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114372967678290353",
+            "114487959955913388",
+            "114335772187415951",
+            "114078378199082602"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114372967678290353",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114372967678290353",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": null,
+          "imageId": 0.11,
+          "itemId": 15
+        }
+      },
+      {
+        "id": "114487959955913388",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114487959955913388",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "Kane：找我啥事啊？",
+          "imageId": null,
+          "itemId": 16
+        }
+      },
+      {
+        "id": "114335772187415951",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114335772187415951",
+          "text": "没啥事，只是聊天",
+          "targetBlock": "0",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 18
+        }
+      },
+      {
+        "id": "114078378199082602",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114078378199082602",
+          "text": "你能告诉我",
+          "targetBlock": "0",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 17
+        }
+      },
+      {
+        "id": "114018767180572565",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114018767180572565",
+          "itemId": 19,
+          "blockName": "中枢",
+          "description": null,
+          "eventHandler": "0",
+          "commandList": [],
+          "suppressAllAutoSelections": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1399147371337937->114130584391244435",
+        "type": "default",
+        "source": "1399147371337937",
+        "target": "114130584391244435",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114462832675022303->114845001169393391",
+        "type": "default",
+        "source": "114462832675022303",
+        "target": "114845001169393391",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114654869428876269->114845001169393391",
+        "type": "default",
+        "source": "114654869428876269",
+        "target": "114845001169393391",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114130584391244435->114654869428876269",
+        "type": "default",
+        "source": "114130584391244435",
+        "target": "114654869428876269",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114435095653650066->114845001169393391",
+        "type": "default",
+        "source": "114435095653650066",
+        "target": "114845001169393391",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114130584391244435->114435095653650066",
+        "type": "default",
+        "source": "114130584391244435",
+        "target": "114435095653650066",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114549681057994274->114845001169393391",
+        "type": "default",
+        "source": "114549681057994274",
+        "target": "114845001169393391",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114130584391244435->114549681057994274",
+        "type": "default",
+        "source": "114130584391244435",
+        "target": "114549681057994274",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114845001169393391->114372967678290353",
+        "type": "default",
+        "source": "114845001169393391",
+        "target": "114372967678290353",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114372967678290353->114487959955913388",
+        "type": "default",
+        "source": "114372967678290353",
+        "target": "114487959955913388",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114487959955913388->114335772187415951",
+        "type": "default",
+        "source": "114487959955913388",
+        "target": "114335772187415951",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114487959955913388->114078378199082602",
+        "type": "default",
+        "source": "114487959955913388",
+        "target": "114078378199082602",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114130584391244435->114018767180572565",
+        "type": "default",
+        "source": "114130584391244435",
+        "target": "114018767180572565",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

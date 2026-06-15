@@ -1,0 +1,1331 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 49,
+      "edge": 53,
+      "otherFlowcharts": 1
+    },
+    "flowchartRefs": [
+      "Dlc_Outside_1-5"
+    ],
+    "variableNames": {
+      "114825734820643120": {
+        "key": "Dlc_Outside_1_3_23_1",
+        "type": "number"
+      },
+      "114825243086339963": {
+        "key": "Dlc_Outside_1_3_23_2",
+        "type": "number"
+      },
+      "114070401539835413": {
+        "key": "Dlc_Outside_1_3_23_3",
+        "type": "number"
+      }
+    },
+    "currName": "Dlc_Outside_1-4"
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1724492587153539",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1724492587153539",
+          "components": [
+            "114825734820643120",
+            "114825243086339963",
+            "114070401539835413",
+            "114756334476271912",
+            "114998017897903475",
+            "114319357861982384",
+            "114976472848042148",
+            "114156631789809949",
+            "114492354527865606",
+            "114515493715686163",
+            "114891041177487615",
+            "114158028152838596",
+            "114427637034114809",
+            "114385060611538959",
+            "114504473373660121",
+            "114356006045416674",
+            "114904616575312612",
+            "114545362820740279",
+            "114831958198184205",
+            "114571075223627443",
+            "114514152149431304",
+            "114923366502144044",
+            "114745495258039272",
+            "114480928622842567",
+            "114938176281339641",
+            "114850415045351502",
+            "114362104815669155",
+            "114020242925950314",
+            "114407059292840536",
+            "114206420296607700",
+            "114344150024905462",
+            "114436572100507796",
+            "114101016517989732",
+            "114109400804357599",
+            "114671573037451514",
+            "114119592299556096",
+            "114415972529180642",
+            "114758739424498656",
+            "114601923368802783",
+            "114364139569052497",
+            "114187248465514289",
+            "114148152772797000",
+            "114597795240151899",
+            "114631830559896095",
+            "114752951092330801",
+            "114978004907871420",
+            "114233537520538135"
+          ],
+          "m_Name": "Dlc_Outside_1-4"
+        }
+      },
+      {
+        "id": "114825734820643120",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114825734820643120",
+          "itemId": -1,
+          "key": "Dlc_Outside_1_3_23_1",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114825243086339963",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114825243086339963",
+          "itemId": -1,
+          "key": "Dlc_Outside_1_3_23_2",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114070401539835413",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114070401539835413",
+          "itemId": -1,
+          "key": "Dlc_Outside_1_3_23_3",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114756334476271912",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114756334476271912",
+          "itemId": 0,
+          "blockName": "Dlc_Outside_1-4",
+          "description": "<color=white><color=white>【<color=#0BFF00>消息</color>】Aliya：好了！\n【<color=#0BFF00>消息</color>】Aliya：计划终于讨论完了！\n【<color=#0BFF00>消息</color>】Aliya：明明刚吃完饭但好像又饿了……</color></color>\n<color=white>【<color=#00FFF7>选项</color>】脑力劳动消耗能量特别多的  --->  New Block</color>\n<color=white>【<color=#00FFF7>选项</color>】就吃那么点凝胶怎么可能吃饱啊  --->  New Block1</color>\n<color=white>【<color=#00FFF7>选项</color>】可能是你饭量特别大吧  --->  New Block2</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114319357861982384",
+            "114976472848042148",
+            "114156631789809949",
+            "114492354527865606"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114319357861982384",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114319357861982384",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "好了！\n计划终于讨论完了！\n明明刚吃完饭但好像又饿了……",
+          "imageId": null,
+          "itemId": 2
+        }
+      },
+      {
+        "id": "114976472848042148",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114976472848042148",
+          "text": "脑力劳动消耗能量特别多的",
+          "targetBlock": "114998017897903475",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 3
+        }
+      },
+      {
+        "id": "114156631789809949",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114156631789809949",
+          "text": "就吃那么点凝胶怎么可能吃饱啊",
+          "targetBlock": "114515493715686163",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 4
+        }
+      },
+      {
+        "id": "114492354527865606",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114492354527865606",
+          "text": "可能是你饭量特别大吧",
+          "targetBlock": "114891041177487615",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 5
+        }
+      },
+      {
+        "id": "114998017897903475",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114998017897903475",
+          "itemId": 1,
+          "blockName": "New Block",
+          "description": "<color=white><color=white>【<color=#0BFF00>消息</color>】Aliya：这个我知道啦\n【<color=#0BFF00>消息</color>】Aliya：感觉虽然什么也没干\n【<color=#0BFF00>消息</color>】Aliya：但真是幸苦我自己了\n【<color=#0BFF00>消息</color>】Aliya：凝胶果然根本不是人吃的东西</color></color>\n<color=white>【跳转到Block】跳转到: New Block1</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114158028152838596",
+            "114904616575312612"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114158028152838596",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114158028152838596",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "这个我知道啦\n感觉虽然什么也没干\n但真是幸苦我自己了\n凝胶果然根本不是人吃的东西",
+          "imageId": null,
+          "itemId": 8
+        }
+      },
+      {
+        "id": "114904616575312612",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114904616575312612",
+          "itemId": 13,
+          "targetBlock": "114515493715686163"
+        }
+      },
+      {
+        "id": "114515493715686163",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114515493715686163",
+          "itemId": 6,
+          "blockName": "New Block1",
+          "description": "<color=white><color=white>【<color=#0BFF00>消息</color>】Aliya：据食堂的人说，这玩意相当健康营养\n【<color=#0BFF00>消息</color>】Aliya：而且还对人偶的身体有好处\n【<color=#0BFF00>消息</color>】Aliya：但……不怎么好吃\n【<color=#0BFF00>消息</color>】Aliya：也不怎么有饱腹感\n【<color=#0BFF00>消息</color>】Aliya：我记得海獭号上还藏了海带来着\n【<color=#0BFF00>消息</color>】Aliya：现在应该被没收了吧，可惜</color></color>\n<color=white>【<color=#00FFF7>选项</color>】那个……关于Green  --->  New Block3</color>\n<color=white>【<color=#00FFF7>选项</color>】接下来该干什么？  --->  New Block4</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114427637034114809",
+            "114545362820740279",
+            "114831958198184205"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114427637034114809",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114427637034114809",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "据食堂的人说，这玩意相当健康营养\n而且还对人偶的身体有好处\n但……不怎么好吃\n也不怎么有饱腹感\n我记得海獭号上还藏了海带来着\n现在应该被没收了吧，可惜",
+          "imageId": null,
+          "itemId": 9
+        }
+      },
+      {
+        "id": "114545362820740279",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114545362820740279",
+          "text": "那个……关于Green",
+          "targetBlock": "114356006045416674",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 14
+        }
+      },
+      {
+        "id": "114831958198184205",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114831958198184205",
+          "text": "接下来该干什么？",
+          "targetBlock": "114571075223627443",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 15
+        }
+      },
+      {
+        "id": "114891041177487615",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114891041177487615",
+          "itemId": 7,
+          "blockName": "New Block2",
+          "description": "<color=white><color=white>【<color=#0BFF00>消息</color>】Aliya：我还饭量大啊？\n【<color=#0BFF00>消息</color>】Aliya：那些凝胶根本就不是人该吃的</color></color>\n<color=white>【跳转到Block】跳转到: New Block1</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114385060611538959",
+            "114504473373660121"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114385060611538959",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114385060611538959",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "我还饭量大啊？\n那些凝胶根本就不是人该吃的",
+          "imageId": null,
+          "itemId": 10
+        }
+      },
+      {
+        "id": "114504473373660121",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114504473373660121",
+          "itemId": 11,
+          "targetBlock": "114515493715686163"
+        }
+      },
+      {
+        "id": "114356006045416674",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114356006045416674",
+          "itemId": 12,
+          "blockName": "New Block3",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Aliya：嗯？</color>\n<color=white>【<color=#00FFF7>选项</color>】只是有点好奇这个人，你能详细讲讲吗？  --->  New Block5</color>\n<color=white>【<color=#00FFF7>选项</color>】你知道她和你父亲的死有关吗？  --->  New Block6</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114514152149431304",
+            "114745495258039272",
+            "114923366502144044"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114514152149431304",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114514152149431304",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "嗯？",
+          "imageId": null,
+          "itemId": 17
+        }
+      },
+      {
+        "id": "114745495258039272",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114745495258039272",
+          "text": "只是有点好奇这个人，你能详细讲讲吗？",
+          "targetBlock": "114480928622842567",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 19
+        }
+      },
+      {
+        "id": "114923366502144044",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114923366502144044",
+          "text": "你知道她和你父亲的死有关吗？",
+          "targetBlock": "114938176281339641",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 18
+        }
+      },
+      {
+        "id": "114571075223627443",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114571075223627443",
+          "itemId": 16,
+          "blockName": "New Block4",
+          "description": "<color=white><color=white>【<color=#0BFF00>消息</color>】Aliya：你可能得先去做点别的事情了\n【<color=#0BFF00>消息</color>】Aliya：我需要再把刚刚讨论的一些东西整理一下\n【<color=#0BFF00>消息</color>】Aliya：然后再规划一下地图的路线\n【<color=#0BFF00>消息</color>】Aliya：总之还是谢谢你啦！\n【<color=#0BFF00>消息</color>】Aliya：之后的行动也拜托你继续协助我了\n【<color=#0BFF00>消息</color>】Aliya：我差不多一个多小时后会给你发消息</color></color>\n<color=white>【<color=#00FFF7>选项</color>】等你消息  --->  New Block7</color>\n<color=white>【<color=#00FFF7>选项</color>】啊，但我到时候不一定能准时回复啊？  --->  New Block8</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114850415045351502",
+            "114407059292840536",
+            "114206420296607700"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114850415045351502",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114850415045351502",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "你可能得先去做点别的事情了\n我需要再把刚刚讨论的一些东西整理一下\n然后再规划一下地图的路线\n总之还是谢谢你啦！\n之后的行动也拜托你继续协助我了\n我差不多一个多小时后会给你发消息",
+          "imageId": null,
+          "itemId": 22
+        }
+      },
+      {
+        "id": "114407059292840536",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114407059292840536",
+          "text": "等你消息",
+          "targetBlock": "114362104815669155",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 25
+        }
+      },
+      {
+        "id": "114206420296607700",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114206420296607700",
+          "text": "啊，但我到时候不一定能准时回复啊？",
+          "targetBlock": "114020242925950314",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 26
+        }
+      },
+      {
+        "id": "114480928622842567",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114480928622842567",
+          "itemId": 20,
+          "blockName": "New Block5",
+          "description": "<color=white><color=white>【<color=#0BFF00>消息</color>】Aliya：Green医生其实年龄上都算我的长辈了\n【<color=#0BFF00>消息</color>】Aliya：但保养得真的太好了\n【<color=#0BFF00>消息</color>】Aliya：完全看不出来是将近五十岁的样子\n【<color=#0BFF00>消息</color>】Aliya：</color></color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114436572100507796"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114436572100507796",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114436572100507796",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "Green医生其实年龄上都算我的长辈了\n但保养得真的太好了\n完全看不出来是将近五十岁的样子\n",
+          "imageId": null,
+          "itemId": 28
+        }
+      },
+      {
+        "id": "114938176281339641",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114938176281339641",
+          "itemId": 21,
+          "blockName": "New Block6",
+          "description": "<color=white><color=white>【<color=#0BFF00>消息</color>】Aliya：啊？\n【<color=#0BFF00>消息</color>】Aliya：等等\n【<color=#0BFF00>消息</color>】Aliya：你是……\n【<color=#0BFF00>消息</color>】Aliya：为什么？\n【<color=#0BFF00>消息</color>】Aliya：到底是怎么一回事？</color></color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114101016517989732"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114101016517989732",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114101016517989732",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "啊？\n等等\n你是……\n为什么？\n到底是怎么一回事？",
+          "imageId": null,
+          "itemId": 29
+        }
+      },
+      {
+        "id": "114362104815669155",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114362104815669155",
+          "itemId": 23,
+          "blockName": "New Block7",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Aliya：一会儿再见！</color>\n<color=white>【<color=#00FFF7>选项</color>】拜拜  --->  New Block10</color>\n<color=white>【<color=#00FFF7>选项</color>】再见  --->  New Block11</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114344150024905462",
+            "114601923368802783",
+            "114364139569052497"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114344150024905462",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114344150024905462",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "一会儿再见！",
+          "imageId": null,
+          "itemId": 27
+        }
+      },
+      {
+        "id": "114601923368802783",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114601923368802783",
+          "text": "拜拜",
+          "targetBlock": "114187248465514289",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 36
+        }
+      },
+      {
+        "id": "114364139569052497",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114364139569052497",
+          "text": "再见",
+          "targetBlock": "114148152772797000",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 37
+        }
+      },
+      {
+        "id": "114020242925950314",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114020242925950314",
+          "itemId": 24,
+          "blockName": "New Block8",
+          "description": "<color=white><color=white>【<color=#0BFF00>消息</color>】Aliya：没事\n【<color=#0BFF00>消息</color>】Aliya：也不差这一会儿\n【<color=#0BFF00>消息</color>】Aliya：等你有空了我们一起行动！</color></color>\n<color=white>【<color=#00FFF7>选项</color>】好  --->  New Block7</color>\n<color=white>【<color=#00FFF7>选项</color>】那么一段时间后见再见  --->  New Block7</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114109400804357599",
+            "114671573037451514",
+            "114119592299556096"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114109400804357599",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114109400804357599",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "没事\n也不差这一会儿\n等你有空了我们一起行动！",
+          "imageId": null,
+          "itemId": 30
+        }
+      },
+      {
+        "id": "114671573037451514",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114671573037451514",
+          "text": "好",
+          "targetBlock": "114362104815669155",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 32
+        }
+      },
+      {
+        "id": "114119592299556096",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114119592299556096",
+          "text": "那么一段时间后见再见",
+          "targetBlock": "114362104815669155",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 33
+        }
+      },
+      {
+        "id": "114415972529180642",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114415972529180642",
+          "itemId": 34,
+          "blockName": "New Block9",
+          "description": "<color=white>【<color=#FFA200>等待时间</color>】等待1小时  13分钟  </color>\n<color=white>【跳转到Flowchart】Dlc_Outside_1-5</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114758739424498656",
+            "114233537520538135"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114758739424498656",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114758739424498656",
+          "itemId": 35,
+          "waitHours": 1,
+          "waitMinutes": 13,
+          "waitSeconds": 0,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114233537520538135",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallFlowchart",
+        "data": {
+          "fileId": "114233537520538135",
+          "flowchartName": "Dlc_Outside_1-5",
+          "itemId": 44
+        }
+      },
+      {
+        "id": "114187248465514289",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114187248465514289",
+          "itemId": 38,
+          "blockName": "New Block10",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Aliya：拜拜</color>\n<color=white>【跳转到Block】跳转到: New Block9</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114597795240151899",
+            "114752951092330801"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114597795240151899",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114597795240151899",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "拜拜",
+          "imageId": null,
+          "itemId": 40
+        }
+      },
+      {
+        "id": "114752951092330801",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114752951092330801",
+          "itemId": 42,
+          "targetBlock": "114415972529180642"
+        }
+      },
+      {
+        "id": "114148152772797000",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114148152772797000",
+          "itemId": 39,
+          "blockName": "New Block11",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Aliya：再见</color>\n<color=white>【跳转到Block】跳转到: New Block9</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114631830559896095",
+            "114978004907871420"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114631830559896095",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114631830559896095",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "再见",
+          "imageId": null,
+          "itemId": 41
+        }
+      },
+      {
+        "id": "114978004907871420",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114978004907871420",
+          "itemId": 43,
+          "targetBlock": "114415972529180642"
+        }
+      },
+      {
+        "id": "Dlc_Outside_1-5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartBlock",
+        "data": {
+          "fileId": "Dlc_Outside_1-5",
+          "flowchartName": "Dlc_Outside_1-5"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1724492587153539->114825734820643120",
+        "type": "default",
+        "source": "1724492587153539",
+        "target": "114825734820643120",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114825734820643120->114825243086339963",
+        "type": "default",
+        "source": "114825734820643120",
+        "target": "114825243086339963",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114825243086339963->114070401539835413",
+        "type": "default",
+        "source": "114825243086339963",
+        "target": "114070401539835413",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114756334476271912->114319357861982384",
+        "type": "default",
+        "source": "114756334476271912",
+        "target": "114319357861982384",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114976472848042148->114998017897903475",
+        "type": "default",
+        "source": "114976472848042148",
+        "target": "114998017897903475",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114319357861982384->114976472848042148",
+        "type": "default",
+        "source": "114319357861982384",
+        "target": "114976472848042148",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114156631789809949->114515493715686163",
+        "type": "default",
+        "source": "114156631789809949",
+        "target": "114515493715686163",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114319357861982384->114156631789809949",
+        "type": "default",
+        "source": "114319357861982384",
+        "target": "114156631789809949",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114492354527865606->114891041177487615",
+        "type": "default",
+        "source": "114492354527865606",
+        "target": "114891041177487615",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114319357861982384->114492354527865606",
+        "type": "default",
+        "source": "114319357861982384",
+        "target": "114492354527865606",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114998017897903475->114158028152838596",
+        "type": "default",
+        "source": "114998017897903475",
+        "target": "114158028152838596",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114904616575312612->114515493715686163",
+        "type": "default",
+        "source": "114904616575312612",
+        "target": "114515493715686163",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114158028152838596->114904616575312612",
+        "type": "default",
+        "source": "114158028152838596",
+        "target": "114904616575312612",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114515493715686163->114427637034114809",
+        "type": "default",
+        "source": "114515493715686163",
+        "target": "114427637034114809",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114545362820740279->114356006045416674",
+        "type": "default",
+        "source": "114545362820740279",
+        "target": "114356006045416674",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114427637034114809->114545362820740279",
+        "type": "default",
+        "source": "114427637034114809",
+        "target": "114545362820740279",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114831958198184205->114571075223627443",
+        "type": "default",
+        "source": "114831958198184205",
+        "target": "114571075223627443",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114427637034114809->114831958198184205",
+        "type": "default",
+        "source": "114427637034114809",
+        "target": "114831958198184205",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114891041177487615->114385060611538959",
+        "type": "default",
+        "source": "114891041177487615",
+        "target": "114385060611538959",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114504473373660121->114515493715686163",
+        "type": "default",
+        "source": "114504473373660121",
+        "target": "114515493715686163",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114385060611538959->114504473373660121",
+        "type": "default",
+        "source": "114385060611538959",
+        "target": "114504473373660121",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114356006045416674->114514152149431304",
+        "type": "default",
+        "source": "114356006045416674",
+        "target": "114514152149431304",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114745495258039272->114480928622842567",
+        "type": "default",
+        "source": "114745495258039272",
+        "target": "114480928622842567",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114514152149431304->114745495258039272",
+        "type": "default",
+        "source": "114514152149431304",
+        "target": "114745495258039272",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114923366502144044->114938176281339641",
+        "type": "default",
+        "source": "114923366502144044",
+        "target": "114938176281339641",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114514152149431304->114923366502144044",
+        "type": "default",
+        "source": "114514152149431304",
+        "target": "114923366502144044",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114571075223627443->114850415045351502",
+        "type": "default",
+        "source": "114571075223627443",
+        "target": "114850415045351502",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114407059292840536->114362104815669155",
+        "type": "default",
+        "source": "114407059292840536",
+        "target": "114362104815669155",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114850415045351502->114407059292840536",
+        "type": "default",
+        "source": "114850415045351502",
+        "target": "114407059292840536",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114206420296607700->114020242925950314",
+        "type": "default",
+        "source": "114206420296607700",
+        "target": "114020242925950314",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114850415045351502->114206420296607700",
+        "type": "default",
+        "source": "114850415045351502",
+        "target": "114206420296607700",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114480928622842567->114436572100507796",
+        "type": "default",
+        "source": "114480928622842567",
+        "target": "114436572100507796",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114938176281339641->114101016517989732",
+        "type": "default",
+        "source": "114938176281339641",
+        "target": "114101016517989732",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114362104815669155->114344150024905462",
+        "type": "default",
+        "source": "114362104815669155",
+        "target": "114344150024905462",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114601923368802783->114187248465514289",
+        "type": "default",
+        "source": "114601923368802783",
+        "target": "114187248465514289",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114344150024905462->114601923368802783",
+        "type": "default",
+        "source": "114344150024905462",
+        "target": "114601923368802783",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114364139569052497->114148152772797000",
+        "type": "default",
+        "source": "114364139569052497",
+        "target": "114148152772797000",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114344150024905462->114364139569052497",
+        "type": "default",
+        "source": "114344150024905462",
+        "target": "114364139569052497",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114020242925950314->114109400804357599",
+        "type": "default",
+        "source": "114020242925950314",
+        "target": "114109400804357599",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114671573037451514->114362104815669155",
+        "type": "default",
+        "source": "114671573037451514",
+        "target": "114362104815669155",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114109400804357599->114671573037451514",
+        "type": "default",
+        "source": "114109400804357599",
+        "target": "114671573037451514",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114119592299556096->114362104815669155",
+        "type": "default",
+        "source": "114119592299556096",
+        "target": "114362104815669155",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114109400804357599->114119592299556096",
+        "type": "default",
+        "source": "114109400804357599",
+        "target": "114119592299556096",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114415972529180642->114758739424498656",
+        "type": "default",
+        "source": "114415972529180642",
+        "target": "114758739424498656",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114233537520538135->Dlc_Outside_1-5",
+        "type": "default",
+        "source": "114233537520538135",
+        "target": "Dlc_Outside_1-5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114758739424498656->114233537520538135",
+        "type": "default",
+        "source": "114758739424498656",
+        "target": "114233537520538135",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114187248465514289->114597795240151899",
+        "type": "default",
+        "source": "114187248465514289",
+        "target": "114597795240151899",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114752951092330801->114415972529180642",
+        "type": "default",
+        "source": "114752951092330801",
+        "target": "114415972529180642",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114597795240151899->114752951092330801",
+        "type": "default",
+        "source": "114597795240151899",
+        "target": "114752951092330801",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114148152772797000->114631830559896095",
+        "type": "default",
+        "source": "114148152772797000",
+        "target": "114631830559896095",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114978004907871420->114415972529180642",
+        "type": "default",
+        "source": "114978004907871420",
+        "target": "114415972529180642",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114631830559896095->114978004907871420",
+        "type": "default",
+        "source": "114631830559896095",
+        "target": "114978004907871420",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114070401539835413->114756334476271912",
+        "type": "default",
+        "source": "114070401539835413",
+        "target": "114756334476271912",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

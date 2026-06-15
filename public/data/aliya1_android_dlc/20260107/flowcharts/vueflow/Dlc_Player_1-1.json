@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 5,
+      "edge": 5,
+      "otherFlowcharts": 0
+    },
+    "flowchartRefs": [],
+    "variableNames": {
+      "114999196814678409": {
+        "key": "PlayerInput",
+        "type": "string"
+      }
+    },
+    "currName": "Dlc_Player_1-1"
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1638681910536713",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1638681910536713",
+          "components": [
+            "114999196814678409",
+            "114518947849268610",
+            "114410884037728724",
+            "114941972305075484"
+          ],
+          "m_Name": "Dlc_Player_1-1"
+        }
+      },
+      {
+        "id": "114999196814678409",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114999196814678409",
+          "itemId": -1,
+          "key": "PlayerInput",
+          "value": null
+        }
+      },
+      {
+        "id": "114518947849268610",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114518947849268610",
+          "itemId": 0,
+          "blockName": "Dlc_Player_1-1",
+          "description": "<color=white>【玩家持续输入】获取玩家输入，将其置为PlayerInput。但不退出输入模式</color>\n<color=white>【跳转到Block】跳转到: Dlc_Player_1-1</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114941972305075484",
+            "114410884037728724"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114941972305075484",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerInputWithOutDeleteField",
+        "data": {
+          "fileId": "114941972305075484",
+          "itemId": 6,
+          "variable": {
+            "fileId": "114999196814678409"
+          },
+          "sendMessage": true
+        }
+      },
+      {
+        "id": "114410884037728724",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallBlock",
+        "data": {
+          "fileId": "114410884037728724",
+          "itemId": 5,
+          "targetBlock": "114518947849268610"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1638681910536713->114999196814678409",
+        "type": "default",
+        "source": "1638681910536713",
+        "target": "114999196814678409",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114518947849268610->114941972305075484",
+        "type": "default",
+        "source": "114518947849268610",
+        "target": "114941972305075484",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114410884037728724->114518947849268610",
+        "type": "default",
+        "source": "114410884037728724",
+        "target": "114518947849268610",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114941972305075484->114410884037728724",
+        "type": "default",
+        "source": "114941972305075484",
+        "target": "114410884037728724",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114999196814678409->114518947849268610",
+        "type": "default",
+        "source": "114999196814678409",
+        "target": "114518947849268610",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

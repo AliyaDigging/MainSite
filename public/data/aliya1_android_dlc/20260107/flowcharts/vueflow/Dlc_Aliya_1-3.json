@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 4,
+      "edge": 3,
+      "otherFlowcharts": 0
+    },
+    "flowchartRefs": [],
+    "variableNames": {},
+    "currName": "Dlc_Aliya_1-3"
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1886455194219866",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1886455194219866",
+          "components": [
+            "114513435154574300",
+            "114818004732219326",
+            "114318526741182897"
+          ],
+          "m_Name": "Dlc_Aliya_1-3"
+        }
+      },
+      {
+        "id": "114513435154574300",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114513435154574300",
+          "itemId": 0,
+          "blockName": "Dlc_Aliya_1-3",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Aliya：跳转成功</color>\n<color=white>【<color=#FFA200>等待时间</color>】等待999小时  </color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114318526741182897",
+            "114818004732219326"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114318526741182897",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114318526741182897",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "跳转成功",
+          "imageId": null,
+          "itemId": 2
+        }
+      },
+      {
+        "id": "114818004732219326",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114818004732219326",
+          "itemId": 1,
+          "waitHours": 999,
+          "waitMinutes": 0,
+          "waitSeconds": 0,
+          "SendToast": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1886455194219866->114513435154574300",
+        "type": "default",
+        "source": "1886455194219866",
+        "target": "114513435154574300",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114318526741182897->114818004732219326",
+        "type": "default",
+        "source": "114318526741182897",
+        "target": "114818004732219326",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114513435154574300->114318526741182897",
+        "type": "default",
+        "source": "114513435154574300",
+        "target": "114318526741182897",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

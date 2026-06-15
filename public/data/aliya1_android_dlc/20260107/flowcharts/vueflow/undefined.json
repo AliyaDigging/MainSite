@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 18,
+      "edge": 17,
+      "otherFlowcharts": 1
+    },
+    "flowchartRefs": ["PTILOPSIS"],
+    "variableNames": {},
+    "currName": "PTILOPSIS"
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1",
+          "components": [],
+          "m_Name": "Dlc_TextFile2_TextFile"
+        }
+      },
+      {
+        "id": "2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "2",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "【注意！以下内容纯构史内容，属于是站长闲的没事干写的】\n【以下内容与原作无关】\n【如果你拿着这些内容去冲了官方，本站及站长均不负任何责任】",
+          "imageId": null,
+          "itemId": 1
+        }
+      },
+      {
+        "id": "3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "3",
+          "text": "啊，这就结束了吗……",
+          "targetBlock": "4",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 2
+        }
+      },
+      {
+        "id": "4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "4",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "【再说一遍，以下内容与原作**无关**，为纯**构史**】\n【确保你能读懂以上文字后再继续往下看！】",
+          "imageId": null,
+          "itemId": 3
+        }
+      },
+      {
+        "id": "5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "5",
+          "text": "有点可惜啊……",
+          "targetBlock": "6",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 4
+        }
+      },
+      {
+        "id": "6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "6",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "……\n………………\n…………………………\n【已连接至：哥伦比亚—RHINE LAB LLC—数据库网络】",
+          "imageId": null,
+          "itemId": 5
+        }
+      },
+      {
+        "id": "7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "7",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "欢迎使用莱茵生命LLC内部数据库管理系统",
+          "imageId": null,
+          "itemId": 6
+        }
+      },
+      {
+        "id": "8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "8",
+          "text": "……？",
+          "targetBlock": "9",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 7
+        }
+      },
+      {
+        "id": "9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "9",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "莱茵生命LLC使用基于账号及密码的基础认证用于权限控制",
+          "imageId": null,
+          "itemId": 8
+        }
+      },
+      {
+        "id": "10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "19",
+          "text": "……！",
+          "targetBlock": "11",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 9
+        }
+      },
+      {
+        "id": "11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "11",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "请输入您的账号与密码，然后继续",
+          "imageId": null,
+          "itemId": 10
+        }
+      },
+      {
+        "id": "12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "12",
+          "text": "JOYRE MOORE",
+          "targetBlock": "13",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 11
+        }
+      },
+      {
+        "id": "13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "13",
+          "text": "20190430_100000",
+          "targetBlock": "14",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 12
+        }
+      },
+      {
+        "id": "14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "14",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "身份核验已通过\n欢迎您，乔伊丝·摩尔\n权限：内部数据库管理员",
+          "imageId": null,
+          "itemId": 13
+        }
+      },
+      {
+        "id": "15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "15",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "选择档案文件……\n编号：X-001\n保密性：一般商业用途",
+          "imageId": null,
+          "itemId": 14
+        }
+      },
+      {
+        "id": "16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "16",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "载入中……\n……\n载入成功",
+          "imageId": null,
+          "itemId": 15
+        }
+      },
+      {
+        "id": "17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "17",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "https://www.bilibili.com/video/BV1rr4y1b7sz/",
+          "imageId": null,
+          "itemId": 16
+        }
+      },
+      {
+        "id": "18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CallFlowchart",
+        "data": {
+          "fileId": "18",
+          "flowchartName": "PTILOPSIS",
+          "itemId": 17
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1->2",
+        "type": "default",
+        "source": "1",
+        "target": "2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "2->3",
+        "type": "default",
+        "source": "2",
+        "target": "3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "3->4",
+        "type": "default",
+        "source": "3",
+        "target": "4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "4->5",
+        "type": "default",
+        "source": "4",
+        "target": "5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "5->6",
+        "type": "default",
+        "source": "5",
+        "target": "6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "6->7",
+        "type": "default",
+        "source": "6",
+        "target": "7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "7->8",
+        "type": "default",
+        "source": "7",
+        "target": "8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "8->9",
+        "type": "default",
+        "source": "8",
+        "target": "9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9->10",
+        "type": "default",
+        "source": "9",
+        "target": "10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "10->11",
+        "type": "default",
+        "source": "10",
+        "target": "11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "11->12",
+        "type": "default",
+        "source": "11",
+        "target": "12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "12->13",
+        "type": "default",
+        "source": "12",
+        "target": "13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13->14",
+        "type": "default",
+        "source": "13",
+        "target": "14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "14->15",
+        "type": "default",
+        "source": "14",
+        "target": "15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15->16",
+        "type": "default",
+        "source": "15",
+        "target": "16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "16->17",
+        "type": "default",
+        "source": "16",
+        "target": "17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "17->18",
+        "type": "default",
+        "source": "17",
+        "target": "18",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

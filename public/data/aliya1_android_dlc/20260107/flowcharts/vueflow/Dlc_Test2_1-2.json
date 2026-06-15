@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 11,
+      "edge": 11,
+      "otherFlowcharts": 0
+    },
+    "flowchartRefs": [],
+    "variableNames": {
+      "114585333810697720": {
+        "key": "TestInput2",
+        "type": "string"
+      },
+      "114183212373465205": {
+        "key": "Time",
+        "type": "number"
+      }
+    },
+    "currName": "Dlc_Test2_1-2"
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1518867604928132",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1518867604928132",
+          "components": [
+            "114585333810697720",
+            "114183212373465205",
+            "114935510561425703",
+            "114216991954060799",
+            "114039453351525660",
+            "114922484296981151",
+            "114592186573589771",
+            "114671208372360053",
+            "114978095350288365",
+            "114464907278646520"
+          ],
+          "m_Name": "Dlc_Test2_1-2"
+        }
+      },
+      {
+        "id": "114585333810697720",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114585333810697720",
+          "itemId": -1,
+          "key": "TestInput2",
+          "value": null
+        }
+      },
+      {
+        "id": "114183212373465205",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefineVariable",
+        "data": {
+          "fileId": "114183212373465205",
+          "itemId": -1,
+          "key": "Time",
+          "value": "0"
+        }
+      },
+      {
+        "id": "114935510561425703",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114935510561425703",
+          "itemId": 0,
+          "blockName": "Dlc_Test2_1-2",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Test2：你好, 1-2</color>\n<color=white>【<color=#FFA200>等待时间</color>】等待5秒 </color>\n<color=white>【<color=#0BFF00>消息</color>】Test2：完成</color>\n<color=white>【<color=#FFA200>等待时间</color>】等待1小时  </color>\n<color=white>【设置变量】Time += 1</color>\n<color=white>【<color=#0BFF00>消息</color>】Test2：等待完成{$Time}</color>\n<color=white>【<color=#00FFF7>选项</color>】Option Text  --->  Dlc_Test2_1-2</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114216991954060799",
+            "114464907278646520",
+            "114978095350288365",
+            "114039453351525660",
+            "114592186573589771",
+            "114922484296981151",
+            "114671208372360053"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114216991954060799",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114216991954060799",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "你好, 1-2",
+          "imageId": null,
+          "itemId": 1
+        }
+      },
+      {
+        "id": "114464907278646520",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114464907278646520",
+          "itemId": 12,
+          "waitHours": 0,
+          "waitMinutes": 0,
+          "waitSeconds": 5,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114978095350288365",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114978095350288365",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "完成",
+          "imageId": null,
+          "itemId": 11
+        }
+      },
+      {
+        "id": "114039453351525660",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "fileId": "114039453351525660",
+          "itemId": 2,
+          "waitHours": 1,
+          "waitMinutes": 0,
+          "waitSeconds": 0,
+          "SendToast": true
+        }
+      },
+      {
+        "id": "114592186573589771",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "SetVariable",
+        "data": {
+          "fileId": "114592186573589771",
+          "itemId": 9,
+          "setOperator": 2,
+          "anyVar": {
+            "variable": "114183212373465205",
+            "data": {
+              "stringData": {
+                "stringRef": "0",
+                "stringVal": null
+              },
+              "integerData": {
+                "integerRef": "0",
+                "integerVal": 1
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "114922484296981151",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114922484296981151",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "等待完成{$Time}",
+          "imageId": null,
+          "itemId": 8
+        }
+      },
+      {
+        "id": "114671208372360053",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114671208372360053",
+          "text": "Option Text",
+          "targetBlock": "114935510561425703",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 10
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1518867604928132->114585333810697720",
+        "type": "default",
+        "source": "1518867604928132",
+        "target": "114585333810697720",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114585333810697720->114183212373465205",
+        "type": "default",
+        "source": "114585333810697720",
+        "target": "114183212373465205",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114935510561425703->114216991954060799",
+        "type": "default",
+        "source": "114935510561425703",
+        "target": "114216991954060799",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114216991954060799->114464907278646520",
+        "type": "default",
+        "source": "114216991954060799",
+        "target": "114464907278646520",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114464907278646520->114978095350288365",
+        "type": "default",
+        "source": "114464907278646520",
+        "target": "114978095350288365",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114978095350288365->114039453351525660",
+        "type": "default",
+        "source": "114978095350288365",
+        "target": "114039453351525660",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114039453351525660->114592186573589771",
+        "type": "default",
+        "source": "114039453351525660",
+        "target": "114592186573589771",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114592186573589771->114922484296981151",
+        "type": "default",
+        "source": "114592186573589771",
+        "target": "114922484296981151",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114671208372360053->114935510561425703",
+        "type": "default",
+        "source": "114671208372360053",
+        "target": "114935510561425703",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114922484296981151->114671208372360053",
+        "type": "default",
+        "source": "114922484296981151",
+        "target": "114671208372360053",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114183212373465205->114935510561425703",
+        "type": "default",
+        "source": "114183212373465205",
+        "target": "114935510561425703",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

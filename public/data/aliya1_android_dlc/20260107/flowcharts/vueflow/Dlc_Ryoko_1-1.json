@@ -1,0 +1,289 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 10,
+      "edge": 11,
+      "otherFlowcharts": 0
+    },
+    "flowchartRefs": [],
+    "variableNames": {},
+    "currName": "Dlc_Ryoko_1-1"
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "1818555339971723",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FlowchartStart",
+        "data": {
+          "fileId": "1818555339971723",
+          "components": [
+            "114674990150404409",
+            "114290289930255816",
+            "114764515202929215",
+            "114110337753568540",
+            "114806161132654053",
+            "114227467914920555",
+            "114934786585800513",
+            "114604418315665500",
+            "114750006259483355"
+          ],
+          "m_Name": "Dlc_Ryoko_1-1"
+        }
+      },
+      {
+        "id": "114674990150404409",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114674990150404409",
+          "itemId": 0,
+          "blockName": "Dlc_Ryoko_1-1",
+          "description": "<color=white>【<color=#00FFF7>选项</color>】你好  --->  New Block</color>\n<color=white>【<color=#00FFF7>选项</color>】哈喽  --->  New Block</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114290289930255816",
+            "114764515202929215"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114290289930255816",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114290289930255816",
+          "text": "你好",
+          "targetBlock": "114110337753568540",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 1
+        }
+      },
+      {
+        "id": "114764515202929215",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114764515202929215",
+          "text": "哈喽",
+          "targetBlock": "114110337753568540",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 2
+        }
+      },
+      {
+        "id": "114110337753568540",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114110337753568540",
+          "itemId": 3,
+          "blockName": "New Block",
+          "description": "<color=white>【<color=#0BFF00>消息</color>】Ryoko：什么事？</color>\n<color=white>【<color=#00FFF7>选项</color>】没啥事  --->  New Block1</color>\n<color=white>【<color=#00FFF7>选项</color>】只是发个消息  --->  New Block1</color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114806161132654053",
+            "114227467914920555",
+            "114934786585800513"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114806161132654053",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114806161132654053",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "什么事？",
+          "imageId": null,
+          "itemId": 4
+        }
+      },
+      {
+        "id": "114227467914920555",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114227467914920555",
+          "text": "没啥事",
+          "targetBlock": "114604418315665500",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 6
+        }
+      },
+      {
+        "id": "114934786585800513",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "fileId": "114934786585800513",
+          "text": "只是发个消息",
+          "targetBlock": "114604418315665500",
+          "customMsgText": null,
+          "customImgMsg": null,
+          "additionalEvents": null,
+          "itemId": 7
+        }
+      },
+      {
+        "id": "114604418315665500",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "GroupBlock",
+        "data": {
+          "fileId": "114604418315665500",
+          "itemId": 8,
+          "blockName": "New Block1",
+          "description": "<color=white><color=white>【<color=#0BFF00>消息</color>】Ryoko：有事再找我\n【<color=#0BFF00>消息</color>】Ryoko：我很忙</color></color>\n",
+          "eventHandler": "0",
+          "commandList": [
+            "114750006259483355"
+          ],
+          "suppressAllAutoSelections": true
+        }
+      },
+      {
+        "id": "114750006259483355",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AliyaMessage",
+        "data": {
+          "fileId": "114750006259483355",
+          "autoWaitTime": true,
+          "waitSeconds": 1,
+          "messageText": "有事再找我\n我很忙",
+          "imageId": null,
+          "itemId": 9
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1818555339971723->114674990150404409",
+        "type": "default",
+        "source": "1818555339971723",
+        "target": "114674990150404409",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114290289930255816->114110337753568540",
+        "type": "default",
+        "source": "114290289930255816",
+        "target": "114110337753568540",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114764515202929215->114110337753568540",
+        "type": "default",
+        "source": "114764515202929215",
+        "target": "114110337753568540",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114674990150404409->114764515202929215",
+        "type": "default",
+        "source": "114674990150404409",
+        "target": "114764515202929215",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114110337753568540->114806161132654053",
+        "type": "default",
+        "source": "114110337753568540",
+        "target": "114806161132654053",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114227467914920555->114604418315665500",
+        "type": "default",
+        "source": "114227467914920555",
+        "target": "114604418315665500",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114806161132654053->114227467914920555",
+        "type": "default",
+        "source": "114806161132654053",
+        "target": "114227467914920555",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114934786585800513->114604418315665500",
+        "type": "default",
+        "source": "114934786585800513",
+        "target": "114604418315665500",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114806161132654053->114934786585800513",
+        "type": "default",
+        "source": "114806161132654053",
+        "target": "114934786585800513",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114604418315665500->114750006259483355",
+        "type": "default",
+        "source": "114604418315665500",
+        "target": "114750006259483355",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "114674990150404409->114290289930255816",
+        "type": "default",
+        "source": "114674990150404409",
+        "target": "114290289930255816",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}
