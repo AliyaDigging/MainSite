@@ -9,6 +9,7 @@ import type { L10nSingleLang_Ycytx5, VFOut_Catalog_Ycytx5 } from '@/types/ycytx_
 import type { FlowchartData as FlowchartData_2361Playtest } from '@/components/flowchart/2361_playtest/types/script3'
 import type { FlowchartData as FlowchartData_TysyDemo } from '@/components/flowchart/tysy_demo/types/script3'
 import type { VariableUsage_Aliya1 } from '@/components/flowchart/aliya1/types/script9'
+import type { VariableUsage as VariableUsage_TysyDemo } from '@/components/flowchart/tysy_demo/types/script5'
 import type { CatalogData as VueFlowCatalog_TysyDemo } from '@/components/flowchart/tysy_demo/types/script4'
 
 type FlowchartDataSet_Aliya1 = Aliya1_FlowchartData | Aliya1_Android_DLC_FlowchartData
@@ -65,6 +66,9 @@ export const symbolFlowchartCatalog_TysyDemo = Symbol(
 export const symbolFlowchartMetadata_TysyDemo = Symbol(
   'flowchart_metadata_tysy_demo',
 ) as InjectionKey<Ref<FlowchartData_TysyDemo['metadata']>>
+export const symbolFlowchartVarUsage_TysyDemo = Symbol('var_usage_tysy_demo') as InjectionKey<
+  Ref<VariableUsage_TysyDemo>
+>
 
 /** 通用 L10N 数据注入键 — 供搜索面板使用，各父页面负责规范化为扁平 Record<string, string> */
 export const symbolL10NSearchData = Symbol('l10n_search_data') as InjectionKey<

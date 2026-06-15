@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { symbolFlowchartCatalog_TysyDemo } from '@/constants/injection'
+import { flowchartBus } from '@/utils/flowchartEvents'
 import { computed, inject } from 'vue'
 
 const props = defineProps<{
@@ -18,6 +19,17 @@ const shouldDisplay = computed(() => {
   }
   return true
 })
+
+// 变量使用弹窗
+function triggerPopover(event: Event, varName: string) {
+  event.stopPropagation()
+  event.preventDefault()
+  flowchartBus.emit('node-popover:toggle', {
+    varName,
+    originTriggerNodeId: '',
+    browserEvent: event,
+  })
+}
 
 // 生成流程图链接
 function getFlowchartLink(flowchartName: string) {
@@ -72,7 +84,7 @@ function getFlowchartLink(flowchartName: string) {
           >
           <ul>
             <li v-for="(entry, id) of catalogMetadata.variableNames" :key="id" class="mt-1">
-              <code>{{ entry.key }}</code
+              <code class="clickable-var" @click="(e) => triggerPopover(e, entry.key)">{{ entry.key }}</code
               >&nbsp;-&nbsp;{{ $t(`comp.flowchart.variable.type.${entry.type}`) }}&nbsp;({{
                 $t(`comp.flowchart.tysy_demo.flow.var.scope.${entry.scope}`)
               }})
@@ -95,5 +107,13 @@ li.ul-li b {
 ul ul {
   list-style-type: circle;
   margin-left: 40px;
+}
+
+code.clickable-var {
+  text-decoration: underline;
+  cursor: pointer;
+}
+code.clickable-var:hover {
+  color: var(--p-primary-color);
 }
 </style>

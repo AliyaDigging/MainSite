@@ -24,6 +24,7 @@ import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
 import FlowchartSearchPanel from '../FlowchartSearchPanel.vue'
 import FlowchartEdgeCard from '../FlowchartEdgeCard.vue'
+import Variable_UsagePopover from '../../tysy_demo/nodes/Variable_UsagePopover.vue'
 import { useFlowchartStore } from '@/stores/flowchart'
 import { useEdgeClickCard } from '@/composables/useEdgeClickCard'
 import { useFlowchartHighlight, JUMP_HIGHLIGHT } from '@/composables/useFlowchartHighlight'
@@ -236,6 +237,7 @@ const {
   <div style="width: 100%; height: 100%">
     <FlowchartEmptyState v-if="!isReady" />
     <div v-else class="flowchart-comp">
+      <Variable_UsagePopover />
       <VueFlow
         :nodes="vueflowData.nodes.value"
         :edges="vueflowData.edges.value"

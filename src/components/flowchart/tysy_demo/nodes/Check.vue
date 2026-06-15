@@ -7,9 +7,20 @@ import { Icon } from '@vicons/utils'
 import { GitBranchSharp } from '@vicons/ionicons5'
 
 import { type FlowchartDataNode_Check } from '../types/script3'
+import { flowchartBus } from '@/utils/flowchartEvents'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_Check['data']>>()
+
+function triggerPopover(event: Event, varName: string) {
+  event.stopPropagation()
+  event.preventDefault()
+  flowchartBus.emit('node-popover:toggle', {
+    varName,
+    originTriggerNodeId: props.id,
+    browserEvent: event,
+  })
+}
 </script>
 
 <template>
@@ -44,15 +55,25 @@ const props = defineProps<NodeProps<FlowchartDataNode_Check['data']>>()
         </p>
         <p>
           {{ $t('comp.flowchart.tysy_demo.node.Check.variableName.p') }}:
-          <code>{{ props.data.variableName }}</code>
+          <code class="clickable-var" @click="(e) => triggerPopover(e, props.data.variableName)">{{ props.data.variableName }}</code>
         </p>
         <p>
           {{ $t('comp.flowchart.tysy_demo.node.Check.valueGreater.p') }}:
           <code>{{ props.data.valueGreater }}</code>
         </p>
-        <General_ExtraAction :data="props.data.extraAction" v-if="props.data.extraAction" />
+        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />
   </div>
 </template>
+
+<style scoped>
+code.clickable-var {
+  text-decoration: underline;
+  cursor: pointer;
+}
+code.clickable-var:hover {
+  color: var(--p-primary-color);
+}
+</style>

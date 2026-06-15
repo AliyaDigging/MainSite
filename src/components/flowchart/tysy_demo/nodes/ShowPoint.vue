@@ -44,7 +44,7 @@ const props = defineProps<NodeProps<FlowchartDataNode_ShowPoint['data']>>()
           {{ $t('comp.flowchart.tysy_demo.node.ShowPoint.show') }}:
           {{ $t(`comp.flowchart.tysy_demo.node.ShowPoint.show.${props.data.show}`) }}
         </p>
-        <General_ExtraAction :data="props.data.extraAction" v-if="props.data.extraAction" />
+        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

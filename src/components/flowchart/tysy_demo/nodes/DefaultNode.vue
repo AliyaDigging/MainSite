@@ -36,7 +36,7 @@ const props = defineProps<NodeProps<FlowchartDataNode_DefaultNode['data']>>()
             <i>nextIndex: {{ props.data.nextIndex }}</i>
           </p>
         </div>
-        <General_ExtraAction :data="props.data.extraAction" v-if="props.data.extraAction" />
+        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

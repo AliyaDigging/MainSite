@@ -39,7 +39,7 @@ const props = defineProps<NodeProps<FlowchartDataNode_Waiting['data']>>()
         <p>
           {{ $t('comp.flowchart.tysy_demo.node.Waiting.waitTime') }}: {{ props.data.waitTime }}s
         </p>
-        <General_ExtraAction :data="props.data.extraAction" v-if="props.data.extraAction" />
+        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

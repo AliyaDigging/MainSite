@@ -5,6 +5,7 @@ import FlowchartExtraControls from '@/components/flowchart/core/FlowchartExtraCo
 
 import {
   symbolFlowchartCatalog_TysyDemo,
+  symbolFlowchartVarUsage_TysyDemo,
   symbolL10nDataSingleLang_TysyDemo,
   symbolL10NSearchData,
 } from '@/constants/injection'
@@ -13,6 +14,7 @@ import { computed, onMounted, provide, ref, useTemplateRef, watch } from 'vue'
 import { useSiteSettingStore } from '@/stores/setting'
 import { getJson } from '@/utils/fetch'
 import type { FlowchartData } from '@/components/flowchart/tysy_demo/types/script3'
+import type { VariableUsage as VariableUsage_TysyDemo } from '@/components/flowchart/tysy_demo/types/script5'
 
 const props = defineProps<{
   gameId: string
@@ -36,6 +38,8 @@ const flowchartRef = useTemplateRef('flowchartComp')
 
 const catalogData = ref<VueFlowCatalog>({ catalog: {}, flowchartBeingRefed: {} })
 
+const varUsageData = ref<VariableUsage_TysyDemo>({})
+
 const l10nData = ref<Record<string, string>>({})
 async function loadL10nData(langcode: string) {
   if (!gameId.value || !versionId.value) return
@@ -49,6 +53,7 @@ async function loadL10nData(langcode: string) {
 provide(symbolL10nDataSingleLang_TysyDemo, l10nData)
 provide(symbolL10NSearchData, l10nData)
 provide(symbolFlowchartCatalog_TysyDemo, catalogData)
+provide(symbolFlowchartVarUsage_TysyDemo, varUsageData)
 
 watch(
   () => setting.l10nlang,
@@ -63,10 +68,20 @@ watch(
 )
 
 onMounted(async () => {
-  catalogData.value = await getJson<VueFlowCatalog>(
-    `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/catalog.json`,
-    5,
-  )
+  await Promise.allSettled([
+    (async () => {
+      catalogData.value = await getJson<VueFlowCatalog>(
+        `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/catalog.json`,
+        5,
+      )
+    })(),
+    (async () => {
+      varUsageData.value = await getJson<VariableUsage_TysyDemo>(
+        `/data/${props.gameId}/${props.versionId}/flowcharts/variable_usage.json`,
+        5,
+      )
+    })(),
+  ])
 
   isLoading.value = false
 })

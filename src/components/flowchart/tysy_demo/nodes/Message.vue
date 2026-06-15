@@ -85,7 +85,7 @@ const flowchartMetadata = inject(symbolFlowchartMetadata_TysyDemo)!
           {{ $t('comp.flowchart.tysy_demo.node.Message.content') }}:
           {{ l10n[`${flowchartMetadata.currName}_${props.data.currIndex}`] }}
         </p>
-        <General_ExtraAction :data="props.data.extraAction" v-if="props.data.extraAction" />
+        <General_ExtraAction :data="props.data.extraAction" :node-id="props.id" v-if="props.data.extraAction" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />
