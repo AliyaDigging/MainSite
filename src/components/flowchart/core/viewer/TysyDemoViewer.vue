@@ -12,8 +12,13 @@ import { getGameConfig, getAllNodeTypes } from '../../registry/nodeRegistry'
 import '../../registry/gameConfigs'
 
 import { getJson } from '@/utils/fetch'
-import { symbolUseVueFlow, symbolFlowchartMetadata_TysyDemo, symbolFlowchartSearchMetadata } from '@/constants/injection'
+import {
+  symbolUseVueFlow,
+  symbolFlowchartMetadata_TysyDemo,
+  symbolFlowchartSearchMetadata,
+} from '@/constants/injection'
 import { flowchartBus } from '@/utils/flowchartEvents'
+import type { FlowchartData as FlowchartData_TysyDemo } from '@/components/flowchart/tysy_demo/types/script3'
 
 import FlowchartControls from '../FlowchartControls.vue'
 import FlowchartEmptyState from '../FlowchartEmptyState.vue'
@@ -35,10 +40,7 @@ type FlowchartDataEdge = {
   labelBgStyle?: { fill: 'green' | 'red' | 'orange' }
 }
 
-type FlowchartMetadata = {
-  counts: { node: number; edge: number; otherFlowcharts: number }
-  currName: string
-}
+type FlowchartMetadata = FlowchartData_TysyDemo['metadata']
 
 type FlowchartDataNode = {
   id: string
@@ -81,6 +83,8 @@ const vueflowData = {
   edges: ref<FlowchartDataEdge[]>([]),
   metadata: ref<FlowchartMetadata>({
     counts: { node: -1, edge: -1, otherFlowcharts: -1 },
+    variableNames: {},
+    flowchartRefs: [],
     currName: '',
   }),
 }
@@ -154,6 +158,8 @@ watch(
       vueflowData.edges.value = []
       vueflowData.metadata.value = {
         counts: { node: -1, edge: -1, otherFlowcharts: -1 },
+        variableNames: {},
+        flowchartRefs: [],
         currName: '',
       }
     } else {
@@ -217,8 +223,13 @@ flowchartBus.on('fit-in-view', ({ nodeId, highlighted, highlightDuration }) => {
   }
 })
 
-const { edge, position, visible: isEdgeCardVisible, handleEdgeClick, close: closeEdgeCard } =
-  useEdgeClickCard()
+const {
+  edge,
+  position,
+  visible: isEdgeCardVisible,
+  handleEdgeClick,
+  close: closeEdgeCard,
+} = useEdgeClickCard()
 </script>
 
 <template>

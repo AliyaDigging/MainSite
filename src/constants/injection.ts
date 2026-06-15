@@ -9,6 +9,7 @@ import type { L10nSingleLang_Ycytx5, VFOut_Catalog_Ycytx5 } from '@/types/ycytx_
 import type { FlowchartData as FlowchartData_2361Playtest } from '@/components/flowchart/2361_playtest/types/script3'
 import type { FlowchartData as FlowchartData_TysyDemo } from '@/components/flowchart/tysy_demo/types/script3'
 import type { VariableUsage_Aliya1 } from '@/components/flowchart/aliya1/types/script9'
+import type { CatalogData as VueFlowCatalog_TysyDemo } from '@/components/flowchart/tysy_demo/types/script4'
 
 type FlowchartDataSet_Aliya1 = Aliya1_FlowchartData | Aliya1_Android_DLC_FlowchartData
 
@@ -60,9 +61,7 @@ export const symbolL10nDataSingleLang_TysyDemo = Symbol('l10n_data_tysy_demo') a
 
 export const symbolFlowchartCatalog_TysyDemo = Symbol(
   'flowchart_catalog_tysy_demo',
-) as InjectionKey<
-  Ref<{ catalog: Record<string, { metadata: FlowchartData_TysyDemo['metadata'] }> }>
->
+) as InjectionKey<Ref<VueFlowCatalog_TysyDemo>>
 export const symbolFlowchartMetadata_TysyDemo = Symbol(
   'flowchart_metadata_tysy_demo',
 ) as InjectionKey<Ref<FlowchartData_TysyDemo['metadata']>>
@@ -73,9 +72,9 @@ export const symbolL10NSearchData = Symbol('l10n_search_data') as InjectionKey<
 >
 
 /** 流程图搜索元数据 — 供搜索面板 buildL10NKey 使用（如 tysy_demo 的 currName） */
-export const symbolFlowchartSearchMetadata = Symbol(
-  'flowchart_search_metadata',
-) as InjectionKey<Ref<Record<string, unknown>>>
+export const symbolFlowchartSearchMetadata = Symbol('flowchart_search_metadata') as InjectionKey<
+  Ref<Record<string, unknown>>
+>
 
 export const symbolGameSelectionDict = Symbol('game_select_dict') as InjectionKey<
   Ref<[string, string, string]>

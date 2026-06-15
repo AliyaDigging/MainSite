@@ -21,7 +21,7 @@ const props = defineProps<{
 }>()
 
 type VueFlowCatalog = {
-  catalog: Record<string, { metadata: FlowchartData['metadata'] }>
+  catalog: Record<string, FlowchartData['metadata']>
   flowchartBeingRefed: Record<string, string[]>
 }
 
@@ -63,6 +63,11 @@ watch(
 )
 
 onMounted(async () => {
+  catalogData.value = await getJson<VueFlowCatalog>(
+    `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/catalog.json`,
+    5,
+  )
+
   isLoading.value = false
 })
 </script>
@@ -77,7 +82,6 @@ onMounted(async () => {
         ref="flowchartComp"
       />
 
-      <!--
       <FlowchartExtraControls :title="$t('comp.flowchartmetadata.h2')">
         <FlowchartMetadata_TysyDemo
           :flowchart-name="props.flowchartName"
@@ -85,7 +89,6 @@ onMounted(async () => {
           :version-id="props.versionId"
         />
       </FlowchartExtraControls>
-      -->
     </div>
   </template>
   <template v-else>

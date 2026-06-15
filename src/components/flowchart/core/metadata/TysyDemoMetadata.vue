@@ -9,7 +9,7 @@ const props = defineProps<{
 }>()
 
 const catalogData = inject(symbolFlowchartCatalog_TysyDemo)!
-const catalogMetadata = computed(() => catalogData.value.catalog[props.flowchartName]?.metadata)
+const catalogMetadata = computed(() => catalogData.value.catalog[props.flowchartName])
 
 const shouldDisplay = computed(() => {
   const name = props.flowchartName.toLowerCase()
@@ -18,6 +18,11 @@ const shouldDisplay = computed(() => {
   }
   return true
 })
+
+// 生成流程图链接
+function getFlowchartLink(flowchartName: string) {
+  return `/view/flowchart/${props.gameId}/${props.versionId}/${flowchartName}`
+}
 </script>
 
 <template>
@@ -39,6 +44,40 @@ const shouldDisplay = computed(() => {
           <span
             ><b>{{ $t('comp.flowchartmetadata.count.edge') }}</b></span
           >:&nbsp;<code>{{ catalogMetadata.counts.edge }}</code>
+        </li>
+        <li class="mb-1">
+          <span
+            ><b>{{ $t('comp.flowchartmetadata.otherflowcharts') }}</b
+            >:&nbsp;<span v-for="(i, id) of catalogMetadata.flowchartRefs" :key="id"
+              ><RouterLink :to="getFlowchartLink(i)">{{ i }}</RouterLink
+              >,
+            </span></span
+          >
+        </li>
+        <li class="mb-1">
+          <span
+            ><b>{{ $t('comp.flowchartmetadata.beingrefed') }}</b
+            >:&nbsp;<span
+              v-for="(i, id) of catalogData.flowchartBeingRefed[flowchartName]"
+              :key="id"
+              ><RouterLink :to="getFlowchartLink(i)">{{ i }}</RouterLink
+              >,
+            </span></span
+          >
+        </li>
+        <li class="mb-1">
+          <span
+            ><b>{{ $t('comp.flowchartmetadata.variablenames') }}</b
+            >:&nbsp;</span
+          >
+          <ul>
+            <li v-for="(entry, id) of catalogMetadata.variableNames" :key="id" class="mt-1">
+              <code>{{ entry.key }}</code
+              >&nbsp;-&nbsp;{{ $t(`comp.flowchart.variable.type.${entry.type}`) }}&nbsp;({{
+                $t(`comp.flowchart.tysy_demo.flow.var.scope.${entry.scope}`)
+              }})
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
