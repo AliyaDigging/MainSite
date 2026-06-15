@@ -8,6 +8,7 @@ import { getJson } from '@/utils/fetch'
 
 import Aliya1 from '@/components/view_resource/Aliya1.vue'
 import Ycytx5 from '@/components/view_resource/Ycytx5.vue'
+import TysyDemo from '@/components/view_resource/TysyDemo.vue'
 import GameAndVersionSelector from '@/components/GameAndVersionSelector.vue'
 import { useRoute, useRouter } from 'vue-router'
 
@@ -103,6 +104,11 @@ watch(
         <Aliya1 v-if="gameId.includes('aliya1')" :game-id="gameId" :version-id="versionId" />
         <Ycytx5
           v-else-if="gameId.toLowerCase() === 'ycytx_5'"
+          :game-id="gameId"
+          :version-id="versionId"
+        />
+        <TysyDemo
+          v-else-if="gameId.toLowerCase() === 'tysy_demo'"
           :game-id="gameId"
           :version-id="versionId"
         />
