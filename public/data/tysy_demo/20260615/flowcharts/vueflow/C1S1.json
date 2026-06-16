@@ -1,8 +1,8 @@
 {
   "metadata": {
     "counts": {
-      "node": 636,
-      "edge": 752,
+      "node": 590,
+      "edge": 652,
       "otherFlowcharts": 2
     },
     "variableNames": {
@@ -247,6 +247,7 @@
         "data": {
           "currIndex": 106,
           "nextIndex": 400,
+          "timeout": 600,
           "waitTime": 600,
           "chatScene": "C804",
           "extraAction": {
@@ -254,20 +255,8 @@
             "scope": "pv",
             "varName": "好感度",
             "value": 4
-          }
-        }
-      },
-      {
-        "id": "106_Default",
-        "position": {
-          "x": 26500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 106,
-          "nextIndex": 107,
-          "timeout": 600
+          },
+          "blocking": false
         }
       },
       {
@@ -623,6 +612,7 @@
         "data": {
           "currIndex": 128,
           "nextIndex": 400,
+          "timeout": 600,
           "waitTime": 600,
           "chatScene": "C804",
           "extraAction": {
@@ -630,20 +620,8 @@
             "scope": "pv",
             "varName": "好感度",
             "value": 1
-          }
-        }
-      },
-      {
-        "id": "128_Default",
-        "position": {
-          "x": 32000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 128,
-          "nextIndex": 129,
-          "timeout": 600
+          },
+          "blocking": false
         }
       },
       {
@@ -1284,6 +1262,7 @@
         "data": {
           "currIndex": 167,
           "nextIndex": 400,
+          "timeout": 600,
           "waitTime": 600,
           "chatScene": "C804",
           "extraAction": {
@@ -1291,20 +1270,8 @@
             "scope": "pv",
             "varName": "好感度",
             "value": 1
-          }
-        }
-      },
-      {
-        "id": "167_Default",
-        "position": {
-          "x": 41750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 167,
-          "nextIndex": 168,
-          "timeout": 600
+          },
+          "blocking": false
         }
       },
       {
@@ -1831,25 +1798,14 @@
         "data": {
           "currIndex": 200,
           "nextIndex": 400,
+          "timeout": 600,
           "waitTime": 600,
           "chatScene": "C804",
           "extraAction": {
             "type": "Achievement",
             "achId": "FINALLY"
-          }
-        }
-      },
-      {
-        "id": "200_Default",
-        "position": {
-          "x": 50000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 200,
-          "nextIndex": 201,
-          "timeout": 600
+          },
+          "blocking": false
         }
       },
       {
@@ -2281,22 +2237,11 @@
         "data": {
           "currIndex": 227,
           "nextIndex": 400,
+          "timeout": 1800,
           "waitTime": 1800,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "227_Default",
-        "position": {
-          "x": 56750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 227,
-          "nextIndex": 228,
-          "timeout": 1800
+          "extraAction": null,
+          "blocking": false
         }
       },
       {
@@ -2740,22 +2685,11 @@
         "data": {
           "currIndex": 254,
           "nextIndex": 400,
+          "timeout": 1200,
           "waitTime": 1200,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "254_Default",
-        "position": {
-          "x": 63500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 254,
-          "nextIndex": 255,
-          "timeout": 1200
+          "extraAction": null,
+          "blocking": false
         }
       },
       {
@@ -4450,22 +4384,11 @@
         "data": {
           "currIndex": 420,
           "nextIndex": 425,
+          "timeout": 20,
           "waitTime": 20,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "420_Default",
-        "position": {
-          "x": 105000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 420,
-          "nextIndex": 421,
-          "timeout": 20
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -4478,22 +4401,11 @@
         "data": {
           "currIndex": 421,
           "nextIndex": 426,
+          "timeout": 20,
           "waitTime": 20,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "421_Default",
-        "position": {
-          "x": 105250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 421,
-          "nextIndex": 422,
-          "timeout": 20
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -4506,22 +4418,11 @@
         "data": {
           "currIndex": 422,
           "nextIndex": 427,
+          "timeout": 20,
           "waitTime": 20,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "422_Default",
-        "position": {
-          "x": 105500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 422,
-          "nextIndex": 423,
-          "timeout": 20
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -4530,12 +4431,11 @@
           "x": 105750,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 423,
           "nextIndex": 310,
-          "waitTime": 20,
-          "extraAction": null
+          "timeout": 20
         }
       },
       {
@@ -4644,22 +4544,11 @@
         "data": {
           "currIndex": 433,
           "nextIndex": 500,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "433_Default",
-        "position": {
-          "x": 108250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 433,
-          "nextIndex": 434,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -4672,22 +4561,11 @@
         "data": {
           "currIndex": 434,
           "nextIndex": 501,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "434_Default",
-        "position": {
-          "x": 108500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 434,
-          "nextIndex": 435,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -4700,22 +4578,11 @@
         "data": {
           "currIndex": 435,
           "nextIndex": 502,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "435_Default",
-        "position": {
-          "x": 108750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 435,
-          "nextIndex": 436,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -4724,12 +4591,11 @@
           "x": 109000,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 436,
           "nextIndex": 460,
-          "waitTime": 10,
-          "extraAction": null
+          "timeout": 10
         }
       },
       {
@@ -4790,22 +4656,11 @@
         "data": {
           "currIndex": 443,
           "nextIndex": 500,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "443_Default",
-        "position": {
-          "x": 110750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 443,
-          "nextIndex": 444,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -4818,22 +4673,11 @@
         "data": {
           "currIndex": 444,
           "nextIndex": 501,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "444_Default",
-        "position": {
-          "x": 111000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 444,
-          "nextIndex": 445,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -4846,22 +4690,11 @@
         "data": {
           "currIndex": 445,
           "nextIndex": 502,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "445_Default",
-        "position": {
-          "x": 111250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 445,
-          "nextIndex": 446,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -4870,12 +4703,11 @@
           "x": 111500,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 446,
           "nextIndex": 460,
-          "waitTime": 10,
-          "extraAction": null
+          "timeout": 10
         }
       },
       {
@@ -4970,22 +4802,11 @@
         "data": {
           "currIndex": 455,
           "nextIndex": 501,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "455_Default",
-        "position": {
-          "x": 113750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 455,
-          "nextIndex": 456,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -4998,22 +4819,11 @@
         "data": {
           "currIndex": 456,
           "nextIndex": 502,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "456_Default",
-        "position": {
-          "x": 114000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 456,
-          "nextIndex": 457,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -5022,12 +4832,11 @@
           "x": 114250,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 457,
           "nextIndex": 460,
-          "waitTime": 10,
-          "extraAction": null
+          "timeout": 10
         }
       },
       {
@@ -5088,22 +4897,11 @@
         "data": {
           "currIndex": 463,
           "nextIndex": 466,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "463_Default",
-        "position": {
-          "x": 115750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 463,
-          "nextIndex": 464,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -5116,22 +4914,11 @@
         "data": {
           "currIndex": 464,
           "nextIndex": 467,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "464_Default",
-        "position": {
-          "x": 116000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 464,
-          "nextIndex": 465,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -5140,12 +4927,11 @@
           "x": 116250,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 465,
           "nextIndex": 470,
-          "waitTime": 10,
-          "extraAction": null
+          "timeout": 10
         }
       },
       {
@@ -5320,22 +5106,11 @@
         "data": {
           "currIndex": 482,
           "nextIndex": 485,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "482_Default",
-        "position": {
-          "x": 120500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 482,
-          "nextIndex": 483,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -5348,22 +5123,11 @@
         "data": {
           "currIndex": 483,
           "nextIndex": 486,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "483_Default",
-        "position": {
-          "x": 120750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 483,
-          "nextIndex": 484,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -5372,12 +5136,11 @@
           "x": 121000,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 484,
           "nextIndex": 490,
-          "waitTime": 10,
-          "extraAction": null
+          "timeout": 10
         }
       },
       {
@@ -5707,22 +5470,11 @@
         "data": {
           "currIndex": 514,
           "nextIndex": 517,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "514_Default",
-        "position": {
-          "x": 128500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 514,
-          "nextIndex": 515,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -5735,22 +5487,11 @@
         "data": {
           "currIndex": 515,
           "nextIndex": 518,
+          "timeout": 10,
           "waitTime": 10,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "515_Default",
-        "position": {
-          "x": 128750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 515,
-          "nextIndex": 516,
-          "timeout": 10
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -5759,12 +5500,11 @@
           "x": 129000,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 516,
           "nextIndex": 490,
-          "waitTime": 10,
-          "extraAction": null
+          "timeout": 10
         }
       },
       {
@@ -6103,22 +5843,11 @@
         "data": {
           "currIndex": 552,
           "nextIndex": 555,
+          "timeout": 20,
           "waitTime": 20,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "552_Default",
-        "position": {
-          "x": 138000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 552,
-          "nextIndex": 553,
-          "timeout": 20
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -6131,22 +5860,11 @@
         "data": {
           "currIndex": 553,
           "nextIndex": 556,
+          "timeout": 20,
           "waitTime": 20,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "553_Default",
-        "position": {
-          "x": 138250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 553,
-          "nextIndex": 554,
-          "timeout": 20
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -6155,12 +5873,11 @@
           "x": 138500,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 554,
           "nextIndex": 310,
-          "waitTime": 20,
-          "extraAction": null
+          "timeout": 20
         }
       },
       {
@@ -6205,22 +5922,11 @@
         "data": {
           "currIndex": 557,
           "nextIndex": 559,
+          "timeout": 5,
           "waitTime": 5,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "557_Default",
-        "position": {
-          "x": 139250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 557,
-          "nextIndex": 558,
-          "timeout": 5
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -6229,12 +5935,11 @@
           "x": 139500,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 558,
           "nextIndex": 561,
-          "waitTime": 5,
-          "extraAction": null
+          "timeout": 5
         }
       },
       {
@@ -6325,22 +6030,11 @@
         "data": {
           "currIndex": 564,
           "nextIndex": 580,
+          "timeout": 60,
           "waitTime": 60,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "564_Default",
-        "position": {
-          "x": 141000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 564,
-          "nextIndex": 565,
-          "timeout": 60
+          "extraAction": null,
+          "blocking": false
         }
       },
       {
@@ -6676,22 +6370,11 @@
         "data": {
           "currIndex": 601,
           "nextIndex": 610,
+          "timeout": 300,
           "waitTime": 300,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "601_Default",
-        "position": {
-          "x": 150250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 601,
-          "nextIndex": 602,
-          "timeout": 300
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -6704,22 +6387,11 @@
         "data": {
           "currIndex": 602,
           "nextIndex": 611,
+          "timeout": 300,
           "waitTime": 300,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "602_Default",
-        "position": {
-          "x": 150500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 602,
-          "nextIndex": 603,
-          "timeout": 300
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -6728,12 +6400,11 @@
           "x": 150750,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 603,
           "nextIndex": 310,
-          "waitTime": 300,
-          "extraAction": null
+          "timeout": 300
         }
       },
       {
@@ -7082,22 +6753,11 @@
         "data": {
           "currIndex": 641,
           "nextIndex": 660,
+          "timeout": 18,
           "waitTime": 18,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "641_Default",
-        "position": {
-          "x": 160250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 641,
-          "nextIndex": 642,
-          "timeout": 18
+          "extraAction": null,
+          "blocking": false
         }
       },
       {
@@ -7202,22 +6862,11 @@
         "data": {
           "currIndex": 648,
           "nextIndex": 680,
+          "timeout": 500,
           "waitTime": 500,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "648_Default",
-        "position": {
-          "x": 162000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 648,
-          "nextIndex": 649,
-          "timeout": 500
+          "extraAction": null,
+          "blocking": false
         }
       },
       {
@@ -7230,22 +6879,11 @@
         "data": {
           "currIndex": 649,
           "nextIndex": 690,
+          "timeout": 500,
           "waitTime": 500,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "649_Default",
-        "position": {
-          "x": 162250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 649,
-          "nextIndex": 650,
-          "timeout": 500
+          "extraAction": null,
+          "blocking": false
         }
       },
       {
@@ -7808,6 +7446,7 @@
         "data": {
           "currIndex": 706,
           "nextIndex": 720,
+          "timeout": 60,
           "waitTime": 60,
           "chatScene": "C804",
           "extraAction": {
@@ -7815,20 +7454,8 @@
             "scope": "pv",
             "varName": "友善",
             "value": 1
-          }
-        }
-      },
-      {
-        "id": "706_Default",
-        "position": {
-          "x": 176500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 706,
-          "nextIndex": 707,
-          "timeout": 60
+          },
+          "blocking": true
         }
       },
       {
@@ -7841,6 +7468,7 @@
         "data": {
           "currIndex": 707,
           "nextIndex": 721,
+          "timeout": 60,
           "waitTime": 60,
           "chatScene": "C804",
           "extraAction": {
@@ -7848,20 +7476,8 @@
             "scope": "pv",
             "varName": "搞怪",
             "value": 1
-          }
-        }
-      },
-      {
-        "id": "707_Default",
-        "position": {
-          "x": 176750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 707,
-          "nextIndex": 708,
-          "timeout": 60
+          },
+          "blocking": true
         }
       },
       {
@@ -7870,12 +7486,11 @@
           "x": 177000,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 708,
           "nextIndex": 709,
-          "waitTime": 60,
-          "extraAction": null
+          "timeout": 60
         }
       },
       {
@@ -7920,6 +7535,7 @@
         "data": {
           "currIndex": 711,
           "nextIndex": 735,
+          "timeout": 300,
           "waitTime": 300,
           "chatScene": "C804",
           "extraAction": {
@@ -7927,20 +7543,8 @@
             "scope": "pv",
             "varName": "冰冷",
             "value": 1
-          }
-        }
-      },
-      {
-        "id": "711_Default",
-        "position": {
-          "x": 177750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 711,
-          "nextIndex": 712,
-          "timeout": 300
+          },
+          "blocking": true
         }
       },
       {
@@ -7953,6 +7557,7 @@
         "data": {
           "currIndex": 712,
           "nextIndex": 745,
+          "timeout": 300,
           "waitTime": 300,
           "chatScene": "C804",
           "extraAction": {
@@ -7960,20 +7565,8 @@
             "scope": "pv",
             "varName": "友善",
             "value": 1
-          }
-        }
-      },
-      {
-        "id": "712_Default",
-        "position": {
-          "x": 178000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 712,
-          "nextIndex": 713,
-          "timeout": 300
+          },
+          "blocking": true
         }
       },
       {
@@ -7982,12 +7575,11 @@
           "x": 178250,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 713,
           "nextIndex": 714,
-          "waitTime": 300,
-          "extraAction": null
+          "timeout": 300
         }
       },
       {
@@ -8370,22 +7962,11 @@
         "data": {
           "currIndex": 774,
           "nextIndex": 790,
+          "timeout": 60,
           "waitTime": 60,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "774_Default",
-        "position": {
-          "x": 193500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 774,
-          "nextIndex": 775,
-          "timeout": 60
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -8398,22 +7979,11 @@
         "data": {
           "currIndex": 775,
           "nextIndex": 805,
+          "timeout": 60,
           "waitTime": 60,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "775_Default",
-        "position": {
-          "x": 193750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 775,
-          "nextIndex": 776,
-          "timeout": 60
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -8422,12 +7992,11 @@
           "x": 194000,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 776,
           "nextIndex": 777,
-          "waitTime": 60,
-          "extraAction": null
+          "timeout": 60
         }
       },
       {
@@ -8488,22 +8057,11 @@
         "data": {
           "currIndex": 780,
           "nextIndex": 830,
+          "timeout": 300,
           "waitTime": 300,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "780_Default",
-        "position": {
-          "x": 195000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 780,
-          "nextIndex": 781,
-          "timeout": 300
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -8516,22 +8074,11 @@
         "data": {
           "currIndex": 781,
           "nextIndex": 831,
+          "timeout": 300,
           "waitTime": 300,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "781_Default",
-        "position": {
-          "x": 195250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 781,
-          "nextIndex": 782,
-          "timeout": 300
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -8540,12 +8087,11 @@
           "x": 195500,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 782,
           "nextIndex": 783,
-          "waitTime": 300,
-          "extraAction": null
+          "timeout": 300
         }
       },
       {
@@ -8869,22 +8415,11 @@
         "data": {
           "currIndex": 809,
           "nextIndex": 820,
+          "timeout": 5,
           "waitTime": 5,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "809_Default",
-        "position": {
-          "x": 202250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 809,
-          "nextIndex": 810,
-          "timeout": 5
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -8893,12 +8428,11 @@
           "x": 202500,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 810,
           "nextIndex": 811,
-          "waitTime": 5,
-          "extraAction": null
+          "timeout": 5
         }
       },
       {
@@ -9378,22 +8912,11 @@
         "data": {
           "currIndex": 1030,
           "nextIndex": 1045,
+          "timeout": 60,
           "waitTime": 60,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "1030_Default",
-        "position": {
-          "x": 257500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 1030,
-          "nextIndex": 1031,
-          "timeout": 60
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -9406,6 +8929,7 @@
         "data": {
           "currIndex": 1031,
           "nextIndex": 1046,
+          "timeout": 60,
           "waitTime": 60,
           "chatScene": "C804",
           "extraAction": {
@@ -9413,20 +8937,8 @@
             "scope": "pv",
             "varName": "搞怪",
             "value": 1
-          }
-        }
-      },
-      {
-        "id": "1031_Default",
-        "position": {
-          "x": 257750,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 1031,
-          "nextIndex": 1032,
-          "timeout": 60
+          },
+          "blocking": true
         }
       },
       {
@@ -9439,6 +8951,7 @@
         "data": {
           "currIndex": 1032,
           "nextIndex": 1047,
+          "timeout": 60,
           "waitTime": 60,
           "chatScene": "C804",
           "extraAction": {
@@ -9446,20 +8959,8 @@
             "scope": "pv",
             "varName": "英雄登场",
             "value": 1
-          }
-        }
-      },
-      {
-        "id": "1032_Default",
-        "position": {
-          "x": 258000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 1032,
-          "nextIndex": 1033,
-          "timeout": 60
+          },
+          "blocking": true
         }
       },
       {
@@ -9468,12 +8969,11 @@
           "x": 258250,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 1033,
           "nextIndex": 1034,
-          "waitTime": 60,
-          "extraAction": null
+          "timeout": 60
         }
       },
       {
@@ -9870,22 +9370,11 @@
         "data": {
           "currIndex": 1072,
           "nextIndex": 1075,
+          "timeout": 15,
           "waitTime": 15,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "1072_Default",
-        "position": {
-          "x": 268000,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 1072,
-          "nextIndex": 1073,
-          "timeout": 15
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -9898,22 +9387,11 @@
         "data": {
           "currIndex": 1073,
           "nextIndex": 1076,
+          "timeout": 15,
           "waitTime": 15,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "1073_Default",
-        "position": {
-          "x": 268250,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 1073,
-          "nextIndex": 1074,
-          "timeout": 15
+          "extraAction": null,
+          "blocking": true
         }
       },
       {
@@ -9922,12 +9400,11 @@
           "x": 268500,
           "y": 0
         },
-        "type": "Waiting",
+        "type": "OpenOption_Default",
         "data": {
           "currIndex": 1074,
           "nextIndex": 1100,
-          "waitTime": 15,
-          "extraAction": null
+          "timeout": 15
         }
       },
       {
@@ -10308,10 +9785,10 @@
         "animated": false
       },
       {
-        "id": "105->106_Default",
+        "id": "105->107",
         "type": "default",
         "source": "105",
-        "target": "106_Default",
+        "target": "107",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -10322,21 +9799,6 @@
         "target": "400",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "106_Default->107",
-        "type": "default",
-        "source": "106_Default",
-        "target": "107",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "107->108",
@@ -10499,10 +9961,10 @@
         "animated": false
       },
       {
-        "id": "127->128_Default",
+        "id": "127->129",
         "type": "default",
         "source": "127",
-        "target": "128_Default",
+        "target": "129",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -10513,21 +9975,6 @@
         "target": "400",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "128_Default->129",
-        "type": "default",
-        "source": "128_Default",
-        "target": "129",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "129->130",
@@ -10834,10 +10281,10 @@
         "animated": false
       },
       {
-        "id": "166->167_Default",
+        "id": "166->168",
         "type": "default",
         "source": "166",
-        "target": "167_Default",
+        "target": "168",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -10848,21 +10295,6 @@
         "target": "400",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "167_Default->168",
-        "type": "default",
-        "source": "167_Default",
-        "target": "168",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "168->169",
@@ -11113,10 +10545,10 @@
         "animated": false
       },
       {
-        "id": "199->200_Default",
+        "id": "199->201",
         "type": "default",
         "source": "199",
-        "target": "200_Default",
+        "target": "201",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -11127,21 +10559,6 @@
         "target": "400",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "200_Default->201",
-        "type": "default",
-        "source": "200_Default",
-        "target": "201",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "201->202",
@@ -11352,10 +10769,10 @@
         "animated": false
       },
       {
-        "id": "226->227_Default",
+        "id": "226->228",
         "type": "default",
         "source": "226",
-        "target": "227_Default",
+        "target": "228",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -11366,21 +10783,6 @@
         "target": "400",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "227_Default->228",
-        "type": "default",
-        "source": "227_Default",
-        "target": "228",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "228->229",
@@ -11591,10 +10993,10 @@
         "animated": false
       },
       {
-        "id": "253->254_Default",
+        "id": "253->255",
         "type": "default",
         "source": "253",
-        "target": "254_Default",
+        "target": "255",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -11605,21 +11007,6 @@
         "target": "400",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "254_Default->255",
-        "type": "default",
-        "source": "254_Default",
-        "target": "255",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "255->256",
@@ -11995,22 +11382,6 @@
         }
       },
       {
-        "id": "312->5",
-        "type": "default",
-        "source": "312",
-        "target": "5",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "320->274",
-        "type": "default",
-        "source": "320",
-        "target": "274",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "320->321",
         "type": "default",
         "source": "320",
@@ -12176,14 +11547,6 @@
         }
       },
       {
-        "id": "326->353",
-        "type": "default",
-        "source": "326",
-        "target": "353",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "326->327",
         "type": "default",
         "source": "326",
@@ -12197,14 +11560,6 @@
         "labelBgStyle": {
           "fill": "red"
         }
-      },
-      {
-        "id": "327->161",
-        "type": "default",
-        "source": "327",
-        "target": "161",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "327->328",
@@ -12355,14 +11710,6 @@
         "labelBgStyle": {
           "fill": "green"
         }
-      },
-      {
-        "id": "332->5",
-        "type": "default",
-        "source": "332",
-        "target": "5",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "333->108",
@@ -12938,98 +12285,12 @@
         }
       },
       {
-        "id": "410->5",
-        "type": "default",
-        "source": "410",
-        "target": "5",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "410->420",
-        "type": "default",
-        "source": "410",
-        "target": "420",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "410->420_Default",
-        "type": "default",
-        "source": "410",
-        "target": "420_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "410->421",
-        "type": "default",
-        "source": "410",
-        "target": "421",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "410->421_Default",
-        "type": "default",
-        "source": "410",
-        "target": "421_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "410->422",
-        "type": "default",
-        "source": "410",
-        "target": "422",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "410->422_Default",
-        "type": "default",
-        "source": "410",
-        "target": "422_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "420->425",
         "type": "default",
         "source": "420",
         "target": "425",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "420_Default->421",
-        "type": "default",
-        "source": "420_Default",
-        "target": "421",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "420_Default->421_Default",
-        "type": "default",
-        "source": "420_Default",
-        "target": "421_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "421->426",
@@ -13040,36 +12301,6 @@
         "animated": false
       },
       {
-        "id": "421_Default->422",
-        "type": "default",
-        "source": "421_Default",
-        "target": "422",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "421_Default->422_Default",
-        "type": "default",
-        "source": "421_Default",
-        "target": "422_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "422->427",
         "type": "default",
         "source": "422",
@@ -13078,10 +12309,10 @@
         "animated": false
       },
       {
-        "id": "422_Default->423",
+        "id": "423->310",
         "type": "default",
-        "source": "422_Default",
-        "target": "423",
+        "source": "423",
+        "target": "310",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -13091,14 +12322,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "423->310",
-        "type": "default",
-        "source": "423",
-        "target": "310",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "425->430",
@@ -13149,26 +12372,10 @@
         "animated": false
       },
       {
-        "id": "432->433_Default",
-        "type": "default",
-        "source": "432",
-        "target": "433_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "432->434",
         "type": "default",
         "source": "432",
         "target": "434",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "432->434_Default",
-        "type": "default",
-        "source": "432",
-        "target": "434_Default",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13181,10 +12388,10 @@
         "animated": false
       },
       {
-        "id": "432->435_Default",
+        "id": "432->436",
         "type": "default",
         "source": "432",
-        "target": "435_Default",
+        "target": "436",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13197,72 +12404,12 @@
         "animated": false
       },
       {
-        "id": "433_Default->434",
-        "type": "default",
-        "source": "433_Default",
-        "target": "434",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "433_Default->434_Default",
-        "type": "default",
-        "source": "433_Default",
-        "target": "434_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "434->501",
         "type": "default",
         "source": "434",
         "target": "501",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "434_Default->435",
-        "type": "default",
-        "source": "434_Default",
-        "target": "435",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "434_Default->435_Default",
-        "type": "default",
-        "source": "434_Default",
-        "target": "435_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "435->502",
@@ -13273,10 +12420,10 @@
         "animated": false
       },
       {
-        "id": "435_Default->436",
+        "id": "436->460",
         "type": "default",
-        "source": "435_Default",
-        "target": "436",
+        "source": "436",
+        "target": "460",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -13286,14 +12433,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "436->460",
-        "type": "default",
-        "source": "436",
-        "target": "460",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "440->441",
@@ -13320,26 +12459,10 @@
         "animated": false
       },
       {
-        "id": "442->443_Default",
-        "type": "default",
-        "source": "442",
-        "target": "443_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "442->444",
         "type": "default",
         "source": "442",
         "target": "444",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "442->444_Default",
-        "type": "default",
-        "source": "442",
-        "target": "444_Default",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13352,10 +12475,10 @@
         "animated": false
       },
       {
-        "id": "442->445_Default",
+        "id": "442->446",
         "type": "default",
         "source": "442",
-        "target": "445_Default",
+        "target": "446",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13368,72 +12491,12 @@
         "animated": false
       },
       {
-        "id": "443_Default->444",
-        "type": "default",
-        "source": "443_Default",
-        "target": "444",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "443_Default->444_Default",
-        "type": "default",
-        "source": "443_Default",
-        "target": "444_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "444->501",
         "type": "default",
         "source": "444",
         "target": "501",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "444_Default->445",
-        "type": "default",
-        "source": "444_Default",
-        "target": "445",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "444_Default->445_Default",
-        "type": "default",
-        "source": "444_Default",
-        "target": "445_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "445->502",
@@ -13444,10 +12507,10 @@
         "animated": false
       },
       {
-        "id": "445_Default->446",
+        "id": "446->460",
         "type": "default",
-        "source": "445_Default",
-        "target": "446",
+        "source": "446",
+        "target": "460",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -13457,14 +12520,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "446->460",
-        "type": "default",
-        "source": "446",
-        "target": "460",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "450->451",
@@ -13507,14 +12562,6 @@
         "animated": false
       },
       {
-        "id": "454->455_Default",
-        "type": "default",
-        "source": "454",
-        "target": "455_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "454->456",
         "type": "default",
         "source": "454",
@@ -13523,10 +12570,10 @@
         "animated": false
       },
       {
-        "id": "454->456_Default",
+        "id": "454->457",
         "type": "default",
         "source": "454",
-        "target": "456_Default",
+        "target": "457",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13539,36 +12586,6 @@
         "animated": false
       },
       {
-        "id": "455_Default->456",
-        "type": "default",
-        "source": "455_Default",
-        "target": "456",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "455_Default->456_Default",
-        "type": "default",
-        "source": "455_Default",
-        "target": "456_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "456->502",
         "type": "default",
         "source": "456",
@@ -13577,10 +12594,10 @@
         "animated": false
       },
       {
-        "id": "456_Default->457",
+        "id": "457->460",
         "type": "default",
-        "source": "456_Default",
-        "target": "457",
+        "source": "457",
+        "target": "460",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -13590,14 +12607,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "457->460",
-        "type": "default",
-        "source": "457",
-        "target": "460",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "460->461",
@@ -13624,14 +12633,6 @@
         "animated": false
       },
       {
-        "id": "462->463_Default",
-        "type": "default",
-        "source": "462",
-        "target": "463_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "462->464",
         "type": "default",
         "source": "462",
@@ -13640,10 +12641,10 @@
         "animated": false
       },
       {
-        "id": "462->464_Default",
+        "id": "462->465",
         "type": "default",
         "source": "462",
-        "target": "464_Default",
+        "target": "465",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13656,36 +12657,6 @@
         "animated": false
       },
       {
-        "id": "463_Default->464",
-        "type": "default",
-        "source": "463_Default",
-        "target": "464",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "463_Default->464_Default",
-        "type": "default",
-        "source": "463_Default",
-        "target": "464_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "464->467",
         "type": "default",
         "source": "464",
@@ -13694,10 +12665,10 @@
         "animated": false
       },
       {
-        "id": "464_Default->465",
+        "id": "465->470",
         "type": "default",
-        "source": "464_Default",
-        "target": "465",
+        "source": "465",
+        "target": "470",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -13707,14 +12678,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "465->470",
-        "type": "default",
-        "source": "465",
-        "target": "470",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "466->475",
@@ -13797,14 +12760,6 @@
         "animated": false
       },
       {
-        "id": "481->482_Default",
-        "type": "default",
-        "source": "481",
-        "target": "482_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "481->483",
         "type": "default",
         "source": "481",
@@ -13813,10 +12768,10 @@
         "animated": false
       },
       {
-        "id": "481->483_Default",
+        "id": "481->484",
         "type": "default",
         "source": "481",
-        "target": "483_Default",
+        "target": "484",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13829,36 +12784,6 @@
         "animated": false
       },
       {
-        "id": "482_Default->483",
-        "type": "default",
-        "source": "482_Default",
-        "target": "483",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "482_Default->483_Default",
-        "type": "default",
-        "source": "482_Default",
-        "target": "483_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "483->486",
         "type": "default",
         "source": "483",
@@ -13867,10 +12792,10 @@
         "animated": false
       },
       {
-        "id": "483_Default->484",
+        "id": "484->490",
         "type": "default",
-        "source": "483_Default",
-        "target": "484",
+        "source": "484",
+        "target": "490",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -13880,14 +12805,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "484->490",
-        "type": "default",
-        "source": "484",
-        "target": "490",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "485->510",
@@ -14018,14 +12935,6 @@
         "animated": false
       },
       {
-        "id": "507->463_Default",
-        "type": "default",
-        "source": "507",
-        "target": "463_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "510->511",
         "type": "default",
         "source": "510",
@@ -14058,14 +12967,6 @@
         "animated": false
       },
       {
-        "id": "513->514_Default",
-        "type": "default",
-        "source": "513",
-        "target": "514_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "513->515",
         "type": "default",
         "source": "513",
@@ -14074,10 +12975,10 @@
         "animated": false
       },
       {
-        "id": "513->515_Default",
+        "id": "513->516",
         "type": "default",
         "source": "513",
-        "target": "515_Default",
+        "target": "516",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -14090,36 +12991,6 @@
         "animated": false
       },
       {
-        "id": "514_Default->515",
-        "type": "default",
-        "source": "514_Default",
-        "target": "515",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "514_Default->515_Default",
-        "type": "default",
-        "source": "514_Default",
-        "target": "515_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "515->518",
         "type": "default",
         "source": "515",
@@ -14128,10 +12999,10 @@
         "animated": false
       },
       {
-        "id": "515_Default->516",
+        "id": "516->490",
         "type": "default",
-        "source": "515_Default",
-        "target": "516",
+        "source": "516",
+        "target": "490",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -14141,14 +13012,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "516->490",
-        "type": "default",
-        "source": "516",
-        "target": "490",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "517->520",
@@ -14311,14 +13174,6 @@
         "animated": false
       },
       {
-        "id": "551->552_Default",
-        "type": "default",
-        "source": "551",
-        "target": "552_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "551->553",
         "type": "default",
         "source": "551",
@@ -14327,10 +13182,10 @@
         "animated": false
       },
       {
-        "id": "551->553_Default",
+        "id": "551->554",
         "type": "default",
         "source": "551",
-        "target": "553_Default",
+        "target": "554",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -14343,36 +13198,6 @@
         "animated": false
       },
       {
-        "id": "552_Default->553",
-        "type": "default",
-        "source": "552_Default",
-        "target": "553",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "552_Default->553_Default",
-        "type": "default",
-        "source": "552_Default",
-        "target": "553_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "553->556",
         "type": "default",
         "source": "553",
@@ -14381,10 +13206,10 @@
         "animated": false
       },
       {
-        "id": "553_Default->554",
+        "id": "554->310",
         "type": "default",
-        "source": "553_Default",
-        "target": "554",
+        "source": "554",
+        "target": "310",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -14396,26 +13221,10 @@
         }
       },
       {
-        "id": "554->310",
-        "type": "default",
-        "source": "554",
-        "target": "310",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "555->557",
         "type": "default",
         "source": "555",
         "target": "557",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "555->557_Default",
-        "type": "default",
-        "source": "555",
-        "target": "557_Default",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -14428,10 +13237,10 @@
         "animated": false
       },
       {
-        "id": "556->557_Default",
+        "id": "556->558",
         "type": "default",
         "source": "556",
-        "target": "557_Default",
+        "target": "558",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -14444,10 +13253,10 @@
         "animated": false
       },
       {
-        "id": "557_Default->558",
+        "id": "558->561",
         "type": "default",
-        "source": "557_Default",
-        "target": "558",
+        "source": "558",
+        "target": "561",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -14457,14 +13266,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "558->561",
-        "type": "default",
-        "source": "558",
-        "target": "561",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "559->560",
@@ -14507,10 +13308,10 @@
         "animated": false
       },
       {
-        "id": "563->564_Default",
+        "id": "563->565",
         "type": "default",
         "source": "563",
-        "target": "564_Default",
+        "target": "565",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -14521,21 +13322,6 @@
         "target": "580",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "564_Default->565",
-        "type": "default",
-        "source": "564_Default",
-        "target": "565",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "565->566",
@@ -14698,14 +13484,6 @@
         "animated": false
       },
       {
-        "id": "600->601_Default",
-        "type": "default",
-        "source": "600",
-        "target": "601_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "600->602",
         "type": "default",
         "source": "600",
@@ -14714,10 +13492,10 @@
         "animated": false
       },
       {
-        "id": "600->602_Default",
+        "id": "600->603",
         "type": "default",
         "source": "600",
-        "target": "602_Default",
+        "target": "603",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -14730,36 +13508,6 @@
         "animated": false
       },
       {
-        "id": "601_Default->602",
-        "type": "default",
-        "source": "601_Default",
-        "target": "602",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "601_Default->602_Default",
-        "type": "default",
-        "source": "601_Default",
-        "target": "602_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "602->611",
         "type": "default",
         "source": "602",
@@ -14768,10 +13516,10 @@
         "animated": false
       },
       {
-        "id": "602_Default->603",
+        "id": "603->310",
         "type": "default",
-        "source": "602_Default",
-        "target": "603",
+        "source": "603",
+        "target": "310",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -14781,14 +13529,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "603->310",
-        "type": "default",
-        "source": "603",
-        "target": "310",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "604->605",
@@ -14959,10 +13699,10 @@
         "animated": false
       },
       {
-        "id": "640->641_Default",
+        "id": "640->642",
         "type": "default",
         "source": "640",
-        "target": "641_Default",
+        "target": "642",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -14973,21 +13713,6 @@
         "target": "660",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "641_Default->642",
-        "type": "default",
-        "source": "641_Default",
-        "target": "642",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "642->643",
@@ -15038,14 +13763,6 @@
         "animated": false
       },
       {
-        "id": "647->648_Default",
-        "type": "default",
-        "source": "647",
-        "target": "648_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "647->649",
         "type": "default",
         "source": "647",
@@ -15054,10 +13771,10 @@
         "animated": false
       },
       {
-        "id": "647->649_Default",
+        "id": "647->650",
         "type": "default",
         "source": "647",
-        "target": "649_Default",
+        "target": "650",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -15070,57 +13787,12 @@
         "animated": false
       },
       {
-        "id": "648_Default->649",
-        "type": "default",
-        "source": "648_Default",
-        "target": "649",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "648_Default->649_Default",
-        "type": "default",
-        "source": "648_Default",
-        "target": "649_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "649->690",
         "type": "default",
         "source": "649",
         "target": "690",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "649_Default->650",
-        "type": "default",
-        "source": "649_Default",
-        "target": "650",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "650->651",
@@ -15395,14 +14067,6 @@
         "animated": false
       },
       {
-        "id": "705->706_Default",
-        "type": "default",
-        "source": "705",
-        "target": "706_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "705->707",
         "type": "default",
         "source": "705",
@@ -15411,10 +14075,10 @@
         "animated": false
       },
       {
-        "id": "705->707_Default",
+        "id": "705->708",
         "type": "default",
         "source": "705",
-        "target": "707_Default",
+        "target": "708",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -15427,36 +14091,6 @@
         "animated": false
       },
       {
-        "id": "706_Default->707",
-        "type": "default",
-        "source": "706_Default",
-        "target": "707",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "706_Default->707_Default",
-        "type": "default",
-        "source": "706_Default",
-        "target": "707_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "707->721",
         "type": "default",
         "source": "707",
@@ -15465,10 +14099,10 @@
         "animated": false
       },
       {
-        "id": "707_Default->708",
+        "id": "708->709",
         "type": "default",
-        "source": "707_Default",
-        "target": "708",
+        "source": "708",
+        "target": "709",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -15478,14 +14112,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "708->709",
-        "type": "default",
-        "source": "708",
-        "target": "709",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "709->710",
@@ -15504,14 +14130,6 @@
         "animated": false
       },
       {
-        "id": "710->711_Default",
-        "type": "default",
-        "source": "710",
-        "target": "711_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "710->712",
         "type": "default",
         "source": "710",
@@ -15520,10 +14138,10 @@
         "animated": false
       },
       {
-        "id": "710->712_Default",
+        "id": "710->713",
         "type": "default",
         "source": "710",
-        "target": "712_Default",
+        "target": "713",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -15536,36 +14154,6 @@
         "animated": false
       },
       {
-        "id": "711_Default->712",
-        "type": "default",
-        "source": "711_Default",
-        "target": "712",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "711_Default->712_Default",
-        "type": "default",
-        "source": "711_Default",
-        "target": "712_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "712->745",
         "type": "default",
         "source": "712",
@@ -15574,10 +14162,10 @@
         "animated": false
       },
       {
-        "id": "712_Default->713",
+        "id": "713->714",
         "type": "default",
-        "source": "712_Default",
-        "target": "713",
+        "source": "713",
+        "target": "714",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -15587,14 +14175,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "713->714",
-        "type": "default",
-        "source": "713",
-        "target": "714",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "714->310",
@@ -15781,14 +14361,6 @@
         "animated": false
       },
       {
-        "id": "773->774_Default",
-        "type": "default",
-        "source": "773",
-        "target": "774_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "773->775",
         "type": "default",
         "source": "773",
@@ -15797,10 +14369,10 @@
         "animated": false
       },
       {
-        "id": "773->775_Default",
+        "id": "773->776",
         "type": "default",
         "source": "773",
-        "target": "775_Default",
+        "target": "776",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -15813,36 +14385,6 @@
         "animated": false
       },
       {
-        "id": "774_Default->775",
-        "type": "default",
-        "source": "774_Default",
-        "target": "775",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "774_Default->775_Default",
-        "type": "default",
-        "source": "774_Default",
-        "target": "775_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "775->805",
         "type": "default",
         "source": "775",
@@ -15851,10 +14393,10 @@
         "animated": false
       },
       {
-        "id": "775_Default->776",
+        "id": "776->777",
         "type": "default",
-        "source": "775_Default",
-        "target": "776",
+        "source": "776",
+        "target": "777",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -15864,14 +14406,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "776->777",
-        "type": "default",
-        "source": "776",
-        "target": "777",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "777->778",
@@ -15898,14 +14432,6 @@
         "animated": false
       },
       {
-        "id": "779->780_Default",
-        "type": "default",
-        "source": "779",
-        "target": "780_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "779->781",
         "type": "default",
         "source": "779",
@@ -15914,10 +14440,10 @@
         "animated": false
       },
       {
-        "id": "779->781_Default",
+        "id": "779->782",
         "type": "default",
         "source": "779",
-        "target": "781_Default",
+        "target": "782",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -15930,36 +14456,6 @@
         "animated": false
       },
       {
-        "id": "780_Default->781",
-        "type": "default",
-        "source": "780_Default",
-        "target": "781",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "780_Default->781_Default",
-        "type": "default",
-        "source": "780_Default",
-        "target": "781_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "781->831",
         "type": "default",
         "source": "781",
@@ -15968,10 +14464,10 @@
         "animated": false
       },
       {
-        "id": "781_Default->782",
+        "id": "782->783",
         "type": "default",
-        "source": "781_Default",
-        "target": "782",
+        "source": "782",
+        "target": "783",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -15981,14 +14477,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "782->783",
-        "type": "default",
-        "source": "782",
-        "target": "783",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "783->784",
@@ -16143,10 +14631,10 @@
         "animated": false
       },
       {
-        "id": "808->809_Default",
+        "id": "808->810",
         "type": "default",
         "source": "808",
-        "target": "809_Default",
+        "target": "810",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -16159,10 +14647,10 @@
         "animated": false
       },
       {
-        "id": "809_Default->810",
+        "id": "810->811",
         "type": "default",
-        "source": "809_Default",
-        "target": "810",
+        "source": "810",
+        "target": "811",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -16172,14 +14660,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "810->811",
-        "type": "default",
-        "source": "810",
-        "target": "811",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "811->812",
@@ -16417,14 +14897,6 @@
         }
       },
       {
-        "id": "1002->5",
-        "type": "default",
-        "source": "1002",
-        "target": "5",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "1010->1011",
         "type": "default",
         "source": "1010",
@@ -16445,14 +14917,6 @@
         "type": "default",
         "source": "1012",
         "target": "1030",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "1012->1030_Default",
-        "type": "default",
-        "source": "1012",
-        "target": "1030_Default",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -16481,26 +14945,10 @@
         "animated": false
       },
       {
-        "id": "1017->1030_Default",
-        "type": "default",
-        "source": "1017",
-        "target": "1030_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "1017->1031",
         "type": "default",
         "source": "1017",
         "target": "1031",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "1017->1031_Default",
-        "type": "default",
-        "source": "1017",
-        "target": "1031_Default",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -16513,10 +14961,10 @@
         "animated": false
       },
       {
-        "id": "1017->1032_Default",
+        "id": "1017->1033",
         "type": "default",
         "source": "1017",
-        "target": "1032_Default",
+        "target": "1033",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -16529,72 +14977,12 @@
         "animated": false
       },
       {
-        "id": "1030_Default->1031",
-        "type": "default",
-        "source": "1030_Default",
-        "target": "1031",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "1030_Default->1031_Default",
-        "type": "default",
-        "source": "1030_Default",
-        "target": "1031_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "1031->1046",
         "type": "default",
         "source": "1031",
         "target": "1046",
         "markerEnd": "arrow",
         "animated": false
-      },
-      {
-        "id": "1031_Default->1032",
-        "type": "default",
-        "source": "1031_Default",
-        "target": "1032",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "1031_Default->1032_Default",
-        "type": "default",
-        "source": "1031_Default",
-        "target": "1032_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
       },
       {
         "id": "1032->1047",
@@ -16605,10 +14993,10 @@
         "animated": false
       },
       {
-        "id": "1032_Default->1033",
+        "id": "1033->1034",
         "type": "default",
-        "source": "1032_Default",
-        "target": "1033",
+        "source": "1033",
+        "target": "1034",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -16618,14 +15006,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "1033->1034",
-        "type": "default",
-        "source": "1033",
-        "target": "1034",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "1034->1035",
@@ -16820,14 +15200,6 @@
         "animated": false
       },
       {
-        "id": "1071->1072_Default",
-        "type": "default",
-        "source": "1071",
-        "target": "1072_Default",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
         "id": "1071->1073",
         "type": "default",
         "source": "1071",
@@ -16836,10 +15208,10 @@
         "animated": false
       },
       {
-        "id": "1071->1073_Default",
+        "id": "1071->1074",
         "type": "default",
         "source": "1071",
-        "target": "1073_Default",
+        "target": "1074",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -16852,36 +15224,6 @@
         "animated": false
       },
       {
-        "id": "1072_Default->1073",
-        "type": "default",
-        "source": "1072_Default",
-        "target": "1073",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
-        "id": "1072_Default->1073_Default",
-        "type": "default",
-        "source": "1072_Default",
-        "target": "1073_Default",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "1073->1076",
         "type": "default",
         "source": "1073",
@@ -16890,10 +15232,10 @@
         "animated": false
       },
       {
-        "id": "1073_Default->1074",
+        "id": "1074->1100",
         "type": "default",
-        "source": "1073_Default",
-        "target": "1074",
+        "source": "1074",
+        "target": "1100",
         "markerEnd": "arrow",
         "animated": false,
         "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
@@ -16903,14 +15245,6 @@
         "labelBgStyle": {
           "fill": "orange"
         }
-      },
-      {
-        "id": "1074->1100",
-        "type": "default",
-        "source": "1074",
-        "target": "1100",
-        "markerEnd": "arrow",
-        "animated": false
       },
       {
         "id": "1075->1080",

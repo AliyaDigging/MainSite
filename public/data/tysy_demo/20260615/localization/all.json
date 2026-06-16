@@ -55,7 +55,7 @@
     "ja-jp": "落ち着いて、落ち着いて。"
   },
   "C1S1_111": {
-    "zh-cn": "现在的情况还不是……",
+    "zh-cn": "现在的情况还不是...",
     "en-us": "The situation isn't...",
     "ja-jp": "今の状況はまだ……"
   },
@@ -2654,6 +2654,11 @@
     "en-us": "The temperature has already dropped to 15 degrees!",
     "ja-jp": "気温だって15度まで落ちてるんだよ！"
   },
+  "C1S2_158": {
+    "zh-cn": "100|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
   "C1S2_159": {
     "zh-cn": "我马上就要死了！",
     "en-us": "I'm about to die!",
@@ -3404,6 +3409,21 @@
     "en-us": "I've never encountered a situation like this before.",
     "ja-jp": "こんな状況に遭遇するのは初めてなんだから。"
   },
+  "C1S2_497": {
+    "zh-cn": "简单介绍下吧。",
+    "en-us": "Let me introduce myself briefly.",
+    "ja-jp": "簡単に自己紹介するね。"
+  },
+  "C1S2_498": {
+    "zh-cn": "我是C804，你叫我这个就好。",
+    "en-us": "I am C804, you can just call me that.",
+    "ja-jp": "私はC804、そう呼んでくれればいいよ。"
+  },
+  "C1S2_499": {
+    "zh-cn": "是负责铁幕西格玛区域，对接勘探队的先锋队员。",
+    "en-us": "I'm a Vanguard Operative responsible for Sector Sigma of The Iron Veil, and I coordinate with the Exploration Squad.",
+    "ja-jp": "鉄の帳シグマ・セクターを担当し、探査隊と連携する先鋒隊員だ。"
+  },
   "C1S2_501": {
     "zh-cn": "但是我得先和你道歉。",
     "en-us": "But I need to apologize to you first.",
@@ -3440,19 +3460,29 @@
     "ja-jp": "でも、やっぱり傷ついたな。"
   },
   "C1S2_508": {
-    "zh-cn": "我接受你的道歉。",
-    "en-us": "I accept your apology.",
-    "ja-jp": "謝罪を受け入れよう。"
+    "zh-cn": "我接受你的道歉，但是你得把头像换一下。",
+    "en-us": "I accept your apology, but you need to change your profile picture.",
+    "ja-jp": "謝罪は受け入れますが、プロフィール画像を変えてください。"
   },
   "C1S2_509": {
     "zh-cn": "我拒绝你的道歉，",
     "en-us": "I reject your apology,",
     "ja-jp": "謝罪を拒否する、"
   },
+  "C1S2_510": {
+    "zh-cn": "听起来像是正式的自我介绍。充满了距离的味道。",
+    "en-us": "That sounds like a formal self-introduction. It feels very distant.",
+    "ja-jp": "まるで正式な自己紹介みたいだな。よそよそしさを感じるよ。"
+  },
   "C1S2_511": {
-    "zh-cn": "不说话就当你原谅我了。",
+    "zh-cn": "",
     "en-us": "If you say nothing, I'll assume you forgive me.",
     "ja-jp": "何も言わないなら、許してくれたってことにするからね。"
+  },
+  "C1S2_512": {
+    "zh-cn": "不说话就当你原谅我了。",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S2_513": {
     "zh-cn": "让我稍微静静。",
@@ -3465,9 +3495,9 @@
     "ja-jp": "でも、やっぱり傷ついたな。"
   },
   "C1S2_521": {
-    "zh-cn": "我接受你的道歉。",
-    "en-us": "I accept your apology.",
-    "ja-jp": "謝罪を受け入れよう。"
+    "zh-cn": "我接受你的道歉，但是你得把头像换一下。",
+    "en-us": "I accept your apology, but you need to change your profile picture.",
+    "ja-jp": "謝罪は受け入れますが、プロフィール画像を変えてください。"
   },
   "C1S2_522": {
     "zh-cn": "我拒绝你的道歉，",
@@ -3485,9 +3515,14 @@
     "ja-jp": "もうお手上げ。"
   },
   "C1S2_530": {
-    "zh-cn": "啊，谢谢。",
+    "zh-cn": "啊...好吧...",
     "en-us": "Ah, thank you.",
     "ja-jp": "あ、ありがとう。"
+  },
+  "C1S2_531": {
+    "zh-cn": "我看看...",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S2_535": {
     "zh-cn": "我真的很抱歉嘛。",
@@ -3523,6 +3558,66 @@
     "zh-cn": "谢谢，这下可以安静一些了。",
     "en-us": "Thanks, now I can get some peace and quiet.",
     "ja-jp": "ありがとう、これで少し落ち着けるわ。"
+  },
+  "C1S2_560": {
+    "zh-cn": "听起来像是正式的自我介绍。充满了距离的味道。",
+    "en-us": "That sounds like a formal self-introduction. It feels very distant.",
+    "ja-jp": "まるで正式な自己紹介みたいだな。よそよそしさを感じるよ。"
+  },
+  "C1S2_561": {
+    "zh-cn": "那我还能怎么介绍啊。",
+    "en-us": "Then how else am I supposed to introduce myself?",
+    "ja-jp": "じゃあ、他にどう自己紹介すればいいのさ。"
+  },
+  "C1S2_562": {
+    "zh-cn": "你不了解这里，这不是消息传递的最好办法吗。",
+    "en-us": "You don't understand this place, so isn't this the best way to convey information?",
+    "ja-jp": "あなたはここを知らないんだし、これが情報を伝える一番良い方法じゃない。"
+  },
+  "C1S2_563": {
+    "zh-cn": "总不能指望我用什么晦涩的语言来说吧，那不是很奇怪吗？",
+    "en-us": "You can't expect me to speak in some obscure language, wouldn't that be really weird?",
+    "ja-jp": "まさか難解な言葉を使って話してほしいわけじゃないよね？それじゃ変でしょ？"
+  },
+  "C1S2_564": {
+    "zh-cn": "咳咳。",
+    "en-us": "Cough, cough.",
+    "ja-jp": "ゴホッ、ゴホッ。"
+  },
+  "C1S2_565": {
+    "zh-cn": "伟大且温柔的主，我是渺小的804。",
+    "en-us": "Great and gentle Lord, I am the insignificant 804.",
+    "ja-jp": "偉大で優しき主よ、私はちっぽけな804です。"
+  },
+  "C1S2_566": {
+    "zh-cn": "在这漆黑苦难的铁幕中寻求救助。",
+    "en-us": "Seeking salvation in this pitch-black, miserable Iron Veil.",
+    "ja-jp": "この漆黒の苦難に満ちた鉄の帳の中で、救いを求めています。"
+  },
+  "C1S2_567": {
+    "zh-cn": "祈求您…",
+    "en-us": "I beg of you...",
+    "ja-jp": "どうか……"
+  },
+  "C1S2_568": {
+    "zh-cn": "好了好了，理解了。",
+    "en-us": "Alright, alright, I got it.",
+    "ja-jp": "はいはい、わかった。"
+  },
+  "C1S2_570": {
+    "zh-cn": "你怎么不打断我，你原来喜欢这样的自我介绍吗？",
+    "en-us": "Why didn't you interrupt me? Do you actually like this kind of self-introduction?",
+    "ja-jp": "なんで話を遮ってくれないの。もしかして、こういう自己紹介が好きなの？"
+  },
+  "C1S2_571": {
+    "zh-cn": "但是我编不下去了。",
+    "en-us": "But I can't keep making it up anymore.",
+    "ja-jp": "でも、これ以上はでっち上げられないよ。"
+  },
+  "C1S2_580": {
+    "zh-cn": "好了好了，理解了。",
+    "en-us": "Alright, alright, I got it.",
+    "ja-jp": "はいはい、わかった。"
   },
   "C1S2_602": {
     "zh-cn": "虽然你怪怪的，但是我想不到其他办法了。",
@@ -3855,14 +3950,14 @@
     "ja-jp": "どっちに行く方が安全かな。"
   },
   "C1S2_739": {
-    "zh-cn": "去应急补给仓吧，北偏东60度的方向，大概有10公里。",
-    "en-us": "Head to the Emergency Supply Pod, 60 degrees east of north, about 10 kilometers away.",
-    "ja-jp": "緊急補給ポッドに向かおう、北から東へ60度の方向で、およそ10キロだ。"
+    "zh-cn": "去应急补给仓吧，正北方向，大概有10公里。",
+    "en-us": "Head to the Emergency Supply Pod, due north, about 10 kilometers away.",
+    "ja-jp": "緊急補給ポッドに向かおう、真北の方向、およそ10キロだ。"
   },
   "C1S2_740": {
-    "zh-cn": "去正式补给仓吧，正北方向，大概15公里。",
-    "en-us": "Head to the Primary Supply Pod, due north, about 15 kilometers away.",
-    "ja-jp": "主要補給ポッドに向かおう、真北の方向で、およそ15キロだ。"
+    "zh-cn": "去正式补给仓吧，西北方向一些，大概15公里。",
+    "en-us": "Head to the Primary Supply Pod, 60 degrees west of north, about 15 kilometers away.",
+    "ja-jp": "主要補給ポッドに向かおう、北から西へ60度の方向、およそ15キロだ。"
   },
   "C1S2_742": {
     "zh-cn": "找到了吗，看到了吗，最后一步了吧？",
@@ -3885,14 +3980,14 @@
     "ja-jp": "お願いだから返事をしてよ、お願い。"
   },
   "C1S2_760": {
-    "zh-cn": "去应急补给仓吧，北偏东60度的方向，大概有10公里。",
-    "en-us": "Head to the Emergency Supply Pod, 60 degrees east of north, about 10 kilometers away.",
-    "ja-jp": "緊急補給ポッドに向かおう、北から東へ60度の方向で、およそ10キロだ。"
+    "zh-cn": "去应急补给仓吧，正北方向，大概有10公里。",
+    "en-us": "Head to the Emergency Supply Pod, due north, about 10 kilometers away.",
+    "ja-jp": "緊急補給ポッドに向かおう、真北の方向、およそ10キロだ。"
   },
   "C1S2_761": {
-    "zh-cn": "去正式补给仓吧，正北方向，大概15公里。",
-    "en-us": "Head to the Primary Supply Pod, due north, about 15 kilometers away.",
-    "ja-jp": "主要補給ポッドに向かおう、真北の方向で、およそ15キロだ。"
+    "zh-cn": "去正式补给仓吧，西北方向一些，大概15公里。",
+    "en-us": "Head to the Primary Supply Pod, 60 degrees west of north, about 15 kilometers away.",
+    "ja-jp": "主要補給ポッドに向かおう、北から西へ60度の方向、およそ15キロだ。"
   },
   "C1S2_770": {
     "zh-cn": "太好了，谢谢你，得救了。",
@@ -3945,24 +4040,29 @@
     "ja-jp": "ちょっと見てみる、私の後ろは滑り落ちてきたところで、山みたいな場所だと思う。"
   },
   "C1S2_792": {
-    "zh-cn": "然后前方有一条横穿的马路，从右到左。",
+    "zh-cn": "103|V",
     "en-us": "Then ahead of me, there's a road cutting across from left to right.",
     "ja-jp": "それから前には道路が横切っていて、左から右へ続いてる。"
   },
   "C1S2_793": {
-    "zh-cn": "左侧山峰在变小，有一个迂回的结构，右侧有个大突起，把路挡住了。",
+    "zh-cn": "然后前方有一条横穿的马路，从右到左。",
     "en-us": "The mountain peak on the left is tapering off with a winding structure, and on the right, there's a large outcropping blocking the road.",
     "ja-jp": "左側の山は小さくなっていて、回り込むような地形になってる、右側には大きな出っ張りがあって、道を塞いでる。"
   },
   "C1S2_794": {
-    "zh-cn": "有…办法。",
+    "zh-cn": "左侧山峰在变小，有一个迂回的结构，右侧有个大突起，把路挡住了。",
     "en-us": "There is... a way.",
     "ja-jp": "方法は……ある。"
   },
   "C1S2_795": {
-    "zh-cn": "有办法帮我定位一下吗。",
+    "zh-cn": "有…办法。",
     "en-us": "Is there any way you can help me find my location?",
     "ja-jp": "現在地を特定してもらう方法はありますか？"
+  },
+  "C1S2_796": {
+    "zh-cn": "有办法帮我定位一下吗。",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S2_800": {
     "zh-cn": "那你的左侧应该是北，正面的方向是东。",
@@ -3980,14 +4080,19 @@
     "ja-jp": "あっ、私…手元にコンパスが…"
   },
   "C1S2_804": {
-    "zh-cn": "我出发了，谢谢你。",
+    "zh-cn": "104|H",
     "en-us": "I'm heading out. Thank you.",
     "ja-jp": "出発します。ありがとうございます。"
   },
   "C1S2_805": {
-    "zh-cn": "【吞咽声】",
+    "zh-cn": "我出发了，谢谢你。",
     "en-us": "【Swallowing】",
     "ja-jp": "【飲み込む音】"
+  },
+  "C1S2_806": {
+    "zh-cn": "【吞咽声】",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S2_820": {
     "zh-cn": "那你的左侧应该是北，正面的方向是东。",
@@ -4000,19 +4105,19 @@
     "ja-jp": "コンパスの類は装備していないのか？"
   },
   "C1S2_825": {
-    "zh-cn": "啊，我…",
-    "en-us": "Ah, I...",
-    "ja-jp": "あっ、私…"
+    "zh-cn": "啊，我…在手上有指南针。",
+    "en-us": "Ah, I... have a compass on me.",
+    "ja-jp": "あっ、私…コンパスを持ってた。"
   },
   "C1S2_826": {
-    "zh-cn": "在手上有指南针，我搞忘记了。",
-    "en-us": "I do have a compass on my hand... I totally forgot.",
-    "ja-jp": "手元にコンパスがあるのを、すっかり忘れてました。"
+    "zh-cn": "104|H",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S2_827": {
-    "zh-cn": "抱歉。",
-    "en-us": "I'm sorry.",
-    "ja-jp": "ごめん。"
+    "zh-cn": "抱歉，我搞忘记了。",
+    "en-us": "Sorry, I completely forgot.",
+    "ja-jp": "ごめん、すっかり忘れてた。"
   },
   "C1S2_828": {
     "zh-cn": "为什么要道歉？",
@@ -5059,6 +5164,11 @@
     "en-us": "I only see my own footprints here. No one pushed me.",
     "ja-jp": "ここには自分の足跡しか見えない。誰も私を押してなんていないみたい。"
   },
+  "C1S2_1373": {
+    "zh-cn": "105|V",
+    "en-us": "",
+    "ja-jp": ""
+  },
   "C1S2_1380": {
     "zh-cn": "这应该算是一个好消息吧。",
     "en-us": "I suppose that's good news.",
@@ -5330,9 +5440,9 @@
     "ja-jp": "歩くペースも少し遅いし。"
   },
   "C1S2_1563": {
-    "zh-cn": "好慢，多注意安全。",
-    "en-us": "That's slow, pay extra attention to your safety.",
-    "ja-jp": "遅いね、くれぐれも安全に気をつけて。"
+    "zh-cn": "走慢一些也好，多注意安全。",
+    "en-us": "Walk slower, and stay safe.",
+    "ja-jp": "ゆっくり行って大丈夫、気をつけてね。"
   },
   "C1S2_1564": {
     "zh-cn": "好快，你状态不好都可以走这么快？",
@@ -5350,9 +5460,9 @@
     "ja-jp": "ここにはとても粗末な地図が一つあるだけだよ。"
   },
   "C1S2_1572": {
-    "zh-cn": "好慢，多注意安全。",
-    "en-us": "That's slow, pay extra attention to your safety.",
-    "ja-jp": "遅いね、くれぐれも安全に気をつけて。"
+    "zh-cn": "走慢一些也好，多注意安全。",
+    "en-us": "Walk slower, and stay safe.",
+    "ja-jp": "ゆっくり行って大丈夫、気をつけてね。"
   },
   "C1S2_1573": {
     "zh-cn": "好快，你状态不好都可以走这么快？",
@@ -5445,7 +5555,7 @@
     "ja-jp": "道中の無事を祈ってて。"
   },
   "C1S2_1631": {
-    "zh-cn": "不对，",
+    "zh-cn": "不对。",
     "en-us": "Wait, no,",
     "ja-jp": "いや、違うな、"
   },
@@ -6589,6 +6699,16 @@
     "en-us": "Nearly a century ago, Zone C became The Iron Veil, which is where I am right now.",
     "ja-jp": "100年近く前に第C区は鉄の帳に変わった。それが今、私のいる場所だ。"
   },
+  "C1S4-2_123": {
+    "zh-cn": "108|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C1S4-2_124": {
+    "zh-cn": "这就是大约100年前的样子吗？",
+    "en-us": "So this is what it looked like about 100 years ago?",
+    "ja-jp": "これが100年くらい前の姿なの？"
+  },
   "C1S4-2_125": {
     "zh-cn": "我在D呆的时间比较长。",
     "en-us": "I spent a relatively long time in Zone D.",
@@ -6696,8 +6816,8 @@
   },
   "C1S4-2_202": {
     "zh-cn": "我对铁幕可真的喜欢不起来。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "I really can't bring myself to like the Iron Curtain.",
+    "ja-jp": "鉄幕のこと、全然好きになれない。"
   },
   "C1S4-2_301": {
     "zh-cn": "好冷。",
@@ -6980,19 +7100,24 @@
     "ja-jp": "上層部はスカベンジャー対策として、私たちに武器を支給してくれてるの。"
   },
   "C1S4-2_432": {
+    "zh-cn": "109|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C1S4-2_433": {
     "zh-cn": "不过实弹只有一个弹匣。",
     "en-us": "But I only have one magazine of Live Ammunition.",
     "ja-jp": "でも実弾は1マガジンしかない。"
   },
-  "C1S4-2_433": {
+  "C1S4-2_434": {
     "zh-cn": "然后是三个空包弹弹匣。",
     "en-us": "And three magazines of Blank Rounds, so don't worry about me just yet.",
     "ja-jp": "残りの3つは空包弾のマガジンよ。とりあえず、私の心配はしなくていいから。"
   },
-  "C1S4-2_434": {
+  "C1S4-2_435": {
     "zh-cn": "是上面发下来的，我可不是卖这些的。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "These were issued by the higher-ups, I don't sell them for a living.",
+    "ja-jp": "上部から支給されたものだ、これらを売っているわけじゃない。"
   },
   "C1S4-2_440": {
     "zh-cn": "这样啊。听起来危险并不大。",
@@ -7011,18 +7136,18 @@
   },
   "C1S4-2_450": {
     "zh-cn": "懂了，原来你是军火商。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Got it, so you're an arms dealer.",
+    "ja-jp": "なるほど、軍火商だということか。"
   },
   "C1S4-2_451": {
     "zh-cn": "不是不是，我才不是。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "No no, that's not me at all.",
+    "ja-jp": "違う違う、そんなんじゃない。"
   },
   "C1S4-2_452": {
     "zh-cn": "不和你说了，我要先躲起来了，",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "I'm done talking, I need to hide first.",
+    "ja-jp": "もう話さない、先に身を隠さなければ。"
   },
   "C1S4-2_460": {
     "zh-cn": "这样啊。听起来危险并不大。",
@@ -7616,13 +7741,13 @@
   },
   "C1S4-2_815": {
     "zh-cn": "西格玛区域，这个和你哥哥有关系吗？",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Sigma Area, does this place have something to do with your elder brother?",
+    "ja-jp": "シグマエリア、ここはあなたの兄さんと関係があるの？"
   },
   "C1S4-2_816": {
     "zh-cn": "有一些关系，我的哥哥就在那里。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "There's some connection. My elder brother is stationed there.",
+    "ja-jp": "多少関係がある、兄さんはそこにいる。"
   },
   "C1S4-2_820": {
     "zh-cn": "勘察队，他们在做什么实验？",
@@ -7723,6 +7848,11 @@
     "zh-cn": "你的哥哥也在那里吧，不会出什么意外吧？",
     "en-us": "Your brother is there too, right? Are you worried?",
     "ja-jp": "あなたのお兄さんもそこにいるのですよね、心配ですか？"
+  },
+  "C1S4-2_859": {
+    "zh-cn": "110|H",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S4-2_860": {
     "zh-cn": "嗯，来也匆匆，去也匆匆。",
@@ -8186,18 +8316,18 @@
   },
   "C1S4-2_1153": {
     "zh-cn": "不过有次自己做饭差点把自己害死。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "But once I tried cooking for myself and nearly got myself killed.",
+    "ja-jp": "だけど一度自炊して、もう少しで命を落とすところだった。"
   },
   "C1S4-2_1154": {
     "zh-cn": "之后很多时间就到外边吃了。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Ever since then, I eat out most of the time.",
+    "ja-jp": "それからずっと外食するようになった。"
   },
   "C1S4-2_1155": {
     "zh-cn": "钱总是很难攒下来。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "I can never manage to save any money.",
+    "ja-jp": "なかなか貯金が貯まらない。"
   },
   "C1S4-2_1156": {
     "zh-cn": "你也大意了吧，怎么还有人做饭会把自己害死。",
@@ -8236,63 +8366,63 @@
   },
   "C1S4-2_1165": {
     "zh-cn": "你也大意了吧，怎么还有人做饭会把自己害死。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "You were way too careless! Who nearly gets killed just cooking a meal?",
+    "ja-jp": "不注意すぎたんだろ？料理で命を落としかける人なんて聞いたことない。"
   },
   "C1S4-2_1166": {
     "zh-cn": "不学学怎么做饭吗，有钱也不应该这样吧。这样子我很担心你之后的生活。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Why not learn to cook? Even if you have money, you can't keep this up. I'm genuinely worried about your future life.",
+    "ja-jp": "料理を覚えようとしないの？お金があってもこのままじゃダメだ。これじゃ今後の生活が心配だよ。"
   },
   "C1S4-2_1167": {
     "zh-cn": "即使在D区也要到外边吃饭吗，也太大手大脚了吧。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "You eat out all the time even in Zone D? That's far too extravagant.",
+    "ja-jp": "D エリアにいても外食ばかり？無駄遣いしすぎだよ。"
   },
   "C1S4-2_1170": {
     "zh-cn": "没办法的嘛，谁知道那些五颜六色的瓶子该怎么用。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "What can I do? I have no idea how to use those colorful bottles.",
+    "ja-jp": "仕方ないじゃん、あの色とりどりの瓶がどう使うかわからないんだ。"
   },
   "C1S4-2_1171": {
     "zh-cn": "明明看到随便放一点进去就会变好吃。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "I only saw people toss a little in and the food tasted great.",
+    "ja-jp": "適当に少し入れるだけで美味しくなるって見ただけなのに。"
   },
   "C1S4-2_1172": {
     "zh-cn": "唉，也没人教过我。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Sigh, no one ever taught me how.",
+    "ja-jp": "はあ、誰も教えてくれなかったんだ。"
   },
   "C1S4-2_1175": {
     "zh-cn": "额，这个就先这样吧。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Well, let's drop this topic for now.",
+    "ja-jp": "まあ、この話はここまでにしよう。"
   },
   "C1S4-2_1176": {
     "zh-cn": "现在的还过的不错，这样不就可以了吗？",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "My life isn't half bad right now, so why change it?",
+    "ja-jp": "今の暮らしも悪くない、これでいいじゃない？"
   },
   "C1S4-2_1177": {
     "zh-cn": "我们如果可以见面的话，我可知道不少好吃的小摊哦。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "If we get to meet someday, I know loads of delicious street stalls I can take you to.",
+    "ja-jp": "いつか会える機会があったら、美味しい屋台をたくさん知ってるから連れて行ってあげる。"
   },
   "C1S4-2_1180": {
     "zh-cn": "你在怕我把钱画完吗。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Are you afraid I'll spend all my money?",
+    "ja-jp": "私がお金を使い果たすのが心配なの？"
   },
   "C1S4-2_1181": {
     "zh-cn": "但D区虽然发展不是很好，但一些烟火气的小摊还不少。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Zone D isn't well developed, but there are quite a few lively street food stalls around.",
+    "ja-jp": "D エリアは発展が良くないけど、生活感のある屋台は意外と多い。"
   },
   "C1S4-2_1182": {
     "zh-cn": "买的次数多了也会便宜一些。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "They even give you a discount if you keep coming back often.",
+    "ja-jp": "何度も通えば値段も安くしてくれる。"
   },
   "C1S4-2_1200": {
     "zh-cn": "加热完毕了。",
@@ -8384,15 +8514,20 @@
     "en-us": "Should I cook some noodles or buy some porridge?",
     "ja-jp": "麺を茹でるか、それともお粥でも買って食べようかな。"
   },
+  "C1S4-2_1241": {
+    "zh-cn": "111|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
   "C1S4-2_1250": {
-    "zh-cn": "我觉得吃这些高热量的东西刚刚好。",
-    "en-us": "I think eating these high-calorie foods is just right.",
-    "ja-jp": "こういう高カロリーなものを食べるのがちょうどいいと思う。"
+    "zh-cn": "我觉得吃些面条比较好。",
+    "en-us": "I think it’s better to eat some noodles.",
+    "ja-jp": "麺類を食べたほうがいいと思う。"
   },
   "C1S4-2_1251": {
-    "zh-cn": "我觉得先吃这些清淡的东西比较好。",
-    "en-us": "I think it's better to eat something light first.",
-    "ja-jp": "まずはこういうあっさりしたものを食べた方がいいと思う。"
+    "zh-cn": "我觉得吃些粥比较好。",
+    "en-us": "I think it’s better to have some porridge.",
+    "ja-jp": "お粥を食べたほうがいいと思う。"
   },
   "C1S4-2_1253": {
     "zh-cn": "哎呦，到底吃什么呢…",
@@ -8420,14 +8555,14 @@
     "ja-jp": "決めた、美味しいものを買って自分へのご褒美にする！"
   },
   "C1S4-2_1270": {
-    "zh-cn": "我觉得吃这些高热量的东西刚刚好。",
-    "en-us": "I think eating these high-calorie foods is just right.",
-    "ja-jp": "こういう高カロリーなものを食べるのがちょうどいいと思う。"
+    "zh-cn": "我觉得吃些面条比较好。",
+    "en-us": "I think it’s better to eat some noodles.",
+    "ja-jp": "麺類を食べたほうがいいと思う。"
   },
   "C1S4-2_1271": {
-    "zh-cn": "我觉得先吃这些清淡的东西比较好。",
-    "en-us": "I think it's better to eat something light first.",
-    "ja-jp": "まずはこういうあっさりしたものを食べた方がいいと思う。"
+    "zh-cn": "我觉得吃些粥比较好。",
+    "en-us": "I think it’s better to have some porridge.",
+    "ja-jp": "お粥を食べたほうがいいと思う。"
   },
   "C1S4-2_1280": {
     "zh-cn": "好...我信你的。",
@@ -8490,14 +8625,14 @@
     "ja-jp": "【すする音】"
   },
   "C1S4-3_102": {
-    "zh-cn": "【小物体撞击铁皮声】",
-    "en-us": "【Sound of a small object hitting sheet metal】",
-    "ja-jp": "【小さな物が鉄板にぶつかる音】"
+    "zh-cn": "【劈里啪啦】",
+    "en-us": "【Crackle, crackle】",
+    "ja-jp": "【パチパチパチ】"
   },
   "C1S4-3_103": {
-    "zh-cn": "什么声音，小物体撞击铁皮声？",
-    "en-us": "What's that sound? A small object hitting sheet metal?",
-    "ja-jp": "何の音だ、小さな物が鉄板にぶつかる音？"
+    "zh-cn": "什么声音，劈里啪啦的？",
+    "en-us": "What's that sound, that crackling?",
+    "ja-jp": "何の音？ あのパチパチって音。"
   },
   "C1S4-3_104": {
     "zh-cn": "你高兴吗，我听见你在轻哼？",
@@ -8505,9 +8640,9 @@
     "ja-jp": "嬉しいのか、鼻歌が聞こえるぞ？"
   },
   "C1S4-3_110": {
-    "zh-cn": "什么声音，小物体撞击铁皮声？",
-    "en-us": "What's that sound? A small object hitting sheet metal?",
-    "ja-jp": "何の音だ、小さな物が鉄板にぶつかる音？"
+    "zh-cn": "什么声音，劈里啪啦的？",
+    "en-us": "What's that sound, that crackling?",
+    "ja-jp": "何の音？ あのパチパチって音。"
   },
   "C1S4-3_111": {
     "zh-cn": "你高兴吗，我听见你在轻哼？",
@@ -8655,54 +8790,69 @@
     "ja-jp": "これ、君が自分で描写したの？"
   },
   "C1S4-3_200": {
+    "zh-cn": "112|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C1S4-3_201": {
     "zh-cn": "当然，我可是扒在窗户上，一丝不苟的给你转播呢。",
     "en-us": "Of course. I'm practically glued to the window, meticulously giving you a live broadcast.",
     "ja-jp": "もちろん、私は窓にへばりついて、細部まで見逃さずに実況中継してるんだからね。"
   },
-  "C1S4-3_201": {
+  "C1S4-3_202": {
     "zh-cn": "这些自然现象都非常有趣。",
     "en-us": "These natural phenomena are fascinating.",
     "ja-jp": "こういう自然現象ってすごく面白いの。"
   },
-  "C1S4-3_202": {
+  "C1S4-3_203": {
     "zh-cn": "也是我来铁幕的原因之一。",
     "en-us": "It's also one of the reasons I came to The Iron Veil.",
     "ja-jp": "私が鉄の帳に来た理由の一つでもあるんだ。"
   },
   "C1S4-3_210": {
+    "zh-cn": "112|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C1S4-3_211": {
     "zh-cn": "哼哼，不错吧。",
     "en-us": "Hehe, pretty cool, right?",
     "ja-jp": "ふふん、いいでしょ。"
   },
-  "C1S4-3_211": {
+  "C1S4-3_212": {
     "zh-cn": "这些自然现象都非常有趣。",
     "en-us": "These natural phenomena are fascinating.",
     "ja-jp": "こういう自然現象ってすごく面白いの。"
   },
-  "C1S4-3_212": {
+  "C1S4-3_213": {
     "zh-cn": "也是我来铁幕的原因之一。",
     "en-us": "It's also one of the reasons I came to The Iron Veil.",
     "ja-jp": "私が鉄の帳に来た理由の一つでもあるんだ。"
   },
   "C1S4-3_220": {
+    "zh-cn": "112|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C1S4-3_221": {
     "zh-cn": "当然了。",
     "en-us": "Of course.",
     "ja-jp": "もちろんよ。"
   },
-  "C1S4-3_221": {
+  "C1S4-3_222": {
     "zh-cn": "观察这些现象都很有趣的。",
     "en-us": "Observing these phenomena is quite fascinating.",
     "ja-jp": "こういう現象を観察するのはすごく面白いんだ。"
   },
-  "C1S4-3_222": {
+  "C1S4-3_223": {
     "zh-cn": "也是我来铁幕的原因之一。",
     "en-us": "It's also one of the reasons I came to The Iron Veil.",
     "ja-jp": "私が鉄の帳に来た理由の一つでもあるんだ。"
   },
   "C1S4-3_230": {
-    "zh-cn": "听起来真不错，我也非常喜欢这些，在雨天喝粥什么的，爽爆了。",
-    "en-us": "That sounds really nice. I love this kind of stuff too; having porridge on a rainy day or something is absolutely awesome.",
-    "ja-jp": "すごくいいね、俺もそういうのは大好きだよ。雨の日に粥をすするのとか、マジで最高だ。"
+    "zh-cn": "听起来真不错，下雨窝在小房间里什么的，爽爆了。",
+    "en-us": "Sounds great. Just chilling in a small room while it rains—so awesome.",
+    "ja-jp": "雨の日、こじんまりした部屋でゴロゴロするの、最高！"
   },
   "C1S4-3_231": {
     "zh-cn": "我是没有太大的感觉。",
@@ -8715,9 +8865,9 @@
     "ja-jp": "それってただの受け売りじゃないか？"
   },
   "C1S4-3_240": {
-    "zh-cn": "听起来真不错，我也非常喜欢这些，在雨天喝粥什么的，爽爆了。",
-    "en-us": "That sounds really nice. I love this kind of stuff too; having porridge on a rainy day or something is absolutely awesome.",
-    "ja-jp": "すごくいいね、俺もそういうのは大好きだよ。雨の日に粥をすするのとか、マジで最高だ。"
+    "zh-cn": "听起来真不错，下雨窝在小房间里什么的，爽爆了。",
+    "en-us": "Sounds great. Just chilling in a small room while it rains—so awesome.",
+    "ja-jp": "雨の日、こじんまりした部屋でゴロゴロするの、最高！"
   },
   "C1S4-3_241": {
     "zh-cn": "我对这些场景没有太大的感觉。",
@@ -8775,9 +8925,9 @@
     "ja-jp": "好きじゃないな、あんまりピンとこないんだよね。"
   },
   "C1S4-3_273": {
-    "zh-cn": "开玩笑的，下次见到还是要和我一下哦。",
-    "en-us": "Just kidding, you still have to tell me about it next time you see one.",
-    "ja-jp": "冗談だよ、次に見かけた時もちゃんと教えてね。"
+    "zh-cn": "开玩笑的，拜托下次见到一定要和我说！",
+    "en-us": "Kidding. Promise you'll tell me when I see you next time!",
+    "ja-jp": "冗談だよ。でも次会ったときは絶対教えてね！"
   },
   "C1S4-3_274": {
     "zh-cn": "其实听听也不错，接受接受新事物。",
@@ -8790,9 +8940,9 @@
     "ja-jp": "好きじゃないな、あんまりピンとこないんだよね。"
   },
   "C1S4-3_281": {
-    "zh-cn": "开玩笑的，下次见到还是要和我一下哦。",
-    "en-us": "Just kidding, you still have to tell me about it next time you see one.",
-    "ja-jp": "冗談だよ、次に見かけた時もちゃんと教えてね。"
+    "zh-cn": "开玩笑的，拜托下次见到一定要和我说！",
+    "en-us": "Kidding. Promise you'll tell me when I see you next time!",
+    "ja-jp": "冗談だよ。でも次会ったときは絶対教えてね！"
   },
   "C1S4-3_282": {
     "zh-cn": "其实听听也不错，接受接受新事物。",
@@ -8910,7 +9060,7 @@
     "ja-jp": "ん？そんなことしちゃダメ。"
   },
   "C1S4-3_431": {
-    "zh-cn": "这可是我辛苦制作的米粥。",
+    "zh-cn": "这可是我辛苦制作的。",
     "en-us": "That's the rice porridge I worked so hard to make.",
     "ja-jp": "私が苦労して作ったお粥なんだからね。"
   },
@@ -9419,6 +9569,11 @@
     "en-us": "A skin-tight latex suit?!",
     "ja-jp": "まさかタイトなラバースーツを着ているとは！"
   },
+  "C1S4-3_721": {
+    "zh-cn": "请务必和我交往！",
+    "en-us": "",
+    "ja-jp": ""
+  },
   "C1S4-3_730": {
     "zh-cn": "为什么忽然发照片？",
     "en-us": "Why the sudden photo?",
@@ -9433,6 +9588,11 @@
     "zh-cn": "居然还有紧身胶衣！",
     "en-us": "A skin-tight latex suit?!",
     "ja-jp": "まさかタイトなラバースーツを着ているとは！"
+  },
+  "C1S4-3_733": {
+    "zh-cn": "居然还有紧身胶衣！",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S4-3_740": {
     "zh-cn": "喂？",
@@ -9860,14 +10020,14 @@
     "ja-jp": "少し休みますね。おやすみなさい。"
   },
   "C1S4-3_961": {
-    "zh-cn": "嗯嗯。",
-    "en-us": "Mm-hmm.",
-    "ja-jp": "うんうん。"
+    "zh-cn": "嗯嗯，好好休息哦。",
+    "en-us": "Yeah, yeah. Get some good rest, okay?",
+    "ja-jp": "うんうん、ゆっくり休んでね。"
   },
   "C1S4-3_962": {
-    "zh-cn": "好好休息哦。",
-    "en-us": "Rest well.",
-    "ja-jp": "ゆっくり休んでね。"
+    "zh-cn": "有我看门，你就放心吧。",
+    "en-us": "I’ll keep an eye on things. You’re good.",
+    "ja-jp": "私が見張ってるから、安心してね。"
   },
   "C1S4-3_963": {
     "zh-cn": "我会在你身边一直守护你的。",
@@ -9875,14 +10035,14 @@
     "ja-jp": "君のそばでずっと見守っているから。"
   },
   "C1S4-3_970": {
-    "zh-cn": "嗯嗯。",
-    "en-us": "Mm-hmm.",
-    "ja-jp": "うんうん。"
+    "zh-cn": "嗯嗯，好好休息哦。",
+    "en-us": "Yeah, yeah. Get some good rest, okay?",
+    "ja-jp": "うんうん、ゆっくり休んでね。"
   },
   "C1S4-3_971": {
-    "zh-cn": "好好休息哦。",
-    "en-us": "Rest well.",
-    "ja-jp": "ゆっくり休んでね。"
+    "zh-cn": "有我看门，你就放心吧。",
+    "en-us": "I’ll keep an eye on things. You’re good.",
+    "ja-jp": "私が見張ってるから、安心してね。"
   },
   "C1S4-3_972": {
     "zh-cn": "我会在你身边一直守护你的。",
@@ -9905,7 +10065,7 @@
     "ja-jp": "また変なこと言ってるの？"
   },
   "C1S4-3_987": {
-    "zh-cn": "你…你........",
+    "zh-cn": "你...你...",
     "en-us": "You... you........",
     "ja-jp": "あ…あなた……"
   },
@@ -10130,19 +10290,24 @@
     "ja-jp": "薬があった。"
   },
   "C1S4-3_1086": {
-    "zh-cn": "相较于其他药品完全没有被购买的迹象。",
+    "zh-cn": "113|H",
     "en-us": "Unlike the other meds, there's absolutely no sign of this one ever being purchased.",
     "ja-jp": "他の薬と比べて、全く買われた形跡がない。"
   },
   "C1S4-3_1087": {
-    "zh-cn": "看来只有我这个笨蛋中招了。",
+    "zh-cn": "相较于其他药品完全没有被购买的迹象。",
     "en-us": "Looks like I'm the only idiot who fell victim to this.",
     "ja-jp": "どうやら私みたいなバカだけがこんな目に遭うみたいだ。"
   },
   "C1S4-3_1088": {
-    "zh-cn": "得花费我7个费用点……",
+    "zh-cn": "看来只有我这个笨蛋中招了。",
     "en-us": "It's gonna cost me 7 Credits...",
     "ja-jp": "私の7クレジットもかかるのか……"
+  },
+  "C1S4-3_1089": {
+    "zh-cn": "得花费我7个费用点……",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S4-3_1090": {
     "zh-cn": "买上吧，起码好受一些。",
@@ -10155,34 +10320,44 @@
     "ja-jp": "買うべきかな？すごく高そうだけど。"
   },
   "C1S4-3_1092": {
-    "zh-cn": "要不别买了，好贵的。",
-    "en-us": "Maybe you shouldn't buy it, it's so expensive.",
-    "ja-jp": "やっぱり買うのはやめておこう、すごく高いし。"
+    "zh-cn": "身体垮了，你还怎么找你的哥哥。",
+    "en-us": "You can't find your brother if you break down like this.",
+    "ja-jp": "体が倒れちゃったら、お兄さんを探せなくなっちゃうよ。"
   },
   "C1S4-3_1093": {
-    "zh-cn": "别这样说，你不是笨蛋。",
-    "en-us": "Don't say that, you're not an idiot.",
-    "ja-jp": "そんなこと言わないで、あなたはバカじゃないよ。"
+    "zh-cn": "笨蛋，身体都快要垮掉了，还要什么费用点啊。",
+    "en-us": "Idiot, you're practically falling apart, and you're still worried about some stupid fee?",
+    "ja-jp": "バカ、体が先だろ。仕事の費用なんて後でいいから。"
+  },
+  "C1S4-3_1094": {
+    "zh-cn": "别这样说，你不是笨蛋，先别管费用了，身体最要紧。",
+    "en-us": "Don't talk like that. You're not an idiot. Never mind the money—your health is what matters most.",
+    "ja-jp": "そんな風に言わないで。バカなんかじゃないよ。お金のことはあとでいいから、今は体を一番にね。"
   },
   "C1S4-3_1095": {
-    "zh-cn": "嘶！",
+    "zh-cn": "",
     "en-us": "*Hiss!*",
     "ja-jp": "ツッ！"
   },
   "C1S4-3_1096": {
-    "zh-cn": "这七点费用算是我交生活常识费了。",
+    "zh-cn": "嘶！",
     "en-us": "I'll just consider these 7 Credits my tuition fee for common sense.",
     "ja-jp": "この7ポイントの費用は、生活常識のための授業料ってことにしておくよ。"
   },
   "C1S4-3_1097": {
-    "zh-cn": "呜呜呜呜呜呜。",
+    "zh-cn": "这七点费用算是我交生活常识费了。",
     "en-us": "Wuwuwuwuwu.",
     "ja-jp": "うううううう。"
   },
   "C1S4-3_1098": {
-    "zh-cn": "我好痛啊。",
+    "zh-cn": "呜呜呜呜呜呜。",
     "en-us": "It hurts so much.",
     "ja-jp": "本当に痛いよぉ。"
+  },
+  "C1S4-3_1099": {
+    "zh-cn": "我好痛啊。",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S4-3_1110": {
     "zh-cn": "买上吧，起码好受一些。",
@@ -10195,14 +10370,19 @@
     "ja-jp": "買うべきかな？すごく高そうだけど。"
   },
   "C1S4-3_1112": {
-    "zh-cn": "要不别买了，好贵的。",
-    "en-us": "Maybe you shouldn't buy it, it's so expensive.",
-    "ja-jp": "やっぱり買うのはやめておこう、すごく高いし。"
+    "zh-cn": "身体垮了，你还怎么找你的哥哥。",
+    "en-us": "You can't find your brother if you break down like this.",
+    "ja-jp": "体が倒れちゃったら、お兄さんを探せなくなっちゃうよ。"
   },
   "C1S4-3_1113": {
-    "zh-cn": "别这样说，你不是笨蛋。",
-    "en-us": "Don't say that, you're not an idiot.",
-    "ja-jp": "そんなこと言わないで、あなたはバカじゃないよ。"
+    "zh-cn": "身体垮了，你还怎么找你的哥哥。",
+    "en-us": "",
+    "ja-jp": "バカ、体が先だろ。仕事の費用なんて後でいいから。"
+  },
+  "C1S4-3_1114": {
+    "zh-cn": "别这样说，你不是笨蛋，先别管费用了，身体最要紧。",
+    "en-us": "Don't talk like that. You're not an idiot. Never mind the money—your health is what matters most.",
+    "ja-jp": "そんな風に言わないで。バカなんかじゃないよ。お金のことはあとでいいから、今は体を一番にね。"
   },
   "C1S4-3_1120": {
     "zh-cn": "呃，肯定得买。",
@@ -10985,19 +11165,29 @@
     "ja-jp": "安全だよ。"
   },
   "C1S4_221": {
-    "zh-cn": "还有官方机构的logo。",
+    "zh-cn": "",
     "en-us": "It even has the official organization's logo.",
     "ja-jp": "公的機関のロゴも入ってるし。"
   },
   "C1S4_222": {
-    "zh-cn": "只是样式是我没见过。",
+    "zh-cn": "106|H",
     "en-us": "It's just a model I haven't seen before.",
     "ja-jp": "ただ、このデザインは私も見たことがないな。"
   },
   "C1S4_223": {
-    "zh-cn": "开门的方式我不太清楚。",
+    "zh-cn": "还有官方机构的logo。",
     "en-us": "I'm just not quite sure how to open the door.",
     "ja-jp": "ドアの開け方はちょっと分からないけど。"
+  },
+  "C1S4_224": {
+    "zh-cn": "只是样式是我没见过。",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C1S4_225": {
+    "zh-cn": "开门的方式我不太清楚。",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S4_249": {
     "zh-cn": "你这样说好恶心啊。",
@@ -11026,8 +11216,8 @@
   },
   "C1S4_259": {
     "zh-cn": "你这样说好恶心啊。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "The way you're talking grosses me out.",
+    "ja-jp": "そんな言い方、すごく気持ち悪い。"
   },
   "C1S4_260": {
     "zh-cn": "会有什么危险吗？",
@@ -11091,18 +11281,18 @@
   },
   "C1S4_290": {
     "zh-cn": "恶心到你了吗，真是抱歉啊。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Did I disgust you? My apologies.",
+    "ja-jp": "気分を悪くさせちゃった？申し訳ない。"
   },
   "C1S4_291": {
     "zh-cn": "但是也没有其他办法了。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "But there's no other way.",
+    "ja-jp": "だけど他に手段がないんだ。"
   },
   "C1S4_292": {
     "zh-cn": "我要看能不能打开它。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "I'm going to try and open this.",
+    "ja-jp": "これを開けられるか試してみる。"
   },
   "C1S4_293": {
     "zh-cn": "【跑步声】",
@@ -11111,8 +11301,8 @@
   },
   "C1S4_295": {
     "zh-cn": "咿呀——",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Ughh——",
+    "ja-jp": "よいしょ ——"
   },
   "C1S4_300": {
     "zh-cn": "你在做什么？",
@@ -11163,6 +11353,11 @@
     "zh-cn": "我怎么能拉不开门呢？",
     "en-us": "How can I not even pull a door open?",
     "ja-jp": "どうして私がドアを開けられないわけ？"
+  },
+  "C1S4_316": {
+    "zh-cn": "107|V",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C1S4_317": {
     "zh-cn": "你力气是不是太小了？",
@@ -11569,21 +11764,6 @@
     "en-us": "I'll rest for a bit, then go open the door.",
     "ja-jp": "少し休んだらドアを開けに行くよ。"
   },
-  "C1S4_586": {
-    "zh-cn": "简单介绍下吧。",
-    "en-us": "Let me introduce myself briefly.",
-    "ja-jp": "簡単に自己紹介するね。"
-  },
-  "C1S4_587": {
-    "zh-cn": "我是C804，你叫我这个就好。",
-    "en-us": "I am C804, you can just call me that.",
-    "ja-jp": "私はC804、そう呼んでくれればいいよ。"
-  },
-  "C1S4_588": {
-    "zh-cn": "是负责铁幕西格玛区域，对接勘探队的先锋队员。",
-    "en-us": "I'm a Vanguard Operative responsible for Sector Sigma of The Iron Veil, and I coordinate with the Exploration Squad.",
-    "ja-jp": "鉄の帳シグマ・セクターを担当し、探査隊と連携する先鋒隊員だ。"
-  },
   "C1S4_590": {
     "zh-cn": "我为什么会联系到你？",
     "en-us": "Why did I connect to you?",
@@ -11799,11 +11979,6 @@
     "en-us": "Does a place like The Iron Veil really exist?",
     "ja-jp": "本当に鉄の帳のような場所が存在するの？"
   },
-  "C1S4_771": {
-    "zh-cn": "听起来像是正式的自我介绍。充满了距离的味道。",
-    "en-us": "That sounds like a formal self-introduction. It feels very distant.",
-    "ja-jp": "まるで正式な自己紹介みたいだな。よそよそしさを感じるよ。"
-  },
   "C1S4_775": {
     "zh-cn": "我没什么问题了。",
     "en-us": "I don't have any more questions.",
@@ -11940,11 +12115,16 @@
     "ja-jp": "お金のため。カメラを買うためだよ。"
   },
   "C1S4_832": {
+    "zh-cn": "我现在的相机，对焦经常有问题。",
+    "en-us": "My current camera often has trouble focusing.",
+    "ja-jp": "今使っているカメラ、ピントがよく合わなくて。"
+  },
+  "C1S4_833": {
     "zh-cn": "还有一些个人因素。",
     "en-us": "And a few personal reasons.",
     "ja-jp": "あとはちょっとした個人的な理由もある。"
   },
-  "C1S4_833": {
+  "C1S4_834": {
     "zh-cn": "就是我比较喜欢探究这些奇奇怪怪的地方。",
     "en-us": "It's just that I quite like exploring these weird places.",
     "ja-jp": "私がこういう奇妙な場所を探求するのが割と好きだから、ってところかな。"
@@ -12141,8 +12321,8 @@
   },
   "C1S4_923": {
     "zh-cn": "你那边有什么可供参考的常识吗？",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Do you have any common knowledge I can refer to?",
+    "ja-jp": "何か参考になる知識、持ってない？"
   },
   "C1S4_930": {
     "zh-cn": "这又是什么奇怪玄幻的称呼？",
@@ -13125,21 +13305,26 @@
     "ja-jp": "このヘアピンのこと？これは両親が残してくれたものなんだ。"
   },
   "C2S1-1_421": {
+    "zh-cn": "115|V",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C2S1-1_422": {
     "zh-cn": "爸爸妈妈很少与我们见面，小时候只有哥哥陪在我身边。",
     "en-us": "Mom and Dad rarely saw us. When I was little, I only had my older brother by my side.",
     "ja-jp": "お父さんとお母さんには滅多に会えなくて、小さい頃はお兄ちゃんだけがそばにいてくれたの。"
   },
-  "C2S1-1_422": {
+  "C2S1-1_423": {
     "zh-cn": "长大后，哥哥也参与到铁幕的工作中，离我越来越远了。",
     "en-us": "After growing up, my brother also got involved with the work at The Iron Veil, and drifted further and further away from me.",
     "ja-jp": "大人になってからは、お兄ちゃんも『鉄の帳』の仕事に関わるようになって、私からどんどん遠ざかっていっちゃった。"
   },
-  "C2S1-1_423": {
+  "C2S1-1_424": {
     "zh-cn": "这个发卡还是哥哥转交给我的，收到发卡他们只留了一句话。",
     "en-us": "My brother was actually the one who passed this hair clip to me. When I received it, they had only left a single sentence.",
     "ja-jp": "このヘアピンもお兄ちゃんに渡してもらったものでね。ヘアピンを受け取った時、両親が残したのは一言だけだったんだ。"
   },
-  "C2S1-1_424": {
+  "C2S1-1_425": {
     "zh-cn": "信息不会凭空产生，也不会凭空消失。",
     "en-us": "Information cannot be created out of thin air, nor can it disappear into thin air.",
     "ja-jp": "『情報は無から生じないし、無へと消えることもない。』"
@@ -13410,16 +13595,21 @@
     "ja-jp": "【足音】"
   },
   "C2S1-1_602": {
+    "zh-cn": "201|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C2S1-1_603": {
     "zh-cn": "咦，有热源？",
     "en-us": "Huh, a heat source?",
     "ja-jp": "あれ、熱源がある？"
   },
-  "C2S1-1_603": {
+  "C2S1-1_604": {
     "zh-cn": "补给仓显示周围有热源，也就是人。",
     "en-us": "The Supply Pod shows a heat source nearby, which means a person.",
     "ja-jp": "補給ポッドの表示だと周辺に熱源がある。つまり人間だ。"
   },
-  "C2S1-1_604": {
+  "C2S1-1_605": {
     "zh-cn": "也只可能是人了。",
     "en-us": "It can only be a person.",
     "ja-jp": "人間としか考えられないしね。"
@@ -13605,44 +13795,49 @@
     "ja-jp": "銃は手に持った。"
   },
   "C2S1-1_708": {
+    "zh-cn": "116|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C2S1-1_709": {
     "zh-cn": "【脚步声】",
     "en-us": "【Footsteps】",
     "ja-jp": "【足音】"
   },
-  "C2S1-1_710": {
+  "C2S1-1_711": {
     "zh-cn": "喂？你没事吧？",
     "en-us": "Hey! Are you okay?",
     "ja-jp": "おい！大丈夫か？"
   },
-  "C2S1-1_711": {
+  "C2S1-1_712": {
     "zh-cn": "喂？",
     "en-us": "Hello?",
     "ja-jp": "もしもし？"
   },
-  "C2S1-1_712": {
+  "C2S1-1_713": {
     "zh-cn": "5|H",
     "en-us": "【Scav photo CG】",
     "ja-jp": "【スカベンジャーの写真CG】"
   },
-  "C2S1-1_713": {
+  "C2S1-1_714": {
     "zh-cn": "你…",
     "en-us": "He seems to be unconscious. This is my first time seeing a Scav.",
     "ja-jp": "気絶しているみたいだ。スカベンジャーを見るのは初めてだよ。"
   },
-  "C2S1-1_714": {
+  "C2S1-1_715": {
     "zh-cn": "喂？",
     "en-us": "Judging by his build, he looks like a teenager. What should I do?",
     "ja-jp": "体格からして10代みたいだけど、どうする？"
   },
-  "C2S1-1_715": {
-    "zh-cn": "他昏迷了，我还是第一次见到黑贼。",
-    "en-us": "",
-    "ja-jp": ""
-  },
   "C2S1-1_716": {
+    "zh-cn": "他昏迷了，我还是第一次见到黑贼。",
+    "en-us": "He’s unconscious. This is my first time ever seeing a looter.",
+    "ja-jp": "彼は意識を失っている。悪賊を見るのは私も初めてだ。"
+  },
+  "C2S1-1_717": {
     "zh-cn": "从体型来看十几岁的样子，怎么办？",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Judging by his build, he looks to be a teenager. What should I do?",
+    "ja-jp": "体格から見ると十代のようだ。どうしよう？"
   },
   "C2S1-1_720": {
     "zh-cn": "就放在这里吧，我觉得他们都挺危险的，他们做这件事就应该想到结果的。",
@@ -14120,9 +14315,9 @@
     "ja-jp": "ダメだよ、今の君は電子機器なんだ。お粥をかけたら一発で壊れちゃうよ。"
   },
   "C2S1-1_960": {
-    "zh-cn": "那不是说我是真的就可以喂我了。",
-    "en-us": "Does that mean you could feed me if I were real?",
-    "ja-jp": "じゃあ、私が本物だったら食べさせてくれるってこと？"
+    "zh-cn": "我是真的，你就可以喂我了？",
+    "en-us": "If I'm real, then you can feed me?",
+    "ja-jp": "私が本物なら、ご飯くれるんでしょ？"
   },
   "C2S1-1_961": {
     "zh-cn": "那好吧。",
@@ -14130,9 +14325,9 @@
     "ja-jp": "なら、いっか。"
   },
   "C2S1-1_970": {
-    "zh-cn": "那不是说我是真的就可以喂我了。",
-    "en-us": "Does that mean you could feed me if I were real?",
-    "ja-jp": "じゃあ、私が本物だったら食べさせてくれるってこと？"
+    "zh-cn": "我是真的，你就可以喂我了？",
+    "en-us": "If I'm real, then you can feed me?",
+    "ja-jp": "私が本物なら、ご飯くれるんでしょ？"
   },
   "C2S1-1_971": {
     "zh-cn": "那好吧。",
@@ -14205,9 +14400,9 @@
     "ja-jp": "うぅ、お姉ちゃん、僕たちを助けてくれる？"
   },
   "C2S1-1_1009": {
-    "zh-cn": " 我是正式的官方人员，到底发生什么了。",
-    "en-us": "I am an official agent. What exactly happened?",
-    "ja-jp": "私は正規の公式職員よ。一体何があったの？"
+    "zh-cn": "我是先锋队正式队员C804，到底发生什么了？",
+    "en-us": "I'm C804, a formal member of the Vanguard. What on earth happened?",
+    "ja-jp": "自分は先鋒隊の正規隊員、C804だ。いったい何が起きたんだ？"
   },
   "C2S1-1_1010": {
     "zh-cn": "  我，大姐姐，我的爸爸妈妈都被那个人关起来了。",
@@ -14271,8 +14466,8 @@
   },
   "C2S1-1_1038": {
     "zh-cn": "他可比我少了起码七岁。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "He’s at least seven years younger than me.",
+    "ja-jp": "私より少なくとも七歳は年下だ。"
   },
   "C2S1-1_1040": {
     "zh-cn": "嗯嗯，当然了，大姐姐！",
@@ -14580,7 +14775,7 @@
     "ja-jp": "【服が擦れる音】"
   },
   "C2S1-1_1192": {
-    "zh-cn": "是这些东西吗？",
+    "zh-cn": "就只有热帖和热片？",
     "en-us": "Is this it?",
     "ja-jp": "これがそうなの？"
   },
@@ -14590,7 +14785,7 @@
     "ja-jp": "**、えっ、こんなものだけでしのいでたって言うの？"
   },
   "C2S1-1_1194": {
-    "zh-cn": "唔…...",
+    "zh-cn": "唔…",
     "en-us": "Um...",
     "ja-jp": "うぅ……"
   },
@@ -14620,24 +14815,29 @@
     "ja-jp": "ゴホン、だって…これはさすがにショックすぎたから。"
   },
   "C2S1-1_1202": {
+    "zh-cn": "117|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C2S1-1_1203": {
     "zh-cn": "关键的供养和保暖居然是通过分解化学品来制取的。",
     "en-us": "To think your critical oxygen supply and heating are actually obtained by breaking down chemicals.",
     "ja-jp": "肝心な酸素供給と保温を、まさか化学薬品の分解で作り出していたなんて。"
   },
-  "C2S1-1_1203": {
+  "C2S1-1_1204": {
     "zh-cn": "我们是通过电解来制氧的，保温则有防护服的真空隔层。",
     "en-us": "We produce oxygen through electrolysis, and for insulation, we have the vacuum layers in our Hazmat Suits.",
     "ja-jp": "私たちは電解で酸素を作っているし、保温には防護服の真空断熱層があるの。"
   },
-  "C2S1-1_1204": {
+  "C2S1-1_1205": {
     "zh-cn": "让我找找补给仓有没有可以代替的应急机器…",
     "en-us": "Let me check the Supply Pod to see if there's an emergency machine we can use instead...",
     "ja-jp": "補給ポッドに代わりになる緊急用の機械がないか探してみるわね…"
   },
-  "C2S1-1_1205": {
+  "C2S1-1_1206": {
     "zh-cn": "这效率也太低了。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "This is far too inefficient.",
+    "ja-jp": "能率が低すぎる。"
   },
   "C2S1-1_1210": {
     "zh-cn": "【您使用了30点数兑换了应急电解装置，请及时向内部注水并充电】",
@@ -14753,11 +14953,6 @@
     "zh-cn": "谢谢大姐姐，我知道了。",
     "en-us": "Thank you, big sister. I got it.",
     "ja-jp": "ありがとう、お姉ちゃん。分かったよ。"
-  },
-  "C2S1-3_1": {
-    "zh-cn": "0",
-    "en-us": "0",
-    "ja-jp": "0"
   },
   "C2S1-3_100": {
     "zh-cn": "西格玛区域有持枪的黑贼袭击勘探队。",
@@ -14901,46 +15096,46 @@
   },
   "C2S1-3_170": {
     "zh-cn": "姐姐姐姐，你不要生气好不好，而且哪里还很危险。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Sis, please don’t be mad. Besides, this area is still really dangerous.",
+    "ja-jp": "お姉ちゃん、怒らないで。ここの辺りも危ないんだ。"
   },
   "C2S1-3_171": {
     "zh-cn": "你和我一起去好不好。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Will you come with me?",
+    "ja-jp": "一緒に来てくれる？"
   },
   "C2S1-3_172": {
     "zh-cn": "可是…",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "But…",
+    "ja-jp": "でも……"
   },
   "C2S1-3_173": {
     "zh-cn": "好吧，但是姐姐得先去完成自己的任务。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Alright, but you have to finish your own mission first, sis.",
+    "ja-jp": "わかった。ただお姉ちゃんは先に自分の任務を済ませなきゃ。"
   },
   "C2S1-3_175": {
     "zh-cn": "我们之后在这里汇合好不好。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Shall we meet back here later?",
+    "ja-jp": "後でここで合流しよう？"
   },
   "C2S1-3_176": {
     "zh-cn": "你知道这是哪里吗？",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "Do you know exactly where this place is?",
+    "ja-jp": "ここがどこか分かってる？"
   },
   "C2S1-3_177": {
     "zh-cn": "知道知道，姐姐，我们三天后在这里见面哦。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "I know, sis. Let’s meet right here three days from now.",
+    "ja-jp": "わかってるよお姉ちゃん。三日後にここで会おうね。"
   },
   "C2S1-3_200": {
-    "zh-cn": "去西边吧，距离比较近，去哪里吧。",
+    "zh-cn": "去西边吧，距离比较近，去那里吧。",
     "en-us": "Let's head west. It's closer, so let's go there.",
     "ja-jp": "西へ行きましょう、距離も比較的近いですし。そこにしましょう。"
   },
   "C2S1-3_210": {
-    "zh-cn": "去西边吧，距离比较近，去哪里吧。",
+    "zh-cn": "去西边吧，距离比较近，去那里吧。",
     "en-us": "Let's head west. It's closer, so let's go there.",
     "ja-jp": "西へ行きましょう、距離も比較的近いですし。そこにしましょう。"
   },
@@ -15006,18 +15201,13 @@
   },
   "C2S1-3_353": {
     "zh-cn": "【滑动声】",
-    "en-us": "",
-    "ja-jp": ""
-  },
-  "C2S1-3_354": {
-    "zh-cn": "",
-    "en-us": "【Sliding】",
+    "en-us": "【Slide sound】",
     "ja-jp": "【スライド音】"
   },
   "C2S1-3_355": {
     "zh-cn": "【滑动声】",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "【Slide sound】",
+    "ja-jp": "【スライド音】"
   },
   "C2S1-3_360": {
     "zh-cn": "你到达哪里需要多长时间？",
@@ -15175,11 +15365,16 @@
     "ja-jp": "すごく高い壁があるね。"
   },
   "C2S1-3_442": {
+    "zh-cn": "118|V",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C2S1-3_443": {
     "zh-cn": "外围都是工厂，路倒是很好走了。",
     "en-us": "The outer perimeter is all factories, but the roads are actually pretty easy to traverse.",
     "ja-jp": "外周は工場だらけだけど、道はかえって歩きやすいよ。"
   },
-  "C2S1-3_443": {
+  "C2S1-3_444": {
     "zh-cn": "错综复杂的管道我越来越觉得自己是一只老鼠了。",
     "en-us": "With all these intricate pipes, I'm starting to feel more and more like a rat.",
     "ja-jp": "入り組んだパイプのせいで、だんだん自分がネズミになった気分だよ。"
@@ -15231,8 +15426,8 @@
   },
   "C2S1-3_478": {
     "zh-cn": "周边还有像是鱼鳞那样的小房间，应该是给工人们居住的。",
-    "en-us": "",
-    "ja-jp": ""
+    "en-us": "There are small scale-shaped rooms scattered nearby; they must be living quarters for the workers.",
+    "ja-jp": "周囲に魚のうろこのような小部屋が並んでいて、労働者用の住居だろう。"
   },
   "C2S1-3_480": {
     "zh-cn": "工厂很多，是那种不会产生污染的工厂。",
@@ -15580,13 +15775,18 @@
     "ja-jp": "これって鉄の帳の中じゃ、金よりずっと珍しい代物なんだ。"
   },
   "C2S1-3_690": {
-    "zh-cn": "铁幕中的景象总有一种冷硬的感觉。",
+    "zh-cn": "119|H",
     "en-us": "The environment in The Iron Veil always has a cold, hard feel to it.",
-    "ja-jp": "鉄の帳の中の景色って、いつも冷たくて無機質な感じがするんだ。"
+    "ja-jp": ""
   },
   "C2S1-3_691": {
-    "zh-cn": "就是很少看到柔软的制品，比如纸或者布料。",
+    "zh-cn": "铁幕中的景象总有一种冷硬的感觉。",
     "en-us": "You rarely see any soft materials, like paper or fabric.",
+    "ja-jp": "鉄の帳の中の景色って、いつも冷たくて無機質な感じがするんだ。"
+  },
+  "C2S1-3_692": {
+    "zh-cn": "就是很少看到柔软的制品，比如纸或者布料。",
+    "en-us": "",
     "ja-jp": "つまり、紙や布のような柔らかい素材の製品をめったに見かけない。"
   },
   "C2S1-3_700": {
@@ -15835,7 +16035,7 @@
     "ja-jp": "見てみたくないの？"
   },
   "C2S1-3_825": {
-    "zh-cn": "我看看…...",
+    "zh-cn": "我看看…",
     "en-us": "Let me see...",
     "ja-jp": "どれどれ……"
   },
@@ -16414,6 +16614,11 @@
     "en-us": "B003 calling A506 via Emergency Comms, please respond if connected.",
     "ja-jp": "こちらB003、緊急通信チャンネルにてA506を呼出。接続に成功した場合は応答を。"
   },
+  "C2S1_109": {
+    "zh-cn": "你是谁，不会是骗子吧？",
+    "en-us": "Who are you? You’re not a scammer, are you?",
+    "ja-jp": "どちらさまでしょうか？まさか詐欺師じゃないですよね？"
+  },
   "C2S1_110": {
     "zh-cn": "又来？",
     "en-us": "Again?",
@@ -16469,6 +16674,26 @@
     "en-us": "B003, what's the situation on your end?",
     "ja-jp": "B003、そちらの状況はどうなっている？"
   },
+  "C2S1_132": {
+    "zh-cn": "你是谁，不会是骗子吧？",
+    "en-us": "Who are you? You’re not a scammer, are you?",
+    "ja-jp": "どちらさまでしょうか？まさか詐欺師じゃないですよね？"
+  },
+  "C2S1_133": {
+    "zh-cn": "不是，这是我的工作证，你是谁。",
+    "en-us": "No, this is my work ID. Who are you?",
+    "ja-jp": "いや、これは私の仕事の身分証です。あなたこそ、どなたですか？"
+  },
+  "C2S1_134": {
+    "zh-cn": "A506？",
+    "en-us": "A506？",
+    "ja-jp": "A506？"
+  },
+  "C2S1_135": {
+    "zh-cn": "114|V",
+    "en-us": "",
+    "ja-jp": ""
+  },
   "C2S1_140": {
     "zh-cn": "A506，请保持对接该有的专业。",
     "en-us": "A506, please maintain the expected professionalism for our connection.",
@@ -16490,9 +16715,9 @@
     "ja-jp": "私はX302だ。君たちの言い方に従えば、私は今、緊急通信チャンネルにいるはずだ。"
   },
   "C2S1_151": {
-    "zh-cn": "我不是你说的A506，我是X302，看起来你在遭受不平等对待啊？",
-    "en-us": "I'm not the A506 you're talking about, I'm X302. Looks like you're being treated unfairly, huh?",
-    "ja-jp": "私は君の言うA506ではない、X302だ。どうやら君は不当な扱いを受けているようだな？"
+    "zh-cn": "我不是你说的A506，我是X302，工作情况怎么样？",
+    "en-us": "I'm not A506, I'm X302. How's the work going?",
+    "ja-jp": "私はあなたの言うA506じゃなくて、X302です。仕事の調子はどうですか？"
   },
   "C2S1_153": {
     "zh-cn": "003简报，与此找到勘察队相关数据。",
@@ -16530,9 +16755,9 @@
     "ja-jp": "私はX302だ。君たちの言い方に従えば、私は今、緊急通信チャンネルにいるはずだ。"
   },
   "C2S1_161": {
-    "zh-cn": "我不是你说的A506，我是X302，看起来你在遭受不平等对待啊？",
-    "en-us": "I'm not the A506 you're talking about, I'm X302. Looks like you're being treated unfairly, huh?",
-    "ja-jp": "私は君の言うA506ではない、X302だ。どうやら君は不当な扱いを受けているようだな？"
+    "zh-cn": "我不是你说的A506，我是X302，工作情况怎么样？",
+    "en-us": "I'm not A506, I'm X302. How's the work going?",
+    "ja-jp": "私はあなたの言うA506じゃなくて、X302です。仕事の調子はどうですか？"
   },
   "C2S1_170": {
     "zh-cn": "X302？",
@@ -16635,7 +16860,7 @@
     "ja-jp": "まさか通信チャンネルがすべて切断されているとは。"
   },
   "C2S1_213": {
-    "zh-cn": "这个804的情况很像啊。",
+    "zh-cn": "这跟804的情况很像啊。",
     "en-us": "This is very similar to the 804 situation.",
     "ja-jp": "これは804の状況とよく似ていますね。"
   },
@@ -16650,7 +16875,7 @@
     "ja-jp": "あなたには一部の情報を記録する能力はありますか？"
   },
   "C2S1_230": {
-    "zh-cn": "这个804的情况很像啊。",
+    "zh-cn": "这跟804的情况很像啊。",
     "en-us": "This is very similar to the 804 situation.",
     "ja-jp": "これは804の状況とよく似ていますね。"
   },
@@ -16715,9 +16940,9 @@
     "ja-jp": "私と君は全く違う世界にいるんだ、そんなこと私がどうして知っているんだ。"
   },
   "C2S1_283": {
-    "zh-cn": "我觉得我有。",
-    "en-us": "I think I do.",
-    "ja-jp": "私にはあると思う。"
+    "zh-cn": "我——不——知——道——",
+    "en-us": "I——don't——know——",
+    "ja-jp": "わ——か——ら——な——い——"
   },
   "C2S1_286": {
     "zh-cn": "希望他们能看到这样的记录形式。",
@@ -16770,9 +16995,9 @@
     "ja-jp": "私と君は全く違う世界にいるんだ、そんなこと私がどうして知っているんだ。"
   },
   "C2S1_303": {
-    "zh-cn": "我觉得我有。",
-    "en-us": "I think I do.",
-    "ja-jp": "私にはあると思う。"
+    "zh-cn": "我——不——知——道——",
+    "en-us": "I——don't——know——",
+    "ja-jp": "わ——か——ら——な——い——"
   },
   "C2S1_310": {
     "zh-cn": "就算这样也没办法了。",
@@ -17455,7 +17680,7 @@
     "ja-jp": "死体をどこに保管したの？"
   },
   "C2S1_731": {
-    "zh-cn": "咦，你是巴拉尸体了吗，好恶心，还要移动他们？",
+    "zh-cn": "咦，你是扒拉尸体了吗，好恶心，还要移动他们？",
     "en-us": "Ew, did you poke around the bodies? That's so gross, you even had to move them?",
     "ja-jp": "えっ、死体をいじったの？気持ち悪い、その上移動までさせたってこと？"
   },
@@ -17470,7 +17695,7 @@
     "ja-jp": "死体をどこに保管したの？"
   },
   "C2S1_741": {
-    "zh-cn": "咦，你是巴拉尸体了吗，好恶心，还要移动他们？",
+    "zh-cn": "咦，你是扒拉尸体了吗，好恶心，还要移动他们？",
     "en-us": "Ew, did you poke around the bodies? That's so gross, you even had to move them?",
     "ja-jp": "えっ、死体をいじったの？気持ち悪い、その上移動までさせたってこと？"
   },
@@ -17535,7 +17760,7 @@
     "ja-jp": "何言ってるんですか。"
   },
   "C2S1_792": {
-    "zh-cn": "不过，确实很…...保鲜。",
+    "zh-cn": "不过，确实很...保鲜。",
     "en-us": "But, it really does... keep them fresh.",
     "ja-jp": "でも、確かにすごく……『鮮度』は保たれそうですね。"
   },
@@ -17588,11 +17813,6 @@
     "zh-cn": "嗯，谢谢你。",
     "en-us": "Yeah, thank you.",
     "ja-jp": "うん、ありがとう。"
-  },
-  "C2S2_1": {
-    "zh-cn": "0",
-    "en-us": "0",
-    "ja-jp": "0"
   },
   "C2S2_100": {
     "zh-cn": "我到了，勘探队的设备还是很好找到。",
@@ -17725,47 +17945,52 @@
     "ja-jp": "はいはい、見るからに高そうな時計がたくさんあるんだ。"
   },
   "C2S2_160": {
-    "zh-cn": "不知道是谁将它们都放在了这里。",
+    "zh-cn": "120|H",
     "en-us": "I wonder who put them all here.",
     "ja-jp": "誰がこれらを全部ここに置いたんだろうね。"
   },
   "C2S2_161": {
-    "zh-cn": "摆放的很整齐，我一来就注意到了",
+    "zh-cn": "不知道是谁将它们都放在了这里。",
     "en-us": "They were laid out very neatly, I noticed them as soon as I arrived.",
     "ja-jp": "きれいに並べられていて、来てすぐに気づいたよ。"
   },
   "C2S2_162": {
-    "zh-cn": "捡到一笔钱，嘻嘻。",
+    "zh-cn": "摆放的很整齐，我一来就注意到了",
     "en-us": "Scored some cash, hehe.",
     "ja-jp": "お金を拾っちゃった、えへへ。"
   },
+  "C2S2_163": {
+    "zh-cn": "捡到一笔钱，嘻嘻。",
+    "en-us": "",
+    "ja-jp": ""
+  },
   "C2S2_170": {
-    "zh-cn": "之前003好像来过这里，应该是她码在这里的。",
+    "zh-cn": "003吧，应该是她码在这里的。",
     "en-us": "003 was here before, she must be the one who stacked them here.",
     "ja-jp": "前に003がここに来てたから、彼女がここに積んだんだろうね。"
   },
   "C2S2_171": {
-    "zh-cn": "之前003好像来过这里，真奇怪，她居然没有拿走吗？",
+    "zh-cn": "003吧，真奇怪，她居然没有拿走吗？",
     "en-us": "003 was here before. How strange, she actually didn't take them?",
     "ja-jp": "前に003がここに来てたけど、変だね、彼女は持っていかなかったの？"
   },
   "C2S2_172": {
-    "zh-cn": "之前003好像来过这里，我不建议你好奇的看拖拽的终点。",
+    "zh-cn": "003吧，我不建议你好奇的看拖拽的终点。",
     "en-us": "003 was here before. I don't recommend looking at the end of the drag trail out of curiosity.",
     "ja-jp": "前に003がここに来ていた。好奇心で引きずられた跡の先を見るのはお勧めしないよ。"
   },
   "C2S2_180": {
-    "zh-cn": "之前003好像来过这里，应该是她码在这里的。",
+    "zh-cn": "003吧，应该是她码在这里的。",
     "en-us": "003 was here before, she must be the one who stacked them here.",
     "ja-jp": "前に003がここに来てたから、彼女がここに積んだんだろうね。"
   },
   "C2S2_181": {
-    "zh-cn": "之前003好像来过这里，真奇怪，她居然没有拿走吗？",
+    "zh-cn": "003吧，真奇怪，她居然没有拿走吗？",
     "en-us": "003 was here before. How strange, she actually didn't take them?",
     "ja-jp": "前に003がここに来てたけど、変だね、彼女は持っていかなかったの？"
   },
   "C2S2_182": {
-    "zh-cn": "之前003好像来过这里，我不建议你好奇的看拖拽的终点。",
+    "zh-cn": "003吧，我不建议你好奇的看拖拽的终点。",
     "en-us": "003 was here before. I don't recommend looking at the end of the drag trail out of curiosity.",
     "ja-jp": "前に003がここに来ていた。好奇心で引きずられた跡の先を見るのはお勧めしないよ。"
   },
@@ -17920,26 +18145,31 @@
     "ja-jp": "あっ、デバイスを見つけたよ。どうやらDS実験に関するファイルのようだね。"
   },
   "C2S2_303": {
+    "zh-cn": "121|H",
+    "en-us": "",
+    "ja-jp": ""
+  },
+  "C2S2_304": {
     "zh-cn": "让我开启一下。",
     "en-us": "Let me boot it up.",
     "ja-jp": "ちょっと起動してみるね。"
   },
-  "C2S2_305": {
+  "C2S2_306": {
     "zh-cn": "咦，这个设备有网络，不过是局域的。",
     "en-us": "Huh, this device has a network connection, but it's only a local network.",
     "ja-jp": "あれ、このデバイスにはネットワークがあるけど、ローカルだね。"
   },
-  "C2S2_306": {
+  "C2S2_307": {
     "zh-cn": "可惜，没办法连接到外界。",
     "en-us": "Too bad there's no way to connect to the outside world.",
     "ja-jp": "残念だけど、外部とは接続できないみたい。"
   },
-  "C2S2_307": {
+  "C2S2_308": {
     "zh-cn": "【脚步声-远】",
     "en-us": "【Distant footsteps】",
     "ja-jp": "【足音 - 遠く】"
   },
-  "C2S2_308": {
+  "C2S2_309": {
     "zh-cn": "还有一些实验文件。",
     "en-us": "There are some experiment files here too.",
     "ja-jp": "他にも実験ファイルがいくつかあるね。"
@@ -18210,9 +18440,14 @@
     "ja-jp": "データ端末を開けるか試してみるよ。"
   },
   "C2S2_455": {
-    "zh-cn": "【完美避开危险的开启勘探队文档】",
+    "zh-cn": "",
     "en-us": "【Successfully evaded danger and opened the Exploration Squad document】",
     "ja-jp": "【危険を完璧に回避して探査隊の文書を開く】"
+  },
+  "C2S2_456": {
+    "zh-cn": "【完美避开危险的开启勘探队文档】",
+    "en-us": "",
+    "ja-jp": ""
   },
   "C2S2_460": {
     "zh-cn": "应该离开了…",
@@ -18285,11 +18520,16 @@
     "ja-jp": "「鉄の帳」の中で何が起きたのか、知りたくないの？"
   },
   "C2S2_510": {
-    "zh-cn": "我也应该有权力知道我的爸爸妈妈到底做了些什么吧。",
-    "en-us": "I should have the right to know what my parents actually did.",
-    "ja-jp": "私にだって、父さんと母さんが一体何をしたのか知る権利くらいあるはずだ。"
+    "zh-cn": "觉得文档会有父母的消息。",
+    "en-us": "I think the documents will contain news from my parents.",
+    "ja-jp": "その書類に、親からの連絡がある気がする。"
   },
   "C2S2_511": {
+    "zh-cn": "我有权力知道爸妈到底做了些什么吧。",
+    "en-us": "I have the right to know what my parents have really been doing, don't I?",
+    "ja-jp": "親が一体何をしてきたのか、僕／私には知る権利があるよね。"
+  },
+  "C2S2_512": {
     "zh-cn": "我得考虑这到底是不是我仅有的机会了。",
     "en-us": "I have to consider that this might be my only chance.",
     "ja-jp": "これが唯一のチャンスかもしれないって考えないと。"
@@ -18325,7 +18565,7 @@
     "ja-jp": "私の権限じゃ足りない。最低でも「クラスB」、あるいは「クラスA」の人じゃないと開けないみたいだ。"
   },
   "C2S2_542": {
-    "zh-cn": "我…...",
+    "zh-cn": "我…",
     "en-us": "I...",
     "ja-jp": "私……"
   },
@@ -19494,11 +19734,6 @@
     "en-us": "ou guys find a place to rest first. See you later.",
     "ja-jp": "皆さんは先にどこかで休んでいてください。また後で。"
   },
-  "DomeOver_1": {
-    "zh-cn": "0",
-    "en-us": "0",
-    "ja-jp": "0"
-  },
   "DomeOver_2": {
     "zh-cn": "DEMO结束，感谢你的游玩。点击以重新开始游戏。",
     "en-us": "DEMO版は終了です。プレイしていただきありがとうございました。クリックしてゲームを再開してください。",
@@ -19510,6 +19745,11 @@
     "ja-jp": "0"
   },
   "GameOver_2": {
+    "zh-cn": "【断开链接】",
+    "en-us": "【Link Disconnected】",
+    "ja-jp": "【リンク切断】"
+  },
+  "GameOver_6": {
     "zh-cn": "【断开链接】",
     "en-us": "【Link Disconnected】",
     "ja-jp": "【リンク切断】"

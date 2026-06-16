@@ -1,8 +1,8 @@
 {
   "metadata": {
     "counts": {
-      "node": 7,
-      "edge": 8,
+      "node": 5,
+      "edge": 5,
       "otherFlowcharts": 0
     },
     "variableNames": {},
@@ -21,22 +21,11 @@
         "data": {
           "currIndex": 2,
           "nextIndex": 10,
+          "timeout": 20000000,
           "waitTime": 20000000,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "2_Default",
-        "position": {
-          "x": 500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 2,
-          "nextIndex": 3,
-          "timeout": 20000000
+          "extraAction": null,
+          "blocking": false
         }
       },
       {
@@ -63,22 +52,11 @@
         "data": {
           "currIndex": 6,
           "nextIndex": 10,
+          "timeout": 20000000,
           "waitTime": 20000000,
           "chatScene": "C804",
-          "extraAction": null
-        }
-      },
-      {
-        "id": "6_Default",
-        "position": {
-          "x": 1500,
-          "y": 100
-        },
-        "type": "OpenOption_Default",
-        "data": {
-          "currIndex": 6,
-          "nextIndex": 7,
-          "timeout": 20000000
+          "extraAction": null,
+          "blocking": false
         }
       },
       {
@@ -121,21 +99,6 @@
         "animated": false
       },
       {
-        "id": "2_Default->3",
-        "type": "default",
-        "source": "2_Default",
-        "target": "3",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "3->6",
         "type": "default",
         "source": "3",
@@ -144,10 +107,10 @@
         "animated": false
       },
       {
-        "id": "3->6_Default",
+        "id": "3->7",
         "type": "default",
         "source": "3",
-        "target": "6_Default",
+        "target": "7",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -160,33 +123,10 @@
         "animated": false
       },
       {
-        "id": "6_Default->7",
-        "type": "default",
-        "source": "6_Default",
-        "target": "7",
-        "markerEnd": "arrow",
-        "animated": false,
-        "label": "comp.flowchart.tysy_demo.flow.openoption_timeout",
-        "style": {
-          "stroke": "orange"
-        },
-        "labelBgStyle": {
-          "fill": "orange"
-        }
-      },
-      {
         "id": "7->2",
         "type": "default",
         "source": "7",
         "target": "2",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "7->2_Default",
-        "type": "default",
-        "source": "7",
-        "target": "2_Default",
         "markerEnd": "arrow",
         "animated": false
       }

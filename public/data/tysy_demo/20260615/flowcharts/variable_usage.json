@@ -1042,51 +1042,6 @@
       ]
     }
   },
-  "等待超时": {
-    "name": "等待超时",
-    "type": "number",
-    "usages": {
-      "C1S2": [
-        {
-          "type": "add",
-          "blockId": "154",
-          "blockType": "Waiting",
-          "scope": "pv",
-          "value": 1
-        },
-        {
-          "type": "add",
-          "blockId": "203",
-          "blockType": "Waiting",
-          "scope": "pv",
-          "value": 1
-        },
-        {
-          "type": "add",
-          "blockId": "398",
-          "blockType": "Waiting",
-          "scope": "pv",
-          "value": 1
-        },
-        {
-          "type": "add",
-          "blockId": "935",
-          "blockType": "Waiting",
-          "scope": "pv",
-          "value": 1
-        }
-      ],
-      "C1S4": [
-        {
-          "type": "add",
-          "blockId": "102",
-          "blockType": "Waiting",
-          "scope": "pv",
-          "value": 1
-        }
-      ]
-    }
-  },
   "我买了游戏": {
     "name": "我买了游戏",
     "type": "number",
@@ -1601,21 +1556,6 @@
           "type": "read",
           "blockId": "354",
           "blockType": "Check",
-          "scope": "pv",
-          "value": 1
-        }
-      ]
-    }
-  },
-  "等到超时": {
-    "name": "等到超时",
-    "type": "number",
-    "usages": {
-      "C1S4-2": [
-        {
-          "type": "add",
-          "blockId": "567",
-          "blockType": "Waiting",
           "scope": "pv",
           "value": 1
         }
