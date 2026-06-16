@@ -142,7 +142,8 @@ async function initFlowchart() {
       'TB',
     )
     if (vueflowData.nodes.value.length > 0) {
-      await vueflow.fitView({ nodes: [vueflowData.nodes.value[0].id] })
+      // 默认currIndex=2，不然真的会炸
+      await vueflow.fitView({ nodes: [vueflowData.nodes.value[1].id] })
     }
     store.setReady(flowKey.value)
   })
