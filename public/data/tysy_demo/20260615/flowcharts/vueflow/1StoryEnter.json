@@ -1,8 +1,8 @@
 {
   "metadata": {
     "counts": {
-      "node": 9,
-      "edge": 8,
+      "node": 10,
+      "edge": 9,
       "otherFlowcharts": 2
     },
     "variableNames": {
@@ -25,6 +25,19 @@
   },
   "data": {
     "nodes": [
+      {
+        "id": "1",
+        "position": {
+          "x": 250,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "currIndex": 1,
+          "nextIndex": 2,
+          "extraAction": null
+        }
+      },
       {
         "id": "2",
         "position": {
@@ -168,6 +181,14 @@
       }
     ],
     "edges": [
+      {
+        "id": "1->2",
+        "type": "default",
+        "source": "1",
+        "target": "2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
       {
         "id": "2->10",
         "type": "default",

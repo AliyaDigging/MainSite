@@ -1,8 +1,8 @@
 {
   "metadata": {
     "counts": {
-      "node": 535,
-      "edge": 624,
+      "node": 536,
+      "edge": 626,
       "otherFlowcharts": 2
     },
     "variableNames": {
@@ -100,6 +100,19 @@
   },
   "data": {
     "nodes": [
+      {
+        "id": "1",
+        "position": {
+          "x": 250,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "currIndex": 1,
+          "nextIndex": 5,
+          "extraAction": null
+        }
+      },
       {
         "id": "2",
         "position": {
@@ -8812,6 +8825,14 @@
     ],
     "edges": [
       {
+        "id": "1->5",
+        "type": "default",
+        "source": "1",
+        "target": "5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
         "id": "2->100",
         "type": "default",
         "source": "2",
@@ -10783,6 +10804,21 @@
         },
         "labelBgStyle": {
           "fill": "green"
+        }
+      },
+      {
+        "id": "635->1",
+        "type": "default",
+        "source": "635",
+        "target": "1",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
         }
       },
       {

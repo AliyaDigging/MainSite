@@ -1,8 +1,8 @@
 {
   "metadata": {
     "counts": {
-      "node": 590,
-      "edge": 652,
+      "node": 591,
+      "edge": 657,
       "otherFlowcharts": 2
     },
     "variableNames": {
@@ -80,6 +80,19 @@
   },
   "data": {
     "nodes": [
+      {
+        "id": "1",
+        "position": {
+          "x": 250,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "currIndex": 1,
+          "nextIndex": 5,
+          "extraAction": null
+        }
+      },
       {
         "id": "2",
         "position": {
@@ -9713,6 +9726,14 @@
     ],
     "edges": [
       {
+        "id": "1->5",
+        "type": "default",
+        "source": "1",
+        "target": "5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
         "id": "2->10",
         "type": "default",
         "source": "2",
@@ -11321,10 +11342,10 @@
         "animated": false
       },
       {
-        "id": "294->5",
+        "id": "294->1",
         "type": "default",
         "source": "294",
-        "target": "5",
+        "target": "1",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -11379,6 +11400,21 @@
         },
         "labelBgStyle": {
           "fill": "green"
+        }
+      },
+      {
+        "id": "312->1",
+        "type": "default",
+        "source": "312",
+        "target": "1",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
         }
       },
       {
@@ -11712,6 +11748,21 @@
         }
       },
       {
+        "id": "332->1",
+        "type": "default",
+        "source": "332",
+        "target": "1",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
+        }
+      },
+      {
         "id": "333->108",
         "type": "default",
         "source": "333",
@@ -11984,10 +12035,10 @@
         "animated": false
       },
       {
-        "id": "399->5",
+        "id": "399->1",
         "type": "default",
         "source": "399",
-        "target": "5",
+        "target": "1",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -12282,6 +12333,21 @@
         },
         "labelBgStyle": {
           "fill": "green"
+        }
+      },
+      {
+        "id": "410->1",
+        "type": "default",
+        "source": "410",
+        "target": "1",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
         }
       },
       {
@@ -12712,10 +12778,10 @@
         "animated": false
       },
       {
-        "id": "472->5",
+        "id": "472->1",
         "type": "default",
         "source": "472",
-        "target": "5",
+        "target": "1",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -12736,10 +12802,10 @@
         "animated": false
       },
       {
-        "id": "477->5",
+        "id": "477->1",
         "type": "default",
         "source": "477",
-        "target": "5",
+        "target": "1",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -12863,10 +12929,10 @@
         "animated": false
       },
       {
-        "id": "495->5",
+        "id": "495->1",
         "type": "default",
         "source": "495",
-        "target": "5",
+        "target": "1",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13070,10 +13136,10 @@
         "animated": false
       },
       {
-        "id": "525->5",
+        "id": "525->1",
         "type": "default",
         "source": "525",
-        "target": "5",
+        "target": "1",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13150,10 +13216,10 @@
         "animated": false
       },
       {
-        "id": "539->5",
+        "id": "539->1",
         "type": "default",
         "source": "539",
-        "target": "5",
+        "target": "1",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13404,10 +13470,10 @@
         "animated": false
       },
       {
-        "id": "575->5",
+        "id": "575->1",
         "type": "default",
         "source": "575",
-        "target": "5",
+        "target": "1",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -13468,10 +13534,10 @@
         "animated": false
       },
       {
-        "id": "587->5",
+        "id": "587->1",
         "type": "default",
         "source": "587",
-        "target": "5",
+        "target": "1",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -14894,6 +14960,21 @@
         },
         "labelBgStyle": {
           "fill": "green"
+        }
+      },
+      {
+        "id": "1002->1",
+        "type": "default",
+        "source": "1002",
+        "target": "1",
+        "markerEnd": "arrow",
+        "animated": false,
+        "label": "comp.flowchart.tysy_demo.flow.check_failure",
+        "style": {
+          "stroke": "red"
+        },
+        "labelBgStyle": {
+          "fill": "red"
         }
       },
       {
