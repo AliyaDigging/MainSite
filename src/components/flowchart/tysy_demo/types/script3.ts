@@ -92,28 +92,75 @@ export type FlowchartDataNode_OpenOption = {
   position: { x: number; y: number }
   type: 'OpenOption' // pos=2
   data: {
+    /**
+     * The col=1 represents other OpenOption within a same "group."
+     * A "group" of OpenOption present when one or multiple OpenOption present
+     * in a row, before another type of node (most commonly, a `Waiting` node)
+     * present.
+     * //////////// NOTES ON EDGE CONNECTIONS
+     * For the OpenOption that exist within the same group, make them at the
+     * same level. I.e.
+     * - DO NOT: `Block->OpenOption->OpenOption`
+     * - BUT DO: `Block->OpenOption&OpenOption`
+     * ////////////
+     *
+     * THIS IS BECAUSE THE OpoenOption ITSELF ISN'T BLOCKING THE FLOW OF THE
+     * DIALOGUE SYSTEM ITSELF. Or, in other terms, the OPTIONS are NOT BLOCKING.
+     * As the name suggests, it just "adds" an option to the player option list
+     * for players to choose from; and when the timeout is reached, it just
+     * removes itself from the list.
+     *
+     * However, it's worth pointing out that very frequently, the `Waiting` node
+     * that follows the last node in the entire OpenOption group, has the SAME
+     * waiting time as the timeout time. This means that, from a player's
+     * perspective, the dialogue is still *blocked* by options.
+     * For the sake of simplicity while keeping the "unblocked" nature stays
+     * noticeable when the two time do NOT match, we introduce a new field named
+     * `blocking`, to tell the users that this whether this OpenOption node
+     * "feels like" blocking or not.
+     * When it feels like blocking (i.e. having the same timeout time as the waiting
+     * time), we display it normally; when it is NOT, we explicitly tell the users
+     * that this is NOT blocking, with a different display name attached to it.
+     * And when it feels like blocking, we make the `Waiting` node a good old
+     * `OpenOptionDefault` node.
+     *
+     * WARNING: there COULD be times when a `Waiting` node doesn't appear. In that
+     * case, treat the waiting time as 0, and console.warn a message saying that
+     * no Waiting node is found, with information of the node's currIndex.
+     */
+
     currIndex: number // pos=0
-    nextIndex: number // pos=8
+    nextIndex: number // pos=8; the actual branch target when option is selected
+
+    timeout: number // pos=7
+
     waitTime: number // normally pos=3; if value at pos=3 is 0 or empty string, use value at pos=7
     chatScene: string // pos=6; if not string or empty string, defaults to `C804`
     extraAction: BlockData_ExtraAction | null // pos=10; if empty string then defaults to null
+
+    /** ONLY SET TO true IF OpenOptionDefault creation condition is met as well.
+     * See above for detailed explanation.
+     */
+    blocking: boolean
   }
 }
 
 /**
- * THIS NODE IS DERIVED FROM OpenOption.
- * When a OpenOption node has a value > 0 at pos=7, this node should be created
- * at the same time to isolate the special "default node to jump" when players
- * timed out (failing to choose an option within the timeout time.)
+ * THIS NODE CAN ONLY BE USED IN A LIMITED SITUATION.
+ * Only if the `Waiting` node after a group of OpenOption has the
+ * same waiting time as the grouped OpenOption's timeout time (if
+ * in the grouped OpenOption, different timeout times are present, then
+ * the `Waiting` node should be kept as is.)
+ * See OpenOption type definition for more details.
  */
 export type FlowchartDataNode_OpenOptionDefault = {
-  id: string // specifically named to "${currIndex}_Default"
+  id: string // keeps the original Waiting node's ID (numeric, so timeoutIndex references remain valid)
   position: { x: number; y: number }
   type: 'OpenOption_Default' // pos=2
   data: {
-    currIndex: number // pos=0; from parent OpenOption node
-    nextIndex: number // pos=1; from parent OpenOption node
-    timeout: number // pos=7; in seconds
+    currIndex: number // pos=0;
+    nextIndex: number // pos=1;
+    timeout: number // pos=3; in seconds (fundamentally a `Waiting` block in this case)
   }
 }
 
@@ -288,8 +335,8 @@ export type FlowchartDataEdge = {
   animated: boolean // defaults to `false`
 
   /**
-   * SPECIAL LABEL & COLORS list for different note type and different jump relations:
-   * - OpenOptionDefault: `comp.flowchart.2361_playtest.flow.openoption_timeout`, `orange`
+   * SPECIAL LABEL & COLORS list for different node type and different jump relations:
+   * - OpenOption_Default (sequential edge): `comp.flowchart.2361_playtest.flow.openoption_timeout`, `orange`
    * - Check (`successIndex`): `comp.flowchart.2361_playtest.flow.check_success`, `green`
    * - Check (`failureIndex`): `comp.flowchart.2361_playtest.flow.check_failure`, `red`
    * ONLY FILL THE FOLLOWING OPTIONALS IF IT MEETS ABOVE CONDITIONS

@@ -37,7 +37,9 @@ const flowchartMetadata = inject(symbolFlowchartMetadata_TysyDemo)!
       <div>
         <Icon class="custom-node-icon"><ReplyOutlined /></Icon>
         <span class="custom-node-title">{{
-          $t('comp.flowchart.tysy_demo.node.OpenOption.title')
+          $t(
+            `comp.flowchart.tysy_demo.node.OpenOption.title${props.data.blocking ? '.blocking' : ''}`,
+          )
         }}</span>
       </div>
       <div class="custom-node-content">
@@ -55,8 +57,7 @@ const flowchartMetadata = inject(symbolFlowchartMetadata_TysyDemo)!
           </p>
         </div>
         <p>
-          {{ $t('comp.flowchart.tysy_demo.node.OpenOption.waitTime.p') }}:
-          {{ props.data.waitTime }}s
+          {{ $t('comp.flowchart.tysy_demo.node.OpenOption.timeout.p') }}: {{ props.data.timeout }}s
         </p>
         <p>
           {{ $t('comp.flowchart.tysy_demo.node.OpenOption.chatScene') }}: “{{
