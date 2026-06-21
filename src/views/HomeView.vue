@@ -54,6 +54,16 @@ const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
         <template #subtitle>{{ $t('view.home.4.card.3.subtitle') }}</template>
         <template #content><div v-html="i18n.t('view.home.4.card.3.content')" /></template>
       </PvCard>
+      <PvCard>
+        <template #header>
+          <img src="/aliya/game_header/aliya2.jpg" />
+        </template>
+        <template #title
+          >{{ $t('view.home.4.card.4.title') }}&ensp;<SupportBadge level="gold"
+        /></template>
+        <template #subtitle>{{ $t('view.home.4.card.4.subtitle') }}</template>
+        <template #content><div v-html="i18n.t('view.home.4.card.4.content')" /></template>
+      </PvCard>
     </div>
   </div>
 
