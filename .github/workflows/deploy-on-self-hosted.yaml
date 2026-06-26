@@ -1,0 +1,45 @@
+name: Build and Deploy on Self Hosted
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    # Runs on your self-hosted runner
+    runs-on: [self-hosted, linux, X64]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build the app
+        run: npm run build
+
+      - name: Setup SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: 'placeholder' # Replace with actual known_hosts content if possible
+
+      - name: Deploy with rsync
+        run: |
+          rsync -avz --delete \
+            -e "ssh -o StrictHostKeyChecking=no -p ${SSH_PORT}" \
+            ./dist/ \
+            ${SSH_USER}@${SSH_HOST}:${REMOTE_DEPLOY_PATH}
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          REMOTE_DEPLOY_PATH: ${{ secrets.REMOTE_DEPLOY_PATH }}
+          SSH_PORT: ${{ secrets.SSH_PORT || '22' }}
