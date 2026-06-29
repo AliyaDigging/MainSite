@@ -23,12 +23,18 @@ h2 {
   color: var(--p-);
 }
 
-a {
+a,
+.anchor-like {
   color: var(--p-primary-500);
 }
 
-a:hover {
+a:hover,
+.anchor-like:hover {
   color: var(--p-primary-600);
+}
+
+.anchor-like {
+  cursor: pointer;
 }
 
 html:not(.p-dark) {
