@@ -9,12 +9,14 @@ import { useFlowchartStore } from '@/stores/flowchart'
 import { useFlowchartManager } from '@/composables/useFlowchartManager'
 import { flowchartBus } from '@/utils/flowchartEvents'
 import { useFlowchartHighlight, JUMP_HIGHLIGHT } from '@/composables/useFlowchartHighlight'
+import { useRouter } from 'vue-router'
 
 const props = defineProps<{
   rightPanelWidth: number
 }>()
 
 const store = useFlowchartStore()
+const router = useRouter()
 
 const { width: windowWidth } = useWindowSize()
 
@@ -78,6 +80,15 @@ async function jumpBack(
     },
   })
 }
+async function jumpBackOnlyToFlowchart(flowchartName: string) {
+  clearHighlights()
+  close()
+  await nextTick()
+
+  flowchartBus.emit('open-flowchart', {
+    flowchartName: flowchartName,
+  })
+}
 
 // 当卡片可见时高亮目标节点，卡片关闭时清除高亮
 watch(
@@ -112,9 +123,12 @@ onUnmounted(() => {
         </div>
         <div class="node-card__body">
           <ul class="custom-node-normal-ul">
-            <li>
+            <li v-if="store.nodeCard?.originNode !== ''">
               跳转前: <code>{{ store.nodeCard?.originNode }}</code> @
               <code>{{ store.nodeCard?.originFlowchart }}</code>
+            </li>
+            <li v-else>
+              跳转前流程图: <code>{{ store.nodeCard?.originFlowchart }}</code>
             </li>
             <li>
               当前（跳转后）: <code>{{ store.nodeCard?.targetNode }}</code> @
@@ -127,13 +141,18 @@ onUnmounted(() => {
               size="small"
               outlined
               @click="
-                (e) =>
-                  jumpBack(
-                    store.nodeCard!.targetFlowchart,
-                    store.nodeCard!.targetNode,
-                    store.nodeCard!.originFlowchart,
-                    store.nodeCard!.originNode,
-                  )
+                (e) => {
+                  if (store.nodeCard?.originNode !== '') {
+                    jumpBack(
+                      store.nodeCard!.targetFlowchart,
+                      store.nodeCard!.targetNode,
+                      store.nodeCard!.originFlowchart,
+                      store.nodeCard!.originNode,
+                    )
+                  } else {
+                    jumpBackOnlyToFlowchart(store.nodeCard!.originFlowchart)
+                  }
+                }
               "
               >回到跳转前</PvButton
             >
