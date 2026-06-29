@@ -14,6 +14,7 @@ import Flowchart_Aliya1 from '@/components/view_flowchart/Aliya1.vue'
 import Flowchart_Ycytx5 from '@/components/view_flowchart/Ycytx5.vue'
 import Flowchart_2361Playtest from '@/components/view_flowchart/2361Playtest.vue'
 import Flowchart_TysyDemo from '@/components/view_flowchart/TysyDemo.vue'
+import Flowchart_Aliya2Demo from '@/components/view_flowchart/Aliya2Demo.vue'
 
 import { useFlowchartStore } from '@/stores/flowchart'
 import { getJson } from '@/utils/fetch'
@@ -26,7 +27,7 @@ import FlowchartEmptyState from '@/components/flowchart/core/FlowchartEmptyState
 import FlowchartNodeCard from '@/components/flowchart/core/FlowchartNodeCard.vue'
 import FlowchartFileTreeToggle from '@/components/flowchart/core/FlowchartFileTreeToggle.vue'
 import { detectIsMobile } from '@/utils/browser'
-import { symbolFlowchartPageHeight, symbolFlowchartFileTreeCollapsed } from '@/constants/injection'
+import { symbolFlowchartPageHeight, symbolFlowchartFileTreeCollapsed, symbolFlowchartSelection } from '@/constants/injection'
 import { useNodeCardOrchestrator } from '@/composables/useNodeCardOrchestrator'
 
 const props = defineProps({
@@ -40,6 +41,7 @@ const gameComponentMap: Record<string, Component> = {
   ycytx_5: Flowchart_Ycytx5,
   '2361_playtest': Flowchart_2361Playtest,
   tysy_demo: Flowchart_TysyDemo,
+  aliya2_demo: Flowchart_Aliya2Demo,
 }
 
 function getGameComponent(gameId: string): Component | null {
@@ -75,8 +77,15 @@ const flowchartPageHeight = computed(
 
 const fileTreeCollapsed = ref(false)
 
+const flowchartSelectionArray = computed(() => [
+  gameSelection.value,
+  versionSelection.value,
+  flowchartSelection.value,
+] as [string, string, string])
+
 provide(symbolFlowchartPageHeight, flowchartPageHeight)
 provide(symbolFlowchartFileTreeCollapsed, fileTreeCollapsed)
+provide(symbolFlowchartSelection, flowchartSelectionArray)
 
 useNodeCardOrchestrator()
 

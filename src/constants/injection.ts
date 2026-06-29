@@ -8,9 +8,15 @@ import type { VueFlowCatalog as VueFlowCatalog_Aliya1 } from '@/types/aliya1/dat
 import type { L10nSingleLang_Ycytx5, VFOut_Catalog_Ycytx5 } from '@/types/ycytx_5'
 import type { FlowchartData as FlowchartData_2361Playtest } from '@/components/flowchart/2361_playtest/types/script3'
 import type { FlowchartData as FlowchartData_TysyDemo } from '@/components/flowchart/tysy_demo/types/script3'
+import type { FlowchartData as FlowchartData_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script3'
+import type { CatalogMetadataFile as CatalogMetadataFile_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script4'
+import type { L10nSingleLangEntry as L10nSingleLangEntry_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script5'
+import type { ExternalConfig as ExternalConfig_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script6'
+import type { ActorData as ActorData_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script7'
+import type { VariableUsage as VariableUsage_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script8'
 import type { VariableUsage_Aliya1 } from '@/components/flowchart/aliya1/types/script9'
 import type { VariableUsage as VariableUsage_TysyDemo } from '@/components/flowchart/tysy_demo/types/script5'
-import type { CatalogData as VueFlowCatalog_TysyDemo } from '@/components/flowchart/tysy_demo/types/script4'
+import type { CatalogData as CatalogData_TysyDemo } from '@/components/flowchart/tysy_demo/types/script4'
 
 type FlowchartDataSet_Aliya1 = Aliya1_FlowchartData | Aliya1_Android_DLC_FlowchartData
 
@@ -62,12 +68,38 @@ export const symbolL10nDataSingleLang_TysyDemo = Symbol('l10n_data_tysy_demo') a
 
 export const symbolFlowchartCatalog_TysyDemo = Symbol(
   'flowchart_catalog_tysy_demo',
-) as InjectionKey<Ref<VueFlowCatalog_TysyDemo>>
+) as InjectionKey<Ref<CatalogData_TysyDemo>>
 export const symbolFlowchartMetadata_TysyDemo = Symbol(
   'flowchart_metadata_tysy_demo',
 ) as InjectionKey<Ref<FlowchartData_TysyDemo['metadata']>>
 export const symbolFlowchartVarUsage_TysyDemo = Symbol('var_usage_tysy_demo') as InjectionKey<
   Ref<VariableUsage_TysyDemo>
+>
+
+// ---------- aliya2_demo ----------
+
+export const symbolL10nDataSingleLang_Aliya2Demo = Symbol('l10n_data_aliya2_demo') as InjectionKey<
+  Ref<L10nSingleLangEntry_Aliya2Demo>
+>
+
+export const symbolFlowchartCatalog_Aliya2Demo = Symbol(
+  'flowchart_catalog_aliya2_demo',
+) as InjectionKey<
+  Ref<CatalogMetadataFile_Aliya2Demo>
+>
+export const symbolFlowchartMetadata_Aliya2Demo = Symbol(
+  'flowchart_metadata_aliya2_demo',
+) as InjectionKey<Ref<FlowchartData_Aliya2Demo['metadata']>>
+export const symbolFlowchartVarUsage_Aliya2Demo = Symbol('var_usage_aliya2_demo') as InjectionKey<
+  Ref<VariableUsage_Aliya2Demo>
+>
+
+export const symbolExternalConfig_Aliya2Demo = Symbol('external_config_aliya2_demo') as InjectionKey<
+  Ref<ExternalConfig_Aliya2Demo>
+>
+
+export const symbolActorData_Aliya2Demo = Symbol('actor_data_aliya2_demo') as InjectionKey<
+  Ref<ActorData_Aliya2Demo>
 >
 
 /** 通用 L10N 数据注入键 — 供搜索面板使用，各父页面负责规范化为扁平 Record<string, string> */
@@ -91,3 +123,7 @@ export const symbolFlowchartPageHeight = Symbol('flowchart_page_height') as Inje
 export const symbolFlowchartFileTreeCollapsed = Symbol(
   'flowchart_file_tree_collapsed',
 ) as InjectionKey<Ref<boolean>>
+
+export const symbolFlowchartSelection = Symbol('flowchart_selection') as InjectionKey<
+  Ref<[string, string, string]>
+>

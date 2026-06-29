@@ -13,7 +13,7 @@ import '@/components/flowchart/registry/l10nSearchConfigs'
 import { computed, onMounted, provide, ref, useTemplateRef, watch } from 'vue'
 import { useSiteSettingStore } from '@/stores/setting'
 import { getJson } from '@/utils/fetch'
-import type { FlowchartData } from '@/components/flowchart/tysy_demo/types/script3'
+import type { CatalogData } from '@/components/flowchart/tysy_demo/types/script4'
 import type { VariableUsage as VariableUsage_TysyDemo } from '@/components/flowchart/tysy_demo/types/script5'
 
 const props = defineProps<{
@@ -21,11 +21,6 @@ const props = defineProps<{
   versionId: string
   flowchartName: string
 }>()
-
-type VueFlowCatalog = {
-  catalog: Record<string, FlowchartData['metadata']>
-  flowchartBeingRefed: Record<string, string[]>
-}
 
 const setting = useSiteSettingStore()
 
@@ -36,7 +31,7 @@ const isLoading = ref(true)
 
 const flowchartRef = useTemplateRef('flowchartComp')
 
-const catalogData = ref<VueFlowCatalog>({ catalog: {}, flowchartBeingRefed: {} })
+const catalogData = ref<CatalogData>({ catalog: {}, flowchartBeingRefed: {} })
 
 const varUsageData = ref<VariableUsage_TysyDemo>({})
 
@@ -70,7 +65,7 @@ watch(
 onMounted(async () => {
   await Promise.allSettled([
     (async () => {
-      catalogData.value = await getJson<VueFlowCatalog>(
+      catalogData.value = await getJson<CatalogData>(
         `/data/${props.gameId}/${props.versionId}/flowcharts/vueflow/catalog.json`,
         5,
       )

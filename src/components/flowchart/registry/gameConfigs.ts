@@ -9,12 +9,14 @@ import { DLC_NODE_TYPES } from '../nodes/aliya1_android_dlc'
 import { YCYTX_5_NODE_TYPES } from '../nodes/ycytx_5'
 import { PLAYTEST_NODE_TYPES } from '../nodes/2361_playtest'
 import { TYSY_DEMO_NODE_TYPES } from '../nodes/tysy_demo'
+import { ALIYA2_DEMO_NODE_TYPES } from '../nodes/aliya2_demo'
 
 import * as Aliya1Nodes from '../nodes/aliya1'
 import * as DLCNodes from '../nodes/aliya1_android_dlc'
 import * as Ycytx5Nodes from '../nodes/ycytx_5'
 import * as Playtest_2361_Nodes from '../nodes/2361_playtest'
 import * as TysyDemoNodes from '../nodes/tysy_demo'
+import * as Aliya2DemoNodes from '../nodes/aliya2_demo'
 
 /**
  * 注册 Aliya1 游戏配置
@@ -194,4 +196,33 @@ registerGameConfig({
   },
   nodeTypes: [...TYSY_DEMO_NODE_TYPES],
   imageBasePath: '/aliya/tysy_demo/images/',
+})
+
+registerGameConfig({
+  gameId: 'aliya2_demo',
+  nodeComponents: {
+    AmbientMessage: Aliya2DemoNodes.AmbientMessage,
+    Message: Aliya2DemoNodes.Message,
+    PlayerChoice: Aliya2DemoNodes.PlayerChoice,
+    DefaultChoice: Aliya2DemoNodes.DefaultChoice,
+    WaitTime: Aliya2DemoNodes.WaitTime,
+    WaitForCondition: Aliya2DemoNodes.WaitForCondition,
+    ChangeBGM: Aliya2DemoNodes.ChangeBGM,
+    RestartGame: Aliya2DemoNodes.RestartGame,
+    PushNews: Aliya2DemoNodes.PushNews,
+    PushDoc: Aliya2DemoNodes.PushDoc,
+    StartConversation: Aliya2DemoNodes.StartConversation,
+    WaitForever: Aliya2DemoNodes.WaitForever,
+    PlayerInput: Aliya2DemoNodes.PlayerInput,
+    ConditionCheck: Aliya2DemoNodes.ConditionCheck,
+    CustomScript: Aliya2DemoNodes.CustomScript,
+    OtherFlowchart: Aliya2DemoNodes.OtherFlowchart,
+    DefaultNode: Aliya2DemoNodes.DefaultNode,
+    FileRemoved: Aliya2DemoNodes.FileRemoved,
+    FOF_Channel: Aliya2DemoNodes.FOF_Channel,
+    FOF_Flowchart: Aliya2DemoNodes.FOF_Flowchart,
+    FOF_JumpFrom: Aliya2DemoNodes.FOF_JumpFrom,
+  },
+  nodeTypes: [...ALIYA2_DEMO_NODE_TYPES],
+  imageBasePath: '/aliya/aliya2_demo/images/',
 })

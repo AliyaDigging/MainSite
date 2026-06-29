@@ -70,6 +70,51 @@ registerL10NSearchConfig({
 })
 
 /**
+ * 注册 Aliya2Demo 搜索配置
+ * L10N key 格式（扁平化前缀）：
+ *   - 对话: dialogue:{currId}_{dialogueId}
+ *   - 文档: doc:title:{documentId} / doc:content:{documentId}
+ *   - 新闻: news:title:{newsId} / news:content:{newsId}
+ */
+registerL10NSearchConfig({
+  gameId: 'aliya2_demo',
+  l10nKeyFields: [],
+  nodeTitleI18nPattern: 'comp.flowchart.aliya2_demo.node.[NODE_TYPE].title',
+  buildL10NKey: (data, meta, nodeType) => {
+    const keys: string[] = []
+
+    // 对话节点 — key 格式: dialogue:{currId}_{dialogueId}
+    // Message, AmbientMessage, PlayerChoice 使用当前流程图 currId
+    // DefaultNode 是 fallback 类型，也可能包含有效对话
+    if (['Message', 'AmbientMessage', 'PlayerChoice', 'DefaultNode'].includes(nodeType)) {
+      const currId = meta.currId
+      const dialogueId = (data.articyInternal as Record<string, unknown> | undefined)?.dialogueId
+      if (currId && dialogueId != null) {
+        keys.push(`dialogue:${currId}_${dialogueId}`)
+      }
+    }
+
+    // 推送文档节点 — key 格式: doc:title:{documentId}, doc:content:{documentId}
+    if (nodeType === 'PushDoc') {
+      const docId = data.documentId
+      if (docId) {
+        keys.push(`doc:title:${docId}`, `doc:content:${docId}`)
+      }
+    }
+
+    // 推送新闻节点 — key 格式: news:title:{newsId}, news:content:{newsId}
+    if (nodeType === 'PushNews') {
+      const newsId = data.newsId
+      if (newsId) {
+        keys.push(`news:title:${newsId}`, `news:content:${newsId}`)
+      }
+    }
+
+    return keys
+  },
+})
+
+/**
  * 注册 TysyDemo 搜索配置
  * L10N key 格式：${currName}_${currIndex} (如 "C1S1_100")
  * 由 flowchart metadata currName + node data currIndex 组合

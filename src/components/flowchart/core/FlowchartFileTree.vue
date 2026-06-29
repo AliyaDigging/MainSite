@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import { inject } from 'vue'
+import { inject, ref, watch } from 'vue'
 import { InsertDriveFileOutlined } from '@vicons/material'
 import { LayoutSidebarRightCollapse, LayoutSidebarLeftCollapse } from '@vicons/tabler'
 import { Icon } from '@vicons/utils'
 import Button from 'primevue/button'
 import Listbox from 'primevue/listbox'
 import Menubar from 'primevue/menubar'
-import { symbolFlowchartFileTreeCollapsed } from '@/constants/injection'
+import { symbolFlowchartFileTreeCollapsed, symbolFlowchartSelection } from '@/constants/injection'
+import type { FlowchartCatalogListManifest as Aliya2Demo_FlowchartCatalogListManifest } from '@/components/flowchart/aliya2_demo/types/script12'
+import { getJson } from '@/utils/fetch'
+import { Tag } from 'primevue'
 
 /**
  * Flowchart file tree component — left panel.
@@ -28,77 +31,144 @@ function toggleFileTree() {
     fileTreeCollapsed.value = !fileTreeCollapsed.value
   }
 }
+
+const selectionStatus = inject(symbolFlowchartSelection)!
+
+const isReady = ref(false)
+
+/** EXTRA DATA FOR OPTIMIZED CATALOG LIST DISPLAY */
+const extraData = {
+  aliya2_demo: ref<Aliya2Demo_FlowchartCatalogListManifest>({}),
+}
+async function getExtraData(gameId: string, versionId: string) {
+  if (gameId === 'aliya2_demo') {
+    extraData.aliya2_demo.value = await getJson(
+      `/data/aliya2_demo/${versionId}/flowcharts/metadata_manifest.json`,
+      5,
+    )
+  }
+}
+
+watch(
+  selectionStatus,
+  async ([gameId, versionId], old) => {
+    async function update() {
+      isReady.value = false
+      await getExtraData(gameId, versionId)
+      isReady.value = true
+    }
+
+    if (old == undefined) {
+      // first time loading (via immediate=true)
+      await update()
+    } else if (gameId !== old[0] && versionId !== old[1]) {
+      // already loaded
+      await update()
+    }
+  },
+  { immediate: true },
+)
 </script>
 
 <template>
-  <Menubar v-if="fileTreeCollapsed !== null" class="file-tree-menubar">
-    <template #start>
-      <Button
-        text
-        severity="secondary"
-        size="small"
-        class="file-tree-collapse-btn"
-        @click="toggleFileTree"
-      >
-        <Icon size="16">
-          <LayoutSidebarLeftCollapse v-if="fileTreeCollapsed" />
-          <LayoutSidebarRightCollapse v-else />
-        </Icon>
-        <span>{{
-          fileTreeCollapsed
-            ? $t('comp.flowchart.p.expandFileTree')
-            : $t('comp.flowchart.p.collapseFileTree')
-        }}</span>
-      </Button>
-    </template>
-  </Menubar>
-  <Listbox
-    :options="items"
-    :model-value="activeItem"
-    :pt="{
-      root: { class: 'file-tree', style: { borderRadius: 0 } },
-      listContainer: { style: { maxHeight: 'none' } },
-      list: 'file-tree-list',
-      option: ({ context }) => ({
-        class: ['file-tree-item', { active: context.selected }],
-      }),
-    }"
-    @change="emit('select', $event.value as string)"
-  >
-    <template #option="{ option }">
-      <span class="file-tree-item-icon" style="margin-right: 4px"
-        ><Icon><InsertDriveFileOutlined /></Icon
-      ></span>
-      <span class="file-tree-item-name">{{ option }}</span>
-    </template>
-    <template #empty>{{ $t('comp.flowchart.p.selection1') }}</template>
-  </Listbox>
-  <Menubar v-if="fileTreeCollapsed !== null" class="file-tree-menubar">
-    <template #start>
-      <Button
-        text
-        severity="secondary"
-        size="small"
-        class="file-tree-collapse-btn"
-        @click="toggleFileTree"
-      >
-        <Icon size="16">
-          <LayoutSidebarLeftCollapse v-if="fileTreeCollapsed" />
-          <LayoutSidebarRightCollapse v-else />
-        </Icon>
-        <span>{{
-          fileTreeCollapsed
-            ? $t('comp.flowchart.p.expandFileTree')
-            : $t('comp.flowchart.p.collapseFileTree')
-        }}</span>
-      </Button>
-    </template>
-  </Menubar>
+  <template v-if="isReady">
+    <Menubar v-if="fileTreeCollapsed !== null" class="file-tree-menubar">
+      <template #start>
+        <Button
+          text
+          severity="secondary"
+          size="small"
+          class="file-tree-collapse-btn"
+          @click="toggleFileTree"
+        >
+          <Icon size="16">
+            <LayoutSidebarLeftCollapse v-if="fileTreeCollapsed" />
+            <LayoutSidebarRightCollapse v-else />
+          </Icon>
+          <span>{{
+            fileTreeCollapsed
+              ? $t('comp.flowchart.p.expandFileTree')
+              : $t('comp.flowchart.p.collapseFileTree')
+          }}</span>
+        </Button>
+      </template>
+    </Menubar>
+    <Listbox
+      :options="items"
+      :model-value="activeItem"
+      :pt="{
+        root: { class: 'file-tree', style: { borderRadius: 0 } },
+        listContainer: { style: { maxHeight: 'none' } },
+        list: 'file-tree-list',
+        option: ({ context }) => ({
+          class: ['file-tree-item', { active: context.selected }],
+        }),
+      }"
+      @change="emit('select', $event.value as string)"
+    >
+      <template #option="{ option }">
+        <!--针对 Aliya2 的特化-->
+        <div
+          v-if="selectionStatus[0] === 'aliya2_demo'"
+          v-tooltip.top="extraData.aliya2_demo.value[option]?.title"
+          style="width: 100%"
+          class="p-listbox-option-div"
+        >
+          <span class="file-tree-item-icon" style="margin-right: 4px">
+            <Icon><InsertDriveFileOutlined /></Icon>
+          </span>
+          <span class="file-tree-item-name">{{ option }}&ensp;</span>
+
+          <Tag severity="primary" v-if="extraData.aliya2_demo.value[option]">{{
+            extraData.aliya2_demo.value[option]?.channelId
+          }}</Tag>
+        </div>
+        <!--特化结束-->
+        <div v-else class="p-listbox-option-div">
+          <span class="file-tree-item-icon" style="margin-right: 4px"
+            ><Icon><InsertDriveFileOutlined /></Icon
+          ></span>
+          <span class="file-tree-item-name">{{ option }}</span>
+        </div>
+      </template>
+
+      <template #empty>{{ $t('comp.flowchart.p.selection1') }}</template>
+    </Listbox>
+    <Menubar v-if="fileTreeCollapsed !== null" class="file-tree-menubar">
+      <template #start>
+        <Button
+          text
+          severity="secondary"
+          size="small"
+          class="file-tree-collapse-btn"
+          @click="toggleFileTree"
+        >
+          <Icon size="16">
+            <LayoutSidebarLeftCollapse v-if="fileTreeCollapsed" />
+            <LayoutSidebarRightCollapse v-else />
+          </Icon>
+          <span>{{
+            fileTreeCollapsed
+              ? $t('comp.flowchart.p.expandFileTree')
+              : $t('comp.flowchart.p.collapseFileTree')
+          }}</span>
+        </Button>
+      </template>
+    </Menubar>
+  </template>
+  <template v-else>Loading...</template>
 </template>
 
 <style scoped>
 :deep(.p-listbox) {
   border-radius: 0 !important;
+}
+
+:deep(.p-listbox-option) {
+  padding: 0;
+}
+:deep(.p-listbox-option-div) {
+  padding: var(--p-listbox-option-padding);
 }
 </style>
 
