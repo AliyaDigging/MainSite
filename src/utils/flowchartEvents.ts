@@ -2,6 +2,19 @@ import mitt from 'mitt'
 
 type FlowchartEvents = {
   'fit-in-view': { nodeId: string; highlighted?: boolean; highlightDuration?: number }
+  'jump-to-other': {
+    flowchartName: string
+    nodeId: string
+    gameId?: string
+    versionId?: string
+    highlighted?: boolean
+    highlightDuration?: number
+  }
+  'open-flowchart': {
+    flowchartName: string
+    gameId?: string
+    versionId?: string
+  }
   'node-card:show': {
     gameInfo: {
       gameId: string

@@ -13,6 +13,25 @@ export function getCorrectFlowchartUrl(currPath: string, flowchartName: string) 
   return temp.join('/')
 }
 
+export function emitJumpToOther(params: {
+  flowchartName: string
+  nodeId: string
+  gameId?: string
+  versionId?: string
+  highlighted?: boolean
+  highlightDuration?: number
+}) {
+  flowchartBus.emit('jump-to-other', params)
+}
+
+export function emitOpenFlowchart(params: {
+  flowchartName: string
+  gameId?: string
+  versionId?: string
+}) {
+  flowchartBus.emit('open-flowchart', params)
+}
+
 export function emitNodeCard(params: {
   gameId: string
   versionId: string
