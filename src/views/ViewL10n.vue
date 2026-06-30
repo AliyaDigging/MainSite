@@ -15,6 +15,7 @@ import LoadingSpinner from '@/components/LoadingSpinner.vue'
 import Aliya1 from '@/components/view_l10n/Aliya1.vue'
 import Ycytx5 from '@/components/view_l10n/Ycytx5.vue'
 import TysyDemo from '@/components/view_l10n/TysyDemo.vue'
+import Aliya2Demo from '@/components/view_l10n/Aliya2Demo.vue'
 
 const props = defineProps({
   gameId: {
@@ -125,6 +126,11 @@ watch(
         />
         <TysyDemo
           v-else-if="gameId.toLowerCase() === 'tysy_demo'"
+          :gameId="gameId"
+          :versionId="versionId"
+        />
+        <Aliya2Demo
+          v-else-if="gameId.toLowerCase() === 'aliya2_demo'"
           :gameId="gameId"
           :versionId="versionId"
         />
