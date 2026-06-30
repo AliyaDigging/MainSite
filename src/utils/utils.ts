@@ -34,3 +34,9 @@ export function getHHMMSSBySeconds(seconds: number) {
   const second = seconds - hour * 3600 - minute * 60
   return `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}:${String(second).padStart(2, '0')}`
 }
+
+export const gb18030Collator = new Intl.Collator('zh-Hans-CN-u-co-gb18030', {
+  usage: 'sort',
+  sensitivity: 'variant',
+  numeric: true,
+})

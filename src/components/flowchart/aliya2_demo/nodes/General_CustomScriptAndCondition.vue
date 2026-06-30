@@ -12,9 +12,17 @@ const props = defineProps({
 
 <template>
   <template v-if="variableOps">
-    <p><b>脚本与判断逻辑</b></p>
+    <p>
+      <b>{{
+        $t('comp.flowchart.aliya2_demo.node.General_CustomScriptAndCondition.sectionTitle.title')
+      }}</b>
+    </p>
     <template v-if="variableOps.assignments.length > 0">
-      <p>变量赋值:</p>
+      <p>
+        {{
+          $t('comp.flowchart.aliya2_demo.node.General_CustomScriptAndCondition.variableOps.title')
+        }}
+      </p>
       <ul class="custom-node-normal-ul">
         <li v-for="(i, idx) in variableOps.assignments" :key="idx">
           <code>{{ i.variableName }}</code> = <code>{{ i.valueAssigned }}</code>
@@ -23,7 +31,9 @@ const props = defineProps({
     </template>
 
     <template v-if="variableOps.condition">
-      <p>条件判断:</p>
+      <p>
+        {{ $t('comp.flowchart.aliya2_demo.node.General_CustomScriptAndCondition.condition.title') }}
+      </p>
       <ul class="custom-node-normal-ul">
         <li>
           <code>{{ variableOps.condition.variableName }}</code>

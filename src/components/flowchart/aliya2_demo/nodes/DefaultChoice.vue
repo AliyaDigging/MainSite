@@ -9,13 +9,24 @@ import { QuickreplyOutlined } from '@vicons/material'
 import { type FlowchartNode_DefaultChoice } from '../types/script3'
 import General_CustomScriptAndCondition from './General_CustomScriptAndCondition.vue'
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartNode_DefaultChoice['data']>>()
 
+const { t } = useI18n()
+
 const time = props.data.timeoutTime
 const timeoutTimeInSeconds = computed(() => {
   return time.days * 86400 + time.hours * 3600 + time.minutes * 60 + time.seconds
+})
+const formattedTimeoutTime = computed(() => {
+  const days = `${time.days}${t('comp.flowchart.aliya2_demo.flow.time.unit.days')}`
+  const hours = `${time.hours}${t('comp.flowchart.aliya2_demo.flow.time.unit.hours')}`
+  const minutes = `${time.minutes}${t('comp.flowchart.aliya2_demo.flow.time.unit.minutes')}`
+  const seconds = `${time.seconds}${t('comp.flowchart.aliya2_demo.flow.time.unit.seconds')}`
+
+  return `${t('comp.flowchart.aliya2_demo.node.DefaultChoice.timeoutTime.title')} ${timeoutTimeInSeconds.value}s (${days}${hours}${minutes}${seconds})`
 })
 </script>
 
@@ -39,9 +50,7 @@ const timeoutTimeInSeconds = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
-          超时时间: {{ timeoutTimeInSeconds }}s ({{ time.days }}天{{ time.hours }}时{{
-            time.minutes
-          }}分{{ time.seconds }}秒)
+          {{ formattedTimeoutTime }}
         </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
       </div>

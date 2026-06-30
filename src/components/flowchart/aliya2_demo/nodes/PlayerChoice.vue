@@ -11,7 +11,6 @@ import { computed, inject } from 'vue'
 import {
   symbolL10nDataSingleLang_Aliya2Demo,
   symbolExternalConfig_Aliya2Demo,
-  symbolFlowchartMetadata_Aliya2Demo,
 } from '@/constants/injection'
 import { isNull } from 'lodash'
 import { Aliya2Demo_Utils } from '@/utils/aliya'
@@ -23,7 +22,6 @@ const props = defineProps<NodeProps<FlowchartNode_PlayerChoice['data']>>()
 
 const l10nFile = inject(symbolL10nDataSingleLang_Aliya2Demo)!
 const externalConfigData = inject(symbolExternalConfig_Aliya2Demo)!
-const flowchartMetadata = inject(symbolFlowchartMetadata_Aliya2Demo)!
 const aliyaSetting = useAliyaStore()
 
 // 分割实际发送和玩家选项
@@ -48,7 +46,7 @@ const imageUrlForSendingOut = computed(() => {
   const text = contentSplitted.value[0]
   try {
     if (text.includes('$image')) {
-      const imageMapping = externalConfigData.value.mediaMessageConfig.images
+      const imageMapping = externalConfigData.value!.mediaMessageConfig.images
       const match = text.match(/\$image\{(.*)\}/im)
       if (match) {
         return [match[1], `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`]
@@ -56,7 +54,7 @@ const imageUrlForSendingOut = computed(() => {
         return null
       }
     } else if (text.includes('$emoji')) {
-      const imageMapping = externalConfigData.value.mediaMessageConfig.emojis
+      const imageMapping = externalConfigData.value!.mediaMessageConfig.emojis
       const match = text.match(/\$emoji\{(.*)\}/im)
       if (match) {
         return [match[1], `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`]
@@ -95,15 +93,25 @@ const msgReadTime = computed(() => Aliya2Demo_Utils.getTextReadWaitTime(contentS
         }}</span>
       </div>
       <div class="custom-node-content">
-        <p>选项内容: {{ contentSplitted[0] }}</p>
-        <p v-if="isNull(imageUrlForSendingOut)">回复内容: {{ contentSplitted[1] }}</p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.contentSplitted.title') }}
+          {{ contentSplitted[0] }}
+        </p>
+        <p v-if="isNull(imageUrlForSendingOut)">
+          {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.replyContent.title') }}
+          {{ contentSplitted[1] }}
+        </p>
         <div v-else>
           <p>
-            回复图片ID: <code>{{ imageUrlForSendingOut[0] }}</code>
+            {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.replyImageId.title') }}
+            <code>{{ imageUrlForSendingOut[0] }}</code>
           </p>
           <img :src="imageUrlForSendingOut[1]" width="100%" />
         </div>
-        <p>回复后等待时间: {{ msgReadTime.toFixed(2) }}s</p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.msgReadTime.title') }}
+          {{ msgReadTime.toFixed(2) }}s
+        </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
       </div>
     </div>

@@ -22,7 +22,6 @@ const props = defineProps<NodeProps<FlowchartNode_AmbientMessage['data']>>()
 const l10nFile = inject(symbolL10nDataSingleLang_Aliya2Demo)!
 const actorData = inject(symbolActorData_Aliya2Demo)!
 const externalConfigData = inject(symbolExternalConfig_Aliya2Demo)!
-const flowchartMetadata = inject(symbolFlowchartMetadata_Aliya2Demo)!
 const aliyaSetting = useAliyaStore()
 const setting = useSiteSettingStore()
 
@@ -42,7 +41,7 @@ const sendWaitTime = computed(() => {
 })
 const speakerName = computed(() => {
   const currActorId = props.data.actorId
-  const actors = actorData.value
+  const actors = actorData.value!
 
   switch (setting.l10nlang) {
     case 'en-us':
@@ -52,7 +51,7 @@ const speakerName = computed(() => {
   }
 })
 const speakerAvatar = computed(() => {
-  const externalActorsData = externalConfigData.value.chatConfig.actors
+  const externalActorsData = externalConfigData.value!.chatConfig.actors
 
   const currAvatar = externalActorsData[speakerName.value[1]].avatarFilename
   if (currAvatar) {
@@ -90,12 +89,19 @@ const speakerAvatar = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
-          说话人: <span style="font-size: 1.2em">{{ speakerName[0] }}</span>
+          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.speakerName.title') }}
+          <span style="font-size: 1.2em">{{ speakerName[0] }}</span>
         </p>
-        <p>发送前等待时间: {{ sendWaitTime }}s</p>
-        <p>消息内容: {{ actualContent }}</p>
         <p>
-          自动计算等待时间:
+          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.sendWaitTime.title') }}
+          {{ sendWaitTime }}s
+        </p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.actualContent.title') }}
+          {{ actualContent }}
+        </p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.autoSendTime.title') }}
           {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${props.data.autoSendTime}`) }}
         </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />

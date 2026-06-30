@@ -16,8 +16,10 @@ const props = defineProps<NodeProps<FlowchartNode_FOF_JumpFrom['data']>>()
 
 <template>
   <NodeToolbar :position="Position.Top">
-    <p>conversationId: {{ props.data.conversationId }}</p>
-    <p>dialogueId: {{ props.data.dialogueId }}</p>
+    <p>displayInfo.conversationId: {{ props.data.displayInfo.conversationId }}</p>
+    <p>displayInfo.dialogueId: {{ props.data.displayInfo.dialogueId }}</p>
+    <p>actualJumpInfo.flowchartId: {{ props.data.actualJumpInfo.flowchartId }}</p>
+    <p>actualJumpInfo.nodeId: {{ props.data.actualJumpInfo.nodeId }}</p>
   </NodeToolbar>
 
   <div>
@@ -30,12 +32,17 @@ const props = defineProps<NodeProps<FlowchartNode_FOF_JumpFrom['data']>>()
         }}</span>
       </div>
       <div class="custom-node-content">
-        <p>跳转前流程图ID: {{ props.data.displayInfo.conversationId }}</p>
-        <p>跳转前对话ID: {{ props.data.displayInfo.dialogueId }}</p>
         <p>
-          实际跳转: {{ props.data.actualJumpInfo.flowchartId }}@{{
-            props.data.actualJumpInfo.nodeId
-          }}
+          {{ $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.preJumpFlowchartId.title') }}
+          {{ props.data.displayInfo.conversationId }}
+        </p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.preJumpDialogueId.title') }}
+          {{ props.data.displayInfo.dialogueId }}
+        </p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.actualJump.title') }}
+          {{ props.data.actualJumpInfo.flowchartId }}@{{ props.data.actualJumpInfo.nodeId }}
         </p>
         <div style="text-align: center" class="mt-2">
           <Button
@@ -47,7 +54,8 @@ const props = defineProps<NodeProps<FlowchartNode_FOF_JumpFrom['data']>>()
             "
             size="big"
             severity="primary"
-            ><Icon style="font-size: 1.5em"><ExternalLink /></Icon>跳转到该处</Button
+            ><Icon style="font-size: 1.5em"><ExternalLink /></Icon
+            >{{ $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.jumpTo.title') }}</Button
           >
         </div>
       </div>

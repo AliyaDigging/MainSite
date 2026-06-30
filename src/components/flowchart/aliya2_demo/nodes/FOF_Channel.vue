@@ -9,16 +9,18 @@ import { ChatConfig_Channel_ChannelType } from '../types/script6'
 import { symbolExternalConfig_Aliya2Demo } from '@/constants/injection'
 import { useSiteSettingStore } from '@/stores/setting'
 import { computed, inject } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { ChatLaunch } from '@vicons/carbon'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartNode_FOF_Channel['data']>>()
 
+const { t } = useI18n()
 const externalConfigData = inject(symbolExternalConfig_Aliya2Demo)!
 const setting = useSiteSettingStore()
 
 const channelInfo = computed(() => {
-  const channels = externalConfigData.value.chatConfig.channels
+  const channels = externalConfigData.value!.chatConfig.channels
   const channel = channels[props.data.channelId]
   if (channel) {
     return channel
@@ -27,10 +29,11 @@ const channelInfo = computed(() => {
 })
 
 const channelTypeLabel = computed(() => {
-  if (!channelInfo.value) return 'Unknown'
+  if (!channelInfo.value)
+    return t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelType.Unknown')
   return channelInfo.value.channelType === ChatConfig_Channel_ChannelType.Single
-    ? 'Single'
-    : 'Multi'
+    ? t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelType.Single')
+    : t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelType.Multi')
 })
 
 const channelName = computed(() => {
@@ -56,19 +59,28 @@ const channelName = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
-          频道ID: <code>{{ props.data.channelId }}</code>
+          {{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelId.title') }}
+          <code>{{ props.data.channelId }}</code>
         </p>
         <template v-if="channelInfo">
-          <p>频道名称: {{ channelName }}</p>
-          <p>频道类型: {{ channelTypeLabel }}</p>
-          <p>频道头像：</p>
+          <p>
+            {{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelName.title') }}
+            {{ channelName }}
+          </p>
+          <p>
+            {{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelType.title') }}
+            {{ channelTypeLabel }}
+          </p>
+          <p>{{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelAvatar.title') }}</p>
           <img
             :src="`/aliya/aliya2_demo/images/avatar/${channelInfo.avatarFilename}`"
             width="100%"
           />
         </template>
         <template v-else>
-          <p style="color: orange">警告：未找到该频道的数据</p>
+          <p style="color: orange">
+            {{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.warningNotFound.title') }}
+          </p>
         </template>
       </div>
     </div>

@@ -33,7 +33,8 @@ const props = defineProps<NodeProps<FlowchartNode_PlayerInput['data']>>()
       </div>
       <div class="custom-node-content">
         <p>
-          变量名: <code>{{ props.data.varName }}</code>
+          {{ $t('comp.flowchart.aliya2_demo.node.PlayerInput.variableName.title') }}
+          <code>{{ props.data.varName }}</code>
         </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
       </div>

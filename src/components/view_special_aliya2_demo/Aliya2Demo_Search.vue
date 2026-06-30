@@ -19,6 +19,7 @@ import {
 } from '@/constants/injection'
 
 import type { SearchConfig_Search_Entry } from '@/components/flowchart/aliya2_demo/types/script6'
+import { gb18030Collator } from '@/utils/utils'
 
 // ── Inject data from parent ──
 const externalConfig = inject(symbolExternalConfig_Aliya2Demo)
@@ -47,30 +48,32 @@ const tableData = computed<TableRow[]>(() => {
 
   const l10nDocs = l10nAllLangData?.value?.documents
 
-  return raw.map((entry) => {
-    // Flatten keywords for global filter
-    const kwZhCn = entry.keywords['zh-cn'].join('、')
-    const kwEnUs = entry.keywords['en-us'].join('、')
+  return raw
+    .map((entry) => {
+      // Flatten keywords for global filter
+      const kwZhCn = entry.keywords['zh-cn'].join('、')
+      const kwEnUs = entry.keywords['en-us'].join('、')
 
-    // Flatten document titles & contents for global filter
-    const titles: string[] = []
-    const contents: string[] = []
-    for (const docId of entry.documentIds) {
-      const titleObj = l10nDocs?.title?.[docId]
-      const contentObj = l10nDocs?.content?.[docId]
-      titles.push((titleObj?.['zh-cn'] ?? '') + ' ' + (titleObj?.['en-us'] ?? ''))
-      contents.push((contentObj?.['zh-cn'] ?? '') + ' ' + (contentObj?.['en-us'] ?? ''))
-    }
+      // Flatten document titles & contents for global filter
+      const titles: string[] = []
+      const contents: string[] = []
+      for (const docId of entry.documentIds) {
+        const titleObj = l10nDocs?.title?.[docId]
+        const contentObj = l10nDocs?.content?.[docId]
+        titles.push((titleObj?.['zh-cn'] ?? '') + ' ' + (titleObj?.['en-us'] ?? ''))
+        contents.push((contentObj?.['zh-cn'] ?? '') + ' ' + (contentObj?.['en-us'] ?? ''))
+      }
 
-    return {
-      keywords: entry.keywords,
-      documentIds: entry.documentIds,
-      _keywords_zh_cn: kwZhCn,
-      _keywords_en_us: kwEnUs,
-      _doc_titles: titles.join(' '),
-      _doc_contents: contents.join(' '),
-    }
-  })
+      return {
+        keywords: entry.keywords,
+        documentIds: entry.documentIds,
+        _keywords_zh_cn: kwZhCn,
+        _keywords_en_us: kwEnUs,
+        _doc_titles: titles.join(' '),
+        _doc_contents: contents.join(' '),
+      }
+    })
+    .sort((a, b) => gb18030Collator.compare(a._keywords_zh_cn, b._keywords_zh_cn))
 })
 
 // Fields the global search should match against
@@ -111,10 +114,7 @@ function getDocContent(docId: string): { zh: string; en: string } {
 
 <template>
   <div class="special-comp-main">
-    <p style="color: gray; text-align: center">
-      在Aliya2中，游戏引入了“<b style="font-size: 1.5rem">搜索</b
-      >”功能，供玩家在游戏中的搜索框中检索信息。这种检索信息的行为实际上是有一套“关键词-文旦”的绑定逻辑的，本页显示的便是搜索关键词及其对应的关联的文档条目。
-    </p>
+    <p class="special-comp-main-desc" v-html="$t('view.special.aliya2_demo.comp.search.desc')"></p>
     <br />
     <PvDataTable
       :value="tableData"
@@ -130,16 +130,23 @@ function getDocContent(docId: string): { zh: string; en: string } {
             <PvInputIcon>
               <i class="pi pi-search" />
             </PvInputIcon>
-            <PvInputText v-model="filters['global'].value" placeholder="搜索..." />
+            <PvInputText
+              v-model="filters['global'].value"
+              :placeholder="
+                $t('view.special.aliya2_demo.comp.search.DataTable.1.searchPlaceholder')
+              "
+            />
           </PvIconField>
         </div>
       </template>
 
       <!-- Empty state (no filter match) -->
-      <template #empty> 无搜索结果 </template>
+      <template #empty>
+        {{ $t('view.special.aliya2_demo.comp.search.DataTable.1.empty') }}
+      </template>
 
       <!-- Column 1: 关键词 -->
-      <PvColumn header="关键词">
+      <PvColumn :header="$t('view.special.aliya2_demo.comp.search.DataTable.1.column.1.title')">
         <template #body="slotProps">
           <ul>
             <li>{{ slotProps.data.keywords['zh-cn'].join('、') || '—' }}</li>
@@ -149,7 +156,7 @@ function getDocContent(docId: string): { zh: string; en: string } {
       </PvColumn>
 
       <!-- Column 2: 关联文档 (independent Accordion per document) -->
-      <PvColumn header="关联文档">
+      <PvColumn :header="$t('view.special.aliya2_demo.comp.search.DataTable.1.column.2.title')">
         <template #body="slotProps">
           <template v-if="slotProps.data.documentIds.length === 0">
             <span style="color: gray">—</span>
@@ -166,10 +173,14 @@ function getDocContent(docId: string): { zh: string; en: string } {
                 </PvAccordionHeader>
                 <PvAccordionContent>
                   <div class="search-doc-content">
-                    <p><b>zh-cn：</b></p>
+                    <p>
+                      <b>{{ $t('view.special.aliya2_demo.comp.search.label.zhCn') }}</b>
+                    </p>
                     <div v-html="getDocContent(docId).zh"></div>
                     <br />
-                    <p><b>en-us：</b></p>
+                    <p>
+                      <b>{{ $t('view.special.aliya2_demo.comp.search.label.enUs') }}</b>
+                    </p>
                     <div v-html="getDocContent(docId).en"></div>
                   </div>
                 </PvAccordionContent>
@@ -181,7 +192,7 @@ function getDocContent(docId: string): { zh: string; en: string } {
     </PvDataTable>
 
     <!-- Fallback when data is null or empty -->
-    <p v-else>暂无搜索数据。</p>
+    <p v-else>{{ $t('view.special.aliya2_demo.comp.search.noData') }}</p>
   </div>
 </template>
 
@@ -190,12 +201,12 @@ function getDocContent(docId: string): { zh: string; en: string } {
   max-width: 100%;
   white-space: pre-wrap;
   word-break: break-word;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .search-doc-content p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .search-doc-content p {

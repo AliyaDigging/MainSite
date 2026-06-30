@@ -50,17 +50,7 @@ const globalFilterFields = [
 
 <template>
   <div class="special-comp-main">
-    <p style="color: gray; text-align: center">
-      底层上，Aliya2代使用了Articy Dialogue
-      System作为对话故事系统。在该系统中，为了能正确标识“说话人”（speaker）并以此正确配置故事脚本，编剧必须定义<b
-        style="font-size: 1.5rem"
-        >演员 (actor)</b
-      >。以下列表显示自解包文件中导出的所有Articy
-      Actor信息；需要注意的是这些Actor没有头像，对于部分Actor的头像等信息，参见<i
-        style="font-size: 1.5rem"
-        >聊天对话信息</i
-      >。
-    </p>
+    <p class="special-comp-main-desc" v-html="$t('view.special.aliya2_demo.comp.actor.desc')"></p>
     <br />
     <PvDataTable
       :value="tableData"
@@ -76,57 +66,83 @@ const globalFilterFields = [
             <PvInputIcon>
               <i class="pi pi-search" />
             </PvInputIcon>
-            <PvInputText v-model="filters['global'].value" placeholder="搜索..." />
+            <PvInputText
+              v-model="filters['global'].value"
+              :placeholder="$t('view.special.aliya2_demo.comp.actor.DataTable.1.searchPlaceholder')"
+            />
           </PvIconField>
         </div>
       </template>
 
       <!-- Empty state -->
-      <template #empty> 无数据 </template>
+      <template #empty>
+        {{ $t('view.special.aliya2_demo.comp.actor.DataTable.1.empty') }}
+      </template>
 
       <!-- Column 1: id -->
-      <PvColumn field="id" header="ID" />
+      <PvColumn
+        field="id"
+        :header="$t('view.special.aliya2_demo.comp.actor.DataTable.1.column.1.title')"
+      />
 
       <!-- Column 2: name (zh-cn / en-us) -->
-      <PvColumn field="_name_zh_cn" header="名称">
+      <PvColumn
+        field="_name_zh_cn"
+        :header="$t('view.special.aliya2_demo.comp.actor.DataTable.1.column.2.title')"
+      >
         <template #body="slotProps">
           <ul>
             <li>
-              zh-cn: <code>{{ slotProps.data.name['zh-cn'] }}</code>
+              {{ $t('view.special.aliya2_demo.comp.actor.label.zhCn') }}
+              {{ slotProps.data.name['zh-cn'] }}
             </li>
             <li>
-              en-us: <code>{{ slotProps.data.name['en-us'] }}</code>
+              {{ $t('view.special.aliya2_demo.comp.actor.label.enUs') }}
+              {{ slotProps.data.name['en-us'] }}
             </li>
           </ul>
         </template>
       </PvColumn>
 
       <!-- Column 3: description -->
-      <PvColumn field="description" header="描述" />
+      <PvColumn
+        field="description"
+        :header="$t('view.special.aliya2_demo.comp.actor.DataTable.1.column.3.title')"
+      />
 
       <!-- Column 4: isPlayer / isNPC -->
-      <PvColumn field="isPlayer" header="角色类型">
+      <PvColumn
+        field="isPlayer"
+        :header="$t('view.special.aliya2_demo.comp.actor.DataTable.1.column.4.title')"
+      >
         <template #body="slotProps">
           <ul>
             <li>
-              isPlayer: <code>{{ slotProps.data.isPlayer }}</code>
+              {{ $t('view.special.aliya2_demo.comp.actor.label.isPlayer') }}
+              {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${slotProps.data.isPlayer}`) }}
             </li>
             <li>
-              isNPC: <code>{{ slotProps.data.isNPC }}</code>
+              {{ $t('view.special.aliya2_demo.comp.actor.label.isNPC') }}
+              {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${slotProps.data.isNPC}`) }}
             </li>
           </ul>
         </template>
       </PvColumn>
 
       <!-- Column 5: articyId / technicalName -->
-      <PvColumn field="articyId" header="Articy ID / 技术名">
+      <PvColumn
+        field="articyId"
+        :header="$t('view.special.aliya2_demo.comp.actor.DataTable.1.column.5.title')"
+      >
         <template #body="slotProps">
           <ul>
             <li>
-              articyId: <code>{{ slotProps.data.articyId }}</code>
+              {{ $t('view.special.aliya2_demo.comp.actor.label.articyId') }}
+              <code>{{ slotProps.data.articyId }}</code>
             </li>
             <li>
-              technicalName: <code>{{ slotProps.data.technicalName }}</code>
+              {{ $t('view.special.aliya2_demo.comp.actor.label.technicalName') }}
+              <code>{{ slotProps.data.technicalName }}</code>
             </li>
           </ul>
         </template>
@@ -134,6 +150,6 @@ const globalFilterFields = [
     </PvDataTable>
 
     <!-- Fallback when data is null or empty -->
-    <p v-else>暂无角色数据。</p>
+    <p v-else>{{ $t('view.special.aliya2_demo.comp.actor.noData') }}</p>
   </div>
 </template>

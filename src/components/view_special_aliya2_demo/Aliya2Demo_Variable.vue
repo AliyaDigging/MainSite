@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed, inject, ref } from 'vue'
-import { useI18n } from 'vue-i18n'
 
 import PvDataTable from 'primevue/datatable'
 import PvColumn from 'primevue/column'
@@ -11,14 +10,10 @@ import PvInputIcon from 'primevue/inputicon'
 
 import { symbolVariableData_Aliya2Demo } from '@/constants/injection'
 import type { Variable_Entry } from '@/components/flowchart/aliya2_demo/types/script7'
-
-const { t } = useI18n()
+import { gb18030Collator } from '@/utils/utils'
 
 // ── Inject data from parent ──
 const variableData = inject(symbolVariableData_Aliya2Demo)
-
-// ── Paginator state ──
-const rows = ref(10)
 
 // ── Filter state ──
 const filters = ref({
@@ -30,7 +25,7 @@ const filters = ref({
 const tableData = computed<Variable_Entry[]>(() => {
   const raw = variableData?.value
   if (!raw) return []
-  return Object.values(raw)
+  return Object.values(raw).sort((a, b) => gb18030Collator.compare(a.name, b.name))
 })
 
 // Fields the global search should match against
@@ -39,13 +34,10 @@ const globalFilterFields = ['name', 'type', 'initValue']
 
 <template>
   <div class="special-comp-main">
-    <p style="color: gray; text-align: center">
-      在Aliya2中，游戏使用了Articy Dialogue
-      System用作游戏的主要聊天与对话系统，而在这套系统框架中，创作者及程序必须定义多种<b
-        style="font-size: 1.5rem"
-        >变量</b
-      >才能实现条件判断等功能。本页显示的是在Articy系统内定义的所有变量。
-    </p>
+    <p
+      class="special-comp-main-desc"
+      v-html="$t('view.special.aliya2_demo.comp.variable.desc')"
+    ></p>
     <br />
     <PvDataTable
       :value="tableData"
@@ -61,31 +53,47 @@ const globalFilterFields = ['name', 'type', 'initValue']
             <PvInputIcon>
               <i class="pi pi-search" />
             </PvInputIcon>
-            <PvInputText v-model="filters['global'].value" placeholder="搜索..." />
+            <PvInputText
+              v-model="filters['global'].value"
+              :placeholder="
+                $t('view.special.aliya2_demo.comp.variable.DataTable.1.searchPlaceholder')
+              "
+            />
           </PvIconField>
         </div>
       </template>
 
       <!-- Empty state -->
-      <template #empty> 无数据 </template>
+      <template #empty>
+        {{ $t('view.special.aliya2_demo.comp.variable.DataTable.1.empty') }}
+      </template>
 
       <!-- Column 1: name -->
-      <PvColumn field="name" header="名称">
+      <PvColumn
+        field="name"
+        :header="$t('view.special.aliya2_demo.comp.variable.DataTable.1.column.1.title')"
+      >
         <template #body="slotProps">{{ slotProps.data.name }}</template>
       </PvColumn>
 
       <!-- Column 2: initValue -->
-      <PvColumn field="initValue" header="初始值">
+      <PvColumn
+        field="initValue"
+        :header="$t('view.special.aliya2_demo.comp.variable.DataTable.1.column.2.title')"
+      >
         <template #body="slotProps">
           <code>{{ slotProps.data.initValue }}</code>
         </template>
       </PvColumn>
 
       <!-- Column 3: type -->
-      <PvColumn field="type" :header="t('comp.flowchart.aliya2_demo.variable.table.header.type')" />
+      <PvColumn
+        field="type"
+        :header="$t('view.special.aliya2_demo.comp.variable.DataTable.1.column.3.title')"
+      />
     </PvDataTable>
 
     <!-- Fallback when data is null or empty -->
-    <p v-else>暂无变量数据。</p>
+    <p v-else>{{ $t('view.special.aliya2_demo.comp.variable.noData') }}</p>
   </div>
 </template>

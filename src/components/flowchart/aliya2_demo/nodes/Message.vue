@@ -8,7 +8,6 @@ import {
   symbolL10nDataSingleLang_Aliya2Demo,
   symbolActorData_Aliya2Demo,
   symbolExternalConfig_Aliya2Demo,
-  symbolFlowchartMetadata_Aliya2Demo,
 } from '@/constants/injection'
 import { useAliyaStore } from '@/stores/aliya'
 import { Aliya2Demo_Utils } from '@/utils/aliya'
@@ -22,7 +21,6 @@ const props = defineProps<NodeProps<FlowchartNode_Message['data']>>()
 const l10nFile = inject(symbolL10nDataSingleLang_Aliya2Demo)!
 const actorData = inject(symbolActorData_Aliya2Demo)!
 const externalConfigData = inject(symbolExternalConfig_Aliya2Demo)!
-const flowchartMetadata = inject(symbolFlowchartMetadata_Aliya2Demo)!
 const aliyaSetting = useAliyaStore()
 const setting = useSiteSettingStore()
 
@@ -44,7 +42,7 @@ const imageInfo = computed(() => {
   try {
     if (isImageMessage.value) {
       if (actualContent.value.includes('$image')) {
-        const imageMapping = externalConfigData.value.mediaMessageConfig.images
+        const imageMapping = externalConfigData.value!.mediaMessageConfig.images
 
         const regex = /\$image\{(.*)\}/i
         const match = actualContent.value.match(regex)
@@ -54,7 +52,7 @@ const imageInfo = computed(() => {
           return ['', '']
         }
       } else if (actualContent.value.includes('$emoji')) {
-        const emojiMapping = externalConfigData.value.mediaMessageConfig.emojis
+        const emojiMapping = externalConfigData.value!.mediaMessageConfig.emojis
 
         const regex = /\$emoji\{(.*)\}/i
         const match = actualContent.value.match(regex)
@@ -86,7 +84,7 @@ const sendWaitTime = computed(() => {
 })
 const speakerName = computed(() => {
   const currActorId = props.data.actorId
-  const actors = actorData.value
+  const actors = actorData.value!
 
   switch (setting.l10nlang) {
     case 'en-us':
@@ -96,7 +94,7 @@ const speakerName = computed(() => {
   }
 })
 const speakerAvatar = computed(() => {
-  const externalActorsData = externalConfigData.value.chatConfig.actors
+  const externalActorsData = externalConfigData.value!.chatConfig.actors
 
   const currAvatar = externalActorsData[speakerName.value[1]]
   if (currAvatar) {
@@ -138,16 +136,24 @@ const speakerAvatar = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
-          说话人: <span style="font-size: 1.2em">{{ speakerName[0] }}</span>
+          {{ $t('comp.flowchart.aliya2_demo.node.Message.speakerName.title') }}
+          <span style="font-size: 1.2em">{{ speakerName[0] }}</span>
         </p>
-        <p>发送前等待时间: {{ sendWaitTime }}s</p>
-        <p v-if="!isImageMessage">消息内容: {{ actualContent }}</p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.Message.sendWaitTime.title') }} {{ sendWaitTime }}s
+        </p>
+        <p v-if="!isImageMessage">
+          {{ $t('comp.flowchart.aliya2_demo.node.Message.actualContent.title') }}
+          {{ actualContent }}
+        </p>
         <template v-else>
-          <p>消息图片ID: {{ imageInfo[0] }}</p>
+          <p>
+            {{ $t('comp.flowchart.aliya2_demo.node.Message.imageId.title') }} {{ imageInfo[0] }}
+          </p>
           <img :src="imageInfo[1]" width="100%" class="mt-1 mb-1" />
         </template>
         <p>
-          自动计算等待时间:
+          {{ $t('comp.flowchart.aliya2_demo.node.Message.autoSendTime.title') }}
           {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${props.data.autoSendTime}`) }}
         </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />

@@ -12,6 +12,7 @@ import PvIconField from 'primevue/iconfield'
 import PvInputIcon from 'primevue/inputicon'
 
 import { symbolMergeInfo_Aliya2Demo, symbolL10nAllLangData_Aliya2Demo } from '@/constants/injection'
+import { Divider } from 'primevue'
 
 // ── Inject data from parent ──
 const mergeInfo = inject(symbolMergeInfo_Aliya2Demo)
@@ -33,19 +34,19 @@ const MERGE_STATUS_TAG_MAP: Record<
 > = {
   merged: {
     severity: 'danger',
-    i18nKey: 'view.special.aliya2_demo.merge_info.tag.merged',
+    i18nKey: 'view.special.aliya2_demo.comp.merge_info.tag.merged',
   },
   not_changed: {
     severity: 'success',
-    i18nKey: 'view.special.aliya2_demo.merge_info.tag.not_changed',
+    i18nKey: 'view.special.aliya2_demo.comp.merge_info.tag.not_changed',
   },
   partially_merged: {
     severity: 'warn',
-    i18nKey: 'view.special.aliya2_demo.merge_info.tag.partially_merged',
+    i18nKey: 'view.special.aliya2_demo.comp.merge_info.tag.partially_merged',
   },
   others_merged_into: {
     severity: 'info',
-    i18nKey: 'view.special.aliya2_demo.merge_info.tag.others_merged_into',
+    i18nKey: 'view.special.aliya2_demo.comp.merge_info.tag.others_merged_into',
   },
 }
 
@@ -61,9 +62,9 @@ function getMergeStatusTags(
 // ── View switcher (SelectButton) ──
 
 const viewOptions = [
-  { i18n: 'view.special.aliya2_demo.merge_info.view.forward', value: 'forward' },
-  { i18n: 'view.special.aliya2_demo.merge_info.view.by_status', value: 'by_status' },
-] as const
+  { i18n: 'view.special.aliya2_demo.comp.merge_info.view.forward', value: 'forward' },
+  { i18n: 'view.special.aliya2_demo.comp.merge_info.view.by_status', value: 'by_status' },
+]
 const currentView = ref<UnwrapRef<typeof viewOptions>[number] | null>(viewOptions[0])
 
 // ── Responsive grid columns ──
@@ -176,11 +177,15 @@ const globalFilterFieldsBeingMerged = ['key', '_name_zh_cn', '_mergeTags']
 
 <template>
   <div class="special-comp-main">
-    <p style="color: gray; text-align: center">
-      在 Aliya2 Demo 中，Articy
-      导出的原始流程图在进入生产环境前经历了合并处理。本页展示合并前后的流程图对应关系，包括每个流程图的最终状态、合并来源以及被合并去向。
-    </p>
+    <p
+      class="special-comp-main-desc"
+      v-html="$t('view.special.aliya2_demo.comp.merge_info.desc')"
+    ></p>
     <br />
+
+    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 8px">
+      {{ $t('view.special.aliya2_demo.comp.merge_info.section.all_channel_query') }}
+    </h2>
 
     <!-- View Switcher -->
     <div style="margin-bottom: 16px; text-align: center">
@@ -207,7 +212,8 @@ const globalFilterFieldsBeingMerged = ['key', '_name_zh_cn', '_mergeTags']
         style="padding: 12px; border: 1px solid var(--p-surface-200); border-radius: 8px"
       >
         <div>
-          flowchartId: <code>{{ item.id }}</code>
+          {{ $t('view.special.aliya2_demo.comp.merge_info.label.flowchartId') }}
+          <code>{{ item.id }}</code>
         </div>
         <div>{{ item.name }}</div>
         <div v-if="item.tags.length > 0" style="margin-top: 4px">
@@ -243,13 +249,17 @@ const globalFilterFieldsBeingMerged = ['key', '_name_zh_cn', '_mergeTags']
         </PvTag>
         <ol style="margin: 0 16px" class="custom-node-normal-ol">
           <li v-for="fc in cat.flowcharts" :key="fc.id">
-            flowchartId: <code>{{ fc.id }}</code> — {{ fc.name }}
+            {{ $t('view.special.aliya2_demo.comp.merge_info.label.flowchartId')
+            }}<code>{{ fc.id }}</code> — {{ fc.name }}
           </li>
         </ol>
       </div>
     </div>
 
-    <br />
+    <Divider />
+    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 8px">
+      {{ $t('view.special.aliya2_demo.comp.merge_info.section.merge_status_data') }}
+    </h2>
 
     <!-- Table 1: mergeStatus -->
     <PvDataTable
@@ -265,18 +275,31 @@ const globalFilterFieldsBeingMerged = ['key', '_name_zh_cn', '_mergeTags']
             <PvInputIcon>
               <i class="pi pi-search" />
             </PvInputIcon>
-            <PvInputText v-model="filtersMerge['global'].value" placeholder="搜索..." />
+            <PvInputText
+              v-model="filtersMerge['global'].value"
+              :placeholder="
+                $t('view.special.aliya2_demo.comp.merge_info.DataTable.1.searchPlaceholder')
+              "
+            />
           </PvIconField>
         </div>
       </template>
 
-      <template #empty> 无合并数据 </template>
+      <template #empty>
+        {{ $t('view.special.aliya2_demo.comp.merge_info.DataTable.1.empty') }}
+      </template>
 
       <!-- Column: 流程图ID -->
-      <PvColumn field="key" header="流程图ID" />
+      <PvColumn
+        field="key"
+        :header="$t('view.special.aliya2_demo.comp.merge_info.DataTable.1.column.1.title')"
+      />
 
       <!-- Column: 流程图名称 -->
-      <PvColumn field="_name_zh_cn" header="流程图名称">
+      <PvColumn
+        field="_name_zh_cn"
+        :header="$t('view.special.aliya2_demo.comp.merge_info.DataTable.1.column.2.title')"
+      >
         <template #body="slotProps">
           {{ slotProps.data._name_zh_cn || '—' }}
           <template v-if="slotProps.data._mergeTags">
@@ -294,19 +317,23 @@ const globalFilterFieldsBeingMerged = ['key', '_name_zh_cn', '_mergeTags']
       </PvColumn>
 
       <!-- Column: 合并进来的流程图ID+名称 -->
-      <PvColumn header="合并进来的流程图ID+名称">
+      <PvColumn :header="$t('view.special.aliya2_demo.comp.merge_info.DataTable.1.column.3.title')">
         <template #body="slotProps">
           <ol class="custom-node-normal-ol">
             <li v-for="id in slotProps.data.mergedIntoIds" :key="id">
-              flowchartId: <code>{{ id }}</code> ({{ getFlowchartName(id) ?? '—' }})
+              {{ $t('view.special.aliya2_demo.comp.merge_info.label.flowchartId') }}
+              <code>{{ id }}</code> ({{ getFlowchartName(id) ?? '—' }})
             </li>
           </ol>
         </template>
       </PvColumn>
     </PvDataTable>
-    <p v-else>暂无合并状态数据。</p>
+    <p v-else>{{ $t('view.special.aliya2_demo.comp.merge_info.noData1') }}</p>
 
-    <br />
+    <Divider />
+    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 8px">
+      {{ $t('view.special.aliya2_demo.comp.merge_info.section.being_merged_status_data') }}
+    </h2>
 
     <!-- Table 2: beingMergedStatus -->
     <PvDataTable
@@ -322,18 +349,31 @@ const globalFilterFieldsBeingMerged = ['key', '_name_zh_cn', '_mergeTags']
             <PvInputIcon>
               <i class="pi pi-search" />
             </PvInputIcon>
-            <PvInputText v-model="filtersBeingMerged['global'].value" placeholder="搜索..." />
+            <PvInputText
+              v-model="filtersBeingMerged['global'].value"
+              :placeholder="
+                $t('view.special.aliya2_demo.comp.merge_info.DataTable.2.searchPlaceholder')
+              "
+            />
           </PvIconField>
         </div>
       </template>
 
-      <template #empty> 无被合并数据 </template>
+      <template #empty>
+        {{ $t('view.special.aliya2_demo.comp.merge_info.DataTable.2.empty') }}
+      </template>
 
       <!-- Column: 流程图ID -->
-      <PvColumn field="key" header="流程图ID" />
+      <PvColumn
+        field="key"
+        :header="$t('view.special.aliya2_demo.comp.merge_info.DataTable.2.column.1.title')"
+      />
 
       <!-- Column: 流程图名称 -->
-      <PvColumn field="_name_zh_cn" header="流程图名称">
+      <PvColumn
+        field="_name_zh_cn"
+        :header="$t('view.special.aliya2_demo.comp.merge_info.DataTable.2.column.2.title')"
+      >
         <template #body="slotProps">
           {{ slotProps.data._name_zh_cn || '—' }}
           <template v-if="slotProps.data._mergeTags">
@@ -351,16 +391,17 @@ const globalFilterFieldsBeingMerged = ['key', '_name_zh_cn', '_mergeTags']
       </PvColumn>
 
       <!-- Column: 被合并进到的流程图ID+名称 -->
-      <PvColumn header="被合并进到的流程图ID+名称">
+      <PvColumn :header="$t('view.special.aliya2_demo.comp.merge_info.DataTable.2.column.3.title')">
         <template #body="slotProps">
           <ol class="custom-node-normal-ol">
             <li v-for="id in slotProps.data.beingMergedIntoIds" :key="id">
-              flowchartId: <code>{{ id }}</code> ({{ getFlowchartName(id) ?? '—' }})
+              {{ $t('view.special.aliya2_demo.comp.merge_info.label.flowchartId') }}
+              <code>{{ id }}</code> ({{ getFlowchartName(id) ?? '—' }})
             </li>
           </ol>
         </template>
       </PvColumn>
     </PvDataTable>
-    <p v-else>暂无被合并状态数据。</p>
+    <p v-else>{{ $t('view.special.aliya2_demo.comp.merge_info.noData2') }}</p>
   </div>
 </template>

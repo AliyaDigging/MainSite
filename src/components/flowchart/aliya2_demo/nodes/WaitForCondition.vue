@@ -33,15 +33,19 @@ const props = defineProps<NodeProps<FlowchartNode_WaitForCondition['data']>>()
       </div>
       <div class="custom-node-content">
         <p>
-          变量名称: <code>{{ props.data.compareCondition.varName }}</code>
+          {{ $t('comp.flowchart.aliya2_demo.node.WaitForCondition.variableName.title') }}
+          <code>{{ props.data.compareCondition.varName }}</code>
         </p>
         <p>
-          条件判断:
+          {{ $t('comp.flowchart.aliya2_demo.node.WaitForCondition.conditionJudgment.title') }}
           {{
             $t(`comp.flowchart.aliya2_demo.flow.judgment.${props.data.compareCondition.condition}`)
           }}
         </p>
-        <p>对比值: {{ props.data.compareCondition.compareValue }}</p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.WaitForCondition.compareValue.title') }}
+          {{ props.data.compareCondition.compareValue }}
+        </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
       </div>
     </div>

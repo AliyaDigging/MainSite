@@ -269,11 +269,20 @@ provide(symbolMergeInfo_Aliya2Demo, mergeInfoData)
 </script>
 
 <template>
-  <div class="special-main-div" style="margin-top: 16px; place-items: center; text-align: center">
+  <div
+    class="special-main-div"
+    style="
+      margin-top: 16px;
+      align-items: center;
+      justify-items: center;
+      align-content: center;
+      text-align: center;
+    "
+  >
     <div class="special-main-div-title">
       <img style="width: 3rem" src="/aliya/game_icon/aliya2_demo.ico" />
       <h1 style="font-size: 3rem">
-        <b>Aliya2 特殊内容*查询</b>
+        <b>{{ $t('view.special.aliya2_demo.title') }}</b>
       </h1>
     </div>
 
@@ -321,7 +330,7 @@ provide(symbolMergeInfo_Aliya2Demo, mergeInfoData)
   <div class="special-main-div" style="margin-bottom: 28px; margin-top: 8px">
     <!-- Catalog 加载中 -->
     <div v-if="!isCatalogReady" class="loading-placeholder" style="margin-top: 8px">
-      <p style="text-align: center">Loading data catalog…</p>
+      <p style="text-align: center">{{ $t('view.special.aliya2_demo.loadingCatalog') }}</p>
     </div>
     <!-- Catalog 已加载，但未选版本 -->
     <p v-else-if="!versionId" style="text-align: center; margin-top: 16px; font-size: 1.1rem">
@@ -329,7 +338,7 @@ provide(symbolMergeInfo_Aliya2Demo, mergeInfoData)
     </p>
     <!-- 版本已选，数据加载中 -->
     <div v-else-if="!isReady" class="loading-placeholder" style="margin-top: 8px">
-      <p style="text-align: center">Loading data…</p>
+      <p style="text-align: center">{{ $t('view.special.aliya2_demo.loadingData') }}</p>
     </div>
     <!-- 数据就绪 -->
     <template v-else>
@@ -337,15 +346,11 @@ provide(symbolMergeInfo_Aliya2Demo, mergeInfoData)
         <component :is="compCurr" />
       </KeepAlive>
       <p v-if="!compSelect" style="text-align: center; margin-top: 16px">
-        Select one to get started!
+        {{ $t('view.special.aliya2_demo.selectPrompt') }}
       </p>
     </template>
     <p style="color: gray; font-size: 0.8rem; margin-top: 16px">
-      *相较于一代前作，Aliya2
-      在原有的聊天系统中加入了多种特殊数据，例如搜索、文档、新闻等。这些数据是另外存储在一系列配置文件（以
-      .asset [YAML]
-      格式提供）中的，与一般的对话文件不同，无法与不便于在既有的"本地化"页面查看。为了解决这个问题，ALIYA
-      DB+特此设立单独的特殊页面来负责这些数据的单独查询，以便更好地服务广大玩家。
+      {{ $t('view.special.aliya2_demo.footer') }}
     </p>
   </div>
 </template>
@@ -353,6 +358,7 @@ provide(symbolMergeInfo_Aliya2Demo, mergeInfoData)
 <style scoped>
 .special-main-div {
   margin: 0 10%;
+  display: grid;
 }
 
 .special-main-div-title {
@@ -372,6 +378,13 @@ SINCE WE NEED CENTER <p> FOR EXPLANATION AND UI, WE COMMENTED THIS OUT.
   text-align: left;
 }
   */
+:deep(.special-comp-main-desc) {
+  color: gray;
+  text-align: center;
+}
+:deep(.special-comp-main-desc b) {
+  font-size: 1.5rem;
+}
 
 @media screen and (max-width: 960px) {
   .special-main-div {

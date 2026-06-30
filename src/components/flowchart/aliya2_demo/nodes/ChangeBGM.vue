@@ -17,7 +17,7 @@ const props = defineProps<NodeProps<FlowchartNode_ChangeBGM['data']>>()
 const externalConfigData = inject(symbolExternalConfig_Aliya2Demo)!
 
 const currBgm = computed(() => {
-  const data = externalConfigData.value.audioConfig
+  const data = externalConfigData.value!.audioConfig
   return data[props.data.bgmId]
 })
 </script>
@@ -48,11 +48,12 @@ const currBgm = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
-          BGM ID: <code>{{ props.data.bgmId }}</code>
+          {{ $t('comp.flowchart.aliya2_demo.node.ChangeBGM.bgmId.title') }}
+          <code>{{ props.data.bgmId }}</code>
         </p>
         <audio
           class="mt-1 mb-1"
-          :src="`/aliya/aliya2_demo/audio/${currBgm.clipFilename}`"
+          :src="`/aliya/aliya2_demo/audio/${currBgm?.clipFilename}`"
           controls
           style="width: 100%"
         />

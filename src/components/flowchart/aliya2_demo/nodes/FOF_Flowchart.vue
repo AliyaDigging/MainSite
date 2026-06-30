@@ -20,7 +20,7 @@ const setting = useSiteSettingStore()
 
 const channelName = computed(() => {
   if (isNull(props.data.channelId)) return null
-  const channels = externalConfigData.value.chatConfig.channels
+  const channels = externalConfigData.value!.chatConfig.channels
   const channel = channels[props.data.channelId!]
   if (channel) {
     switch (setting.l10nlang) {
@@ -45,10 +45,13 @@ const channelName = computed(() => {
         }}</span>
       </div>
       <div class="custom-node-content">
-        <p>原始流程图ID: {{ props.data.flowchartId }}</p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.originalFlowchartId.title') }}
+          {{ props.data.flowchartId }}
+        </p>
         <hr />
         <p>
-          实际流程图ID、节点ID:
+          {{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.actualFlowchartInfo.title') }}
           <span
             class="anchor-like"
             @click="
@@ -66,10 +69,14 @@ const channelName = computed(() => {
         </p>
         <template v-if="!isNull(props.data.channelId)">
           <p>
-            所属频道ID: <code>{{ props.data.channelId }}</code>
+            {{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.channelId.title') }}
+            <code>{{ props.data.channelId }}</code>
           </p>
           <template v-if="channelName">
-            <p>所属频道名称: {{ channelName }}</p>
+            <p>
+              {{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.channelName.title') }}
+              {{ channelName }}
+            </p>
           </template>
         </template>
       </div>

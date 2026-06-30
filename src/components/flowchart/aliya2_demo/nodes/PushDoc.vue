@@ -40,22 +40,24 @@ const dialogVisible = ref(false)
       </div>
       <div class="custom-node-content">
         <p>
-          文档ID: <code>{{ props.data.documentId }}</code>
+          {{ $t('comp.flowchart.aliya2_demo.node.PushDoc.documentId.title') }}
+          <code>{{ props.data.documentId }}</code>
         </p>
         <Button size="big" severity="primary"
-          ><Icon style="font-size: 1.5em"><DocumentText20Regular /></Icon>查看文档详情</Button
+          ><Icon style="font-size: 1.5em"><DocumentText20Regular /></Icon
+          >{{ $t('comp.flowchart.aliya2_demo.node.PushDoc.viewDetail.title') }}</Button
         >
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
 
         <Dialog
           v-model:visible="dialogVisible"
           modal
-          header="新闻内容"
+          :header="$t('comp.flowchart.aliya2_demo.node.PushDoc.dialog.title')"
           :style="{ 'max-width': '90%' }"
         >
-          <h2>文档标题</h2>
+          <h2>{{ $t('comp.flowchart.aliya2_demo.node.PushDoc.docTitle.title') }}</h2>
           <p>{{ l10nFile.documents.title[props.data.documentId] }}</p>
-          <h2>文档内容</h2>
+          <h2>{{ $t('comp.flowchart.aliya2_demo.node.PushDoc.docContent.title') }}</h2>
           <p v-html="l10nFile.documents.content[props.data.documentId].replace('\n', '<br />')"></p>
         </Dialog>
       </div>

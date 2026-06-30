@@ -25,27 +25,33 @@ function to255(v: number): number {
 // ── Utility: RGB 0~1 float → HEX ──
 function rgbToHex(r: number, g: number, b: number): string {
   const toHex = (n: number) => to255(n).toString(16).padStart(2, '0')
-  return `#${toHex(r)}${toHex(g)}${toHex(b)}`
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`.toUpperCase()
 }
 </script>
 
 <template>
   <div class="special-comp-main">
-    <p style="color: gray; text-align: center">
-      “AmbientMessage”是一类特殊的消息，其在UI行为上指的是<b style="font-size: 1.5rem">小字消息</b
-      >，起到类似系统消息或<b style="font-size: 1.5rem">“环境消息”</b
-      >（例如Oleg的脑机接口的碎碎念）的作用。AmbientMessage通常使用<code>$md[type]{[消息内容]}</code>格式提供，其中type可为空，为空是则默认fallback到null（即ID="NULL"）；在目前的demo中，type用于指定AmbientMessage的文字颜色，如下所示。
-    </p>
+    <p
+      class="special-comp-main-desc"
+      v-html="$t('view.special.aliya2_demo.comp.ambient_message.desc')"
+    ></p>
     <br />
     <PvDataTable :value="tableData" v-if="tableData.length > 0" style="width: 100%">
       <!-- Empty state -->
-      <template #empty> 无数据 </template>
+      <template #empty>
+        {{ $t('view.special.aliya2_demo.comp.ambient_message.DataTable.1.empty') }}
+      </template>
 
       <!-- Column 1: id -->
-      <PvColumn field="id" header="ID" />
+      <PvColumn
+        field="id"
+        :header="$t('view.special.aliya2_demo.comp.ambient_message.DataTable.1.column.1.title')"
+      />
 
       <!-- Column 2: color block + RGB / HEX -->
-      <PvColumn header="颜色">
+      <PvColumn
+        :header="$t('view.special.aliya2_demo.comp.ambient_message.DataTable.1.column.2.title')"
+      >
         <template #body="slotProps">
           <span
             :style="{
@@ -57,15 +63,17 @@ function rgbToHex(r: number, g: number, b: number): string {
             >█</span
           >
           <br />
-          RGB({{ to255(slotProps.data.color.r) }}, {{ to255(slotProps.data.color.g) }},
-          {{ to255(slotProps.data.color.b) }}) [{{
-            rgbToHex(slotProps.data.color.r, slotProps.data.color.g, slotProps.data.color.b)
-          }}]
+          <span style="display: inline-block; margin-top: 8px"
+            >RGB({{ to255(slotProps.data.color.r) }}, {{ to255(slotProps.data.color.g) }},
+            {{ to255(slotProps.data.color.b) }}) [{{
+              rgbToHex(slotProps.data.color.r, slotProps.data.color.g, slotProps.data.color.b)
+            }}]</span
+          >
         </template>
       </PvColumn>
     </PvDataTable>
 
     <!-- Fallback when data is null or empty -->
-    <p v-else>暂无环境消息数据。</p>
+    <p v-else>{{ $t('view.special.aliya2_demo.comp.ambient_message.noData') }}</p>
   </div>
 </template>

@@ -20,11 +20,11 @@ const props = defineProps<NodeProps<FlowchartNode_StartConversation['data']>>()
 const externalConfigData = inject(symbolExternalConfig_Aliya2Demo)!
 
 const flowchartInfo = computed(() => {
-  const chatData = externalConfigData.value.chatConfig.channels
+  const chatData = externalConfigData.value!.chatConfig.channels
   const channel = chatData[props.data.channelId]
   if (channel) {
     return [
-      channel.startConversation.conversationId,
+      channel.startConversation.originConversationId,
       channel.startConversation.title,
       `/aliya/aliya2_demo/images/avatar/${channel.avatarFilename}`,
     ]
@@ -54,14 +54,16 @@ const flowchartInfo = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
-          新对话ID: <code>{{ props.data.channelId }}</code>
+          {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.newConversationId.title') }}
+          <code>{{ props.data.channelId }}</code>
         </p>
         <template v-if="!isNull(flowchartInfo)">
           <p>
-            对话起始流程图ID: <code>{{ flowchartInfo[0] }}</code>
+            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.startFlowchartId.title') }}
+            <code>{{ flowchartInfo[0] }}</code>
           </p>
           <p>
-            实际流程图ID、节点ID:
+            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.actualFlowchartInfo.title') }}
             <span
               class="anchor-like"
               @click="
@@ -77,8 +79,13 @@ const flowchartInfo = computed(() => {
               }}</span
             >
           </p>
-          <p>流程图标题: {{ flowchartInfo[1] }}</p>
-          <p>对话头像：</p>
+          <p>
+            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.flowchartTitle.title') }}
+            {{ flowchartInfo[1] }}
+          </p>
+          <p>
+            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.conversationAvatar.title') }}
+          </p>
           <img :src="flowchartInfo[2]" width="100%" />
         </template>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />

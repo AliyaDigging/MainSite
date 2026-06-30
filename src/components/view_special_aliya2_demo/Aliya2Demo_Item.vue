@@ -10,6 +10,7 @@ import PvInputIcon from 'primevue/inputicon'
 
 import { symbolItemData_Aliya2Demo, symbolL10nAllLangData_Aliya2Demo } from '@/constants/injection'
 import { Divider } from 'primevue'
+import { gb18030Collator } from '@/utils/utils'
 
 // ── Inject data from parent ──
 const itemData = inject(symbolItemData_Aliya2Demo)
@@ -43,44 +44,48 @@ const newsTableData = computed<ItemTableRow[]>(() => {
   const items = itemData?.value?.news
   if (!items) return []
   const l10n = l10nData?.value?.news
-  return Object.entries(items).map(([key, entry]) => {
-    const titleObj = l10n?.title?.[key] ?? null
-    const contentObj = l10n?.content?.[key] ?? null
-    return {
-      id: key,
-      name_en_us: entry.name['en-us'],
-      name_zh_cn: entry.name['zh-cn'],
-      name: entry.name,
-      title: titleObj,
-      content: contentObj,
-      _title_zh_cn: titleObj?.['zh-cn'] ?? '',
-      _title_en_us: titleObj?.['en-us'] ?? '',
-      _content_zh_cn: contentObj?.['zh-cn'] ?? '',
-      _content_en_us: contentObj?.['en-us'] ?? '',
-    }
-  })
+  return Object.entries(items)
+    .map(([key, entry]) => {
+      const titleObj = l10n?.title?.[key] ?? null
+      const contentObj = l10n?.content?.[key] ?? null
+      return {
+        id: key,
+        name_en_us: entry.name['en-us'],
+        name_zh_cn: entry.name['zh-cn'],
+        name: entry.name,
+        title: titleObj,
+        content: contentObj,
+        _title_zh_cn: titleObj?.['zh-cn'] ?? '',
+        _title_en_us: titleObj?.['en-us'] ?? '',
+        _content_zh_cn: contentObj?.['zh-cn'] ?? '',
+        _content_en_us: contentObj?.['en-us'] ?? '',
+      }
+    })
+    .sort((a, b) => gb18030Collator.compare(a.id, b.id))
 })
 
 const documentsTableData = computed<ItemTableRow[]>(() => {
   const items = itemData?.value?.documents
   if (!items) return []
   const l10n = l10nData?.value?.documents
-  return Object.entries(items).map(([key, entry]) => {
-    const titleObj = l10n?.title?.[key] ?? null
-    const contentObj = l10n?.content?.[key] ?? null
-    return {
-      id: key,
-      name_en_us: entry.name['en-us'],
-      name_zh_cn: entry.name['zh-cn'],
-      name: entry.name,
-      title: titleObj,
-      content: contentObj,
-      _title_zh_cn: titleObj?.['zh-cn'] ?? '',
-      _title_en_us: titleObj?.['en-us'] ?? '',
-      _content_zh_cn: contentObj?.['zh-cn'] ?? '',
-      _content_en_us: contentObj?.['en-us'] ?? '',
-    }
-  })
+  return Object.entries(items)
+    .map(([key, entry]) => {
+      const titleObj = l10n?.title?.[key] ?? null
+      const contentObj = l10n?.content?.[key] ?? null
+      return {
+        id: key,
+        name_en_us: entry.name['en-us'],
+        name_zh_cn: entry.name['zh-cn'],
+        name: entry.name,
+        title: titleObj,
+        content: contentObj,
+        _title_zh_cn: titleObj?.['zh-cn'] ?? '',
+        _title_en_us: titleObj?.['en-us'] ?? '',
+        _content_zh_cn: contentObj?.['zh-cn'] ?? '',
+        _content_en_us: contentObj?.['en-us'] ?? '',
+      }
+    })
+    .sort((a, b) => gb18030Collator.compare(a.id, b.id))
 })
 
 // Fields the global search should match against
@@ -110,15 +115,12 @@ function replaceCharacter(text: string) {
 
 <template>
   <div class="special-comp-main">
-    <p style="color: gray; text-align: center">
-      早在2代的宣传图与商店介绍中，玩家便可注意到游戏中出现了特殊的<b style="font-size: 1.2rem"
-        >文档/新闻类条目</b
-      >信息。这些条目在底层是Articy Dialogue
-      System中的一个Item，本页显示的便是这些Item的信息与对应L10N内容。
-    </p>
+    <p class="special-comp-main-desc" v-html="$t('view.special.aliya2_demo.comp.item.desc')"></p>
     <Divider />
     <!-- ==================== News 表格 ==================== -->
-    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 8px">News（新闻）</h2>
+    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 8px">
+      {{ $t('view.special.aliya2_demo.comp.item.section.news') }}
+    </h2>
     <PvDataTable
       :value="newsTableData"
       v-if="newsTableData.length > 0"
@@ -133,54 +135,69 @@ function replaceCharacter(text: string) {
             <PvInputIcon>
               <i class="pi pi-search" />
             </PvInputIcon>
-            <PvInputText v-model="newsFilters['global'].value" placeholder="搜索..." />
+            <PvInputText
+              v-model="newsFilters['global'].value"
+              :placeholder="$t('view.special.aliya2_demo.comp.item.DataTable.1.searchPlaceholder')"
+            />
           </PvIconField>
         </div>
       </template>
 
       <!-- Empty state -->
-      <template #empty> 无新闻数据 </template>
+      <template #empty> {{ $t('view.special.aliya2_demo.comp.item.DataTable.1.empty') }} </template>
 
       <!-- Column 1: id -->
-      <PvColumn field="id" header="ID" />
+      <PvColumn
+        field="id"
+        :header="$t('view.special.aliya2_demo.comp.item.DataTable.1.column.1.title')"
+      />
 
       <!-- Column 2: name (zh-cn / en-us) -->
-      <PvColumn field="name_zh_cn" header="名称">
+      <!-- COMMENTED OUT, for it duplicated with the title
+      <PvColumn
+        field="name_zh_cn"
+        :header="$t('view.special.aliya2_demo.comp.item.DataTable.1.column.2.title')"
+      >
         <template #body="slotProps">
-          <ul class="custom-node-normal-ul">
-            <li>{{ slotProps.data.name['zh-cn'] }}</li>
-            <li>{{ slotProps.data.name['en-us'] }}</li>
-          </ul>
+          <p>{{ slotProps.data.name['zh-cn'] }}</p>
+          <p>{{ slotProps.data.name['en-us'] }}</p>
         </template>
       </PvColumn>
+      -->
 
       <!-- Column 3: title (L10N) -->
-      <PvColumn field="_title_zh_cn" header="标题(L10N)">
+      <PvColumn
+        field="_title_zh_cn"
+        :header="$t('view.special.aliya2_demo.comp.item.DataTable.1.column.3.title')"
+      >
         <template #body="slotProps">
-          <ul class="custom-node-normal-ul">
-            <li>{{ slotProps.data.title?.['zh-cn'] ?? '—' }}</li>
-            <li>{{ slotProps.data.title?.['en-us'] ?? '—' }}</li>
-          </ul>
+          <p>{{ slotProps.data.title?.['zh-cn'] ?? '—' }}</p>
+          <p>{{ slotProps.data.title?.['en-us'] ?? '—' }}</p>
         </template>
       </PvColumn>
 
       <!-- Column 4: content (L10N) -->
-      <PvColumn field="_content_zh_cn" header="内容(L10N)">
+      <PvColumn
+        field="_content_zh_cn"
+        :header="$t('view.special.aliya2_demo.comp.item.DataTable.1.column.4.title')"
+      >
         <template #body="slotProps">
           <ul class="custom-node-normal-ul">
             <li v-html="replaceCharacter(slotProps.data.content?.['zh-cn'] ?? '—')"></li>
-            <li v-html="replaceCharacter(slotProps.data.content?.['zh-cn'] ?? '—')"></li>
+            <li v-html="replaceCharacter(slotProps.data.content?.['en-us'] ?? '—')"></li>
           </ul>
         </template>
       </PvColumn>
     </PvDataTable>
 
     <!-- Fallback when data is null or empty -->
-    <p v-else>暂无新闻数据。</p>
+    <p v-else>{{ $t('view.special.aliya2_demo.comp.item.noData1') }}</p>
 
     <!-- ==================== Documents 表格 ==================== -->
     <Divider />
-    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 8px">Documents（文件）</h2>
+    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 8px">
+      {{ $t('view.special.aliya2_demo.comp.item.section.documents') }}
+    </h2>
     <PvDataTable
       :value="documentsTableData"
       v-if="documentsTableData.length > 0"
@@ -195,39 +212,52 @@ function replaceCharacter(text: string) {
             <PvInputIcon>
               <i class="pi pi-search" />
             </PvInputIcon>
-            <PvInputText v-model="docsFilters['global'].value" placeholder="搜索..." />
+            <PvInputText
+              v-model="docsFilters['global'].value"
+              :placeholder="$t('view.special.aliya2_demo.comp.item.DataTable.2.searchPlaceholder')"
+            />
           </PvIconField>
         </div>
       </template>
 
       <!-- Empty state -->
-      <template #empty> 无文件数据 </template>
+      <template #empty> {{ $t('view.special.aliya2_demo.comp.item.DataTable.2.empty') }} </template>
 
       <!-- Column 1: id -->
-      <PvColumn field="id" header="ID" />
+      <PvColumn
+        field="id"
+        :header="$t('view.special.aliya2_demo.comp.item.DataTable.2.column.1.title')"
+      />
 
       <!-- Column 2: name (zh-cn / en-us) -->
-      <PvColumn field="name_zh_cn" header="名称">
+      <!-- COMMENTED OUT, for it duplicated with the title
+      <PvColumn
+        field="name_zh_cn"
+        :header="$t('view.special.aliya2_demo.comp.item.DataTable.2.column.2.title')"
+      >
         <template #body="slotProps">
-          <ul class="custom-node-normal-ul">
-            <li>{{ slotProps.data.name['zh-cn'] }}</li>
-            <li>{{ slotProps.data.name['en-us'] }}</li>
-          </ul>
+          <p>{{ slotProps.data.name['zh-cn'] }}</p>
+          <p>{{ slotProps.data.name['en-us'] }}</p>
         </template>
       </PvColumn>
+      -->
 
       <!-- Column 3: title (L10N) -->
-      <PvColumn field="_title_zh_cn" header="标题(L10N)">
+      <PvColumn
+        field="_title_zh_cn"
+        :header="$t('view.special.aliya2_demo.comp.item.DataTable.2.column.3.title')"
+      >
         <template #body="slotProps">
-          <ul class="custom-node-normal-ul">
-            <li>{{ slotProps.data.title?.['zh-cn'] ?? '—' }}</li>
-            <li>{{ slotProps.data.title?.['en-us'] ?? '—' }}</li>
-          </ul>
+          <p>{{ slotProps.data.title?.['zh-cn'] ?? '—' }}</p>
+          <p>{{ slotProps.data.title?.['en-us'] ?? '—' }}</p>
         </template>
       </PvColumn>
 
       <!-- Column 4: content (L10N) -->
-      <PvColumn field="_content_zh_cn" header="内容(L10N)">
+      <PvColumn
+        field="_content_zh_cn"
+        :header="$t('view.special.aliya2_demo.comp.item.DataTable.2.column.4.title')"
+      >
         <template #body="slotProps">
           <ul class="custom-node-normal-ul">
             <li v-html="replaceCharacter(slotProps.data.content?.['zh-cn'] ?? '—')"></li>
@@ -238,6 +268,6 @@ function replaceCharacter(text: string) {
     </PvDataTable>
 
     <!-- Fallback when data is null or empty -->
-    <p v-else>暂无文件数据。</p>
+    <p v-else>{{ $t('view.special.aliya2_demo.comp.item.noData2') }}</p>
   </div>
 </template>

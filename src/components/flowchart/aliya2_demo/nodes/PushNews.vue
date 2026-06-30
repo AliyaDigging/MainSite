@@ -39,22 +39,24 @@ const dialogVisible = ref(false)
       </div>
       <div class="custom-node-content">
         <p>
-          新闻ID: <code>{{ props.data.newsId }}</code>
+          {{ $t('comp.flowchart.aliya2_demo.node.PushNews.newsId.title') }}
+          <code>{{ props.data.newsId }}</code>
         </p>
         <Button size="big" severity="primary"
-          ><Icon style="font-size: 1.5em"><News24Regular /></Icon>查看新闻详情</Button
+          ><Icon style="font-size: 1.5em"><News24Regular /></Icon
+          >{{ $t('comp.flowchart.aliya2_demo.node.PushNews.viewDetail.title') }}</Button
         >
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
 
         <Dialog
           v-model:visible="dialogVisible"
           modal
-          header="新闻详情"
+          :header="$t('comp.flowchart.aliya2_demo.node.PushNews.dialog.title')"
           :style="{ 'max-width': '90%' }"
         >
-          <h2>新闻标题</h2>
+          <h2>{{ $t('comp.flowchart.aliya2_demo.node.PushNews.newsTitle.title') }}</h2>
           <p>{{ l10nFile.documents.title[props.data.newsId] }}</p>
-          <h2>新闻内容</h2>
+          <h2>{{ $t('comp.flowchart.aliya2_demo.node.PushNews.newsContent.title') }}</h2>
           <p v-html="l10nFile.documents.content[props.data.newsId].replace('\n', '<br />')"></p>
         </Dialog>
       </div>

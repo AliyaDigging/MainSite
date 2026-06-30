@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, inject } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 import PvDataTable from 'primevue/datatable'
 import PvColumn from 'primevue/column'
@@ -7,6 +8,9 @@ import PvColumn from 'primevue/column'
 import { symbolExternalConfig_Aliya2Demo } from '@/constants/injection'
 import type { AudioConfig_Entry } from '@/components/flowchart/aliya2_demo/types/script6'
 import { AudioConfig_Entry_Category } from '@/components/flowchart/aliya2_demo/types/script6'
+import { gb18030Collator } from '@/utils/utils'
+
+const i18n = useI18n()
 
 // ── Inject data from parent ──
 const externalConfigData = inject(symbolExternalConfig_Aliya2Demo)
@@ -21,21 +25,23 @@ type TableRow = {
 const tableData = computed<TableRow[]>(() => {
   const raw = externalConfigData?.value?.audioConfig
   if (!raw) return []
-  return Object.entries(raw).map(([recordKey, entry]) => ({
-    id: recordKey,
-    entry,
-  }))
+  return Object.entries(raw)
+    .map(([recordKey, entry]) => ({
+      id: recordKey,
+      entry,
+    }))
+    .sort((a, b) => gb18030Collator.compare(a.id, b.id))
 })
 
 // ── Helper: map category enum to display text ──
 function categoryLabel(category: number): string {
   switch (category) {
     case AudioConfig_Entry_Category.BGM:
-      return 'BGM'
+      return i18n.t('view.special.aliya2_demo.comp.audio.category.BGM')
     case AudioConfig_Entry_Category.SFX:
-      return 'SFX'
+      return i18n.t('view.special.aliya2_demo.comp.audio.category.SFX')
     default:
-      return `Unknown(${category})`
+      return i18n.t('view.special.aliya2_demo.comp.audio.category.unknown', { n: category })
   }
 }
 
@@ -47,27 +53,29 @@ function volumePercent(v: number): string {
 
 <template>
   <div class="special-comp-main">
-    <p style="color: gray; text-align: center">
-      Aliya2代中包含<b style="font-size: 1.5rem">BGM与SFX</b
-      >两类音频，这些文件亦由一个独立文件管理。由于Demo音频文件较少，为方便起见，本页的表格将混合显示BGM与SFX信息。
-    </p>
+    <p class="special-comp-main-desc" v-html="$t('view.special.aliya2_demo.comp.audio.desc')"></p>
     <br />
     <PvDataTable :value="tableData" v-if="tableData.length > 0" style="width: 100%">
       <!-- Empty state -->
-      <template #empty> 无数据 </template>
+      <template #empty>
+        {{ $t('view.special.aliya2_demo.comp.audio.DataTable.1.empty') }}
+      </template>
 
       <!-- Column 1: id (record key) -->
-      <PvColumn field="id" header="ID" />
+      <PvColumn
+        field="id"
+        :header="$t('view.special.aliya2_demo.comp.audio.DataTable.1.column.1.title')"
+      />
 
       <!-- Column 2: category (mapped text BGM/SFX) -->
-      <PvColumn header="类型">
+      <PvColumn :header="$t('view.special.aliya2_demo.comp.audio.DataTable.1.column.2.title')">
         <template #body="slotProps">
           {{ categoryLabel(slotProps.data.entry.category) }}
         </template>
       </PvColumn>
 
       <!-- Column 3: clipFilename + audio preview -->
-      <PvColumn header="音频文件 / 预览">
+      <PvColumn :header="$t('view.special.aliya2_demo.comp.audio.DataTable.1.column.3.title')">
         <template #body="slotProps">
           <p style="margin-bottom: 8px">
             <code>{{ slotProps.data.entry.clipFilename }}</code>
@@ -81,27 +89,29 @@ function volumePercent(v: number): string {
       </PvColumn>
 
       <!-- Column 4: Other params (volume, loop, fade in/out) -->
-      <PvColumn header="参数">
+      <PvColumn :header="$t('view.special.aliya2_demo.comp.audio.DataTable.1.column.4.title')">
         <template #body="slotProps">
-          <ul>
-            <li>
-              defaultVolume: <code>{{ volumePercent(slotProps.data.entry.defaultVolume) }}</code>
-            </li>
-            <li>
-              loop: <code>{{ slotProps.data.entry.loop }}</code>
-            </li>
-            <li>
-              fadeInSeconds: <code>{{ slotProps.data.entry.fadeInSeconds }}</code>
-            </li>
-            <li>
-              fadeOutSeconds: <code>{{ slotProps.data.entry.fadeOutSeconds }}</code>
-            </li>
-          </ul>
+          <p>
+            {{ $t('view.special.aliya2_demo.comp.audio.label.defaultVolume') }}
+            {{ volumePercent(slotProps.data.entry.defaultVolume) }}
+          </p>
+          <p>
+            {{ $t('view.special.aliya2_demo.comp.audio.label.loop') }}
+            {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${slotProps.data.entry.loop}`) }}
+          </p>
+          <p>
+            {{ $t('view.special.aliya2_demo.comp.audio.label.fadeInSeconds') }}
+            {{ slotProps.data.entry.fadeInSeconds }}s
+          </p>
+          <p>
+            {{ $t('view.special.aliya2_demo.comp.audio.label.fadeOutSeconds') }}
+            {{ slotProps.data.entry.fadeOutSeconds }}s
+          </p>
         </template>
       </PvColumn>
     </PvDataTable>
 
     <!-- Fallback when data is null or empty -->
-    <p v-else>暂无音频数据。</p>
+    <p v-else>{{ $t('view.special.aliya2_demo.comp.audio.noData') }}</p>
   </div>
 </template>

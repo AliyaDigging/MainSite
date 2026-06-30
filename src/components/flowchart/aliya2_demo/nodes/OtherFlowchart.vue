@@ -34,8 +34,14 @@ const props = defineProps<NodeProps<FlowchartNode_OtherFlowchart['data']>>()
         }}</span>
       </div>
       <div class="custom-node-content">
-        <p>其他流程图ID: {{ props.data.displayData.conversationId }}</p>
-        <p>具体对话ID: {{ props.data.displayData.dialogueId }}</p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.OtherFlowchart.otherFlowchartId.title') }}
+          {{ props.data.displayData.conversationId }}
+        </p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.OtherFlowchart.specificDialogueId.title') }}
+          {{ props.data.displayData.dialogueId }}
+        </p>
         <div style="text-align: center" class="mt-2">
           <Button
             @click="
@@ -46,7 +52,8 @@ const props = defineProps<NodeProps<FlowchartNode_OtherFlowchart['data']>>()
             "
             size="big"
             severity="primary"
-            ><Icon style="font-size: 1.5em"><ExternalLink /></Icon>跳转到该处</Button
+            ><Icon style="font-size: 1.5em"><ExternalLink /></Icon
+            >{{ $t('comp.flowchart.aliya2_demo.node.OtherFlowchart.jumpTo.title') }}</Button
           >
         </div>
       </div>
