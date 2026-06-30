@@ -26,6 +26,17 @@ export const navItems = [
     ],
   },
   {
+    label: 'menu.special',
+    icon: 'pi pi-book',
+    items: [
+      {
+        label: 'menu.special.aliya2_demo',
+        route: '/special/aliya2_demo',
+        icon: '/aliya/game_icon/aliya2_demo.ico',
+      },
+    ],
+  },
+  {
     label: 'menu.about',
     icon: 'pi pi-info-circle',
     items: [

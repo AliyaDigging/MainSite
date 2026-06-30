@@ -10,10 +10,11 @@ import type { FlowchartData as FlowchartData_2361Playtest } from '@/components/f
 import type { FlowchartData as FlowchartData_TysyDemo } from '@/components/flowchart/tysy_demo/types/script3'
 import type { FlowchartData as FlowchartData_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script3'
 import type { CatalogMetadataFile as CatalogMetadataFile_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script4'
-import type { L10nSingleLangEntry as L10nSingleLangEntry_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script5'
+import type { L10nAllLangEntry as L10nAllLangEntry_Aliya2Demo, L10nSingleLangEntry as L10nSingleLangEntry_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script5'
 import type { ExternalConfig as ExternalConfig_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script6'
-import type { ActorData as ActorData_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script7'
+import type { ActorData as ActorData_Aliya2Demo, ItemData as ItemData_Aliya2Demo, VariableData as VariableData_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script7'
 import type { VariableUsage as VariableUsage_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script8'
+import type { MergeInfo as MergeInfo_Aliya2Demo } from '@/components/flowchart/aliya2_demo/types/script13'
 import type { VariableUsage_Aliya1 } from '@/components/flowchart/aliya1/types/script9'
 import type { VariableUsage as VariableUsage_TysyDemo } from '@/components/flowchart/tysy_demo/types/script5'
 import type { CatalogData as CatalogData_TysyDemo } from '@/components/flowchart/tysy_demo/types/script4'
@@ -95,11 +96,25 @@ export const symbolFlowchartVarUsage_Aliya2Demo = Symbol('var_usage_aliya2_demo'
 >
 
 export const symbolExternalConfig_Aliya2Demo = Symbol('external_config_aliya2_demo') as InjectionKey<
-  Ref<ExternalConfig_Aliya2Demo>
+  Ref<ExternalConfig_Aliya2Demo | null>
 >
 
 export const symbolActorData_Aliya2Demo = Symbol('actor_data_aliya2_demo') as InjectionKey<
-  Ref<ActorData_Aliya2Demo>
+  Ref<ActorData_Aliya2Demo | null>
+>
+
+export const symbolItemData_Aliya2Demo = Symbol('item_data_aliya2_demo') as InjectionKey<
+  Ref<ItemData_Aliya2Demo | null>
+>
+export const symbolVariableData_Aliya2Demo = Symbol('variable_data_aliya2_demo') as InjectionKey<
+  Ref<VariableData_Aliya2Demo | null>
+>
+export const symbolL10nAllLangData_Aliya2Demo = Symbol('l10n_all_lang_data_aliya2_demo') as InjectionKey<
+  Ref<L10nAllLangEntry_Aliya2Demo | null>
+>
+
+export const symbolMergeInfo_Aliya2Demo = Symbol('merge_info_aliya2_demo') as InjectionKey<
+  Ref<MergeInfo_Aliya2Demo | null>
 >
 
 /** 通用 L10N 数据注入键 — 供搜索面板使用，各父页面负责规范化为扁平 Record<string, string> */

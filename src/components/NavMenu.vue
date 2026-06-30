@@ -42,12 +42,18 @@ function openSetting() {
     <template #item="{ item, props, hasSubmenu }">
       <RouterLink v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
         <a v-ripple :href="href" v-bind="props.action" @click="navigate">
-          <span :class="item.icon" />
+          <img
+            v-if="item.icon && item.icon.startsWith('/')"
+            :src="item.icon"
+            style="height: 24px"
+          />
+          <span v-else :class="item.icon" />
           <span>{{ $t(String(item.label)) }}</span>
         </a>
       </RouterLink>
       <a v-else v-ripple :href="item.url" :target="item.target" v-bind="props.action">
-        <span :class="item.icon" />
+        <img v-if="item.icon && item.icon.startsWith('/')" :src="item.icon" style="height: 24px" />
+        <span v-else :class="item.icon" />
         <span>{{ $t(String(item.label)) }}</span>
         <span v-if="hasSubmenu" class="pi pi-fw pi-angle-down" />
       </a>

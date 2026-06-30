@@ -28,6 +28,12 @@ const router = createRouter({
       props: true,
     },
     {
+      path: '/special/aliya2_demo/:versionId?',
+      name: 'view_special_aliya2_demo',
+      component: () => import('../views/ViewSpecialAliya2Demo.vue'),
+      props: true,
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue'),

@@ -17,6 +17,16 @@ const props = defineProps({
     required: false,
     default: false,
   },
+  showGameSelect: {
+    type: Boolean,
+    required: false,
+    default: true,
+  },
+  showVersionSelect: {
+    type: Boolean,
+    required: false,
+    default: true,
+  },
 })
 const gameSelection = defineModel('gameSelection', { type: String })
 const versionSelection = defineModel('versionSelection', { type: String })
@@ -117,7 +127,7 @@ function openVersionInfoDialog(data: AllDataCatalogEntry['versions'][number]) {
 </script>
 
 <template>
-  <p class="select-title text-color mb-2">
+  <p class="select-title text-color mb-2" v-if="showGameSelect">
     {{ $t('comp.flowchart.select.title1') }}
     <PvSelect v-model="local_gameSelection" :options="dataAllCatalog">
       <template #option="slotProps">
@@ -152,8 +162,9 @@ function openVersionInfoDialog(data: AllDataCatalogEntry['versions'][number]) {
   <p
     class="select-title text-color mb-2"
     v-if="
-      (displayVersionSelectionAfterGameSelection && gameSelection !== '') || // when true
-      !displayVersionSelectionAfterGameSelection // when false
+      showVersionSelect &&
+      ((displayVersionSelectionAfterGameSelection && gameSelection !== '') || // when true
+      !displayVersionSelectionAfterGameSelection) // when false
     "
   >
     {{ $t('comp.flowchart.select.title2') }}
