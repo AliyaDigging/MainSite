@@ -1,0 +1,3912 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 111,
+      "edge": 141,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {
+      "Oleg.OlegConnect": {
+        "key": "Oleg.OlegConnect",
+        "type": "boolean"
+      },
+      "Oleg.C3_2Oleg_1": {
+        "key": "Oleg.C3_2Oleg_1",
+        "type": "boolean"
+      },
+      "Oleg.C3_2Oleg_2": {
+        "key": "Oleg.C3_2Oleg_2",
+        "type": "boolean"
+      },
+      "Kane.C3_2Oleg_Kane_1": {
+        "key": "Kane.C3_2Oleg_Kane_1",
+        "type": "boolean"
+      },
+      "Kane.C3_2Oleg_Kane_3": {
+        "key": "Kane.C3_2Oleg_Kane_3",
+        "type": "boolean"
+      },
+      "Kane.C3_2Oleg_Kane_4": {
+        "key": "Kane.C3_2Oleg_Kane_4",
+        "type": "boolean"
+      }
+    },
+    "flowchartRefs": [],
+    "currName": "Oleg",
+    "currId": "8",
+    "articyInternal": {
+      "title": "Oleg",
+      "description": "",
+      "articyId": "72057611217797200",
+      "channelId": "Oleg"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "8_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "8_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797200"
+          }
+        }
+      },
+      {
+        "id": "8_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "8_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797200"
+          }
+        }
+      },
+      {
+        "id": "8_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "8_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797200"
+          }
+        }
+      },
+      {
+        "id": "8_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "8_3",
+            "title": "Oleg: \"$md{联络成功}\"",
+            "dialogueText": "$md{联络成功}",
+            "menuText": "",
+            "articyId": "72057636987613470"
+          }
+        }
+      },
+      {
+        "id": "12_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "12_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797260"
+          }
+        }
+      },
+      {
+        "id": "12_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Oleg.OlegConnect\"]=true",
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "12_3",
+            "title": "Oleg.OlegConnect=true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987616750"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Oleg.OlegConnect",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "13_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627865440"
+          }
+        }
+      },
+      {
+        "id": "13_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": "Variable[\"Oleg.C3_2Oleg_1\"] == true",
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_3",
+            "title": "Player: \"那你又是谁？\"",
+            "dialogueText": "那你又是谁？",
+            "menuText": "",
+            "articyId": "72057602627864850"
+          },
+          "variableOps": {
+            "assignments": [],
+            "condition": {
+              "variableName": "Oleg.C3_2Oleg_1",
+              "compareOp": "eq",
+              "valueAgainst": true
+            }
+          }
+        }
+      },
+      {
+        "id": "13_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_4",
+            "title": "Oleg: \"你是谁？\"",
+            "dialogueText": "你是谁？",
+            "menuText": "",
+            "articyId": "72057602627864860"
+          }
+        }
+      },
+      {
+        "id": "13_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_5",
+            "title": "Player: \"为什么在我的屏幕里…你的信息会有两种格式？\"",
+            "dialogueText": "为什么在我的屏幕里…你的信息会有两种格式？",
+            "menuText": "",
+            "articyId": "72057602627864860"
+          }
+        }
+      },
+      {
+        "id": "13_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_6",
+            "title": "Oleg: \"…… Milia一切都好，只是最近不在矿上工作了 这么转告...\"",
+            "dialogueText": "……",
+            "menuText": "",
+            "articyId": "72057602627864880"
+          }
+        }
+      },
+      {
+        "id": "13_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_7",
+            "title": "Player: \"暴露什么信息？\"",
+            "dialogueText": "暴露什么信息？",
+            "menuText": "",
+            "articyId": "72057602627864880"
+          }
+        }
+      },
+      {
+        "id": "13_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_8",
+            "title": "Player: \"为什么不要聊太多？我看不懂你在说什么\"",
+            "dialogueText": "为什么不要聊太多？我看不懂你在说什么",
+            "menuText": "",
+            "articyId": "72057602627864880"
+          }
+        }
+      },
+      {
+        "id": "13_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": "Variable[\"Oleg.C3_2Oleg_2\"] == true",
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_9",
+            "title": "Player: \"你是Oleg么？太好了，你终于回我消息了\"",
+            "dialogueText": "你是Oleg么？太好了，你终于回我消息了",
+            "menuText": "",
+            "articyId": "72057602627864900"
+          },
+          "variableOps": {
+            "assignments": [],
+            "condition": {
+              "variableName": "Oleg.C3_2Oleg_2",
+              "compareOp": "eq",
+              "valueAgainst": true
+            }
+          }
+        }
+      },
+      {
+        "id": "13_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_10",
+            "title": "Player: \"我是Kane的朋友，他需要你的帮助\"",
+            "dialogueText": "我是Kane的朋友，他需要你的帮助",
+            "menuText": "",
+            "articyId": "72057602627864900"
+          }
+        }
+      },
+      {
+        "id": "13_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_11",
+            "title": "Player: \"是Kane让我来找你的\"",
+            "dialogueText": "是Kane让我来找你的",
+            "menuText": "",
+            "articyId": "72057602627864900"
+          }
+        }
+      },
+      {
+        "id": "13_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_12",
+            "title": "Oleg: \"是你主动联系的我，现在反问我？\"",
+            "dialogueText": "是你主动联系的我，现在反问我？",
+            "menuText": "",
+            "articyId": "72057602627864910"
+          }
+        }
+      },
+      {
+        "id": "13_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Oleg.C3_2Oleg_1\"] = true",
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_13",
+            "title": "Oleg.C3_2Oleg_1 = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864910"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Oleg.C3_2Oleg_1",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "13_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_14",
+            "title": "Oleg: \"说明你的身份 否则我会拉黑你的通讯地址\"",
+            "dialogueText": "说明你的身份",
+            "menuText": "",
+            "articyId": "72057602627864930"
+          }
+        }
+      },
+      {
+        "id": "13_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Oleg.C3_2Oleg_2\"] = true",
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_15",
+            "title": "Oleg.C3_2Oleg_2 = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864930"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Oleg.C3_2Oleg_2",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "13_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_16",
+            "title": "未命名核心",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864930"
+          }
+        }
+      },
+      {
+        "id": "13_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_17",
+            "title": "Oleg: \"证据 给我证明你认识他的证据\"",
+            "dialogueText": "证据",
+            "menuText": "",
+            "articyId": "72057602627864940"
+          }
+        }
+      },
+      {
+        "id": "13_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_18",
+            "title": "Player: \"Kane是一个工程师\"",
+            "dialogueText": "Kane是一个工程师",
+            "menuText": "",
+            "articyId": "72057602627864960"
+          }
+        }
+      },
+      {
+        "id": "13_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_19",
+            "title": "Player: \"Kane有一个女友叫做Ryoko\"",
+            "dialogueText": "Kane有一个女友叫做Ryoko",
+            "menuText": "",
+            "articyId": "72057602627864960"
+          }
+        }
+      },
+      {
+        "id": "13_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_20",
+            "title": "Player: \"Kane有一个朋友叫做Aliya\"",
+            "dialogueText": "Kane有一个朋友叫做Aliya",
+            "menuText": "",
+            "articyId": "72057602627864960"
+          }
+        }
+      },
+      {
+        "id": "13_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_21",
+            "title": "未命名核心 (02)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864980"
+          }
+        }
+      },
+      {
+        "id": "13_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_22",
+            "title": "Oleg: \"我要的不是这种调查一下就能获得的信息 告诉我一件，是只有我和他才...\"",
+            "dialogueText": "我要的不是这种调查一下就能获得的信息",
+            "menuText": "",
+            "articyId": "72057602627864980"
+          }
+        }
+      },
+      {
+        "id": "13_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_23",
+            "title": "Oleg: \"我不认识你说的这个人是谁 告诉我一件只有我和他才知道的事情\"",
+            "dialogueText": "我不认识你说的这个人是谁",
+            "menuText": "",
+            "articyId": "72057602627865000"
+          }
+        }
+      },
+      {
+        "id": "13_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_24",
+            "title": "未命名核心 (03)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627865000"
+          }
+        }
+      },
+      {
+        "id": "13_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_25",
+            "title": "Player: \"那你不早说……\"",
+            "dialogueText": "那你不早说……",
+            "menuText": "",
+            "articyId": "72057602627865000"
+          }
+        }
+      },
+      {
+        "id": "13_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_26",
+            "title": "Player: \"我没这个时间做这种事情啊！\"",
+            "dialogueText": "我没这个时间做这种事情啊！",
+            "menuText": "",
+            "articyId": "72057602627865010"
+          }
+        }
+      },
+      {
+        "id": "13_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_27",
+            "title": "Player: \"拜托！现在十万火急！\"",
+            "dialogueText": "拜托！现在十万火急！",
+            "menuText": "",
+            "articyId": "72057602627865010"
+          }
+        }
+      },
+      {
+        "id": "13_28",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_28",
+            "title": "Oleg: \"$md{……}\"",
+            "dialogueText": "$md{……}",
+            "menuText": "",
+            "articyId": "72057602627865020"
+          }
+        }
+      },
+      {
+        "id": "13_29",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_29",
+            "title": "Player: \"你还在线么？\"",
+            "dialogueText": "你还在线么？",
+            "menuText": "",
+            "articyId": "72057602627865020"
+          }
+        }
+      },
+      {
+        "id": "13_30",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_30",
+            "title": "Player: \"好吧，我现在去问Kane…\"",
+            "dialogueText": "好吧，我现在去问Kane…",
+            "menuText": "",
+            "articyId": "72057602627865020"
+          }
+        }
+      },
+      {
+        "id": "13_31",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_31",
+            "title": "Player: \"要不是他现在不方便…我真不想当传话筒…\"",
+            "dialogueText": "要不是他现在不方便…我真不想当传话筒…",
+            "menuText": "",
+            "articyId": "72057602627865040"
+          }
+        }
+      },
+      {
+        "id": "13_32",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_32",
+            "title": "Oleg: \"$md{……}\"",
+            "dialogueText": "$md{……}",
+            "menuText": "",
+            "articyId": "72057602627865040"
+          }
+        }
+      },
+      {
+        "id": "13_33",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_33",
+            "title": "Player: \"好麻烦啊…你一定要浪费时间在这种事情上么…\"",
+            "dialogueText": "好麻烦啊…你一定要浪费时间在这种事情上么…",
+            "menuText": "",
+            "articyId": "72057602627865040"
+          }
+        }
+      },
+      {
+        "id": "13_34",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Kane.C3_2Oleg_Kane_1\"] = true",
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_34",
+            "title": "Kane.C3_2Oleg_Kane_1 = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627865060"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Kane.C3_2Oleg_Kane_1",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "13_35",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Oleg.C3_2Kane_Oleg_1",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Oleg.C3_2Kane_Oleg_1\", true, Variable[\"JudgmentType.Equal\"])",
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_35",
+            "title": "AliyaFunc.WaitForCondition(\"Oleg.C3_2Kane_Oleg_1\", true, JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627865070"
+          }
+        }
+      },
+      {
+        "id": "13_36",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_36",
+            "title": "Player: \"你第一次和你妻子约会的时候向Kane借了裤子\"",
+            "dialogueText": "你第一次和你妻子约会的时候向Kane借了裤子",
+            "menuText": "",
+            "articyId": "72057602627865090"
+          }
+        }
+      },
+      {
+        "id": "13_37",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_37",
+            "title": "Player: \"听说你第一次约会的故事很有趣啊~\"",
+            "dialogueText": "听说你第一次约会的故事很有趣啊~",
+            "menuText": "",
+            "articyId": "72057602627865090"
+          }
+        }
+      },
+      {
+        "id": "13_38",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_38",
+            "title": "Player: \"你第一次和Kane约会的时候，向他借了裤子\"",
+            "dialogueText": "你第一次和Kane约会的时候，向他借了裤子",
+            "menuText": "",
+            "articyId": "72057602627865090"
+          }
+        }
+      },
+      {
+        "id": "13_39",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_39",
+            "title": "Oleg: \"说下去\"",
+            "dialogueText": "说下去",
+            "menuText": "",
+            "articyId": "72057602627865100"
+          }
+        }
+      },
+      {
+        "id": "13_40",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_40",
+            "title": "Oleg: \"$md{白痴…}\"",
+            "dialogueText": "$md{白痴…}",
+            "menuText": "",
+            "articyId": "72057602627865120"
+          }
+        }
+      },
+      {
+        "id": "13_41",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_41",
+            "title": "Oleg: \"找我什么事\"",
+            "dialogueText": "找我什么事",
+            "menuText": "",
+            "articyId": "72057602627865120"
+          }
+        }
+      },
+      {
+        "id": "13_42",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_42",
+            "title": "Oleg: \"$md{……}\"",
+            "dialogueText": "$md{……}",
+            "menuText": "",
+            "articyId": "72057602627865120"
+          }
+        }
+      },
+      {
+        "id": "13_43",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_43",
+            "title": "Player: \"他还说你是因为约会紧张，才把裤子撕裂的\"",
+            "dialogueText": "他还说你是因为约会紧张，才把裤子撕裂的",
+            "menuText": "",
+            "articyId": "72057602627865140"
+          }
+        }
+      },
+      {
+        "id": "13_44",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_44",
+            "title": "Player: \"我们有一件事情想请你帮忙\"",
+            "dialogueText": "我们有一件事情想请你帮忙",
+            "menuText": "",
+            "articyId": "72057602627865140"
+          }
+        }
+      },
+      {
+        "id": "13_45",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_45",
+            "title": "Player: \"Kane说这件事情只能找你帮忙\"",
+            "dialogueText": "Kane说这件事情只能找你帮忙",
+            "menuText": "",
+            "articyId": "72057602627865150"
+          }
+        }
+      },
+      {
+        "id": "13_46",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_46",
+            "title": "Oleg: \"直接点 找我什么事\"",
+            "dialogueText": "直接点",
+            "menuText": "",
+            "articyId": "72057602627865150"
+          }
+        }
+      },
+      {
+        "id": "13_47",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_47",
+            "title": "Oleg: \"没兴趣\"",
+            "dialogueText": "没兴趣",
+            "menuText": "",
+            "articyId": "72057602627865150"
+          }
+        }
+      },
+      {
+        "id": "13_48",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_48",
+            "title": "Player: \"那你干嘛还要问我？！\"",
+            "dialogueText": "那你干嘛还要问我？！",
+            "menuText": "",
+            "articyId": "72057602627865170"
+          }
+        }
+      },
+      {
+        "id": "13_49",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_49",
+            "title": "Player: \"可是Kane确实需要你的帮助\"",
+            "dialogueText": "可是Kane确实需要你的帮助",
+            "menuText": "",
+            "articyId": "72057602627865180"
+          }
+        }
+      },
+      {
+        "id": "13_50",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_50",
+            "title": "Player: \"那怎样你才愿意帮忙呢？\"",
+            "dialogueText": "那怎样你才愿意帮忙呢？",
+            "menuText": "",
+            "articyId": "72057602627865180"
+          }
+        }
+      },
+      {
+        "id": "13_51",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_51",
+            "title": "Oleg: \"$md{…}\"",
+            "dialogueText": "$md{…}",
+            "menuText": "",
+            "articyId": "72057602627865180"
+          }
+        }
+      },
+      {
+        "id": "13_52",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_52",
+            "title": "Oleg: \"我没兴趣帮一个消失了十几年又突然出现的人 另外，他为什么不主动联...\"",
+            "dialogueText": "我没兴趣帮一个消失了十几年又突然出现的人",
+            "menuText": "",
+            "articyId": "72057602627865200"
+          }
+        }
+      },
+      {
+        "id": "13_53",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_53",
+            "title": "Player: \"他现在无法对外联系，只能由我来转述\"",
+            "dialogueText": "他现在无法对外联系，只能由我来转述",
+            "menuText": "",
+            "articyId": "72057602627865200"
+          }
+        }
+      },
+      {
+        "id": "13_54",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_54",
+            "title": "Player: \"Kane已经死了，而我是能够和死去亡灵对话的通灵者\"",
+            "dialogueText": "Kane已经死了，而我是能够和死去亡灵对话的通灵者",
+            "menuText": "",
+            "articyId": "72057602627865220"
+          }
+        }
+      },
+      {
+        "id": "13_55",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_55",
+            "title": "Player: \"他正在执行秘密研究，不能让任何人追踪到他的位置\"",
+            "dialogueText": "他正在执行秘密研究，不能让任何人追踪到他的位置",
+            "menuText": "",
+            "articyId": "72057602627865220"
+          }
+        }
+      },
+      {
+        "id": "13_56",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_56",
+            "title": "Oleg: \"是么 很好，我的好奇心已经消失了 你可以滚了\"",
+            "dialogueText": "是么",
+            "menuText": "",
+            "articyId": "72057602627865230"
+          }
+        }
+      },
+      {
+        "id": "13_57",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_57",
+            "title": "Player: \"你说话一直都这么讨人嫌么？\"",
+            "dialogueText": "你说话一直都这么讨人嫌么？",
+            "menuText": "",
+            "articyId": "72057602627865250"
+          }
+        }
+      },
+      {
+        "id": "13_58",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_58",
+            "title": "Player: \"应该会有很多人觉得你很友善吧？\"",
+            "dialogueText": "应该会有很多人觉得你很友善吧？",
+            "menuText": "",
+            "articyId": "72057602627865250"
+          }
+        }
+      },
+      {
+        "id": "13_59",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_59",
+            "title": "Player: \"好吧…\"",
+            "dialogueText": "好吧…",
+            "menuText": "",
+            "articyId": "72057602627865250"
+          }
+        }
+      },
+      {
+        "id": "13_60",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_60",
+            "title": "Oleg: \"$md{……}\"",
+            "dialogueText": "$md{……}",
+            "menuText": "",
+            "articyId": "72057602627865260"
+          }
+        }
+      },
+      {
+        "id": "13_61",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Kane.C3_2Oleg_Kane_3\"] = true",
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_61",
+            "title": "Kane.C3_2Oleg_Kane_3 = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627865260"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Kane.C3_2Oleg_Kane_3",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "13_62",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Oleg.C3_2Kane_Oleg_3",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Oleg.C3_2Kane_Oleg_3\", true, Variable[\"JudgmentType.Equal\"])",
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_62",
+            "title": "AliyaFunc.WaitForCondition(\"Oleg.C3_2Kane_Oleg_3\", true, JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627865280"
+          }
+        }
+      },
+      {
+        "id": "13_63",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_63",
+            "title": "Player: \"这是Kane让我发给你的照片\"",
+            "dialogueText": "这是Kane让我发给你的照片",
+            "menuText": "",
+            "articyId": "72057602627865280"
+          }
+        }
+      },
+      {
+        "id": "13_64",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_64",
+            "title": "Player: \"这样你总能相信我了吧！\"",
+            "dialogueText": "这样你总能相信我了吧！",
+            "menuText": "",
+            "articyId": "72057602627865280"
+          }
+        }
+      },
+      {
+        "id": "13_65",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 10,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(10)",
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_65",
+            "title": "AliyaFunc.WaitTime(10)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627865300"
+          }
+        }
+      },
+      {
+        "id": "13_66",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_66",
+            "title": "Player: \"$image{Ryoko和Kane的合影}<[发送Ryoko和Kane...\"",
+            "dialogueText": "$image{Ryoko和Kane的合影}<[发送Ryoko和Kane的合影]>",
+            "menuText": "",
+            "articyId": "72057602627865300"
+          }
+        }
+      },
+      {
+        "id": "13_67",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_67",
+            "title": "Oleg: \"$md{软件分析照片没有经过任何处理或修改}\"",
+            "dialogueText": "$md{软件分析照片没有经过任何处理或修改}",
+            "menuText": "",
+            "articyId": "72057602627865310"
+          }
+        }
+      },
+      {
+        "id": "13_68",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_68",
+            "title": "Player: \"Kane现在被泰瑞整到了月球一个基地做研究，他需要你帮他确定具体位置\"",
+            "dialogueText": "Kane现在被泰瑞整到了月球一个基地做研究，他需要你帮他确定具体位置",
+            "menuText": "",
+            "articyId": "72057602627865310"
+          }
+        }
+      },
+      {
+        "id": "13_69",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_69",
+            "title": "Player: \"Kane被软禁在月球一个地方了，你得去帮帮他\"",
+            "dialogueText": "Kane被软禁在月球一个地方了，你得去帮帮他",
+            "menuText": "",
+            "articyId": "72057602627865310"
+          }
+        }
+      },
+      {
+        "id": "13_70",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_70",
+            "title": "Oleg: \"没事了就不要再骚扰我了\"",
+            "dialogueText": "没事了就不要再骚扰我了",
+            "menuText": "",
+            "articyId": "72057602627865330"
+          }
+        }
+      },
+      {
+        "id": "13_71",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_71",
+            "title": "Oleg: \"还没有确定基地的具体位置是么？ 不行 无论是时间还是距离，...\"",
+            "dialogueText": "还没有确定基地的具体位置是么？",
+            "menuText": "",
+            "articyId": "72057602627865340"
+          }
+        }
+      },
+      {
+        "id": "13_72",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_72",
+            "title": "Player: \"好吧，看来你也没有Kane说的很厉害\"",
+            "dialogueText": "好吧，看来你也没有Kane说的很厉害",
+            "menuText": "",
+            "articyId": "72057602627865340"
+          }
+        }
+      },
+      {
+        "id": "13_73",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_73",
+            "title": "Player: \"那我们只能想别的办法了\"",
+            "dialogueText": "那我们只能想别的办法了",
+            "menuText": "",
+            "articyId": "72057602627865360"
+          }
+        }
+      },
+      {
+        "id": "13_74",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_74",
+            "title": "Player: \"感谢你成功的浪费了我的时间…\"",
+            "dialogueText": "感谢你成功的浪费了我的时间…",
+            "menuText": "",
+            "articyId": "72057602627865360"
+          }
+        }
+      },
+      {
+        "id": "13_75",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_75",
+            "title": "Oleg: \"不过… 也许你可以让Kane调查一下货舱 任何地方想要长期...\"",
+            "dialogueText": "不过…",
+            "menuText": "",
+            "articyId": "72057602627865360"
+          }
+        }
+      },
+      {
+        "id": "13_76",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_76",
+            "title": "Player: \"我现在就去和Kane说！\"",
+            "dialogueText": "我现在就去和Kane说！",
+            "menuText": "",
+            "articyId": "72057602627865380"
+          }
+        }
+      },
+      {
+        "id": "13_77",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_77",
+            "title": "Player: \"太谢谢你了！\"",
+            "dialogueText": "太谢谢你了！",
+            "menuText": "",
+            "articyId": "72057602627865380"
+          }
+        }
+      },
+      {
+        "id": "13_78",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_78",
+            "title": "Player: \"看来你还是有点能耐的嘛\"",
+            "dialogueText": "看来你还是有点能耐的嘛",
+            "menuText": "",
+            "articyId": "72057602627865380"
+          }
+        }
+      },
+      {
+        "id": "13_79",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_79",
+            "title": "Oleg: \"$md{基本上没有暴露太多信息} $md{最好还是不要和这个家伙...\"",
+            "dialogueText": "$md{基本上没有暴露太多信息}",
+            "menuText": "",
+            "articyId": "72057602627865390"
+          }
+        }
+      },
+      {
+        "id": "13_80",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_80",
+            "title": "Oleg: \"我要走了\"",
+            "dialogueText": "我要走了",
+            "menuText": "",
+            "articyId": "72057602627865390"
+          }
+        }
+      },
+      {
+        "id": "13_81",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Kane.C3_2Oleg_Kane_4\"] = true",
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_81",
+            "title": "Kane.C3_2Oleg_Kane_4 = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627865400"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Kane.C3_2Oleg_Kane_4",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "13_82",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_82",
+            "title": "Oleg: \"$image{Oleg镜子中的自己}\"",
+            "dialogueText": "$image{Oleg镜子中的自己}",
+            "menuText": "",
+            "articyId": "72057602627865440"
+          }
+        }
+      },
+      {
+        "id": "13_83",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForever",
+        "data": {
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForever()",
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "4",
+          "articyInternal": {
+            "dialogueId": "13_83",
+            "title": "AliyaFunc.WaitForever()",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627865500"
+          }
+        }
+      },
+      {
+        "id": "13_84",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_84",
+            "title": "Player: \"另外，Kane向你妻子Milia问好，询问她现在怎么样？\"",
+            "dialogueText": "另外，Kane向你妻子Milia问好，询问她现在怎么样？",
+            "menuText": "",
+            "articyId": "72057641282599300"
+          }
+        }
+      },
+      {
+        "id": "13_85",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_85",
+            "title": "Player: \"Kane询问MIlia最近怎么样？\"",
+            "dialogueText": "Kane询问MIlia最近怎么样？",
+            "menuText": "",
+            "articyId": "72057641282599300"
+          }
+        }
+      },
+      {
+        "id": "13_86",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_86",
+            "title": "Oleg: \"$md{这家伙到底是怎么绕过防火墙和我的脑内终端连接上的}\"",
+            "dialogueText": "$md{这家伙到底是怎么绕过防火墙和我的脑内终端连接上的}",
+            "menuText": "",
+            "articyId": "72057636987616720"
+          }
+        }
+      },
+      {
+        "id": "13_87",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_87",
+            "title": "Oleg: \"…… Milia一切都好，只是最近不在矿上工作了 这么转告...\"",
+            "dialogueText": "Milia一切都好，只是最近不在矿上工作了",
+            "menuText": "",
+            "articyId": "0x0100000200000929-1"
+          }
+        }
+      },
+      {
+        "id": "13_88",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_88",
+            "title": "Oleg: \"…… Milia一切都好，只是最近不在矿上工作了 这么转告...\"",
+            "dialogueText": "这么转告他就好",
+            "menuText": "",
+            "articyId": "0x0100000200000929-2"
+          }
+        }
+      },
+      {
+        "id": "13_89",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_89",
+            "title": "Oleg: \"…… Milia一切都好，只是最近不在矿上工作了 这么转告...\"",
+            "dialogueText": "这么多年了，这家伙竟然没什么变化",
+            "menuText": "",
+            "articyId": "0x0100000200000929-3"
+          }
+        }
+      },
+      {
+        "id": "13_90",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_90",
+            "title": "Oleg: \"…… Milia一切都好，只是最近不在矿上工作了 这么转告...\"",
+            "dialogueText": "说吧，你找我做什么事？",
+            "menuText": "",
+            "articyId": "0x0100000200000929-4"
+          }
+        }
+      },
+      {
+        "id": "13_91",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_91",
+            "title": "Oleg: \"说明你的身份 否则我会拉黑你的通讯地址\"",
+            "dialogueText": "否则我会拉黑你的通讯地址",
+            "menuText": "",
+            "articyId": "0x0100000200000959-1"
+          }
+        }
+      },
+      {
+        "id": "13_92",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_92",
+            "title": "Oleg: \"证据 给我证明你认识他的证据\"",
+            "dialogueText": "给我证明你认识他的证据",
+            "menuText": "",
+            "articyId": "0x0100000200000970-1"
+          }
+        }
+      },
+      {
+        "id": "13_93",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_93",
+            "title": "Oleg: \"我要的不是这种调查一下就能获得的信息 告诉我一件，是只有我和他才...\"",
+            "dialogueText": "告诉我一件，是只有我和他才知道的事情",
+            "menuText": "",
+            "articyId": "0x0100000200000993-1"
+          }
+        }
+      },
+      {
+        "id": "13_94",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_94",
+            "title": "Oleg: \"我不认识你说的这个人是谁 告诉我一件只有我和他才知道的事情\"",
+            "dialogueText": "告诉我一件只有我和他才知道的事情",
+            "menuText": "",
+            "articyId": "0x0100000200000999-1"
+          }
+        }
+      },
+      {
+        "id": "13_95",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_95",
+            "title": "Oleg: \"直接点 找我什么事\"",
+            "dialogueText": "找我什么事",
+            "menuText": "",
+            "articyId": "0x0100000200000A42-1"
+          }
+        }
+      },
+      {
+        "id": "13_96",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_96",
+            "title": "Oleg: \"我没兴趣帮一个消失了十几年又突然出现的人 另外，他为什么不主动联...\"",
+            "dialogueText": "另外，他为什么不主动联系我？",
+            "menuText": "",
+            "articyId": "0x0100000200000A71-1"
+          }
+        }
+      },
+      {
+        "id": "13_97",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_97",
+            "title": "Oleg: \"是么 很好，我的好奇心已经消失了 你可以滚了\"",
+            "dialogueText": "很好，我的好奇心已经消失了",
+            "menuText": "",
+            "articyId": "0x0100000200000A8F-1"
+          }
+        }
+      },
+      {
+        "id": "13_98",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_98",
+            "title": "Oleg: \"是么 很好，我的好奇心已经消失了 你可以滚了\"",
+            "dialogueText": "你可以滚了",
+            "menuText": "",
+            "articyId": "0x0100000200000A8F-2"
+          }
+        }
+      },
+      {
+        "id": "13_99",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_99",
+            "title": "Oleg: \"还没有确定基地的具体位置是么？ 不行 无论是时间还是距离，...\"",
+            "dialogueText": "不行",
+            "menuText": "",
+            "articyId": "0x0100000200000AFD-1"
+          }
+        }
+      },
+      {
+        "id": "13_100",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_100",
+            "title": "Oleg: \"还没有确定基地的具体位置是么？ 不行 无论是时间还是距离，...\"",
+            "dialogueText": "无论是时间还是距离，这个忙我都帮不上",
+            "menuText": "",
+            "articyId": "0x0100000200000AFD-2"
+          }
+        }
+      },
+      {
+        "id": "13_101",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_101",
+            "title": "Oleg: \"还没有确定基地的具体位置是么？ 不行 无论是时间还是距离，...\"",
+            "dialogueText": "你们去烦别人吧",
+            "menuText": "",
+            "articyId": "0x0100000200000AFD-3"
+          }
+        }
+      },
+      {
+        "id": "13_102",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_102",
+            "title": "Oleg: \"不过… 也许你可以让Kane调查一下货舱 任何地方想要长期...\"",
+            "dialogueText": "也许你可以让Kane调查一下货舱",
+            "menuText": "",
+            "articyId": "0x0100000200000B15-1"
+          }
+        }
+      },
+      {
+        "id": "13_103",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_103",
+            "title": "Oleg: \"不过… 也许你可以让Kane调查一下货舱 任何地方想要长期...\"",
+            "dialogueText": "任何地方想要长期维持运转，一定需要外部源源不断的提供物资",
+            "menuText": "",
+            "articyId": "0x0100000200000B15-2"
+          }
+        }
+      },
+      {
+        "id": "13_104",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_104",
+            "title": "Oleg: \"不过… 也许你可以让Kane调查一下货舱 任何地方想要长期...\"",
+            "dialogueText": "找到货仓，就有可能找到货单信息",
+            "menuText": "",
+            "articyId": "0x0100000200000B15-3"
+          }
+        }
+      },
+      {
+        "id": "13_105",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_105",
+            "title": "Oleg: \"不过… 也许你可以让Kane调查一下货舱 任何地方想要长期...\"",
+            "dialogueText": "这样起码可以确定被关押的地点",
+            "menuText": "",
+            "articyId": "0x0100000200000B15-4"
+          }
+        }
+      },
+      {
+        "id": "13_106",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "4",
+          "channelId": "Oleg",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "13_106",
+            "title": "Oleg: \"$md{基本上没有暴露太多信息} $md{最好还是不要和这个家伙...\"",
+            "dialogueText": "$md{最好还是不要和这个家伙聊太多}",
+            "menuText": "",
+            "articyId": "0x0100000200000B2D-1"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "8_0->8_1",
+        "source": "8_0",
+        "target": "8_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "8_1->8_3",
+        "source": "8_1",
+        "target": "8_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "8_3->8_2",
+        "source": "8_3",
+        "target": "8_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "8_2->12_1",
+        "source": "8_2",
+        "target": "12_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "12_1->12_3",
+        "source": "12_1",
+        "target": "12_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "12_3->13_1",
+        "source": "12_3",
+        "target": "13_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_1->13_82",
+        "source": "13_1",
+        "target": "13_82",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_3->13_12",
+        "source": "13_3",
+        "target": "13_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_4->13_16",
+        "source": "13_4",
+        "target": "13_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_5->13_51",
+        "source": "13_5",
+        "target": "13_51",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_6->13_87",
+        "source": "13_6",
+        "target": "13_87",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_7->13_51",
+        "source": "13_7",
+        "target": "13_51",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_8->13_51",
+        "source": "13_8",
+        "target": "13_51",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_9->13_14",
+        "source": "13_9",
+        "target": "13_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_10->13_17",
+        "source": "13_10",
+        "target": "13_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_11->13_17",
+        "source": "13_11",
+        "target": "13_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_12->13_13",
+        "source": "13_12",
+        "target": "13_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_13->13_16",
+        "source": "13_13",
+        "target": "13_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_14->13_91",
+        "source": "13_14",
+        "target": "13_91",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_15->13_16",
+        "source": "13_15",
+        "target": "13_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_16->13_3",
+        "source": "13_16",
+        "target": "13_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_16->13_9",
+        "source": "13_16",
+        "target": "13_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_16->13_10",
+        "source": "13_16",
+        "target": "13_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_16->13_11",
+        "source": "13_16",
+        "target": "13_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_17->13_92",
+        "source": "13_17",
+        "target": "13_92",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_18->13_22",
+        "source": "13_18",
+        "target": "13_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_19->13_23",
+        "source": "13_19",
+        "target": "13_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_20->13_23",
+        "source": "13_20",
+        "target": "13_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_21->13_18",
+        "source": "13_21",
+        "target": "13_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_21->13_19",
+        "source": "13_21",
+        "target": "13_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_21->13_20",
+        "source": "13_21",
+        "target": "13_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_22->13_93",
+        "source": "13_22",
+        "target": "13_93",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_23->13_94",
+        "source": "13_23",
+        "target": "13_94",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_24->13_25",
+        "source": "13_24",
+        "target": "13_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_24->13_26",
+        "source": "13_24",
+        "target": "13_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_24->13_27",
+        "source": "13_24",
+        "target": "13_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_24->13_33",
+        "source": "13_24",
+        "target": "13_33",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_25->13_28",
+        "source": "13_25",
+        "target": "13_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_26->13_28",
+        "source": "13_26",
+        "target": "13_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_27->13_28",
+        "source": "13_27",
+        "target": "13_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_28->13_29",
+        "source": "13_28",
+        "target": "13_29",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_28->13_30",
+        "source": "13_28",
+        "target": "13_30",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_28->13_31",
+        "source": "13_28",
+        "target": "13_31",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_29->13_32",
+        "source": "13_29",
+        "target": "13_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_30->13_32",
+        "source": "13_30",
+        "target": "13_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_31->13_32",
+        "source": "13_31",
+        "target": "13_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_32->13_34",
+        "source": "13_32",
+        "target": "13_34",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_33->13_28",
+        "source": "13_33",
+        "target": "13_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_34->13_35",
+        "source": "13_34",
+        "target": "13_35",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_35->13_36",
+        "source": "13_35",
+        "target": "13_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_35->13_37",
+        "source": "13_35",
+        "target": "13_37",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_35->13_38",
+        "source": "13_35",
+        "target": "13_38",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_36->13_42",
+        "source": "13_36",
+        "target": "13_42",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_37->13_39",
+        "source": "13_37",
+        "target": "13_39",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_38->13_40",
+        "source": "13_38",
+        "target": "13_40",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_39->13_36",
+        "source": "13_39",
+        "target": "13_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_39->13_38",
+        "source": "13_39",
+        "target": "13_38",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_40->13_41",
+        "source": "13_40",
+        "target": "13_41",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_41->13_43",
+        "source": "13_41",
+        "target": "13_43",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_41->13_44",
+        "source": "13_41",
+        "target": "13_44",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_41->13_45",
+        "source": "13_41",
+        "target": "13_45",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_42->13_41",
+        "source": "13_42",
+        "target": "13_41",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_43->13_46",
+        "source": "13_43",
+        "target": "13_46",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_44->13_47",
+        "source": "13_44",
+        "target": "13_47",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_45->13_47",
+        "source": "13_45",
+        "target": "13_47",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_46->13_95",
+        "source": "13_46",
+        "target": "13_95",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_47->13_48",
+        "source": "13_47",
+        "target": "13_48",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_47->13_49",
+        "source": "13_47",
+        "target": "13_49",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_47->13_50",
+        "source": "13_47",
+        "target": "13_50",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_48->13_52",
+        "source": "13_48",
+        "target": "13_52",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_49->13_52",
+        "source": "13_49",
+        "target": "13_52",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_50->13_52",
+        "source": "13_50",
+        "target": "13_52",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_51->13_80",
+        "source": "13_51",
+        "target": "13_80",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_52->13_96",
+        "source": "13_52",
+        "target": "13_96",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_53->13_56",
+        "source": "13_53",
+        "target": "13_56",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_54->13_56",
+        "source": "13_54",
+        "target": "13_56",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_55->13_56",
+        "source": "13_55",
+        "target": "13_56",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_56->13_97",
+        "source": "13_56",
+        "target": "13_97",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_57->13_60",
+        "source": "13_57",
+        "target": "13_60",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_58->13_60",
+        "source": "13_58",
+        "target": "13_60",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_59->13_60",
+        "source": "13_59",
+        "target": "13_60",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_60->13_61",
+        "source": "13_60",
+        "target": "13_61",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_61->13_62",
+        "source": "13_61",
+        "target": "13_62",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_62->13_63",
+        "source": "13_62",
+        "target": "13_63",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_62->13_64",
+        "source": "13_62",
+        "target": "13_64",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_63->13_66",
+        "source": "13_63",
+        "target": "13_66",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_64->13_66",
+        "source": "13_64",
+        "target": "13_66",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_65->13_67",
+        "source": "13_65",
+        "target": "13_67",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_66->13_65",
+        "source": "13_66",
+        "target": "13_65",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_67->13_84",
+        "source": "13_67",
+        "target": "13_84",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_67->13_85",
+        "source": "13_67",
+        "target": "13_85",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_68->13_71",
+        "source": "13_68",
+        "target": "13_71",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_69->13_71",
+        "source": "13_69",
+        "target": "13_71",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_70->13_79",
+        "source": "13_70",
+        "target": "13_79",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_71->13_99",
+        "source": "13_71",
+        "target": "13_99",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_72->13_75",
+        "source": "13_72",
+        "target": "13_75",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_73->13_75",
+        "source": "13_73",
+        "target": "13_75",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_74->13_75",
+        "source": "13_74",
+        "target": "13_75",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_75->13_102",
+        "source": "13_75",
+        "target": "13_102",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_76->13_70",
+        "source": "13_76",
+        "target": "13_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_77->13_70",
+        "source": "13_77",
+        "target": "13_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_78->13_70",
+        "source": "13_78",
+        "target": "13_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_79->13_106",
+        "source": "13_79",
+        "target": "13_106",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_80->13_81",
+        "source": "13_80",
+        "target": "13_81",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_81->13_83",
+        "source": "13_81",
+        "target": "13_83",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_82->13_4",
+        "source": "13_82",
+        "target": "13_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_84->13_6",
+        "source": "13_84",
+        "target": "13_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_85->13_6",
+        "source": "13_85",
+        "target": "13_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_86->13_21",
+        "source": "13_86",
+        "target": "13_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_87->13_88",
+        "source": "13_87",
+        "target": "13_88",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_88->13_89",
+        "source": "13_88",
+        "target": "13_89",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_89->13_90",
+        "source": "13_89",
+        "target": "13_90",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_90->13_68",
+        "source": "13_90",
+        "target": "13_68",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_90->13_69",
+        "source": "13_90",
+        "target": "13_69",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_91->13_15",
+        "source": "13_91",
+        "target": "13_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_92->13_86",
+        "source": "13_92",
+        "target": "13_86",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_93->13_24",
+        "source": "13_93",
+        "target": "13_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_94->13_24",
+        "source": "13_94",
+        "target": "13_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_95->13_44",
+        "source": "13_95",
+        "target": "13_44",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_95->13_45",
+        "source": "13_95",
+        "target": "13_45",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_96->13_53",
+        "source": "13_96",
+        "target": "13_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_96->13_54",
+        "source": "13_96",
+        "target": "13_54",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_96->13_55",
+        "source": "13_96",
+        "target": "13_55",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_97->13_98",
+        "source": "13_97",
+        "target": "13_98",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_98->13_57",
+        "source": "13_98",
+        "target": "13_57",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_98->13_58",
+        "source": "13_98",
+        "target": "13_58",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_98->13_59",
+        "source": "13_98",
+        "target": "13_59",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_99->13_100",
+        "source": "13_99",
+        "target": "13_100",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_100->13_101",
+        "source": "13_100",
+        "target": "13_101",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_101->13_72",
+        "source": "13_101",
+        "target": "13_72",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_101->13_73",
+        "source": "13_101",
+        "target": "13_73",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_101->13_74",
+        "source": "13_101",
+        "target": "13_74",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_102->13_103",
+        "source": "13_102",
+        "target": "13_103",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_103->13_104",
+        "source": "13_103",
+        "target": "13_104",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_104->13_105",
+        "source": "13_104",
+        "target": "13_105",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_105->13_76",
+        "source": "13_105",
+        "target": "13_76",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_105->13_77",
+        "source": "13_105",
+        "target": "13_77",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_105->13_78",
+        "source": "13_105",
+        "target": "13_78",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_106->13_5",
+        "source": "13_106",
+        "target": "13_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_106->13_7",
+        "source": "13_106",
+        "target": "13_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "13_106->13_8",
+        "source": "13_106",
+        "target": "13_8",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

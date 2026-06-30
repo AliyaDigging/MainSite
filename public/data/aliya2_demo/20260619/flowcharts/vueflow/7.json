@@ -1,0 +1,3051 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 87,
+      "edge": 97,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {
+      "Aliya.C3_12Windy_Aliya": {
+        "key": "Aliya.C3_12Windy_Aliya",
+        "type": "boolean"
+      }
+    },
+    "flowchartRefs": [],
+    "currName": "Windy",
+    "currId": "7",
+    "articyInternal": {
+      "title": "Windy",
+      "description": "",
+      "articyId": "72057611217797180",
+      "channelId": "Windy"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "7_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "7_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797180"
+          }
+        }
+      },
+      {
+        "id": "7_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "7_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797180"
+          }
+        }
+      },
+      {
+        "id": "7_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "7_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797200"
+          }
+        }
+      },
+      {
+        "id": "7_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "7_3",
+            "title": "Windy: \"$md{联络成功}\"",
+            "dialogueText": "$md{联络成功}",
+            "menuText": "",
+            "articyId": "72057636987613470"
+          }
+        }
+      },
+      {
+        "id": "18_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "18_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797380"
+          }
+        }
+      },
+      {
+        "id": "18_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_3",
+            "title": "Windy: \"你好啊~请问是谁？\"",
+            "dialogueText": "你好啊~请问是谁？",
+            "menuText": "",
+            "articyId": "72057619807737660"
+          }
+        }
+      },
+      {
+        "id": "18_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_4",
+            "title": "Player: \"请问你是记者吧？我叫$v{name}，我有些事情想寻求你的帮助\"",
+            "dialogueText": "请问你是记者吧？我叫$v{name}，我有些事情想寻求你的帮助",
+            "menuText": "",
+            "articyId": "72057619807737680"
+          }
+        }
+      },
+      {
+        "id": "18_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_5",
+            "title": "Player: \"你是记者吧？我叫$v{name}，我想向你爆料\"",
+            "dialogueText": "你是记者吧？我叫$v{name}，我想向你爆料",
+            "menuText": "",
+            "articyId": "72057619807737680"
+          }
+        }
+      },
+      {
+        "id": "18_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_6",
+            "title": "Player: \"我叫$v{name}，有些情报想出售，你能给我多少钱？\"",
+            "dialogueText": "我叫$v{name}，有些情报想出售，你能给我多少钱？",
+            "menuText": "",
+            "articyId": "72057619807737680"
+          }
+        }
+      },
+      {
+        "id": "18_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_7",
+            "title": "Windy: \"你需要先说是什么事情？\"",
+            "dialogueText": "你需要先说是什么事情？",
+            "menuText": "",
+            "articyId": "72057619807737700"
+          }
+        }
+      },
+      {
+        "id": "18_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_8",
+            "title": "Windy: \"哦？先说说你知道的情报吧\"",
+            "dialogueText": "哦？先说说你知道的情报吧",
+            "menuText": "",
+            "articyId": "72057619807737700"
+          }
+        }
+      },
+      {
+        "id": "18_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_9",
+            "title": "Windy: \"那得看你的情报有多少价值了 先说说你知道什么？\"",
+            "dialogueText": "那得看你的情报有多少价值了",
+            "menuText": "",
+            "articyId": "72057619807737700"
+          }
+        }
+      },
+      {
+        "id": "18_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "18_10",
+            "title": "未命名核心",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807737700"
+          }
+        }
+      },
+      {
+        "id": "18_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_11",
+            "title": "Player: \"我的朋友被人劫持了，现在他们需要确定自己的位置才能想办法逃出来\"",
+            "dialogueText": "我的朋友被人劫持了，现在他们需要确定自己的位置才能想办法逃出来",
+            "menuText": "",
+            "articyId": "72057619807737710"
+          }
+        }
+      },
+      {
+        "id": "18_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_12",
+            "title": "Player: \"我希望你能将我的朋友救出来！\"",
+            "dialogueText": "我希望你能将我的朋友救出来！",
+            "menuText": "",
+            "articyId": "72057619807737710"
+          }
+        }
+      },
+      {
+        "id": "18_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_13",
+            "title": "Windy: \"这种事情找警察会更好吧？ 为什么要找记者？\"",
+            "dialogueText": "这种事情找警察会更好吧？",
+            "menuText": "",
+            "articyId": "72057619807737730"
+          }
+        }
+      },
+      {
+        "id": "18_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_14",
+            "title": "Windy: \"我想你是不是找错人了 我是记者，不是忍者… 另外，这种事情...\"",
+            "dialogueText": "我想你是不是找错人了",
+            "menuText": "",
+            "articyId": "72057619807737730"
+          }
+        }
+      },
+      {
+        "id": "18_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "18_15",
+            "title": "未命名核心 (02)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807737730"
+          }
+        }
+      },
+      {
+        "id": "18_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_16",
+            "title": "Player: \"因为他们是人偶，属于公司所有物\"",
+            "dialogueText": "因为他们是人偶，属于公司所有物",
+            "menuText": "",
+            "articyId": "72057619807737740"
+          }
+        }
+      },
+      {
+        "id": "18_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_17",
+            "title": "Player: \"我试过了，但是警察也无法干涉他们\"",
+            "dialogueText": "我试过了，但是警察也无法干涉他们",
+            "menuText": "",
+            "articyId": "72057619807737740"
+          }
+        }
+      },
+      {
+        "id": "18_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_18",
+            "title": "Windy: \"你的意思是公司在虐待人偶，导致他们想要逃离公司的控制么？ 竟然会...\"",
+            "dialogueText": "你的意思是公司在虐待人偶，导致他们想要逃离公司的控制么？",
+            "menuText": "",
+            "articyId": "72057619807737760"
+          }
+        }
+      },
+      {
+        "id": "18_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_19",
+            "title": "Windy: \"连警察都帮不上忙… 你说的对方不会是公司吧？ 只有公司才会...\"",
+            "dialogueText": "连警察都帮不上忙…",
+            "menuText": "",
+            "articyId": "72057619807737760"
+          }
+        }
+      },
+      {
+        "id": "18_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "18_20",
+            "title": "未命名核心 (03)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807737780"
+          }
+        }
+      },
+      {
+        "id": "18_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_21",
+            "title": "Windy: \"我可以帮你 如果可以的话 等你的朋友逃出来，我希望可以能做...\"",
+            "dialogueText": "我可以帮你",
+            "menuText": "",
+            "articyId": "72057619807737780"
+          }
+        }
+      },
+      {
+        "id": "18_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_22",
+            "title": "Player: \"好的，拜托你了\"",
+            "dialogueText": "好的，拜托你了",
+            "menuText": "",
+            "articyId": "72057619807737780"
+          }
+        }
+      },
+      {
+        "id": "18_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_23",
+            "title": "Player: \"我真的可以相信你么\"",
+            "dialogueText": "我真的可以相信你么",
+            "menuText": "",
+            "articyId": "72057619807737800"
+          }
+        }
+      },
+      {
+        "id": "18_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_24",
+            "title": "Player: \"你不会是害怕在敷衍我吧？\"",
+            "dialogueText": "你不会是害怕在敷衍我吧？",
+            "menuText": "",
+            "articyId": "72057619807737800"
+          }
+        }
+      },
+      {
+        "id": "18_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_25",
+            "title": "Windy: \"放心吧 如果你还是不放心的话，可以搜索下我的名字和报道 我...\"",
+            "dialogueText": "放心吧",
+            "menuText": "",
+            "articyId": "72057619807737800"
+          }
+        }
+      },
+      {
+        "id": "18_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_26",
+            "title": "Windy: \"好吧，让你立刻相信一个陌生人确实有点困难 你可以搜索下我的名字和...\"",
+            "dialogueText": "好吧，让你立刻相信一个陌生人确实有点困难",
+            "menuText": "",
+            "articyId": "72057619807737800"
+          }
+        }
+      },
+      {
+        "id": "18_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_27",
+            "title": "Windy: \"哈？ 你是说我会怕公司吗？！ 如果你不相信我的话，可以搜索...\"",
+            "dialogueText": "哈？",
+            "menuText": "",
+            "articyId": "72057619807737810"
+          }
+        }
+      },
+      {
+        "id": "18_28",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_28",
+            "title": "Windy: \"再发你一张我现在的照片，确认下我的身份\"",
+            "dialogueText": "再发你一张我现在的照片，确认下我的身份",
+            "menuText": "",
+            "articyId": "72057619807737810"
+          }
+        }
+      },
+      {
+        "id": "18_29",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_29",
+            "title": "Windy: \"总之！放心相信我吧！ 对了，你是怎么找到关于我的信息的？\"",
+            "dialogueText": "总之！放心相信我吧！",
+            "menuText": "",
+            "articyId": "72057619807737820"
+          }
+        }
+      },
+      {
+        "id": "18_30",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_30",
+            "title": "Player: \"通过你给尼昂医药的一封邮件里找到了\"",
+            "dialogueText": "通过你给尼昂医药的一封邮件里找到了",
+            "menuText": "",
+            "articyId": "72057619807737820"
+          }
+        }
+      },
+      {
+        "id": "18_31",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_31",
+            "title": "Player: \"我只是有一些可以快速获取信息的能力罢了\"",
+            "dialogueText": "我只是有一些可以快速获取信息的能力罢了",
+            "menuText": "",
+            "articyId": "72057619807737820"
+          }
+        }
+      },
+      {
+        "id": "18_32",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_32",
+            "title": "Player: \"我的事情还暂时不能告诉你\"",
+            "dialogueText": "我的事情还暂时不能告诉你",
+            "menuText": "",
+            "articyId": "72057619807737820"
+          }
+        }
+      },
+      {
+        "id": "18_33",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_33",
+            "title": "Windy: \"你是说你破解了尼昂公司的邮件系统！找到了我的联系方式！！！ 那你...\"",
+            "dialogueText": "你是说你破解了尼昂公司的邮件系统！找到了我的联系方式！！！",
+            "menuText": "",
+            "articyId": "72057619807737840"
+          }
+        }
+      },
+      {
+        "id": "18_34",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_34",
+            "title": "Windy: \"哦？ 看来你也有着自己的秘密呢 作为记者，我反而更好奇了...\"",
+            "dialogueText": "哦？",
+            "menuText": "",
+            "articyId": "72057619807737840"
+          }
+        }
+      },
+      {
+        "id": "18_35",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_35",
+            "title": "Windy: \"已经这个时间了！ 我要迟到了，就先聊到这里吧 拜！\"",
+            "dialogueText": "已经这个时间了！",
+            "menuText": "",
+            "articyId": "72057619807737860"
+          }
+        }
+      },
+      {
+        "id": "18_36",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 5,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(5)",
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "18_36",
+            "title": "AliyaFunc.WaitTime(5)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807741260"
+          }
+        }
+      },
+      {
+        "id": "18_37",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_37",
+            "title": "Windy: \"$image{Windy自拍证明}\"",
+            "dialogueText": "$image{Windy自拍证明}",
+            "menuText": "",
+            "articyId": "72057619807741280"
+          }
+        }
+      },
+      {
+        "id": "18_38",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_38",
+            "title": "Windy: \"也许我们可以合作一下 你可以帮我调查一些我没办法接触到的情报...\"",
+            "dialogueText": "也许我们可以合作一下",
+            "menuText": "",
+            "articyId": "72057641282594290"
+          }
+        }
+      },
+      {
+        "id": "18_39",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_39",
+            "title": "Player: \"如果有的话，你愿意用什么来交换？\"",
+            "dialogueText": "如果有的话，你愿意用什么来交换？",
+            "menuText": "",
+            "articyId": "72057641282594290"
+          }
+        }
+      },
+      {
+        "id": "18_40",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_40",
+            "title": "Player: \"暂时还没有…\"",
+            "dialogueText": "暂时还没有…",
+            "menuText": "",
+            "articyId": "72057641282594300"
+          }
+        }
+      },
+      {
+        "id": "18_41",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_41",
+            "title": "Windy: \"等价交换吗？当然可以 也许我们可以合作一下 你可以帮我调查...\"",
+            "dialogueText": "等价交换吗？当然可以",
+            "menuText": "",
+            "articyId": "72057641282594300"
+          }
+        }
+      },
+      {
+        "id": "18_42",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForever",
+        "data": {
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForever()",
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "18_42",
+            "title": "AliyaFunc.WaitForever()",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987616530"
+          }
+        }
+      },
+      {
+        "id": "18_43",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_43",
+            "title": "Player: \"你会在这场事件中收获你想要的东西\"",
+            "dialogueText": "你会在这场事件中收获你想要的东西",
+            "menuText": "",
+            "articyId": "72057636987616580"
+          }
+        }
+      },
+      {
+        "id": "18_44",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_44",
+            "title": "Player: \"这是一件我们可以合作共赢的事情\"",
+            "dialogueText": "这是一件我们可以合作共赢的事情",
+            "menuText": "",
+            "articyId": "72057636987616580"
+          }
+        }
+      },
+      {
+        "id": "18_45",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_45",
+            "title": "Player: \"别卖关子了，到底答不答应\"",
+            "dialogueText": "别卖关子了，到底答不答应",
+            "menuText": "",
+            "articyId": "72057636987616580"
+          }
+        }
+      },
+      {
+        "id": "18_46",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 4,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(4)",
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "18_46",
+            "title": "AliyaFunc.WaitTime(4)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987616590"
+          }
+        }
+      },
+      {
+        "id": "18_47",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Aliya.C3_12Windy_Aliya\"] = true",
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "18_47",
+            "title": "Aliya.C3_12Windy_Aliya = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987616700"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Aliya.C3_12Windy_Aliya",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "18_48",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_48",
+            "title": "Windy: \"那得看你的情报有多少价值了 先说说你知道什么？\"",
+            "dialogueText": "先说说你知道什么？",
+            "menuText": "",
+            "articyId": "0x0100000600001762-1"
+          }
+        }
+      },
+      {
+        "id": "18_49",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_49",
+            "title": "Windy: \"这种事情找警察会更好吧？ 为什么要找记者？\"",
+            "dialogueText": "为什么要找记者？",
+            "menuText": "",
+            "articyId": "0x0100000600001778-1"
+          }
+        }
+      },
+      {
+        "id": "18_50",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_50",
+            "title": "Windy: \"我想你是不是找错人了 我是记者，不是忍者… 另外，这种事情...\"",
+            "dialogueText": "我是记者，不是忍者…",
+            "menuText": "",
+            "articyId": "0x010000060000177D-1"
+          }
+        }
+      },
+      {
+        "id": "18_51",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_51",
+            "title": "Windy: \"我想你是不是找错人了 我是记者，不是忍者… 另外，这种事情...\"",
+            "dialogueText": "另外，这种事情找警察不是更好一些么？",
+            "menuText": "",
+            "articyId": "0x010000060000177D-2"
+          }
+        }
+      },
+      {
+        "id": "18_52",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_52",
+            "title": "Windy: \"你的意思是公司在虐待人偶，导致他们想要逃离公司的控制么？ 竟然会...\"",
+            "dialogueText": "竟然会发生这种事",
+            "menuText": "",
+            "articyId": "0x010000060000179D-1"
+          }
+        }
+      },
+      {
+        "id": "18_53",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_53",
+            "title": "Windy: \"你的意思是公司在虐待人偶，导致他们想要逃离公司的控制么？ 竟然会...\"",
+            "dialogueText": "不…确实像公司能做出来的行为",
+            "menuText": "",
+            "articyId": "0x010000060000179D-2"
+          }
+        }
+      },
+      {
+        "id": "18_54",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_54",
+            "title": "Windy: \"连警察都帮不上忙… 你说的对方不会是公司吧？ 只有公司才会...\"",
+            "dialogueText": "你说的对方不会是公司吧？",
+            "menuText": "",
+            "articyId": "0x01000006000017A2-1"
+          }
+        }
+      },
+      {
+        "id": "18_55",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_55",
+            "title": "Windy: \"连警察都帮不上忙… 你说的对方不会是公司吧？ 只有公司才会...\"",
+            "dialogueText": "只有公司才会有这么大的能量能摆脱政府管控…",
+            "menuText": "",
+            "articyId": "0x01000006000017A2-2"
+          }
+        }
+      },
+      {
+        "id": "18_56",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_56",
+            "title": "Windy: \"连警察都帮不上忙… 你说的对方不会是公司吧？ 只有公司才会...\"",
+            "dialogueText": "感觉是大新闻的味道",
+            "menuText": "",
+            "articyId": "0x01000006000017A2-3"
+          }
+        }
+      },
+      {
+        "id": "18_57",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_57",
+            "title": "Windy: \"我可以帮你 如果可以的话 等你的朋友逃出来，我希望可以能做...\"",
+            "dialogueText": "如果可以的话",
+            "menuText": "",
+            "articyId": "0x01000006000017AE-1"
+          }
+        }
+      },
+      {
+        "id": "18_58",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_58",
+            "title": "Windy: \"我可以帮你 如果可以的话 等你的朋友逃出来，我希望可以能做...\"",
+            "dialogueText": "等你的朋友逃出来，我希望可以能做一个专访",
+            "menuText": "",
+            "articyId": "0x01000006000017AE-2"
+          }
+        }
+      },
+      {
+        "id": "18_59",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_59",
+            "title": "Windy: \"我可以帮你 如果可以的话 等你的朋友逃出来，我希望可以能做...\"",
+            "dialogueText": "不过，我现在手上还有一个采访没有完成",
+            "menuText": "",
+            "articyId": "0x01000006000017AE-3"
+          }
+        }
+      },
+      {
+        "id": "18_60",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_60",
+            "title": "Windy: \"我可以帮你 如果可以的话 等你的朋友逃出来，我希望可以能做...\"",
+            "dialogueText": "等我结束手上的工作，就会联系你的",
+            "menuText": "",
+            "articyId": "0x01000006000017AE-4"
+          }
+        }
+      },
+      {
+        "id": "18_61",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_61",
+            "title": "Windy: \"放心吧 如果你还是不放心的话，可以搜索下我的名字和报道 我...\"",
+            "dialogueText": "如果你还是不放心的话，可以搜索下我的名字和报道",
+            "menuText": "",
+            "articyId": "0x01000006000017C2-1"
+          }
+        }
+      },
+      {
+        "id": "18_62",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_62",
+            "title": "Windy: \"放心吧 如果你还是不放心的话，可以搜索下我的名字和报道 我...\"",
+            "dialogueText": "我之前也写过不少揭露公司掩盖的丑闻，还差点进了他们的黑名单",
+            "menuText": "",
+            "articyId": "0x01000006000017C2-2"
+          }
+        }
+      },
+      {
+        "id": "18_63",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_63",
+            "title": "Windy: \"放心吧 如果你还是不放心的话，可以搜索下我的名字和报道 我...\"",
+            "dialogueText": "虽然这没什么好炫耀的…",
+            "menuText": "",
+            "articyId": "0x01000006000017C2-3"
+          }
+        }
+      },
+      {
+        "id": "18_64",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_64",
+            "title": "Windy: \"好吧，让你立刻相信一个陌生人确实有点困难 你可以搜索下我的名字和...\"",
+            "dialogueText": "你可以搜索下我的名字和报道",
+            "menuText": "",
+            "articyId": "0x01000006000017C7-1"
+          }
+        }
+      },
+      {
+        "id": "18_65",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_65",
+            "title": "Windy: \"好吧，让你立刻相信一个陌生人确实有点困难 你可以搜索下我的名字和...\"",
+            "dialogueText": "我之前也写过不少揭露公司掩盖的丑闻，还差点进了他们的黑名单",
+            "menuText": "",
+            "articyId": "0x01000006000017C7-2"
+          }
+        }
+      },
+      {
+        "id": "18_66",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_66",
+            "title": "Windy: \"好吧，让你立刻相信一个陌生人确实有点困难 你可以搜索下我的名字和...\"",
+            "dialogueText": "虽然这没什么好炫耀的…",
+            "menuText": "",
+            "articyId": "0x01000006000017C7-3"
+          }
+        }
+      },
+      {
+        "id": "18_67",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_67",
+            "title": "Windy: \"哈？ 你是说我会怕公司吗？！ 如果你不相信我的话，可以搜索...\"",
+            "dialogueText": "你是说我会怕公司吗？！",
+            "menuText": "",
+            "articyId": "0x01000006000017CC-1"
+          }
+        }
+      },
+      {
+        "id": "18_68",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_68",
+            "title": "Windy: \"哈？ 你是说我会怕公司吗？！ 如果你不相信我的话，可以搜索...\"",
+            "dialogueText": "如果你不相信我的话，可以搜索下我的名字和报道",
+            "menuText": "",
+            "articyId": "0x01000006000017CC-2"
+          }
+        }
+      },
+      {
+        "id": "18_69",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_69",
+            "title": "Windy: \"哈？ 你是说我会怕公司吗？！ 如果你不相信我的话，可以搜索...\"",
+            "dialogueText": "我之前也写过不少揭露公司掩盖的丑闻，还差点进了他们的黑名单！",
+            "menuText": "",
+            "articyId": "0x01000006000017CC-3"
+          }
+        }
+      },
+      {
+        "id": "18_70",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_70",
+            "title": "Windy: \"哈？ 你是说我会怕公司吗？！ 如果你不相信我的话，可以搜索...\"",
+            "dialogueText": "虽然这没什么好炫耀的…",
+            "menuText": "",
+            "articyId": "0x01000006000017CC-4"
+          }
+        }
+      },
+      {
+        "id": "18_71",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_71",
+            "title": "Windy: \"总之！放心相信我吧！ 对了，你是怎么找到关于我的信息的？\"",
+            "dialogueText": "对了，你是怎么找到关于我的信息的？",
+            "menuText": "",
+            "articyId": "0x01000006000017D8-1"
+          }
+        }
+      },
+      {
+        "id": "18_72",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_72",
+            "title": "Windy: \"你是说你破解了尼昂公司的邮件系统！找到了我的联系方式！！！ 那你...\"",
+            "dialogueText": "那你有没有找到什么关于他们的重要情报或者问题？",
+            "menuText": "",
+            "articyId": "0x01000006000017EC-1"
+          }
+        }
+      },
+      {
+        "id": "18_73",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_73",
+            "title": "Windy: \"哦？ 看来你也有着自己的秘密呢 作为记者，我反而更好奇了...\"",
+            "dialogueText": "看来你也有着自己的秘密呢",
+            "menuText": "",
+            "articyId": "0x01000006000017F6-1"
+          }
+        }
+      },
+      {
+        "id": "18_74",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_74",
+            "title": "Windy: \"哦？ 看来你也有着自己的秘密呢 作为记者，我反而更好奇了...\"",
+            "dialogueText": "作为记者，我反而更好奇了",
+            "menuText": "",
+            "articyId": "0x01000006000017F6-2"
+          }
+        }
+      },
+      {
+        "id": "18_75",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_75",
+            "title": "Windy: \"哦？ 看来你也有着自己的秘密呢 作为记者，我反而更好奇了...\"",
+            "dialogueText": "我有预感，也许我们可以互相帮助！",
+            "menuText": "",
+            "articyId": "0x01000006000017F6-3"
+          }
+        }
+      },
+      {
+        "id": "18_76",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_76",
+            "title": "Windy: \"已经这个时间了！ 我要迟到了，就先聊到这里吧 拜！\"",
+            "dialogueText": "我要迟到了，就先聊到这里吧",
+            "menuText": "",
+            "articyId": "0x01000006000017FB-1"
+          }
+        }
+      },
+      {
+        "id": "18_77",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_77",
+            "title": "Windy: \"已经这个时间了！ 我要迟到了，就先聊到这里吧 拜！\"",
+            "dialogueText": "拜！",
+            "menuText": "",
+            "articyId": "0x01000006000017FB-2"
+          }
+        }
+      },
+      {
+        "id": "18_78",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_78",
+            "title": "Windy: \"也许我们可以合作一下 你可以帮我调查一些我没办法接触到的情报...\"",
+            "dialogueText": "你可以帮我调查一些我没办法接触到的情报",
+            "menuText": "",
+            "articyId": "0x0100000B000065F0-1"
+          }
+        }
+      },
+      {
+        "id": "18_79",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_79",
+            "title": "Windy: \"也许我们可以合作一下 你可以帮我调查一些我没办法接触到的情报...\"",
+            "dialogueText": "我会给你支付相应的线人费用",
+            "menuText": "",
+            "articyId": "0x0100000B000065F0-2"
+          }
+        }
+      },
+      {
+        "id": "18_80",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_80",
+            "title": "Windy: \"也许我们可以合作一下 你可以帮我调查一些我没办法接触到的情报...\"",
+            "dialogueText": "这次帮你朋友的忙就作为预付的酬劳咯",
+            "menuText": "",
+            "articyId": "0x0100000B000065F0-3"
+          }
+        }
+      },
+      {
+        "id": "18_81",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_81",
+            "title": "Windy: \"等价交换吗？当然可以 也许我们可以合作一下 你可以帮我调查...\"",
+            "dialogueText": "也许我们可以合作一下",
+            "menuText": "",
+            "articyId": "0x0100000B00006604-1"
+          }
+        }
+      },
+      {
+        "id": "18_82",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_82",
+            "title": "Windy: \"等价交换吗？当然可以 也许我们可以合作一下 你可以帮我调查...\"",
+            "dialogueText": "你可以帮我调查一些我没办法接触到的情报",
+            "menuText": "",
+            "articyId": "0x0100000B00006604-2"
+          }
+        }
+      },
+      {
+        "id": "18_83",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_83",
+            "title": "Windy: \"等价交换吗？当然可以 也许我们可以合作一下 你可以帮我调查...\"",
+            "dialogueText": "我会给你支付相应的线人费用",
+            "menuText": "",
+            "articyId": "0x0100000B00006604-3"
+          }
+        }
+      },
+      {
+        "id": "18_84",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "Windy",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "18_84",
+            "title": "Windy: \"等价交换吗？当然可以 也许我们可以合作一下 你可以帮我调查...\"",
+            "dialogueText": "这次帮你朋友的忙就作为预付的酬劳咯",
+            "menuText": "",
+            "articyId": "0x0100000B00006604-4"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "7_0->7_1",
+        "source": "7_0",
+        "target": "7_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "7_1->7_3",
+        "source": "7_1",
+        "target": "7_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "7_3->7_2",
+        "source": "7_3",
+        "target": "7_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "7_2->18_1",
+        "source": "7_2",
+        "target": "18_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_1->18_3",
+        "source": "18_1",
+        "target": "18_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_3->18_4",
+        "source": "18_3",
+        "target": "18_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_3->18_5",
+        "source": "18_3",
+        "target": "18_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_3->18_6",
+        "source": "18_3",
+        "target": "18_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_4->18_7",
+        "source": "18_4",
+        "target": "18_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_5->18_8",
+        "source": "18_5",
+        "target": "18_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_6->18_9",
+        "source": "18_6",
+        "target": "18_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_7->18_10",
+        "source": "18_7",
+        "target": "18_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_8->18_10",
+        "source": "18_8",
+        "target": "18_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_9->18_48",
+        "source": "18_9",
+        "target": "18_48",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_10->18_11",
+        "source": "18_10",
+        "target": "18_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_10->18_12",
+        "source": "18_10",
+        "target": "18_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_11->18_13",
+        "source": "18_11",
+        "target": "18_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_12->18_36",
+        "source": "18_12",
+        "target": "18_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_13->18_49",
+        "source": "18_13",
+        "target": "18_49",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_14->18_50",
+        "source": "18_14",
+        "target": "18_50",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_15->18_16",
+        "source": "18_15",
+        "target": "18_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_15->18_17",
+        "source": "18_15",
+        "target": "18_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_16->18_18",
+        "source": "18_16",
+        "target": "18_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_17->18_19",
+        "source": "18_17",
+        "target": "18_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_18->18_52",
+        "source": "18_18",
+        "target": "18_52",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_19->18_54",
+        "source": "18_19",
+        "target": "18_54",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_20->18_43",
+        "source": "18_20",
+        "target": "18_43",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_20->18_44",
+        "source": "18_20",
+        "target": "18_44",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_20->18_45",
+        "source": "18_20",
+        "target": "18_45",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_21->18_57",
+        "source": "18_21",
+        "target": "18_57",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_22->18_25",
+        "source": "18_22",
+        "target": "18_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_23->18_26",
+        "source": "18_23",
+        "target": "18_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_24->18_27",
+        "source": "18_24",
+        "target": "18_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_25->18_61",
+        "source": "18_25",
+        "target": "18_61",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_26->18_64",
+        "source": "18_26",
+        "target": "18_64",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_27->18_67",
+        "source": "18_27",
+        "target": "18_67",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_28->18_37",
+        "source": "18_28",
+        "target": "18_37",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_29->18_71",
+        "source": "18_29",
+        "target": "18_71",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_30->18_33",
+        "source": "18_30",
+        "target": "18_33",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_31->18_34",
+        "source": "18_31",
+        "target": "18_34",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_32->18_34",
+        "source": "18_32",
+        "target": "18_34",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_33->18_72",
+        "source": "18_33",
+        "target": "18_72",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_34->18_73",
+        "source": "18_34",
+        "target": "18_73",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_35->18_76",
+        "source": "18_35",
+        "target": "18_76",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_36->18_14",
+        "source": "18_36",
+        "target": "18_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_37->18_29",
+        "source": "18_37",
+        "target": "18_29",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_38->18_78",
+        "source": "18_38",
+        "target": "18_78",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_39->18_41",
+        "source": "18_39",
+        "target": "18_41",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_40->18_38",
+        "source": "18_40",
+        "target": "18_38",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_41->18_81",
+        "source": "18_41",
+        "target": "18_81",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_43->18_46",
+        "source": "18_43",
+        "target": "18_46",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_44->18_46",
+        "source": "18_44",
+        "target": "18_46",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_45->18_46",
+        "source": "18_45",
+        "target": "18_46",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_46->18_21",
+        "source": "18_46",
+        "target": "18_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_47->18_35",
+        "source": "18_47",
+        "target": "18_35",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_48->18_10",
+        "source": "18_48",
+        "target": "18_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_49->18_15",
+        "source": "18_49",
+        "target": "18_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_50->18_51",
+        "source": "18_50",
+        "target": "18_51",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_51->18_15",
+        "source": "18_51",
+        "target": "18_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_52->18_53",
+        "source": "18_52",
+        "target": "18_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_53->18_20",
+        "source": "18_53",
+        "target": "18_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_54->18_55",
+        "source": "18_54",
+        "target": "18_55",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_55->18_56",
+        "source": "18_55",
+        "target": "18_56",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_56->18_20",
+        "source": "18_56",
+        "target": "18_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_57->18_58",
+        "source": "18_57",
+        "target": "18_58",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_58->18_59",
+        "source": "18_58",
+        "target": "18_59",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_59->18_60",
+        "source": "18_59",
+        "target": "18_60",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_60->18_22",
+        "source": "18_60",
+        "target": "18_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_60->18_23",
+        "source": "18_60",
+        "target": "18_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_60->18_24",
+        "source": "18_60",
+        "target": "18_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_61->18_62",
+        "source": "18_61",
+        "target": "18_62",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_62->18_63",
+        "source": "18_62",
+        "target": "18_63",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_63->18_28",
+        "source": "18_63",
+        "target": "18_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_64->18_65",
+        "source": "18_64",
+        "target": "18_65",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_65->18_66",
+        "source": "18_65",
+        "target": "18_66",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_66->18_28",
+        "source": "18_66",
+        "target": "18_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_67->18_68",
+        "source": "18_67",
+        "target": "18_68",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_68->18_69",
+        "source": "18_68",
+        "target": "18_69",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_69->18_70",
+        "source": "18_69",
+        "target": "18_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_70->18_28",
+        "source": "18_70",
+        "target": "18_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_71->18_30",
+        "source": "18_71",
+        "target": "18_30",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_71->18_31",
+        "source": "18_71",
+        "target": "18_31",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_71->18_32",
+        "source": "18_71",
+        "target": "18_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_72->18_40",
+        "source": "18_72",
+        "target": "18_40",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_72->18_39",
+        "source": "18_72",
+        "target": "18_39",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_73->18_74",
+        "source": "18_73",
+        "target": "18_74",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_74->18_75",
+        "source": "18_74",
+        "target": "18_75",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_75->18_47",
+        "source": "18_75",
+        "target": "18_47",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_76->18_77",
+        "source": "18_76",
+        "target": "18_77",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_77->18_42",
+        "source": "18_77",
+        "target": "18_42",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_78->18_79",
+        "source": "18_78",
+        "target": "18_79",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_79->18_80",
+        "source": "18_79",
+        "target": "18_80",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_80->18_47",
+        "source": "18_80",
+        "target": "18_47",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_81->18_82",
+        "source": "18_81",
+        "target": "18_82",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_82->18_83",
+        "source": "18_82",
+        "target": "18_83",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_83->18_84",
+        "source": "18_83",
+        "target": "18_84",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "18_84->18_47",
+        "source": "18_84",
+        "target": "18_47",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

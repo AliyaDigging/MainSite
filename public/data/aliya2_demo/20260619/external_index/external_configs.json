@@ -1,0 +1,582 @@
+{
+  "ambientMessage": {
+    "1": {
+      "id": "1",
+      "color": {
+        "r": 1,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "2": {
+      "id": "2",
+      "color": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      }
+    },
+    "3": {
+      "id": "3",
+      "color": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "NULL": {
+      "id": "NULL",
+      "color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    }
+  },
+  "audioConfig": {
+    "Aliya曙光背景音乐": {
+      "key": "Aliya曙光背景音乐",
+      "category": 0,
+      "clipFilename": "bgm/Aliya曙光背景音乐.ogg",
+      "defaultVolume": 0.3,
+      "loop": true,
+      "fadeInSeconds": 0,
+      "fadeOutSeconds": 0
+    },
+    "Msg": {
+      "key": "Msg",
+      "category": 1,
+      "clipFilename": "sfx/msg.ogg",
+      "defaultVolume": 0.5,
+      "loop": false,
+      "fadeInSeconds": 0,
+      "fadeOutSeconds": 0
+    },
+    "NewMsg": {
+      "key": "NewMsg",
+      "category": 1,
+      "clipFilename": "sfx/消息提示音.ogg",
+      "defaultVolume": 0.5,
+      "loop": false,
+      "fadeInSeconds": 0,
+      "fadeOutSeconds": 0
+    },
+    "SearchFailed": {
+      "key": "SearchFailed",
+      "category": 1,
+      "clipFilename": "sfx/SearchFailedSFX.ogg",
+      "defaultVolume": 0.5,
+      "loop": false,
+      "fadeInSeconds": 0,
+      "fadeOutSeconds": 0
+    }
+  },
+  "chatConfig": {
+    "channels": {
+      "Outside": {
+        "id": "Outside",
+        "name": {
+          "zh-cn": "外部",
+          "en-us": "Outside"
+        },
+        "avatarFilename": "channel/Outside.png",
+        "channelType": 1,
+        "startConversation": {
+          "title": "1.1Aliya在太空里被抓",
+          "originConversationId": "32",
+          "actualConversationInfo": {
+            "flowchartId": "32",
+            "nodeId": "32_1"
+          }
+        },
+        "beginningAtFirst": true
+      },
+      "Aliya": {
+        "id": "Aliya",
+        "name": {
+          "zh-cn": "Aliya",
+          "en-us": "Aliya"
+        },
+        "avatarFilename": "channel/Aliya.png",
+        "channelType": 0,
+        "startConversation": {
+          "title": "2.1Aliya苏醒",
+          "originConversationId": "11",
+          "actualConversationInfo": {
+            "flowchartId": "2",
+            "nodeId": "11_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "Kane": {
+        "id": "Kane",
+        "name": {
+          "zh-cn": "Kane",
+          "en-us": "Kane"
+        },
+        "avatarFilename": "channel/Kane.png",
+        "channelType": 0,
+        "startConversation": {
+          "title": "2.2测试玩家",
+          "originConversationId": "27",
+          "actualConversationInfo": {
+            "flowchartId": "5",
+            "nodeId": "27_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "04510121": {
+        "id": "04510121",
+        "name": {
+          "zh-cn": "04510121",
+          "en-us": "04510121"
+        },
+        "avatarFilename": "channel/Player.png",
+        "channelType": 0,
+        "startConversation": {
+          "title": "1.2Cally找到玩家（公司信号）",
+          "originConversationId": "9",
+          "actualConversationInfo": {
+            "flowchartId": "9",
+            "nodeId": "9_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "Cally": {
+        "id": "Cally",
+        "name": {
+          "zh-cn": "Cally",
+          "en-us": "Cally"
+        },
+        "avatarFilename": "channel/Cally.png",
+        "channelType": 0,
+        "startConversation": {
+          "title": "1.2Cally找到玩家（个人账号）",
+          "originConversationId": "24",
+          "actualConversationInfo": {
+            "flowchartId": "6",
+            "nodeId": "24_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "Cally的上司": {
+        "id": "Cally的上司",
+        "name": {
+          "zh-cn": "Andrew",
+          "en-us": "Andrew"
+        },
+        "avatarFilename": "channel/Player.png",
+        "channelType": 0,
+        "startConversation": {
+          "title": "1.3玩家骂Cally上司",
+          "originConversationId": "26",
+          "actualConversationInfo": {
+            "flowchartId": "26",
+            "nodeId": "26_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "Police": {
+        "id": "Police",
+        "name": {
+          "zh-cn": "警署",
+          "en-us": "Space Police"
+        },
+        "avatarFilename": "channel/Player.png",
+        "channelType": 0,
+        "startConversation": {
+          "title": "1.1警察",
+          "originConversationId": "20",
+          "actualConversationInfo": {
+            "flowchartId": "20",
+            "nodeId": "20_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "Windy": {
+        "id": "Windy",
+        "name": {
+          "zh-cn": "Windy",
+          "en-us": "Windy"
+        },
+        "avatarFilename": "channel/Windy.png",
+        "channelType": 0,
+        "startConversation": {
+          "title": "3.10尝试联系Windy",
+          "originConversationId": "18",
+          "actualConversationInfo": {
+            "flowchartId": "7",
+            "nodeId": "18_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "Oleg": {
+        "id": "Oleg",
+        "name": {
+          "zh-cn": "Oleg",
+          "en-us": "Oleg"
+        },
+        "avatarFilename": "channel/Oleg.png",
+        "channelType": 0,
+        "startConversation": {
+          "title": "2.3尝试联系Oleg",
+          "originConversationId": "12",
+          "actualConversationInfo": {
+            "flowchartId": "8",
+            "nodeId": "12_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "Team": {
+        "id": "Team",
+        "name": {
+          "zh-cn": "逃跑小分队",
+          "en-us": "Team"
+        },
+        "avatarFilename": "channel/Group.png",
+        "channelType": 1,
+        "startConversation": {
+          "title": "2.2食堂开会",
+          "originConversationId": "41",
+          "actualConversationInfo": {
+            "flowchartId": "3",
+            "nodeId": "41_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "AliyaTest": {
+        "id": "AliyaTest",
+        "name": {
+          "zh-cn": "Aliya",
+          "en-us": "Aliya"
+        },
+        "avatarFilename": "channel/Aliya.png",
+        "channelType": 0,
+        "startConversation": {
+          "title": "MZ/Test1",
+          "originConversationId": "83",
+          "actualConversationInfo": {
+            "flowchartId": "83",
+            "nodeId": "83_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "WindyTest": {
+        "id": "WindyTest",
+        "name": {
+          "zh-cn": "Windy",
+          "en-us": "Windy"
+        },
+        "avatarFilename": "channel/Windy.png",
+        "channelType": 0,
+        "startConversation": {
+          "title": "MZ/Test2",
+          "originConversationId": "85",
+          "actualConversationInfo": {
+            "flowchartId": "86",
+            "nodeId": "85_1"
+          }
+        },
+        "beginningAtFirst": false
+      },
+      "TeamTest": {
+        "id": "TeamTest",
+        "name": {
+          "zh-cn": "Team",
+          "en-us": "Team"
+        },
+        "avatarFilename": "channel/Group.png",
+        "channelType": 1,
+        "startConversation": {
+          "title": "MZ/群聊",
+          "originConversationId": "84",
+          "actualConversationInfo": {
+            "flowchartId": "84",
+            "nodeId": "84_1"
+          }
+        },
+        "beginningAtFirst": false
+      }
+    },
+    "actors": {
+      "Aliya": {
+        "name": "Aliya",
+        "avatarFilename": "actor/Aliya.png"
+      },
+      "Cally": {
+        "name": "Cally",
+        "avatarFilename": "actor/Cally.png"
+      },
+      "04510121": {
+        "name": "04510121",
+        "avatarFilename": "actor/Player.png"
+      },
+      "Andrew": {
+        "name": "Andrew",
+        "avatarFilename": "actor/Player.png"
+      },
+      "Windy": {
+        "name": "Windy",
+        "avatarFilename": "actor/Windy.png"
+      },
+      "Ryoko": {
+        "name": "Ryoko",
+        "avatarFilename": "actor/Ryoko.png"
+      },
+      "Kane": {
+        "name": "Kane",
+        "avatarFilename": "actor/Kane.png"
+      },
+      "Oleg": {
+        "name": "Oleg",
+        "avatarFilename": "actor/Oleg.png"
+      },
+      "Police": {
+        "name": "Police",
+        "avatarFilename": "actor/Player.png"
+      },
+      "???": {
+        "name": "???",
+        "avatarFilename": "actor/Player.png"
+      }
+    }
+  },
+  "mediaMessageConfig": {
+    "images": {
+      "Aliya看向飞船窗外的地球": {
+        "id": "Aliya看向飞船窗外的地球",
+        "imageFilename": "cg/cg8正片.png"
+      },
+      "Aliya从床上醒来": {
+        "id": "Aliya从床上醒来",
+        "imageFilename": "cg/cg5正片.png"
+      },
+      "Aliya照镜子 ": {
+        "id": "Aliya照镜子 ",
+        "imageFilename": "cg/cg11正片.png"
+      },
+      "食堂合影": {
+        "id": "食堂合影",
+        "imageFilename": "cg/cg1正片.png"
+      },
+      "Cally在厕所过生日": {
+        "id": "Cally在厕所过生日",
+        "imageFilename": "cg/cg6正片.png"
+      },
+      "Ryoko和Kane的合影": {
+        "id": "Ryoko和Kane的合影",
+        "imageFilename": "cg/cg12正片.png"
+      },
+      "Oleg镜子中的自己": {
+        "id": "Oleg镜子中的自己",
+        "imageFilename": "cg/cg10正片.png"
+      },
+      "Windy自拍证明": {
+        "id": "Windy自拍证明",
+        "imageFilename": "cg/cg9正片.png"
+      }
+    },
+    "emojis": {
+      "你小子": {
+        "id": "你小子",
+        "imageFilename": "emoji/Aliya7.png"
+      },
+      "震惊": {
+        "id": "震惊",
+        "imageFilename": "emoji/Aliya5.png"
+      },
+      "笑": {
+        "id": "笑",
+        "imageFilename": "emoji/Aliya6.png"
+      },
+      "小哭": {
+        "id": "小哭",
+        "imageFilename": "emoji/Aliya4.png"
+      },
+      "生气": {
+        "id": "生气",
+        "imageFilename": "emoji/Aliya1.png"
+      },
+      "困": {
+        "id": "困",
+        "imageFilename": "emoji/Aliya3.png"
+      },
+      "玫瑰花": {
+        "id": "玫瑰花",
+        "imageFilename": "emoji/Aliya2.png"
+      },
+      "哈哈哈": {
+        "id": "哈哈哈",
+        "imageFilename": "emoji/Kane1.png"
+      },
+      "呜呜呜": {
+        "id": "呜呜呜",
+        "imageFilename": "emoji/Kane2.png"
+      },
+      "啊啊啊": {
+        "id": "啊啊啊",
+        "imageFilename": "emoji/Kane3.png"
+      },
+      "欸欸欸": {
+        "id": "欸欸欸",
+        "imageFilename": "emoji/Kane4.png"
+      }
+    }
+  },
+  "searchConfig": [
+    {
+      "keywords": {
+        "zh-cn": [
+          "新柏林市",
+          "新柏林",
+          "柏林"
+        ],
+        "en-us": [
+          "New Berlin",
+          "New Berlin",
+          "Berlin"
+        ]
+      },
+      "documentIds": [
+        "百科：新柏林市",
+        "展望新柏林未来十年发展"
+      ]
+    },
+    {
+      "keywords": {
+        "zh-cn": [
+          "新维加斯区"
+        ],
+        "en-us": [
+          "New Vegas District"
+        ]
+      },
+      "documentIds": [
+        "百科：新维加斯区"
+      ]
+    },
+    {
+      "keywords": {
+        "zh-cn": [
+          "全球证券交易论坛"
+        ],
+        "en-us": [
+          "Global Securities Trading Forum"
+        ]
+      },
+      "documentIds": [
+        "百科：全球证券交易论坛"
+      ]
+    },
+    {
+      "keywords": {
+        "zh-cn": [
+          "星际移民融合基金"
+        ],
+        "en-us": [
+          "Interstellar Migration Integration Fund"
+        ]
+      },
+      "documentIds": [
+        "百科：星际移民融合基金"
+      ]
+    },
+    {
+      "keywords": {
+        "zh-cn": [
+          "零失业培训计划"
+        ],
+        "en-us": [
+          "Zero-Unemployment Training Program"
+        ]
+      },
+      "documentIds": [
+        "百科：零失业培训计划"
+      ]
+    },
+    {
+      "keywords": {
+        "zh-cn": [
+          "尼昂医药"
+        ],
+        "en-us": [
+          "Neon Pharmaceuticals"
+        ]
+      },
+      "documentIds": [
+        "百科：尼昂医药",
+        "邮件：采访申请，关注尼昂医药未来五年战略布局"
+      ]
+    },
+    {
+      "keywords": {
+        "zh-cn": [
+          "泰瑞公司",
+          "泰瑞"
+        ],
+        "en-us": [
+          "Tayris Corporation",
+          "Tayris"
+        ]
+      },
+      "documentIds": [
+        "百科：泰瑞公司"
+      ]
+    },
+    {
+      "keywords": {
+        "zh-cn": [
+          "米弗雷联合体",
+          "米弗雷"
+        ],
+        "en-us": [
+          "Mifrey Consortium",
+          "Mifrey"
+        ]
+      },
+      "documentIds": [
+        "百科：米弗雷联合体"
+      ]
+    },
+    {
+      "keywords": {
+        "zh-cn": [
+          "人偶"
+        ],
+        "en-us": [
+          "Doll"
+        ]
+      },
+      "documentIds": [
+        "页面被清理"
+      ]
+    },
+    {
+      "keywords": {
+        "zh-cn": [
+          "Windy"
+        ],
+        "en-us": [
+          "Windy"
+        ]
+      },
+      "documentIds": [
+        "百科：Windy"
+      ]
+    }
+  ]
+}

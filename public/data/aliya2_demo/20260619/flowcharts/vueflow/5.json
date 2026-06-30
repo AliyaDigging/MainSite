@@ -1,0 +1,2591 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 75,
+      "edge": 87,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {
+      "Team.C2_2Kane_team": {
+        "key": "Team.C2_2Kane_team",
+        "type": "boolean"
+      },
+      "Oleg.OlegConnect": {
+        "key": "Oleg.OlegConnect",
+        "type": "boolean"
+      },
+      "Team.C3_2Kane_team": {
+        "key": "Team.C3_2Kane_team",
+        "type": "boolean"
+      },
+      "Oleg.C3_2Kane_Oleg_3": {
+        "key": "Oleg.C3_2Kane_Oleg_3",
+        "type": "boolean"
+      },
+      "Oleg.C3_2Kane_Oleg_1": {
+        "key": "Oleg.C3_2Kane_Oleg_1",
+        "type": "boolean"
+      }
+    },
+    "flowchartRefs": [],
+    "currName": "Kane",
+    "currId": "5",
+    "articyInternal": {
+      "title": "Kane",
+      "description": "",
+      "articyId": "72057611217797170",
+      "channelId": "Kane"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "5_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "5_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797170"
+          }
+        }
+      },
+      {
+        "id": "5_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "5_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797180"
+          }
+        }
+      },
+      {
+        "id": "5_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "5_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797180"
+          }
+        }
+      },
+      {
+        "id": "5_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "5_3",
+            "title": "Kane: \"$md{联络成功}\"",
+            "dialogueText": "$md{联络成功}",
+            "menuText": "",
+            "articyId": "72057636987613460"
+          }
+        }
+      },
+      {
+        "id": "27_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "27_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987613250"
+          }
+        }
+      },
+      {
+        "id": "27_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "27_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987613250"
+          }
+        }
+      },
+      {
+        "id": "27_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "27_3",
+            "title": "Player: \"1\"",
+            "dialogueText": "1",
+            "menuText": "",
+            "articyId": "72057636987613260"
+          }
+        }
+      },
+      {
+        "id": "27_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "27_4",
+            "title": "Kane: \"测试\"",
+            "dialogueText": "测试",
+            "menuText": "",
+            "articyId": "72057636987613260"
+          }
+        }
+      },
+      {
+        "id": "27_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "27_5",
+            "title": "Player: \"测试\"",
+            "dialogueText": "测试",
+            "menuText": "",
+            "articyId": "72057636987613280"
+          }
+        }
+      },
+      {
+        "id": "27_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "27_6",
+            "title": "Player: \"喂喂喂\"",
+            "dialogueText": "喂喂喂",
+            "menuText": "",
+            "articyId": "72057636987613280"
+          }
+        }
+      },
+      {
+        "id": "27_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Kane.C2_2Team_Kane",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Kane.C2_2Team_Kane\",true,Variable[\"JudgmentType.Equal\"])",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "27_7",
+            "title": "AliyaFunc.WaitForCondition(\"Kane.C2_2Team_Kane\",true,JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987613300"
+          }
+        }
+      },
+      {
+        "id": "27_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 3,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(3)",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "27_8",
+            "title": "AliyaFunc.WaitTime(3)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987613300"
+          }
+        }
+      },
+      {
+        "id": "27_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Team.C2_2Kane_team\"]=true",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "27_9",
+            "title": "Team.C2_2Kane_team=true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987613520"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Team.C2_2Kane_team",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "27_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "27_10",
+            "title": "Player: \"？\"",
+            "dialogueText": "？",
+            "menuText": "",
+            "articyId": "72057602627863220"
+          }
+        }
+      },
+      {
+        "id": "29_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987615730"
+          }
+        }
+      },
+      {
+        "id": "29_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_3",
+            "title": "Kane: \"@$v{name}，联系上Oleg没\"",
+            "dialogueText": "@$v{name}，联系上Oleg没",
+            "menuText": "",
+            "articyId": "72057602627864480"
+          }
+        }
+      },
+      {
+        "id": "29_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_4",
+            "title": "Player: \"我忘记他账号了\"",
+            "dialogueText": "我忘记他账号了",
+            "menuText": "",
+            "articyId": "72057602627864500"
+          }
+        }
+      },
+      {
+        "id": "29_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_5",
+            "title": "Player: \"还没联系\"",
+            "dialogueText": "还没联系",
+            "menuText": "",
+            "articyId": "72057602627864510"
+          }
+        }
+      },
+      {
+        "id": "29_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_6",
+            "title": "Oleg.OlegConnect==true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864530"
+          }
+        }
+      },
+      {
+        "id": "29_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ConditionCheck",
+        "data": {
+          "conditionString": "Variable[\"Oleg.OlegConnect\"]==true",
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_7",
+            "title": "Oleg.OlegConnect==true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864530"
+          },
+          "variableOps": {
+            "assignments": [],
+            "condition": {
+              "variableName": "Oleg.OlegConnect",
+              "compareOp": "eq",
+              "valueAgainst": true
+            }
+          }
+        }
+      },
+      {
+        "id": "29_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ConditionCheck",
+        "data": {
+          "conditionString": "(Variable[\"Oleg.OlegConnect\"]==true) == false",
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_8",
+            "title": "!(Oleg.OlegConnect==true)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864530"
+          },
+          "variableOps": {
+            "assignments": [],
+            "condition": {
+              "variableName": "Oleg.OlegConnect",
+              "compareOp": "eq",
+              "valueAgainst": false
+            }
+          }
+        }
+      },
+      {
+        "id": "29_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_9",
+            "title": "未命名核心 (03)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864540"
+          }
+        }
+      },
+      {
+        "id": "29_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_10",
+            "title": "Kane: \"麻烦尽快了\"",
+            "dialogueText": "麻烦尽快了",
+            "menuText": "",
+            "articyId": "72057602627864580"
+          }
+        }
+      },
+      {
+        "id": "29_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_11",
+            "title": "Kane: \"$num{Oleg}\"",
+            "dialogueText": "$num{Oleg}",
+            "menuText": "",
+            "articyId": "72057602627864590"
+          }
+        }
+      },
+      {
+        "id": "29_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_12",
+            "title": "Player: \"Oleg建议可以通过仓库货物的货单了解你们所在的位置\"",
+            "dialogueText": "Oleg建议可以通过仓库货物的货单了解你们所在的位置",
+            "menuText": "",
+            "articyId": "72057619807733420"
+          }
+        }
+      },
+      {
+        "id": "29_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_13",
+            "title": "Kane: \"这个主意不错，我去和Ryoko讨论一下 看看具体怎么分工\"",
+            "dialogueText": "这个主意不错，我去和Ryoko讨论一下",
+            "menuText": "",
+            "articyId": "72057619807733420"
+          }
+        }
+      },
+      {
+        "id": "29_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Kane.C3_2Oleg_Kane_4",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Kane.C3_2Oleg_Kane_4\", true, Variable[\"JudgmentType.Equal\"])",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_14",
+            "title": "AliyaFunc.WaitForCondition(\"Kane.C3_2Oleg_Kane_4\", true, JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807741010"
+          }
+        }
+      },
+      {
+        "id": "29_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_15",
+            "title": "Player: \"我们可以通过仓库货单来确定基地的位置\"",
+            "dialogueText": "我们可以通过仓库货单来确定基地的位置",
+            "menuText": "",
+            "articyId": "72057619807741700"
+          }
+        }
+      },
+      {
+        "id": "29_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Kane.C3_2Oleg_Kane_3",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Kane.C3_2Oleg_Kane_3\", true, Variable[\"JudgmentType.Equal\"])",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_16",
+            "title": "AliyaFunc.WaitForCondition(\"Kane.C3_2Oleg_Kane_3\", true, JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807741010"
+          }
+        }
+      },
+      {
+        "id": "29_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_17",
+            "title": "未命名核心 (03)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627865470"
+          }
+        }
+      },
+      {
+        "id": "29_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_18",
+            "title": "Player: \"联系上了\"",
+            "dialogueText": "联系上了",
+            "menuText": "",
+            "articyId": "72057602627865490"
+          }
+        }
+      },
+      {
+        "id": "29_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_19",
+            "title": "Player: \"正在说话呢\"",
+            "dialogueText": "正在说话呢",
+            "menuText": "",
+            "articyId": "72057602627865490"
+          }
+        }
+      },
+      {
+        "id": "29_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Kane.C3_2Oleg_Kane_1",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Kane.C3_2Oleg_Kane_1\", true, Variable[\"JudgmentType.Equal\"])",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_20",
+            "title": "AliyaFunc.WaitForCondition(\"Kane.C3_2Oleg_Kane_1\", true, JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807740940"
+          }
+        }
+      },
+      {
+        "id": "29_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Team.C3_2Kane_team\"]=true",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_21",
+            "title": "Team.C3_2Kane_team=true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987615760"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Team.C3_2Kane_team",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "29_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForever",
+        "data": {
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForever()",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_22",
+            "title": "AliyaFunc.WaitForever()",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987615780"
+          }
+        }
+      },
+      {
+        "id": "29_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Kane.C2_2Team_Kane_1",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Kane.C2_2Team_Kane_1\",true,Variable[\"JudgmentType.Equal\"])",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_23",
+            "title": "AliyaFunc.WaitForCondition(\"Kane.C2_2Team_Kane_1\",true,JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987616000"
+          }
+        }
+      },
+      {
+        "id": "29_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 10,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(10)",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "29_24",
+            "title": "AliyaFunc.WaitTime(10)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987616020"
+          }
+        }
+      },
+      {
+        "id": "29_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "29_25",
+            "title": "Kane: \"这个主意不错，我去和Ryoko讨论一下 看看具体怎么分工\"",
+            "dialogueText": "看看具体怎么分工",
+            "menuText": "",
+            "articyId": "0x01000006000006B6-1"
+          }
+        }
+      },
+      {
+        "id": "30_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "30_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807733380"
+          }
+        }
+      },
+      {
+        "id": "30_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "30_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807733380"
+          }
+        }
+      },
+      {
+        "id": "30_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "30_3",
+            "title": "Kane: \"Oleg这个人容易对他人起疑 把这个发给他\"",
+            "dialogueText": "Oleg这个人容易对他人起疑",
+            "menuText": "",
+            "articyId": "72057619807733420"
+          }
+        }
+      },
+      {
+        "id": "30_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "30_4",
+            "title": "Kane: \"$image{Ryoko和Kane的合影}\"",
+            "dialogueText": "$image{Ryoko和Kane的合影}",
+            "menuText": "",
+            "articyId": "72057619807733520"
+          }
+        }
+      },
+      {
+        "id": "30_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "30_5",
+            "title": "Kane: \"对了，问问他Milia怎么样？ Milia是他的妻子，也是我以前...\"",
+            "dialogueText": "对了，问问他Milia怎么样？",
+            "menuText": "",
+            "articyId": "72057619807733540"
+          }
+        }
+      },
+      {
+        "id": "30_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Oleg.C3_2Kane_Oleg_3\"] = true",
+          "actorId": "30",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "30_6",
+            "title": "Oleg.C3_2Kane_Oleg_3 = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807741040"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Oleg.C3_2Kane_Oleg_3",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "30_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "30_7",
+            "title": "Player: \"感觉还是不怎么信任我？\"",
+            "dialogueText": "感觉还是不怎么信任我？",
+            "menuText": "",
+            "articyId": "72057602627865500"
+          }
+        }
+      },
+      {
+        "id": "30_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "30_8",
+            "title": "Player: \"事情进展不顺利，有没有有说服力的证据？\"",
+            "dialogueText": "事情进展不顺利，有没有有说服力的证据？",
+            "menuText": "",
+            "articyId": "72057602627865520"
+          }
+        }
+      },
+      {
+        "id": "30_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "30_9",
+            "title": "Kane: \"Oleg这个人容易对他人起疑 把这个发给他\"",
+            "dialogueText": "把这个发给他",
+            "menuText": "",
+            "articyId": "0x01000006000006AC-1"
+          }
+        }
+      },
+      {
+        "id": "30_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "30_10",
+            "title": "Kane: \"对了，问问他Milia怎么样？ Milia是他的妻子，也是我以前...\"",
+            "dialogueText": "Milia是他的妻子，也是我以前在谷神星矿区的朋友",
+            "menuText": "",
+            "articyId": "0x0100000600000719-1"
+          }
+        }
+      },
+      {
+        "id": "31_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "31_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807733360"
+          }
+        }
+      },
+      {
+        "id": "31_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "31_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807733360"
+          }
+        }
+      },
+      {
+        "id": "31_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_3",
+            "title": "Player: \"Oleg需要我证明我认识你…\"",
+            "dialogueText": "Oleg需要我证明我认识你…",
+            "menuText": "",
+            "articyId": "72057619807733390"
+          }
+        }
+      },
+      {
+        "id": "31_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_4",
+            "title": "Kane: \"$emoji{欸欸欸} 我想想啊… 你这么对他说…...\"",
+            "dialogueText": "$emoji{欸欸欸}",
+            "menuText": "",
+            "articyId": "72057619807733400"
+          }
+        }
+      },
+      {
+        "id": "31_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_5",
+            "title": "Player: \"快告诉我一些只有你和Oleg知道的事情！\"",
+            "dialogueText": "快告诉我一些只有你和Oleg知道的事情！",
+            "menuText": "",
+            "articyId": "72057619807733440"
+          }
+        }
+      },
+      {
+        "id": "31_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_6",
+            "title": "Player: \"你朋友的疑心病太重了！他完全不相信我\"",
+            "dialogueText": "你朋友的疑心病太重了！他完全不相信我",
+            "menuText": "",
+            "articyId": "72057619807733440"
+          }
+        }
+      },
+      {
+        "id": "31_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_7",
+            "title": "Player: \"为什么？\"",
+            "dialogueText": "为什么？",
+            "menuText": "",
+            "articyId": "72057619807733440"
+          }
+        }
+      },
+      {
+        "id": "31_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_8",
+            "title": "Player: \"我会说你在执行一项秘密而危险的任务？\"",
+            "dialogueText": "我会说你在执行一项秘密而危险的任务？",
+            "menuText": "",
+            "articyId": "72057619807733460"
+          }
+        }
+      },
+      {
+        "id": "31_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_9",
+            "title": "Player: \"我明白了\"",
+            "dialogueText": "我明白了",
+            "menuText": "",
+            "articyId": "72057619807733460"
+          }
+        }
+      },
+      {
+        "id": "31_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_10",
+            "title": "Kane: \"我暂时不想让他了解我的现状\"",
+            "dialogueText": "我暂时不想让他了解我的现状",
+            "menuText": "",
+            "articyId": "72057619807733460"
+          }
+        }
+      },
+      {
+        "id": "31_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_11",
+            "title": "Player: \"为什么不想让对方知道？\"",
+            "dialogueText": "为什么不想让对方知道？",
+            "menuText": "",
+            "articyId": "72057619807733470"
+          }
+        }
+      },
+      {
+        "id": "31_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_12",
+            "title": "Player: \"我明白了\"",
+            "dialogueText": "我明白了",
+            "menuText": "",
+            "articyId": "72057619807733470"
+          }
+        }
+      },
+      {
+        "id": "31_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_13",
+            "title": "Kane: \"…好吧，因为有些丢脸…… 成为人偶这个事情，如果让他知道了，只会...\"",
+            "dialogueText": "…好吧，因为有些丢脸……",
+            "menuText": "",
+            "articyId": "72057619807733470"
+          }
+        }
+      },
+      {
+        "id": "31_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Oleg.C3_2Kane_Oleg_1\"] = true",
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "31_14",
+            "title": "Oleg.C3_2Kane_Oleg_1 = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807741000"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Oleg.C3_2Kane_Oleg_1",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "31_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_15",
+            "title": "Kane: \"你就说我现在被泰瑞整到了月球在做研究 需要他帮忙来月球搜集信息看...\"",
+            "dialogueText": "你就说我现在被泰瑞整到了月球在做研究",
+            "menuText": "",
+            "articyId": "72057636987616340"
+          }
+        }
+      },
+      {
+        "id": "31_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_16",
+            "title": "Kane: \"额 还是别这样\"",
+            "dialogueText": "额",
+            "menuText": "",
+            "articyId": "72057636987616340"
+          }
+        }
+      },
+      {
+        "id": "31_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_17",
+            "title": "Kane: \"$emoji{欸欸欸} 我想想啊… 你这么对他说…...\"",
+            "dialogueText": "我想想啊…",
+            "menuText": "",
+            "articyId": "0x0100000600000698-1"
+          }
+        }
+      },
+      {
+        "id": "31_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_18",
+            "title": "Kane: \"$emoji{欸欸欸} 我想想啊… 你这么对他说…...\"",
+            "dialogueText": "你这么对他说…",
+            "menuText": "",
+            "articyId": "0x0100000600000698-2"
+          }
+        }
+      },
+      {
+        "id": "31_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_19",
+            "title": "Kane: \"$emoji{欸欸欸} 我想想啊… 你这么对他说…...\"",
+            "dialogueText": "他第一次和他妻子约会的时候借了我的裤子",
+            "menuText": "",
+            "articyId": "0x0100000600000698-3"
+          }
+        }
+      },
+      {
+        "id": "31_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_20",
+            "title": "Kane: \"$emoji{欸欸欸} 我想想啊… 你这么对他说…...\"",
+            "dialogueText": "他自己的因为第一次约会太紧张，在做深蹲放松的时候撕裂了",
+            "menuText": "",
+            "articyId": "0x0100000600000698-4"
+          }
+        }
+      },
+      {
+        "id": "31_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_21",
+            "title": "Kane: \"$emoji{欸欸欸} 我想想啊… 你这么对他说…...\"",
+            "dialogueText": "这样他应该就会相信你了",
+            "menuText": "",
+            "articyId": "0x0100000600000698-5"
+          }
+        }
+      },
+      {
+        "id": "31_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_22",
+            "title": "Kane: \"$emoji{欸欸欸} 我想想啊… 你这么对他说…...\"",
+            "dialogueText": "$emoji{哈哈哈}",
+            "menuText": "",
+            "articyId": "0x0100000600000698-6"
+          }
+        }
+      },
+      {
+        "id": "31_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_23",
+            "title": "Kane: \"$emoji{欸欸欸} 我想想啊… 你这么对他说…...\"",
+            "dialogueText": "对了，不要和Oleg说是我现在人偶的身份",
+            "menuText": "",
+            "articyId": "0x0100000600000698-7"
+          }
+        }
+      },
+      {
+        "id": "31_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_24",
+            "title": "Kane: \"…好吧，因为有些丢脸…… 成为人偶这个事情，如果让他知道了，只会...\"",
+            "dialogueText": "成为人偶这个事情，如果让他知道了，只会嘲笑我…",
+            "menuText": "",
+            "articyId": "0x01000006000006E8-1"
+          }
+        }
+      },
+      {
+        "id": "31_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_25",
+            "title": "Kane: \"…好吧，因为有些丢脸…… 成为人偶这个事情，如果让他知道了，只会...\"",
+            "dialogueText": "所以，什么都不要和他说！",
+            "menuText": "",
+            "articyId": "0x01000006000006E8-2"
+          }
+        }
+      },
+      {
+        "id": "31_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_26",
+            "title": "Kane: \"你就说我现在被泰瑞整到了月球在做研究 需要他帮忙来月球搜集信息看...\"",
+            "dialogueText": "需要他帮忙来月球搜集信息看看我被具体弄到哪了",
+            "menuText": "",
+            "articyId": "0x0100000A00003C4E-1"
+          }
+        }
+      },
+      {
+        "id": "31_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Kane",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "31_27",
+            "title": "Kane: \"额 还是别这样\"",
+            "dialogueText": "还是别这样",
+            "menuText": "",
+            "articyId": "0x0100000A00003C55-1"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "5_0->5_1",
+        "source": "5_0",
+        "target": "5_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "5_1->5_3",
+        "source": "5_1",
+        "target": "5_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "5_3->5_2",
+        "source": "5_3",
+        "target": "5_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "5_2->27_1",
+        "source": "5_2",
+        "target": "27_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_1->27_7",
+        "source": "27_1",
+        "target": "27_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_3->27_9",
+        "source": "27_3",
+        "target": "27_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_4->27_3",
+        "source": "27_4",
+        "target": "27_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_4->27_5",
+        "source": "27_4",
+        "target": "27_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_4->27_6",
+        "source": "27_4",
+        "target": "27_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_4->27_10",
+        "source": "27_4",
+        "target": "27_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_5->27_9",
+        "source": "27_5",
+        "target": "27_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_6->27_9",
+        "source": "27_6",
+        "target": "27_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_7->27_8",
+        "source": "27_7",
+        "target": "27_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_8->27_4",
+        "source": "27_8",
+        "target": "27_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_9->27_2",
+        "source": "27_9",
+        "target": "27_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_10->27_9",
+        "source": "27_10",
+        "target": "27_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "27_2->29_1",
+        "source": "27_2",
+        "target": "29_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_1->29_23",
+        "source": "29_1",
+        "target": "29_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_3->29_6",
+        "source": "29_3",
+        "target": "29_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_4->29_11",
+        "source": "29_4",
+        "target": "29_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_5->29_10",
+        "source": "29_5",
+        "target": "29_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_6->29_7",
+        "source": "29_6",
+        "target": "29_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_6->29_8",
+        "source": "29_6",
+        "target": "29_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_7->29_17",
+        "source": "29_7",
+        "target": "29_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_8->29_9",
+        "source": "29_8",
+        "target": "29_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_9->29_5",
+        "source": "29_9",
+        "target": "29_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_9->29_4",
+        "source": "29_9",
+        "target": "29_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_10->29_20",
+        "source": "29_10",
+        "target": "29_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_11->29_20",
+        "source": "29_11",
+        "target": "29_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_12->29_13",
+        "source": "29_12",
+        "target": "29_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_13->29_25",
+        "source": "29_13",
+        "target": "29_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_14->29_12",
+        "source": "29_14",
+        "target": "29_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_14->29_15",
+        "source": "29_14",
+        "target": "29_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_15->29_13",
+        "source": "29_15",
+        "target": "29_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_17->29_18",
+        "source": "29_17",
+        "target": "29_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_17->29_19",
+        "source": "29_17",
+        "target": "29_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_18->29_20",
+        "source": "29_18",
+        "target": "29_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_19->29_20",
+        "source": "29_19",
+        "target": "29_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_21->29_22",
+        "source": "29_21",
+        "target": "29_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_23->29_24",
+        "source": "29_23",
+        "target": "29_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_24->29_3",
+        "source": "29_24",
+        "target": "29_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_25->29_21",
+        "source": "29_25",
+        "target": "29_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_16->30_1",
+        "source": "29_16",
+        "target": "30_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_1->30_7",
+        "source": "30_1",
+        "target": "30_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_1->30_8",
+        "source": "30_1",
+        "target": "30_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_3->30_9",
+        "source": "30_3",
+        "target": "30_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_4->30_5",
+        "source": "30_4",
+        "target": "30_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_5->30_10",
+        "source": "30_5",
+        "target": "30_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_6->30_2",
+        "source": "30_6",
+        "target": "30_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_7->30_3",
+        "source": "30_7",
+        "target": "30_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_8->30_3",
+        "source": "30_8",
+        "target": "30_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_9->30_4",
+        "source": "30_9",
+        "target": "30_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_10->30_6",
+        "source": "30_10",
+        "target": "30_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "30_2->29_14",
+        "source": "30_2",
+        "target": "29_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "29_20->31_1",
+        "source": "29_20",
+        "target": "31_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_1->31_3",
+        "source": "31_1",
+        "target": "31_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_1->31_5",
+        "source": "31_1",
+        "target": "31_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_1->31_6",
+        "source": "31_1",
+        "target": "31_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_3->31_4",
+        "source": "31_3",
+        "target": "31_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_4->31_17",
+        "source": "31_4",
+        "target": "31_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_5->31_4",
+        "source": "31_5",
+        "target": "31_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_6->31_4",
+        "source": "31_6",
+        "target": "31_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_7->31_10",
+        "source": "31_7",
+        "target": "31_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_8->31_16",
+        "source": "31_8",
+        "target": "31_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_9->31_15",
+        "source": "31_9",
+        "target": "31_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_10->31_11",
+        "source": "31_10",
+        "target": "31_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_10->31_12",
+        "source": "31_10",
+        "target": "31_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_11->31_13",
+        "source": "31_11",
+        "target": "31_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_12->31_15",
+        "source": "31_12",
+        "target": "31_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_13->31_24",
+        "source": "31_13",
+        "target": "31_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_14->31_2",
+        "source": "31_14",
+        "target": "31_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_15->31_26",
+        "source": "31_15",
+        "target": "31_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_16->31_27",
+        "source": "31_16",
+        "target": "31_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_17->31_18",
+        "source": "31_17",
+        "target": "31_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_18->31_19",
+        "source": "31_18",
+        "target": "31_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_19->31_20",
+        "source": "31_19",
+        "target": "31_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_20->31_21",
+        "source": "31_20",
+        "target": "31_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_21->31_22",
+        "source": "31_21",
+        "target": "31_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_22->31_23",
+        "source": "31_22",
+        "target": "31_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_23->31_7",
+        "source": "31_23",
+        "target": "31_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_23->31_8",
+        "source": "31_23",
+        "target": "31_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_23->31_9",
+        "source": "31_23",
+        "target": "31_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_24->31_25",
+        "source": "31_24",
+        "target": "31_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_25->31_15",
+        "source": "31_25",
+        "target": "31_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_26->31_14",
+        "source": "31_26",
+        "target": "31_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_27->31_15",
+        "source": "31_27",
+        "target": "31_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "31_2->29_16",
+        "source": "31_2",
+        "target": "29_16",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

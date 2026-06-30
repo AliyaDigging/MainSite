@@ -1,0 +1,632 @@
+{
+  "AliyaFunc.WaitForCondition": {
+    "name": "AliyaFunc.WaitForCondition",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "AliyaFunc.WaitTime": {
+    "name": "AliyaFunc.WaitTime",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "AliyaFunc.ChangeBGM": {
+    "name": "AliyaFunc.ChangeBGM",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "AliyaFunc.RestartGame": {
+    "name": "AliyaFunc.RestartGame",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "AliyaFunc.PushNews": {
+    "name": "AliyaFunc.PushNews",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "AliyaFunc.StartConversation": {
+    "name": "AliyaFunc.StartConversation",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "AliyaFunc.WaitForever": {
+    "name": "AliyaFunc.WaitForever",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "AliyaFunc.PlayerInput": {
+    "name": "AliyaFunc.PlayerInput",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "AliyaFunc.PushDoc": {
+    "name": "AliyaFunc.PushDoc",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "JudgmentType.Equal": {
+    "name": "JudgmentType.Equal",
+    "initValue": "Equal",
+    "type": "string"
+  },
+  "JudgmentType.Greater": {
+    "name": "JudgmentType.Greater",
+    "initValue": "Greater",
+    "type": "string"
+  },
+  "JudgmentType.Less": {
+    "name": "JudgmentType.Less",
+    "initValue": "Less",
+    "type": "string"
+  },
+  "JudgmentType.GreaterOrEqual": {
+    "name": "JudgmentType.GreaterOrEqual",
+    "initValue": "GreaterOrEqual",
+    "type": "string"
+  },
+  "JudgmentType.LessOrEqual": {
+    "name": "JudgmentType.LessOrEqual",
+    "initValue": "LessOrEqual",
+    "type": "string"
+  },
+  "JudgmentType.NotEqual": {
+    "name": "JudgmentType.NotEqual",
+    "initValue": "NotEqual",
+    "type": "string"
+  },
+  "ExampleVariables.ExampleVariable": {
+    "name": "ExampleVariables.ExampleVariable",
+    "initValue": true,
+    "type": "boolean"
+  },
+  "ExampleVariables.StringValue": {
+    "name": "ExampleVariables.StringValue",
+    "initValue": null,
+    "type": "null"
+  },
+  "ExampleVariables.IntValue": {
+    "name": "ExampleVariables.IntValue",
+    "initValue": "0",
+    "type": "string"
+  },
+  "ExampleVariables.BoolValue": {
+    "name": "ExampleVariables.BoolValue",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "ExampleVariables.PlayerChoiceAppear": {
+    "name": "ExampleVariables.PlayerChoiceAppear",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "ExampleVariables.DefaultChoiceAppear": {
+    "name": "ExampleVariables.DefaultChoiceAppear",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C1_1Police_Aliya": {
+    "name": "Aliya.C1_1Police_Aliya",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C5_9Oleg_Aliya_1": {
+    "name": "Aliya.C5_9Oleg_Aliya_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C5_9Oleg_Aliya_2": {
+    "name": "Aliya.C5_9Oleg_Aliya_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C5_9Oleg_Aliya_3": {
+    "name": "Aliya.C5_9Oleg_Aliya_3",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C5_9Oleg_Aliya_4": {
+    "name": "Aliya.C5_9Oleg_Aliya_4",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C5_7Lewis_Aliya": {
+    "name": "Aliya.C5_7Lewis_Aliya",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C6_4_PirateRadio_Aliya": {
+    "name": "Aliya.C6_4_PirateRadio_Aliya",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_3_cibi": {
+    "name": "Aliya.C3_3_cibi",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C_3_3kaisuoqi": {
+    "name": "Aliya.C_3_3kaisuoqi",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C_3_3_meet": {
+    "name": "Aliya.C_3_3_meet",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_3_Key": {
+    "name": "Aliya.C3_3_Key",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_3safe": {
+    "name": "Aliya.C3_3safe",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_3hleptwo": {
+    "name": "Aliya.C3_3hleptwo",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_3helpAliya": {
+    "name": "Aliya.C3_3helpAliya",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_15Cally_Aliya_1": {
+    "name": "Aliya.C4_15Cally_Aliya_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_15Researcher": {
+    "name": "Aliya.C4_15Researcher",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_15mission": {
+    "name": "Aliya.C4_15mission",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_15closeman": {
+    "name": "Aliya.C4_15closeman",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_3helpone": {
+    "name": "Aliya.C3_3helpone",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_15swich": {
+    "name": "Aliya.C4_15swich",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_15torch": {
+    "name": "Aliya.C4_15torch",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_15leaf": {
+    "name": "Aliya.C4_15leaf",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_4helpresearcher": {
+    "name": "Aliya.C3_4helpresearcher",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_3nothelpone": {
+    "name": "Aliya.C3_3nothelpone",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_15Aliya_Aliya": {
+    "name": "Aliya.C4_15Aliya_Aliya",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_16Aliya_Aliya": {
+    "name": "Aliya.C4_16Aliya_Aliya",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_15alcohol": {
+    "name": "Aliya.C4_15alcohol",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C4_15Aliya_Aliya_2": {
+    "name": "Aliya.C4_15Aliya_Aliya_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C1_1Police_Aliya_2": {
+    "name": "Aliya.C1_1Police_Aliya_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C1_1HidingPlace": {
+    "name": "Aliya.C1_1HidingPlace",
+    "initValue": null,
+    "type": "null"
+  },
+  "Aliya.C2_1Cally_Aliya": {
+    "name": "Aliya.C2_1Cally_Aliya",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_1Team_Aliya": {
+    "name": "Aliya.C3_1Team_Aliya",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_1Team_Aliya_1": {
+    "name": "Aliya.C3_1Team_Aliya_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_3Aliya_Outside": {
+    "name": "Aliya.C3_3Aliya_Outside",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_1Cally_Aliya": {
+    "name": "Aliya.C3_1Cally_Aliya",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_1Team_Aliya_2": {
+    "name": "Aliya.C3_1Team_Aliya_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Aliya.C3_12Windy_Aliya": {
+    "name": "Aliya.C3_12Windy_Aliya",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C3_2Kane_Oleg_1": {
+    "name": "Oleg.C3_2Kane_Oleg_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C3_2Kane_Oleg_2": {
+    "name": "Oleg.C3_2Kane_Oleg_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C3_2Kane_Oleg_3": {
+    "name": "Oleg.C3_2Kane_Oleg_3",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C5_9Aliya_Oleg_1": {
+    "name": "Oleg.C5_9Aliya_Oleg_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C5_9Aliya_Oleg_2": {
+    "name": "Oleg.C5_9Aliya_Oleg_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C5_9Aliya_Oleg_3": {
+    "name": "Oleg.C5_9Aliya_Oleg_3",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C6_2Lewis_Oleg_1": {
+    "name": "Oleg.C6_2Lewis_Oleg_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C5_7Lewis_Oleg": {
+    "name": "Oleg.C5_7Lewis_Oleg",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C5_9Aliya_Oleg_4": {
+    "name": "Oleg.C5_9Aliya_Oleg_4",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C3_16anbao": {
+    "name": "Oleg.C3_16anbao",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C3_16meeting": {
+    "name": "Oleg.C3_16meeting",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C3_16yanwudan": {
+    "name": "Oleg.C3_16yanwudan",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C2_3Get": {
+    "name": "Oleg.C2_3Get",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C3_2Oleg_1": {
+    "name": "Oleg.C3_2Oleg_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.C3_2Oleg_2": {
+    "name": "Oleg.C3_2Oleg_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Oleg.OlegConnect": {
+    "name": "Oleg.OlegConnect",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Kane.C3_2Oleg_Kane_1": {
+    "name": "Kane.C3_2Oleg_Kane_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Kane.C3_2Oleg_Kane_2": {
+    "name": "Kane.C3_2Oleg_Kane_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Kane.C3_2Oleg_Kane_3": {
+    "name": "Kane.C3_2Oleg_Kane_3",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Kane.C3_2Oleg_Kane_4": {
+    "name": "Kane.C3_2Oleg_Kane_4",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Kane.C2_2Team_Kane": {
+    "name": "Kane.C2_2Team_Kane",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Kane.C2_2Team_Kane_1": {
+    "name": "Kane.C2_2Team_Kane_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Police.C1_1Aliya_Police": {
+    "name": "Police.C1_1Aliya_Police",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Police.TheLocationInformationIsCorrect": {
+    "name": "Police.TheLocationInformationIsCorrect",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Police.C1_1Aliya_Police_2": {
+    "name": "Police.C1_1Aliya_Police_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Police.C1_1Aliya_Police_3": {
+    "name": "Police.C1_1Aliya_Police_3",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Team.C4_8Windy_team_1": {
+    "name": "Team.C4_8Windy_team_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Team.C4_8Windy_team_2": {
+    "name": "Team.C4_8Windy_team_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Team.C2_2Outside_team": {
+    "name": "Team.C2_2Outside_team",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Team.C2_2Kane_team": {
+    "name": "Team.C2_2Kane_team",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Team.C2_2Outside_team_1": {
+    "name": "Team.C2_2Outside_team_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Team.C3_2Aliya_team": {
+    "name": "Team.C3_2Aliya_team",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Team.C3_2Kane_team": {
+    "name": "Team.C3_2Kane_team",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Team.C2_3_1Cally_team": {
+    "name": "Team.C2_3_1Cally_team",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Team.C3_2_1AliyaSleep": {
+    "name": "Team.C3_2_1AliyaSleep",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Team.C3_2_1Aliya_team": {
+    "name": "Team.C3_2_1Aliya_team",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Lewis.C6_2Aliya_Lewis_1": {
+    "name": "Lewis.C6_2Aliya_Lewis_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Lewis.C6_2Oleg_Lewis_2": {
+    "name": "Lewis.C6_2Oleg_Lewis_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Lewis.C4_20Windy_Lewis": {
+    "name": "Lewis.C4_20Windy_Lewis",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Lewis.C5_7Aliya_Lewis": {
+    "name": "Lewis.C5_7Aliya_Lewis",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Windy.C4_8Team_Windy_2": {
+    "name": "Windy.C4_8Team_Windy_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Windy.C4_8Team_Windy_1": {
+    "name": "Windy.C4_8Team_Windy_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Windy.C5_2Winidy_Windy_1": {
+    "name": "Windy.C5_2Winidy_Windy_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Windy.C4_30Haidao_Windy": {
+    "name": "Windy.C4_30Haidao_Windy",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Windy.C4_20Lewis_Windy": {
+    "name": "Windy.C4_20Lewis_Windy",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Windy.C6_4_PirateRadio_Windy": {
+    "name": "Windy.C6_4_PirateRadio_Windy",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Windy.WindyConnect": {
+    "name": "Windy.WindyConnect",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "PirateRadio.C6_3_Aliya_PirateRadio": {
+    "name": "PirateRadio.C6_3_Aliya_PirateRadio",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "System.PlaythroughCount": {
+    "name": "System.PlaythroughCount",
+    "initValue": "1",
+    "type": "string"
+  },
+  "System.Ending_1": {
+    "name": "System.Ending_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "System.Ending_2": {
+    "name": "System.Ending_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "System.PlayerName": {
+    "name": "System.PlayerName",
+    "initValue": "Player",
+    "type": "string"
+  },
+  "System.NowMonth": {
+    "name": "System.NowMonth",
+    "initValue": "0",
+    "type": "string"
+  },
+  "System.NowDay": {
+    "name": "System.NowDay",
+    "initValue": "0",
+    "type": "string"
+  },
+  "System.NowYear": {
+    "name": "System.NowYear",
+    "initValue": "0",
+    "type": "string"
+  },
+  "System.NowHour": {
+    "name": "System.NowHour",
+    "initValue": "0",
+    "type": "string"
+  },
+  "System.NowMinute": {
+    "name": "System.NowMinute",
+    "initValue": "0",
+    "type": "string"
+  },
+  "System.NowSecond": {
+    "name": "System.NowSecond",
+    "initValue": "0",
+    "type": "string"
+  },
+  "Cally.C4_15Aliya_Cally_1": {
+    "name": "Cally.C4_15Aliya_Cally_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Cally.C4_15Aliya_Cally_2": {
+    "name": "Cally.C4_15Aliya_Cally_2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Cally.C1_3BOSS1_Cally": {
+    "name": "Cally.C1_3BOSS1_Cally",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Cally.C2_3_1Aliya_Cally": {
+    "name": "Cally.C2_3_1Aliya_Cally",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Cally.C2_3_1Aliya_Cally_1": {
+    "name": "Cally.C2_3_1Aliya_Cally_1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Outside.C2_1Aliya_Outside": {
+    "name": "Outside.C2_1Aliya_Outside",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "Outside.C2_2Team_Outside": {
+    "name": "Outside.C2_2Team_Outside",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "DocVariables.Example1": {
+    "name": "DocVariables.Example1",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "DocVariables.Example2": {
+    "name": "DocVariables.Example2",
+    "initValue": false,
+    "type": "boolean"
+  },
+  "DocVariables.Windy": {
+    "name": "DocVariables.Windy",
+    "initValue": false,
+    "type": "boolean"
+  }
+}

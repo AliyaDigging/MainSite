@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 4,
+      "edge": 3,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {},
+    "flowchartRefs": [],
+    "currName": "Outside",
+    "currId": "58",
+    "articyInternal": {
+      "title": "到达仓库",
+      "description": "",
+      "articyId": "72057632692639650",
+      "channelId": "Outside"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "58_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Outside",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "58_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057632692639650"
+          }
+        }
+      },
+      {
+        "id": "58_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "58_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057632692639680"
+          }
+        }
+      },
+      {
+        "id": "58_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "58_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057632692639680"
+          }
+        }
+      },
+      {
+        "id": "58_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "58_3",
+            "title": "Aliya: \"$v{name}， 我准备开始搜索仓库了\"",
+            "dialogueText": "$v{name}， 我准备开始搜索仓库了",
+            "menuText": "",
+            "articyId": "72057632692639660"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "58_0->58_1",
+        "source": "58_0",
+        "target": "58_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "58_1->58_3",
+        "source": "58_1",
+        "target": "58_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "58_3->58_2",
+        "source": "58_3",
+        "target": "58_2",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

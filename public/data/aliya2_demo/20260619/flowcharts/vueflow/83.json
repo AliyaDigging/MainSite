@@ -1,0 +1,3010 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 85,
+      "edge": 109,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {
+      "ExampleVariables.BoolValue": {
+        "key": "ExampleVariables.BoolValue",
+        "type": "boolean"
+      },
+      "ExampleVariables.StringValue": {
+        "key": "ExampleVariables.StringValue",
+        "type": "string"
+      },
+      "ExampleVariables.IntValue": {
+        "key": "ExampleVariables.IntValue",
+        "type": "number"
+      },
+      "ExampleVariables.PlayerChoiceAppear": {
+        "key": "ExampleVariables.PlayerChoiceAppear",
+        "type": "boolean"
+      },
+      "ExampleVariables.DefaultChoiceAppear": {
+        "key": "ExampleVariables.DefaultChoiceAppear",
+        "type": "boolean"
+      }
+    },
+    "flowchartRefs": [],
+    "currName": "AliyaTest",
+    "currId": "83",
+    "articyInternal": {
+      "title": "MZ/Test1",
+      "description": "",
+      "articyId": "72057598332897100",
+      "channelId": "AliyaTest"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "83_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "83_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897100"
+          }
+        }
+      },
+      {
+        "id": "83_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897100"
+          }
+        }
+      },
+      {
+        "id": "83_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897100"
+          }
+        }
+      },
+      {
+        "id": "83_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_3",
+            "title": "Player: \"test1选项1\"",
+            "dialogueText": "test1选项1",
+            "menuText": "test1选1",
+            "articyId": "72057598332897120"
+          }
+        }
+      },
+      {
+        "id": "83_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": "Variable[\"ExampleVariables.BoolValue\"]",
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_4",
+            "title": "Player: \"test1选项2（ExampleVariables.BoolValue...\"",
+            "dialogueText": "test1选项2（ExampleVariables.BoolValue = true）",
+            "menuText": "test1选2",
+            "articyId": "72057598332897120"
+          },
+          "variableOps": {
+            "assignments": [],
+            "condition": {
+              "variableName": "ExampleVariables.BoolValue",
+              "compareOp": "eq",
+              "valueAgainst": true
+            }
+          }
+        }
+      },
+      {
+        "id": "83_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "ExampleVariables.BoolValue",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "-- 等待某个条件\nAliyaFunc.WaitForCondition(\"ExampleVariables.BoolValue\", true, Variable[\"JudgmentType.Equal\"])",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_5",
+            "title": "// 等待某个条件\nAliyaFunc.WaitForCondition(\"ExampleVariables.BoolValue\", true, JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897140"
+          }
+        }
+      },
+      {
+        "id": "83_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 3,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "-- 等待\nAliyaFunc.WaitTime(3)",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_6",
+            "title": "// 等待\nAliyaFunc.WaitTime(3)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897150"
+          }
+        }
+      },
+      {
+        "id": "83_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ChangeBGM",
+        "data": {
+          "bgmId": "1",
+          "conditionString": null,
+          "userScript": "-- 更改音乐\nAliyaFunc.ChangeBGM(\"1\")",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_7",
+            "title": "// 更改音乐\nAliyaFunc.ChangeBGM(\"1\")",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897150"
+          }
+        }
+      },
+      {
+        "id": "83_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "RestartGame",
+        "data": {
+          "conditionString": null,
+          "userScript": "-- 重新开始游戏\nAliyaFunc.RestartGame()",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_8",
+            "title": "// 重新开始游戏\nAliyaFunc.RestartGame()",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897150"
+          }
+        }
+      },
+      {
+        "id": "83_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PushNews",
+        "data": {
+          "newsId": "1",
+          "conditionString": null,
+          "userScript": "-- 推送新闻\nAliyaFunc.PushNews(\"1\")",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_9",
+            "title": "// 推送新闻\nAliyaFunc.PushNews(\"1\")",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897150"
+          }
+        }
+      },
+      {
+        "id": "83_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_10",
+            "title": "ChoiceHub1",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897180"
+          }
+        }
+      },
+      {
+        "id": "83_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "timeoutTime": {
+            "seconds": 5,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_11",
+            "title": "Player: \"test1自动选项\"",
+            "dialogueText": "test1自动选项",
+            "menuText": "",
+            "articyId": "72057598332897140"
+          }
+        }
+      },
+      {
+        "id": "83_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_12",
+            "title": "Aliya: \"测试1 $image{Aliya看向飞船窗外的地球} $i...\"",
+            "dialogueText": "测试1",
+            "menuText": "",
+            "articyId": "72057598332897780"
+          }
+        }
+      },
+      {
+        "id": "83_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "StartConversation",
+        "data": {
+          "conditionString": null,
+          "userScript": "-- 开启某人的对话\nAliyaFunc.StartConversation(\"WindyTest\")",
+          "actorId": "7",
+          "channelId": "WindyTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_13",
+            "title": "// 开启某人的对话\nAliyaFunc.StartConversation(\"WindyTest\")",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332898080"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "86",
+            "nodeId": "85_1"
+          }
+        }
+      },
+      {
+        "id": "83_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_14",
+            "title": "Aliya: \"0 $md{1 \"2\" \"3\"} 4\"",
+            "dialogueText": "0",
+            "menuText": "",
+            "articyId": "72057619807742190"
+          }
+        }
+      },
+      {
+        "id": "83_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_15",
+            "title": "Aliya: \"0 $md1{1} $md1{2} $md1{3}...\"",
+            "dialogueText": "0",
+            "menuText": "",
+            "articyId": "72057619807742190"
+          }
+        }
+      },
+      {
+        "id": "83_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 5,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": false,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_16",
+            "title": "Aliya: \"5秒完成\"",
+            "dialogueText": "5秒完成",
+            "menuText": "",
+            "articyId": "72057619807742200"
+          }
+        }
+      },
+      {
+        "id": "83_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_17",
+            "title": "Aliya: \"玩家的名字是$v{name} 随机号码Aliya：$num{Al...\"",
+            "dialogueText": "玩家的名字是$v{name}",
+            "menuText": "",
+            "articyId": "72057619807742240"
+          }
+        }
+      },
+      {
+        "id": "83_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"ExampleVariables.StringValue\"] =\"Example\";\nVariable[\"ExampleVariables.BoolValue\"] = true;\nVariable[\"ExampleVariables.IntValue\"] = 666",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_18",
+            "title": "ExampleVariables.StringValue = \"Example\";\nExampleVariables.BoolValue = true;\nExampleVariables.IntValue = 666;",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742260"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "ExampleVariables.StringValue",
+                "valueAssigned": "Example"
+              },
+              {
+                "variableName": "ExampleVariables.BoolValue",
+                "valueAssigned": true
+              },
+              {
+                "variableName": "ExampleVariables.IntValue",
+                "valueAssigned": 666
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "83_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_19",
+            "title": "Aliya: \"更改变量后的值为$v{ExampleVariables.StringV...\"",
+            "dialogueText": "更改变量后的值为$v{ExampleVariables.StringValue}和$v{ExampleVariables.BoolValue}和$v{ExampleVariables.IntValue}",
+            "menuText": "",
+            "articyId": "72057619807742260"
+          }
+        }
+      },
+      {
+        "id": "83_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": "not Variable[\"ExampleVariables.BoolValue\"]",
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_20",
+            "title": "Player: \"test1选项3（ExampleVariables.BoolValue...\"",
+            "dialogueText": "test1选项3（ExampleVariables.BoolValue = false）",
+            "menuText": "test1选3",
+            "articyId": "72057619807742260"
+          },
+          "variableOps": {
+            "assignments": [],
+            "condition": {
+              "variableName": "ExampleVariables.BoolValue",
+              "compareOp": "eq",
+              "valueAgainst": false
+            }
+          }
+        }
+      },
+      {
+        "id": "83_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_21",
+            "title": "Player: \"设置为True\"",
+            "dialogueText": "设置为True",
+            "menuText": "",
+            "articyId": "72057619807742270"
+          }
+        }
+      },
+      {
+        "id": "83_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_22",
+            "title": "Player: \"设置为False\"",
+            "dialogueText": "设置为False",
+            "menuText": "",
+            "articyId": "72057619807742270"
+          }
+        }
+      },
+      {
+        "id": "83_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"ExampleVariables.BoolValue\"] = true",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_23",
+            "title": "ExampleVariables.BoolValue = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742290"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "ExampleVariables.BoolValue",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "83_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"ExampleVariables.BoolValue\"] = false",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_24",
+            "title": "ExampleVariables.BoolValue = false",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742300"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "ExampleVariables.BoolValue",
+                "valueAssigned": false
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "83_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_25",
+            "title": "ExampleVariables.BoolValue",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742300"
+          }
+        }
+      },
+      {
+        "id": "83_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ConditionCheck",
+        "data": {
+          "conditionString": "Variable[\"ExampleVariables.BoolValue\"]",
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_26",
+            "title": "ExampleVariables.BoolValue",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742300"
+          },
+          "variableOps": {
+            "assignments": [],
+            "condition": {
+              "variableName": "ExampleVariables.BoolValue",
+              "compareOp": "eq",
+              "valueAgainst": true
+            }
+          }
+        }
+      },
+      {
+        "id": "83_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ConditionCheck",
+        "data": {
+          "conditionString": "(Variable[\"ExampleVariables.BoolValue\"]) == false",
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_27",
+            "title": "!(ExampleVariables.BoolValue)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742300"
+          },
+          "variableOps": {
+            "assignments": [],
+            "condition": {
+              "variableName": "ExampleVariables.BoolValue",
+              "compareOp": "eq",
+              "valueAgainst": false
+            }
+          }
+        }
+      },
+      {
+        "id": "83_28",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_28",
+            "title": "Aliya: \"ExampleVariables.BoolValue 为 True\"",
+            "dialogueText": "ExampleVariables.BoolValue 为 True",
+            "menuText": "",
+            "articyId": "72057619807742320"
+          }
+        }
+      },
+      {
+        "id": "83_29",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_29",
+            "title": "Aliya: \"ExampleVariables.BoolValue 为 False\"",
+            "dialogueText": "ExampleVariables.BoolValue 为 False",
+            "menuText": "",
+            "articyId": "72057619807742320"
+          }
+        }
+      },
+      {
+        "id": "83_30",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_30",
+            "title": "Player: \"AliyaFuncs.WaitTime(3)\"",
+            "dialogueText": "AliyaFuncs.WaitTime(3)",
+            "menuText": "",
+            "articyId": "72057619807742340"
+          }
+        }
+      },
+      {
+        "id": "83_31",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_31",
+            "title": "Player: \"AliyaFuncs.ChangeBGM(\"1\")\"",
+            "dialogueText": "AliyaFuncs.ChangeBGM(\"1\")",
+            "menuText": "",
+            "articyId": "72057619807742340"
+          }
+        }
+      },
+      {
+        "id": "83_32",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_32",
+            "title": "Player: \"AliyaFuncs.ChangeBGM(\"2\")\"",
+            "dialogueText": "AliyaFuncs.ChangeBGM(\"2\")",
+            "menuText": "",
+            "articyId": "72057619807742350"
+          }
+        }
+      },
+      {
+        "id": "83_33",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "ChangeBGM",
+        "data": {
+          "bgmId": "2",
+          "conditionString": null,
+          "userScript": "-- 更改音乐\nAliyaFunc.ChangeBGM(\"2\")",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_33",
+            "title": "// 更改音乐\nAliyaFunc.ChangeBGM(\"2\")",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742350"
+          }
+        }
+      },
+      {
+        "id": "83_34",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_34",
+            "title": "ChoiceHub2",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742370"
+          }
+        }
+      },
+      {
+        "id": "83_35",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_35",
+            "title": "Player: \"AliyaFuncs.WaitForCondition(\"Exampl...\"",
+            "dialogueText": "AliyaFuncs.WaitForCondition(\"ExampleVariables.BoolValue\", true, JudgmentType.Equal)",
+            "menuText": "",
+            "articyId": "72057619807742370"
+          }
+        }
+      },
+      {
+        "id": "83_36",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_36",
+            "title": "Player: \"设置ExampleVariables.BoolValue为False，...\"",
+            "dialogueText": "设置ExampleVariables.BoolValue为False，并等到至true为止",
+            "menuText": "",
+            "articyId": "72057619807742380"
+          }
+        }
+      },
+      {
+        "id": "83_37",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"ExampleVariables.BoolValue\"] = false",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_37",
+            "title": "ExampleVariables.BoolValue = false",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742380"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "ExampleVariables.BoolValue",
+                "valueAssigned": false
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "83_38",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_38",
+            "title": "Player: \"AliyaFuncs.RestartGame()\"",
+            "dialogueText": "AliyaFuncs.RestartGame()",
+            "menuText": "",
+            "articyId": "72057619807742400"
+          }
+        }
+      },
+      {
+        "id": "83_39",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_39",
+            "title": "Player: \"AliyaFuncs.PushNews(\"1\")\"",
+            "dialogueText": "AliyaFuncs.PushNews(\"1\")",
+            "menuText": "",
+            "articyId": "72057619807742400"
+          }
+        }
+      },
+      {
+        "id": "83_40",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_40",
+            "title": "Player: \"AliyaFuncs.StartConversation(\"Windy...\"",
+            "dialogueText": "AliyaFuncs.StartConversation(\"WindyTest\")",
+            "menuText": "",
+            "articyId": "72057619807742400"
+          }
+        }
+      },
+      {
+        "id": "83_41",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_41",
+            "title": "Player: \"AliyaFuncs.WaitForever()\"",
+            "dialogueText": "AliyaFuncs.WaitForever()",
+            "menuText": "",
+            "articyId": "72057619807742420"
+          }
+        }
+      },
+      {
+        "id": "83_42",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForever",
+        "data": {
+          "conditionString": null,
+          "userScript": "-- 永久等待\nAliyaFunc.WaitForever()",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_42",
+            "title": "// 永久等待\nAliyaFunc.WaitForever()",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742420"
+          }
+        }
+      },
+      {
+        "id": "83_43",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_43",
+            "title": "Player: \"AliyaFuncs.PlayerInput(\"System.Play...\"",
+            "dialogueText": "AliyaFuncs.PlayerInput(\"System.PlayerName\")",
+            "menuText": "",
+            "articyId": "72057619807742430"
+          }
+        }
+      },
+      {
+        "id": "83_44",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerInput",
+        "data": {
+          "varName": "System.PlayerName",
+          "conditionString": null,
+          "userScript": "-- 玩家输入\nAliyaFunc.PlayerInput(\"System.PlayerName\")",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_44",
+            "title": "// 玩家输入\nAliyaFunc.PlayerInput(\"System.PlayerName\");",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742430"
+          }
+        }
+      },
+      {
+        "id": "83_45",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_45",
+            "title": "Player: \"对话测试\"",
+            "dialogueText": "对话测试",
+            "menuText": "对话测试1",
+            "articyId": "72057619807742450"
+          }
+        }
+      },
+      {
+        "id": "83_46",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_46",
+            "title": "Player: \"函数测试\"",
+            "dialogueText": "函数测试",
+            "menuText": "函数测试3",
+            "articyId": "72057619807742460"
+          }
+        }
+      },
+      {
+        "id": "83_47",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_47",
+            "title": "StartHub",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742460"
+          }
+        }
+      },
+      {
+        "id": "83_48",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_48",
+            "title": "Aliya: \"玩家的名字是$v{name}\"",
+            "dialogueText": "玩家的名字是$v{name}",
+            "menuText": "",
+            "articyId": "72057619807742480"
+          }
+        }
+      },
+      {
+        "id": "83_49",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_49",
+            "title": "Player: \"开启群聊\"",
+            "dialogueText": "开启群聊",
+            "menuText": "开启群聊2",
+            "articyId": "72057619807742540"
+          }
+        }
+      },
+      {
+        "id": "83_50",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "StartConversation",
+        "data": {
+          "conditionString": null,
+          "userScript": "AliyaFunc.StartConversation(\"群聊\")",
+          "actorId": "7",
+          "channelId": "群聊",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_50",
+            "title": "AliyaFunc.StartConversation(\"群聊\");",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742540"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "群聊",
+            "nodeId": "群聊_1"
+          }
+        }
+      },
+      {
+        "id": "83_51",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_51",
+            "title": "Player: \"系统时间测试<系统时间测试选项显示>\"",
+            "dialogueText": "系统时间测试<系统时间测试选项显示>",
+            "menuText": "",
+            "articyId": "72057619807742830"
+          }
+        }
+      },
+      {
+        "id": "83_52",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_52",
+            "title": "Aliya: \"$v{System.NowYear}/$v{System.NowMon...\"",
+            "dialogueText": "$v{System.NowYear}/$v{System.NowMonth}/$v{System.NowDay}-$v{System.NowHour}:$v{System.NowMinute}:$v{System.NowSecond}",
+            "menuText": "",
+            "articyId": "72057619807742850"
+          }
+        }
+      },
+      {
+        "id": "83_53",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_53",
+            "title": "EndHub",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742960"
+          }
+        }
+      },
+      {
+        "id": "83_54",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_54",
+            "title": "Player: \"$image{Aliya从床上醒来}<发送图片>\"",
+            "dialogueText": "$image{Aliya从床上醒来}<发送图片>",
+            "menuText": "",
+            "articyId": "72057619807742990"
+          }
+        }
+      },
+      {
+        "id": "83_55",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_55",
+            "title": "Player: \"打印DocVariables.Example1\"",
+            "dialogueText": "打印DocVariables.Example1",
+            "menuText": "",
+            "articyId": "72057624102699000"
+          }
+        }
+      },
+      {
+        "id": "83_56",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_56",
+            "title": "Player: \"打印DocVariables.Example2\"",
+            "dialogueText": "打印DocVariables.Example2",
+            "menuText": "",
+            "articyId": "72057624102699020"
+          }
+        }
+      },
+      {
+        "id": "83_57",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_57",
+            "title": "Aliya: \"DocVariables.Example1 is $v{DocVari...\"",
+            "dialogueText": "DocVariables.Example1 is $v{DocVariables.Example1}",
+            "menuText": "",
+            "articyId": "72057624102699020"
+          }
+        }
+      },
+      {
+        "id": "83_58",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_58",
+            "title": "Aliya: \"DocVariables.Example2 is $v{DocVari...\"",
+            "dialogueText": "DocVariables.Example2 is $v{DocVariables.Example2}",
+            "menuText": "",
+            "articyId": "72057624102699040"
+          }
+        }
+      },
+      {
+        "id": "83_59",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_59",
+            "title": "Player: \"继续推送新闻2\"",
+            "dialogueText": "继续推送新闻2",
+            "menuText": "",
+            "articyId": "72057624102699040"
+          }
+        }
+      },
+      {
+        "id": "83_60",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_60",
+            "title": "Player: \"不推送\"",
+            "dialogueText": "不推送",
+            "menuText": "",
+            "articyId": "72057624102699060"
+          }
+        }
+      },
+      {
+        "id": "83_61",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PushNews",
+        "data": {
+          "newsId": "2",
+          "conditionString": null,
+          "userScript": "AliyaFunc.PushNews(\"2\")",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_61",
+            "title": "AliyaFunc.PushNews(\"2\")",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057624102699060"
+          }
+        }
+      },
+      {
+        "id": "83_62",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_62",
+            "title": "Player: \"继续推送新闻3\"",
+            "dialogueText": "继续推送新闻3",
+            "menuText": "",
+            "articyId": "72057624102699060"
+          }
+        }
+      },
+      {
+        "id": "83_63",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PushNews",
+        "data": {
+          "newsId": "3",
+          "conditionString": null,
+          "userScript": "AliyaFunc.PushNews(\"3\")",
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "83_63",
+            "title": "AliyaFunc.PushNews(\"3\")",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057624102699070"
+          }
+        }
+      },
+      {
+        "id": "83_64",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_64",
+            "title": "Player: \"选项条件测试\"",
+            "dialogueText": "选项条件测试",
+            "menuText": "",
+            "articyId": "72057624102699070"
+          }
+        }
+      },
+      {
+        "id": "83_65",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_65",
+            "title": "Aliya: \"开始选项\"",
+            "dialogueText": "开始选项",
+            "menuText": "",
+            "articyId": "72057624102699090"
+          }
+        }
+      },
+      {
+        "id": "83_66",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_66",
+            "title": "Player: \"1\"",
+            "dialogueText": "1",
+            "menuText": "",
+            "articyId": "72057624102699090"
+          }
+        }
+      },
+      {
+        "id": "83_67",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_67",
+            "title": "Player: \"2\"",
+            "dialogueText": "2",
+            "menuText": "",
+            "articyId": "72057624102699100"
+          }
+        }
+      },
+      {
+        "id": "83_68",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": "Variable[\"ExampleVariables.PlayerChoiceAppear\"]",
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_68",
+            "title": "Player: \"3\"",
+            "dialogueText": "3",
+            "menuText": "",
+            "articyId": "72057624102699100"
+          },
+          "variableOps": {
+            "assignments": [],
+            "condition": {
+              "variableName": "ExampleVariables.PlayerChoiceAppear",
+              "compareOp": "eq",
+              "valueAgainst": true
+            }
+          }
+        }
+      },
+      {
+        "id": "83_69",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "timeoutTime": {
+            "seconds": 2,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": "Variable[\"ExampleVariables.DefaultChoiceAppear\"]",
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_69",
+            "title": "Player: \"4\"",
+            "dialogueText": "4",
+            "menuText": "",
+            "articyId": "72057624102699120"
+          },
+          "variableOps": {
+            "assignments": [],
+            "condition": {
+              "variableName": "ExampleVariables.DefaultChoiceAppear",
+              "compareOp": "eq",
+              "valueAgainst": true
+            }
+          }
+        }
+      },
+      {
+        "id": "83_70",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_70",
+            "title": "Aliya: \"结束\"",
+            "dialogueText": "结束",
+            "menuText": "",
+            "articyId": "72057624102699120"
+          }
+        }
+      },
+      {
+        "id": "83_71",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_71",
+            "title": "Aliya: \"测试1 $image{Aliya看向飞船窗外的地球} $i...\"",
+            "dialogueText": "$image{Aliya看向飞船窗外的地球}",
+            "menuText": "",
+            "articyId": "0x01000001000009EE-1"
+          }
+        }
+      },
+      {
+        "id": "83_72",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_72",
+            "title": "Aliya: \"测试1 $image{Aliya看向飞船窗外的地球} $i...\"",
+            "dialogueText": "$image{Call在厕所过生日}",
+            "menuText": "",
+            "articyId": "0x01000001000009EE-2"
+          }
+        }
+      },
+      {
+        "id": "83_73",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_73",
+            "title": "Aliya: \"测试1 $image{Aliya看向飞船窗外的地球} $i...\"",
+            "dialogueText": "$emoji{你小子}",
+            "menuText": "",
+            "articyId": "0x01000001000009EE-3"
+          }
+        }
+      },
+      {
+        "id": "83_74",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_74",
+            "title": "Aliya: \"0 $md{1 \"2\" \"3\"} 4\"",
+            "dialogueText": "$md{1}",
+            "menuText": "",
+            "articyId": "0x01000006000028F0-1"
+          }
+        }
+      },
+      {
+        "id": "83_75",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_75",
+            "title": "Aliya: \"0 $md{1 \"2\" \"3\"} 4\"",
+            "dialogueText": "$md{2}",
+            "menuText": "",
+            "articyId": "0x01000006000028F0-2"
+          }
+        }
+      },
+      {
+        "id": "83_76",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_76",
+            "title": "Aliya: \"0 $md{1 \"2\" \"3\"} 4\"",
+            "dialogueText": "$md{3}",
+            "menuText": "",
+            "articyId": "0x01000006000028F0-3"
+          }
+        }
+      },
+      {
+        "id": "83_77",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_77",
+            "title": "Aliya: \"0 $md{1 \"2\" \"3\"} 4\"",
+            "dialogueText": "4",
+            "menuText": "",
+            "articyId": "0x01000006000028F0-4"
+          }
+        }
+      },
+      {
+        "id": "83_78",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": 1,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_78",
+            "title": "Aliya: \"0 $md1{1} $md1{2} $md1{3}...\"",
+            "dialogueText": "$md1{1}",
+            "menuText": "",
+            "articyId": "0x01000006000028F7-1"
+          }
+        }
+      },
+      {
+        "id": "83_79",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": 1,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_79",
+            "title": "Aliya: \"0 $md1{1} $md1{2} $md1{3}...\"",
+            "dialogueText": "$md1{2}",
+            "menuText": "",
+            "articyId": "0x01000006000028F7-2"
+          }
+        }
+      },
+      {
+        "id": "83_80",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": 1,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_80",
+            "title": "Aliya: \"0 $md1{1} $md1{2} $md1{3}...\"",
+            "dialogueText": "$md1{3}",
+            "menuText": "",
+            "articyId": "0x01000006000028F7-3"
+          }
+        }
+      },
+      {
+        "id": "83_81",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_81",
+            "title": "Aliya: \"0 $md1{1} $md1{2} $md1{3}...\"",
+            "dialogueText": "下一条消息需要等待5秒",
+            "menuText": "",
+            "articyId": "0x01000006000028F7-4"
+          }
+        }
+      },
+      {
+        "id": "83_82",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_82",
+            "title": "Aliya: \"玩家的名字是$v{name} 随机号码Aliya：$num{Al...\"",
+            "dialogueText": "随机号码Aliya：$num{AliyaTest}",
+            "menuText": "",
+            "articyId": "0x0100000600002923-1"
+          }
+        }
+      },
+      {
+        "id": "83_83",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_83",
+            "title": "Aliya: \"玩家的名字是$v{name} 随机号码Aliya：$num{Al...\"",
+            "dialogueText": "随机号码Windy：$num{WindyTest}",
+            "menuText": "",
+            "articyId": "0x0100000600002923-2"
+          }
+        }
+      },
+      {
+        "id": "83_84",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "AliyaTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "83_84",
+            "title": "Aliya: \"玩家的名字是$v{name} 随机号码Aliya：$num{Al...\"",
+            "dialogueText": "随机号码Team：$num{TeamTest}",
+            "menuText": "",
+            "articyId": "0x0100000600002923-3"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "83_0->83_1",
+        "source": "83_0",
+        "target": "83_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_1->83_47",
+        "source": "83_1",
+        "target": "83_47",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_2->83_1",
+        "source": "83_2",
+        "target": "83_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_3->83_25",
+        "source": "83_3",
+        "target": "83_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_4->83_25",
+        "source": "83_4",
+        "target": "83_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_5->83_53",
+        "source": "83_5",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_6->83_53",
+        "source": "83_6",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_7->83_32",
+        "source": "83_7",
+        "target": "83_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_8->83_53",
+        "source": "83_8",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_9->83_59",
+        "source": "83_9",
+        "target": "83_59",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_9->83_60",
+        "source": "83_9",
+        "target": "83_60",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_10->83_3",
+        "source": "83_10",
+        "target": "83_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_10->83_4",
+        "source": "83_10",
+        "target": "83_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_10->83_20",
+        "source": "83_10",
+        "target": "83_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_10->83_11",
+        "source": "83_10",
+        "target": "83_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_11->83_25",
+        "source": "83_11",
+        "target": "83_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_12->83_71",
+        "source": "83_12",
+        "target": "83_71",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_13->83_53",
+        "source": "83_13",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_14->83_74",
+        "source": "83_14",
+        "target": "83_74",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_15->83_78",
+        "source": "83_15",
+        "target": "83_78",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_16->83_17",
+        "source": "83_16",
+        "target": "83_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_17->83_82",
+        "source": "83_17",
+        "target": "83_82",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_18->83_19",
+        "source": "83_18",
+        "target": "83_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_19->83_21",
+        "source": "83_19",
+        "target": "83_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_19->83_22",
+        "source": "83_19",
+        "target": "83_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_20->83_25",
+        "source": "83_20",
+        "target": "83_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_21->83_23",
+        "source": "83_21",
+        "target": "83_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_22->83_24",
+        "source": "83_22",
+        "target": "83_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_23->83_10",
+        "source": "83_23",
+        "target": "83_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_24->83_10",
+        "source": "83_24",
+        "target": "83_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_25->83_26",
+        "source": "83_25",
+        "target": "83_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_25->83_27",
+        "source": "83_25",
+        "target": "83_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_26->83_28",
+        "source": "83_26",
+        "target": "83_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_27->83_29",
+        "source": "83_27",
+        "target": "83_29",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_28->83_53",
+        "source": "83_28",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_29->83_53",
+        "source": "83_29",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_30->83_6",
+        "source": "83_30",
+        "target": "83_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_31->83_7",
+        "source": "83_31",
+        "target": "83_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_32->83_33",
+        "source": "83_32",
+        "target": "83_33",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_33->83_53",
+        "source": "83_33",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_34->83_30",
+        "source": "83_34",
+        "target": "83_30",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_34->83_31",
+        "source": "83_34",
+        "target": "83_31",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_34->83_35",
+        "source": "83_34",
+        "target": "83_35",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_34->83_38",
+        "source": "83_34",
+        "target": "83_38",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_34->83_39",
+        "source": "83_34",
+        "target": "83_39",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_34->83_40",
+        "source": "83_34",
+        "target": "83_40",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_34->83_41",
+        "source": "83_34",
+        "target": "83_41",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_34->83_43",
+        "source": "83_34",
+        "target": "83_43",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_35->83_36",
+        "source": "83_35",
+        "target": "83_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_36->83_37",
+        "source": "83_36",
+        "target": "83_37",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_37->83_5",
+        "source": "83_37",
+        "target": "83_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_38->83_8",
+        "source": "83_38",
+        "target": "83_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_39->83_9",
+        "source": "83_39",
+        "target": "83_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_40->83_13",
+        "source": "83_40",
+        "target": "83_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_41->83_42",
+        "source": "83_41",
+        "target": "83_42",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_42->83_53",
+        "source": "83_42",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_43->83_44",
+        "source": "83_43",
+        "target": "83_44",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_44->83_48",
+        "source": "83_44",
+        "target": "83_48",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_45->83_12",
+        "source": "83_45",
+        "target": "83_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_46->83_34",
+        "source": "83_46",
+        "target": "83_34",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_47->83_45",
+        "source": "83_47",
+        "target": "83_45",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_47->83_49",
+        "source": "83_47",
+        "target": "83_49",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_47->83_46",
+        "source": "83_47",
+        "target": "83_46",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_47->83_51",
+        "source": "83_47",
+        "target": "83_51",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_47->83_54",
+        "source": "83_47",
+        "target": "83_54",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_47->83_55",
+        "source": "83_47",
+        "target": "83_55",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_47->83_56",
+        "source": "83_47",
+        "target": "83_56",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_47->83_64",
+        "source": "83_47",
+        "target": "83_64",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_48->83_53",
+        "source": "83_48",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_49->83_50",
+        "source": "83_49",
+        "target": "83_50",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_50->83_53",
+        "source": "83_50",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_51->83_52",
+        "source": "83_51",
+        "target": "83_52",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_52->83_53",
+        "source": "83_52",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_53->83_2",
+        "source": "83_53",
+        "target": "83_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_54->83_53",
+        "source": "83_54",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_55->83_57",
+        "source": "83_55",
+        "target": "83_57",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_56->83_58",
+        "source": "83_56",
+        "target": "83_58",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_57->83_53",
+        "source": "83_57",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_58->83_53",
+        "source": "83_58",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_59->83_61",
+        "source": "83_59",
+        "target": "83_61",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_60->83_53",
+        "source": "83_60",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_61->83_62",
+        "source": "83_61",
+        "target": "83_62",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_61->83_60",
+        "source": "83_61",
+        "target": "83_60",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_62->83_63",
+        "source": "83_62",
+        "target": "83_63",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_63->83_53",
+        "source": "83_63",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_64->83_65",
+        "source": "83_64",
+        "target": "83_65",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_65->83_66",
+        "source": "83_65",
+        "target": "83_66",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_65->83_67",
+        "source": "83_65",
+        "target": "83_67",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_65->83_68",
+        "source": "83_65",
+        "target": "83_68",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_65->83_69",
+        "source": "83_65",
+        "target": "83_69",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_66->83_70",
+        "source": "83_66",
+        "target": "83_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_67->83_70",
+        "source": "83_67",
+        "target": "83_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_68->83_70",
+        "source": "83_68",
+        "target": "83_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_69->83_70",
+        "source": "83_69",
+        "target": "83_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_70->83_53",
+        "source": "83_70",
+        "target": "83_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_71->83_72",
+        "source": "83_71",
+        "target": "83_72",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_72->83_73",
+        "source": "83_72",
+        "target": "83_73",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_73->83_14",
+        "source": "83_73",
+        "target": "83_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_74->83_75",
+        "source": "83_74",
+        "target": "83_75",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_75->83_76",
+        "source": "83_75",
+        "target": "83_76",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_76->83_77",
+        "source": "83_76",
+        "target": "83_77",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_77->83_15",
+        "source": "83_77",
+        "target": "83_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_78->83_79",
+        "source": "83_78",
+        "target": "83_79",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_79->83_80",
+        "source": "83_79",
+        "target": "83_80",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_80->83_81",
+        "source": "83_80",
+        "target": "83_81",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_81->83_16",
+        "source": "83_81",
+        "target": "83_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_82->83_83",
+        "source": "83_82",
+        "target": "83_83",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_83->83_84",
+        "source": "83_83",
+        "target": "83_84",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "83_84->83_18",
+        "source": "83_84",
+        "target": "83_18",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

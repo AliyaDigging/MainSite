@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 4,
+      "edge": 2,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {},
+    "flowchartRefs": [],
+    "currName": "Outside",
+    "currId": "33",
+    "articyInternal": {
+      "title": "初次见面的对话",
+      "description": "Aliya和玩家开头见面的寒暄",
+      "articyId": "72057611217801440",
+      "channelId": "Outside"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "33_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "33_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217801440"
+          }
+        }
+      },
+      {
+        "id": "33_46",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "33_46",
+            "title": "Aliya: \"没事的…… 来说点开心的事情吧\"",
+            "dialogueText": "没事的……",
+            "menuText": "",
+            "articyId": "72057611217798480"
+          }
+        }
+      },
+      {
+        "id": "33_68",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "33_68",
+            "title": "Player: \"抱歉，我不知道这个暗号\"",
+            "dialogueText": "抱歉，我不知道这个暗号",
+            "menuText": "",
+            "articyId": "72057611217798450"
+          }
+        }
+      },
+      {
+        "id": "33_102",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "33_102",
+            "title": "Aliya: \"没事的…… 来说点开心的事情吧\"",
+            "dialogueText": "来说点开心的事情吧",
+            "menuText": "",
+            "articyId": "0x0100000400000549-1"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "33_46->33_102",
+        "source": "33_46",
+        "target": "33_102",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "33_68->33_46",
+        "source": "33_68",
+        "target": "33_46",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

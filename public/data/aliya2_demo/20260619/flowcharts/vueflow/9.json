@@ -1,0 +1,1051 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 30,
+      "edge": 32,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {},
+    "flowchartRefs": [],
+    "currName": "04510121",
+    "currId": "9",
+    "articyInternal": {
+      "title": "1.2Cally找到玩家（公司信号）",
+      "description": "",
+      "articyId": "72057611217797230",
+      "channelId": "04510121"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "9_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "9_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797230"
+          }
+        }
+      },
+      {
+        "id": "9_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "04510121",
+          "conversantId": "33",
+          "articyInternal": {
+            "dialogueId": "9_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797230"
+          }
+        }
+      },
+      {
+        "id": "9_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "04510121",
+          "conversantId": "33",
+          "articyInternal": {
+            "dialogueId": "9_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797230"
+          }
+        }
+      },
+      {
+        "id": "9_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_3",
+            "title": "04510121: \"喂，你好 识别码为…… 额 我还是换成手写试试……\"",
+            "dialogueText": "喂，你好",
+            "menuText": "",
+            "articyId": "72057611217798270"
+          }
+        }
+      },
+      {
+        "id": "9_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_4",
+            "title": "Player: \"可能是因为我来自1000年前\"",
+            "dialogueText": "可能是因为我来自1000年前",
+            "menuText": "",
+            "articyId": "72057611217798290"
+          }
+        }
+      },
+      {
+        "id": "9_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_5",
+            "title": "Player: \"所以你现在追查不到吧\"",
+            "dialogueText": "所以你现在追查不到吧",
+            "menuText": "",
+            "articyId": "72057611217798290"
+          }
+        }
+      },
+      {
+        "id": "9_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_6",
+            "title": "04510121: \"请别开玩笑了\"",
+            "dialogueText": "请别开玩笑了",
+            "menuText": "",
+            "articyId": "72057611217798300"
+          }
+        }
+      },
+      {
+        "id": "9_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 10,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(10)",
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "33",
+          "articyInternal": {
+            "dialogueId": "9_7",
+            "title": "AliyaFunc.WaitTime(10)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987607820"
+          }
+        }
+      },
+      {
+        "id": "9_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_8",
+            "title": "04510121: \"识别码ξοωЕ Ж ЗИυ￡¤￠λβιη的信号 你已经闯进了泰瑞...\"",
+            "dialogueText": "识别码ξοωЕ Ж ЗИυ￡¤￠λβιη的信号",
+            "menuText": "",
+            "articyId": "72057636987607840"
+          }
+        }
+      },
+      {
+        "id": "9_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_9",
+            "title": "04510121: \"你！\"",
+            "dialogueText": "你！",
+            "menuText": "",
+            "articyId": "72057636987607840"
+          }
+        }
+      },
+      {
+        "id": "9_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_10",
+            "title": "Player: \"但你能抓到我吗~\"",
+            "dialogueText": "但你能抓到我吗~",
+            "menuText": "",
+            "articyId": "72057636987607860"
+          }
+        }
+      },
+      {
+        "id": "9_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_11",
+            "title": "04510121: \"不要嬉皮笑脸的\"",
+            "dialogueText": "不要嬉皮笑脸的",
+            "menuText": "",
+            "articyId": "72057636987607860"
+          }
+        }
+      },
+      {
+        "id": "9_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_12",
+            "title": "04510121: \"希望你积极配合公司的处理\"",
+            "dialogueText": "希望你积极配合公司的处理",
+            "menuText": "",
+            "articyId": "72057636987607870"
+          }
+        }
+      },
+      {
+        "id": "9_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_13",
+            "title": "Player: \"凭什么我要配合？\"",
+            "dialogueText": "凭什么我要配合？",
+            "menuText": "",
+            "articyId": "72057636987607890"
+          }
+        }
+      },
+      {
+        "id": "9_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_14",
+            "title": "Player: \"那我要是不配合呢？\"",
+            "dialogueText": "那我要是不配合呢？",
+            "menuText": "",
+            "articyId": "72057636987607890"
+          }
+        }
+      },
+      {
+        "id": "9_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_15",
+            "title": "04510121: \"你！ 你等着吧 就算你的信号加密了 我也能找得到你\"",
+            "dialogueText": "你！",
+            "menuText": "",
+            "articyId": "72057636987607900"
+          }
+        }
+      },
+      {
+        "id": "9_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 6,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(6)",
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "33",
+          "articyInternal": {
+            "dialogueId": "9_16",
+            "title": "AliyaFunc.WaitTime(6)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987608000"
+          }
+        }
+      },
+      {
+        "id": "9_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "StartConversation",
+        "data": {
+          "conditionString": null,
+          "userScript": "AliyaFunc.StartConversation(\"Cally\")",
+          "actorId": "33",
+          "channelId": "Cally",
+          "conversantId": "33",
+          "articyInternal": {
+            "dialogueId": "9_17",
+            "title": "AliyaFunc.StartConversation(\"Cally\")",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627863180"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "6",
+            "nodeId": "24_1"
+          }
+        }
+      },
+      {
+        "id": "9_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForever",
+        "data": {
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForever()",
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "33",
+          "articyInternal": {
+            "dialogueId": "9_18",
+            "title": "AliyaFunc.WaitForever()",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627863200"
+          }
+        }
+      },
+      {
+        "id": "9_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_19",
+            "title": "04510121: \"喂，你好 识别码为…… 额 我还是换成手写试试……\"",
+            "dialogueText": "识别码为……",
+            "menuText": "",
+            "articyId": "0x0100000400000485-1"
+          }
+        }
+      },
+      {
+        "id": "9_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_20",
+            "title": "04510121: \"喂，你好 识别码为…… 额 我还是换成手写试试……\"",
+            "dialogueText": "额",
+            "menuText": "",
+            "articyId": "0x0100000400000485-2"
+          }
+        }
+      },
+      {
+        "id": "9_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_21",
+            "title": "04510121: \"喂，你好 识别码为…… 额 我还是换成手写试试……\"",
+            "dialogueText": "我还是换成手写试试……",
+            "menuText": "",
+            "articyId": "0x0100000400000485-3"
+          }
+        }
+      },
+      {
+        "id": "9_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_22",
+            "title": "04510121: \"识别码ξοωЕ Ж ЗИυ￡¤￠λβιη的信号 你已经闯进了泰瑞...\"",
+            "dialogueText": "你已经闯进了泰瑞公司的领域范围",
+            "menuText": "",
+            "articyId": "0x0100000A00001B1C-1"
+          }
+        }
+      },
+      {
+        "id": "9_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_23",
+            "title": "04510121: \"识别码ξοωЕ Ж ЗИυ￡¤￠λβιη的信号 你已经闯进了泰瑞...\"",
+            "dialogueText": "但你的信号源无法查明源头",
+            "menuText": "",
+            "articyId": "0x0100000A00001B1C-2"
+          }
+        }
+      },
+      {
+        "id": "9_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_24",
+            "title": "04510121: \"识别码ξοωЕ Ж ЗИυ￡¤￠λβιη的信号 你已经闯进了泰瑞...\"",
+            "dialogueText": "需要立刻解释来源",
+            "menuText": "",
+            "articyId": "0x0100000A00001B1C-3"
+          }
+        }
+      },
+      {
+        "id": "9_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_25",
+            "title": "04510121: \"识别码ξοωЕ Ж ЗИυ￡¤￠λβιη的信号 你已经闯进了泰瑞...\"",
+            "dialogueText": "否则一旦追踪到",
+            "menuText": "",
+            "articyId": "0x0100000A00001B1C-4"
+          }
+        }
+      },
+      {
+        "id": "9_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_26",
+            "title": "04510121: \"识别码ξοωЕ Ж ЗИυ￡¤￠λβιη的信号 你已经闯进了泰瑞...\"",
+            "dialogueText": "将按照泰瑞公司相关法律进行处置",
+            "menuText": "",
+            "articyId": "0x0100000A00001B1C-5"
+          }
+        }
+      },
+      {
+        "id": "9_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_27",
+            "title": "04510121: \"你！ 你等着吧 就算你的信号加密了 我也能找得到你\"",
+            "dialogueText": "你等着吧",
+            "menuText": "",
+            "articyId": "0x0100000A00001B59-1"
+          }
+        }
+      },
+      {
+        "id": "9_28",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_28",
+            "title": "04510121: \"你！ 你等着吧 就算你的信号加密了 我也能找得到你\"",
+            "dialogueText": "就算你的信号加密了",
+            "menuText": "",
+            "articyId": "0x0100000A00001B59-2"
+          }
+        }
+      },
+      {
+        "id": "9_29",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "33",
+          "channelId": "04510121",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "9_29",
+            "title": "04510121: \"你！ 你等着吧 就算你的信号加密了 我也能找得到你\"",
+            "dialogueText": "我也能找得到你",
+            "menuText": "",
+            "articyId": "0x0100000A00001B59-3"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "9_0->9_1",
+        "source": "9_0",
+        "target": "9_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_1->9_3",
+        "source": "9_1",
+        "target": "9_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_3->9_19",
+        "source": "9_3",
+        "target": "9_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_4->9_6",
+        "source": "9_4",
+        "target": "9_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_5->9_9",
+        "source": "9_5",
+        "target": "9_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_6->9_12",
+        "source": "9_6",
+        "target": "9_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_7->9_8",
+        "source": "9_7",
+        "target": "9_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_8->9_22",
+        "source": "9_8",
+        "target": "9_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_9->9_12",
+        "source": "9_9",
+        "target": "9_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_10->9_11",
+        "source": "9_10",
+        "target": "9_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_11->9_12",
+        "source": "9_11",
+        "target": "9_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_12->9_13",
+        "source": "9_12",
+        "target": "9_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_12->9_14",
+        "source": "9_12",
+        "target": "9_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_13->9_15",
+        "source": "9_13",
+        "target": "9_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_14->9_15",
+        "source": "9_14",
+        "target": "9_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_15->9_27",
+        "source": "9_15",
+        "target": "9_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_16->9_17",
+        "source": "9_16",
+        "target": "9_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_17->9_18",
+        "source": "9_17",
+        "target": "9_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_18->9_2",
+        "source": "9_18",
+        "target": "9_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_19->9_20",
+        "source": "9_19",
+        "target": "9_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_20->9_21",
+        "source": "9_20",
+        "target": "9_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_21->9_7",
+        "source": "9_21",
+        "target": "9_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_22->9_23",
+        "source": "9_22",
+        "target": "9_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_23->9_24",
+        "source": "9_23",
+        "target": "9_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_24->9_25",
+        "source": "9_24",
+        "target": "9_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_25->9_26",
+        "source": "9_25",
+        "target": "9_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_26->9_4",
+        "source": "9_26",
+        "target": "9_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_26->9_5",
+        "source": "9_26",
+        "target": "9_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_26->9_10",
+        "source": "9_26",
+        "target": "9_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_27->9_28",
+        "source": "9_27",
+        "target": "9_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_28->9_29",
+        "source": "9_28",
+        "target": "9_29",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "9_29->9_16",
+        "source": "9_29",
+        "target": "9_16",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

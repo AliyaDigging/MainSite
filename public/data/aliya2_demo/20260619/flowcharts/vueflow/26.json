@@ -1,0 +1,1352 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 39,
+      "edge": 48,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {
+      "Cally.C1_3BOSS1_Cally": {
+        "key": "Cally.C1_3BOSS1_Cally",
+        "type": "boolean"
+      }
+    },
+    "flowchartRefs": [],
+    "currName": "Cally的上司",
+    "currId": "26",
+    "articyInternal": {
+      "title": "1.3玩家骂Cally上司",
+      "description": "",
+      "articyId": "72057636987612580",
+      "channelId": "Cally的上司"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "26_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "26_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987612580"
+          }
+        }
+      },
+      {
+        "id": "26_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "31",
+          "articyInternal": {
+            "dialogueId": "26_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987612590"
+          }
+        }
+      },
+      {
+        "id": "26_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_3",
+            "title": "Player: \"你好\"",
+            "dialogueText": "你好",
+            "menuText": "",
+            "articyId": "72057636987612600"
+          }
+        }
+      },
+      {
+        "id": "26_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_4",
+            "title": "Andrew: \"你是？\"",
+            "dialogueText": "你是？",
+            "menuText": "",
+            "articyId": "72057636987612620"
+          }
+        }
+      },
+      {
+        "id": "26_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_5",
+            "title": "Player: \"你就是那个丢人现眼的家伙吧\"",
+            "dialogueText": "你就是那个丢人现眼的家伙吧",
+            "menuText": "",
+            "articyId": "72057636987612620"
+          }
+        }
+      },
+      {
+        "id": "26_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_6",
+            "title": "Andrew: \"你有毛病吧！！！ 莫名其妙！！！ 删了，勿扰\"",
+            "dialogueText": "你有毛病吧！！！",
+            "menuText": "",
+            "articyId": "72057636987612640"
+          }
+        }
+      },
+      {
+        "id": "26_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_7",
+            "title": "Player: \"我是你爹\"",
+            "dialogueText": "我是你爹",
+            "menuText": "",
+            "articyId": "72057636987612640"
+          }
+        }
+      },
+      {
+        "id": "26_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_8",
+            "title": "Player: \"我是上帝派来审判你这个愚蠢的贱骨头的\"",
+            "dialogueText": "我是上帝派来审判你这个愚蠢的贱骨头的",
+            "menuText": "",
+            "articyId": "72057636987612660"
+          }
+        }
+      },
+      {
+        "id": "26_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 3,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(3)",
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "31",
+          "articyInternal": {
+            "dialogueId": "26_9",
+            "title": "AliyaFunc.WaitTime(3)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987612660"
+          }
+        }
+      },
+      {
+        "id": "26_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_10",
+            "title": "Andrew: \"你这家伙 怎么弄的 凭什么删除不了你\"",
+            "dialogueText": "你这家伙",
+            "menuText": "",
+            "articyId": "72057636987612670"
+          }
+        }
+      },
+      {
+        "id": "26_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_11",
+            "title": "Player: \"嘿嘿，没办法了吧，这下不神气了？\"",
+            "dialogueText": "嘿嘿，没办法了吧，这下不神气了？",
+            "menuText": "",
+            "articyId": "72057636987612670"
+          }
+        }
+      },
+      {
+        "id": "26_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_12",
+            "title": "Player: \"快用你那比老奶奶裹脚布还干瘪的大脑想想办法吧小家伙\"",
+            "dialogueText": "快用你那比老奶奶裹脚布还干瘪的大脑想想办法吧小家伙",
+            "menuText": "",
+            "articyId": "72057636987612670"
+          }
+        }
+      },
+      {
+        "id": "26_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_13",
+            "title": "Player: \"急了急了！\"",
+            "dialogueText": "急了急了！",
+            "menuText": "",
+            "articyId": "72057636987612690"
+          }
+        }
+      },
+      {
+        "id": "26_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_14",
+            "title": "Andrew: \"肯定有办法的\"",
+            "dialogueText": "肯定有办法的",
+            "menuText": "",
+            "articyId": "72057636987612690"
+          }
+        }
+      },
+      {
+        "id": "26_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_15",
+            "title": "Andrew: \"你**** ************\"",
+            "dialogueText": "你****",
+            "menuText": "",
+            "articyId": "72057636987612700"
+          }
+        }
+      },
+      {
+        "id": "26_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_16",
+            "title": "Andrew: \"你等着 等我找到你非要你好看！！！\"",
+            "dialogueText": "你等着",
+            "menuText": "",
+            "articyId": "72057636987612720"
+          }
+        }
+      },
+      {
+        "id": "26_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_17",
+            "title": "Player: \"你爷爷我一直在这呢，怎么还没被找到啊，急死了\"",
+            "dialogueText": "你爷爷我一直在这呢，怎么还没被找到啊，急死了",
+            "menuText": "",
+            "articyId": "72057636987612720"
+          }
+        }
+      },
+      {
+        "id": "26_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_18",
+            "title": "Player: \"我家楼下的狗叫起来比你这个品种好听多了\"",
+            "dialogueText": "我家楼下的狗叫起来比你这个品种好听多了",
+            "menuText": "",
+            "articyId": "72057636987612740"
+          }
+        }
+      },
+      {
+        "id": "26_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_19",
+            "title": "Player: \"你身上的虱子比山里野猪身上的多太多了\"",
+            "dialogueText": "你身上的虱子比山里野猪身上的多太多了",
+            "menuText": "",
+            "articyId": "72057636987612740"
+          }
+        }
+      },
+      {
+        "id": "26_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_20",
+            "title": "Andrew: \"我*你* 你个******\"",
+            "dialogueText": "我*你*",
+            "menuText": "",
+            "articyId": "72057636987612740"
+          }
+        }
+      },
+      {
+        "id": "26_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_21",
+            "title": "Andrew: \"我急个屁！\"",
+            "dialogueText": "我急个屁！",
+            "menuText": "",
+            "articyId": "72057636987612750"
+          }
+        }
+      },
+      {
+        "id": "26_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "31",
+          "articyInternal": {
+            "dialogueId": "26_22",
+            "title": "未命名核心",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987612770"
+          }
+        }
+      },
+      {
+        "id": "26_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_23",
+            "title": "Player: \"你的脏话其实都被屏蔽掉了，我看不见，不过可想而知，你的语文水平令人堪忧\"",
+            "dialogueText": "你的脏话其实都被屏蔽掉了，我看不见，不过可想而知，你的语文水平令人堪忧",
+            "menuText": "",
+            "articyId": "72057636987613060"
+          }
+        }
+      },
+      {
+        "id": "26_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_24",
+            "title": "Player: \"我现在想到你在屏幕后面气红了的样子就忍不住笑出声\"",
+            "dialogueText": "我现在想到你在屏幕后面气红了的样子就忍不住笑出声",
+            "menuText": "",
+            "articyId": "72057636987613060"
+          }
+        }
+      },
+      {
+        "id": "26_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_25",
+            "title": "Player: \"我去，急哭了啊，别哭别哭，我真没想到你这么脆弱~\"",
+            "dialogueText": "我去，急哭了啊，别哭别哭，我真没想到你这么脆弱~",
+            "menuText": "",
+            "articyId": "72057636987613070"
+          }
+        }
+      },
+      {
+        "id": "26_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "31",
+          "articyInternal": {
+            "dialogueId": "26_26",
+            "title": "未命名核心 (02)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987613090"
+          }
+        }
+      },
+      {
+        "id": "26_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_27",
+            "title": "Player: \"其实不难想象对面的你就是个大脑发育不健全的猩猩，我认识的三岁小孩都比你...\"",
+            "dialogueText": "其实不难想象对面的你就是个大脑发育不健全的猩猩，我认识的三岁小孩都比你能言善辩",
+            "menuText": "",
+            "articyId": "72057636987613090"
+          }
+        }
+      },
+      {
+        "id": "26_28",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_28",
+            "title": "Player: \"你知道吗，作为一个智人，理应更熟练地掌握语言的使用方式，但很显然你好像...\"",
+            "dialogueText": "你知道吗，作为一个智人，理应更熟练地掌握语言的使用方式，但很显然你好像不是",
+            "menuText": "",
+            "articyId": "72057636987613090"
+          }
+        }
+      },
+      {
+        "id": "26_29",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_29",
+            "title": "Player: \"哦哟哦哟哦哟，又气又抓不到我，急死了急死了，一点办法没有\"",
+            "dialogueText": "哦哟哦哟哦哟，又气又抓不到我，急死了急死了，一点办法没有",
+            "menuText": "",
+            "articyId": "72057636987613100"
+          }
+        }
+      },
+      {
+        "id": "26_30",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_30",
+            "title": "Andrew: \"$md{用户已下线}\"",
+            "dialogueText": "$md{用户已下线}",
+            "menuText": "",
+            "articyId": "72057636987613120"
+          }
+        }
+      },
+      {
+        "id": "26_31",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Cally.C1_3BOSS1_Cally\"] = true",
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "31",
+          "articyInternal": {
+            "dialogueId": "26_31",
+            "title": "Cally.C1_3BOSS1_Cally = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987613140"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Cally.C1_3BOSS1_Cally",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "26_32",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForever",
+        "data": {
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForever()",
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "31",
+          "articyInternal": {
+            "dialogueId": "26_32",
+            "title": "AliyaFunc.WaitForever()",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987613140"
+          }
+        }
+      },
+      {
+        "id": "26_33",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_33",
+            "title": "Andrew: \"你有毛病吧！！！ 莫名其妙！！！ 删了，勿扰\"",
+            "dialogueText": "莫名其妙！！！",
+            "menuText": "",
+            "articyId": "0x0100000A00002DD9-1"
+          }
+        }
+      },
+      {
+        "id": "26_34",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_34",
+            "title": "Andrew: \"你有毛病吧！！！ 莫名其妙！！！ 删了，勿扰\"",
+            "dialogueText": "删了，勿扰",
+            "menuText": "",
+            "articyId": "0x0100000A00002DD9-2"
+          }
+        }
+      },
+      {
+        "id": "26_35",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_35",
+            "title": "Andrew: \"你这家伙 怎么弄的 凭什么删除不了你\"",
+            "dialogueText": "怎么弄的",
+            "menuText": "",
+            "articyId": "0x0100000A00002DFB-1"
+          }
+        }
+      },
+      {
+        "id": "26_36",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_36",
+            "title": "Andrew: \"你这家伙 怎么弄的 凭什么删除不了你\"",
+            "dialogueText": "凭什么删除不了你",
+            "menuText": "",
+            "articyId": "0x0100000A00002DFB-2"
+          }
+        }
+      },
+      {
+        "id": "26_37",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_37",
+            "title": "Andrew: \"你**** ************\"",
+            "dialogueText": "************",
+            "menuText": "",
+            "articyId": "0x0100000A00002E24-1"
+          }
+        }
+      },
+      {
+        "id": "26_38",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_38",
+            "title": "Andrew: \"你等着 等我找到你非要你好看！！！\"",
+            "dialogueText": "等我找到你非要你好看！！！",
+            "menuText": "",
+            "articyId": "0x0100000A00002E2B-1"
+          }
+        }
+      },
+      {
+        "id": "26_39",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "31",
+          "channelId": "Cally的上司",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "26_39",
+            "title": "Andrew: \"我*你* 你个******\"",
+            "dialogueText": "你个******",
+            "menuText": "",
+            "articyId": "0x0100000A00002E48-1"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "26_0->26_1",
+        "source": "26_0",
+        "target": "26_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_1->26_22",
+        "source": "26_1",
+        "target": "26_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_3->26_4",
+        "source": "26_3",
+        "target": "26_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_4->26_8",
+        "source": "26_4",
+        "target": "26_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_4->26_7",
+        "source": "26_4",
+        "target": "26_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_5->26_6",
+        "source": "26_5",
+        "target": "26_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_6->26_33",
+        "source": "26_6",
+        "target": "26_33",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_7->26_6",
+        "source": "26_7",
+        "target": "26_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_8->26_6",
+        "source": "26_8",
+        "target": "26_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_9->26_10",
+        "source": "26_9",
+        "target": "26_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_10->26_35",
+        "source": "26_10",
+        "target": "26_35",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_11->26_14",
+        "source": "26_11",
+        "target": "26_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_12->26_15",
+        "source": "26_12",
+        "target": "26_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_13->26_21",
+        "source": "26_13",
+        "target": "26_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_14->26_16",
+        "source": "26_14",
+        "target": "26_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_15->26_37",
+        "source": "26_15",
+        "target": "26_37",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_16->26_38",
+        "source": "26_16",
+        "target": "26_38",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_17->26_20",
+        "source": "26_17",
+        "target": "26_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_18->26_20",
+        "source": "26_18",
+        "target": "26_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_19->26_20",
+        "source": "26_19",
+        "target": "26_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_20->26_39",
+        "source": "26_20",
+        "target": "26_39",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_21->26_16",
+        "source": "26_21",
+        "target": "26_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_22->26_3",
+        "source": "26_22",
+        "target": "26_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_22->26_5",
+        "source": "26_22",
+        "target": "26_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_23->26_26",
+        "source": "26_23",
+        "target": "26_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_24->26_26",
+        "source": "26_24",
+        "target": "26_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_25->26_26",
+        "source": "26_25",
+        "target": "26_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_26->26_27",
+        "source": "26_26",
+        "target": "26_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_26->26_28",
+        "source": "26_26",
+        "target": "26_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_26->26_29",
+        "source": "26_26",
+        "target": "26_29",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_27->26_30",
+        "source": "26_27",
+        "target": "26_30",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_28->26_30",
+        "source": "26_28",
+        "target": "26_30",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_29->26_30",
+        "source": "26_29",
+        "target": "26_30",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_30->26_31",
+        "source": "26_30",
+        "target": "26_31",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_31->26_32",
+        "source": "26_31",
+        "target": "26_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_33->26_34",
+        "source": "26_33",
+        "target": "26_34",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_34->26_9",
+        "source": "26_34",
+        "target": "26_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_35->26_36",
+        "source": "26_35",
+        "target": "26_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_36->26_11",
+        "source": "26_36",
+        "target": "26_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_36->26_12",
+        "source": "26_36",
+        "target": "26_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_36->26_13",
+        "source": "26_36",
+        "target": "26_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_37->26_16",
+        "source": "26_37",
+        "target": "26_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_38->26_17",
+        "source": "26_38",
+        "target": "26_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_38->26_18",
+        "source": "26_38",
+        "target": "26_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_38->26_19",
+        "source": "26_38",
+        "target": "26_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_39->26_23",
+        "source": "26_39",
+        "target": "26_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_39->26_24",
+        "source": "26_39",
+        "target": "26_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "26_39->26_25",
+        "source": "26_39",
+        "target": "26_25",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 4,
+      "edge": 3,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {},
+    "flowchartRefs": [],
+    "currName": "Ryoko",
+    "currId": "4",
+    "articyInternal": {
+      "title": "Ryoko",
+      "description": "",
+      "articyId": "72057611217797170",
+      "channelId": "Ryoko"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "4_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "2",
+          "channelId": "Ryoko",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "4_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797170"
+          }
+        }
+      },
+      {
+        "id": "4_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Ryoko",
+          "conversantId": "2",
+          "articyInternal": {
+            "dialogueId": "4_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797170"
+          }
+        }
+      },
+      {
+        "id": "4_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Ryoko",
+          "conversantId": "2",
+          "articyInternal": {
+            "dialogueId": "4_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217797170"
+          }
+        }
+      },
+      {
+        "id": "4_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "2",
+          "channelId": "Ryoko",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "4_3",
+            "title": "Ryoko: \"$md{联络成功}\"",
+            "dialogueText": "$md{联络成功}",
+            "menuText": "",
+            "articyId": "72057636987613440"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "4_0->4_1",
+        "source": "4_0",
+        "target": "4_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "4_1->4_3",
+        "source": "4_1",
+        "target": "4_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "4_3->4_2",
+        "source": "4_3",
+        "target": "4_2",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

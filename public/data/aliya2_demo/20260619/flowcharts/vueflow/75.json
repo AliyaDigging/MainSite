@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 10,
+      "edge": 9,
+      "otherFlowcharts": 2
+    },
+    "variableNames": {},
+    "flowchartRefs": [
+      "42"
+    ],
+    "currName": "Outside",
+    "currId": "75",
+    "articyInternal": {
+      "title": "遇到没有上锁的房间",
+      "description": "",
+      "articyId": "72057632692640220",
+      "channelId": "Outside"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "75_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Outside",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "75_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057632692640220"
+          }
+        }
+      },
+      {
+        "id": "75_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "75_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057632692640260"
+          }
+        }
+      },
+      {
+        "id": "75_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "75_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057632692640260"
+          }
+        }
+      },
+      {
+        "id": "75_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "75_3",
+            "title": "Aliya: \"$v{name}，我现在正在仓储区的走廊里 这里现在没什么人的...\"",
+            "dialogueText": "$v{name}，我现在正在仓储区的走廊里",
+            "menuText": "",
+            "articyId": "72057641282581460"
+          }
+        }
+      },
+      {
+        "id": "75_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "75_4",
+            "title": "Aliya: \"$v{name}，我现在正在仓储区的走廊里 这里现在没什么人的...\"",
+            "dialogueText": "这里现在没什么人的",
+            "menuText": "",
+            "articyId": "0x0100000B000033D4-1"
+          }
+        }
+      },
+      {
+        "id": "75_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "75_5",
+            "title": "Aliya: \"$v{name}，我现在正在仓储区的走廊里 这里现在没什么人的...\"",
+            "dialogueText": "欸？前面有个房间没有关好",
+            "menuText": "",
+            "articyId": "0x0100000B000033D4-2"
+          }
+        }
+      },
+      {
+        "id": "42_32",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "OtherFlowchart",
+        "data": {
+          "displayData": {
+            "conversationId": "42",
+            "dialogueId": "32"
+          },
+          "actualJumpData": {
+            "conversationId": "42",
+            "nodeId": "75_2"
+          }
+        }
+      },
+      {
+        "id": "42_33",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "OtherFlowchart",
+        "data": {
+          "displayData": {
+            "conversationId": "42",
+            "dialogueId": "33"
+          },
+          "actualJumpData": {
+            "conversationId": "42",
+            "nodeId": "75_2"
+          }
+        }
+      },
+      {
+        "id": "74_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FOF_JumpFrom",
+        "data": {
+          "displayInfo": {
+            "conversationId": "74",
+            "dialogueId": "2"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "42",
+            "nodeId": "74_2"
+          }
+        }
+      },
+      {
+        "id": "79_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FOF_JumpFrom",
+        "data": {
+          "displayInfo": {
+            "conversationId": "79",
+            "dialogueId": "2"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "42",
+            "nodeId": "79_2"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "75_0->75_1",
+        "source": "75_0",
+        "target": "75_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "75_1->75_3",
+        "source": "75_1",
+        "target": "75_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "75_2->42_32",
+        "source": "75_2",
+        "target": "42_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "75_2->42_33",
+        "source": "75_2",
+        "target": "42_33",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "75_3->75_4",
+        "source": "75_3",
+        "target": "75_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "75_4->75_5",
+        "source": "75_4",
+        "target": "75_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "75_5->75_2",
+        "source": "75_5",
+        "target": "75_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "74_2->75_1",
+        "source": "74_2",
+        "target": "75_1",
+        "markerEnd": "arrow",
+        "animated": true,
+        "label": "comp.flowchart.aliya2_demo.node.fof.JumpFrom.edge.label",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "79_2->75_1",
+        "source": "79_2",
+        "target": "75_1",
+        "markerEnd": "arrow",
+        "animated": true,
+        "label": "comp.flowchart.aliya2_demo.node.fof.JumpFrom.edge.label",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1777 @@
+{
+  "AliyaFunc.WaitForCondition": {
+    "name": "AliyaFunc.WaitForCondition",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "AliyaFunc.WaitTime": {
+    "name": "AliyaFunc.WaitTime",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "AliyaFunc.ChangeBGM": {
+    "name": "AliyaFunc.ChangeBGM",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "AliyaFunc.RestartGame": {
+    "name": "AliyaFunc.RestartGame",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "AliyaFunc.PushNews": {
+    "name": "AliyaFunc.PushNews",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "AliyaFunc.StartConversation": {
+    "name": "AliyaFunc.StartConversation",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "AliyaFunc.WaitForever": {
+    "name": "AliyaFunc.WaitForever",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "AliyaFunc.PlayerInput": {
+    "name": "AliyaFunc.PlayerInput",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "AliyaFunc.PushDoc": {
+    "name": "AliyaFunc.PushDoc",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "JudgmentType.Equal": {
+    "name": "JudgmentType.Equal",
+    "initialValue": "Equal",
+    "type": "string",
+    "usages": {}
+  },
+  "JudgmentType.Greater": {
+    "name": "JudgmentType.Greater",
+    "initialValue": "Greater",
+    "type": "string",
+    "usages": {}
+  },
+  "JudgmentType.Less": {
+    "name": "JudgmentType.Less",
+    "initialValue": "Less",
+    "type": "string",
+    "usages": {}
+  },
+  "JudgmentType.GreaterOrEqual": {
+    "name": "JudgmentType.GreaterOrEqual",
+    "initialValue": "GreaterOrEqual",
+    "type": "string",
+    "usages": {}
+  },
+  "JudgmentType.LessOrEqual": {
+    "name": "JudgmentType.LessOrEqual",
+    "initialValue": "LessOrEqual",
+    "type": "string",
+    "usages": {}
+  },
+  "JudgmentType.NotEqual": {
+    "name": "JudgmentType.NotEqual",
+    "initialValue": "NotEqual",
+    "type": "string",
+    "usages": {}
+  },
+  "ExampleVariables.ExampleVariable": {
+    "name": "ExampleVariables.ExampleVariable",
+    "initialValue": true,
+    "type": "boolean",
+    "usages": {}
+  },
+  "ExampleVariables.StringValue": {
+    "name": "ExampleVariables.StringValue",
+    "initialValue": null,
+    "type": "null",
+    "usages": {
+      "83": [
+        {
+          "type": "write",
+          "nodeId": "83_18",
+          "nodeType": "CustomScript",
+          "value": "Example"
+        }
+      ]
+    }
+  },
+  "ExampleVariables.IntValue": {
+    "name": "ExampleVariables.IntValue",
+    "initialValue": "0",
+    "type": "string",
+    "usages": {
+      "83": [
+        {
+          "type": "write",
+          "nodeId": "83_18",
+          "nodeType": "CustomScript",
+          "value": 666
+        }
+      ]
+    }
+  },
+  "ExampleVariables.BoolValue": {
+    "name": "ExampleVariables.BoolValue",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "83": [
+        {
+          "type": "read",
+          "nodeId": "83_4",
+          "nodeType": "PlayerChoice",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "83_5",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "write",
+          "nodeId": "83_18",
+          "nodeType": "CustomScript",
+          "value": true
+        },
+        {
+          "type": "read",
+          "nodeId": "83_20",
+          "nodeType": "PlayerChoice",
+          "value": false,
+          "compareOp": "eq"
+        },
+        {
+          "type": "write",
+          "nodeId": "83_23",
+          "nodeType": "CustomScript",
+          "value": true
+        },
+        {
+          "type": "write",
+          "nodeId": "83_24",
+          "nodeType": "CustomScript",
+          "value": false
+        },
+        {
+          "type": "read",
+          "nodeId": "83_26",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "83_27",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        },
+        {
+          "type": "write",
+          "nodeId": "83_37",
+          "nodeType": "CustomScript",
+          "value": false
+        }
+      ],
+      "86": [
+        {
+          "type": "write",
+          "nodeId": "85_7",
+          "nodeType": "CustomScript",
+          "value": true
+        },
+        {
+          "type": "write",
+          "nodeId": "85_8",
+          "nodeType": "CustomScript",
+          "value": false
+        }
+      ]
+    }
+  },
+  "ExampleVariables.PlayerChoiceAppear": {
+    "name": "ExampleVariables.PlayerChoiceAppear",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "83": [
+        {
+          "type": "read",
+          "nodeId": "83_68",
+          "nodeType": "PlayerChoice",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "86": [
+        {
+          "type": "write",
+          "nodeId": "85_15",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "ExampleVariables.DefaultChoiceAppear": {
+    "name": "ExampleVariables.DefaultChoiceAppear",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "83": [
+        {
+          "type": "read",
+          "nodeId": "83_69",
+          "nodeType": "DefaultChoice",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "86": [
+        {
+          "type": "write",
+          "nodeId": "85_16",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C1_1Police_Aliya": {
+    "name": "Aliya.C1_1Police_Aliya",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "20": [
+        {
+          "type": "write",
+          "nodeId": "20_19",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "36": [
+        {
+          "type": "read",
+          "nodeId": "36_23",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Aliya.C5_9Oleg_Aliya_1": {
+    "name": "Aliya.C5_9Oleg_Aliya_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C5_9Oleg_Aliya_2": {
+    "name": "Aliya.C5_9Oleg_Aliya_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C5_9Oleg_Aliya_3": {
+    "name": "Aliya.C5_9Oleg_Aliya_3",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C5_9Oleg_Aliya_4": {
+    "name": "Aliya.C5_9Oleg_Aliya_4",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C5_7Lewis_Aliya": {
+    "name": "Aliya.C5_7Lewis_Aliya",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C6_4_PirateRadio_Aliya": {
+    "name": "Aliya.C6_4_PirateRadio_Aliya",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C3_3_cibi": {
+    "name": "Aliya.C3_3_cibi",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "read",
+          "nodeId": "42_17",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "42_18",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        },
+        {
+          "type": "write",
+          "nodeId": "44_4",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "46": [
+        {
+          "type": "read",
+          "nodeId": "46_35",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "46_36",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "49_8",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "49_9",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Aliya.C_3_3kaisuoqi": {
+    "name": "Aliya.C_3_3kaisuoqi",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "read",
+          "nodeId": "42_28",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "42_29",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        }
+      ],
+      "46": [
+        {
+          "type": "write",
+          "nodeId": "46_24",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C_3_3_meet": {
+    "name": "Aliya.C_3_3_meet",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "write",
+          "nodeId": "48_22",
+          "nodeType": "CustomScript",
+          "value": true
+        },
+        {
+          "type": "write",
+          "nodeId": "50_15",
+          "nodeType": "CustomScript",
+          "value": true
+        },
+        {
+          "type": "read",
+          "nodeId": "55_18",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "55_19",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        },
+        {
+          "type": "write",
+          "nodeId": "55_32",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "64": [
+        {
+          "type": "read",
+          "nodeId": "64_7",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "64_8",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Aliya.C3_3_Key": {
+    "name": "Aliya.C3_3_Key",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "read",
+          "nodeId": "42_23",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "42_24",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        },
+        {
+          "type": "write",
+          "nodeId": "62_21",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C3_3safe": {
+    "name": "Aliya.C3_3safe",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "read",
+          "nodeId": "42_14",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "42_15",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        },
+        {
+          "type": "write",
+          "nodeId": "60_18",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C3_3hleptwo": {
+    "name": "Aliya.C3_3hleptwo",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "write",
+          "nodeId": "65_21",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C3_3helpAliya": {
+    "name": "Aliya.C3_3helpAliya",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "write",
+          "nodeId": "82_40",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C4_15Cally_Aliya_1": {
+    "name": "Aliya.C4_15Cally_Aliya_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C4_15Researcher": {
+    "name": "Aliya.C4_15Researcher",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C4_15mission": {
+    "name": "Aliya.C4_15mission",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C4_15closeman": {
+    "name": "Aliya.C4_15closeman",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C3_3helpone": {
+    "name": "Aliya.C3_3helpone",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C4_15swich": {
+    "name": "Aliya.C4_15swich",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C4_15torch": {
+    "name": "Aliya.C4_15torch",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C4_15leaf": {
+    "name": "Aliya.C4_15leaf",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C3_4helpresearcher": {
+    "name": "Aliya.C3_4helpresearcher",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "write",
+          "nodeId": "63_20",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C3_3nothelpone": {
+    "name": "Aliya.C3_3nothelpone",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "write",
+          "nodeId": "73_8",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C4_15Aliya_Aliya": {
+    "name": "Aliya.C4_15Aliya_Aliya",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C4_16Aliya_Aliya": {
+    "name": "Aliya.C4_16Aliya_Aliya",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C4_15alcohol": {
+    "name": "Aliya.C4_15alcohol",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C4_15Aliya_Aliya_2": {
+    "name": "Aliya.C4_15Aliya_Aliya_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C1_1Police_Aliya_2": {
+    "name": "Aliya.C1_1Police_Aliya_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "20": [
+        {
+          "type": "write",
+          "nodeId": "20_25",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "36": [
+        {
+          "type": "read",
+          "nodeId": "36_48",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Aliya.C1_1HidingPlace": {
+    "name": "Aliya.C1_1HidingPlace",
+    "initialValue": null,
+    "type": "null",
+    "usages": {
+      "36": [
+        {
+          "type": "write",
+          "nodeId": "36_71",
+          "nodeType": "CustomScript",
+          "value": "Lab"
+        },
+        {
+          "type": "write",
+          "nodeId": "36_72",
+          "nodeType": "CustomScript",
+          "value": "WareHouse"
+        },
+        {
+          "type": "write",
+          "nodeId": "36_73",
+          "nodeType": "CustomScript",
+          "value": "Engine"
+        }
+      ]
+    }
+  },
+  "Aliya.C2_1Cally_Aliya": {
+    "name": "Aliya.C2_1Cally_Aliya",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Aliya.C3_1Team_Aliya": {
+    "name": "Aliya.C3_1Team_Aliya",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "read",
+          "nodeId": "14_79",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "3": [
+        {
+          "type": "write",
+          "nodeId": "41_243",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C3_1Team_Aliya_1": {
+    "name": "Aliya.C3_1Team_Aliya_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "read",
+          "nodeId": "14_113",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "3": [
+        {
+          "type": "write",
+          "nodeId": "16_3",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "15": [
+        {
+          "type": "read",
+          "nodeId": "15_33",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Aliya.C3_3Aliya_Outside": {
+    "name": "Aliya.C3_3Aliya_Outside",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "write",
+          "nodeId": "23_35",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "42": [
+        {
+          "type": "read",
+          "nodeId": "42_47",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Aliya.C3_1Cally_Aliya": {
+    "name": "Aliya.C3_1Cally_Aliya",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "read",
+          "nodeId": "14_98",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "6": [
+        {
+          "type": "write",
+          "nodeId": "25_90",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C3_1Team_Aliya_2": {
+    "name": "Aliya.C3_1Team_Aliya_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "read",
+          "nodeId": "14_101",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "3": [
+        {
+          "type": "write",
+          "nodeId": "17_50",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Aliya.C3_12Windy_Aliya": {
+    "name": "Aliya.C3_12Windy_Aliya",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "7": [
+        {
+          "type": "write",
+          "nodeId": "18_47",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "42": [
+        {
+          "type": "read",
+          "nodeId": "19_36",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Oleg.C3_2Kane_Oleg_1": {
+    "name": "Oleg.C3_2Kane_Oleg_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "5": [
+        {
+          "type": "write",
+          "nodeId": "31_14",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "8": [
+        {
+          "type": "read",
+          "nodeId": "13_35",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Oleg.C3_2Kane_Oleg_2": {
+    "name": "Oleg.C3_2Kane_Oleg_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C3_2Kane_Oleg_3": {
+    "name": "Oleg.C3_2Kane_Oleg_3",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "5": [
+        {
+          "type": "write",
+          "nodeId": "30_6",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "8": [
+        {
+          "type": "read",
+          "nodeId": "13_62",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Oleg.C5_9Aliya_Oleg_1": {
+    "name": "Oleg.C5_9Aliya_Oleg_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C5_9Aliya_Oleg_2": {
+    "name": "Oleg.C5_9Aliya_Oleg_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C5_9Aliya_Oleg_3": {
+    "name": "Oleg.C5_9Aliya_Oleg_3",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C6_2Lewis_Oleg_1": {
+    "name": "Oleg.C6_2Lewis_Oleg_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C5_7Lewis_Oleg": {
+    "name": "Oleg.C5_7Lewis_Oleg",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C5_9Aliya_Oleg_4": {
+    "name": "Oleg.C5_9Aliya_Oleg_4",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C3_16anbao": {
+    "name": "Oleg.C3_16anbao",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C3_16meeting": {
+    "name": "Oleg.C3_16meeting",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C3_16yanwudan": {
+    "name": "Oleg.C3_16yanwudan",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C2_3Get": {
+    "name": "Oleg.C2_3Get",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Oleg.C3_2Oleg_1": {
+    "name": "Oleg.C3_2Oleg_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "8": [
+        {
+          "type": "read",
+          "nodeId": "13_3",
+          "nodeType": "PlayerChoice",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "write",
+          "nodeId": "13_13",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Oleg.C3_2Oleg_2": {
+    "name": "Oleg.C3_2Oleg_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "8": [
+        {
+          "type": "read",
+          "nodeId": "13_9",
+          "nodeType": "PlayerChoice",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "write",
+          "nodeId": "13_15",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Oleg.OlegConnect": {
+    "name": "Oleg.OlegConnect",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "5": [
+        {
+          "type": "read",
+          "nodeId": "29_7",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "29_8",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        }
+      ],
+      "8": [
+        {
+          "type": "write",
+          "nodeId": "12_3",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Kane.C3_2Oleg_Kane_1": {
+    "name": "Kane.C3_2Oleg_Kane_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "5": [
+        {
+          "type": "read",
+          "nodeId": "29_20",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "8": [
+        {
+          "type": "write",
+          "nodeId": "13_34",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Kane.C3_2Oleg_Kane_2": {
+    "name": "Kane.C3_2Oleg_Kane_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Kane.C3_2Oleg_Kane_3": {
+    "name": "Kane.C3_2Oleg_Kane_3",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "5": [
+        {
+          "type": "read",
+          "nodeId": "29_16",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "8": [
+        {
+          "type": "write",
+          "nodeId": "13_61",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Kane.C3_2Oleg_Kane_4": {
+    "name": "Kane.C3_2Oleg_Kane_4",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "5": [
+        {
+          "type": "read",
+          "nodeId": "29_14",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "8": [
+        {
+          "type": "write",
+          "nodeId": "13_81",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Kane.C2_2Team_Kane": {
+    "name": "Kane.C2_2Team_Kane",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "3": [
+        {
+          "type": "write",
+          "nodeId": "41_187",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "5": [
+        {
+          "type": "read",
+          "nodeId": "27_7",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Kane.C2_2Team_Kane_1": {
+    "name": "Kane.C2_2Team_Kane_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "3": [
+        {
+          "type": "write",
+          "nodeId": "41_244",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "5": [
+        {
+          "type": "read",
+          "nodeId": "29_23",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Police.C1_1Aliya_Police": {
+    "name": "Police.C1_1Aliya_Police",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "20": [
+        {
+          "type": "read",
+          "nodeId": "20_27",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "36": [
+        {
+          "type": "write",
+          "nodeId": "36_57",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Police.TheLocationInformationIsCorrect": {
+    "name": "Police.TheLocationInformationIsCorrect",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "20": [
+        {
+          "type": "write",
+          "nodeId": "20_10",
+          "nodeType": "PlayerChoice",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Police.C1_1Aliya_Police_2": {
+    "name": "Police.C1_1Aliya_Police_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Police.C1_1Aliya_Police_3": {
+    "name": "Police.C1_1Aliya_Police_3",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "20": [
+        {
+          "type": "read",
+          "nodeId": "20_28",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "40": [
+        {
+          "type": "write",
+          "nodeId": "40_11",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Team.C4_8Windy_team_1": {
+    "name": "Team.C4_8Windy_team_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Team.C4_8Windy_team_2": {
+    "name": "Team.C4_8Windy_team_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Team.C2_2Outside_team": {
+    "name": "Team.C2_2Outside_team",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "3": [
+        {
+          "type": "read",
+          "nodeId": "41_183",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "36": [
+        {
+          "type": "write",
+          "nodeId": "21_59",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Team.C2_2Kane_team": {
+    "name": "Team.C2_2Kane_team",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "3": [
+        {
+          "type": "read",
+          "nodeId": "41_185",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "5": [
+        {
+          "type": "write",
+          "nodeId": "27_9",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Team.C2_2Outside_team_1": {
+    "name": "Team.C2_2Outside_team_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "3": [
+        {
+          "type": "read",
+          "nodeId": "41_120",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "36": [
+        {
+          "type": "write",
+          "nodeId": "22_11",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Team.C3_2Aliya_team": {
+    "name": "Team.C3_2Aliya_team",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "write",
+          "nodeId": "14_94",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "3": [
+        {
+          "type": "read",
+          "nodeId": "17_3",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "15": [
+        {
+          "type": "write",
+          "nodeId": "15_38",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Team.C3_2Kane_team": {
+    "name": "Team.C3_2Kane_team",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "3": [
+        {
+          "type": "read",
+          "nodeId": "17_43",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "5": [
+        {
+          "type": "write",
+          "nodeId": "29_21",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Team.C2_3_1Cally_team": {
+    "name": "Team.C2_3_1Cally_team",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "3": [
+        {
+          "type": "read",
+          "nodeId": "17_44",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "6": [
+        {
+          "type": "write",
+          "nodeId": "25_92",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Team.C3_2_1AliyaSleep": {
+    "name": "Team.C3_2_1AliyaSleep",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "read",
+          "nodeId": "14_107",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "14_108",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        }
+      ],
+      "3": [
+        {
+          "type": "write",
+          "nodeId": "17_51",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Team.C3_2_1Aliya_team": {
+    "name": "Team.C3_2_1Aliya_team",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "write",
+          "nodeId": "14_112",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "3": [
+        {
+          "type": "read",
+          "nodeId": "17_52",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Lewis.C6_2Aliya_Lewis_1": {
+    "name": "Lewis.C6_2Aliya_Lewis_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Lewis.C6_2Oleg_Lewis_2": {
+    "name": "Lewis.C6_2Oleg_Lewis_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Lewis.C4_20Windy_Lewis": {
+    "name": "Lewis.C4_20Windy_Lewis",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Lewis.C5_7Aliya_Lewis": {
+    "name": "Lewis.C5_7Aliya_Lewis",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Windy.C4_8Team_Windy_2": {
+    "name": "Windy.C4_8Team_Windy_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Windy.C4_8Team_Windy_1": {
+    "name": "Windy.C4_8Team_Windy_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Windy.C5_2Winidy_Windy_1": {
+    "name": "Windy.C5_2Winidy_Windy_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Windy.C4_30Haidao_Windy": {
+    "name": "Windy.C4_30Haidao_Windy",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Windy.C4_20Lewis_Windy": {
+    "name": "Windy.C4_20Lewis_Windy",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Windy.C6_4_PirateRadio_Windy": {
+    "name": "Windy.C6_4_PirateRadio_Windy",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Windy.WindyConnect": {
+    "name": "Windy.WindyConnect",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "read",
+          "nodeId": "28_24",
+          "nodeType": "ConditionCheck",
+          "value": true,
+          "compareOp": "eq"
+        },
+        {
+          "type": "read",
+          "nodeId": "28_25",
+          "nodeType": "ConditionCheck",
+          "value": false,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "PirateRadio.C6_3_Aliya_PirateRadio": {
+    "name": "PirateRadio.C6_3_Aliya_PirateRadio",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "System.PlaythroughCount": {
+    "name": "System.PlaythroughCount",
+    "initialValue": "1",
+    "type": "string",
+    "usages": {}
+  },
+  "System.Ending_1": {
+    "name": "System.Ending_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "System.Ending_2": {
+    "name": "System.Ending_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "System.PlayerName": {
+    "name": "System.PlayerName",
+    "initialValue": "Player",
+    "type": "string",
+    "usages": {}
+  },
+  "System.NowMonth": {
+    "name": "System.NowMonth",
+    "initialValue": "0",
+    "type": "string",
+    "usages": {}
+  },
+  "System.NowDay": {
+    "name": "System.NowDay",
+    "initialValue": "0",
+    "type": "string",
+    "usages": {}
+  },
+  "System.NowYear": {
+    "name": "System.NowYear",
+    "initialValue": "0",
+    "type": "string",
+    "usages": {}
+  },
+  "System.NowHour": {
+    "name": "System.NowHour",
+    "initialValue": "0",
+    "type": "string",
+    "usages": {}
+  },
+  "System.NowMinute": {
+    "name": "System.NowMinute",
+    "initialValue": "0",
+    "type": "string",
+    "usages": {}
+  },
+  "System.NowSecond": {
+    "name": "System.NowSecond",
+    "initialValue": "0",
+    "type": "string",
+    "usages": {}
+  },
+  "Cally.C4_15Aliya_Cally_1": {
+    "name": "Cally.C4_15Aliya_Cally_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Cally.C4_15Aliya_Cally_2": {
+    "name": "Cally.C4_15Aliya_Cally_2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "Cally.C1_3BOSS1_Cally": {
+    "name": "Cally.C1_3BOSS1_Cally",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "6": [
+        {
+          "type": "read",
+          "nodeId": "10_145",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ],
+      "26": [
+        {
+          "type": "write",
+          "nodeId": "26_31",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ]
+    }
+  },
+  "Cally.C2_3_1Aliya_Cally": {
+    "name": "Cally.C2_3_1Aliya_Cally",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "write",
+          "nodeId": "14_97",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "6": [
+        {
+          "type": "read",
+          "nodeId": "25_88",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Cally.C2_3_1Aliya_Cally_1": {
+    "name": "Cally.C2_3_1Aliya_Cally_1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "write",
+          "nodeId": "14_100",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "6": [
+        {
+          "type": "read",
+          "nodeId": "25_91",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Outside.C2_1Aliya_Outside": {
+    "name": "Outside.C2_1Aliya_Outside",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "2": [
+        {
+          "type": "write",
+          "nodeId": "11_137",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "36": [
+        {
+          "type": "read",
+          "nodeId": "21_57",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "Outside.C2_2Team_Outside": {
+    "name": "Outside.C2_2Team_Outside",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "3": [
+        {
+          "type": "write",
+          "nodeId": "41_191",
+          "nodeType": "CustomScript",
+          "value": true
+        }
+      ],
+      "36": [
+        {
+          "type": "read",
+          "nodeId": "22_10",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  },
+  "DocVariables.Example1": {
+    "name": "DocVariables.Example1",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "DocVariables.Example2": {
+    "name": "DocVariables.Example2",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {}
+  },
+  "DocVariables.Windy": {
+    "name": "DocVariables.Windy",
+    "initialValue": false,
+    "type": "boolean",
+    "usages": {
+      "42": [
+        {
+          "type": "read",
+          "nodeId": "28_29",
+          "nodeType": "WaitForCondition",
+          "value": true,
+          "compareOp": "eq"
+        }
+      ]
+    }
+  }
+}

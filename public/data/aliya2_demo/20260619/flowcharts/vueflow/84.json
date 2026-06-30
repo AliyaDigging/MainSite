@@ -1,0 +1,383 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 11,
+      "edge": 13,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {},
+    "flowchartRefs": [],
+    "currName": "TeamTest",
+    "currId": "84",
+    "articyInternal": {
+      "title": "MZ/群聊",
+      "description": "",
+      "articyId": "72057598332897810",
+      "channelId": "TeamTest"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "84_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "TeamTest",
+          "conversantId": "5",
+          "articyInternal": {
+            "dialogueId": "84_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897810"
+          }
+        }
+      },
+      {
+        "id": "84_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "TeamTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "84_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897820"
+          }
+        }
+      },
+      {
+        "id": "84_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "TeamTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "84_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897820"
+          }
+        }
+      },
+      {
+        "id": "84_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "TeamTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "84_3",
+            "title": "Aliya: \"群聊Aliya_开启Windy对话\"",
+            "dialogueText": "群聊Aliya_开启Windy对话",
+            "menuText": "",
+            "articyId": "72057598332897820"
+          }
+        }
+      },
+      {
+        "id": "84_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "2",
+          "channelId": "TeamTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "84_4",
+            "title": "Ryoko: \"Ryoko\"",
+            "dialogueText": "Ryoko",
+            "menuText": "",
+            "articyId": "72057598332897820"
+          }
+        }
+      },
+      {
+        "id": "84_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "TeamTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "84_5",
+            "title": "Kane: \"Kane\"",
+            "dialogueText": "Kane",
+            "menuText": "",
+            "articyId": "72057598332897840"
+          }
+        }
+      },
+      {
+        "id": "84_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "TeamTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "84_6",
+            "title": "Player: \"开启windy对话\"",
+            "dialogueText": "开启windy对话",
+            "menuText": "",
+            "articyId": "72057598332897840"
+          }
+        }
+      },
+      {
+        "id": "84_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "TeamTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "84_7",
+            "title": "Player: \"群聊选项2\"",
+            "dialogueText": "群聊选项2",
+            "menuText": "",
+            "articyId": "72057598332897860"
+          }
+        }
+      },
+      {
+        "id": "84_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "TeamTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "84_8",
+            "title": "Player: \"群聊选项3\"",
+            "dialogueText": "群聊选项3",
+            "menuText": "",
+            "articyId": "72057598332897860"
+          }
+        }
+      },
+      {
+        "id": "84_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "StartConversation",
+        "data": {
+          "conditionString": null,
+          "userScript": "AliyaFunc.StartConversation(\"Windy\")",
+          "actorId": "84",
+          "channelId": "Windy",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "84_9",
+            "title": "AliyaFunc.StartConversation(\"Windy\")",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742500"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "7",
+            "nodeId": "18_1"
+          }
+        }
+      },
+      {
+        "id": "84_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "84",
+          "channelId": "TeamTest",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "84_10",
+            "title": "End Hub",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742990"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "84_0->84_1",
+        "source": "84_0",
+        "target": "84_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_1->84_3",
+        "source": "84_1",
+        "target": "84_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_2->84_1",
+        "source": "84_2",
+        "target": "84_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_3->84_4",
+        "source": "84_3",
+        "target": "84_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_4->84_5",
+        "source": "84_4",
+        "target": "84_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_5->84_6",
+        "source": "84_5",
+        "target": "84_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_5->84_7",
+        "source": "84_5",
+        "target": "84_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_5->84_8",
+        "source": "84_5",
+        "target": "84_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_6->84_9",
+        "source": "84_6",
+        "target": "84_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_7->84_10",
+        "source": "84_7",
+        "target": "84_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_8->84_10",
+        "source": "84_8",
+        "target": "84_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_9->84_10",
+        "source": "84_9",
+        "target": "84_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "84_10->84_2",
+        "source": "84_10",
+        "target": "84_2",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

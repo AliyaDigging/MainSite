@@ -1,0 +1,1732 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 49,
+      "edge": 61,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {
+      "Police.TheLocationInformationIsCorrect": {
+        "key": "Police.TheLocationInformationIsCorrect",
+        "type": "boolean"
+      },
+      "Aliya.C1_1Police_Aliya": {
+        "key": "Aliya.C1_1Police_Aliya",
+        "type": "boolean"
+      },
+      "Aliya.C1_1Police_Aliya_2": {
+        "key": "Aliya.C1_1Police_Aliya_2",
+        "type": "boolean"
+      }
+    },
+    "flowchartRefs": [],
+    "currName": "Police",
+    "currId": "20",
+    "articyInternal": {
+      "title": "1.1警察",
+      "description": "",
+      "articyId": "72057611217802600",
+      "channelId": "Police"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "20_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "20_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217802600"
+          }
+        }
+      },
+      {
+        "id": "20_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "9",
+          "articyInternal": {
+            "dialogueId": "20_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217802600"
+          }
+        }
+      },
+      {
+        "id": "20_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "AmbientMessage",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "ambientType": "NULL",
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_4",
+            "title": "Police: \"$md{联络成功} 喂？\"",
+            "dialogueText": "$md{联络成功}",
+            "menuText": "",
+            "articyId": "72057611217802600"
+          }
+        }
+      },
+      {
+        "id": "20_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_5",
+            "title": "Player: \"我们的飞船在地球港附近遭遇了危险！有不明飞船正在靠近我们！请求救援！\"",
+            "dialogueText": "我们的飞船在地球港附近遭遇了危险！有不明飞船正在靠近我们！请求救援！",
+            "menuText": "",
+            "articyId": "72057611217802610"
+          }
+        }
+      },
+      {
+        "id": "20_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_6",
+            "title": "Player: \"是地球港警局吗？\"",
+            "dialogueText": "是地球港警局吗？",
+            "menuText": "",
+            "articyId": "72057611217802620"
+          }
+        }
+      },
+      {
+        "id": "20_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_7",
+            "title": "Police: \"收到！ 请您保持冷静 发送位置坐标给我们\"",
+            "dialogueText": "收到！",
+            "menuText": "",
+            "articyId": "72057611217802620"
+          }
+        }
+      },
+      {
+        "id": "20_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_8",
+            "title": "Police: \"是的 请问有什么可以帮到您\"",
+            "dialogueText": "是的",
+            "menuText": "",
+            "articyId": "72057611217802620"
+          }
+        }
+      },
+      {
+        "id": "20_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_9",
+            "title": "Player: \"有不明飞船正在靠近并拒绝出示识别码\"",
+            "dialogueText": "有不明飞船正在靠近并拒绝出示识别码",
+            "menuText": "",
+            "articyId": "72057611217802640"
+          }
+        }
+      },
+      {
+        "id": "20_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Police.TheLocationInformationIsCorrect\"] = true",
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_10",
+            "title": "Player: \"0-39.122-36.713\"",
+            "dialogueText": "0-39.122-36.713",
+            "menuText": "",
+            "articyId": "72057611217802670"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Police.TheLocationInformationIsCorrect",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "20_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_11",
+            "title": "Player: \"0-37.122-36.713\"",
+            "dialogueText": "0-37.122-36.713",
+            "menuText": "",
+            "articyId": "72057611217802670"
+          }
+        }
+      },
+      {
+        "id": "20_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_12",
+            "title": "Player: \"0-39.122-39.713\"",
+            "dialogueText": "0-39.122-39.713",
+            "menuText": "",
+            "articyId": "72057611217802690"
+          }
+        }
+      },
+      {
+        "id": "20_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_13",
+            "title": "Police: \"已经派飞船前往目标了 麻烦尽可能拖延时间 提高营救可能性\"",
+            "dialogueText": "已经派飞船前往目标了",
+            "menuText": "",
+            "articyId": "72057611217802690"
+          }
+        }
+      },
+      {
+        "id": "20_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 5,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(5)",
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "9",
+          "articyInternal": {
+            "dialogueId": "20_14",
+            "title": "AliyaFunc.WaitTime(5)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217802700"
+          }
+        }
+      },
+      {
+        "id": "20_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_15",
+            "title": "Player: \"明白\"",
+            "dialogueText": "明白",
+            "menuText": "",
+            "articyId": "72057611217802720"
+          }
+        }
+      },
+      {
+        "id": "20_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_16",
+            "title": "Player: \"我会去做的\"",
+            "dialogueText": "我会去做的",
+            "menuText": "",
+            "articyId": "72057611217802740"
+          }
+        }
+      },
+      {
+        "id": "20_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_17",
+            "title": "Player: \"感谢警方！\"",
+            "dialogueText": "感谢警方！",
+            "menuText": "",
+            "articyId": "72057611217802740"
+          }
+        }
+      },
+      {
+        "id": "20_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_18",
+            "title": "Police: \"不用担心 营救一定会顺利完成的 等我们消息\"",
+            "dialogueText": "不用担心",
+            "menuText": "",
+            "articyId": "72057611217802750"
+          }
+        }
+      },
+      {
+        "id": "20_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Aliya.C1_1Police_Aliya\"]=true",
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "9",
+          "articyInternal": {
+            "dialogueId": "20_19",
+            "title": "Aliya.C1_1Police_Aliya=true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217802800"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Aliya.C1_1Police_Aliya",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "20_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 0,
+            "minutes": 1,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(0,1)",
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "9",
+          "articyInternal": {
+            "dialogueId": "20_20",
+            "title": "AliyaFunc.WaitTime(0,1)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217802820"
+          }
+        }
+      },
+      {
+        "id": "20_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_21",
+            "title": "Police: \"喂你好，我是执行这次任务的警员 编号1865 为了确保任务...\"",
+            "dialogueText": "喂你好，我是执行这次任务的警员",
+            "menuText": "",
+            "articyId": "72057611217802830"
+          }
+        }
+      },
+      {
+        "id": "20_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_22",
+            "title": "Player: \"好的\"",
+            "dialogueText": "好的",
+            "menuText": "",
+            "articyId": "72057611217802830"
+          }
+        }
+      },
+      {
+        "id": "20_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_23",
+            "title": "Player: \"求求你一定要动作快一些啊！\"",
+            "dialogueText": "求求你一定要动作快一些啊！",
+            "menuText": "",
+            "articyId": "72057611217802850"
+          }
+        }
+      },
+      {
+        "id": "20_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_24",
+            "title": "Police: \"我们会尽最大努力来保证目标的安全\"",
+            "dialogueText": "我们会尽最大努力来保证目标的安全",
+            "menuText": "",
+            "articyId": "72057611217802850"
+          }
+        }
+      },
+      {
+        "id": "20_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Aliya.C1_1Police_Aliya_2\"]=true",
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "9",
+          "articyInternal": {
+            "dialogueId": "20_25",
+            "title": "Aliya.C1_1Police_Aliya_2=true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057611217802850"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Aliya.C1_1Police_Aliya_2",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "20_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForever",
+        "data": {
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForever()",
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "9",
+          "articyInternal": {
+            "dialogueId": "20_26",
+            "title": "AliyaFunc.WaitForever()",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987612370"
+          }
+        }
+      },
+      {
+        "id": "20_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Police.C1_1Aliya_Police",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Police.C1_1Aliya_Police\",true,Variable[\"JudgmentType.Equal\"])",
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "9",
+          "articyInternal": {
+            "dialogueId": "20_27",
+            "title": "AliyaFunc.WaitForCondition(\"Police.C1_1Aliya_Police\",true,JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987612420"
+          }
+        }
+      },
+      {
+        "id": "20_28",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Police.C1_1Aliya_Police_3",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Police.C1_1Aliya_Police_3\",true,Variable[\"JudgmentType.Equal\"])",
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "9",
+          "articyInternal": {
+            "dialogueId": "20_28",
+            "title": "AliyaFunc.WaitForCondition(\"Police.C1_1Aliya_Police_3\",true,JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864660"
+          }
+        }
+      },
+      {
+        "id": "20_29",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_29",
+            "title": "Player: \"你们到哪了！我朋友现在很危险\"",
+            "dialogueText": "你们到哪了！我朋友现在很危险",
+            "menuText": "",
+            "articyId": "72057602627864660"
+          }
+        }
+      },
+      {
+        "id": "20_30",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_30",
+            "title": "Player: \"不是，你们***到哪了！\"",
+            "dialogueText": "不是，你们***到哪了！",
+            "menuText": "",
+            "articyId": "72057602627864670"
+          }
+        }
+      },
+      {
+        "id": "20_31",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_31",
+            "title": "Player: \"能不能快一点！\"",
+            "dialogueText": "能不能快一点！",
+            "menuText": "",
+            "articyId": "72057602627864670"
+          }
+        }
+      },
+      {
+        "id": "20_32",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_32",
+            "title": "Police: \"抱歉 因为不可抗力任务取消了\"",
+            "dialogueText": "抱歉",
+            "menuText": "",
+            "articyId": "72057602627864690"
+          }
+        }
+      },
+      {
+        "id": "20_33",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_33",
+            "title": "Player: \"你********\"",
+            "dialogueText": "你********",
+            "menuText": "",
+            "articyId": "72057602627864690"
+          }
+        }
+      },
+      {
+        "id": "20_34",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_34",
+            "title": "Player: \"什么意思？我听不懂啊！\"",
+            "dialogueText": "什么意思？我听不懂啊！",
+            "menuText": "",
+            "articyId": "72057602627864700"
+          }
+        }
+      },
+      {
+        "id": "20_35",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_35",
+            "title": "Player: \"你们不来我们要怎么办！？\"",
+            "dialogueText": "你们不来我们要怎么办！？",
+            "menuText": "",
+            "articyId": "72057602627864700"
+          }
+        }
+      },
+      {
+        "id": "20_36",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 3,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(3)",
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "9",
+          "articyInternal": {
+            "dialogueId": "20_36",
+            "title": "AliyaFunc.WaitTime(3)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864740"
+          }
+        }
+      },
+      {
+        "id": "20_37",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_37",
+            "title": "Player: \"喂喂喂？\"",
+            "dialogueText": "喂喂喂？",
+            "menuText": "",
+            "articyId": "72057602627864740"
+          }
+        }
+      },
+      {
+        "id": "20_38",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_38",
+            "title": "Player: \"你个****\"",
+            "dialogueText": "你个****",
+            "menuText": "",
+            "articyId": "72057602627864750"
+          }
+        }
+      },
+      {
+        "id": "20_39",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_39",
+            "title": "Player: \"求你了！\"",
+            "dialogueText": "求你了！",
+            "menuText": "",
+            "articyId": "72057602627864750"
+          }
+        }
+      },
+      {
+        "id": "20_40",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_40",
+            "title": "Police: \"$md{联络成功} 喂？\"",
+            "dialogueText": "喂？",
+            "menuText": "",
+            "articyId": "0x0100000400001567-1"
+          }
+        }
+      },
+      {
+        "id": "20_41",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_41",
+            "title": "Police: \"收到！ 请您保持冷静 发送位置坐标给我们\"",
+            "dialogueText": "请您保持冷静",
+            "menuText": "",
+            "articyId": "0x0100000400001581-1"
+          }
+        }
+      },
+      {
+        "id": "20_42",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_42",
+            "title": "Police: \"收到！ 请您保持冷静 发送位置坐标给我们\"",
+            "dialogueText": "发送位置坐标给我们",
+            "menuText": "",
+            "articyId": "0x0100000400001581-2"
+          }
+        }
+      },
+      {
+        "id": "20_43",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_43",
+            "title": "Police: \"是的 请问有什么可以帮到您\"",
+            "dialogueText": "请问有什么可以帮到您",
+            "menuText": "",
+            "articyId": "0x0100000400001588-1"
+          }
+        }
+      },
+      {
+        "id": "20_44",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_44",
+            "title": "Police: \"已经派飞船前往目标了 麻烦尽可能拖延时间 提高营救可能性\"",
+            "dialogueText": "麻烦尽可能拖延时间",
+            "menuText": "",
+            "articyId": "0x01000004000015C8-1"
+          }
+        }
+      },
+      {
+        "id": "20_45",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_45",
+            "title": "Police: \"已经派飞船前往目标了 麻烦尽可能拖延时间 提高营救可能性\"",
+            "dialogueText": "提高营救可能性",
+            "menuText": "",
+            "articyId": "0x01000004000015C8-2"
+          }
+        }
+      },
+      {
+        "id": "20_46",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_46",
+            "title": "Police: \"不用担心 营救一定会顺利完成的 等我们消息\"",
+            "dialogueText": "营救一定会顺利完成的",
+            "menuText": "",
+            "articyId": "0x01000004000015F8-1"
+          }
+        }
+      },
+      {
+        "id": "20_47",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_47",
+            "title": "Police: \"不用担心 营救一定会顺利完成的 等我们消息\"",
+            "dialogueText": "等我们消息",
+            "menuText": "",
+            "articyId": "0x01000004000015F8-2"
+          }
+        }
+      },
+      {
+        "id": "20_48",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_48",
+            "title": "Police: \"喂你好，我是执行这次任务的警员 编号1865 为了确保任务...\"",
+            "dialogueText": "编号1865",
+            "menuText": "",
+            "articyId": "0x010000040000164C-1"
+          }
+        }
+      },
+      {
+        "id": "20_49",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_49",
+            "title": "Police: \"喂你好，我是执行这次任务的警员 编号1865 为了确保任务...\"",
+            "dialogueText": "为了确保任务进展顺利，请时刻保持沟通",
+            "menuText": "",
+            "articyId": "0x010000040000164C-2"
+          }
+        }
+      },
+      {
+        "id": "20_50",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "9",
+          "channelId": "Police",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "20_50",
+            "title": "Police: \"抱歉 因为不可抗力任务取消了\"",
+            "dialogueText": "因为不可抗力任务取消了",
+            "menuText": "",
+            "articyId": "0x0100000200000869-1"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "20_0->20_1",
+        "source": "20_0",
+        "target": "20_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_1->20_4",
+        "source": "20_1",
+        "target": "20_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_4->20_40",
+        "source": "20_4",
+        "target": "20_40",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_5->20_7",
+        "source": "20_5",
+        "target": "20_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_6->20_8",
+        "source": "20_6",
+        "target": "20_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_7->20_41",
+        "source": "20_7",
+        "target": "20_41",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_8->20_43",
+        "source": "20_8",
+        "target": "20_43",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_9->20_7",
+        "source": "20_9",
+        "target": "20_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_10->20_14",
+        "source": "20_10",
+        "target": "20_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_11->20_14",
+        "source": "20_11",
+        "target": "20_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_12->20_14",
+        "source": "20_12",
+        "target": "20_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_13->20_44",
+        "source": "20_13",
+        "target": "20_44",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_14->20_13",
+        "source": "20_14",
+        "target": "20_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_15->20_18",
+        "source": "20_15",
+        "target": "20_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_16->20_18",
+        "source": "20_16",
+        "target": "20_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_17->20_18",
+        "source": "20_17",
+        "target": "20_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_18->20_46",
+        "source": "20_18",
+        "target": "20_46",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_19->20_27",
+        "source": "20_19",
+        "target": "20_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_20->20_21",
+        "source": "20_20",
+        "target": "20_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_21->20_48",
+        "source": "20_21",
+        "target": "20_48",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_22->20_24",
+        "source": "20_22",
+        "target": "20_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_23->20_24",
+        "source": "20_23",
+        "target": "20_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_24->20_25",
+        "source": "20_24",
+        "target": "20_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_25->20_28",
+        "source": "20_25",
+        "target": "20_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_27->20_20",
+        "source": "20_27",
+        "target": "20_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_28->20_29",
+        "source": "20_28",
+        "target": "20_29",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_28->20_30",
+        "source": "20_28",
+        "target": "20_30",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_28->20_31",
+        "source": "20_28",
+        "target": "20_31",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_29->20_32",
+        "source": "20_29",
+        "target": "20_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_30->20_32",
+        "source": "20_30",
+        "target": "20_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_31->20_32",
+        "source": "20_31",
+        "target": "20_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_32->20_50",
+        "source": "20_32",
+        "target": "20_50",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_33->20_36",
+        "source": "20_33",
+        "target": "20_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_34->20_36",
+        "source": "20_34",
+        "target": "20_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_35->20_36",
+        "source": "20_35",
+        "target": "20_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_36->20_37",
+        "source": "20_36",
+        "target": "20_37",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_36->20_38",
+        "source": "20_36",
+        "target": "20_38",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_36->20_39",
+        "source": "20_36",
+        "target": "20_39",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_37->20_26",
+        "source": "20_37",
+        "target": "20_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_38->20_26",
+        "source": "20_38",
+        "target": "20_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_39->20_26",
+        "source": "20_39",
+        "target": "20_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_40->20_5",
+        "source": "20_40",
+        "target": "20_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_40->20_6",
+        "source": "20_40",
+        "target": "20_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_41->20_42",
+        "source": "20_41",
+        "target": "20_42",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_42->20_11",
+        "source": "20_42",
+        "target": "20_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_42->20_10",
+        "source": "20_42",
+        "target": "20_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_42->20_12",
+        "source": "20_42",
+        "target": "20_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_43->20_5",
+        "source": "20_43",
+        "target": "20_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_43->20_9",
+        "source": "20_43",
+        "target": "20_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_44->20_45",
+        "source": "20_44",
+        "target": "20_45",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_45->20_15",
+        "source": "20_45",
+        "target": "20_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_45->20_16",
+        "source": "20_45",
+        "target": "20_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_45->20_17",
+        "source": "20_45",
+        "target": "20_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_46->20_47",
+        "source": "20_46",
+        "target": "20_47",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_47->20_19",
+        "source": "20_47",
+        "target": "20_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_48->20_49",
+        "source": "20_48",
+        "target": "20_49",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_49->20_22",
+        "source": "20_49",
+        "target": "20_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_49->20_23",
+        "source": "20_49",
+        "target": "20_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_50->20_33",
+        "source": "20_50",
+        "target": "20_33",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_50->20_34",
+        "source": "20_50",
+        "target": "20_34",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "20_50->20_35",
+        "source": "20_50",
+        "target": "20_35",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}

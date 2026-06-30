@@ -1,0 +1,1936 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 55,
+      "edge": 56,
+      "otherFlowcharts": 2
+    },
+    "variableNames": {},
+    "flowchartRefs": [
+      "42"
+    ],
+    "currName": "Outside",
+    "currId": "61",
+    "articyInternal": {
+      "title": "进入实验室",
+      "description": "",
+      "articyId": "72057632692639820",
+      "channelId": "Outside"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "61_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Outside",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "61_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057632692639820"
+          }
+        }
+      },
+      {
+        "id": "61_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "61_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057632692639840"
+          }
+        }
+      },
+      {
+        "id": "61_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "61_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057632692639840"
+          }
+        }
+      },
+      {
+        "id": "61_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_3",
+            "title": "Player: \"趁这个机会快点走吧\"",
+            "dialogueText": "趁这个机会快点走吧",
+            "menuText": "",
+            "articyId": "72057632692639820"
+          }
+        }
+      },
+      {
+        "id": "61_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_4",
+            "title": "Aliya: \"已经完成第一份录入了\"",
+            "dialogueText": "已经完成第一份录入了",
+            "menuText": "",
+            "articyId": "72057632692639840"
+          }
+        }
+      },
+      {
+        "id": "61_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_5",
+            "title": "研究员: \"立刻去做！ 我现在就要看到数据流汇总 该死的…如果不是因为...\"",
+            "dialogueText": "立刻去做！",
+            "menuText": "",
+            "articyId": "72057641282580140"
+          }
+        }
+      },
+      {
+        "id": "61_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_6",
+            "title": "Aliya: \"…好…好的！\"",
+            "dialogueText": "…好…好的！",
+            "menuText": "",
+            "articyId": "72057641282580540"
+          }
+        }
+      },
+      {
+        "id": "61_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_7",
+            "title": "研究员: \"这份工作的内容只有四个字 我说！你做！ 其他的都不重要！！...\"",
+            "dialogueText": "这份工作的内容只有四个字",
+            "menuText": "",
+            "articyId": "72057641282580540"
+          }
+        }
+      },
+      {
+        "id": "61_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_8",
+            "title": "Aliya: \"请问，这些算式是用来做什么的？\"",
+            "dialogueText": "请问，这些算式是用来做什么的？",
+            "menuText": "",
+            "articyId": "72057641282580560"
+          }
+        }
+      },
+      {
+        "id": "61_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_9",
+            "title": "研究员: \"首先，你把这些资料按照顺序录入计算机 然后我询问任何数据，你都要...\"",
+            "dialogueText": "首先，你把这些资料按照顺序录入计算机",
+            "menuText": "",
+            "articyId": "72057641282580560"
+          }
+        }
+      },
+      {
+        "id": "61_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_10",
+            "title": "Aliya: \"啊…我的Cosmos…\"",
+            "dialogueText": "啊…我的Cosmos…",
+            "menuText": "",
+            "articyId": "72057641282580560"
+          }
+        }
+      },
+      {
+        "id": "61_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_11",
+            "title": "研究员: \"我们到了，现在就开始工作吧 你手里拿的这是什么？ 工作的时...\"",
+            "dialogueText": "我们到了，现在就开始工作吧",
+            "menuText": "",
+            "articyId": "72057641282580580"
+          }
+        }
+      },
+      {
+        "id": "61_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_12",
+            "title": "Aliya: \"是，是的！\"",
+            "dialogueText": "是，是的！",
+            "menuText": "",
+            "articyId": "72057641282580580"
+          }
+        }
+      },
+      {
+        "id": "61_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_13",
+            "title": "研究员: \"非常好！我看到了 接下来把其他的都录入进去 还有，一边录入...\"",
+            "dialogueText": "非常好！我看到了",
+            "menuText": "",
+            "articyId": "72057641282580590"
+          }
+        }
+      },
+      {
+        "id": "61_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_14",
+            "title": "Aliya: \"是，是！\"",
+            "dialogueText": "是，是！",
+            "menuText": "",
+            "articyId": "72057641282580590"
+          }
+        }
+      },
+      {
+        "id": "61_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_15",
+            "title": "研究员: \"喂！人偶！ 你给我过来！\"",
+            "dialogueText": "喂！人偶！",
+            "menuText": "",
+            "articyId": "72057641282580590"
+          }
+        }
+      },
+      {
+        "id": "61_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 0,
+            "minutes": 15,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(0,15)",
+          "actorId": "61",
+          "channelId": "Outside",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "61_16",
+            "title": "AliyaFunc.WaitTime(0,15)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057641282580600"
+          }
+        }
+      },
+      {
+        "id": "61_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_17",
+            "title": "Aliya: \"好累啊…$v{name}…… 十五分钟…我整整喊了十五分钟的数据...\"",
+            "dialogueText": "好累啊…$v{name}……",
+            "menuText": "",
+            "articyId": "72057641282580600"
+          }
+        }
+      },
+      {
+        "id": "61_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_18",
+            "title": "Aliya: \"…是……\"",
+            "dialogueText": "…是……",
+            "menuText": "",
+            "articyId": "72057641282580600"
+          }
+        }
+      },
+      {
+        "id": "61_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_19",
+            "title": "研究员: \"水壶和咖啡粉在那里 我需要提提神 现在立刻去泡\"",
+            "dialogueText": "水壶和咖啡粉在那里",
+            "menuText": "",
+            "articyId": "72057641282580620"
+          }
+        }
+      },
+      {
+        "id": "61_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_20",
+            "title": "Aliya: \"你说得对… 趁现在他不注意…\"",
+            "dialogueText": "你说得对…",
+            "menuText": "",
+            "articyId": "72057641282580620"
+          }
+        }
+      },
+      {
+        "id": "61_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_21",
+            "title": "Player: \"我想我们该走了\"",
+            "dialogueText": "我想我们该走了",
+            "menuText": "",
+            "articyId": "72057641282580620"
+          }
+        }
+      },
+      {
+        "id": "61_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_22",
+            "title": "Player: \"我有点好奇结果会是怎样的？\"",
+            "dialogueText": "我有点好奇结果会是怎样的？",
+            "menuText": "",
+            "articyId": "72057641282580640"
+          }
+        }
+      },
+      {
+        "id": "61_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_23",
+            "title": "Aliya: \"拜托… 不是在你被折磨好么… 我觉得我该趁现在快点走了…\"",
+            "dialogueText": "拜托…",
+            "menuText": "",
+            "articyId": "72057641282580640"
+          }
+        }
+      },
+      {
+        "id": "61_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_24",
+            "title": "Aliya: \"好多不同空咖啡罐啊… 还有很多药瓶 这些是…治疗神经衰弱的...\"",
+            "dialogueText": "好多不同空咖啡罐啊…",
+            "menuText": "",
+            "articyId": "72057641282580690"
+          }
+        }
+      },
+      {
+        "id": "61_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 5,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(5)",
+          "actorId": "61",
+          "channelId": "Outside",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "61_25",
+            "title": "AliyaFunc.WaitTime(5)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057641282580700"
+          }
+        }
+      },
+      {
+        "id": "61_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_26",
+            "title": "研究员: \"立刻去做！ 我现在就要看到数据流汇总 该死的…如果不是因为...\"",
+            "dialogueText": "我现在就要看到数据流汇总",
+            "menuText": "",
+            "articyId": "0x0100000B00002EB4-1"
+          }
+        }
+      },
+      {
+        "id": "61_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_27",
+            "title": "研究员: \"立刻去做！ 我现在就要看到数据流汇总 该死的…如果不是因为...\"",
+            "dialogueText": "该死的…如果不是因为那个老家伙",
+            "menuText": "",
+            "articyId": "0x0100000B00002EB4-2"
+          }
+        }
+      },
+      {
+        "id": "61_28",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_28",
+            "title": "研究员: \"立刻去做！ 我现在就要看到数据流汇总 该死的…如果不是因为...\"",
+            "dialogueText": "我怎么可能只能使用这些淘汰的机器…",
+            "menuText": "",
+            "articyId": "0x0100000B00002EB4-3"
+          }
+        }
+      },
+      {
+        "id": "61_29",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_29",
+            "title": "研究员: \"这份工作的内容只有四个字 我说！你做！ 其他的都不重要！！...\"",
+            "dialogueText": "我说！你做！",
+            "menuText": "",
+            "articyId": "0x0100000B00003045-1"
+          }
+        }
+      },
+      {
+        "id": "61_30",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_30",
+            "title": "研究员: \"这份工作的内容只有四个字 我说！你做！ 其他的都不重要！！...\"",
+            "dialogueText": "其他的都不重要！！！",
+            "menuText": "",
+            "articyId": "0x0100000B00003045-2"
+          }
+        }
+      },
+      {
+        "id": "61_31",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_31",
+            "title": "研究员: \"首先，你把这些资料按照顺序录入计算机 然后我询问任何数据，你都要...\"",
+            "dialogueText": "然后我询问任何数据，你都要最快速根据说明书得出答案",
+            "menuText": "",
+            "articyId": "0x0100000B00003050-1"
+          }
+        }
+      },
+      {
+        "id": "61_32",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_32",
+            "title": "研究员: \"我们到了，现在就开始工作吧 你手里拿的这是什么？ 工作的时...\"",
+            "dialogueText": "你手里拿的这是什么？",
+            "menuText": "",
+            "articyId": "0x0100000B0000305B-1"
+          }
+        }
+      },
+      {
+        "id": "61_33",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_33",
+            "title": "研究员: \"我们到了，现在就开始工作吧 你手里拿的这是什么？ 工作的时...\"",
+            "dialogueText": "工作的时候不需要这东西",
+            "menuText": "",
+            "articyId": "0x0100000B0000305B-2"
+          }
+        }
+      },
+      {
+        "id": "61_34",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_34",
+            "title": "研究员: \"非常好！我看到了 接下来把其他的都录入进去 还有，一边录入...\"",
+            "dialogueText": "接下来把其他的都录入进去",
+            "menuText": "",
+            "articyId": "0x0100000B00003069-1"
+          }
+        }
+      },
+      {
+        "id": "61_35",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_35",
+            "title": "研究员: \"非常好！我看到了 接下来把其他的都录入进去 还有，一边录入...\"",
+            "dialogueText": "还有，一边录入的时候，一边检查结果",
+            "menuText": "",
+            "articyId": "0x0100000B00003069-2"
+          }
+        }
+      },
+      {
+        "id": "61_36",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_36",
+            "title": "研究员: \"非常好！我看到了 接下来把其他的都录入进去 还有，一边录入...\"",
+            "dialogueText": "如果出现循环数列要记得进行标注",
+            "menuText": "",
+            "articyId": "0x0100000B00003069-3"
+          }
+        }
+      },
+      {
+        "id": "61_37",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_37",
+            "title": "研究员: \"非常好！我看到了 接下来把其他的都录入进去 还有，一边录入...\"",
+            "dialogueText": "最重要的，你看到的任何东西都要告诉我！",
+            "menuText": "",
+            "articyId": "0x0100000B00003069-4"
+          }
+        }
+      },
+      {
+        "id": "61_38",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_38",
+            "title": "研究员: \"喂！人偶！ 你给我过来！\"",
+            "dialogueText": "你给我过来！",
+            "menuText": "",
+            "articyId": "0x0100000B00003074-1"
+          }
+        }
+      },
+      {
+        "id": "61_39",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_39",
+            "title": "Aliya: \"好累啊…$v{name}…… 十五分钟…我整整喊了十五分钟的数据...\"",
+            "dialogueText": "十五分钟…我整整喊了十五分钟的数据结果",
+            "menuText": "",
+            "articyId": "0x0100000B00003080-1"
+          }
+        }
+      },
+      {
+        "id": "61_40",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_40",
+            "title": "Aliya: \"好累啊…$v{name}…… 十五分钟…我整整喊了十五分钟的数据...\"",
+            "dialogueText": "那个男人才终于让我停下来…",
+            "menuText": "",
+            "articyId": "0x0100000B00003080-2"
+          }
+        }
+      },
+      {
+        "id": "61_41",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_41",
+            "title": "Aliya: \"好累啊…$v{name}…… 十五分钟…我整整喊了十五分钟的数据...\"",
+            "dialogueText": "现在他在等计算结果……",
+            "menuText": "",
+            "articyId": "0x0100000B00003080-3"
+          }
+        }
+      },
+      {
+        "id": "61_42",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_42",
+            "title": "研究员: \"水壶和咖啡粉在那里 我需要提提神 现在立刻去泡\"",
+            "dialogueText": "我需要提提神",
+            "menuText": "",
+            "articyId": "0x0100000B0000308A-1"
+          }
+        }
+      },
+      {
+        "id": "61_43",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "15",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_43",
+            "title": "研究员: \"水壶和咖啡粉在那里 我需要提提神 现在立刻去泡\"",
+            "dialogueText": "现在立刻去泡",
+            "menuText": "",
+            "articyId": "0x0100000B0000308A-2"
+          }
+        }
+      },
+      {
+        "id": "61_44",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_44",
+            "title": "Aliya: \"你说得对… 趁现在他不注意…\"",
+            "dialogueText": "趁现在他不注意…",
+            "menuText": "",
+            "articyId": "0x0100000B00003091-1"
+          }
+        }
+      },
+      {
+        "id": "61_45",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_45",
+            "title": "Aliya: \"拜托… 不是在你被折磨好么… 我觉得我该趁现在快点走了…\"",
+            "dialogueText": "不是在你被折磨好么…",
+            "menuText": "",
+            "articyId": "0x0100000B000030A3-1"
+          }
+        }
+      },
+      {
+        "id": "61_46",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_46",
+            "title": "Aliya: \"拜托… 不是在你被折磨好么… 我觉得我该趁现在快点走了…\"",
+            "dialogueText": "我觉得我该趁现在快点走了…",
+            "menuText": "",
+            "articyId": "0x0100000B000030A3-2"
+          }
+        }
+      },
+      {
+        "id": "61_47",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_47",
+            "title": "Aliya: \"好多不同空咖啡罐啊… 还有很多药瓶 这些是…治疗神经衰弱的...\"",
+            "dialogueText": "还有很多药瓶",
+            "menuText": "",
+            "articyId": "0x0100000B000030CE-1"
+          }
+        }
+      },
+      {
+        "id": "61_48",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_48",
+            "title": "Aliya: \"好多不同空咖啡罐啊… 还有很多药瓶 这些是…治疗神经衰弱的...\"",
+            "dialogueText": "这些是…治疗神经衰弱的…治疗耳鸣头痛的…",
+            "menuText": "",
+            "articyId": "0x0100000B000030CE-2"
+          }
+        }
+      },
+      {
+        "id": "61_49",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "61_49",
+            "title": "Aliya: \"好多不同空咖啡罐啊… 还有很多药瓶 这些是…治疗神经衰弱的...\"",
+            "dialogueText": "这个是治疗睡眠的镇定剂",
+            "menuText": "",
+            "articyId": "0x0100000B000030CE-3"
+          }
+        }
+      },
+      {
+        "id": "42_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "OtherFlowchart",
+        "data": {
+          "displayData": {
+            "conversationId": "42",
+            "dialogueId": "4"
+          },
+          "actualJumpData": {
+            "conversationId": "42",
+            "nodeId": "61_2"
+          }
+        }
+      },
+      {
+        "id": "42_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "OtherFlowchart",
+        "data": {
+          "displayData": {
+            "conversationId": "42",
+            "dialogueId": "21"
+          },
+          "actualJumpData": {
+            "conversationId": "42",
+            "nodeId": "61_2"
+          }
+        }
+      },
+      {
+        "id": "59_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FOF_JumpFrom",
+        "data": {
+          "displayInfo": {
+            "conversationId": "59",
+            "dialogueId": "2"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "42",
+            "nodeId": "59_2"
+          }
+        }
+      },
+      {
+        "id": "69_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FOF_JumpFrom",
+        "data": {
+          "displayInfo": {
+            "conversationId": "69",
+            "dialogueId": "2"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "42",
+            "nodeId": "69_2"
+          }
+        }
+      },
+      {
+        "id": "71_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FOF_JumpFrom",
+        "data": {
+          "displayInfo": {
+            "conversationId": "71",
+            "dialogueId": "2"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "42",
+            "nodeId": "71_2"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "61_0->61_1",
+        "source": "61_0",
+        "target": "61_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_1->61_11",
+        "source": "61_1",
+        "target": "61_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_2->42_4",
+        "source": "61_2",
+        "target": "42_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_2->42_21",
+        "source": "61_2",
+        "target": "42_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_3->61_20",
+        "source": "61_3",
+        "target": "61_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_4->61_13",
+        "source": "61_4",
+        "target": "61_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_5->61_26",
+        "source": "61_5",
+        "target": "61_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_6->61_5",
+        "source": "61_6",
+        "target": "61_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_7->61_29",
+        "source": "61_7",
+        "target": "61_29",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_8->61_7",
+        "source": "61_8",
+        "target": "61_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_9->61_31",
+        "source": "61_9",
+        "target": "61_31",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_10->61_9",
+        "source": "61_10",
+        "target": "61_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_11->61_32",
+        "source": "61_11",
+        "target": "61_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_12->61_16",
+        "source": "61_12",
+        "target": "61_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_13->61_34",
+        "source": "61_13",
+        "target": "61_34",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_14->61_19",
+        "source": "61_14",
+        "target": "61_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_15->61_38",
+        "source": "61_15",
+        "target": "61_38",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_16->61_17",
+        "source": "61_16",
+        "target": "61_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_17->61_39",
+        "source": "61_17",
+        "target": "61_39",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_18->61_25",
+        "source": "61_18",
+        "target": "61_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_19->61_42",
+        "source": "61_19",
+        "target": "61_42",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_20->61_44",
+        "source": "61_20",
+        "target": "61_44",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_21->61_20",
+        "source": "61_21",
+        "target": "61_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_22->61_23",
+        "source": "61_22",
+        "target": "61_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_23->61_45",
+        "source": "61_23",
+        "target": "61_45",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_24->61_47",
+        "source": "61_24",
+        "target": "61_47",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_25->61_24",
+        "source": "61_25",
+        "target": "61_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_26->61_27",
+        "source": "61_26",
+        "target": "61_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_27->61_28",
+        "source": "61_27",
+        "target": "61_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_28->61_4",
+        "source": "61_28",
+        "target": "61_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_29->61_30",
+        "source": "61_29",
+        "target": "61_30",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_30->61_6",
+        "source": "61_30",
+        "target": "61_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_31->61_8",
+        "source": "61_31",
+        "target": "61_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_32->61_33",
+        "source": "61_32",
+        "target": "61_33",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_33->61_10",
+        "source": "61_33",
+        "target": "61_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_34->61_35",
+        "source": "61_34",
+        "target": "61_35",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_35->61_36",
+        "source": "61_35",
+        "target": "61_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_36->61_37",
+        "source": "61_36",
+        "target": "61_37",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_37->61_12",
+        "source": "61_37",
+        "target": "61_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_38->61_14",
+        "source": "61_38",
+        "target": "61_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_39->61_40",
+        "source": "61_39",
+        "target": "61_40",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_40->61_41",
+        "source": "61_40",
+        "target": "61_41",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_41->61_3",
+        "source": "61_41",
+        "target": "61_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_41->61_21",
+        "source": "61_41",
+        "target": "61_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_41->61_22",
+        "source": "61_41",
+        "target": "61_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_42->61_43",
+        "source": "61_42",
+        "target": "61_43",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_43->61_18",
+        "source": "61_43",
+        "target": "61_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_44->61_15",
+        "source": "61_44",
+        "target": "61_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_45->61_46",
+        "source": "61_45",
+        "target": "61_46",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_46->61_15",
+        "source": "61_46",
+        "target": "61_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_47->61_48",
+        "source": "61_47",
+        "target": "61_48",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_48->61_49",
+        "source": "61_48",
+        "target": "61_49",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "61_49->61_2",
+        "source": "61_49",
+        "target": "61_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "59_2->61_1",
+        "source": "59_2",
+        "target": "61_1",
+        "markerEnd": "arrow",
+        "animated": true,
+        "label": "comp.flowchart.aliya2_demo.node.fof.JumpFrom.edge.label",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "69_2->61_1",
+        "source": "69_2",
+        "target": "61_1",
+        "markerEnd": "arrow",
+        "animated": true,
+        "label": "comp.flowchart.aliya2_demo.node.fof.JumpFrom.edge.label",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "71_2->61_1",
+        "source": "71_2",
+        "target": "61_1",
+        "markerEnd": "arrow",
+        "animated": true,
+        "label": "comp.flowchart.aliya2_demo.node.fof.JumpFrom.edge.label",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      }
+    ]
+  }
+}

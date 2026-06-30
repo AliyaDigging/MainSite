@@ -1,0 +1,2552 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 72,
+      "edge": 79,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {
+      "Team.C3_2Aliya_team": {
+        "key": "Team.C3_2Aliya_team",
+        "type": "boolean"
+      }
+    },
+    "flowchartRefs": [],
+    "currName": "15",
+    "currId": "15",
+    "articyInternal": {
+      "title": "跑团废案",
+      "description": "",
+      "articyId": "72057636987615780",
+      "channelId": null
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "15_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "-1",
+          "channelId": "",
+          "conversantId": "-1",
+          "articyInternal": {
+            "dialogueId": "15_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987615780"
+          }
+        }
+      },
+      {
+        "id": "15_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "-1",
+          "channelId": "",
+          "conversantId": "-1",
+          "articyInternal": {
+            "dialogueId": "15_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987615780"
+          }
+        }
+      },
+      {
+        "id": "15_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_3",
+            "title": "Aliya: \"你现在被困在一个地牢里 你似乎已经忘记了自己所有事情 甚至...\"",
+            "dialogueText": "你现在被困在一个地牢里",
+            "menuText": "",
+            "articyId": "72057602627864640"
+          }
+        }
+      },
+      {
+        "id": "15_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_4",
+            "title": "Aliya: \"来玩游戏吧！\"",
+            "dialogueText": "来玩游戏吧！",
+            "menuText": "",
+            "articyId": "72057636987603660"
+          }
+        }
+      },
+      {
+        "id": "15_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_5",
+            "title": "Player: \"怎么突然有活力了\"",
+            "dialogueText": "怎么突然有活力了",
+            "menuText": "",
+            "articyId": "72057636987603660"
+          }
+        }
+      },
+      {
+        "id": "15_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_6",
+            "title": "Player: \"现在还有心情玩游戏吗？\"",
+            "dialogueText": "现在还有心情玩游戏吗？",
+            "menuText": "",
+            "articyId": "72057636987603680"
+          }
+        }
+      },
+      {
+        "id": "15_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_7",
+            "title": "Aliya: \"趁现在没什么可做的，总得分散下注意力吧\"",
+            "dialogueText": "趁现在没什么可做的，总得分散下注意力吧",
+            "menuText": "",
+            "articyId": "72057636987603680"
+          }
+        }
+      },
+      {
+        "id": "15_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_8",
+            "title": "Player: \"什么游戏？\"",
+            "dialogueText": "什么游戏？",
+            "menuText": "",
+            "articyId": "72057636987603700"
+          }
+        }
+      },
+      {
+        "id": "15_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_9",
+            "title": "Aliya: \"桌面角色扮演！\"",
+            "dialogueText": "桌面角色扮演！",
+            "menuText": "",
+            "articyId": "72057636987603710"
+          }
+        }
+      },
+      {
+        "id": "15_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_10",
+            "title": "Aliya: \"来试试桌面角色扮演吧！\"",
+            "dialogueText": "来试试桌面角色扮演吧！",
+            "menuText": "",
+            "articyId": "72057636987603710"
+          }
+        }
+      },
+      {
+        "id": "15_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "",
+          "conversantId": "-1",
+          "articyInternal": {
+            "dialogueId": "15_11",
+            "title": "未命名核心",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987603710"
+          }
+        }
+      },
+      {
+        "id": "15_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_12",
+            "title": "Player: \"嗷，这个啊\"",
+            "dialogueText": "嗷，这个啊",
+            "menuText": "",
+            "articyId": "72057636987603730"
+          }
+        }
+      },
+      {
+        "id": "15_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_13",
+            "title": "Player: \"没听说过\"",
+            "dialogueText": "没听说过",
+            "menuText": "",
+            "articyId": "72057636987603730"
+          }
+        }
+      },
+      {
+        "id": "15_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_14",
+            "title": "Player: \"你是真的瘾大\"",
+            "dialogueText": "你是真的瘾大",
+            "menuText": "",
+            "articyId": "72057636987603740"
+          }
+        }
+      },
+      {
+        "id": "15_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_15",
+            "title": "Aliya: \"是不是已经开始兴奋了\"",
+            "dialogueText": "是不是已经开始兴奋了",
+            "menuText": "",
+            "articyId": "72057636987603740"
+          }
+        }
+      },
+      {
+        "id": "15_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_16",
+            "title": "Aliya: \"我记得我的平板上存了一个很适合的两人玩的模组 骰子…… 骰...\"",
+            "dialogueText": "我记得我的平板上存了一个很适合的两人玩的模组",
+            "menuText": "",
+            "articyId": "72057636987603760"
+          }
+        }
+      },
+      {
+        "id": "15_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_17",
+            "title": "Aliya: \"总之很简答啦 就只是说说话，投投骰子啥的\"",
+            "dialogueText": "总之很简答啦",
+            "menuText": "",
+            "articyId": "72057636987603760"
+          }
+        }
+      },
+      {
+        "id": "15_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_18",
+            "title": "Aliya: \"$emoji{玫瑰花} 陪我玩嘛\"",
+            "dialogueText": "$emoji{玫瑰花}",
+            "menuText": "",
+            "articyId": "72057636987603780"
+          }
+        }
+      },
+      {
+        "id": "15_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_19",
+            "title": "Player: \"OK，我准备好了\"",
+            "dialogueText": "OK，我准备好了",
+            "menuText": "",
+            "articyId": "72057636987603780"
+          }
+        }
+      },
+      {
+        "id": "15_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_20",
+            "title": "Player: \"等会，不还完全没讲规则吗？\"",
+            "dialogueText": "等会，不还完全没讲规则吗？",
+            "menuText": "",
+            "articyId": "72057636987603780"
+          }
+        }
+      },
+      {
+        "id": "15_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_21",
+            "title": "Player: \"既然盛情难却，那我就姑且玩会吧\"",
+            "dialogueText": "既然盛情难却，那我就姑且玩会吧",
+            "menuText": "",
+            "articyId": "72057636987603790"
+          }
+        }
+      },
+      {
+        "id": "15_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_22",
+            "title": "Aliya: \"那么，开始！\"",
+            "dialogueText": "那么，开始！",
+            "menuText": "",
+            "articyId": "72057636987603790"
+          }
+        }
+      },
+      {
+        "id": "15_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_23",
+            "title": "Aliya: \"不用啦 我选的都是特别简单的规则 不然根本不好带新\"",
+            "dialogueText": "不用啦",
+            "menuText": "",
+            "articyId": "72057636987603800"
+          }
+        }
+      },
+      {
+        "id": "15_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_24",
+            "title": "Aliya: \"怎么感觉不太乐意的样子 $emoji{你小子}\"",
+            "dialogueText": "怎么感觉不太乐意的样子",
+            "menuText": "",
+            "articyId": "72057636987603800"
+          }
+        }
+      },
+      {
+        "id": "15_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_25",
+            "title": "Aliya: \"总之，开始！\"",
+            "dialogueText": "总之，开始！",
+            "menuText": "",
+            "articyId": "72057636987603820"
+          }
+        }
+      },
+      {
+        "id": "15_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_26",
+            "title": "Player: \"我要问问守卫这里是什么地方\"",
+            "dialogueText": "我要问问守卫这里是什么地方",
+            "menuText": "",
+            "articyId": "72057636987613650"
+          }
+        }
+      },
+      {
+        "id": "15_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_27",
+            "title": "Player: \"我要把旁边的囚犯摇醒，问他点事情\"",
+            "dialogueText": "我要把旁边的囚犯摇醒，问他点事情",
+            "menuText": "",
+            "articyId": "72057636987613650"
+          }
+        }
+      },
+      {
+        "id": "15_28",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_28",
+            "title": "Aliya: \"你向守卫询问 换来的只有呵斥 “老实点，马上就要砍头了还问...\"",
+            "dialogueText": "你向守卫询问",
+            "menuText": "",
+            "articyId": "72057636987613660"
+          }
+        }
+      },
+      {
+        "id": "15_29",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_29",
+            "title": "Aliya: \"你摇晃了一下他的肩膀 他一下子倒在了地上 此刻你终于看清了...\"",
+            "dialogueText": "你摇晃了一下他的肩膀",
+            "menuText": "",
+            "articyId": "72057636987613660"
+          }
+        }
+      },
+      {
+        "id": "15_30",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_30",
+            "title": "Player: \"希望你能平安回来继续玩这个游戏\"",
+            "dialogueText": "希望你能平安回来继续玩这个游戏",
+            "menuText": "",
+            "articyId": "72057636987614030"
+          }
+        }
+      },
+      {
+        "id": "15_31",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_31",
+            "title": "Aliya: \"当然紧张啊！ 不行 现在这个状态根本思考不了问题 给...\"",
+            "dialogueText": "当然紧张啊！",
+            "menuText": "",
+            "articyId": "72057636987614050"
+          }
+        }
+      },
+      {
+        "id": "15_32",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_32",
+            "title": "Player: \"我们来看看接下来该怎么做吧\"",
+            "dialogueText": "我们来看看接下来该怎么做吧",
+            "menuText": "",
+            "articyId": "72057636987614030"
+          }
+        }
+      },
+      {
+        "id": "15_33",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Aliya.C3_1Team_Aliya_1",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Aliya.C3_1Team_Aliya_1\",true,Variable[\"JudgmentType.Equal\"])",
+          "actorId": "1",
+          "channelId": "",
+          "conversantId": "-1",
+          "articyInternal": {
+            "dialogueId": "15_33",
+            "title": "AliyaFunc.WaitForCondition(\"Aliya.C3_1Team_Aliya_1\",true,JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987614020"
+          }
+        }
+      },
+      {
+        "id": "15_34",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_34",
+            "title": "Aliya: \"看来只能下次再玩了 不对 现在完全不是玩游戏的时候吧\"",
+            "dialogueText": "看来只能下次再玩了",
+            "menuText": "",
+            "articyId": "72057636987614020"
+          }
+        }
+      },
+      {
+        "id": "15_35",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_35",
+            "title": "Player: \"感觉你现在应该很紧张吧\"",
+            "dialogueText": "感觉你现在应该很紧张吧",
+            "menuText": "",
+            "articyId": "72057636987614030"
+          }
+        }
+      },
+      {
+        "id": "15_36",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_36",
+            "title": "Aliya: \"给我点时间 我先想想\"",
+            "dialogueText": "给我点时间",
+            "menuText": "",
+            "articyId": "72057636987614050"
+          }
+        }
+      },
+      {
+        "id": "15_37",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_37",
+            "title": "Aliya: \"这时候进来了一个人 看起来地位很高 守卫都向他行礼...\"",
+            "dialogueText": "这时候进来了一个人",
+            "menuText": "",
+            "articyId": "72057636987613700"
+          }
+        }
+      },
+      {
+        "id": "15_38",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Team.C3_2Aliya_team\"]=true",
+          "actorId": "1",
+          "channelId": "",
+          "conversantId": "-1",
+          "articyInternal": {
+            "dialogueId": "15_38",
+            "title": "Team.C3_2Aliya_team=true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987613710"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Team.C3_2Aliya_team",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "15_39",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_39",
+            "title": "Aliya: \"啊，Ryoko发消息了 啊啊啊 只能下次再玩了\"",
+            "dialogueText": "啊，Ryoko发消息了",
+            "menuText": "",
+            "articyId": "72057636987614000"
+          }
+        }
+      },
+      {
+        "id": "15_40",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_40",
+            "title": "Aliya: \"有种不详的Flag感觉……\"",
+            "dialogueText": "有种不详的Flag感觉……",
+            "menuText": "",
+            "articyId": "72057636987614060"
+          }
+        }
+      },
+      {
+        "id": "15_41",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_41",
+            "title": "Aliya: \"你现在被困在一个地牢里 你似乎已经忘记了自己所有事情 甚至...\"",
+            "dialogueText": "你似乎已经忘记了自己所有事情",
+            "menuText": "",
+            "articyId": "0x010000020000083C-1"
+          }
+        }
+      },
+      {
+        "id": "15_42",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_42",
+            "title": "Aliya: \"你现在被困在一个地牢里 你似乎已经忘记了自己所有事情 甚至...\"",
+            "dialogueText": "甚至都不记得自己是什么时候因为什么进的地牢",
+            "menuText": "",
+            "articyId": "0x010000020000083C-2"
+          }
+        }
+      },
+      {
+        "id": "15_43",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_43",
+            "title": "Aliya: \"你现在被困在一个地牢里 你似乎已经忘记了自己所有事情 甚至...\"",
+            "dialogueText": "铁门外只有全副武装士兵的讥笑声",
+            "menuText": "",
+            "articyId": "0x010000020000083C-3"
+          }
+        }
+      },
+      {
+        "id": "15_44",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_44",
+            "title": "Aliya: \"你现在被困在一个地牢里 你似乎已经忘记了自己所有事情 甚至...\"",
+            "dialogueText": "在你身旁的另一个囚犯浑身散发着臭味",
+            "menuText": "",
+            "articyId": "0x010000020000083C-4"
+          }
+        }
+      },
+      {
+        "id": "15_45",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_45",
+            "title": "Aliya: \"你现在被困在一个地牢里 你似乎已经忘记了自己所有事情 甚至...\"",
+            "dialogueText": "从你醒来开始他就一直没有动过",
+            "menuText": "",
+            "articyId": "0x010000020000083C-5"
+          }
+        }
+      },
+      {
+        "id": "15_46",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_46",
+            "title": "Aliya: \"我记得我的平板上存了一个很适合的两人玩的模组 骰子…… 骰...\"",
+            "dialogueText": "骰子……",
+            "menuText": "",
+            "articyId": "0x0100000A00000B2B-1"
+          }
+        }
+      },
+      {
+        "id": "15_47",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_47",
+            "title": "Aliya: \"我记得我的平板上存了一个很适合的两人玩的模组 骰子…… 骰...\"",
+            "dialogueText": "骰子……",
+            "menuText": "",
+            "articyId": "0x0100000A00000B2B-2"
+          }
+        }
+      },
+      {
+        "id": "15_48",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_48",
+            "title": "Aliya: \"我记得我的平板上存了一个很适合的两人玩的模组 骰子…… 骰...\"",
+            "dialogueText": "啊，找到了",
+            "menuText": "",
+            "articyId": "0x0100000A00000B2B-3"
+          }
+        }
+      },
+      {
+        "id": "15_49",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_49",
+            "title": "Aliya: \"我记得我的平板上存了一个很适合的两人玩的模组 骰子…… 骰...\"",
+            "dialogueText": "好了，让我们开始吧",
+            "menuText": "",
+            "articyId": "0x0100000A00000B2B-4"
+          }
+        }
+      },
+      {
+        "id": "15_50",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_50",
+            "title": "Aliya: \"总之很简答啦 就只是说说话，投投骰子啥的\"",
+            "dialogueText": "就只是说说话，投投骰子啥的",
+            "menuText": "",
+            "articyId": "0x0100000A00000B32-1"
+          }
+        }
+      },
+      {
+        "id": "15_51",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_51",
+            "title": "Aliya: \"$emoji{玫瑰花} 陪我玩嘛\"",
+            "dialogueText": "陪我玩嘛",
+            "menuText": "",
+            "articyId": "0x0100000A00000B3A-1"
+          }
+        }
+      },
+      {
+        "id": "15_52",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_52",
+            "title": "Aliya: \"不用啦 我选的都是特别简单的规则 不然根本不好带新\"",
+            "dialogueText": "我选的都是特别简单的规则",
+            "menuText": "",
+            "articyId": "0x0100000A00000B5D-1"
+          }
+        }
+      },
+      {
+        "id": "15_53",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_53",
+            "title": "Aliya: \"不用啦 我选的都是特别简单的规则 不然根本不好带新\"",
+            "dialogueText": "不然根本不好带新",
+            "menuText": "",
+            "articyId": "0x0100000A00000B5D-2"
+          }
+        }
+      },
+      {
+        "id": "15_54",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_54",
+            "title": "Aliya: \"怎么感觉不太乐意的样子 $emoji{你小子}\"",
+            "dialogueText": "$emoji{你小子}",
+            "menuText": "",
+            "articyId": "0x0100000A00000B64-1"
+          }
+        }
+      },
+      {
+        "id": "15_55",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_55",
+            "title": "Aliya: \"你向守卫询问 换来的只有呵斥 “老实点，马上就要砍头了还问...\"",
+            "dialogueText": "换来的只有呵斥",
+            "menuText": "",
+            "articyId": "0x0100000A000031D8-1"
+          }
+        }
+      },
+      {
+        "id": "15_56",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_56",
+            "title": "Aliya: \"你向守卫询问 换来的只有呵斥 “老实点，马上就要砍头了还问...\"",
+            "dialogueText": "“老实点，马上就要砍头了还问东问西的”",
+            "menuText": "",
+            "articyId": "0x0100000A000031D8-2"
+          }
+        }
+      },
+      {
+        "id": "15_57",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_57",
+            "title": "Aliya: \"你摇晃了一下他的肩膀 他一下子倒在了地上 此刻你终于看清了...\"",
+            "dialogueText": "他一下子倒在了地上",
+            "menuText": "",
+            "articyId": "0x0100000A000031DE-1"
+          }
+        }
+      },
+      {
+        "id": "15_58",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_58",
+            "title": "Aliya: \"你摇晃了一下他的肩膀 他一下子倒在了地上 此刻你终于看清了...\"",
+            "dialogueText": "此刻你终于看清了他被凌乱头发遮住的没有血色的脸",
+            "menuText": "",
+            "articyId": "0x0100000A000031DE-2"
+          }
+        }
+      },
+      {
+        "id": "15_59",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_59",
+            "title": "Aliya: \"你摇晃了一下他的肩膀 他一下子倒在了地上 此刻你终于看清了...\"",
+            "dialogueText": "原来他已经死亡很久了",
+            "menuText": "",
+            "articyId": "0x0100000A000031DE-3"
+          }
+        }
+      },
+      {
+        "id": "15_60",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_60",
+            "title": "Aliya: \"当然紧张啊！ 不行 现在这个状态根本思考不了问题 给...\"",
+            "dialogueText": "不行",
+            "menuText": "",
+            "articyId": "0x0100000A00003366-1"
+          }
+        }
+      },
+      {
+        "id": "15_61",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_61",
+            "title": "Aliya: \"当然紧张啊！ 不行 现在这个状态根本思考不了问题 给...\"",
+            "dialogueText": "现在这个状态根本思考不了问题",
+            "menuText": "",
+            "articyId": "0x0100000A00003366-2"
+          }
+        }
+      },
+      {
+        "id": "15_62",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_62",
+            "title": "Aliya: \"当然紧张啊！ 不行 现在这个状态根本思考不了问题 给...\"",
+            "dialogueText": "给我点时间冷静一下",
+            "menuText": "",
+            "articyId": "0x0100000A00003366-3"
+          }
+        }
+      },
+      {
+        "id": "15_63",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_63",
+            "title": "Aliya: \"看来只能下次再玩了 不对 现在完全不是玩游戏的时候吧\"",
+            "dialogueText": "不对",
+            "menuText": "",
+            "articyId": "0x0100000A00003343-1"
+          }
+        }
+      },
+      {
+        "id": "15_64",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_64",
+            "title": "Aliya: \"看来只能下次再玩了 不对 现在完全不是玩游戏的时候吧\"",
+            "dialogueText": "现在完全不是玩游戏的时候吧",
+            "menuText": "",
+            "articyId": "0x0100000A00003343-2"
+          }
+        }
+      },
+      {
+        "id": "15_65",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_65",
+            "title": "Aliya: \"给我点时间 我先想想\"",
+            "dialogueText": "我先想想",
+            "menuText": "",
+            "articyId": "0x0100000A0000335F-1"
+          }
+        }
+      },
+      {
+        "id": "15_66",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_66",
+            "title": "Aliya: \"这时候进来了一个人 看起来地位很高 守卫都向他行礼...\"",
+            "dialogueText": "看起来地位很高",
+            "menuText": "",
+            "articyId": "0x0100000A00003205-1"
+          }
+        }
+      },
+      {
+        "id": "15_67",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_67",
+            "title": "Aliya: \"这时候进来了一个人 看起来地位很高 守卫都向他行礼...\"",
+            "dialogueText": "守卫都向他行礼",
+            "menuText": "",
+            "articyId": "0x0100000A00003205-2"
+          }
+        }
+      },
+      {
+        "id": "15_68",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_68",
+            "title": "Aliya: \"这时候进来了一个人 看起来地位很高 守卫都向他行礼...\"",
+            "dialogueText": "他从牢房里把你拖了出来",
+            "menuText": "",
+            "articyId": "0x0100000A00003205-3"
+          }
+        }
+      },
+      {
+        "id": "15_69",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_69",
+            "title": "Aliya: \"这时候进来了一个人 看起来地位很高 守卫都向他行礼...\"",
+            "dialogueText": "红着眼镜大声对你吼着",
+            "menuText": "",
+            "articyId": "0x0100000A00003205-4"
+          }
+        }
+      },
+      {
+        "id": "15_70",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_70",
+            "title": "Aliya: \"这时候进来了一个人 看起来地位很高 守卫都向他行礼...\"",
+            "dialogueText": "“我最后再问你一遍，你把我妹妹怎么了！！！”",
+            "menuText": "",
+            "articyId": "0x0100000A00003205-5"
+          }
+        }
+      },
+      {
+        "id": "15_71",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_71",
+            "title": "Aliya: \"啊，Ryoko发消息了 啊啊啊 只能下次再玩了\"",
+            "dialogueText": "啊啊啊",
+            "menuText": "",
+            "articyId": "0x0100000A00003336-1"
+          }
+        }
+      },
+      {
+        "id": "15_72",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "15_72",
+            "title": "Aliya: \"啊，Ryoko发消息了 啊啊啊 只能下次再玩了\"",
+            "dialogueText": "只能下次再玩了",
+            "menuText": "",
+            "articyId": "0x0100000A00003336-2"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "15_0->15_1",
+        "source": "15_0",
+        "target": "15_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_3->15_41",
+        "source": "15_3",
+        "target": "15_41",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_4->15_5",
+        "source": "15_4",
+        "target": "15_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_4->15_8",
+        "source": "15_4",
+        "target": "15_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_4->15_6",
+        "source": "15_4",
+        "target": "15_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_5->15_7",
+        "source": "15_5",
+        "target": "15_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_6->15_7",
+        "source": "15_6",
+        "target": "15_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_7->15_10",
+        "source": "15_7",
+        "target": "15_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_8->15_9",
+        "source": "15_8",
+        "target": "15_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_9->15_11",
+        "source": "15_9",
+        "target": "15_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_10->15_11",
+        "source": "15_10",
+        "target": "15_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_11->15_12",
+        "source": "15_11",
+        "target": "15_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_11->15_13",
+        "source": "15_11",
+        "target": "15_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_11->15_14",
+        "source": "15_11",
+        "target": "15_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_12->15_15",
+        "source": "15_12",
+        "target": "15_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_13->15_17",
+        "source": "15_13",
+        "target": "15_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_14->15_18",
+        "source": "15_14",
+        "target": "15_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_15->15_16",
+        "source": "15_15",
+        "target": "15_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_16->15_46",
+        "source": "15_16",
+        "target": "15_46",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_17->15_50",
+        "source": "15_17",
+        "target": "15_50",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_18->15_51",
+        "source": "15_18",
+        "target": "15_51",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_19->15_22",
+        "source": "15_19",
+        "target": "15_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_20->15_23",
+        "source": "15_20",
+        "target": "15_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_21->15_24",
+        "source": "15_21",
+        "target": "15_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_22->15_3",
+        "source": "15_22",
+        "target": "15_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_23->15_52",
+        "source": "15_23",
+        "target": "15_52",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_24->15_54",
+        "source": "15_24",
+        "target": "15_54",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_25->15_3",
+        "source": "15_25",
+        "target": "15_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_26->15_28",
+        "source": "15_26",
+        "target": "15_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_27->15_29",
+        "source": "15_27",
+        "target": "15_29",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_28->15_55",
+        "source": "15_28",
+        "target": "15_55",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_29->15_57",
+        "source": "15_29",
+        "target": "15_57",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_30->15_40",
+        "source": "15_30",
+        "target": "15_40",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_31->15_60",
+        "source": "15_31",
+        "target": "15_60",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_32->15_36",
+        "source": "15_32",
+        "target": "15_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_33->15_34",
+        "source": "15_33",
+        "target": "15_34",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_34->15_63",
+        "source": "15_34",
+        "target": "15_63",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_35->15_31",
+        "source": "15_35",
+        "target": "15_31",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_36->15_65",
+        "source": "15_36",
+        "target": "15_65",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_37->15_66",
+        "source": "15_37",
+        "target": "15_66",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_38->15_39",
+        "source": "15_38",
+        "target": "15_39",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_39->15_71",
+        "source": "15_39",
+        "target": "15_71",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_40->15_32",
+        "source": "15_40",
+        "target": "15_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_40->15_35",
+        "source": "15_40",
+        "target": "15_35",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_41->15_42",
+        "source": "15_41",
+        "target": "15_42",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_42->15_43",
+        "source": "15_42",
+        "target": "15_43",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_43->15_44",
+        "source": "15_43",
+        "target": "15_44",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_44->15_45",
+        "source": "15_44",
+        "target": "15_45",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_45->15_26",
+        "source": "15_45",
+        "target": "15_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_45->15_27",
+        "source": "15_45",
+        "target": "15_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_46->15_47",
+        "source": "15_46",
+        "target": "15_47",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_47->15_48",
+        "source": "15_47",
+        "target": "15_48",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_48->15_49",
+        "source": "15_48",
+        "target": "15_49",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_49->15_19",
+        "source": "15_49",
+        "target": "15_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_49->15_20",
+        "source": "15_49",
+        "target": "15_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_49->15_21",
+        "source": "15_49",
+        "target": "15_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_50->15_16",
+        "source": "15_50",
+        "target": "15_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_51->15_16",
+        "source": "15_51",
+        "target": "15_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_52->15_53",
+        "source": "15_52",
+        "target": "15_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_53->15_25",
+        "source": "15_53",
+        "target": "15_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_54->15_25",
+        "source": "15_54",
+        "target": "15_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_55->15_56",
+        "source": "15_55",
+        "target": "15_56",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_56->15_37",
+        "source": "15_56",
+        "target": "15_37",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_57->15_58",
+        "source": "15_57",
+        "target": "15_58",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_58->15_59",
+        "source": "15_58",
+        "target": "15_59",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_59->15_37",
+        "source": "15_59",
+        "target": "15_37",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_60->15_61",
+        "source": "15_60",
+        "target": "15_61",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_61->15_62",
+        "source": "15_61",
+        "target": "15_62",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_63->15_64",
+        "source": "15_63",
+        "target": "15_64",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_64->15_32",
+        "source": "15_64",
+        "target": "15_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_64->15_35",
+        "source": "15_64",
+        "target": "15_35",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_64->15_30",
+        "source": "15_64",
+        "target": "15_30",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_66->15_67",
+        "source": "15_66",
+        "target": "15_67",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_67->15_68",
+        "source": "15_67",
+        "target": "15_68",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_68->15_69",
+        "source": "15_68",
+        "target": "15_69",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_69->15_70",
+        "source": "15_69",
+        "target": "15_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_70->15_38",
+        "source": "15_70",
+        "target": "15_38",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_71->15_72",
+        "source": "15_71",
+        "target": "15_72",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "15_72->15_33",
+        "source": "15_72",
+        "target": "15_33",
+        "markerEnd": "arrow",
+        "animated": false
+      }
+    ]
+  }
+}
