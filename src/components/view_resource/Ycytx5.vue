@@ -57,7 +57,7 @@ watch(
     <PvColumn field="filename" :header="i18n.t('view.res.col.name')"></PvColumn>
     <PvColumn field="url" :header="i18n.t('view.res.col.url')">
       <template #body="slotProps">
-        <audio :src="slotProps.data.url" width="100%" controls></audio>
+        <audio :src="slotProps.data.url" style="width: 100%" controls></audio>
       </template>
     </PvColumn>
   </PvDataTable>
@@ -75,7 +75,7 @@ watch(
     <PvColumn field="url" :header="i18n.t('view.res.yxytx_5.images.story_images.col.2')">
       <template #body="slotProps">
         <DeferredContent>
-          <img :src="slotProps.data[0].url" width="100%" />
+          <img :src="slotProps.data[0].url" />
         </DeferredContent>
       </template>
     </PvColumn>
@@ -87,7 +87,7 @@ watch(
     <PvColumn field="url" :header="i18n.t('view.res.yxytx_5.images.story_images.col.4')">
       <template #body="slotProps">
         <DeferredContent>
-          <img :src="slotProps.data[1].url" width="100%" />
+          <img :src="slotProps.data[1].url" />
         </DeferredContent>
       </template>
     </PvColumn>

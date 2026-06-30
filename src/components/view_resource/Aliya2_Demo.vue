@@ -117,7 +117,7 @@ watch(
     <PvColumn field="name" :header="i18n.t('view.res.col.name')"></PvColumn>
     <PvColumn field="path" :header="i18n.t('view.res.col.url')">
       <template #body="slotProps">
-        <audio :src="slotProps.data.path" width="100%" controls></audio>
+        <audio :src="slotProps.data.path" style="width: 100%" controls></audio>
       </template>
     </PvColumn>
   </PvDataTable>
@@ -130,7 +130,7 @@ watch(
     <PvColumn field="name" :header="i18n.t('view.res.col.name')"></PvColumn>
     <PvColumn field="path" :header="i18n.t('view.res.col.url')">
       <template #body="slotProps">
-        <audio :src="slotProps.data.path" width="100%" controls></audio>
+        <audio :src="slotProps.data.path" style="width: 100%" controls></audio>
       </template>
     </PvColumn>
   </PvDataTable>

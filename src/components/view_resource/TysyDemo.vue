@@ -57,7 +57,7 @@ watch(
     <PvColumn field="url" :header="i18n.t('view.res.col.url')">
       <template #body="slotProps">
         <DeferredContent>
-          <img :src="slotProps.data.url" width="100%" />
+          <img :src="slotProps.data.url" />
         </DeferredContent>
       </template>
     </PvColumn>
