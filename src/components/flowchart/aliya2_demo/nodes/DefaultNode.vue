@@ -27,9 +27,11 @@ const props = defineProps<NodeProps<FlowchartNode_DefaultNode['data']>>()
     <div>
       <div>
         <Icon class="custom-node-icon"><MoreCircle32Regular /></Icon>
-        <span class="custom-node-title">{{
-          $t('comp.flowchart.aliya2_demo.node.DefaultNode.title')
-        }}</span>
+        <span
+          class="custom-node-title"
+          v-tooltip.top="$t('comp.flowchart.aliya2_demo.node.DefaultNode.title.tooltip')"
+          ><u>{{ $t('comp.flowchart.aliya2_demo.node.DefaultNode.title') }}</u></span
+        >
       </div>
       <div class="custom-node-content">
         <p>

@@ -35,11 +35,11 @@ const props = defineProps<NodeProps<FlowchartNode_OtherFlowchart['data']>>()
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.OtherFlowchart.otherFlowchartId.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.OtherFlowchart.otherFlowchartId.title') }}:
           {{ props.data.displayData.conversationId }}
         </p>
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.OtherFlowchart.specificDialogueId.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.OtherFlowchart.specificDialogueId.title') }}:
           {{ props.data.displayData.dialogueId }}
         </p>
         <div style="text-align: center" class="mt-2">

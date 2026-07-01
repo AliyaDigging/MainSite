@@ -44,9 +44,11 @@ const formattedTimeoutTime = computed(() => {
     <div>
       <div>
         <Icon class="custom-node-icon"><QuickreplyOutlined /></Icon>
-        <span class="custom-node-title">{{
-          $t('comp.flowchart.aliya2_demo.node.DefaultChoice.title')
-        }}</span>
+        <span class="custom-node-title"
+          ><u v-tooltip.top="$t('comp.flowchart.aliya2_demo.node.DefaultChoice.title.tooltip')">{{
+            $t('comp.flowchart.aliya2_demo.node.DefaultChoice.title')
+          }}</u></span
+        >
       </div>
       <div class="custom-node-content">
         <p>

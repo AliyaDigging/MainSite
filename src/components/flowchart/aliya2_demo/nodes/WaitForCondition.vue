@@ -27,9 +27,11 @@ const props = defineProps<NodeProps<FlowchartNode_WaitForCondition['data']>>()
     <div>
       <div>
         <Icon class="custom-node-icon"><ConditionPoint /></Icon>
-        <span class="custom-node-title">{{
-          $t('comp.flowchart.aliya2_demo.node.WaitForCondition.title')
-        }}</span>
+        <span class="custom-node-title">
+          <u v-tooltip.top="$t('comp.flowchart.aliya2_demo.node.WaitForCondition.title.tooltip')">{{
+            $t('comp.flowchart.aliya2_demo.node.WaitForCondition.title')
+          }}</u>
+        </span>
       </div>
       <div class="custom-node-content">
         <p>
@@ -44,7 +46,7 @@ const props = defineProps<NodeProps<FlowchartNode_WaitForCondition['data']>>()
         </p>
         <p>
           {{ $t('comp.flowchart.aliya2_demo.node.WaitForCondition.compareValue.title') }}
-          {{ props.data.compareCondition.compareValue }}
+          <code>{{ props.data.compareCondition.compareValue }}</code>
         </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
       </div>

@@ -71,7 +71,11 @@ const imageUrlForSendingOut = computed(() => {
   }
 })
 
-const msgReadTime = computed(() => Aliya2Demo_Utils.getTextReadWaitTime(contentSplitted.value[1]))
+const msgReadTime = computed(() => {
+  if (isNull(imageUrlForSendingOut.value))
+    return Aliya2Demo_Utils.getTextReadWaitTime(contentSplitted.value[1])
+  else return 0.6
+})
 </script>
 
 <template>
@@ -94,23 +98,36 @@ const msgReadTime = computed(() => Aliya2Demo_Utils.getTextReadWaitTime(contentS
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.contentSplitted.title') }}
-          {{ contentSplitted[0] }}
+          <u
+            v-tooltip.top="
+              $t('comp.flowchart.aliya2_demo.node.PlayerChoice.contentSplitted.title.tooltip')
+            "
+            >{{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.contentSplitted.title') }}</u
+          >:
+          {{ contentSplitted[1] }}
         </p>
         <p v-if="isNull(imageUrlForSendingOut)">
-          {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.replyContent.title') }}
-          {{ contentSplitted[1] }}
+          {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.replyContent.title') }}:
+          {{ contentSplitted[0] }}
         </p>
         <div v-else>
           <p>
-            {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.replyImageId.title') }}
+            {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.replyImageId.title') }}:
             <code>{{ imageUrlForSendingOut[0] }}</code>
           </p>
-          <img :src="imageUrlForSendingOut[1]" width="100%" />
+          <img
+            :src="imageUrlForSendingOut[1]"
+            width="100%"
+            style="margin-top: 2px; margin-bottom: 8px"
+          />
         </div>
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.msgReadTime.title') }}
-          {{ msgReadTime.toFixed(2) }}s
+          <u
+            v-tooltip.top="
+              $t('comp.flowchart.aliya2_demo.node.PlayerChoice.msgReadTime.title.tooltip')
+            "
+            >{{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.msgReadTime.title') }}</u
+          >: {{ msgReadTime.toFixed(2) }}s
         </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
       </div>

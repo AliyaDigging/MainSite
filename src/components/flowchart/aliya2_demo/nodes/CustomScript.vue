@@ -27,12 +27,17 @@ const props = defineProps<NodeProps<FlowchartNode_CustomScript['data']>>()
     <div>
       <div>
         <Icon class="custom-node-icon"><Javascript24Regular /></Icon>
-        <span class="custom-node-title">{{
-          $t('comp.flowchart.aliya2_demo.node.CustomScript.title')
-        }}</span>
+        <span class="custom-node-title"
+          ><u v-tooltip.top="$t('comp.flowchart.aliya2_demo.node.CustomScript.title.tooltip')">{{
+            $t('comp.flowchart.aliya2_demo.node.CustomScript.title')
+          }}</u></span
+        >
       </div>
       <div class="custom-node-content">
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
+        <General_CustomScriptAndCondition
+          :variable-ops="props.data.variableOps"
+          :need-before-br="false"
+        />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

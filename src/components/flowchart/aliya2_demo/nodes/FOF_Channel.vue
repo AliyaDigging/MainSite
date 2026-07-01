@@ -59,19 +59,19 @@ const channelName = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelId.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelId.title') }}:
           <code>{{ props.data.channelId }}</code>
         </p>
         <template v-if="channelInfo">
           <p>
-            {{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelName.title') }}
+            {{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelName.title') }}:
             {{ channelName }}
           </p>
           <p>
-            {{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelType.title') }}
+            {{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelType.title') }}:
             {{ channelTypeLabel }}
           </p>
-          <p>{{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelAvatar.title') }}</p>
+          <p>{{ $t('comp.flowchart.aliya2_demo.node.FOF_Channel.channelAvatar.title') }}:</p>
           <img
             :src="`/aliya/aliya2_demo/images/avatar/${channelInfo.avatarFilename}`"
             width="100%"

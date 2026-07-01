@@ -59,6 +59,22 @@ const speakerAvatar = computed(() => {
     return `/aliya/aliya2_demo/images/avatar/default.png`
   }
 })
+const ambientTypeRGB = computed(() => {
+  const ambientCatalog = externalConfigData.value!.ambientMessage
+  const currStyle = ambientCatalog[String(props.data.ambientType)]
+  if (!currStyle) return ['0', '0', '0', '1']
+  else
+    return (['r', 'g', 'b', 'a'] as const)
+      .map((key) => {
+        const temp = Number(currStyle.color[key])
+        if (isNaN(temp)) return 0
+        else {
+          if (key === 'a') return 1 - temp
+          else return Math.round(temp * 255)
+        }
+      })
+      .map(String)
+})
 </script>
 
 <template>
@@ -80,27 +96,42 @@ const speakerAvatar = computed(() => {
     <Handle type="target" :position="Position.Top" />
     <div>
       <div>
-        <span class="custom-node-title"
-          ><img class="custom-node-msg-avatar" :src="speakerAvatar" />{{
+        <span class="custom-node-title">
+          <img class="custom-node-msg-avatar" :src="speakerAvatar" />
+          <u v-tooltip.top="$t('comp.flowchart.aliya2_demo.node.AmbientMessage.title.tooltip')">{{
             $t('comp.flowchart.aliya2_demo.node.AmbientMessage.title')
-          }}</span
+          }}</u></span
         >
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.speakerName.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.speakerName.title') }}:
           <span style="font-size: 1.2em">{{ speakerName[0] }}</span>
         </p>
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.sendWaitTime.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.sendWaitTime.title') }}:
           {{ sendWaitTime }}s
         </p>
-        <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.actualContent.title') }}
-          {{ actualContent }}
+        <p style="margin: 4px 0">
+          <u
+            v-tooltip.top="
+              $t('comp.flowchart.aliya2_demo.node.AmbientMessage.actualContent.title.tooltip')
+            "
+            >{{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.actualContent.title') }}</u
+          >:
+          <span
+            :style="{
+              display: 'inline-block',
+              'background-color': 'white',
+              padding: '4px',
+              color: `rgba(${ambientTypeRGB.join(',')})`,
+            }"
+            v-tooltip.top="`color: rgba(${ambientTypeRGB.join(', ')})`"
+            >{{ actualContent }}</span
+          >
         </p>
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.autoSendTime.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.autoSendTime.title') }}:
           {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${props.data.autoSendTime}`) }}
         </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />

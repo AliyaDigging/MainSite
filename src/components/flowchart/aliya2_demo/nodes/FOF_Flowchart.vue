@@ -46,12 +46,16 @@ const channelName = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.originalFlowchartId.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.originalFlowchartId.title') }}:
           {{ props.data.flowchartId }}
         </p>
-        <hr />
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.actualFlowchartInfo.title') }}
+          <u
+            v-tooltip.top="
+              $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.actualFlowchartInfo.title.tooltip')
+            "
+            >{{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.actualFlowchartInfo.title') }}</u
+          >:
           <span
             class="anchor-like"
             @click="
@@ -69,15 +73,14 @@ const channelName = computed(() => {
         </p>
         <template v-if="!isNull(props.data.channelId)">
           <p>
-            {{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.channelId.title') }}
-            <code>{{ props.data.channelId }}</code>
+            <u
+              v-tooltip.top="
+                $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.channelId.title.tooltip')
+              "
+              >{{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.channelId.title') }}</u
+            >: <code>{{ props.data.channelId }}</code>
+            <span v-if="channelName"> ({{ channelName }})</span>
           </p>
-          <template v-if="channelName">
-            <p>
-              {{ $t('comp.flowchart.aliya2_demo.node.FOF_Flowchart.channelName.title') }}
-              {{ channelName }}
-            </p>
-          </template>
         </template>
       </div>
     </div>

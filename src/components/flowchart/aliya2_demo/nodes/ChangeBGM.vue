@@ -48,7 +48,7 @@ const currBgm = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.ChangeBGM.bgmId.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.ChangeBGM.bgmId.title') }}:
           <code>{{ props.data.bgmId }}</code>
         </p>
         <audio

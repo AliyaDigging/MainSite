@@ -136,24 +136,30 @@ const speakerAvatar = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.Message.speakerName.title') }}
+          <u
+            v-tooltip.top="$t('comp.flowchart.aliya2_demo.node.Message.speakerName.title.tooltip')"
+            >{{ $t('comp.flowchart.aliya2_demo.node.Message.speakerName.title') }}</u
+          >:
           <span style="font-size: 1.2em">{{ speakerName[0] }}</span>
         </p>
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.Message.sendWaitTime.title') }} {{ sendWaitTime }}s
+          <u
+            v-tooltip.top="$t('comp.flowchart.aliya2_demo.node.Message.sendWaitTime.title.tooltip')"
+            >{{ $t('comp.flowchart.aliya2_demo.node.Message.sendWaitTime.title') }}</u
+          >: {{ sendWaitTime }}s
         </p>
         <p v-if="!isImageMessage">
-          {{ $t('comp.flowchart.aliya2_demo.node.Message.actualContent.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.Message.actualContent.title') }}:
           {{ actualContent }}
         </p>
         <template v-else>
           <p>
-            {{ $t('comp.flowchart.aliya2_demo.node.Message.imageId.title') }} {{ imageInfo[0] }}
+            {{ $t('comp.flowchart.aliya2_demo.node.Message.imageId.title') }}: {{ imageInfo[0] }}
           </p>
           <img :src="imageInfo[1]" width="100%" class="mt-1 mb-1" />
         </template>
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.Message.autoSendTime.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.Message.autoSendTime.title') }}:
           {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${props.data.autoSendTime}`) }}
         </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />

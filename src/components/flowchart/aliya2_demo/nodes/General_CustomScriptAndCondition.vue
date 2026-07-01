@@ -7,21 +7,35 @@ const props = defineProps({
     type: Object as PropType<Artisy_VariableOps | undefined>,
     required: true,
   },
+  needBeforeBr: {
+    type: Boolean,
+    required: false,
+    default: true,
+  },
 })
 </script>
 
 <template>
   <template v-if="variableOps">
-    <p>
-      <b>{{
-        $t('comp.flowchart.aliya2_demo.node.General_CustomScriptAndCondition.sectionTitle.title')
-      }}</b>
+    <br v-if="needBeforeBr" />
+    <p
+      v-tooltip.top="
+        $t(
+          'comp.flowchart.aliya2_demo.node.General_CustomScriptAndCondition.sectionTitle.title.tooltip',
+        )
+      "
+    >
+      <b
+        ><u>{{
+          $t('comp.flowchart.aliya2_demo.node.General_CustomScriptAndCondition.sectionTitle.title')
+        }}</u></b
+      >
     </p>
     <template v-if="variableOps.assignments.length > 0">
       <p>
         {{
           $t('comp.flowchart.aliya2_demo.node.General_CustomScriptAndCondition.variableOps.title')
-        }}
+        }}:
       </p>
       <ul class="custom-node-normal-ul">
         <li v-for="(i, idx) in variableOps.assignments" :key="idx">
@@ -32,7 +46,9 @@ const props = defineProps({
 
     <template v-if="variableOps.condition">
       <p>
-        {{ $t('comp.flowchart.aliya2_demo.node.General_CustomScriptAndCondition.condition.title') }}
+        {{
+          $t('comp.flowchart.aliya2_demo.node.General_CustomScriptAndCondition.condition.title')
+        }}:
       </p>
       <ul class="custom-node-normal-ul">
         <li>

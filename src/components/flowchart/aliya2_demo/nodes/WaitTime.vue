@@ -26,7 +26,7 @@ const formattedWaitTime = computed(() => {
   const minutes = `${time.minutes}${t('comp.flowchart.aliya2_demo.flow.time.unit.minutes')}`
   const seconds = `${time.seconds}${t('comp.flowchart.aliya2_demo.flow.time.unit.seconds')}`
 
-  return `${t('comp.flowchart.aliya2_demo.node.WaitTime.waitTime.title')} ${timeoutTimeInSeconds.value}s (${days}${hours}${minutes}${seconds})`
+  return `${timeoutTimeInSeconds.value}s (${days}${hours}${minutes}${seconds})`
 })
 </script>
 
@@ -50,6 +50,7 @@ const formattedWaitTime = computed(() => {
       </div>
       <div class="custom-node-content">
         <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.WaitTime.waitTime.title') }}:
           {{ formattedWaitTime }}
         </p>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />

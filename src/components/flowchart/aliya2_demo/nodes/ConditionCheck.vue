@@ -38,7 +38,10 @@ const props = defineProps<NodeProps<FlowchartNode_ConditionCheck['data']>>()
         }}</span>
       </div>
       <div class="custom-node-content">
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
+        <General_CustomScriptAndCondition
+          :variable-ops="props.data.variableOps"
+          :need-before-br="false"
+        />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

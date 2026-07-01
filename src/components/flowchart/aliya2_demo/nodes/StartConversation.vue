@@ -13,17 +13,27 @@ import { isNull } from 'lodash'
 
 import General_CustomScriptAndCondition from './General_CustomScriptAndCondition.vue'
 import { flowchartBus } from '@/utils/flowchartEvents.ts'
+import { useSiteSettingStore } from '@/stores/setting.ts'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartNode_StartConversation['data']>>()
 
 const externalConfigData = inject(symbolExternalConfig_Aliya2Demo)!
+const sitesetting = useSiteSettingStore()
 
 const flowchartInfo = computed(() => {
   const chatData = externalConfigData.value!.chatConfig.channels
   const channel = chatData[props.data.channelId]
   if (channel) {
     return [
+      (() => {
+        switch (sitesetting.l10nlang) {
+          case 'en-us':
+            return channel.name[sitesetting.l10nlang]
+          default:
+            return channel.name['zh-cn']
+        }
+      })(),
       channel.startConversation.originConversationId,
       channel.startConversation.title,
       `/aliya/aliya2_demo/images/avatar/${channel.avatarFilename}`,
@@ -48,22 +58,42 @@ const flowchartInfo = computed(() => {
     <div>
       <div>
         <Icon class="custom-node-icon"><LibraryAddOutlined /></Icon>
-        <span class="custom-node-title">{{
-          $t('comp.flowchart.aliya2_demo.node.StartConversation.title')
-        }}</span>
+        <span class="custom-node-title"
+          ><u
+            v-tooltip.top="$t('comp.flowchart.aliya2_demo.node.StartConversation.title.tooltip')"
+            >{{ $t('comp.flowchart.aliya2_demo.node.StartConversation.title') }}</u
+          ></span
+        >
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.newConversationId.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.newConversationId.title') }}:
           <code>{{ props.data.channelId }}</code>
+        </p>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.newConversationName.title') }}:
+          {{ flowchartInfo ? flowchartInfo[0] : 'null' }}
         </p>
         <template v-if="!isNull(flowchartInfo)">
           <p>
-            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.startFlowchartId.title') }}
-            <code>{{ flowchartInfo[0] }}</code>
+            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.startFlowchartId.title') }}:
+            <code>{{ flowchartInfo[1] }}</code>
           </p>
           <p>
-            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.actualFlowchartInfo.title') }}
+            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.flowchartTitle.title') }}:
+            {{ flowchartInfo[2] }}
+          </p>
+          <p>
+            <u
+              v-tooltip.top="
+                $t(
+                  'comp.flowchart.aliya2_demo.node.StartConversation.actualFlowchartInfo.title.tooltip',
+                )
+              "
+              >{{
+                $t('comp.flowchart.aliya2_demo.node.StartConversation.actualFlowchartInfo.title')
+              }}</u
+            >:
             <span
               class="anchor-like"
               @click="
@@ -80,13 +110,9 @@ const flowchartInfo = computed(() => {
             >
           </p>
           <p>
-            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.flowchartTitle.title') }}
-            {{ flowchartInfo[1] }}
+            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.conversationAvatar.title') }}:
           </p>
-          <p>
-            {{ $t('comp.flowchart.aliya2_demo.node.StartConversation.conversationAvatar.title') }}
-          </p>
-          <img :src="flowchartInfo[2]" width="100%" />
+          <img :src="flowchartInfo[3]" width="100%" style="margin-top: 2px" />
         </template>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
       </div>

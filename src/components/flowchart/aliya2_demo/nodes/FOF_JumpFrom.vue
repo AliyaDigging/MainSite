@@ -27,22 +27,28 @@ const props = defineProps<NodeProps<FlowchartNode_FOF_JumpFrom['data']>>()
     <div>
       <div>
         <Icon class="custom-node-icon"><ExternalLink /></Icon>
-        <span class="custom-node-title">{{
-          $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.title')
-        }}</span>
+        <span class="custom-node-title"
+          ><u v-tooltip.top="$t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.title.tooltip')">{{
+            $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.title')
+          }}</u></span
+        >
       </div>
       <div class="custom-node-content">
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.preJumpFlowchartId.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.preJumpFlowchartId.title') }}:
           {{ props.data.displayInfo.conversationId }}
         </p>
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.preJumpDialogueId.title') }}
+          {{ $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.preJumpDialogueId.title') }}:
           {{ props.data.displayInfo.dialogueId }}
         </p>
         <p>
-          {{ $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.actualJump.title') }}
-          {{ props.data.actualJumpInfo.flowchartId }}@{{ props.data.actualJumpInfo.nodeId }}
+          <u
+            v-tooltip.top="
+              $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.actualJump.title.tooltip')
+            "
+            >{{ $t('comp.flowchart.aliya2_demo.node.fof.JumpFrom.actualJump.title') }}</u
+          >: {{ props.data.actualJumpInfo.flowchartId }}@{{ props.data.actualJumpInfo.nodeId }}
         </p>
         <div style="text-align: center" class="mt-2">
           <Button
