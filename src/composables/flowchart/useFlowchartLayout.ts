@@ -12,10 +12,26 @@ import { ref } from 'vue'
 const DEFAULT_WIDTH = 220
 const DEFAULT_HEIGHT = 50
 
+type NodeSize = {
+  width: number
+  height: number
+}
+
+type LayoutOptions<T> = {
+  measureDom?: boolean
+  getNodeSize?: (node: T) => NodeSize | undefined
+}
+
 function getElementSize(divDataId: string) {
-  const ele = document.querySelector<HTMLDivElement>(`div[data-id="${divDataId}"]`)
+  const ele = document.querySelector<HTMLElement>(`div[data-id="${divDataId}"]`)
 
   if (ele) {
+    const width = ele.offsetWidth || ele.scrollWidth
+    const height = ele.offsetHeight || ele.scrollHeight
+    if (width > 0 && height > 0) {
+      return { width, height }
+    }
+
     const rect = ele.getBoundingClientRect()
     return {
       width: rect.width,
@@ -29,6 +45,55 @@ function getElementSize(divDataId: string) {
   }
 }
 
+function estimateNodeSize(node: { data?: Record<string, unknown>; type?: string }): NodeSize {
+  const dataText = collectTextLength(node.data)
+  const lineCount = Math.max(1, Math.ceil(dataText / 34))
+  const mediaHeight = hasMediaLikeField(node.data) ? 120 : 0
+  const typeExtraHeight =
+    node.type && /Message|Choice|If|Condition|Script|Flowchart/i.test(node.type) ? 24 : 0
+
+  return {
+    width: DEFAULT_WIDTH,
+    height: Math.max(DEFAULT_HEIGHT, 42 + lineCount * 16 + mediaHeight + typeExtraHeight),
+  }
+}
+
+function collectTextLength(value: unknown): number {
+  if (value == null) return 0
+  if (typeof value === 'string') return value.length
+  if (typeof value === 'number' || typeof value === 'boolean') return String(value).length
+  if (Array.isArray(value)) return value.reduce((total, item) => total + collectTextLength(item), 0)
+  if (typeof value === 'object') {
+    return Object.values(value as Record<string, unknown>).reduce<number>(
+      (total: number, item) => total + collectTextLength(item),
+      0,
+    )
+  }
+  return 0
+}
+
+function hasMediaLikeField(value: unknown): boolean {
+  if (!value || typeof value !== 'object') return false
+
+  return Object.entries(value as Record<string, unknown>).some(([key, entry]) => {
+    const keyLower = key.toLowerCase()
+    if (
+      keyLower.includes('image') ||
+      keyLower.includes('img') ||
+      keyLower.includes('photo') ||
+      keyLower.includes('audio') ||
+      keyLower.includes('bgm')
+    ) {
+      return entry != null && entry !== ''
+    }
+
+    if (Array.isArray(entry)) return entry.some((item) => hasMediaLikeField(item))
+    if (entry && typeof entry === 'object') return hasMediaLikeField(entry)
+
+    return false
+  })
+}
+
 /**
  * Composable to run the layout algorithm on the graph.
  * It uses the `dagre` library to calculate the layout of the nodes and edges.
@@ -38,11 +103,10 @@ export function useFlowchartLayout() {
 
   const graph = ref(new dagre.graphlib.Graph())
 
-  function layout<T extends { id: string }, U extends { source: string; target: string }>(
-    nodes: T[],
-    edges: U[],
-    direction: 'LR' | 'TB',
-  ) {
+  function layout<
+    T extends { id: string; data?: Record<string, unknown>; type?: string },
+    U extends { source: string; target: string },
+  >(nodes: T[], edges: U[], direction: 'LR' | 'TB', options: LayoutOptions<T> = {}) {
     // we create a new graph instance, in case some nodes/edges were removed, otherwise dagre would act as if they were still there
     const dagreGraph = new dagre.graphlib.Graph()
 
@@ -57,15 +121,12 @@ export function useFlowchartLayout() {
     for (const node of nodes) {
       // if you need width+height of nodes for your layout, you can use the dimensions property of the internal node (`GraphNode` type)
       const graphNode = findNode(node.id)
-      let size = {
-        width: DEFAULT_WIDTH,
-        height: DEFAULT_HEIGHT,
-      }
+      let size = options.getNodeSize?.(node) ?? estimateNodeSize(node)
 
       if (graphNode) {
         size = {
-          width: graphNode.dimensions.width,
-          height: graphNode.dimensions.height,
+          width: graphNode.dimensions.width || size.width,
+          height: graphNode.dimensions.height || size.height,
         }
       }
 
@@ -85,7 +146,11 @@ export function useFlowchartLayout() {
     // 重新 layout
     // 首先，测量其实际高度
     const nodeHeights: Record<string, number> = {}
-    nodes.forEach((node) => (nodeHeights[node.id] = getElementSize(node.id).height))
+    nodes.forEach((node) => {
+      nodeHeights[node.id] = options.measureDom
+        ? getElementSize(node.id).height
+        : (options.getNodeSize?.(node) ?? estimateNodeSize(node)).height
+    })
 
     // 基于 rank (layer) 将 node 组织在一起
     const layers: Record<number, string[]> = {}

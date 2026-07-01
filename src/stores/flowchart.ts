@@ -40,6 +40,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
   const nodeCard = ref<NodeCardData | null>(null)
 
   const stateCache = ref<Record<string, CachedFlowchartState>>({})
+  const manuallyClosedKeys = ref<Record<string, true>>({})
 
   const activeTab = computed(() => tabs.value.find((t) => t.key === activeKey.value) ?? null)
 
@@ -51,6 +52,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     const key = makeKey(gameId, versionId, flowchartName)
     isSearchPanelVisible.value = false
     clearNodeCard()
+    delete manuallyClosedKeys.value[key]
 
     if (!tabs.value.find((t) => t.key === key)) {
       tabs.value.push({ key, gameId, versionId, flowchartName })
@@ -64,6 +66,11 @@ export const useFlowchartStore = defineStore('flowchart', () => {
 
     isSearchPanelVisible.value = false
     clearNodeCard()
+    manuallyClosedKeys.value[key] = true
+    clearCache(key)
+    if (lastReadyKey.value === key) {
+      lastReadyKey.value = null
+    }
     tabs.value.splice(idx, 1)
 
     if (activeKey.value === key) {
@@ -112,6 +119,16 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     }
   }
 
+  function shouldCacheStateOnUnmount(key: string) {
+    if (manuallyClosedKeys.value[key]) {
+      delete manuallyClosedKeys.value[key]
+      clearCache(key)
+      return false
+    }
+
+    return true
+  }
+
   function clearNodeCard() {
     nodeCard.value = null
     pendingNodeCard.value = null
@@ -139,6 +156,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     isSearchPanelVisible.value = false
     clearNodeCard()
     stateCache.value = {}
+    manuallyClosedKeys.value = {}
   }
 
   return {
@@ -150,6 +168,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     pendingNodeCard,
     nodeCard,
     stateCache,
+    manuallyClosedKeys,
     makeKey,
     openTab,
     closeTab,
@@ -159,6 +178,7 @@ export const useFlowchartStore = defineStore('flowchart', () => {
     cacheState,
     getCachedState,
     clearCache,
+    shouldCacheStateOnUnmount,
     clearNodeCard,
     setPendingNodeCard,
     flushNodeCard,

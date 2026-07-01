@@ -7,6 +7,11 @@ import { useWindowSize } from '@vueuse/core'
 import { useI18n } from 'vue-i18n'
 
 import { useFlowchartLayout } from '@/composables/flowchart/useFlowchartLayout'
+import {
+  getFlowchartSizeTier,
+  shouldShowMiniMapByDefault,
+  type FlowchartSizeTier,
+} from '@/composables/flowchart/useFlowchartPerformance'
 import { useFlowchartTheme } from '@/composables/flowchart/useFlowchartTheme'
 import { getGameConfig, getAllNodeTypes } from '../../registry/nodeRegistry'
 import '../../registry/gameConfigs'
@@ -78,6 +83,8 @@ const isReady = ref(false)
 const isDraggable = ref(false)
 const isShowMiniMap = ref(windowsize.width.value > 700)
 const isSearchVisible = ref(false)
+const flowchartSizeTier = ref<FlowchartSizeTier>('small')
+const hasMeasuredLayout = ref(false)
 
 const vueflowData = {
   nodes: ref<FlowchartDataNode[]>([]),
@@ -103,10 +110,17 @@ const fileUrl = computed(
 )
 
 async function triggerRelayout() {
-  isReady.value = false
   await nextTick()
-  isReady.value = true
+  if (!isReady.value || vueflowData.nodes.value.length === 0) return
+
+  vueflowData.nodes.value = vueflowLayout.layout(
+    vueflowData.nodes.value,
+    vueflowData.edges.value,
+    'TB',
+    { measureDom: true },
+  )
   await nextTick()
+  await fitInitialNode()
 }
 
 function preProcessEdges(edges: FlowchartDataEdge[]) {
@@ -135,18 +149,26 @@ async function initFlowchart() {
     return
   }
 
-  nextTick(async () => {
-    vueflowData.nodes.value = vueflowLayout.layout(
-      vueflowData.nodes.value,
-      vueflowData.edges.value,
-      'TB',
-    )
-    if (vueflowData.nodes.value.length > 0) {
-      // 默认currIndex=2，不然真的会炸
-      await vueflow.fitView({ nodes: [vueflowData.nodes.value[1].id] })
-    }
-    store.setReady(flowKey.value)
-  })
+  if (hasMeasuredLayout.value) return
+  hasMeasuredLayout.value = true
+
+  await nextTick()
+  vueflowData.nodes.value = vueflowLayout.layout(
+    vueflowData.nodes.value,
+    vueflowData.edges.value,
+    'TB',
+    { measureDom: true },
+  )
+  await nextTick()
+  await fitInitialNode()
+  store.setReady(flowKey.value)
+}
+
+async function fitInitialNode() {
+  if (vueflowData.nodes.value.length > 0) {
+    const initialNode = vueflowData.nodes.value[1] ?? vueflowData.nodes.value[0]
+    await vueflow.fitView({ nodes: [initialNode.id] })
+  }
 }
 
 defineExpose({ triggerRelayout })
@@ -156,6 +178,7 @@ watch(
   async (newValue) => {
     if (newValue.endsWith('/.json') || !props.flowchartName) {
       isReady.value = false
+      hasMeasuredLayout.value = false
       vueflowData.nodes.value = []
       vueflowData.edges.value = []
       vueflowData.metadata.value = {
@@ -170,21 +193,37 @@ watch(
         vueflowData.nodes.value = cached.nodes
         vueflowData.edges.value = cached.edges
         vueflowData.metadata.value = cached.metadata
+        flowchartSizeTier.value = getFlowchartSizeTier(cached.nodes.length, cached.edges.length)
+        isShowMiniMap.value = shouldShowMiniMapByDefault(
+          flowchartSizeTier.value,
+          windowsize.width.value,
+        )
         isRestoredFromCache.value = true
+        hasMeasuredLayout.value = true
         isReady.value = true
         return
       }
 
       isReady.value = false
+      hasMeasuredLayout.value = false
       await nextTick()
       const fetchedData = await getJson<FlowchartData>(fileUrl.value, 5)
       vueflowData.nodes.value = fetchedData.data.nodes as FlowchartDataNode[]
       vueflowData.edges.value = preProcessEdges(fetchedData.data.edges)
       vueflowData.metadata.value = fetchedData.metadata
+      flowchartSizeTier.value = getFlowchartSizeTier(
+        vueflowData.nodes.value.length,
+        vueflowData.edges.value.length,
+      )
+      isShowMiniMap.value = shouldShowMiniMapByDefault(
+        flowchartSizeTier.value,
+        windowsize.width.value,
+      )
       vueflowData.nodes.value = vueflowLayout.layout(
         vueflowData.nodes.value,
         vueflowData.edges.value,
         'TB',
+        { measureDom: false },
       )
       isReady.value = true
     }
@@ -201,7 +240,7 @@ watch(
 )
 
 onBeforeUnmount(() => {
-  if (isReady.value && props.flowchartName) {
+  if (isReady.value && props.flowchartName && store.shouldCacheStateOnUnmount(flowKey.value)) {
     store.cacheState(flowKey.value, {
       nodes: vueflowData.nodes.value,
       edges: vueflowData.edges.value,
@@ -257,6 +296,7 @@ const {
         />
 
         <FlowchartSearchPanel
+          v-if="isSearchVisible"
           v-model:visible="isSearchVisible"
           :nodes="vueflowData.nodes.value"
           :edges="vueflowData.edges.value"
