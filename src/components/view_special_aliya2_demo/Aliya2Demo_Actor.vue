@@ -91,16 +91,14 @@ const globalFilterFields = [
         :header="$t('view.special.aliya2_demo.comp.actor.DataTable.1.column.2.title')"
       >
         <template #body="slotProps">
-          <ul>
-            <li>
-              {{ $t('view.special.aliya2_demo.comp.actor.label.zhCn') }}
-              {{ slotProps.data.name['zh-cn'] }}
-            </li>
-            <li>
-              {{ $t('view.special.aliya2_demo.comp.actor.label.enUs') }}
-              {{ slotProps.data.name['en-us'] }}
-            </li>
-          </ul>
+          <p>
+            {{ $t('view.special.aliya2_demo.comp.actor.label.zhCn') }}
+            {{ slotProps.data.name['zh-cn'] }}
+          </p>
+          <p>
+            {{ $t('view.special.aliya2_demo.comp.actor.label.enUs') }}
+            {{ slotProps.data.name['en-us'] }}
+          </p>
         </template>
       </PvColumn>
 
@@ -116,16 +114,14 @@ const globalFilterFields = [
         :header="$t('view.special.aliya2_demo.comp.actor.DataTable.1.column.4.title')"
       >
         <template #body="slotProps">
-          <ul>
-            <li>
-              {{ $t('view.special.aliya2_demo.comp.actor.label.isPlayer') }}
-              {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${slotProps.data.isPlayer}`) }}
-            </li>
-            <li>
-              {{ $t('view.special.aliya2_demo.comp.actor.label.isNPC') }}
-              {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${slotProps.data.isNPC}`) }}
-            </li>
-          </ul>
+          <p :style="{ 'font-weight': slotProps.data.isPlayer ? '600' : 'normal' }">
+            {{ $t('view.special.aliya2_demo.comp.actor.label.isPlayer') }}
+            {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${slotProps.data.isPlayer}`) }}
+          </p>
+          <p :style="{ 'font-weight': slotProps.data.isNPC ? '600' : 'normal' }">
+            {{ $t('view.special.aliya2_demo.comp.actor.label.isNPC') }}
+            {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${slotProps.data.isNPC}`) }}
+          </p>
         </template>
       </PvColumn>
 
@@ -135,16 +131,14 @@ const globalFilterFields = [
         :header="$t('view.special.aliya2_demo.comp.actor.DataTable.1.column.5.title')"
       >
         <template #body="slotProps">
-          <ul>
-            <li>
-              {{ $t('view.special.aliya2_demo.comp.actor.label.articyId') }}
-              <code>{{ slotProps.data.articyId }}</code>
-            </li>
-            <li>
-              {{ $t('view.special.aliya2_demo.comp.actor.label.technicalName') }}
-              <code>{{ slotProps.data.technicalName }}</code>
-            </li>
-          </ul>
+          <p>
+            {{ $t('view.special.aliya2_demo.comp.actor.label.articyId') }}
+            <code>{{ slotProps.data.articyId }}</code>
+          </p>
+          <p>
+            {{ $t('view.special.aliya2_demo.comp.actor.label.technicalName') }}
+            <code>{{ slotProps.data.technicalName }}</code>
+          </p>
         </template>
       </PvColumn>
     </PvDataTable>

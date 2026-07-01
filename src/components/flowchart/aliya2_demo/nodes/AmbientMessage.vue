@@ -8,7 +8,6 @@ import { computed, inject } from 'vue'
 import {
   symbolActorData_Aliya2Demo,
   symbolExternalConfig_Aliya2Demo,
-  symbolFlowchartMetadata_Aliya2Demo,
   symbolL10nDataSingleLang_Aliya2Demo,
 } from '@/constants/injection'
 import { useAliyaStore } from '@/stores/aliya'

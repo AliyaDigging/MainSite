@@ -181,7 +181,7 @@ const globalFilterFieldsBeingMerged = ['key', '_name_zh_cn', '_mergeTags']
       class="special-comp-main-desc"
       v-html="$t('view.special.aliya2_demo.comp.merge_info.desc')"
     ></p>
-    <br />
+    <Divider />
 
     <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 8px">
       {{ $t('view.special.aliya2_demo.comp.merge_info.section.all_channel_query') }}

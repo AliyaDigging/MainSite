@@ -5,7 +5,7 @@ import PvDataTable from 'primevue/datatable'
 import PvColumn from 'primevue/column'
 
 import { symbolExternalConfig_Aliya2Demo } from '@/constants/injection'
-import { DeferredContent } from 'primevue'
+import { DeferredContent, Divider } from 'primevue'
 import { gb18030Collator } from '@/utils/utils'
 
 // ── Inject data from parent ──
@@ -36,8 +36,12 @@ const emojisData = computed(() => {
       class="special-comp-main-desc"
       v-html="$t('view.special.aliya2_demo.comp.media_message.desc')"
     ></p>
-    <br />
+    <Divider />
+
     <!-- ── Images DataTable ── -->
+    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 8px">
+      {{ $t('view.special.aliya2_demo.comp.media_message.section.image') }}
+    </h2>
     <PvDataTable :value="imagesData" v-if="imagesData.length > 0" style="width: 100%">
       <template #empty>
         {{ $t('view.special.aliya2_demo.comp.media_message.DataTable.1.empty') }}
@@ -66,7 +70,12 @@ const emojisData = computed(() => {
     </PvDataTable>
     <p v-else>{{ $t('view.special.aliya2_demo.comp.media_message.noData1') }}</p>
 
+    <Divider />
+
     <!-- ── Emojis DataTable ── -->
+    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 8px">
+      {{ $t('view.special.aliya2_demo.comp.media_message.section.emoji') }}
+    </h2>
     <PvDataTable
       :value="emojisData"
       v-if="emojisData.length > 0"
