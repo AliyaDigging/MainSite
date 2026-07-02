@@ -1,4 +1,5 @@
 import { L10nLanguage } from '@/types/setting'
+import { escapeRegExp } from 'lodash'
 
 /**
  * @description FOR ALIYA MESSAGE
@@ -164,7 +165,18 @@ export class Aliya2Demo_Utils {
     }
 
     let text = originalText
-      .replace(new RegExp(Object.keys(replacements).join('|'), 'g'), (match) => replacements[match])
+      .replace(
+        new RegExp(
+          Object.keys(replacements)
+            .map((v) => escapeRegExp(v))
+            .join('|'),
+          'gm',
+        ),
+        (match) => {
+          console.log(match)
+          return replacements[match]
+        },
+      )
       .replace(
         /\$num\{(.*?)\}/gm,
         lang === 'zh_CN'
