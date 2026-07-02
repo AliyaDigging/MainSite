@@ -43,10 +43,17 @@ const dialogVisible = ref(false)
           {{ $t('comp.flowchart.aliya2_demo.node.PushDoc.documentId.title') }}
           <code>{{ props.data.documentId }}</code>
         </p>
-        <Button severity="primary" @click="dialogVisible = true"
-          ><Icon style="font-size: 1.5em"><DocumentText20Regular /></Icon
-          >{{ $t('comp.flowchart.aliya2_demo.node.PushDoc.viewDetail.title') }}</Button
-        >
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.PushDoc.docTitle.title') }}:{{
+            l10nFile.documents.title[props.data.documentId]
+          }}
+        </p>
+        <div style="margin-top: 6px">
+          <Button severity="primary" @click="dialogVisible = true"
+            ><Icon style="font-size: 1.5em"><DocumentText20Regular /></Icon
+            >{{ $t('comp.flowchart.aliya2_demo.node.PushDoc.viewDetail.title') }}</Button
+          >
+        </div>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
 
         <Dialog

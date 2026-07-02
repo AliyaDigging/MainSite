@@ -42,7 +42,11 @@ const dialogVisible = ref(false)
           {{ $t('comp.flowchart.aliya2_demo.node.PushNews.newsId.title') }}
           <code>{{ props.data.newsId }}</code>
         </p>
-        <div>
+        <p>
+          {{ $t('comp.flowchart.aliya2_demo.node.PushNews.newsTitle.title') }}:
+          {{ l10nFile.news.title[props.data.newsId] }}
+        </p>
+        <div style="margin-top: 6px">
           <Button severity="primary" @click="dialogVisible = true"
             ><Icon style="font-size: 1.3em"><News24Regular /></Icon
             >{{ $t('comp.flowchart.aliya2_demo.node.PushNews.viewDetail.title') }}</Button
