@@ -7,7 +7,7 @@ import { Icon } from '@vicons/utils'
 
 import { type FlowchartNode_PushNews } from '../types/script3'
 import { inject, ref } from 'vue'
-import { Button } from 'primevue'
+import { Button, Dialog } from 'primevue'
 import { News24Regular } from '@vicons/fluent'
 import { symbolL10nDataSingleLang_Aliya2Demo } from '@/constants/injection'
 import General_CustomScriptAndCondition from './General_CustomScriptAndCondition.vue'
@@ -42,10 +42,12 @@ const dialogVisible = ref(false)
           {{ $t('comp.flowchart.aliya2_demo.node.PushNews.newsId.title') }}
           <code>{{ props.data.newsId }}</code>
         </p>
-        <Button size="big" severity="primary"
-          ><Icon style="font-size: 1.5em"><News24Regular /></Icon
-          >{{ $t('comp.flowchart.aliya2_demo.node.PushNews.viewDetail.title') }}</Button
-        >
+        <div>
+          <Button severity="primary" @click="dialogVisible = true"
+            ><Icon style="font-size: 1.3em"><News24Regular /></Icon
+            >{{ $t('comp.flowchart.aliya2_demo.node.PushNews.viewDetail.title') }}</Button
+          >
+        </div>
         <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
 
         <Dialog
@@ -53,14 +55,35 @@ const dialogVisible = ref(false)
           modal
           :header="$t('comp.flowchart.aliya2_demo.node.PushNews.dialog.title')"
           :style="{ 'max-width': '90%' }"
+          :draggable="false"
+          :closable="true"
+          :dismissableMask="true"
         >
-          <h2>{{ $t('comp.flowchart.aliya2_demo.node.PushNews.newsTitle.title') }}</h2>
-          <p>{{ l10nFile.documents.title[props.data.newsId] }}</p>
-          <h2>{{ $t('comp.flowchart.aliya2_demo.node.PushNews.newsContent.title') }}</h2>
-          <p v-html="l10nFile.documents.content[props.data.newsId].replace('\n', '<br />')"></p>
+          <div class="dialog-div">
+            <h2>
+              {{ $t('comp.flowchart.aliya2_demo.node.PushNews.newsTitle.title') }}
+            </h2>
+            <p>{{ l10nFile.news.title[props.data.newsId] }}</p>
+            <h2>
+              {{ $t('comp.flowchart.aliya2_demo.node.PushNews.newsContent.title') }}
+            </h2>
+            <p v-html="l10nFile.news.content[props.data.newsId].replace('\n', '<br />')"></p>
+          </div>
         </Dialog>
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />
   </div>
 </template>
+
+<style scoped>
+.dialog-div h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.dialog-div p {
+  margin-bottom: 16px;
+}
+</style>

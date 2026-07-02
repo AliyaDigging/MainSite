@@ -7,7 +7,7 @@ import { Icon } from '@vicons/utils'
 
 import { type FlowchartNode_PushDoc } from '../types/script3'
 import { inject, ref } from 'vue'
-import { Button } from 'primevue'
+import { Button, Dialog } from 'primevue'
 import { DocumentText20Regular, DocumentAdd20Regular } from '@vicons/fluent'
 import { symbolL10nDataSingleLang_Aliya2Demo } from '@/constants/injection'
 import General_CustomScriptAndCondition from './General_CustomScriptAndCondition.vue'
@@ -43,7 +43,7 @@ const dialogVisible = ref(false)
           {{ $t('comp.flowchart.aliya2_demo.node.PushDoc.documentId.title') }}
           <code>{{ props.data.documentId }}</code>
         </p>
-        <Button size="big" severity="primary"
+        <Button severity="primary" @click="dialogVisible = true"
           ><Icon style="font-size: 1.5em"><DocumentText20Regular /></Icon
           >{{ $t('comp.flowchart.aliya2_demo.node.PushDoc.viewDetail.title') }}</Button
         >
@@ -54,14 +54,33 @@ const dialogVisible = ref(false)
           modal
           :header="$t('comp.flowchart.aliya2_demo.node.PushDoc.dialog.title')"
           :style="{ 'max-width': '90%' }"
+          :draggable="false"
+          :closable="true"
+          :dismissableMask="true"
         >
-          <h2>{{ $t('comp.flowchart.aliya2_demo.node.PushDoc.docTitle.title') }}</h2>
-          <p>{{ l10nFile.documents.title[props.data.documentId] }}</p>
-          <h2>{{ $t('comp.flowchart.aliya2_demo.node.PushDoc.docContent.title') }}</h2>
-          <p v-html="l10nFile.documents.content[props.data.documentId].replace('\n', '<br />')"></p>
+          <div class="dialog-div">
+            <h2>{{ $t('comp.flowchart.aliya2_demo.node.PushDoc.docTitle.title') }}</h2>
+            <p>{{ l10nFile.documents.title[props.data.documentId] }}</p>
+            <h2>{{ $t('comp.flowchart.aliya2_demo.node.PushDoc.docContent.title') }}</h2>
+            <p
+              v-html="l10nFile.documents.content[props.data.documentId].replace('\n', '<br />')"
+            ></p>
+          </div>
         </Dialog>
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />
   </div>
 </template>
+
+<style scoped>
+.dialog-div h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.dialog-div p {
+  margin-bottom: 16px;
+}
+</style>
