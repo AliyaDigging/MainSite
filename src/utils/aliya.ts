@@ -146,4 +146,35 @@ export class Aliya2Demo_Utils {
   static getTextReadWaitTime(text: string): number {
     return Aliya2Demo_Utils.calcWaitTime(text, 0.2, 0.1, 0.033)
   }
+
+  static replaceText(
+    originalText: string,
+    replacement: Record<'$v{name}', string>,
+    lang: 'zh_CN' | 'en_US',
+  ): string {
+    const nowDate = new Date()
+    const replacements: Record<string, string> = {
+      '$v{System.NowYear}': String(nowDate.getFullYear()),
+      '$v{System.NowMonth}': String(nowDate.getMonth() + 1),
+      '$v{System.NowDay}': String(nowDate.getDate()),
+      '$v{System.NowHour}': String(nowDate.getHours()).padStart(2, '0'),
+      '$v{System.NowMinute}': String(nowDate.getMinutes()).padStart(2, '0'),
+      '$v{System.NowSecond}': String(nowDate.getSeconds()).padEnd(2, '0'),
+      ...replacement,
+    }
+
+    let text = originalText
+      .replace(new RegExp(Object.keys(replacements).join('|'), 'g'), (match) => replacements[match])
+      .replace(
+        /\$num\{(.*?)\}/gm,
+        lang === 'zh_CN'
+          ? `【对话<code>$1</code>的编号】`
+          : `【No. of the Conversation <code>$1</code>】`,
+      )
+      .replace(
+        /\$v\{(.*?)\}/gm,
+        lang === 'zh_CN' ? `【变量<code>$1</code>的值】` : `【Value of Variable <code>$1</code>】`,
+      )
+    return text
+  }
 }

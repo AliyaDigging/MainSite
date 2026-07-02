@@ -25,9 +25,10 @@ const aliyaSetting = useAliyaStore()
 const setting = useSiteSettingStore()
 
 const actualContent = computed(() =>
-  String(l10nFile.value.dialogues[`${props.data.articyInternal.dialogueId}`]).replace(
-    /\$v\{name\}/gi,
-    aliyaSetting.playerName,
+  Aliya2Demo_Utils.replaceText(
+    String(l10nFile.value.dialogues[`${props.data.articyInternal.dialogueId}`]),
+    { '$v{name}': aliyaSetting.playerName },
+    setting.sitelang,
   ),
 )
 const sendWaitTime = computed(() => {
@@ -127,8 +128,8 @@ const ambientTypeRGB = computed(() => {
               color: `rgba(${ambientTypeRGB.join(',')})`,
             }"
             v-tooltip.top="`color: rgba(${ambientTypeRGB.join(', ')})`"
-            >{{ actualContent }}</span
-          >
+            v-html="actualContent"
+          ></span>
         </p>
         <p>
           {{ $t('comp.flowchart.aliya2_demo.node.AmbientMessage.autoSendTime.title') }}:

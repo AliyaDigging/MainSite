@@ -16,6 +16,7 @@ import { isNull } from 'lodash'
 import { Aliya2Demo_Utils } from '@/utils/aliya'
 import General_CustomScriptAndCondition from './General_CustomScriptAndCondition.vue'
 import { useAliyaStore } from '@/stores/aliya.ts'
+import { useSiteSettingStore } from '@/stores/setting.ts'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartNode_PlayerChoice['data']>>()
@@ -23,6 +24,7 @@ const props = defineProps<NodeProps<FlowchartNode_PlayerChoice['data']>>()
 const l10nFile = inject(symbolL10nDataSingleLang_Aliya2Demo)!
 const externalConfigData = inject(symbolExternalConfig_Aliya2Demo)!
 const aliyaSetting = useAliyaStore()
+const setting = useSiteSettingStore()
 
 // 分割实际发送和玩家选项
 const contentSplitted = computed(() => {
@@ -34,7 +36,14 @@ const contentSplitted = computed(() => {
   if (actualContent.includes('<') && actualContent.includes('>')) {
     const match = actualContent.match(/(.*)\<(.*)\>/i)
     if (match) {
-      return [match[1], match[2]]
+      return [
+        match[1],
+        Aliya2Demo_Utils.replaceText(
+          match[2],
+          { '$v{name}': aliyaSetting.playerName },
+          setting.sitelang,
+        ),
+      ]
     } else {
       return [actualContent, actualContent]
     }
@@ -49,7 +58,12 @@ const imageUrlForSendingOut = computed(() => {
       const imageMapping = externalConfigData.value!.mediaMessageConfig.images
       const match = text.match(/\$image\{(.*)\}/im)
       if (match) {
-        return [match[1], `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`]
+        const imageEntry = imageMapping[match[1]]
+        if (imageEntry) {
+          return [match[1], `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`]
+        } else {
+          return [match[1], '']
+        }
       } else {
         return null
       }
@@ -57,7 +71,12 @@ const imageUrlForSendingOut = computed(() => {
       const imageMapping = externalConfigData.value!.mediaMessageConfig.emojis
       const match = text.match(/\$emoji\{(.*)\}/im)
       if (match) {
-        return [match[1], `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`]
+        const emojiEntry = imageMapping[match[1]]
+        if (emojiEntry) {
+          return [match[1], `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`]
+        } else {
+          return [match[1], '']
+        }
       } else {
         return null
       }
@@ -104,7 +123,7 @@ const msgReadTime = computed(() => {
             "
             >{{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.contentSplitted.title') }}</u
           >:
-          {{ contentSplitted[1] }}
+          <span v-html="contentSplitted[1]"></span>
         </p>
         <p v-if="isNull(imageUrlForSendingOut)">
           {{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.replyContent.title') }}:

@@ -25,9 +25,10 @@ const aliyaSetting = useAliyaStore()
 const setting = useSiteSettingStore()
 
 const actualContent = computed(() => {
-  return String(l10nFile.value.dialogues[`${props.data.articyInternal.dialogueId}`]).replace(
-    /\$v\{name\}/gi,
-    aliyaSetting.playerName,
+  return Aliya2Demo_Utils.replaceText(
+    String(l10nFile.value.dialogues[`${props.data.articyInternal.dialogueId}`]),
+    { '$v{name}': aliyaSetting.playerName },
+    setting.sitelang,
   )
 })
 const isImageMessage = computed(() => {
@@ -47,7 +48,12 @@ const imageInfo = computed(() => {
         const regex = /\$image\{(.*)\}/i
         const match = actualContent.value.match(regex)
         if (match && match[1]) {
-          return [match[1], `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`]
+          const imageEntry = imageMapping[match[1]]
+          if (imageEntry) {
+            return [match[1], `/aliya/aliya2_demo/images/${imageEntry.imageFilename}`]
+          } else {
+            return [match[1], '']
+          }
         } else {
           return ['', '']
         }
@@ -57,7 +63,12 @@ const imageInfo = computed(() => {
         const regex = /\$emoji\{(.*)\}/i
         const match = actualContent.value.match(regex)
         if (match && match[1]) {
-          return [match[1], `/aliya/aliya2_demo/images/${emojiMapping[match[1]].imageFilename}`]
+          const emojiEntry = emojiMapping[match[1]]
+          if (emojiEntry) {
+            return [match[1], `/aliya/aliya2_demo/images/${emojiMapping[match[1]].imageFilename}`]
+          } else {
+            return [match[1], '']
+          }
         } else {
           return ['', '']
         }
@@ -150,11 +161,12 @@ const speakerAvatar = computed(() => {
         </p>
         <p v-if="!isImageMessage">
           {{ $t('comp.flowchart.aliya2_demo.node.Message.actualContent.title') }}:
-          {{ actualContent }}
+          <span v-html="actualContent"></span>
         </p>
         <template v-else>
           <p>
-            {{ $t('comp.flowchart.aliya2_demo.node.Message.imageId.title') }}: {{ imageInfo[0] }}
+            {{ $t('comp.flowchart.aliya2_demo.node.Message.imageId.title') }}:
+            <code>{{ imageInfo[0] }}</code>
           </p>
           <img :src="imageInfo[1]" width="100%" class="mt-1 mb-1" />
         </template>
