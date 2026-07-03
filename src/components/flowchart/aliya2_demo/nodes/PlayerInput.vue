@@ -8,9 +8,20 @@ import { Keyboard24Regular } from '@vicons/fluent'
 
 import { type FlowchartNode_PlayerInput } from '../types/script3'
 import General_CustomScriptAndCondition from './General_CustomScriptAndCondition.vue'
+import { flowchartBus } from '@/utils/flowchartEvents'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartNode_PlayerInput['data']>>()
+
+function triggerPopover(event: Event, varName: string) {
+  event.stopPropagation()
+  event.preventDefault()
+  flowchartBus.emit('node-popover:toggle', {
+    varName,
+    originTriggerNodeId: props.id,
+    browserEvent: event,
+  })
+}
 </script>
 
 <template>
@@ -34,11 +45,25 @@ const props = defineProps<NodeProps<FlowchartNode_PlayerInput['data']>>()
       <div class="custom-node-content">
         <p>
           {{ $t('comp.flowchart.aliya2_demo.node.PlayerInput.variableName.title') }}:
-          <code>{{ props.data.varName }}</code>
+          <code
+            class="clickable-var"
+            @click="(e) => triggerPopover(e, props.data.varName)"
+            >{{ props.data.varName }}</code
+          >
         </p>
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
+        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" :node-id="props.id" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />
   </div>
 </template>
+
+<style scoped>
+code.clickable-var {
+  text-decoration: underline;
+  cursor: pointer;
+}
+code.clickable-var:hover {
+  color: var(--p-primary-color);
+}
+</style>

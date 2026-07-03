@@ -37,6 +37,7 @@ const props = defineProps<NodeProps<FlowchartNode_CustomScript['data']>>()
         <General_CustomScriptAndCondition
           :variable-ops="props.data.variableOps"
           :need-before-br="false"
+          :node-id="props.id"
         />
       </div>
     </div>

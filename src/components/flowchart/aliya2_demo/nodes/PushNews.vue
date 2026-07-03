@@ -52,7 +52,7 @@ const dialogVisible = ref(false)
             >{{ $t('comp.flowchart.aliya2_demo.node.PushNews.viewDetail.title') }}</Button
           >
         </div>
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
+        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" :node-id="props.id" />
 
         <Dialog
           v-model:visible="dialogVisible"

@@ -40,7 +40,7 @@ const props = defineProps<NodeProps<FlowchartNode_DefaultNode['data']>>()
         <p>
           dialogueText: <code>{{ props.data.articyInternal.dialogueText }}</code>
         </p>
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
+        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" :node-id="props.id" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

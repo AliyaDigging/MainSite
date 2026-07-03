@@ -174,7 +174,7 @@ const speakerAvatar = computed(() => {
           {{ $t('comp.flowchart.aliya2_demo.node.Message.autoSendTime.title') }}:
           {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${props.data.autoSendTime}`) }}
         </p>
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
+        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" :node-id="props.id" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

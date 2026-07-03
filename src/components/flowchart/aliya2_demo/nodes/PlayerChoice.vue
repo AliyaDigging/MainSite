@@ -148,7 +148,7 @@ const msgReadTime = computed(() => {
             >{{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.msgReadTime.title') }}</u
           >: {{ msgReadTime.toFixed(2) }}s
         </p>
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
+        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" :node-id="props.id" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

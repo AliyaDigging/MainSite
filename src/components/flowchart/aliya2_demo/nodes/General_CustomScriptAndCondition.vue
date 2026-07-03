@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import type { Artisy_VariableOps } from '../types/script3_var'
+import { flowchartBus } from '@/utils/flowchartEvents'
 
 const props = defineProps({
   variableOps: {
@@ -12,7 +13,21 @@ const props = defineProps({
     required: false,
     default: true,
   },
+  nodeId: {
+    type: String,
+    required: true,
+  },
 })
+
+function triggerPopover(event: Event, varName: string) {
+  event.stopPropagation()
+  event.preventDefault()
+  flowchartBus.emit('node-popover:toggle', {
+    varName,
+    originTriggerNodeId: props.nodeId,
+    browserEvent: event,
+  })
+}
 </script>
 
 <template>
@@ -39,7 +54,9 @@ const props = defineProps({
       </p>
       <ul class="custom-node-normal-ul">
         <li v-for="(i, idx) in variableOps.assignments" :key="idx">
-          <code>{{ i.variableName }}</code> = <code>{{ i.valueAssigned }}</code>
+          <code class="clickable-var" @click="(e) => triggerPopover(e, i.variableName)">{{
+            i.variableName
+          }}</code> = <code>{{ i.valueAssigned }}</code>
         </li>
       </ul>
     </template>
@@ -52,15 +69,33 @@ const props = defineProps({
       </p>
       <ul class="custom-node-normal-ul">
         <li>
-          <code>{{ variableOps.condition.variableName }}</code>
+          <code
+            class="clickable-var"
+            @click="(e) => triggerPopover(e, variableOps.condition.variableName)"
+            >{{ variableOps.condition.variableName }}</code
+          >
           {{ $t(`comp.flowchart.aliya2_demo.flow.compareop.${variableOps.condition.compareOp}`) }}
-          <code>{{
-            typeof variableOps.condition.valueAgainst === 'object'
-              ? variableOps.condition.valueAgainst.variableName
-              : variableOps.condition.valueAgainst
-          }}</code>
+          <code
+            v-if="typeof variableOps.condition.valueAgainst === 'object'"
+            class="clickable-var"
+            @click="
+              (e) => triggerPopover(e, variableOps.condition.valueAgainst.variableName)
+            "
+            >{{ variableOps.condition.valueAgainst.variableName }}</code
+          >
+          <code v-else>{{ variableOps.condition.valueAgainst }}</code>
         </li>
       </ul>
     </template>
   </template>
 </template>
+
+<style scoped>
+code.clickable-var {
+  text-decoration: underline;
+  cursor: pointer;
+}
+code.clickable-var:hover {
+  color: var(--p-primary-color);
+}
+</style>

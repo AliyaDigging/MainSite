@@ -57,7 +57,7 @@ const currBgm = computed(() => {
           controls
           style="width: 100%"
         />
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
+        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" :node-id="props.id" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

@@ -114,7 +114,7 @@ const flowchartInfo = computed(() => {
           </p>
           <img :src="flowchartInfo[3]" width="100%" style="margin-top: 2px" />
         </template>
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" />
+        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" :node-id="props.id" />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />
