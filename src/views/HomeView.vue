@@ -17,11 +17,7 @@ const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
 <template>
   <div class="home-hero-image">
     <div class="home-hero-text">
-      <h1 class="m-0" v-if="setting.sitelang === 'zh_CN'">
-        <ruby>彼方档案馆<rp>(</rp><rt>ALIYA DB</rt><rp>)</rp></ruby
-        ><!--<span class="rainbow-animated">+</span>-->
-      </h1>
-      <h1 class="m-0" v-else>ALIYA DB<!--<span class="rainbow-animated">+</span>--></h1>
+      <h1 class="m-0">ALIYA DB<span class="rainbow-animated">+</span></h1>
       <p class="m-0">{{ $t('view.home.hero.p') }}</p>
     </div>
   </div>

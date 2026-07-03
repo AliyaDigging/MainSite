@@ -34,10 +34,7 @@ function openSetting() {
 <template>
   <PvMenubar :model="navItems">
     <template #start>
-      <span style="font-weight: 600"
-        ><span v-if="i18n.locale.value === 'zh_CN'">彼方档案馆</span
-        ><span v-else>ALIYA DB</span></span
-      >
+      <span style="font-weight: 600">ALIYA DB+</span>
     </template>
     <template #item="{ item, props, hasSubmenu }">
       <RouterLink v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>

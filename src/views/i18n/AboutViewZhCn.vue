@@ -11,7 +11,7 @@ import PvDivider from 'primevue/divider'
     <PvDivider />
     <h2>免责声明</h2>
     <p class="text-color mt-2">
-      本站（彼方档案馆，又名ALIYA
+      本站（ALIYA
       DB+）与以下列出的所有游戏、开发者、发行商、个人、团体、公司<b>均无任何关系、联系</b>：
     </p>
     <ul class="custom-node-normal-ul mt-2">
