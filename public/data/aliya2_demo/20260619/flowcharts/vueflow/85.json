@@ -1,0 +1,668 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 19,
+      "edge": 23,
+      "otherFlowcharts": 1
+    },
+    "variableNames": {
+      "ExampleVariables.BoolValue": {
+        "key": "ExampleVariables.BoolValue",
+        "type": "boolean"
+      },
+      "ExampleVariables.PlayerChoiceAppear": {
+        "key": "ExampleVariables.PlayerChoiceAppear",
+        "type": "boolean"
+      },
+      "ExampleVariables.DefaultChoiceAppear": {
+        "key": "ExampleVariables.DefaultChoiceAppear",
+        "type": "boolean"
+      }
+    },
+    "flowchartRefs": [
+      "86"
+    ],
+    "currName": "WindyTest",
+    "currId": "85",
+    "articyInternal": {
+      "title": "MZ/Test2",
+      "description": "",
+      "articyId": "72057598332897760",
+      "channelId": "WindyTest"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "85_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "WindyTest",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "85_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897760"
+          }
+        }
+      },
+      {
+        "id": "85_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "WindyTest",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "85_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897760"
+          }
+        }
+      },
+      {
+        "id": "85_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "WindyTest",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "85_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057598332897760"
+          }
+        }
+      },
+      {
+        "id": "85_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "WindyTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "85_3",
+            "title": "Windy: \"Test2_Windy\"",
+            "dialogueText": "Test2_Windy",
+            "menuText": "",
+            "articyId": "72057598332897170"
+          }
+        }
+      },
+      {
+        "id": "85_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "WindyTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "85_4",
+            "title": "Player: \"ExampleVariables.BoolValue = true\"",
+            "dialogueText": "ExampleVariables.BoolValue = true",
+            "menuText": "",
+            "articyId": "72057598332897780"
+          }
+        }
+      },
+      {
+        "id": "85_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "WindyTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "85_5",
+            "title": "Player: \"ExampleVariables.BoolValue = false\"",
+            "dialogueText": "ExampleVariables.BoolValue = false",
+            "menuText": "",
+            "articyId": "72057598332897800"
+          }
+        }
+      },
+      {
+        "id": "85_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "WindyTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "85_6",
+            "title": "Player: \"test2选项3\"",
+            "dialogueText": "test2选项3",
+            "menuText": "",
+            "articyId": "72057598332897800"
+          }
+        }
+      },
+      {
+        "id": "85_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"ExampleVariables.BoolValue\"] = true",
+          "actorId": "1",
+          "channelId": "WindyTest",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "85_7",
+            "title": "ExampleVariables.BoolValue = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742510"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "ExampleVariables.BoolValue",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "85_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"ExampleVariables.BoolValue\"] = false",
+          "actorId": "1",
+          "channelId": "WindyTest",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "85_8",
+            "title": "ExampleVariables.BoolValue = false",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742530"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "ExampleVariables.BoolValue",
+                "valueAssigned": false
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "85_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "WindyTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "85_9",
+            "title": "Player: \"11111\"",
+            "dialogueText": "11111",
+            "menuText": "",
+            "articyId": "72057619807742940"
+          }
+        }
+      },
+      {
+        "id": "85_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "WindyTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "85_10",
+            "title": "Player: \"22222\"",
+            "dialogueText": "22222",
+            "menuText": "",
+            "articyId": "72057619807742940"
+          }
+        }
+      },
+      {
+        "id": "85_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "1",
+          "channelId": "WindyTest",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "85_11",
+            "title": "End Hub",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057619807742980"
+          }
+        }
+      },
+      {
+        "id": "85_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "WindyTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "85_12",
+            "title": "Player: \"选项动态添加测试，变量设置\"",
+            "dialogueText": "选项动态添加测试，变量设置",
+            "menuText": "",
+            "articyId": "72057624102699140"
+          }
+        }
+      },
+      {
+        "id": "85_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "WindyTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "85_13",
+            "title": "Player: \"设置PlayerChoiceAppear\"",
+            "dialogueText": "设置PlayerChoiceAppear",
+            "menuText": "",
+            "articyId": "72057624102699150"
+          }
+        }
+      },
+      {
+        "id": "85_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "WindyTest",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "85_14",
+            "title": "Player: \"设置DefaultChoiceAppear\"",
+            "dialogueText": "设置DefaultChoiceAppear",
+            "menuText": "",
+            "articyId": "72057624102699150"
+          }
+        }
+      },
+      {
+        "id": "85_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"ExampleVariables.PlayerChoiceAppear\"] = true",
+          "actorId": "1",
+          "channelId": "WindyTest",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "85_15",
+            "title": "ExampleVariables.PlayerChoiceAppear = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057624102699150"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "ExampleVariables.PlayerChoiceAppear",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "85_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"ExampleVariables.DefaultChoiceAppear\"]= true",
+          "actorId": "1",
+          "channelId": "WindyTest",
+          "conversantId": "1",
+          "articyInternal": {
+            "dialogueId": "85_16",
+            "title": "ExampleVariables.DefaultChoiceAppear= true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057624102699170"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "ExampleVariables.DefaultChoiceAppear",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "86_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "OtherFlowchart",
+        "data": {
+          "displayData": {
+            "conversationId": "86",
+            "dialogueId": "1"
+          },
+          "actualJumpData": {
+            "conversationId": "86",
+            "nodeId": "85_6"
+          }
+        }
+      },
+      {
+        "id": "86_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FOF_JumpFrom",
+        "data": {
+          "displayInfo": {
+            "conversationId": "86",
+            "dialogueId": "2"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "86",
+            "nodeId": "86_2"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "85_0->85_1",
+        "source": "85_0",
+        "target": "85_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_1->85_3",
+        "source": "85_1",
+        "target": "85_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_2->85_1",
+        "source": "85_2",
+        "target": "85_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_3->85_4",
+        "source": "85_3",
+        "target": "85_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_3->85_5",
+        "source": "85_3",
+        "target": "85_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_3->85_6",
+        "source": "85_3",
+        "target": "85_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_3->85_12",
+        "source": "85_3",
+        "target": "85_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_4->85_7",
+        "source": "85_4",
+        "target": "85_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_5->85_8",
+        "source": "85_5",
+        "target": "85_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_6->86_1",
+        "source": "85_6",
+        "target": "86_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_7->86_1",
+        "source": "85_7",
+        "target": "86_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_8->86_1",
+        "source": "85_8",
+        "target": "86_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_9->85_11",
+        "source": "85_9",
+        "target": "85_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_10->85_11",
+        "source": "85_10",
+        "target": "85_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_11->85_2",
+        "source": "85_11",
+        "target": "85_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_12->85_13",
+        "source": "85_12",
+        "target": "85_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_12->85_14",
+        "source": "85_12",
+        "target": "85_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_13->85_15",
+        "source": "85_13",
+        "target": "85_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_14->85_16",
+        "source": "85_14",
+        "target": "85_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_15->85_11",
+        "source": "85_15",
+        "target": "85_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "85_16->85_11",
+        "source": "85_16",
+        "target": "85_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "86_2->85_9",
+        "source": "86_2",
+        "target": "85_9",
+        "markerEnd": "arrow",
+        "animated": true,
+        "label": "comp.flowchart.aliya2_demo.node.fof.JumpFrom.edge.label",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      },
+      {
+        "id": "86_2->85_10",
+        "source": "86_2",
+        "target": "85_10",
+        "markerEnd": "arrow",
+        "animated": true,
+        "label": "comp.flowchart.aliya2_demo.node.fof.JumpFrom.edge.label",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      }
+    ]
+  }
+}

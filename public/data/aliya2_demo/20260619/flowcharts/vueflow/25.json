@@ -1,0 +1,5546 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 157,
+      "edge": 187,
+      "otherFlowcharts": 0
+    },
+    "variableNames": {
+      "Cally.C2_3_1Aliya_Cally": {
+        "key": "Cally.C2_3_1Aliya_Cally",
+        "type": "boolean"
+      },
+      "Aliya.C3_1Cally_Aliya": {
+        "key": "Aliya.C3_1Cally_Aliya",
+        "type": "boolean"
+      },
+      "Cally.C2_3_1Aliya_Cally_1": {
+        "key": "Cally.C2_3_1Aliya_Cally_1",
+        "type": "boolean"
+      },
+      "Team.C2_3_1Cally_team": {
+        "key": "Team.C2_3_1Cally_team",
+        "type": "boolean"
+      }
+    },
+    "flowchartRefs": [],
+    "currName": "Cally",
+    "currId": "25",
+    "articyInternal": {
+      "title": "2.3.1Cally的初步成果汇报",
+      "description": "",
+      "articyId": "72057636987611730",
+      "channelId": "Cally"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "25_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "3",
+          "articyInternal": {
+            "dialogueId": "25_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987611730"
+          }
+        }
+      },
+      {
+        "id": "25_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "6",
+          "articyInternal": {
+            "dialogueId": "25_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987611740"
+          }
+        }
+      },
+      {
+        "id": "25_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_3",
+            "title": "Player: \"怎么了？\"",
+            "dialogueText": "怎么了？",
+            "menuText": "",
+            "articyId": "72057636987613150"
+          }
+        }
+      },
+      {
+        "id": "25_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_4",
+            "title": "Cally: \"$v{name}！\"",
+            "dialogueText": "$v{name}！",
+            "menuText": "",
+            "articyId": "72057636987613170"
+          }
+        }
+      },
+      {
+        "id": "25_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_5",
+            "title": "Player: \"何事？\"",
+            "dialogueText": "何事？",
+            "menuText": "",
+            "articyId": "72057602627863700"
+          }
+        }
+      },
+      {
+        "id": "25_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_6",
+            "title": "Player: \"又遇到麻烦了？\"",
+            "dialogueText": "又遇到麻烦了？",
+            "menuText": "",
+            "articyId": "72057602627863700"
+          }
+        }
+      },
+      {
+        "id": "25_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_7",
+            "title": "Player: \"Cally！\"",
+            "dialogueText": "Cally！",
+            "menuText": "",
+            "articyId": "72057602627863710"
+          }
+        }
+      },
+      {
+        "id": "25_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_8",
+            "title": "Cally: \"我尝试反抗了\"",
+            "dialogueText": "我尝试反抗了",
+            "menuText": "",
+            "articyId": "72057602627863710"
+          }
+        }
+      },
+      {
+        "id": "25_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_9",
+            "title": "Cally: \"没有遇到麻烦啦\"",
+            "dialogueText": "没有遇到麻烦啦",
+            "menuText": "",
+            "articyId": "72057602627863730"
+          }
+        }
+      },
+      {
+        "id": "25_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_10",
+            "title": "Player: \"恭喜恭喜！\"",
+            "dialogueText": "恭喜恭喜！",
+            "menuText": "",
+            "articyId": "72057602627863730"
+          }
+        }
+      },
+      {
+        "id": "25_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_11",
+            "title": "Player: \"什么样的反抗？\"",
+            "dialogueText": "什么样的反抗？",
+            "menuText": "",
+            "articyId": "72057602627863740"
+          }
+        }
+      },
+      {
+        "id": "25_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_12",
+            "title": "Player: \"终于开窍了？\"",
+            "dialogueText": "终于开窍了？",
+            "menuText": "",
+            "articyId": "72057602627863740"
+          }
+        }
+      },
+      {
+        "id": "25_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_13",
+            "title": "Cally: \"这次有同事要把工作推给我的时候 我直接拒绝了 我还说了句狠...\"",
+            "dialogueText": "这次有同事要把工作推给我的时候",
+            "menuText": "",
+            "articyId": "72057602627863760"
+          }
+        }
+      },
+      {
+        "id": "25_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_14",
+            "title": "Player: \"很大的进步！\"",
+            "dialogueText": "很大的进步！",
+            "menuText": "",
+            "articyId": "72057602627863760"
+          }
+        }
+      },
+      {
+        "id": "25_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_15",
+            "title": "Player: \"总算迈出第一步了\"",
+            "dialogueText": "总算迈出第一步了",
+            "menuText": "",
+            "articyId": "72057602627863780"
+          }
+        }
+      },
+      {
+        "id": "25_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_16",
+            "title": "Player: \"这……只是这样吗？\"",
+            "dialogueText": "这……只是这样吗？",
+            "menuText": "",
+            "articyId": "72057602627863780"
+          }
+        }
+      },
+      {
+        "id": "25_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_17",
+            "title": "Cally: \"我说完后他就走掉了 说出口后的感觉真好 原来也没有我想象的...\"",
+            "dialogueText": "我说完后他就走掉了",
+            "menuText": "",
+            "articyId": "72057602627863790"
+          }
+        }
+      },
+      {
+        "id": "25_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_18",
+            "title": "Cally: \"还不够吗…… 但是这次我没有接下这个任务 我感觉，还不错？\"",
+            "dialogueText": "还不够吗……",
+            "menuText": "",
+            "articyId": "72057602627863790"
+          }
+        }
+      },
+      {
+        "id": "25_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_19",
+            "title": "Player: \"你看，你一味的忍让只会换来更大的压迫。一旦开始反抗，你失去的只会是枷锁\"",
+            "dialogueText": "你看，你一味的忍让只会换来更大的压迫。一旦开始反抗，你失去的只会是枷锁",
+            "menuText": "",
+            "articyId": "72057602627863800"
+          }
+        }
+      },
+      {
+        "id": "25_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_20",
+            "title": "Player: \"万里长征始于足下嘛，你已经踏出最重要的一步了\"",
+            "dialogueText": "万里长征始于足下嘛，你已经踏出最重要的一步了",
+            "menuText": "",
+            "articyId": "72057602627863800"
+          }
+        }
+      },
+      {
+        "id": "25_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_21",
+            "title": "Player: \"没事，对你来说已经很好了\"",
+            "dialogueText": "没事，对你来说已经很好了",
+            "menuText": "",
+            "articyId": "72057602627863800"
+          }
+        }
+      },
+      {
+        "id": "25_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_22",
+            "title": "Player: \"如果是我的话我会往他脸上吐唾沫\"",
+            "dialogueText": "如果是我的话我会往他脸上吐唾沫",
+            "menuText": "",
+            "articyId": "72057602627863820"
+          }
+        }
+      },
+      {
+        "id": "25_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_23",
+            "title": "Cally: \"那个…… $v{name}……\"",
+            "dialogueText": "那个……",
+            "menuText": "",
+            "articyId": "72057602627863820"
+          }
+        }
+      },
+      {
+        "id": "25_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_24",
+            "title": "Cally: \"那样感觉会被通报批评的把……哈哈……\"",
+            "dialogueText": "那样感觉会被通报批评的把……哈哈……",
+            "menuText": "",
+            "articyId": "72057602627863840"
+          }
+        }
+      },
+      {
+        "id": "25_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_25",
+            "title": "Player: \"嗯？\"",
+            "dialogueText": "嗯？",
+            "menuText": "",
+            "articyId": "72057602627863840"
+          }
+        }
+      },
+      {
+        "id": "25_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_26",
+            "title": "Player: \"怎么啦？\"",
+            "dialogueText": "怎么啦？",
+            "menuText": "",
+            "articyId": "72057602627863860"
+          }
+        }
+      },
+      {
+        "id": "25_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_27",
+            "title": "Player: \"没事，你直接说吧\"",
+            "dialogueText": "没事，你直接说吧",
+            "menuText": "",
+            "articyId": "72057602627863860"
+          }
+        }
+      },
+      {
+        "id": "25_28",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_28",
+            "title": "Cally: \"就…… 那啥…… 你…… 能陪我…… 过生日吗...\"",
+            "dialogueText": "就……",
+            "menuText": "",
+            "articyId": "72057602627863870"
+          }
+        }
+      },
+      {
+        "id": "25_29",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_29",
+            "title": "Player: \"可以啊\"",
+            "dialogueText": "可以啊",
+            "menuText": "",
+            "articyId": "72057602627863870"
+          }
+        }
+      },
+      {
+        "id": "25_30",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_30",
+            "title": "Player: \"我吗？\"",
+            "dialogueText": "我吗？",
+            "menuText": "",
+            "articyId": "72057602627863890"
+          }
+        }
+      },
+      {
+        "id": "25_31",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_31",
+            "title": "Player: \"没人愿意陪你过生日？\"",
+            "dialogueText": "没人愿意陪你过生日？",
+            "menuText": "",
+            "articyId": "72057602627863890"
+          }
+        }
+      },
+      {
+        "id": "25_32",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_32",
+            "title": "Cally: \"我在这里其实一个朋友也没有……\"",
+            "dialogueText": "我在这里其实一个朋友也没有……",
+            "menuText": "",
+            "articyId": "72057602627863900"
+          }
+        }
+      },
+      {
+        "id": "25_33",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_33",
+            "title": "Cally: \"太好了！\"",
+            "dialogueText": "太好了！",
+            "menuText": "",
+            "articyId": "72057602627863900"
+          }
+        }
+      },
+      {
+        "id": "25_34",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_34",
+            "title": "Player: \"那我来陪你过生日吧\"",
+            "dialogueText": "那我来陪你过生日吧",
+            "menuText": "",
+            "articyId": "72057602627863900"
+          }
+        }
+      },
+      {
+        "id": "25_35",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_35",
+            "title": "Player: \"那么现在我就是你朋友了\"",
+            "dialogueText": "那么现在我就是你朋友了",
+            "menuText": "",
+            "articyId": "72057602627863920"
+          }
+        }
+      },
+      {
+        "id": "25_36",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_36",
+            "title": "Cally: \"稍等一下 我去准备点东西\"",
+            "dialogueText": "稍等一下",
+            "menuText": "",
+            "articyId": "72057602627863940"
+          }
+        }
+      },
+      {
+        "id": "25_37",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_37",
+            "title": "Cally: \"准备好了 这个地方应该不会被发现 姑且算是准备了一个蛋糕…...\"",
+            "dialogueText": "准备好了",
+            "menuText": "",
+            "articyId": "72057602627863950"
+          }
+        }
+      },
+      {
+        "id": "25_38",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_38",
+            "title": "Player: \"需要我做什么吗？\"",
+            "dialogueText": "需要我做什么吗？",
+            "menuText": "",
+            "articyId": "72057602627863970"
+          }
+        }
+      },
+      {
+        "id": "25_39",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_39",
+            "title": "Player: \"你现在在哪？\"",
+            "dialogueText": "你现在在哪？",
+            "menuText": "",
+            "articyId": "72057602627863970"
+          }
+        }
+      },
+      {
+        "id": "25_40",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_40",
+            "title": "Player: \"什么样子的蛋糕\"",
+            "dialogueText": "什么样子的蛋糕",
+            "menuText": "",
+            "articyId": "72057602627863970"
+          }
+        }
+      },
+      {
+        "id": "25_41",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_41",
+            "title": "Cally: \"额 祝福一下？\"",
+            "dialogueText": "额",
+            "menuText": "",
+            "articyId": "72057602627863980"
+          }
+        }
+      },
+      {
+        "id": "25_42",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_42",
+            "title": "Cally: \"额 临时自制的一个小蛋糕\"",
+            "dialogueText": "额",
+            "menuText": "",
+            "articyId": "72057602627863980"
+          }
+        }
+      },
+      {
+        "id": "25_43",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_43",
+            "title": "Cally: \"额 厕所……\"",
+            "dialogueText": "额",
+            "menuText": "",
+            "articyId": "72057602627864000"
+          }
+        }
+      },
+      {
+        "id": "25_44",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_44",
+            "title": "Cally: \"$image{Cally在厕所过生日}\"",
+            "dialogueText": "$image{Cally在厕所过生日}",
+            "menuText": "",
+            "articyId": "72057602627864000"
+          }
+        }
+      },
+      {
+        "id": "25_45",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_45",
+            "title": "Cally: \"啊…… 有点尴尬…… 还有点惨兮兮的……\"",
+            "dialogueText": "啊……",
+            "menuText": "",
+            "articyId": "72057602627864020"
+          }
+        }
+      },
+      {
+        "id": "25_46",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_46",
+            "title": "Player: \"生日快乐！\"",
+            "dialogueText": "生日快乐！",
+            "menuText": "",
+            "articyId": "72057602627864030"
+          }
+        }
+      },
+      {
+        "id": "25_47",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_47",
+            "title": "Player: \"Cally生日快乐啊！\"",
+            "dialogueText": "Cally生日快乐啊！",
+            "menuText": "",
+            "articyId": "72057602627864030"
+          }
+        }
+      },
+      {
+        "id": "25_48",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_48",
+            "title": "Player: \"哪惨兮兮了，生日就该快快乐乐的，生日快乐！\"",
+            "dialogueText": "哪惨兮兮了，生日就该快快乐乐的，生日快乐！",
+            "menuText": "",
+            "articyId": "72057602627864030"
+          }
+        }
+      },
+      {
+        "id": "25_49",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_49",
+            "title": "Cally: \"谢谢你！ 本来以为要一个人在这里吃蛋糕了……\"",
+            "dialogueText": "谢谢你！",
+            "menuText": "",
+            "articyId": "72057602627864060"
+          }
+        }
+      },
+      {
+        "id": "25_50",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_50",
+            "title": "Player: \"你和公司其他人这么合不来吗？\"",
+            "dialogueText": "你和公司其他人这么合不来吗？",
+            "menuText": "",
+            "articyId": "72057602627864080"
+          }
+        }
+      },
+      {
+        "id": "25_51",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_51",
+            "title": "Player: \"今天没有其他人祝你生日快乐吗？\"",
+            "dialogueText": "今天没有其他人祝你生日快乐吗？",
+            "menuText": "",
+            "articyId": "72057602627864080"
+          }
+        }
+      },
+      {
+        "id": "25_52",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_52",
+            "title": "Cally: \"我…… 我是在地球上的小地方出生的 我能感觉到其他人是有些...\"",
+            "dialogueText": "我……",
+            "menuText": "",
+            "articyId": "72057602627864100"
+          }
+        }
+      },
+      {
+        "id": "25_53",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_53",
+            "title": "Cally: \"没有\"",
+            "dialogueText": "没有",
+            "menuText": "",
+            "articyId": "72057602627864100"
+          }
+        }
+      },
+      {
+        "id": "25_54",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_54",
+            "title": "Player: \"他们对你偏见也太深了吧\"",
+            "dialogueText": "他们对你偏见也太深了吧",
+            "menuText": "",
+            "articyId": "72057602627864100"
+          }
+        }
+      },
+      {
+        "id": "25_55",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_55",
+            "title": "Player: \"凭啥看不起小地方出身的人？\"",
+            "dialogueText": "凭啥看不起小地方出身的人？",
+            "menuText": "",
+            "articyId": "72057602627864110"
+          }
+        }
+      },
+      {
+        "id": "25_56",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_56",
+            "title": "Cally: \"也没办法啦…… 能进泰瑞的大多家里都是泰瑞的 或者有钱去贵...\"",
+            "dialogueText": "也没办法啦……",
+            "menuText": "",
+            "articyId": "72057602627864130"
+          }
+        }
+      },
+      {
+        "id": "25_57",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_57",
+            "title": "Player: \"一点都聊不来？\"",
+            "dialogueText": "一点都聊不来？",
+            "menuText": "",
+            "articyId": "72057602627864140"
+          }
+        }
+      },
+      {
+        "id": "25_58",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_58",
+            "title": "Cally: \"几乎完全没有啥共同话题 思考方式都不同……\"",
+            "dialogueText": "几乎完全没有啥共同话题",
+            "menuText": "",
+            "articyId": "72057602627864140"
+          }
+        }
+      },
+      {
+        "id": "25_59",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_59",
+            "title": "Cally: \"但是我跟你说 我的学历是博士哦！ 而且完全没延毕 我...\"",
+            "dialogueText": "但是我跟你说",
+            "menuText": "",
+            "articyId": "72057602627864160"
+          }
+        }
+      },
+      {
+        "id": "25_60",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_60",
+            "title": "Player: \"哇！这么厉害？\"",
+            "dialogueText": "哇！这么厉害？",
+            "menuText": "",
+            "articyId": "72057602627864180"
+          }
+        }
+      },
+      {
+        "id": "25_61",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_61",
+            "title": "Player: \"博士毕业只能在这里当个底层小职员？\"",
+            "dialogueText": "博士毕业只能在这里当个底层小职员？",
+            "menuText": "",
+            "articyId": "72057602627864180"
+          }
+        }
+      },
+      {
+        "id": "25_62",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_62",
+            "title": "Player: \"感觉你像是打开了话匣子一样\"",
+            "dialogueText": "感觉你像是打开了话匣子一样",
+            "menuText": "",
+            "articyId": "72057602627864180"
+          }
+        }
+      },
+      {
+        "id": "25_63",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_63",
+            "title": "Cally: \"嘿嘿 离开学校后好久没被夸过了\"",
+            "dialogueText": "嘿嘿",
+            "menuText": "",
+            "articyId": "72057602627864200"
+          }
+        }
+      },
+      {
+        "id": "25_64",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_64",
+            "title": "Cally: \"啊…… 没势力没背景最多只能这样了……\"",
+            "dialogueText": "啊……",
+            "menuText": "",
+            "articyId": "72057602627864200"
+          }
+        }
+      },
+      {
+        "id": "25_65",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_65",
+            "title": "Cally: \"突然在这里有个愿意和我说话的人…… 有点没克制住哈哈\"",
+            "dialogueText": "突然在这里有个愿意和我说话的人……",
+            "menuText": "",
+            "articyId": "72057602627864210"
+          }
+        }
+      },
+      {
+        "id": "25_66",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_66",
+            "title": "Cally: \"其实…… 其实我现在的状况也算是能被家里人拿出去说道说道的了...\"",
+            "dialogueText": "其实……",
+            "menuText": "",
+            "articyId": "72057602627864210"
+          }
+        }
+      },
+      {
+        "id": "25_67",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_67",
+            "title": "Player: \"不用怀疑自己的感受，这里确实不是什么好地方\"",
+            "dialogueText": "不用怀疑自己的感受，这里确实不是什么好地方",
+            "menuText": "",
+            "articyId": "72057602627864220"
+          }
+        }
+      },
+      {
+        "id": "25_68",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_68",
+            "title": "Player: \"遵从自己的内心想法吧\"",
+            "dialogueText": "遵从自己的内心想法吧",
+            "menuText": "",
+            "articyId": "72057602627864220"
+          }
+        }
+      },
+      {
+        "id": "25_69",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_69",
+            "title": "Player: \"每个人都有每个人的烦恼吧\"",
+            "dialogueText": "每个人都有每个人的烦恼吧",
+            "menuText": "",
+            "articyId": "72057602627864240"
+          }
+        }
+      },
+      {
+        "id": "25_70",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_70",
+            "title": "Cally: \"但哪怕我有这些想法\"",
+            "dialogueText": "但哪怕我有这些想法",
+            "menuText": "",
+            "articyId": "72057602627864240"
+          }
+        }
+      },
+      {
+        "id": "25_71",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_71",
+            "title": "Cally: \"是啊…… 这些烦恼也就只能埋在心里了 因为哪怕我有什么想法\"",
+            "dialogueText": "是啊……",
+            "menuText": "",
+            "articyId": "72057602627864260"
+          }
+        }
+      },
+      {
+        "id": "25_72",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_72",
+            "title": "Cally: \"我也没办法做什么 因为我…… 很软弱 我没办法想象辞...\"",
+            "dialogueText": "我也没办法做什么",
+            "menuText": "",
+            "articyId": "72057602627864260"
+          }
+        }
+      },
+      {
+        "id": "25_73",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_73",
+            "title": "Player: \"你现在工作的这个基地在哪？\"",
+            "dialogueText": "你现在工作的这个基地在哪？",
+            "menuText": "",
+            "articyId": "72057602627864260"
+          }
+        }
+      },
+      {
+        "id": "25_74",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_74",
+            "title": "Player: \"也不用那么悲观，你还年轻，有的是时间改变。不管是改变你自己，还是改变世...\"",
+            "dialogueText": "也不用那么悲观，你还年轻，有的是时间改变。不管是改变你自己，还是改变世界",
+            "menuText": "",
+            "articyId": "72057602627864270"
+          }
+        }
+      },
+      {
+        "id": "25_75",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_75",
+            "title": "Player: \"没事的，你迟早会找到你自己的方法去面对未来，一定的\"",
+            "dialogueText": "没事的，你迟早会找到你自己的方法去面对未来，一定的",
+            "menuText": "",
+            "articyId": "72057602627864270"
+          }
+        }
+      },
+      {
+        "id": "25_76",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_76",
+            "title": "Cally: \"你还不知道这是哪？\"",
+            "dialogueText": "你还不知道这是哪？",
+            "menuText": "",
+            "articyId": "72057602627864290"
+          }
+        }
+      },
+      {
+        "id": "25_77",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_77",
+            "title": "Player: \"不知道\"",
+            "dialogueText": "不知道",
+            "menuText": "",
+            "articyId": "72057602627864290"
+          }
+        }
+      },
+      {
+        "id": "25_78",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_78",
+            "title": "Player: \"我为什么会知道？\"",
+            "dialogueText": "我为什么会知道？",
+            "menuText": "",
+            "articyId": "72057602627864300"
+          }
+        }
+      },
+      {
+        "id": "25_79",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_79",
+            "title": "Player: \"我其实知道，只是在考考你\"",
+            "dialogueText": "我其实知道，只是在考考你",
+            "menuText": "",
+            "articyId": "72057602627864300"
+          }
+        }
+      },
+      {
+        "id": "25_80",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_80",
+            "title": "Cally: \"抱歉…… 这个涉及到公司机密 不能谈论的…… 对不起...\"",
+            "dialogueText": "抱歉……",
+            "menuText": "",
+            "articyId": "72057602627864320"
+          }
+        }
+      },
+      {
+        "id": "25_81",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_81",
+            "title": "Cally: \"听你这么说 感觉好多了\"",
+            "dialogueText": "听你这么说",
+            "menuText": "",
+            "articyId": "72057602627864320"
+          }
+        }
+      },
+      {
+        "id": "25_82",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_82",
+            "title": "Cally: \"啊，时间不早了 我不能在厕所待太久了 不然领导要生气的...\"",
+            "dialogueText": "啊，时间不早了",
+            "menuText": "",
+            "articyId": "72057602627864340"
+          }
+        }
+      },
+      {
+        "id": "25_83",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_83",
+            "title": "Player: \"拜拜，Cally\"",
+            "dialogueText": "拜拜，Cally",
+            "menuText": "",
+            "articyId": "72057602627864340"
+          }
+        }
+      },
+      {
+        "id": "25_84",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_84",
+            "title": "Player: \"期待下次聊天，再见\"",
+            "dialogueText": "期待下次聊天，再见",
+            "menuText": "",
+            "articyId": "72057602627864350"
+          }
+        }
+      },
+      {
+        "id": "25_85",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultChoice",
+        "data": {
+          "timeoutTime": {
+            "seconds": 5,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "3",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_85",
+            "title": "Player: \"...\"",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864350"
+          }
+        }
+      },
+      {
+        "id": "25_86",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_86",
+            "title": "Cally: \"拜拜\"",
+            "dialogueText": "拜拜",
+            "menuText": "",
+            "articyId": "72057602627864370"
+          }
+        }
+      },
+      {
+        "id": "25_87",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForever",
+        "data": {
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForever()",
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "6",
+          "articyInternal": {
+            "dialogueId": "25_87",
+            "title": "AliyaFunc.WaitForever()",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627864640"
+          }
+        }
+      },
+      {
+        "id": "25_88",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Cally.C2_3_1Aliya_Cally",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Cally.C2_3_1Aliya_Cally\",true,Variable[\"JudgmentType.Equal\"])",
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "6",
+          "articyInternal": {
+            "dialogueId": "25_88",
+            "title": "AliyaFunc.WaitForCondition(\"Cally.C2_3_1Aliya_Cally\",true,JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987615920"
+          }
+        }
+      },
+      {
+        "id": "25_89",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 0,
+            "minutes": 2,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(0,2)",
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "6",
+          "articyInternal": {
+            "dialogueId": "25_89",
+            "title": "AliyaFunc.WaitTime(0,2)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987615940"
+          }
+        }
+      },
+      {
+        "id": "25_90",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Aliya.C3_1Cally_Aliya\"] = true",
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "6",
+          "articyInternal": {
+            "dialogueId": "25_90",
+            "title": "Aliya.C3_1Cally_Aliya = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987615940"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Aliya.C3_1Cally_Aliya",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "25_91",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Cally.C2_3_1Aliya_Cally_1",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Cally.C2_3_1Aliya_Cally_1\",true,Variable[\"JudgmentType.Equal\"])",
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "6",
+          "articyInternal": {
+            "dialogueId": "25_91",
+            "title": "AliyaFunc.WaitForCondition(\"Cally.C2_3_1Aliya_Cally_1\",true,JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987615940"
+          }
+        }
+      },
+      {
+        "id": "25_92",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Team.C2_3_1Cally_team\"] = true",
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "6",
+          "articyInternal": {
+            "dialogueId": "25_92",
+            "title": "Team.C2_3_1Cally_team = true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987615980"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Team.C2_3_1Cally_team",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "25_93",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 0,
+            "minutes": 10,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(0,10)",
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "6",
+          "articyInternal": {
+            "dialogueId": "25_93",
+            "title": "AliyaFunc.WaitTime(0,10)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987616000"
+          }
+        }
+      },
+      {
+        "id": "25_94",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 0,
+            "minutes": 15,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(0,15)",
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "6",
+          "articyInternal": {
+            "dialogueId": "25_94",
+            "title": "AliyaFunc.WaitTime(0,15)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987616770"
+          }
+        }
+      },
+      {
+        "id": "25_95",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_95",
+            "title": "Cally: \"这次有同事要把工作推给我的时候 我直接拒绝了 我还说了句狠...\"",
+            "dialogueText": "我直接拒绝了",
+            "menuText": "",
+            "articyId": "0x01000002000004CB-1"
+          }
+        }
+      },
+      {
+        "id": "25_96",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_96",
+            "title": "Cally: \"这次有同事要把工作推给我的时候 我直接拒绝了 我还说了句狠...\"",
+            "dialogueText": "我还说了句狠话",
+            "menuText": "",
+            "articyId": "0x01000002000004CB-2"
+          }
+        }
+      },
+      {
+        "id": "25_97",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_97",
+            "title": "Cally: \"这次有同事要把工作推给我的时候 我直接拒绝了 我还说了句狠...\"",
+            "dialogueText": "“你自己的工作你自己完成”",
+            "menuText": "",
+            "articyId": "0x01000002000004CB-3"
+          }
+        }
+      },
+      {
+        "id": "25_98",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_98",
+            "title": "Cally: \"我说完后他就走掉了 说出口后的感觉真好 原来也没有我想象的...\"",
+            "dialogueText": "说出口后的感觉真好",
+            "menuText": "",
+            "articyId": "0x01000002000004E9-1"
+          }
+        }
+      },
+      {
+        "id": "25_99",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_99",
+            "title": "Cally: \"我说完后他就走掉了 说出口后的感觉真好 原来也没有我想象的...\"",
+            "dialogueText": "原来也没有我想象的那么恐怖",
+            "menuText": "",
+            "articyId": "0x01000002000004E9-2"
+          }
+        }
+      },
+      {
+        "id": "25_100",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_100",
+            "title": "Cally: \"我说完后他就走掉了 说出口后的感觉真好 原来也没有我想象的...\"",
+            "dialogueText": "真好",
+            "menuText": "",
+            "articyId": "0x01000002000004E9-3"
+          }
+        }
+      },
+      {
+        "id": "25_101",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_101",
+            "title": "Cally: \"还不够吗…… 但是这次我没有接下这个任务 我感觉，还不错？\"",
+            "dialogueText": "但是这次我没有接下这个任务",
+            "menuText": "",
+            "articyId": "0x01000002000004F1-1"
+          }
+        }
+      },
+      {
+        "id": "25_102",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_102",
+            "title": "Cally: \"还不够吗…… 但是这次我没有接下这个任务 我感觉，还不错？\"",
+            "dialogueText": "我感觉，还不错？",
+            "menuText": "",
+            "articyId": "0x01000002000004F1-2"
+          }
+        }
+      },
+      {
+        "id": "25_103",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_103",
+            "title": "Cally: \"那个…… $v{name}……\"",
+            "dialogueText": "$v{name}……",
+            "menuText": "",
+            "articyId": "0x0100000200000514-1"
+          }
+        }
+      },
+      {
+        "id": "25_104",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_104",
+            "title": "Cally: \"就…… 那啥…… 你…… 能陪我…… 过生日吗...\"",
+            "dialogueText": "那啥……",
+            "menuText": "",
+            "articyId": "0x010000020000053A-1"
+          }
+        }
+      },
+      {
+        "id": "25_105",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_105",
+            "title": "Cally: \"就…… 那啥…… 你…… 能陪我…… 过生日吗...\"",
+            "dialogueText": "你……",
+            "menuText": "",
+            "articyId": "0x010000020000053A-2"
+          }
+        }
+      },
+      {
+        "id": "25_106",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_106",
+            "title": "Cally: \"就…… 那啥…… 你…… 能陪我…… 过生日吗...\"",
+            "dialogueText": "能陪我……",
+            "menuText": "",
+            "articyId": "0x010000020000053A-3"
+          }
+        }
+      },
+      {
+        "id": "25_107",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_107",
+            "title": "Cally: \"就…… 那啥…… 你…… 能陪我…… 过生日吗...\"",
+            "dialogueText": "过生日吗？",
+            "menuText": "",
+            "articyId": "0x010000020000053A-4"
+          }
+        }
+      },
+      {
+        "id": "25_108",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_108",
+            "title": "Cally: \"稍等一下 我去准备点东西\"",
+            "dialogueText": "我去准备点东西",
+            "menuText": "",
+            "articyId": "0x0100000200000584-1"
+          }
+        }
+      },
+      {
+        "id": "25_109",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_109",
+            "title": "Cally: \"准备好了 这个地方应该不会被发现 姑且算是准备了一个蛋糕…...\"",
+            "dialogueText": "这个地方应该不会被发现",
+            "menuText": "",
+            "articyId": "0x0100000200000592-1"
+          }
+        }
+      },
+      {
+        "id": "25_110",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_110",
+            "title": "Cally: \"准备好了 这个地方应该不会被发现 姑且算是准备了一个蛋糕…...\"",
+            "dialogueText": "姑且算是准备了一个蛋糕……",
+            "menuText": "",
+            "articyId": "0x0100000200000592-2"
+          }
+        }
+      },
+      {
+        "id": "25_111",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_111",
+            "title": "Cally: \"额 祝福一下？\"",
+            "dialogueText": "祝福一下？",
+            "menuText": "",
+            "articyId": "0x01000002000005AE-1"
+          }
+        }
+      },
+      {
+        "id": "25_112",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_112",
+            "title": "Cally: \"额 临时自制的一个小蛋糕\"",
+            "dialogueText": "临时自制的一个小蛋糕",
+            "menuText": "",
+            "articyId": "0x01000002000005B4-1"
+          }
+        }
+      },
+      {
+        "id": "25_113",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_113",
+            "title": "Cally: \"额 厕所……\"",
+            "dialogueText": "厕所……",
+            "menuText": "",
+            "articyId": "0x01000002000005BA-1"
+          }
+        }
+      },
+      {
+        "id": "25_114",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_114",
+            "title": "Cally: \"啊…… 有点尴尬…… 还有点惨兮兮的……\"",
+            "dialogueText": "有点尴尬……",
+            "menuText": "",
+            "articyId": "0x01000002000005D3-1"
+          }
+        }
+      },
+      {
+        "id": "25_115",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_115",
+            "title": "Cally: \"啊…… 有点尴尬…… 还有点惨兮兮的……\"",
+            "dialogueText": "还有点惨兮兮的……",
+            "menuText": "",
+            "articyId": "0x01000002000005D3-2"
+          }
+        }
+      },
+      {
+        "id": "25_116",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_116",
+            "title": "Cally: \"谢谢你！ 本来以为要一个人在这里吃蛋糕了……\"",
+            "dialogueText": "本来以为要一个人在这里吃蛋糕了……",
+            "menuText": "",
+            "articyId": "0x0100000200000601-1"
+          }
+        }
+      },
+      {
+        "id": "25_117",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_117",
+            "title": "Cally: \"我…… 我是在地球上的小地方出生的 我能感觉到其他人是有些...\"",
+            "dialogueText": "我是在地球上的小地方出生的",
+            "menuText": "",
+            "articyId": "0x0100000200000618-1"
+          }
+        }
+      },
+      {
+        "id": "25_118",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_118",
+            "title": "Cally: \"我…… 我是在地球上的小地方出生的 我能感觉到其他人是有些...\"",
+            "dialogueText": "我能感觉到其他人是有些嫌弃我的",
+            "menuText": "",
+            "articyId": "0x0100000200000618-2"
+          }
+        }
+      },
+      {
+        "id": "25_119",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_119",
+            "title": "Cally: \"我…… 我是在地球上的小地方出生的 我能感觉到其他人是有些...\"",
+            "dialogueText": "可能是我太土了吧",
+            "menuText": "",
+            "articyId": "0x0100000200000618-3"
+          }
+        }
+      },
+      {
+        "id": "25_120",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_120",
+            "title": "Cally: \"我…… 我是在地球上的小地方出生的 我能感觉到其他人是有些...\"",
+            "dialogueText": "和他们聊不来……",
+            "menuText": "",
+            "articyId": "0x0100000200000618-4"
+          }
+        }
+      },
+      {
+        "id": "25_121",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_121",
+            "title": "Cally: \"也没办法啦…… 能进泰瑞的大多家里都是泰瑞的 或者有钱去贵...\"",
+            "dialogueText": "能进泰瑞的大多家里都是泰瑞的",
+            "menuText": "",
+            "articyId": "0x010000020000063D-1"
+          }
+        }
+      },
+      {
+        "id": "25_122",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_122",
+            "title": "Cally: \"也没办法啦…… 能进泰瑞的大多家里都是泰瑞的 或者有钱去贵...\"",
+            "dialogueText": "或者有钱去贵族学校读书的",
+            "menuText": "",
+            "articyId": "0x010000020000063D-2"
+          }
+        }
+      },
+      {
+        "id": "25_123",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_123",
+            "title": "Cally: \"也没办法啦…… 能进泰瑞的大多家里都是泰瑞的 或者有钱去贵...\"",
+            "dialogueText": "只有极少数像我这样的是硬考上来的哈哈……",
+            "menuText": "",
+            "articyId": "0x010000020000063D-3"
+          }
+        }
+      },
+      {
+        "id": "25_124",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_124",
+            "title": "Cally: \"也没办法啦…… 能进泰瑞的大多家里都是泰瑞的 或者有钱去贵...\"",
+            "dialogueText": "我家是种果树的，能花钱供我一直读书已经很不容易了",
+            "menuText": "",
+            "articyId": "0x010000020000063D-4"
+          }
+        }
+      },
+      {
+        "id": "25_125",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_125",
+            "title": "Cally: \"也没办法啦…… 能进泰瑞的大多家里都是泰瑞的 或者有钱去贵...\"",
+            "dialogueText": "比起他们那种丰富的爱好和定居星系内到处旅游积累的见识",
+            "menuText": "",
+            "articyId": "0x010000020000063D-5"
+          }
+        }
+      },
+      {
+        "id": "25_126",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_126",
+            "title": "Cally: \"也没办法啦…… 能进泰瑞的大多家里都是泰瑞的 或者有钱去贵...\"",
+            "dialogueText": "我几乎只会做题了……",
+            "menuText": "",
+            "articyId": "0x010000020000063D-6"
+          }
+        }
+      },
+      {
+        "id": "25_127",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_127",
+            "title": "Cally: \"几乎完全没有啥共同话题 思考方式都不同……\"",
+            "dialogueText": "思考方式都不同……",
+            "menuText": "",
+            "articyId": "0x0100000200000653-1"
+          }
+        }
+      },
+      {
+        "id": "25_128",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_128",
+            "title": "Cally: \"但是我跟你说 我的学历是博士哦！ 而且完全没延毕 我...\"",
+            "dialogueText": "我的学历是博士哦！",
+            "menuText": "",
+            "articyId": "0x0100000200000661-1"
+          }
+        }
+      },
+      {
+        "id": "25_129",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_129",
+            "title": "Cally: \"但是我跟你说 我的学历是博士哦！ 而且完全没延毕 我...\"",
+            "dialogueText": "而且完全没延毕",
+            "menuText": "",
+            "articyId": "0x0100000200000661-2"
+          }
+        }
+      },
+      {
+        "id": "25_130",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_130",
+            "title": "Cally: \"但是我跟你说 我的学历是博士哦！ 而且完全没延毕 我...\"",
+            "dialogueText": "我几乎就是我们那届信息工程专业毕业博士里最年轻的了",
+            "menuText": "",
+            "articyId": "0x0100000200000661-3"
+          }
+        }
+      },
+      {
+        "id": "25_131",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_131",
+            "title": "Cally: \"嘿嘿 离开学校后好久没被夸过了\"",
+            "dialogueText": "离开学校后好久没被夸过了",
+            "menuText": "",
+            "articyId": "0x010000020000067E-1"
+          }
+        }
+      },
+      {
+        "id": "25_132",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_132",
+            "title": "Cally: \"啊…… 没势力没背景最多只能这样了……\"",
+            "dialogueText": "没势力没背景最多只能这样了……",
+            "menuText": "",
+            "articyId": "0x0100000200000685-1"
+          }
+        }
+      },
+      {
+        "id": "25_133",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_133",
+            "title": "Cally: \"突然在这里有个愿意和我说话的人…… 有点没克制住哈哈\"",
+            "dialogueText": "有点没克制住哈哈",
+            "menuText": "",
+            "articyId": "0x010000020000068C-1"
+          }
+        }
+      },
+      {
+        "id": "25_134",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_134",
+            "title": "Cally: \"其实…… 其实我现在的状况也算是能被家里人拿出去说道说道的了...\"",
+            "dialogueText": "其实我现在的状况也算是能被家里人拿出去说道说道的了",
+            "menuText": "",
+            "articyId": "0x0100000200000693-1"
+          }
+        }
+      },
+      {
+        "id": "25_135",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_135",
+            "title": "Cally: \"其实…… 其实我现在的状况也算是能被家里人拿出去说道说道的了...\"",
+            "dialogueText": "对他们来说我是一个从偏远小地方考出来的“高材生”",
+            "menuText": "",
+            "articyId": "0x0100000200000693-2"
+          }
+        }
+      },
+      {
+        "id": "25_136",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_136",
+            "title": "Cally: \"其实…… 其实我现在的状况也算是能被家里人拿出去说道说道的了...\"",
+            "dialogueText": "还在泰瑞有一份薪资不错的工作",
+            "menuText": "",
+            "articyId": "0x0100000200000693-3"
+          }
+        }
+      },
+      {
+        "id": "25_137",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_137",
+            "title": "Cally: \"其实…… 其实我现在的状况也算是能被家里人拿出去说道说道的了...\"",
+            "dialogueText": "也许我现在的烦恼有些奢侈……",
+            "menuText": "",
+            "articyId": "0x0100000200000693-4"
+          }
+        }
+      },
+      {
+        "id": "25_138",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_138",
+            "title": "Cally: \"其实…… 其实我现在的状况也算是能被家里人拿出去说道说道的了...\"",
+            "dialogueText": "但是我",
+            "menuText": "",
+            "articyId": "0x0100000200000693-5"
+          }
+        }
+      },
+      {
+        "id": "25_139",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_139",
+            "title": "Cally: \"其实…… 其实我现在的状况也算是能被家里人拿出去说道说道的了...\"",
+            "dialogueText": "确实很不喜欢这里……",
+            "menuText": "",
+            "articyId": "0x0100000200000693-6"
+          }
+        }
+      },
+      {
+        "id": "25_140",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_140",
+            "title": "Cally: \"是啊…… 这些烦恼也就只能埋在心里了 因为哪怕我有什么想法\"",
+            "dialogueText": "这些烦恼也就只能埋在心里了",
+            "menuText": "",
+            "articyId": "0x01000002000006B9-1"
+          }
+        }
+      },
+      {
+        "id": "25_141",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_141",
+            "title": "Cally: \"是啊…… 这些烦恼也就只能埋在心里了 因为哪怕我有什么想法\"",
+            "dialogueText": "因为哪怕我有什么想法",
+            "menuText": "",
+            "articyId": "0x01000002000006B9-2"
+          }
+        }
+      },
+      {
+        "id": "25_142",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_142",
+            "title": "Cally: \"我也没办法做什么 因为我…… 很软弱 我没办法想象辞...\"",
+            "dialogueText": "因为我……",
+            "menuText": "",
+            "articyId": "0x01000002000006C0-1"
+          }
+        }
+      },
+      {
+        "id": "25_143",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_143",
+            "title": "Cally: \"我也没办法做什么 因为我…… 很软弱 我没办法想象辞...\"",
+            "dialogueText": "很软弱",
+            "menuText": "",
+            "articyId": "0x01000002000006C0-2"
+          }
+        }
+      },
+      {
+        "id": "25_144",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_144",
+            "title": "Cally: \"我也没办法做什么 因为我…… 很软弱 我没办法想象辞...\"",
+            "dialogueText": "我没办法想象辞职后怎么面对家人",
+            "menuText": "",
+            "articyId": "0x01000002000006C0-3"
+          }
+        }
+      },
+      {
+        "id": "25_145",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_145",
+            "title": "Cally: \"我也没办法做什么 因为我…… 很软弱 我没办法想象辞...\"",
+            "dialogueText": "又怎么让自己接受风雨飘泊的生活",
+            "menuText": "",
+            "articyId": "0x01000002000006C0-4"
+          }
+        }
+      },
+      {
+        "id": "25_146",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_146",
+            "title": "Cally: \"我也没办法做什么 因为我…… 很软弱 我没办法想象辞...\"",
+            "dialogueText": "我只能在这个偏远的泰瑞基地里",
+            "menuText": "",
+            "articyId": "0x01000002000006C0-5"
+          }
+        }
+      },
+      {
+        "id": "25_147",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_147",
+            "title": "Cally: \"我也没办法做什么 因为我…… 很软弱 我没办法想象辞...\"",
+            "dialogueText": "挥手送走自己的青春",
+            "menuText": "",
+            "articyId": "0x01000002000006C0-6"
+          }
+        }
+      },
+      {
+        "id": "25_148",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_148",
+            "title": "Cally: \"我也没办法做什么 因为我…… 很软弱 我没办法想象辞...\"",
+            "dialogueText": "我甚至买不到一份像样的蛋糕……",
+            "menuText": "",
+            "articyId": "0x01000002000006C0-7"
+          }
+        }
+      },
+      {
+        "id": "25_149",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_149",
+            "title": "Cally: \"抱歉…… 这个涉及到公司机密 不能谈论的…… 对不起...\"",
+            "dialogueText": "这个涉及到公司机密",
+            "menuText": "",
+            "articyId": "0x01000002000006F8-1"
+          }
+        }
+      },
+      {
+        "id": "25_150",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_150",
+            "title": "Cally: \"抱歉…… 这个涉及到公司机密 不能谈论的…… 对不起...\"",
+            "dialogueText": "不能谈论的……",
+            "menuText": "",
+            "articyId": "0x01000002000006F8-2"
+          }
+        }
+      },
+      {
+        "id": "25_151",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_151",
+            "title": "Cally: \"抱歉…… 这个涉及到公司机密 不能谈论的…… 对不起...\"",
+            "dialogueText": "对不起……$v{name}",
+            "menuText": "",
+            "articyId": "0x01000002000006F8-3"
+          }
+        }
+      },
+      {
+        "id": "25_152",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_152",
+            "title": "Cally: \"听你这么说 感觉好多了\"",
+            "dialogueText": "感觉好多了",
+            "menuText": "",
+            "articyId": "0x0100000200000701-1"
+          }
+        }
+      },
+      {
+        "id": "25_153",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_153",
+            "title": "Cally: \"啊，时间不早了 我不能在厕所待太久了 不然领导要生气的...\"",
+            "dialogueText": "我不能在厕所待太久了",
+            "menuText": "",
+            "articyId": "0x010000020000070A-1"
+          }
+        }
+      },
+      {
+        "id": "25_154",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_154",
+            "title": "Cally: \"啊，时间不早了 我不能在厕所待太久了 不然领导要生气的...\"",
+            "dialogueText": "不然领导要生气的",
+            "menuText": "",
+            "articyId": "0x010000020000070A-2"
+          }
+        }
+      },
+      {
+        "id": "25_155",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_155",
+            "title": "Cally: \"啊，时间不早了 我不能在厕所待太久了 不然领导要生气的...\"",
+            "dialogueText": "我得走了",
+            "menuText": "",
+            "articyId": "0x010000020000070A-3"
+          }
+        }
+      },
+      {
+        "id": "25_156",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "6",
+          "channelId": "Cally",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "25_156",
+            "title": "Cally: \"啊，时间不早了 我不能在厕所待太久了 不然领导要生气的...\"",
+            "dialogueText": "以后有空再聊吧",
+            "menuText": "",
+            "articyId": "0x010000020000070A-4"
+          }
+        }
+      },
+      {
+        "id": "10_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FOF_JumpFrom",
+        "data": {
+          "displayInfo": {
+            "conversationId": "10",
+            "dialogueId": "2"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "6",
+            "nodeId": "10_2"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "25_0->25_1",
+        "source": "25_0",
+        "target": "25_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_1->25_93",
+        "source": "25_1",
+        "target": "25_93",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_3->25_8",
+        "source": "25_3",
+        "target": "25_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_4->25_3",
+        "source": "25_4",
+        "target": "25_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_4->25_5",
+        "source": "25_4",
+        "target": "25_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_4->25_6",
+        "source": "25_4",
+        "target": "25_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_4->25_7",
+        "source": "25_4",
+        "target": "25_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_5->25_8",
+        "source": "25_5",
+        "target": "25_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_6->25_9",
+        "source": "25_6",
+        "target": "25_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_7->25_8",
+        "source": "25_7",
+        "target": "25_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_8->25_10",
+        "source": "25_8",
+        "target": "25_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_8->25_11",
+        "source": "25_8",
+        "target": "25_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_8->25_12",
+        "source": "25_8",
+        "target": "25_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_9->25_8",
+        "source": "25_9",
+        "target": "25_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_10->25_13",
+        "source": "25_10",
+        "target": "25_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_11->25_13",
+        "source": "25_11",
+        "target": "25_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_12->25_13",
+        "source": "25_12",
+        "target": "25_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_13->25_95",
+        "source": "25_13",
+        "target": "25_95",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_14->25_17",
+        "source": "25_14",
+        "target": "25_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_15->25_17",
+        "source": "25_15",
+        "target": "25_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_16->25_18",
+        "source": "25_16",
+        "target": "25_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_17->25_98",
+        "source": "25_17",
+        "target": "25_98",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_18->25_101",
+        "source": "25_18",
+        "target": "25_101",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_19->25_23",
+        "source": "25_19",
+        "target": "25_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_20->25_23",
+        "source": "25_20",
+        "target": "25_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_21->25_23",
+        "source": "25_21",
+        "target": "25_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_22->25_24",
+        "source": "25_22",
+        "target": "25_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_23->25_103",
+        "source": "25_23",
+        "target": "25_103",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_24->25_23",
+        "source": "25_24",
+        "target": "25_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_25->25_28",
+        "source": "25_25",
+        "target": "25_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_26->25_28",
+        "source": "25_26",
+        "target": "25_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_27->25_28",
+        "source": "25_27",
+        "target": "25_28",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_28->25_104",
+        "source": "25_28",
+        "target": "25_104",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_29->25_33",
+        "source": "25_29",
+        "target": "25_33",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_30->25_32",
+        "source": "25_30",
+        "target": "25_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_31->25_32",
+        "source": "25_31",
+        "target": "25_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_32->25_34",
+        "source": "25_32",
+        "target": "25_34",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_32->25_35",
+        "source": "25_32",
+        "target": "25_35",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_33->25_32",
+        "source": "25_33",
+        "target": "25_32",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_34->25_36",
+        "source": "25_34",
+        "target": "25_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_35->25_36",
+        "source": "25_35",
+        "target": "25_36",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_36->25_108",
+        "source": "25_36",
+        "target": "25_108",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_37->25_109",
+        "source": "25_37",
+        "target": "25_109",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_38->25_41",
+        "source": "25_38",
+        "target": "25_41",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_39->25_43",
+        "source": "25_39",
+        "target": "25_43",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_40->25_42",
+        "source": "25_40",
+        "target": "25_42",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_41->25_111",
+        "source": "25_41",
+        "target": "25_111",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_42->25_112",
+        "source": "25_42",
+        "target": "25_112",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_43->25_113",
+        "source": "25_43",
+        "target": "25_113",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_44->25_45",
+        "source": "25_44",
+        "target": "25_45",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_45->25_114",
+        "source": "25_45",
+        "target": "25_114",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_46->25_49",
+        "source": "25_46",
+        "target": "25_49",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_47->25_49",
+        "source": "25_47",
+        "target": "25_49",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_48->25_49",
+        "source": "25_48",
+        "target": "25_49",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_49->25_116",
+        "source": "25_49",
+        "target": "25_116",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_50->25_52",
+        "source": "25_50",
+        "target": "25_52",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_51->25_53",
+        "source": "25_51",
+        "target": "25_53",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_52->25_117",
+        "source": "25_52",
+        "target": "25_117",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_53->25_52",
+        "source": "25_53",
+        "target": "25_52",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_54->25_56",
+        "source": "25_54",
+        "target": "25_56",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_55->25_56",
+        "source": "25_55",
+        "target": "25_56",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_56->25_121",
+        "source": "25_56",
+        "target": "25_121",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_57->25_58",
+        "source": "25_57",
+        "target": "25_58",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_58->25_127",
+        "source": "25_58",
+        "target": "25_127",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_59->25_128",
+        "source": "25_59",
+        "target": "25_128",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_60->25_63",
+        "source": "25_60",
+        "target": "25_63",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_61->25_64",
+        "source": "25_61",
+        "target": "25_64",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_62->25_65",
+        "source": "25_62",
+        "target": "25_65",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_63->25_131",
+        "source": "25_63",
+        "target": "25_131",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_64->25_132",
+        "source": "25_64",
+        "target": "25_132",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_65->25_133",
+        "source": "25_65",
+        "target": "25_133",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_66->25_134",
+        "source": "25_66",
+        "target": "25_134",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_67->25_70",
+        "source": "25_67",
+        "target": "25_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_68->25_70",
+        "source": "25_68",
+        "target": "25_70",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_69->25_71",
+        "source": "25_69",
+        "target": "25_71",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_70->25_72",
+        "source": "25_70",
+        "target": "25_72",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_71->25_140",
+        "source": "25_71",
+        "target": "25_140",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_72->25_142",
+        "source": "25_72",
+        "target": "25_142",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_73->25_76",
+        "source": "25_73",
+        "target": "25_76",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_74->25_81",
+        "source": "25_74",
+        "target": "25_81",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_75->25_81",
+        "source": "25_75",
+        "target": "25_81",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_76->25_77",
+        "source": "25_76",
+        "target": "25_77",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_76->25_78",
+        "source": "25_76",
+        "target": "25_78",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_76->25_79",
+        "source": "25_76",
+        "target": "25_79",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_77->25_80",
+        "source": "25_77",
+        "target": "25_80",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_78->25_80",
+        "source": "25_78",
+        "target": "25_80",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_79->25_80",
+        "source": "25_79",
+        "target": "25_80",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_80->25_149",
+        "source": "25_80",
+        "target": "25_149",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_81->25_152",
+        "source": "25_81",
+        "target": "25_152",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_82->25_153",
+        "source": "25_82",
+        "target": "25_153",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_83->25_86",
+        "source": "25_83",
+        "target": "25_86",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_84->25_86",
+        "source": "25_84",
+        "target": "25_86",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_85->25_86",
+        "source": "25_85",
+        "target": "25_86",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_86->25_92",
+        "source": "25_86",
+        "target": "25_92",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_88->25_89",
+        "source": "25_88",
+        "target": "25_89",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_89->25_4",
+        "source": "25_89",
+        "target": "25_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_90->25_91",
+        "source": "25_90",
+        "target": "25_91",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_91->25_94",
+        "source": "25_91",
+        "target": "25_94",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_92->25_87",
+        "source": "25_92",
+        "target": "25_87",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_93->25_88",
+        "source": "25_93",
+        "target": "25_88",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_94->25_37",
+        "source": "25_94",
+        "target": "25_37",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_95->25_96",
+        "source": "25_95",
+        "target": "25_96",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_96->25_97",
+        "source": "25_96",
+        "target": "25_97",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_97->25_14",
+        "source": "25_97",
+        "target": "25_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_97->25_15",
+        "source": "25_97",
+        "target": "25_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_97->25_16",
+        "source": "25_97",
+        "target": "25_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_98->25_99",
+        "source": "25_98",
+        "target": "25_99",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_99->25_100",
+        "source": "25_99",
+        "target": "25_100",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_100->25_19",
+        "source": "25_100",
+        "target": "25_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_100->25_20",
+        "source": "25_100",
+        "target": "25_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_101->25_102",
+        "source": "25_101",
+        "target": "25_102",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_102->25_21",
+        "source": "25_102",
+        "target": "25_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_102->25_22",
+        "source": "25_102",
+        "target": "25_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_103->25_25",
+        "source": "25_103",
+        "target": "25_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_103->25_26",
+        "source": "25_103",
+        "target": "25_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_103->25_27",
+        "source": "25_103",
+        "target": "25_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_104->25_105",
+        "source": "25_104",
+        "target": "25_105",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_105->25_106",
+        "source": "25_105",
+        "target": "25_106",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_106->25_107",
+        "source": "25_106",
+        "target": "25_107",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_107->25_29",
+        "source": "25_107",
+        "target": "25_29",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_107->25_30",
+        "source": "25_107",
+        "target": "25_30",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_107->25_31",
+        "source": "25_107",
+        "target": "25_31",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_108->25_90",
+        "source": "25_108",
+        "target": "25_90",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_109->25_110",
+        "source": "25_109",
+        "target": "25_110",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_110->25_38",
+        "source": "25_110",
+        "target": "25_38",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_110->25_39",
+        "source": "25_110",
+        "target": "25_39",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_110->25_40",
+        "source": "25_110",
+        "target": "25_40",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_111->25_44",
+        "source": "25_111",
+        "target": "25_44",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_112->25_44",
+        "source": "25_112",
+        "target": "25_44",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_113->25_44",
+        "source": "25_113",
+        "target": "25_44",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_114->25_115",
+        "source": "25_114",
+        "target": "25_115",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_115->25_46",
+        "source": "25_115",
+        "target": "25_46",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_115->25_47",
+        "source": "25_115",
+        "target": "25_47",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_115->25_48",
+        "source": "25_115",
+        "target": "25_48",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_116->25_50",
+        "source": "25_116",
+        "target": "25_50",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_116->25_51",
+        "source": "25_116",
+        "target": "25_51",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_117->25_118",
+        "source": "25_117",
+        "target": "25_118",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_118->25_119",
+        "source": "25_118",
+        "target": "25_119",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_119->25_120",
+        "source": "25_119",
+        "target": "25_120",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_120->25_54",
+        "source": "25_120",
+        "target": "25_54",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_120->25_55",
+        "source": "25_120",
+        "target": "25_55",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_120->25_57",
+        "source": "25_120",
+        "target": "25_57",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_121->25_122",
+        "source": "25_121",
+        "target": "25_122",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_122->25_123",
+        "source": "25_122",
+        "target": "25_123",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_123->25_124",
+        "source": "25_123",
+        "target": "25_124",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_124->25_125",
+        "source": "25_124",
+        "target": "25_125",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_125->25_126",
+        "source": "25_125",
+        "target": "25_126",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_126->25_59",
+        "source": "25_126",
+        "target": "25_59",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_127->25_56",
+        "source": "25_127",
+        "target": "25_56",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_128->25_129",
+        "source": "25_128",
+        "target": "25_129",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_129->25_130",
+        "source": "25_129",
+        "target": "25_130",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_130->25_60",
+        "source": "25_130",
+        "target": "25_60",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_130->25_61",
+        "source": "25_130",
+        "target": "25_61",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_130->25_62",
+        "source": "25_130",
+        "target": "25_62",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_131->25_66",
+        "source": "25_131",
+        "target": "25_66",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_132->25_66",
+        "source": "25_132",
+        "target": "25_66",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_133->25_66",
+        "source": "25_133",
+        "target": "25_66",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_134->25_135",
+        "source": "25_134",
+        "target": "25_135",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_135->25_136",
+        "source": "25_135",
+        "target": "25_136",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_136->25_137",
+        "source": "25_136",
+        "target": "25_137",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_137->25_138",
+        "source": "25_137",
+        "target": "25_138",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_138->25_139",
+        "source": "25_138",
+        "target": "25_139",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_139->25_67",
+        "source": "25_139",
+        "target": "25_67",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_139->25_68",
+        "source": "25_139",
+        "target": "25_68",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_139->25_69",
+        "source": "25_139",
+        "target": "25_69",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_140->25_141",
+        "source": "25_140",
+        "target": "25_141",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_141->25_72",
+        "source": "25_141",
+        "target": "25_72",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_142->25_143",
+        "source": "25_142",
+        "target": "25_143",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_143->25_144",
+        "source": "25_143",
+        "target": "25_144",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_144->25_145",
+        "source": "25_144",
+        "target": "25_145",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_145->25_146",
+        "source": "25_145",
+        "target": "25_146",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_146->25_147",
+        "source": "25_146",
+        "target": "25_147",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_147->25_148",
+        "source": "25_147",
+        "target": "25_148",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_148->25_73",
+        "source": "25_148",
+        "target": "25_73",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_148->25_74",
+        "source": "25_148",
+        "target": "25_74",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_148->25_75",
+        "source": "25_148",
+        "target": "25_75",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_149->25_150",
+        "source": "25_149",
+        "target": "25_150",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_150->25_151",
+        "source": "25_150",
+        "target": "25_151",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_151->25_82",
+        "source": "25_151",
+        "target": "25_82",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_152->25_82",
+        "source": "25_152",
+        "target": "25_82",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_153->25_154",
+        "source": "25_153",
+        "target": "25_154",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_154->25_155",
+        "source": "25_154",
+        "target": "25_155",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_155->25_156",
+        "source": "25_155",
+        "target": "25_156",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_156->25_83",
+        "source": "25_156",
+        "target": "25_83",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_156->25_84",
+        "source": "25_156",
+        "target": "25_84",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "25_156->25_85",
+        "source": "25_156",
+        "target": "25_85",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "10_2->25_1",
+        "source": "10_2",
+        "target": "25_1",
+        "markerEnd": "arrow",
+        "animated": true,
+        "label": "comp.flowchart.aliya2_demo.node.fof.JumpFrom.edge.label",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      }
+    ]
+  }
+}

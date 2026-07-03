@@ -1,0 +1,1037 @@
+{
+  "metadata": {
+    "counts": {
+      "node": 30,
+      "edge": 29,
+      "otherFlowcharts": 1
+    },
+    "variableNames": {
+      "Outside.C2_2Team_Outside": {
+        "key": "Outside.C2_2Team_Outside",
+        "type": "boolean"
+      },
+      "Team.C2_2Outside_team_1": {
+        "key": "Team.C2_2Outside_team_1",
+        "type": "boolean"
+      }
+    },
+    "flowchartRefs": [
+      "42"
+    ],
+    "currName": "Outside",
+    "currId": "22",
+    "articyInternal": {
+      "title": "2.2食堂开会（外部）（公司广播）",
+      "description": "",
+      "articyId": "72057636987602060",
+      "channelId": "Outside"
+    }
+  },
+  "data": {
+    "nodes": [
+      {
+        "id": "22_0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "7",
+          "channelId": "Outside",
+          "conversantId": "2",
+          "articyInternal": {
+            "dialogueId": "22_0",
+            "title": "START",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987602060"
+          }
+        }
+      },
+      {
+        "id": "22_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "2",
+          "channelId": "Outside",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "22_1",
+            "title": "input",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987602060"
+          }
+        }
+      },
+      {
+        "id": "22_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "DefaultNode",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "2",
+          "channelId": "Outside",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "22_2",
+            "title": "output",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987602060"
+          }
+        }
+      },
+      {
+        "id": "22_3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_3",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "各位人偶",
+            "menuText": "",
+            "articyId": "72057636987602080"
+          }
+        }
+      },
+      {
+        "id": "22_4",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "2",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_4",
+            "title": "Ryoko: \"都是屁话！\"",
+            "dialogueText": "都是屁话！",
+            "menuText": "",
+            "articyId": "72057636987602100"
+          }
+        }
+      },
+      {
+        "id": "22_5",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_5",
+            "title": "Kane: \"Ryoko你小声点！ 哎，别掐我\"",
+            "dialogueText": "Ryoko你小声点！",
+            "menuText": "",
+            "articyId": "72057636987602100"
+          }
+        }
+      },
+      {
+        "id": "22_6",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_6",
+            "title": "公司广播: \"以及，还有一个天大的惊喜忍不住想要告诉各位 我们知道，人偶作为克...\"",
+            "dialogueText": "以及，还有一个天大的惊喜忍不住想要告诉各位",
+            "menuText": "",
+            "articyId": "72057636987602110"
+          }
+        }
+      },
+      {
+        "id": "22_7",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "2",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_7",
+            "title": "Ryoko: \"怎么可能！他们——\"",
+            "dialogueText": "怎么可能！他们——",
+            "menuText": "",
+            "articyId": "72057636987602130"
+          }
+        }
+      },
+      {
+        "id": "22_8",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_8",
+            "title": "Kane: \"嘘—— 哎哎哎，有啥事待会儿说 别被他们听到了\"",
+            "dialogueText": "嘘——",
+            "menuText": "",
+            "articyId": "72057636987602130"
+          }
+        }
+      },
+      {
+        "id": "22_9",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitTime",
+        "data": {
+          "waitTime": {
+            "seconds": 3,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitTime(3)",
+          "actorId": "22",
+          "channelId": "Outside",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "22_9",
+            "title": "AliyaFunc.WaitTime(3)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057636987613580"
+          }
+        }
+      },
+      {
+        "id": "22_10",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "WaitForCondition",
+        "data": {
+          "compareCondition": {
+            "varName": "Outside.C2_2Team_Outside",
+            "compareValue": true,
+            "condition": "Equal"
+          },
+          "conditionString": null,
+          "userScript": "AliyaFunc.WaitForCondition(\"Outside.C2_2Team_Outside\",true,Variable[\"JudgmentType.Equal\"])",
+          "actorId": "22",
+          "channelId": "Outside",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "22_10",
+            "title": "AliyaFunc.WaitForCondition(\"Outside.C2_2Team_Outside\",true,JudgmentType.Equal)",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627863230"
+          }
+        }
+      },
+      {
+        "id": "22_11",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "CustomScript",
+        "data": {
+          "conditionString": null,
+          "userScript": "Variable[\"Team.C2_2Outside_team_1\"]=true",
+          "actorId": "22",
+          "channelId": "Outside",
+          "conversantId": "7",
+          "articyInternal": {
+            "dialogueId": "22_11",
+            "title": "Team.C2_2Outside_team_1=true",
+            "dialogueText": "",
+            "menuText": "",
+            "articyId": "72057602627863230"
+          },
+          "variableOps": {
+            "assignments": [
+              {
+                "variableName": "Team.C2_2Outside_team_1",
+                "valueAssigned": true
+              }
+            ],
+            "condition": null
+          }
+        }
+      },
+      {
+        "id": "22_12",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_12",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "你们应该已经发现了我们搬到了一个新的地方",
+            "menuText": "",
+            "articyId": "0x0100000A000004A6-1"
+          }
+        }
+      },
+      {
+        "id": "22_13",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_13",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "这是因为公司的战略性调整",
+            "menuText": "",
+            "articyId": "0x0100000A000004A6-2"
+          }
+        }
+      },
+      {
+        "id": "22_14",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_14",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "远航部被暂时取消了",
+            "menuText": "",
+            "articyId": "0x0100000A000004A6-3"
+          }
+        }
+      },
+      {
+        "id": "22_15",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_15",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "不用担心，不用焦急",
+            "menuText": "",
+            "articyId": "0x0100000A000004A6-4"
+          }
+        }
+      },
+      {
+        "id": "22_16",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_16",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "公司是慷慨大度的",
+            "menuText": "",
+            "articyId": "0x0100000A000004A6-5"
+          }
+        }
+      },
+      {
+        "id": "22_17",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_17",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "你们会注意到每个人的房间相较于之前都变得更加宽敞了",
+            "menuText": "",
+            "articyId": "0x0100000A000004A6-6"
+          }
+        }
+      },
+      {
+        "id": "22_18",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_18",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "制服也经过了重新的设计，更加舒适美观",
+            "menuText": "",
+            "articyId": "0x0100000A000004A6-7"
+          }
+        }
+      },
+      {
+        "id": "22_19",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_19",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "之后你们每个人会被重新安排工作发挥你们的专长",
+            "menuText": "",
+            "articyId": "0x0100000A000004A6-8"
+          }
+        }
+      },
+      {
+        "id": "22_20",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_20",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "以后我们不再需要去遥远危险的宇宙边界冒险",
+            "menuText": "",
+            "articyId": "0x0100000A000004A6-9"
+          }
+        }
+      },
+      {
+        "id": "22_21",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_21",
+            "title": "公司广播: \"各位人偶 你们应该已经发现了我们搬到了一个新的地方 这是因...\"",
+            "dialogueText": "而是在这个地方贡献你们的专业技能做各种科学研究",
+            "menuText": "",
+            "articyId": "0x0100000A000004A6-10"
+          }
+        }
+      },
+      {
+        "id": "22_22",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_22",
+            "title": "Kane: \"Ryoko你小声点！ 哎，别掐我\"",
+            "dialogueText": "哎，别掐我",
+            "menuText": "",
+            "articyId": "0x0100000A000004B5-1"
+          }
+        }
+      },
+      {
+        "id": "22_23",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_23",
+            "title": "公司广播: \"以及，还有一个天大的惊喜忍不住想要告诉各位 我们知道，人偶作为克...\"",
+            "dialogueText": "我们知道，人偶作为克隆人曾经要靠抑制剂维持只有三年的寿命",
+            "menuText": "",
+            "articyId": "0x0100000A000004BC-1"
+          }
+        }
+      },
+      {
+        "id": "22_24",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_24",
+            "title": "公司广播: \"以及，还有一个天大的惊喜忍不住想要告诉各位 我们知道，人偶作为克...\"",
+            "dialogueText": "而现在，我们的首席科学团队已经研究出来了新型的抑制剂",
+            "menuText": "",
+            "articyId": "0x0100000A000004BC-2"
+          }
+        }
+      },
+      {
+        "id": "22_25",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "Message",
+        "data": {
+          "sendTime": {
+            "seconds": 0,
+            "minutes": 0,
+            "hours": 0,
+            "days": 0
+          },
+          "autoSendTime": true,
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "11",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_25",
+            "title": "公司广播: \"以及，还有一个天大的惊喜忍不住想要告诉各位 我们知道，人偶作为克...\"",
+            "dialogueText": "只要一直服用，人偶的理论寿命可以和人类一致！",
+            "menuText": "",
+            "articyId": "0x0100000A000004BC-3"
+          }
+        }
+      },
+      {
+        "id": "22_26",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_26",
+            "title": "Kane: \"嘘—— 哎哎哎，有啥事待会儿说 别被他们听到了\"",
+            "dialogueText": "哎哎哎，有啥事待会儿说",
+            "menuText": "",
+            "articyId": "0x0100000A000004D0-1"
+          }
+        }
+      },
+      {
+        "id": "22_27",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "PlayerChoice",
+        "data": {
+          "conditionString": null,
+          "userScript": null,
+          "actorId": "5",
+          "channelId": "Outside",
+          "conversantId": "0",
+          "articyInternal": {
+            "dialogueId": "22_27",
+            "title": "Kane: \"嘘—— 哎哎哎，有啥事待会儿说 别被他们听到了\"",
+            "dialogueText": "别被他们听到了",
+            "menuText": "",
+            "articyId": "0x0100000A000004D0-2"
+          }
+        }
+      },
+      {
+        "id": "42_1",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "OtherFlowchart",
+        "data": {
+          "displayData": {
+            "conversationId": "42",
+            "dialogueId": "1"
+          },
+          "actualJumpData": {
+            "conversationId": "42",
+            "nodeId": "22_2"
+          }
+        }
+      },
+      {
+        "id": "21_2",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "FOF_JumpFrom",
+        "data": {
+          "displayInfo": {
+            "conversationId": "21",
+            "dialogueId": "2"
+          },
+          "actualJumpInfo": {
+            "flowchartId": "21",
+            "nodeId": "21_2"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "22_0->22_1",
+        "source": "22_0",
+        "target": "22_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_1->22_10",
+        "source": "22_1",
+        "target": "22_10",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_2->42_1",
+        "source": "22_2",
+        "target": "42_1",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_3->22_12",
+        "source": "22_3",
+        "target": "22_12",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_4->22_5",
+        "source": "22_4",
+        "target": "22_5",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_5->22_22",
+        "source": "22_5",
+        "target": "22_22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_6->22_23",
+        "source": "22_6",
+        "target": "22_23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_7->22_8",
+        "source": "22_7",
+        "target": "22_8",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_8->22_26",
+        "source": "22_8",
+        "target": "22_26",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_9->22_11",
+        "source": "22_9",
+        "target": "22_11",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_10->22_3",
+        "source": "22_10",
+        "target": "22_3",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_11->22_2",
+        "source": "22_11",
+        "target": "22_2",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_12->22_13",
+        "source": "22_12",
+        "target": "22_13",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_13->22_14",
+        "source": "22_13",
+        "target": "22_14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_14->22_15",
+        "source": "22_14",
+        "target": "22_15",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_15->22_16",
+        "source": "22_15",
+        "target": "22_16",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_16->22_17",
+        "source": "22_16",
+        "target": "22_17",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_17->22_18",
+        "source": "22_17",
+        "target": "22_18",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_18->22_19",
+        "source": "22_18",
+        "target": "22_19",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_19->22_20",
+        "source": "22_19",
+        "target": "22_20",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_20->22_21",
+        "source": "22_20",
+        "target": "22_21",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_21->22_4",
+        "source": "22_21",
+        "target": "22_4",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_22->22_6",
+        "source": "22_22",
+        "target": "22_6",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_23->22_24",
+        "source": "22_23",
+        "target": "22_24",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_24->22_25",
+        "source": "22_24",
+        "target": "22_25",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_25->22_7",
+        "source": "22_25",
+        "target": "22_7",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_26->22_27",
+        "source": "22_26",
+        "target": "22_27",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22_27->22_9",
+        "source": "22_27",
+        "target": "22_9",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "21_2->22_1",
+        "source": "21_2",
+        "target": "22_1",
+        "markerEnd": "arrow",
+        "animated": true,
+        "label": "comp.flowchart.aliya2_demo.node.fof.JumpFrom.edge.label",
+        "style": {
+          "stroke": "orange"
+        },
+        "labelBgStyle": {
+          "fill": "orange"
+        }
+      }
+    ]
+  }
+}

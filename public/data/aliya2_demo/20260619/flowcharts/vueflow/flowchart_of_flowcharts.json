@@ -16,8 +16,8 @@
       {
         "id": "32",
         "position": {
-          "x": 0,
-          "y": 100
+          "x": 750,
+          "y": 200
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -175,9 +175,26 @@
         }
       },
       {
-        "id": "15",
+        "id": "14",
         "position": {
           "x": 0,
+          "y": 0
+        },
+        "type": "FOF_Flowchart",
+        "data": {
+          "flowchartId": "14",
+          "channelId": "Aliya",
+          "virtual": false,
+          "actualJumpInfo": {
+            "flowchartId": "14",
+            "nodeId": "14_1"
+          }
+        }
+      },
+      {
+        "id": "15",
+        "position": {
+          "x": 250,
           "y": 0
         },
         "type": "FOF_Flowchart",
@@ -192,9 +209,43 @@
         }
       },
       {
+        "id": "17",
+        "position": {
+          "x": 500,
+          "y": 0
+        },
+        "type": "FOF_Flowchart",
+        "data": {
+          "flowchartId": "17",
+          "channelId": "Team",
+          "virtual": false,
+          "actualJumpInfo": {
+            "flowchartId": "17",
+            "nodeId": "17_1"
+          }
+        }
+      },
+      {
+        "id": "19",
+        "position": {
+          "x": 750,
+          "y": 0
+        },
+        "type": "FOF_Flowchart",
+        "data": {
+          "flowchartId": "19",
+          "channelId": "Outside",
+          "virtual": false,
+          "actualJumpInfo": {
+            "flowchartId": "42",
+            "nodeId": "19_1"
+          }
+        }
+      },
+      {
         "id": "2",
         "position": {
-          "x": 250,
+          "x": 1000,
           "y": 0
         },
         "type": "FOF_Flowchart",
@@ -211,8 +262,8 @@
       {
         "id": "20",
         "position": {
-          "x": 500,
-          "y": 0
+          "x": 0,
+          "y": 100
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -226,10 +277,78 @@
         }
       },
       {
-        "id": "26",
+        "id": "21",
+        "position": {
+          "x": 250,
+          "y": 100
+        },
+        "type": "FOF_Flowchart",
+        "data": {
+          "flowchartId": "21",
+          "channelId": "Outside",
+          "virtual": false,
+          "actualJumpInfo": {
+            "flowchartId": "32",
+            "nodeId": "21_1"
+          }
+        }
+      },
+      {
+        "id": "22",
+        "position": {
+          "x": 500,
+          "y": 100
+        },
+        "type": "FOF_Flowchart",
+        "data": {
+          "flowchartId": "22",
+          "channelId": "Outside",
+          "virtual": false,
+          "actualJumpInfo": {
+            "flowchartId": "22",
+            "nodeId": "22_1"
+          }
+        }
+      },
+      {
+        "id": "23",
         "position": {
           "x": 750,
-          "y": 0
+          "y": 100
+        },
+        "type": "FOF_Flowchart",
+        "data": {
+          "flowchartId": "23",
+          "channelId": "Aliya",
+          "virtual": false,
+          "actualJumpInfo": {
+            "flowchartId": "23",
+            "nodeId": "23_1"
+          }
+        }
+      },
+      {
+        "id": "25",
+        "position": {
+          "x": 1000,
+          "y": 100
+        },
+        "type": "FOF_Flowchart",
+        "data": {
+          "flowchartId": "25",
+          "channelId": "Cally",
+          "virtual": false,
+          "actualJumpInfo": {
+            "flowchartId": "25",
+            "nodeId": "25_1"
+          }
+        }
+      },
+      {
+        "id": "26",
+        "position": {
+          "x": 0,
+          "y": 200
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -243,10 +362,27 @@
         }
       },
       {
+        "id": "29",
+        "position": {
+          "x": 250,
+          "y": 200
+        },
+        "type": "FOF_Flowchart",
+        "data": {
+          "flowchartId": "29",
+          "channelId": "Kane",
+          "virtual": false,
+          "actualJumpInfo": {
+            "flowchartId": "29",
+            "nodeId": "29_1"
+          }
+        }
+      },
+      {
         "id": "3",
         "position": {
-          "x": 1000,
-          "y": 0
+          "x": 500,
+          "y": 200
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -262,8 +398,8 @@
       {
         "id": "33",
         "position": {
-          "x": 250,
-          "y": 100
+          "x": 1000,
+          "y": 200
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -277,27 +413,10 @@
         }
       },
       {
-        "id": "36",
-        "position": {
-          "x": 500,
-          "y": 100
-        },
-        "type": "FOF_Flowchart",
-        "data": {
-          "flowchartId": "36",
-          "channelId": "Outside",
-          "virtual": false,
-          "actualJumpInfo": {
-            "flowchartId": "36",
-            "nodeId": "36_1"
-          }
-        }
-      },
-      {
         "id": "4",
         "position": {
-          "x": 750,
-          "y": 100
+          "x": 0,
+          "y": 300
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -311,27 +430,10 @@
         }
       },
       {
-        "id": "40",
-        "position": {
-          "x": 1000,
-          "y": 100
-        },
-        "type": "FOF_Flowchart",
-        "data": {
-          "flowchartId": "40",
-          "channelId": "Outside",
-          "virtual": false,
-          "actualJumpInfo": {
-            "flowchartId": "40",
-            "nodeId": "40_1"
-          }
-        }
-      },
-      {
         "id": "42",
         "position": {
-          "x": 0,
-          "y": 200
+          "x": 250,
+          "y": 300
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -345,27 +447,10 @@
         }
       },
       {
-        "id": "46",
-        "position": {
-          "x": 250,
-          "y": 200
-        },
-        "type": "FOF_Flowchart",
-        "data": {
-          "flowchartId": "46",
-          "channelId": "Outside",
-          "virtual": false,
-          "actualJumpInfo": {
-            "flowchartId": "46",
-            "nodeId": "46_1"
-          }
-        }
-      },
-      {
         "id": "5",
         "position": {
           "x": 500,
-          "y": 200
+          "y": 300
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -379,27 +464,10 @@
         }
       },
       {
-        "id": "53",
-        "position": {
-          "x": 750,
-          "y": 200
-        },
-        "type": "FOF_Flowchart",
-        "data": {
-          "flowchartId": "53",
-          "channelId": "Outside",
-          "virtual": false,
-          "actualJumpInfo": {
-            "flowchartId": "53",
-            "nodeId": "53_1"
-          }
-        }
-      },
-      {
         "id": "58",
         "position": {
-          "x": 1000,
-          "y": 200
+          "x": 750,
+          "y": 300
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -415,7 +483,7 @@
       {
         "id": "6",
         "position": {
-          "x": 0,
+          "x": 1000,
           "y": 300
         },
         "type": "FOF_Flowchart",
@@ -430,61 +498,10 @@
         }
       },
       {
-        "id": "61",
-        "position": {
-          "x": 250,
-          "y": 300
-        },
-        "type": "FOF_Flowchart",
-        "data": {
-          "flowchartId": "61",
-          "channelId": "Outside",
-          "virtual": false,
-          "actualJumpInfo": {
-            "flowchartId": "61",
-            "nodeId": "61_1"
-          }
-        }
-      },
-      {
-        "id": "64",
-        "position": {
-          "x": 500,
-          "y": 300
-        },
-        "type": "FOF_Flowchart",
-        "data": {
-          "flowchartId": "64",
-          "channelId": "Outside",
-          "virtual": false,
-          "actualJumpInfo": {
-            "flowchartId": "64",
-            "nodeId": "64_1"
-          }
-        }
-      },
-      {
-        "id": "67",
-        "position": {
-          "x": 750,
-          "y": 300
-        },
-        "type": "FOF_Flowchart",
-        "data": {
-          "flowchartId": "67",
-          "channelId": "Outside",
-          "virtual": false,
-          "actualJumpInfo": {
-            "flowchartId": "67",
-            "nodeId": "67_1"
-          }
-        }
-      },
-      {
         "id": "7",
         "position": {
-          "x": 1000,
-          "y": 300
+          "x": 0,
+          "y": 400
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -494,23 +511,6 @@
           "actualJumpInfo": {
             "flowchartId": "7",
             "nodeId": "7_1"
-          }
-        }
-      },
-      {
-        "id": "75",
-        "position": {
-          "x": 0,
-          "y": 400
-        },
-        "type": "FOF_Flowchart",
-        "data": {
-          "flowchartId": "75",
-          "channelId": "Outside",
-          "virtual": false,
-          "actualJumpInfo": {
-            "flowchartId": "75",
-            "nodeId": "75_1"
           }
         }
       },
@@ -566,10 +566,27 @@
         }
       },
       {
-        "id": "86",
+        "id": "85",
         "position": {
           "x": 1000,
           "y": 400
+        },
+        "type": "FOF_Flowchart",
+        "data": {
+          "flowchartId": "85",
+          "channelId": "WindyTest",
+          "virtual": false,
+          "actualJumpInfo": {
+            "flowchartId": "85",
+            "nodeId": "85_1"
+          }
+        }
+      },
+      {
+        "id": "86",
+        "position": {
+          "x": 0,
+          "y": 500
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -585,7 +602,7 @@
       {
         "id": "9",
         "position": {
-          "x": 0,
+          "x": 250,
           "y": 500
         },
         "type": "FOF_Flowchart",
@@ -602,8 +619,8 @@
       {
         "id": "群聊",
         "position": {
-          "x": 1000,
-          "y": 700
+          "x": 0,
+          "y": 800
         },
         "type": "FOF_Channel",
         "data": {
@@ -614,7 +631,7 @@
       {
         "id": "11",
         "position": {
-          "x": 250,
+          "x": 500,
           "y": 800
         },
         "type": "FOF_Flowchart",
@@ -631,7 +648,7 @@
       {
         "id": "27",
         "position": {
-          "x": 750,
+          "x": 1000,
           "y": 800
         },
         "type": "FOF_Flowchart",
@@ -648,7 +665,7 @@
       {
         "id": "24",
         "position": {
-          "x": 0,
+          "x": 250,
           "y": 900
         },
         "type": "FOF_Flowchart",
@@ -665,7 +682,7 @@
       {
         "id": "18",
         "position": {
-          "x": 500,
+          "x": 750,
           "y": 900
         },
         "type": "FOF_Flowchart",
@@ -682,8 +699,8 @@
       {
         "id": "12",
         "position": {
-          "x": 1000,
-          "y": 900
+          "x": 0,
+          "y": 1000
         },
         "type": "FOF_Flowchart",
         "data": {
@@ -699,7 +716,7 @@
       {
         "id": "41",
         "position": {
-          "x": 250,
+          "x": 500,
           "y": 1000
         },
         "type": "FOF_Flowchart",
@@ -712,26 +729,44 @@
             "nodeId": "41_1"
           }
         }
-      },
-      {
-        "id": "85",
-        "position": {
-          "x": 750,
-          "y": 1000
-        },
-        "type": "FOF_Flowchart",
-        "data": {
-          "flowchartId": "85",
-          "channelId": null,
-          "virtual": true,
-          "actualJumpInfo": {
-            "flowchartId": "86",
-            "nodeId": "85_1"
-          }
-        }
       }
     ],
     "edges": [
+      {
+        "id": "14->23",
+        "source": "14",
+        "target": "23",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "2->14",
+        "source": "2",
+        "target": "14",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "21->Team",
+        "source": "21",
+        "target": "Team",
+        "markerEnd": "arrow",
+        "animated": true
+      },
+      {
+        "id": "21->22",
+        "source": "21",
+        "target": "22",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "22->42",
+        "source": "22",
+        "target": "42",
+        "markerEnd": "arrow",
+        "animated": false
+      },
       {
         "id": "3->Kane",
         "source": "3",
@@ -740,135 +775,51 @@
         "animated": true
       },
       {
-        "id": "32->36",
-        "source": "32",
-        "target": "36",
+        "id": "3->17",
+        "source": "3",
+        "target": "17",
         "markerEnd": "arrow",
         "animated": false
       },
       {
-        "id": "36->04510121",
-        "source": "36",
+        "id": "32->04510121",
+        "source": "32",
         "target": "04510121",
         "markerEnd": "arrow",
         "animated": true
       },
       {
-        "id": "36->Aliya",
-        "source": "36",
+        "id": "32->Aliya",
+        "source": "32",
         "target": "Aliya",
         "markerEnd": "arrow",
         "animated": true
       },
       {
-        "id": "36->Team",
-        "source": "36",
-        "target": "Team",
-        "markerEnd": "arrow",
-        "animated": true
-      },
-      {
-        "id": "36->40",
-        "source": "36",
-        "target": "40",
+        "id": "32->21",
+        "source": "32",
+        "target": "21",
         "markerEnd": "arrow",
         "animated": false
       },
       {
-        "id": "36->42",
-        "source": "36",
-        "target": "42",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "40->36",
-        "source": "40",
-        "target": "36",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "42->53",
+        "id": "42->19",
         "source": "42",
-        "target": "53",
+        "target": "19",
         "markerEnd": "arrow",
         "animated": false
       },
       {
-        "id": "42->64",
-        "source": "42",
-        "target": "64",
+        "id": "5->29",
+        "source": "5",
+        "target": "29",
         "markerEnd": "arrow",
         "animated": false
       },
       {
-        "id": "42->46",
-        "source": "42",
-        "target": "46",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "42->67",
-        "source": "42",
-        "target": "67",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "42->61",
-        "source": "42",
-        "target": "61",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "42->75",
-        "source": "42",
-        "target": "75",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "46->42",
-        "source": "46",
-        "target": "42",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "53->42",
-        "source": "53",
-        "target": "42",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "61->42",
-        "source": "61",
-        "target": "42",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "64->42",
-        "source": "64",
-        "target": "42",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "67->42",
-        "source": "67",
-        "target": "42",
-        "markerEnd": "arrow",
-        "animated": false
-      },
-      {
-        "id": "75->42",
-        "source": "75",
-        "target": "42",
+        "id": "6->25",
+        "source": "6",
+        "target": "25",
         "markerEnd": "arrow",
         "animated": false
       },
@@ -892,6 +843,20 @@
         "target": "Windy",
         "markerEnd": "arrow",
         "animated": true
+      },
+      {
+        "id": "85->86",
+        "source": "85",
+        "target": "86",
+        "markerEnd": "arrow",
+        "animated": false
+      },
+      {
+        "id": "86->85",
+        "source": "86",
+        "target": "85",
+        "markerEnd": "arrow",
+        "animated": false
       },
       {
         "id": "9->Cally",

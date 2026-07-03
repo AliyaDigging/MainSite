@@ -18,6 +18,10 @@
         "key": "ExampleVariables.IntValue",
         "type": "number"
       },
+      "System.PlayerName": {
+        "key": "System.PlayerName",
+        "type": "string"
+      },
       "ExampleVariables.PlayerChoiceAppear": {
         "key": "ExampleVariables.PlayerChoiceAppear",
         "type": "boolean"
@@ -380,7 +384,7 @@
             "articyId": "72057598332898080"
           },
           "actualJumpInfo": {
-            "flowchartId": "86",
+            "flowchartId": "85",
             "nodeId": "85_1"
           }
         }
@@ -407,7 +411,7 @@
           "conversantId": "0",
           "articyInternal": {
             "dialogueId": "83_14",
-            "title": "Aliya: \"0 $md{1 \"2\" \"3\"} 4\"",
+            "title": "Aliya: \"0 $md{1 2 3} 4\"",
             "dialogueText": "0",
             "menuText": "",
             "articyId": "72057619807742190"
@@ -1938,7 +1942,7 @@
           "conversantId": "0",
           "articyInternal": {
             "dialogueId": "83_74",
-            "title": "Aliya: \"0 $md{1 \"2\" \"3\"} 4\"",
+            "title": "Aliya: \"0 $md{1 2 3} 4\"",
             "dialogueText": "$md{1}",
             "menuText": "",
             "articyId": "0x01000006000028F0-1"
@@ -1968,7 +1972,7 @@
           "conversantId": "0",
           "articyInternal": {
             "dialogueId": "83_75",
-            "title": "Aliya: \"0 $md{1 \"2\" \"3\"} 4\"",
+            "title": "Aliya: \"0 $md{1 2 3} 4\"",
             "dialogueText": "$md{2}",
             "menuText": "",
             "articyId": "0x01000006000028F0-2"
@@ -1998,7 +2002,7 @@
           "conversantId": "0",
           "articyInternal": {
             "dialogueId": "83_76",
-            "title": "Aliya: \"0 $md{1 \"2\" \"3\"} 4\"",
+            "title": "Aliya: \"0 $md{1 2 3} 4\"",
             "dialogueText": "$md{3}",
             "menuText": "",
             "articyId": "0x01000006000028F0-3"
@@ -2027,7 +2031,7 @@
           "conversantId": "0",
           "articyInternal": {
             "dialogueId": "83_77",
-            "title": "Aliya: \"0 $md{1 \"2\" \"3\"} 4\"",
+            "title": "Aliya: \"0 $md{1 2 3} 4\"",
             "dialogueText": "4",
             "menuText": "",
             "articyId": "0x01000006000028F0-4"
