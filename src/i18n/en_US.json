@@ -666,7 +666,7 @@
   "view.special.aliya2_demo.comp.audio.category.unknown": "Unknown({n})",
   "view.special.aliya2_demo.comp.audio.noData": "No audio data available.",
 
-  "view.special.aliya2_demo.comp.ambient_message.desc": "\"AmbientMessage\" is a special message type displayed as <b>ambient/subtitle text</b>, serving as system messages or <b>\"environmental messages\"</b> (e.g. Oleg's brain-computer interface chatter). AmbientMessages use the <code>$md[type]{[content]}</code> format; the type can be empty (defaulting to ID=\"NULL\"). Currently, type specifies the text color as shown below.",
+  "view.special.aliya2_demo.comp.ambient_message.desc": "\"AmbientMessage\" is a special message type displayed as <b>ambient/subtitle text</b>, serving as system messages or <b>\"environmental messages\"</b> (e.g. Oleg's brain-computer interface chatter). AmbientMessages use the <code>$md[type]{'{'}[content]{'}'}</code> format; the type can be empty (defaulting to ID=\"NULL\"). Currently, type specifies the text color as shown below.",
   "view.special.aliya2_demo.comp.ambient_message.DataTable.1.column.1.title": "ID",
   "view.special.aliya2_demo.comp.ambient_message.DataTable.1.column.2.title": "Color",
   "view.special.aliya2_demo.comp.ambient_message.DataTable.1.empty": "No data",
