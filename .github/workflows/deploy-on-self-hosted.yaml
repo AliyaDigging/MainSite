@@ -37,6 +37,8 @@ jobs:
       - name: Deploy with rsync
         run: |
           rsync -avz --delete \
+            --exclude='.user.ini' \
+            --filter='protect .well-known/'
             -e "ssh -o StrictHostKeyChecking=no -p ${SSH_PORT}" \
             ./dist/ \
             ${SSH_USER}@${SSH_HOST}:${REMOTE_DEPLOY_PATH}
