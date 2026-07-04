@@ -58,11 +58,14 @@ const imageUrlForSendingOut = computed(() => {
       const imageMapping = externalConfigData.value!.mediaMessageConfig.images
       const match = text.match(/\$image\{(.*)\}/im)
       if (match) {
-        const imageEntry = imageMapping[match[1]]
+        const imageEntry = imageMapping[match[1].trim()]
         if (imageEntry) {
-          return [match[1], `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`]
+          return [
+            match[1].trim(),
+            `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`,
+          ]
         } else {
-          return [match[1], '']
+          return [match[1].trim(), '']
         }
       } else {
         return null
@@ -71,11 +74,14 @@ const imageUrlForSendingOut = computed(() => {
       const imageMapping = externalConfigData.value!.mediaMessageConfig.emojis
       const match = text.match(/\$emoji\{(.*)\}/im)
       if (match) {
-        const emojiEntry = imageMapping[match[1]]
+        const emojiEntry = imageMapping[match[1].trim()]
         if (emojiEntry) {
-          return [match[1], `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`]
+          return [
+            match[1].trim(),
+            `/aliya/aliya2_demo/images/${imageMapping[match[1]].imageFilename}`,
+          ]
         } else {
-          return [match[1], '']
+          return [match[1].trim(), '']
         }
       } else {
         return null
@@ -148,7 +154,10 @@ const msgReadTime = computed(() => {
             >{{ $t('comp.flowchart.aliya2_demo.node.PlayerChoice.msgReadTime.title') }}</u
           >: {{ msgReadTime.toFixed(2) }}s
         </p>
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" :node-id="props.id" />
+        <General_CustomScriptAndCondition
+          :variable-ops="props.data.variableOps"
+          :node-id="props.id"
+        />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

@@ -48,11 +48,11 @@ const imageInfo = computed(() => {
         const regex = /\$image\{(.*)\}/i
         const match = actualContent.value.match(regex)
         if (match && match[1]) {
-          const imageEntry = imageMapping[match[1]]
+          const imageEntry = imageMapping[match[1].trim()]
           if (imageEntry) {
-            return [match[1], `/aliya/aliya2_demo/images/${imageEntry.imageFilename}`]
+            return [match[1].trim(), `/aliya/aliya2_demo/images/${imageEntry.imageFilename}`]
           } else {
-            return [match[1], '']
+            return [match[1].trim(), '']
           }
         } else {
           return ['', '']
@@ -63,11 +63,14 @@ const imageInfo = computed(() => {
         const regex = /\$emoji\{(.*)\}/i
         const match = actualContent.value.match(regex)
         if (match && match[1]) {
-          const emojiEntry = emojiMapping[match[1]]
+          const emojiEntry = emojiMapping[match[1].trim()]
           if (emojiEntry) {
-            return [match[1], `/aliya/aliya2_demo/images/${emojiMapping[match[1]].imageFilename}`]
+            return [
+              match[1].trim(),
+              `/aliya/aliya2_demo/images/${emojiMapping[match[1]].imageFilename}`,
+            ]
           } else {
-            return [match[1], '']
+            return [match[1].trim(), '']
           }
         } else {
           return ['', '']
@@ -174,7 +177,10 @@ const speakerAvatar = computed(() => {
           {{ $t('comp.flowchart.aliya2_demo.node.Message.autoSendTime.title') }}:
           {{ $t(`comp.flowchart.aliya2_demo.flow.boolean.${props.data.autoSendTime}`) }}
         </p>
-        <General_CustomScriptAndCondition :variable-ops="props.data.variableOps" :node-id="props.id" />
+        <General_CustomScriptAndCondition
+          :variable-ops="props.data.variableOps"
+          :node-id="props.id"
+        />
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />
