@@ -2,6 +2,7 @@
 @import 'tailwindcss-primeui';
 
 @import '/fonts/MiSansVF/result.css';
+@import '/fonts/NotoSansMonoCJKVF/result.css';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
 /*@import './browser_default.css';*/
 
@@ -9,6 +10,10 @@
   font-family:
     'MiSans VF', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
     '微软雅黑', Arial, sans-serif;
+}
+
+code {
+  font-family: 'Noto Sans Mono CJK SC', monospace, sans-serif !important;
 }
 
 :root {

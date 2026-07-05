@@ -77,7 +77,6 @@ watch(
 
 <style>
 code {
-  font-family: 'Noto Sans Mono', monospace !important;
   background-color: v-bind(cssCodeBgColor);
   padding: 2px 4px;
   border-radius: 4px;
@@ -89,7 +88,6 @@ code {
 
 /** 这下面的代码好像不起效果，但为了防止bug还是保留了 */
 :deep(code) {
-  font-family: 'Noto Sans Mono', monospace !important;
   background-color: v-bind(cssCodeBgColor);
   padding: 2px 4px;
   border-radius: 4px;
