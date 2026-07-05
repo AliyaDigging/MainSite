@@ -280,7 +280,7 @@ provide(symbolMergeInfo_Aliya2Demo, mergeInfoData)
     "
   >
     <div class="special-main-div-title">
-      <img style="width: 3rem" src="/aliya/game_icon/aliya2_demo.ico" />
+      <img style="width: 3rem" src="/aliya/game_icon/aliya2_demo.jpg" />
       <h1 style="font-size: 3rem">
         <b>{{ $t('view.special.aliya2_demo.title') }}</b>
       </h1>

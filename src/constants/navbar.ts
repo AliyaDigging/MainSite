@@ -32,7 +32,7 @@ export const navItems = [
       {
         label: 'menu.special.aliya2_demo',
         route: '/special/aliya2_demo',
-        icon: '/aliya/game_icon/aliya2_demo.ico',
+        icon: '/aliya/game_icon/aliya2_demo.jpg',
       },
     ],
   },

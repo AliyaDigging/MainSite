@@ -36,16 +36,7 @@ const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
         <template #subtitle>{{ $t('view.home.4.card.1.subtitle') }}</template>
         <template #content><div v-html="i18n.t('view.home.4.card.1.content')"></div></template>
       </PvCard>
-      <PvCard>
-        <template #header>
-          <img src="/aliya/game_header/ycytx_5.jpg" />
-        </template>
-        <template #title
-          >{{ $t('view.home.4.card.2.title') }}&ensp;<SupportBadge level="bronze"
-        /></template>
-        <template #subtitle>{{ $t('view.home.4.card.2.subtitle') }}</template>
-        <template #content><div v-html="i18n.t('view.home.4.card.2.content')" /></template>
-      </PvCard>
+
       <PvCard>
         <template #header>
           <img src="/aliya/game_header/tysy.jpg" />
@@ -65,6 +56,16 @@ const cssWidthIframe = computed(() => `${windowsize.width.value - 48}px`)
         /></template>
         <template #subtitle>{{ $t('view.home.4.card.4.subtitle') }}</template>
         <template #content><div v-html="i18n.t('view.home.4.card.4.content')" /></template>
+      </PvCard>
+      <PvCard>
+        <template #header>
+          <img src="/aliya/game_header/ycytx_5.jpg" />
+        </template>
+        <template #title
+          >{{ $t('view.home.4.card.2.title') }}&ensp;<SupportBadge level="bronze"
+        /></template>
+        <template #subtitle>{{ $t('view.home.4.card.2.subtitle') }}</template>
+        <template #content><div v-html="i18n.t('view.home.4.card.2.content')" /></template>
       </PvCard>
     </div>
   </div>
