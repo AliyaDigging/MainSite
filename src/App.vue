@@ -6,12 +6,17 @@ import FooterComp from './components/FooterComp.vue'
 import DynamicDialog from 'primevue/dynamicdialog'
 import Message from 'primevue/message'
 import { useSiteSettingStore } from './stores/setting'
-import { watch, inject, computed, ref } from 'vue'
+import { watch, inject, computed, ref, onMounted, defineAsyncComponent } from 'vue'
 
 import { symbolUseDark } from '@/constants/injection'
-import { Button } from 'primevue'
+import { Button, useDialog } from 'primevue'
 
 const setting = useSiteSettingStore()
+
+const popupCompForNewDomain = defineAsyncComponent(
+  () => import('./components/AppPopupForNewDomain.vue'),
+)
+const dialog = useDialog()
 
 const isDark = inject(symbolUseDark)!
 const cssCodeBgColor = computed(() => (isDark.value ? '#4a1c1f' : '#fff5f5'))
@@ -36,6 +41,40 @@ watch(
   () => setting.sitelang,
   () => setting.changeSiteLang(),
 )
+
+onMounted(() => {
+  const currURL = new URL(document.URL)
+  if (currURL.host !== 'aliyadb.link' && currURL.host !== 'www.aliyadb.link')
+    if (navigator.language.toLowerCase().includes('zh-')) {
+      dialog.open(popupCompForNewDomain, {
+        data: {
+          lang: 'zh-CN',
+        },
+        props: {
+          header: '📢 我们正在迁移至新域名！',
+          style: {
+            'max-width': '40rem',
+          },
+          modal: true,
+          blockScroll: false,
+        },
+      })
+    } else {
+      dialog.open(popupCompForNewDomain, {
+        data: {
+          lang: 'en-US',
+        },
+        props: {
+          header: "📢 We're moving to a new domain!",
+          style: {
+            'max-width': '40rem',
+          },
+          modal: true,
+          blockScroll: false,
+        },
+      })
+    }
+})
 </script>
 
 <template>
@@ -77,7 +116,7 @@ watch(
 
 <style>
 code {
-  background-color: v-bind(cssCodeBgColor);
+  background-color: v-bind(cssCodeBgColor) !important;
   padding: 2px 4px;
   border-radius: 4px;
   color: v-bind(cssCodeTextColor);
