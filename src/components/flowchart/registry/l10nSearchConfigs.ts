@@ -83,14 +83,14 @@ registerL10NSearchConfig({
   buildL10NKey: (data, meta, nodeType) => {
     const keys: string[] = []
 
-    // 对话节点 — key 格式: dialogue:{currId}_{dialogueId}
-    // Message, AmbientMessage, PlayerChoice 使用当前流程图 currId
+    // 对话节点 — key 格式: dialogue:{dialogueId}
+    // dialogueId 本身已是 "${conversationId}_${dialogueFragmentId}" 格式
     // DefaultNode 是 fallback 类型，也可能包含有效对话
     if (['Message', 'AmbientMessage', 'PlayerChoice', 'DefaultNode'].includes(nodeType)) {
       const currId = meta.currId
       const dialogueId = (data.articyInternal as Record<string, unknown> | undefined)?.dialogueId
       if (currId && dialogueId != null) {
-        keys.push(`dialogue:${currId}_${dialogueId}`)
+        keys.push(`dialogue:${dialogueId}`)
       }
     }
 

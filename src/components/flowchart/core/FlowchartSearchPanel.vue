@@ -260,6 +260,12 @@ watch([searchText, searchMode], () => {
   performSearch()
 })
 
+// Re-run search when L10N data finishes loading or language switches,
+// so existing search queries don't show stale results.
+watch(l10nSearchData, () => {
+  performSearch()
+})
+
 watch(
   () => props.visible,
   (v) => {
