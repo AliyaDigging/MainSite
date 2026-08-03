@@ -78,7 +78,7 @@ const playerText = computed(() => {
         </p>
         <img
           v-if="props.data.customImgMsg"
-          :src="`/aliya/images/${props.data.customImgMsg}.png`"
+          :src="`/aliya/aliya1/images/${props.data.customImgMsg}.png`"
           width="100%"
           class="mt-1"
         />

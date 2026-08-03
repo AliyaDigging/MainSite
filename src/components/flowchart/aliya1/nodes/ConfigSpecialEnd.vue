@@ -7,6 +7,7 @@ import { Icon } from '@vicons/utils'
 import { AppSettingsAltOutlined } from '@vicons/material'
 
 import { type FlowchartDataNode_ConfigSpecialEnd } from '../types/script5_vueflow_prod'
+import { getCorrectFlowchartUrl } from '@/utils/flowchart'
 
 // props were passed from the slot using `v-bind="customNodeProps"`
 const props = defineProps<NodeProps<FlowchartDataNode_ConfigSpecialEnd['data']>>()
@@ -30,7 +31,7 @@ const props = defineProps<NodeProps<FlowchartDataNode_ConfigSpecialEnd['data']>>
       <div class="custom-node-content">
         <p>
           {{ $t('comp.flowchart.node.ConfigSpecialEnd.p.o2runoutflowchartname') }}:&nbsp;<RouterLink
-            :to="`/view/flowchart/${props.data.o2RunOutFlowchartName}`"
+            :to="getCorrectFlowchartUrl($route.path, props.data.o2RunOutFlowchartName)"
             >{{ props.data.o2RunOutFlowchartName }}</RouterLink
           >
         </p>

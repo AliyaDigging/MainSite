@@ -29,7 +29,11 @@ const props = defineProps<NodeProps<FlowchartDataNode_ChangeBGMusic['data']>>()
         <p>
           {{ $t('comp.flowchart.node.ChangeBGMusic.p.musicid') }}:&nbsp;{{ props.data.musicId }}
         </p>
-        <audio :src="`/aliya/music/${props.data.musicId}.ogg`" class="mt-2 mb-1" controls></audio>
+        <audio
+          :src="`/aliya/aliya1/music/${props.data.musicId}.ogg`"
+          class="mt-2 mb-1"
+          controls
+        ></audio>
       </div>
     </div>
     <Handle type="source" :position="Position.Bottom" />

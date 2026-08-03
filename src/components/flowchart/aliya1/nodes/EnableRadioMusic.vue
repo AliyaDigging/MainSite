@@ -31,7 +31,11 @@ const props = defineProps<NodeProps<FlowchartDataNode_EnableRadioMusic['data']>>
         <p>
           {{ $t('comp.flowchart.node.EnableRadioMusic.p.musicid') }}:&nbsp;{{ props.data.musicId }}
         </p>
-        <audio :src="`/aliya/music/${props.data.musicId}.ogg`" class="mt-2 mb-2" controls></audio>
+        <audio
+          :src="`/aliya/aliya1/music/${props.data.musicId}.ogg`"
+          class="mt-2 mb-2"
+          controls
+        ></audio>
         <p>
           {{ $t('comp.flowchart.node.EnableRadioMusic.p.initquality') }}:&nbsp;{{
             props.data.initQuality
